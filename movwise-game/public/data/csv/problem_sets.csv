@@ -1,0 +1,82 @@
+set_id,level,category,target_sentence,hint_ja,subject_id,verb_id,complement_id,visual_theme,difficulty_score
+1,beginner,be_verb,I am happy,私は幸せです,1,8,11,happiness,1
+2,beginner,be_verb,You are sad,あなたは悲しいです,2,10,12,emotion,1
+3,beginner,be_verb,He is hungry,彼はお腹がすいています,3,9,13,food,1
+4,beginner,be_verb,She is tired,彼女は疲れています,4,9,14,rest,1
+5,beginner,be_verb,It is hot,それは暑いです,5,9,16,weather,1
+6,beginner,be_verb,We are busy,私たちは忙しいです,6,10,15,work,1
+7,beginner,be_verb,They are cold,彼らは寒いです,7,10,17,weather,1
+8,beginner,be_verb,I am a student,私は学生です,1,8,18,education,2
+9,beginner,be_verb,You are a teacher,あなたは先生です,2,10,19,education,2
+10,beginner,be_verb,He is a doctor,彼は医者です,3,9,20,medical,2
+11,beginner,be_verb,She is here,彼女はここにいます,4,9,21,location,2
+12,beginner,be_verb,It is there,それはそこにあります,5,9,22,location,2
+13,beginner,be_verb,We are at home,私たちは家にいます,6,10,23,home,3
+14,beginner,be_verb,They are at school,彼らは学校にいます,7,10,24,school,3
+15,beginner,be_verb,I am in Tokyo,私は東京にいます,1,8,25,travel,3
+
+16,beginner,general_verb,I like apples,私はりんごが好きです,26,32,42,fruit,1
+17,beginner,general_verb,You eat books,あなたは本を食べます,27,34,43,reading,1
+18,beginner,general_verb,He likes cats,彼は猫が好きです,28,33,44,pets,2
+19,beginner,general_verb,She plays dogs,彼女は犬と遊びます,29,37,45,pets,2
+20,beginner,general_verb,We watch music,私たちは音楽を聞きます,30,40,46,entertainment,2
+21,beginner,general_verb,They study soccer,彼らはサッカーを勉強します,31,38,47,sports,2
+22,beginner,general_verb,I watch TV,私はテレビを見ます,26,40,48,entertainment,1
+23,beginner,general_verb,You like homework,あなたは宿題が好きです,27,32,49,education,2
+24,beginner,general_verb,He studies English,彼は英語を勉強します,28,39,50,education,3
+25,beginner,general_verb,She eats apples,彼女はりんごを食べます,29,35,42,food,3
+
+26,intermediate,question,What is your name?,あなたの名前は何ですか,51,9,63,introduction,3
+27,intermediate,question,Where are you?,あなたはどこにいますか,52,10,2,location,3
+28,intermediate,question,When do you study?,いつ勉強しますか,53,57,27,time,4
+29,intermediate,question,Who is he?,彼は誰ですか,54,9,3,people,3
+30,intermediate,question,Why don't you like cats?,なぜ猫が好きではないのですか,55,60,44,reason,5
+31,intermediate,question,How are you?,元気ですか,56,10,2,greeting,2
+32,intermediate,question,What time is it?,何時ですか,51,9,64,time,4
+33,intermediate,question,Where is the book?,本はどこですか,52,9,65,location,4
+34,intermediate,question,When did you eat lunch?,いつ昼食を食べましたか,53,61,66,food,5
+35,intermediate,question,Do you like music?,音楽は好きですか,57,32,46,preference,3
+
+36,intermediate,past_tense,I was happy yesterday,昨日私は幸せでした,76,82,91,nostalgia,3
+37,intermediate,past_tense,You were sad last week,先週あなたは悲しかったです,77,83,92,memory,4
+38,intermediate,past_tense,He played soccer yesterday,彼は昨日サッカーをしました,78,84,91,sports,4
+39,intermediate,past_tense,She studied English last month,彼女は先月英語を勉強しました,79,85,93,education,5
+40,intermediate,past_tense,We watched the movie before,私たちは以前その映画を見ました,80,86,95,entertainment,5
+41,intermediate,past_tense,They went to school yesterday,彼らは昨日学校に行きました,81,87,99,school,4
+42,intermediate,past_tense,I came home late,私は遅く家に帰りました,76,88,home,4
+43,intermediate,past_tense,You had breakfast at the park,あなたは公園で朝食を食べました,77,89,96,outdoor,5
+44,intermediate,past_tense,He did homework last week,彼は先週宿題をしました,78,90,98,study,4
+45,intermediate,past_tense,She was at school before,彼女は以前学校にいました,79,82,95,memory,4
+
+46,advanced,complex,I can swim,私は泳ぐことができます,101,swim,ability,3
+47,advanced,complex,You could dance yesterday,あなたは昨日踊ることができました,102,dance,past_ability,4
+48,advanced,complex,He will come tomorrow,彼は明日来るでしょう,103,come,future,3
+49,advanced,complex,She would like coffee,彼女はコーヒーが欲しいでしょう,104,coffee,polite,4
+50,advanced,complex,We should study harder,私たちはもっと一生懸命勉強すべきです,105,study,advice,5
+51,advanced,complex,They must finish homework,彼らは宿題を終えなければなりません,106,homework,obligation,5
+52,advanced,complex,I may go home,私は家に帰るかもしれません,107,home,possibility,4
+53,advanced,complex,You might be right,あなたは正しいかもしれません,108,right,uncertainty,4
+54,advanced,complex,I have been to Tokyo,私は東京に行ったことがあります,109,112,Tokyo,experience,5
+55,advanced,complex,She has gone home,彼女は家に帰りました,110,113,home,completion,5
+
+56,advanced,complex,I like cats and dogs,私は猫と犬が好きです,117,cats_dogs,combination,4
+57,advanced,complex,He is smart but lazy,彼は賢いですが怠け者です,118,contrast,contrast,5
+58,advanced,complex,You can walk or run,あなたは歩くか走ることができます,119,exercise,choice,4
+59,advanced,complex,We study because we want to learn,私たちは学びたいので勉強します,120,education,reason,6
+60,advanced,complex,When I was young I played soccer,私が若い時サッカーをしました,121,youth_sports,time_clause,6
+61,advanced,complex,If you study hard you will pass,一生懸命勉強すれば合格するでしょう,122,success,condition,6
+62,advanced,complex,I think that he is kind,彼は親切だと思います,123,personality,opinion,5
+63,advanced,complex,The book which I read was interesting,私が読んだ本は面白かったです,124,reading,relative,7
+64,advanced,complex,The person who helped me was nice,私を助けてくれた人は親切でした,125,kindness,relative,7
+65,advanced,complex,I have already finished,私はすでに終えました,126,completion,perfect,5
+
+66,advanced,complex,She hasn't come yet,彼女はまだ来ていません,127,waiting,perfect_negative,5
+67,advanced,complex,We just arrived,私たちはちょうど到着しました,128,arrival,perfect_recent,4
+68,advanced,complex,I never eat meat,私は肉を決して食べません,129,diet,frequency,4
+69,advanced,complex,They always help others,彼らはいつも他人を助けます,130,kindness,frequency,4
+70,advanced,complex,This car is bigger than that one,この車はあの車より大きいです,131,comparison,comparative,5
+71,advanced,complex,She is better at English,彼女は英語がより得意です,132,skill,comparative,5
+72,advanced,complex,This is more beautiful than before,これは以前よりも美しいです,133,beauty,comparative,6
+73,advanced,complex,He is the biggest in the class,彼はクラスで最も大きいです,134,class,superlative,6
+74,advanced,complex,This is the best solution,これが最良の解決策です,135,problem_solving,superlative,6
+75,advanced,complex,She is the most beautiful girl,彼女は最も美しい女の子です,136,beauty,superlative,7

@@ -1,0 +1,345 @@
+[
+  {
+    "label": "a1",
+    "ipa": "æ",
+    "audioFile": "a1.m4a",
+    "example_word": "cat",
+    "group": "Short Vowel"
+  },
+  {
+    "label": "a2",
+    "ipa": "ɑː",
+    "audioFile": "a2.m4a",
+    "example_word": "car",
+    "group": "Long Vowel"
+  },
+  {
+    "label": "a3",
+    "ipa": "eɪ",
+    "audioFile": "a3.m4a",
+    "example_word": "cake",
+    "group": "Diphthong"
+  },
+  {
+    "label": "a4",
+    "ipa": "ə",
+    "audioFile": "a4.m4a",
+    "example_word": "sofa",
+    "group": "Schwa"
+  },
+  {
+    "label": "a5",
+    "ipa": "ʌ",
+    "audioFile": "a5.m4a",
+    "example_word": "cup",
+    "group": "Short Vowel"
+  },
+  {
+    "label": "e1",
+    "ipa": "e",
+    "audioFile": "e1.m4a",
+    "example_word": "bed",
+    "group": "Short Vowel"
+  },
+  {
+    "label": "e2",
+    "ipa": "iː",
+    "audioFile": "e2.m4a",
+    "example_word": "see",
+    "group": "Long Vowel"
+  },
+  {
+    "label": "e3",
+    "ipa": "eɪ",
+    "audioFile": "e3.m4a",
+    "example_word": "day",
+    "group": "Diphthong"
+  },
+  {
+    "label": "i1",
+    "ipa": "ɪ",
+    "audioFile": "i1.m4a",
+    "example_word": "sit",
+    "group": "Short Vowel"
+  },
+  {
+    "label": "i2",
+    "ipa": "aɪ",
+    "audioFile": "i2.m4a",
+    "example_word": "fly",
+    "group": "Diphthong"
+  },
+  {
+    "label": "o1",
+    "ipa": "ɒ",
+    "audioFile": "o1.m4a",
+    "example_word": "hot",
+    "group": "Short Vowel"
+  },
+  {
+    "label": "o2",
+    "ipa": "oʊ",
+    "audioFile": "o2.m4a",
+    "example_word": "go",
+    "group": "Long Vowel"
+  },
+  {
+    "label": "o3",
+    "ipa": "ɔː",
+    "audioFile": "o3.m4a",
+    "example_word": "law",
+    "group": "Long Vowel"
+  },
+  {
+    "label": "o4",
+    "ipa": "aʊ",
+    "audioFile": "o4.m4a",
+    "example_word": "now",
+    "group": "Diphthong"
+  },
+  {
+    "label": "u1",
+    "ipa": "ʊ",
+    "audioFile": "u1.m4a",
+    "example_word": "book",
+    "group": "Short Vowel"
+  },
+  {
+    "label": "u2",
+    "ipa": "uː",
+    "audioFile": "u2.m4a",
+    "example_word": "moon",
+    "group": "Long Vowel"
+  },
+  {
+    "label": "u3",
+    "ipa": "juː",
+    "audioFile": "u3.m4a",
+    "example_word": "unit",
+    "group": "Long Vowel"
+  },
+  {
+    "label": "b",
+    "ipa": "b",
+    "audioFile": "b.m4a",
+    "example_word": "bat",
+    "group": "Consonant"
+  },
+  {
+    "label": "d",
+    "ipa": "d",
+    "audioFile": "d.m4a",
+    "example_word": "dog",
+    "group": "Consonant"
+  },
+  {
+    "label": "f",
+    "ipa": "f",
+    "audioFile": "f.m4a",
+    "example_word": "fan",
+    "group": "Fricative"
+  },
+  {
+    "label": "g",
+    "ipa": "g",
+    "audioFile": "g.m4a",
+    "example_word": "go",
+    "group": "Consonant"
+  },
+  {
+    "label": "h",
+    "ipa": "h",
+    "audioFile": "h.m4a",
+    "example_word": "hat",
+    "group": "Consonant"
+  },
+  {
+    "label": "j",
+    "ipa": "dʒ",
+    "audioFile": "j.m4a",
+    "example_word": "jam",
+    "group": "Affricate"
+  },
+  {
+    "label": "k",
+    "ipa": "k",
+    "audioFile": "k.m4a",
+    "example_word": "cat",
+    "group": "Consonant"
+  },
+  {
+    "label": "l",
+    "ipa": "l",
+    "audioFile": "l.m4a",
+    "example_word": "leg",
+    "group": "Consonant"
+  },
+  {
+    "label": "m",
+    "ipa": "m",
+    "audioFile": "m.m4a",
+    "example_word": "man",
+    "group": "Consonant"
+  },
+  {
+    "label": "n",
+    "ipa": "n",
+    "audioFile": "n.m4a",
+    "example_word": "net",
+    "group": "Consonant"
+  },
+  {
+    "label": "p",
+    "ipa": "p",
+    "audioFile": "p.m4a",
+    "example_word": "pen",
+    "group": "Consonant"
+  },
+  {
+    "label": "r",
+    "ipa": "r",
+    "audioFile": "r.m4a",
+    "example_word": "red",
+    "group": "Consonant"
+  },
+  {
+    "label": "s",
+    "ipa": "s",
+    "audioFile": "s.m4a",
+    "example_word": "sun",
+    "group": "Fricative"
+  },
+  {
+    "label": "sh",
+    "ipa": "ʃ",
+    "audioFile": "sh.m4a",
+    "example_word": "ship",
+    "group": "Fricative"
+  },
+  {
+    "label": "t",
+    "ipa": "t",
+    "audioFile": "t.m4a",
+    "example_word": "top",
+    "group": "Consonant"
+  },
+  {
+    "label": "ch",
+    "ipa": "tʃ",
+    "audioFile": "ch.m4a",
+    "example_word": "chair",
+    "group": "Affricate"
+  },
+  {
+    "label": "th1",
+    "ipa": "θ",
+    "audioFile": "th1.m4a",
+    "example_word": "think",
+    "group": "Fricative"
+  },
+  {
+    "label": "th2",
+    "ipa": "ð",
+    "audioFile": "th2.m4a",
+    "example_word": "this",
+    "group": "Fricative"
+  },
+  {
+    "label": "v",
+    "ipa": "v",
+    "audioFile": "v.m4a",
+    "example_word": "van",
+    "group": "Fricative"
+  },
+  {
+    "label": "w",
+    "ipa": "w",
+    "audioFile": "w.m4a",
+    "example_word": "win",
+    "group": "Consonant"
+  },
+  {
+    "label": "y",
+    "ipa": "j",
+    "audioFile": "y.m4a",
+    "example_word": "yes",
+    "group": "Consonant"
+  },
+  {
+    "label": "z",
+    "ipa": "z",
+    "audioFile": "z.m4a",
+    "example_word": "zip",
+    "group": "Fricative"
+  },
+  {
+    "label": "ng",
+    "ipa": "ŋ",
+    "audioFile": "ng.m4a",
+    "example_word": "sing",
+    "group": "Nasal"
+  },
+  {
+    "label": "zh",
+    "ipa": "ʒ",
+    "audioFile": "zh.m4a",
+    "example_word": "vision",
+    "group": "Fricative"
+  },
+  {
+    "label": "oi",
+    "ipa": "ɔɪ",
+    "audioFile": "oi.m4a",
+    "example_word": "boy",
+    "group": "Diphthong"
+  },
+  {
+    "label": "ow",
+    "ipa": "aʊ",
+    "audioFile": "ow.m4a",
+    "example_word": "now",
+    "group": "Diphthong"
+  },
+  {
+    "label": "ar",
+    "ipa": "ɑːr",
+    "audioFile": "ar.m4a",
+    "example_word": "car",
+    "group": "R-controlled"
+  },
+  {
+    "label": "or",
+    "ipa": "ɔːr",
+    "audioFile": "or.m4a",
+    "example_word": "for",
+    "group": "R-controlled"
+  },
+  {
+    "label": "er",
+    "ipa": "ɜːr",
+    "audioFile": "er.m4a",
+    "example_word": "her",
+    "group": "R-controlled"
+  },
+  {
+    "label": "air",
+    "ipa": "eər",
+    "audioFile": "air.m4a",
+    "example_word": "air",
+    "group": "R-controlled"
+  },
+  {
+    "label": "ear",
+    "ipa": "ɪər",
+    "audioFile": "ear.m4a",
+    "example_word": "ear",
+    "group": "R-controlled"
+  },
+  {
+    "label": "ure",
+    "ipa": "ʊər",
+    "audioFile": "ure.m4a",
+    "example_word": "cure",
+    "group": "R-controlled"
+  }
+]

@@ -1,0 +1,7 @@
+group_id,group_name,phoneme,symbol,example_word,audio_file,feature_tip
+1,Voiceless stop,/p/,p,pen,p.mp3,Feel the air! 💨
+1,Voiceless stop,/t/,t,top,t.mp3,Feel the air! 💨
+1,Voiceless stop,/k/,k,cat,k.mp3,Feel the air! 💨
+2,Voiced stop,/b/,b,bag,b.mp3,No air! 🚫
+2,Voiced stop,/d/,d,dog,d.mp3,No air! 🚫
+2,Voiced stop,/g/,g,go,g.mp3,No air! 🚫

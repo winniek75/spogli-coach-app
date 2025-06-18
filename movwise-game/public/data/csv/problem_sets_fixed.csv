@@ -1,0 +1,70 @@
+set_id,level,eiken_level,category,target_sentence,hint_ja,words_pool,visual_theme,difficulty_score
+1,beginner,5,be_verb,I am happy,私は幸せです,"[{""word"":""I"",""position"":""subject""},{""word"":""am"",""position"":""verb""},{""word"":""happy"",""position"":""object""}]",happiness,1
+2,beginner,5,be_verb,You are sad,あなたは悲しいです,"[{""word"":""You"",""position"":""subject""},{""word"":""are"",""position"":""verb""},{""word"":""sad"",""position"":""object""}]",emotion,1
+3,beginner,5,be_verb,He is hungry,彼はお腹がすいています,"[{""word"":""He"",""position"":""subject""},{""word"":""is"",""position"":""verb""},{""word"":""hungry"",""position"":""object""}]",food,2
+4,beginner,5,be_verb,She is tired,彼女は疲れています,"[{""word"":""She"",""position"":""subject""},{""word"":""is"",""position"":""verb""},{""word"":""tired"",""position"":""object""}]",rest,2
+5,beginner,5,be_verb,It is hot,それは暑いです,"[{""word"":""It"",""position"":""subject""},{""word"":""is"",""position"":""verb""},{""word"":""hot"",""position"":""object""}]",weather,2
+6,beginner,5,be_verb,We are busy,私たちは忙しいです,"[{""word"":""We"",""position"":""subject""},{""word"":""are"",""position"":""verb""},{""word"":""busy"",""position"":""object""}]",work,3
+7,beginner,5,be_verb,They are cold,彼らは寒いです,"[{""word"":""They"",""position"":""subject""},{""word"":""are"",""position"":""verb""},{""word"":""cold"",""position"":""object""}]",weather,2
+8,beginner,5,be_verb,I am a student,私は学生です,"[{""word"":""I"",""position"":""subject""},{""word"":""am"",""position"":""verb""},{""word"":""a student"",""position"":""object""}]",education,2
+9,beginner,5,be_verb,You are a teacher,あなたは先生です,"[{""word"":""You"",""position"":""subject""},{""word"":""are"",""position"":""verb""},{""word"":""a teacher"",""position"":""object""}]",education,2
+10,beginner,5,be_verb,He is a doctor,彼は医者です,"[{""word"":""He"",""position"":""subject""},{""word"":""is"",""position"":""verb""},{""word"":""a doctor"",""position"":""object""}]",medical,3
+11,beginner,5,be_verb,She is here,彼女はここにいます,"[{""word"":""She"",""position"":""subject""},{""word"":""is"",""position"":""verb""},{""word"":""here"",""position"":""object""}]",location,2
+12,beginner,5,be_verb,It is there,それはそこにあります,"[{""word"":""It"",""position"":""subject""},{""word"":""is"",""position"":""verb""},{""word"":""there"",""position"":""object""}]",location,2
+13,beginner,5,be_verb,We are at home,私たちは家にいます,"[{""word"":""We"",""position"":""subject""},{""word"":""are"",""position"":""verb""},{""word"":""at home"",""position"":""object""}]",home,3
+14,beginner,5,be_verb,They are at school,彼らは学校にいます,"[{""word"":""They"",""position"":""subject""},{""word"":""are"",""position"":""verb""},{""word"":""at school"",""position"":""object""}]",school,3
+15,beginner,5,be_verb,I am big,私は大きいです,"[{""word"":""I"",""position"":""subject""},{""word"":""am"",""position"":""verb""},{""word"":""big"",""position"":""object""}]",size,1
+16,beginner,5,be_verb,You are small,あなたは小さいです,"[{""word"":""You"",""position"":""subject""},{""word"":""are"",""position"":""verb""},{""word"":""small"",""position"":""object""}]",size,1
+17,beginner,5,be_verb,He is good,彼は良いです,"[{""word"":""He"",""position"":""subject""},{""word"":""is"",""position"":""verb""},{""word"":""good"",""position"":""object""}]",quality,1
+18,beginner,5,be_verb,She is a cat,彼女は猫です,"[{""word"":""She"",""position"":""subject""},{""word"":""is"",""position"":""verb""},{""word"":""a cat"",""position"":""object""}]",animals,2
+19,beginner,5,be_verb,It is a dog,それは犬です,"[{""word"":""It"",""position"":""subject""},{""word"":""is"",""position"":""verb""},{""word"":""a dog"",""position"":""object""}]",animals,2
+20,beginner,5,be_verb,We are in Japan,私たちは日本にいます,"[{""word"":""We"",""position"":""subject""},{""word"":""are"",""position"":""verb""},{""word"":""in Japan"",""position"":""object""}]",travel,3
+
+21,beginner,5,general_verb,I like apples,私はりんごが好きです,"[{""word"":""I"",""position"":""subject""},{""word"":""like"",""position"":""verb""},{""word"":""apples"",""position"":""object""}]",fruit,1
+22,beginner,5,general_verb,You eat apples,あなたはりんごを食べます,"[{""word"":""You"",""position"":""subject""},{""word"":""eat"",""position"":""verb""},{""word"":""apples"",""position"":""object""}]",food,1
+23,beginner,5,general_verb,He likes cats,彼は猫が好きです,"[{""word"":""He"",""position"":""subject""},{""word"":""likes"",""position"":""verb""},{""word"":""cats"",""position"":""object""}]",pets,2
+24,beginner,5,general_verb,She plays soccer,彼女はサッカーをします,"[{""word"":""She"",""position"":""subject""},{""word"":""plays"",""position"":""verb""},{""word"":""soccer"",""position"":""object""}]",sports,2
+25,beginner,5,general_verb,We watch TV,私たちはテレビを見ます,"[{""word"":""We"",""position"":""subject""},{""word"":""watch"",""position"":""verb""},{""word"":""TV"",""position"":""object""}]",entertainment,2
+26,beginner,5,general_verb,They study English,彼らは英語を勉強します,"[{""word"":""They"",""position"":""subject""},{""word"":""study"",""position"":""verb""},{""word"":""English"",""position"":""object""}]",education,2
+27,beginner,5,general_verb,I watch TV,私はテレビを見ます,"[{""word"":""I"",""position"":""subject""},{""word"":""watch"",""position"":""verb""},{""word"":""TV"",""position"":""object""}]",entertainment,1
+28,beginner,5,general_verb,You like music,あなたは音楽が好きです,"[{""word"":""You"",""position"":""subject""},{""word"":""like"",""position"":""verb""},{""word"":""music"",""position"":""object""}]",entertainment,2
+29,beginner,5,general_verb,He studies homework,彼は宿題を勉強します,"[{""word"":""He"",""position"":""subject""},{""word"":""studies"",""position"":""verb""},{""word"":""homework"",""position"":""object""}]",education,3
+30,beginner,5,general_verb,She eats apples,彼女はりんごを食べます,"[{""word"":""She"",""position"":""subject""},{""word"":""eats"",""position"":""verb""},{""word"":""apples"",""position"":""object""}]",food,2
+31,beginner,5,general_verb,We like dogs,私たちは犬が好きです,"[{""word"":""We"",""position"":""subject""},{""word"":""like"",""position"":""verb""},{""word"":""dogs"",""position"":""object""}]",pets,1
+32,beginner,5,general_verb,They watch books,彼らは本を見ます,"[{""word"":""They"",""position"":""subject""},{""word"":""watch"",""position"":""verb""},{""word"":""books"",""position"":""object""}]",reading,2
+
+33,intermediate,4,question,What is this?,これは何ですか？,"[{""word"":""What"",""position"":""subject""},{""word"":""is"",""position"":""verb""},{""word"":""this"",""position"":""object""}]",introduction,2
+34,intermediate,4,question,Where are you?,あなたはどこにいますか？,"[{""word"":""Where"",""position"":""subject""},{""word"":""are"",""position"":""verb""},{""word"":""you"",""position"":""object""}]",location,3
+35,intermediate,4,question,When do you study?,いつ勉強しますか？,"[{""word"":""When"",""position"":""subject""},{""word"":""do"",""position"":""verb""},{""word"":""you study"",""position"":""object""}]",time,4
+36,intermediate,4,question,Who is he?,彼は誰ですか？,"[{""word"":""Who"",""position"":""subject""},{""word"":""is"",""position"":""verb""},{""word"":""he"",""position"":""object""}]",people,3
+37,intermediate,4,question,How are you?,元気ですか？,"[{""word"":""How"",""position"":""subject""},{""word"":""are"",""position"":""verb""},{""word"":""you"",""position"":""object""}]",greeting,2
+38,intermediate,4,question,What is the time?,何時ですか？,"[{""word"":""What"",""position"":""subject""},{""word"":""is"",""position"":""verb""},{""word"":""the time"",""position"":""object""}]",time,4
+39,intermediate,4,question,Who is that?,それは誰ですか？,"[{""word"":""Who"",""position"":""subject""},{""word"":""is"",""position"":""verb""},{""word"":""that"",""position"":""object""}]",people,3
+40,intermediate,4,question,Where is your name?,あなたの名前はどこですか？,"[{""word"":""Where"",""position"":""subject""},{""word"":""is"",""position"":""verb""},{""word"":""your name"",""position"":""object""}]",introduction,4
+
+41,intermediate,4,past_tense,I was happy yesterday,昨日私は幸せでした,"[{""word"":""I"",""position"":""subject""},{""word"":""was"",""position"":""verb""},{""word"":""happy yesterday"",""position"":""object""}]",nostalgia,3
+42,intermediate,4,past_tense,You were sad last week,先週あなたは悲しかったです,"[{""word"":""You"",""position"":""subject""},{""word"":""were"",""position"":""verb""},{""word"":""sad last week"",""position"":""object""}]",memory,4
+43,intermediate,4,past_tense,He played soccer yesterday,彼は昨日サッカーをしました,"[{""word"":""He"",""position"":""subject""},{""word"":""played"",""position"":""verb""},{""word"":""soccer yesterday"",""position"":""object""}]",sports,4
+44,intermediate,4,past_tense,She studied English last month,彼女は先月英語を勉強しました,"[{""word"":""She"",""position"":""subject""},{""word"":""studied"",""position"":""verb""},{""word"":""English last month"",""position"":""object""}]",education,5
+45,intermediate,4,past_tense,We watched TV yesterday,私たちは昨日テレビを見ました,"[{""word"":""We"",""position"":""subject""},{""word"":""watched"",""position"":""verb""},{""word"":""TV yesterday"",""position"":""object""}]",entertainment,4
+46,intermediate,4,past_tense,They went to school yesterday,彼らは昨日学校に行きました,"[{""word"":""They"",""position"":""subject""},{""word"":""went"",""position"":""verb""},{""word"":""to school yesterday"",""position"":""object""}]",school,4
+47,intermediate,4,past_tense,I came home yesterday,私は昨日家に帰りました,"[{""word"":""I"",""position"":""subject""},{""word"":""came"",""position"":""verb""},{""word"":""home yesterday"",""position"":""object""}]",home,4
+48,intermediate,4,past_tense,You had breakfast yesterday,あなたは昨日朝食を食べました,"[{""word"":""You"",""position"":""subject""},{""word"":""had"",""position"":""verb""},{""word"":""breakfast yesterday"",""position"":""object""}]",food,4
+49,intermediate,4,past_tense,He was at the park,彼は公園にいました,"[{""word"":""He"",""position"":""subject""},{""word"":""was"",""position"":""verb""},{""word"":""at the park"",""position"":""object""}]",outdoor,3
+50,intermediate,4,past_tense,She was at school,彼女は学校にいました,"[{""word"":""She"",""position"":""subject""},{""word"":""was"",""position"":""verb""},{""word"":""at school"",""position"":""object""}]",education,3
+
+51,advanced,3,modal,I can swim,私は泳ぐことができます,"[{""word"":""I"",""position"":""subject""},{""word"":""can"",""position"":""verb""},{""word"":""swim"",""position"":""object""}]",ability,3
+52,advanced,3,modal,You will come tomorrow,あなたは明日来るでしょう,"[{""word"":""You"",""position"":""subject""},{""word"":""will"",""position"":""verb""},{""word"":""come tomorrow"",""position"":""object""}]",future,3
+53,advanced,3,modal,He should study harder,彼はもっと一生懸命勉強すべきです,"[{""word"":""He"",""position"":""subject""},{""word"":""should"",""position"":""verb""},{""word"":""study harder"",""position"":""object""}]",advice,5
+54,advanced,3,modal,She must finish homework,彼女は宿題を終えなければなりません,"[{""word"":""She"",""position"":""subject""},{""word"":""must"",""position"":""verb""},{""word"":""finish homework"",""position"":""object""}]",obligation,5
+55,advanced,3,modal,We could dance yesterday,私たちは昨日踊ることができました,"[{""word"":""We"",""position"":""subject""},{""word"":""could"",""position"":""verb""},{""word"":""dance yesterday"",""position"":""object""}]",past_ability,4
+56,advanced,3,modal,They would like coffee,彼らはコーヒーが欲しいでしょう,"[{""word"":""They"",""position"":""subject""},{""word"":""would"",""position"":""verb""},{""word"":""like coffee"",""position"":""object""}]",polite,4
+
+57,advanced,3,perfect,I have been to Tokyo,私は東京に行ったことがあります,"[{""word"":""I"",""position"":""subject""},{""word"":""have"",""position"":""verb""},{""word"":""been to Tokyo"",""position"":""object""}]",experience,5
+58,advanced,3,perfect,She has gone home,彼女は家に帰りました,"[{""word"":""She"",""position"":""subject""},{""word"":""has"",""position"":""verb""},{""word"":""gone home"",""position"":""object""}]",completion,5
+59,advanced,3,perfect,He has done homework,彼は宿題をしました,"[{""word"":""He"",""position"":""subject""},{""word"":""has"",""position"":""verb""},{""word"":""done homework"",""position"":""object""}]",completion,5
+60,advanced,3,perfect,We have seen that movie,私たちはその映画を見たことがあります,"[{""word"":""We"",""position"":""subject""},{""word"":""have"",""position"":""verb""},{""word"":""seen that movie"",""position"":""object""}]",experience,5
+61,advanced,3,perfect,They have already finished,彼らはすでに終えました,"[{""word"":""They"",""position"":""subject""},{""word"":""have"",""position"":""verb""},{""word"":""already finished"",""position"":""object""}]",completion,5
+62,advanced,3,perfect,I have just arrived,私はちょうど到着しました,"[{""word"":""I"",""position"":""subject""},{""word"":""have"",""position"":""verb""},{""word"":""just arrived"",""position"":""object""}]",recent,4
+63,advanced,3,perfect,You have never been there,あなたはそこに行ったことがありません,"[{""word"":""You"",""position"":""subject""},{""word"":""have"",""position"":""verb""},{""word"":""never been there"",""position"":""object""}]",experience,5
+64,advanced,3,perfect,She has always helped others,彼女はいつも他人を助けてきました,"[{""word"":""She"",""position"":""subject""},{""word"":""has"",""position"":""verb""},{""word"":""always helped others"",""position"":""object""}]",kindness,5

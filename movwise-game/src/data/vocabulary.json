@@ -1,0 +1,4052 @@
+{
+  "categories": {
+    "kids": {
+      "name": "子供向け",
+      "description": "子供向けの基本的な英単語",
+      "levels": {
+        "beginner": [
+          {
+            "english": "apple",
+            "japanese": "りんご",
+            "category": "food",
+            "distractors": [
+              "orange",
+              "banana",
+              "grape"
+            ],
+            "image": "/src/assets/images/vocabulary/apple.jpg"
+          },
+          {
+            "english": "cat",
+            "japanese": "猫",
+            "category": "animal",
+            "distractors": [
+              "dog",
+              "bird",
+              "fish"
+            ],
+            "image": "/src/assets/images/vocabulary/cat.jpg"
+          },
+          {
+            "english": "book",
+            "japanese": "本",
+            "category": "object",
+            "distractors": [
+              "pen",
+              "pencil",
+              "notebook"
+            ],
+            "image": "/src/assets/images/vocabulary/book.jpg"
+          }
+        ],
+        "intermediate": [
+          {
+            "english": "garden",
+            "japanese": "庭",
+            "category": "place",
+            "distractors": [
+              "park",
+              "beach",
+              "forest"
+            ],
+            "image": "/src/assets/images/vocabulary/garden.jpg"
+          },
+          {
+            "english": "computer",
+            "japanese": "コンピュータ",
+            "category": "technology",
+            "distractors": [
+              "phone",
+              "tablet",
+              "camera"
+            ],
+            "image": "/src/assets/images/vocabulary/computer.jpg"
+          }
+        ],
+        "advanced": [
+          {
+            "english": "architecture",
+            "japanese": "建築",
+            "category": "art",
+            "distractors": [
+              "design",
+              "engineering",
+              "construction"
+            ],
+            "image": "/src/assets/images/vocabulary/architecture.jpg"
+          },
+          {
+            "english": "philosophy",
+            "japanese": "哲学",
+            "category": "academic",
+            "distractors": [
+              "psychology",
+              "sociology",
+              "anthropology"
+            ],
+            "image": "/src/assets/images/vocabulary/philosophy.jpg"
+          }
+        ]
+      }
+    },
+    "eiken": {
+      "name": "英検",
+      "description": "英検対策用の単語",
+      "levels": {
+        "grade5": [
+          {
+            "english": "book",
+            "japanese": "本",
+            "category": "object",
+            "distractors": [
+              "pen",
+              "pencil",
+              "notebook"
+            ],
+            "image": "/src/assets/images/vocabulary/book.jpg"
+          },
+          {
+            "english": "cat",
+            "japanese": "猫",
+            "category": "animal",
+            "distractors": [
+              "dog",
+              "bird",
+              "fish"
+            ],
+            "image": "/src/assets/images/vocabulary/cat.jpg"
+          },
+          {
+            "english": "apple",
+            "japanese": "りんご",
+            "category": "food",
+            "distractors": [
+              "orange",
+              "banana",
+              "grape"
+            ],
+            "image": "/src/assets/images/vocabulary/apple.jpg"
+          },
+          {
+            "english": "sun",
+            "japanese": "太陽",
+            "category": "nature",
+            "distractors": [
+              "moon",
+              "star",
+              "cloud"
+            ]
+          },
+          {
+            "english": "tree",
+            "japanese": "木",
+            "category": "nature",
+            "distractors": [
+              "flower",
+              "grass",
+              "leaf"
+            ]
+          },
+          {
+            "english": "ball",
+            "japanese": "ボール",
+            "category": "toy",
+            "distractors": [
+              "doll",
+              "game",
+              "puzzle"
+            ]
+          },
+          {
+            "english": "house",
+            "japanese": "家",
+            "category": "building",
+            "distractors": [
+              "school",
+              "hospital",
+              "store"
+            ]
+          },
+          {
+            "english": "car",
+            "japanese": "車",
+            "category": "vehicle",
+            "distractors": [
+              "bus",
+              "train",
+              "plane"
+            ]
+          },
+          {
+            "english": "water",
+            "japanese": "水",
+            "category": "drink",
+            "distractors": [
+              "milk",
+              "juice",
+              "coffee"
+            ]
+          },
+          {
+            "english": "happy",
+            "japanese": "嬉しい",
+            "category": "emotion",
+            "distractors": [
+              "sad",
+              "angry",
+              "tired"
+            ]
+          },
+          {
+            "english": "pen",
+            "japanese": "ペン",
+            "category": "object",
+            "distractors": [
+              "pencil",
+              "book",
+              "notebook"
+            ]
+          },
+          {
+            "english": "dog",
+            "japanese": "犬",
+            "category": "animal",
+            "distractors": [
+              "cat",
+              "bird",
+              "fish"
+            ]
+          },
+          {
+            "english": "orange",
+            "japanese": "オレンジ",
+            "category": "food",
+            "distractors": [
+              "apple",
+              "banana",
+              "grape"
+            ]
+          },
+          {
+            "english": "moon",
+            "japanese": "月",
+            "category": "nature",
+            "distractors": [
+              "sun",
+              "star",
+              "cloud"
+            ]
+          },
+          {
+            "english": "flower",
+            "japanese": "花",
+            "category": "nature",
+            "distractors": [
+              "tree",
+              "grass",
+              "leaf"
+            ]
+          },
+          {
+            "english": "doll",
+            "japanese": "人形",
+            "category": "toy",
+            "distractors": [
+              "ball",
+              "game",
+              "puzzle"
+            ]
+          },
+          {
+            "english": "school",
+            "japanese": "学校",
+            "category": "building",
+            "distractors": [
+              "house",
+              "hospital",
+              "store"
+            ]
+          },
+          {
+            "english": "bus",
+            "japanese": "バス",
+            "category": "vehicle",
+            "distractors": [
+              "car",
+              "train",
+              "plane"
+            ]
+          },
+          {
+            "english": "milk",
+            "japanese": "牛乳",
+            "category": "drink",
+            "distractors": [
+              "water",
+              "juice",
+              "coffee"
+            ]
+          },
+          {
+            "english": "sad",
+            "japanese": "悲しい",
+            "category": "emotion",
+            "distractors": [
+              "happy",
+              "angry",
+              "tired"
+            ]
+          },
+          {
+            "english": "pencil",
+            "japanese": "鉛筆",
+            "category": "object",
+            "distractors": [
+              "pen",
+              "book",
+              "notebook"
+            ]
+          },
+          {
+            "english": "bird",
+            "japanese": "鳥",
+            "category": "animal",
+            "distractors": [
+              "cat",
+              "dog",
+              "fish"
+            ]
+          },
+          {
+            "english": "banana",
+            "japanese": "バナナ",
+            "category": "food",
+            "distractors": [
+              "apple",
+              "orange",
+              "grape"
+            ]
+          },
+          {
+            "english": "star",
+            "japanese": "星",
+            "category": "nature",
+            "distractors": [
+              "sun",
+              "moon",
+              "cloud"
+            ]
+          },
+          {
+            "english": "grass",
+            "japanese": "草",
+            "category": "nature",
+            "distractors": [
+              "tree",
+              "flower",
+              "leaf"
+            ]
+          },
+          {
+            "english": "game",
+            "japanese": "ゲーム",
+            "category": "toy",
+            "distractors": [
+              "ball",
+              "doll",
+              "puzzle"
+            ]
+          },
+          {
+            "english": "hospital",
+            "japanese": "病院",
+            "category": "building",
+            "distractors": [
+              "house",
+              "school",
+              "store"
+            ]
+          },
+          {
+            "english": "train",
+            "japanese": "電車",
+            "category": "vehicle",
+            "distractors": [
+              "car",
+              "bus",
+              "plane"
+            ]
+          },
+          {
+            "english": "juice",
+            "japanese": "ジュース",
+            "category": "drink",
+            "distractors": [
+              "water",
+              "milk",
+              "coffee"
+            ]
+          },
+          {
+            "english": "angry",
+            "japanese": "怒っている",
+            "category": "emotion",
+            "distractors": [
+              "happy",
+              "sad",
+              "tired"
+            ]
+          },
+          {
+            "english": "notebook",
+            "japanese": "ノート",
+            "category": "object",
+            "distractors": [
+              "pen",
+              "pencil",
+              "book"
+            ]
+          },
+          {
+            "english": "fish",
+            "japanese": "魚",
+            "category": "animal",
+            "distractors": [
+              "cat",
+              "dog",
+              "bird"
+            ]
+          },
+          {
+            "english": "grape",
+            "japanese": "ぶどう",
+            "category": "food",
+            "distractors": [
+              "apple",
+              "orange",
+              "banana"
+            ]
+          },
+          {
+            "english": "cloud",
+            "japanese": "雲",
+            "category": "nature",
+            "distractors": [
+              "sun",
+              "moon",
+              "star"
+            ]
+          },
+          {
+            "english": "leaf",
+            "japanese": "葉",
+            "category": "nature",
+            "distractors": [
+              "tree",
+              "flower",
+              "grass"
+            ]
+          },
+          {
+            "english": "puzzle",
+            "japanese": "パズル",
+            "category": "toy",
+            "distractors": [
+              "ball",
+              "doll",
+              "game"
+            ]
+          },
+          {
+            "english": "store",
+            "japanese": "店",
+            "category": "building",
+            "distractors": [
+              "house",
+              "school",
+              "hospital"
+            ]
+          },
+          {
+            "english": "plane",
+            "japanese": "飛行機",
+            "category": "vehicle",
+            "distractors": [
+              "car",
+              "bus",
+              "train"
+            ]
+          },
+          {
+            "english": "coffee",
+            "japanese": "コーヒー",
+            "category": "drink",
+            "distractors": [
+              "water",
+              "milk",
+              "juice"
+            ]
+          },
+          {
+            "english": "tired",
+            "japanese": "疲れた",
+            "category": "emotion",
+            "distractors": [
+              "happy",
+              "sad",
+              "angry"
+            ]
+          },
+          {
+            "english": "ruler",
+            "japanese": "定規",
+            "category": "object",
+            "distractors": [
+              "pen",
+              "pencil",
+              "book"
+            ]
+          },
+          {
+            "english": "rabbit",
+            "japanese": "うさぎ",
+            "category": "animal",
+            "distractors": [
+              "cat",
+              "dog",
+              "bird"
+            ]
+          },
+          {
+            "english": "strawberry",
+            "japanese": "いちご",
+            "category": "food",
+            "distractors": [
+              "apple",
+              "orange",
+              "banana"
+            ]
+          },
+          {
+            "english": "rain",
+            "japanese": "雨",
+            "category": "nature",
+            "distractors": [
+              "sun",
+              "moon",
+              "star"
+            ]
+          },
+          {
+            "english": "mountain",
+            "japanese": "山",
+            "category": "nature",
+            "distractors": [
+              "tree",
+              "flower",
+              "grass"
+            ]
+          },
+          {
+            "english": "robot",
+            "japanese": "ロボット",
+            "category": "toy",
+            "distractors": [
+              "ball",
+              "doll",
+              "game"
+            ]
+          },
+          {
+            "english": "park",
+            "japanese": "公園",
+            "category": "building",
+            "distractors": [
+              "house",
+              "school",
+              "hospital"
+            ]
+          },
+          {
+            "english": "bicycle",
+            "japanese": "自転車",
+            "category": "vehicle",
+            "distractors": [
+              "car",
+              "bus",
+              "train"
+            ]
+          },
+          {
+            "english": "tea",
+            "japanese": "お茶",
+            "category": "drink",
+            "distractors": [
+              "water",
+              "milk",
+              "juice"
+            ]
+          },
+          {
+            "english": "excited",
+            "japanese": "興奮した",
+            "category": "emotion",
+            "distractors": [
+              "happy",
+              "sad",
+              "angry"
+            ]
+          },
+          {
+            "english": "scissors",
+            "japanese": "はさみ",
+            "category": "object",
+            "distractors": [
+              "pen",
+              "pencil",
+              "book"
+            ]
+          },
+          {
+            "english": "monkey",
+            "japanese": "猿",
+            "category": "animal",
+            "distractors": [
+              "cat",
+              "dog",
+              "bird"
+            ]
+          },
+          {
+            "english": "melon",
+            "japanese": "メロン",
+            "category": "food",
+            "distractors": [
+              "apple",
+              "orange",
+              "banana"
+            ]
+          },
+          {
+            "english": "snow",
+            "japanese": "雪",
+            "category": "nature",
+            "distractors": [
+              "sun",
+              "moon",
+              "star"
+            ]
+          },
+          {
+            "english": "river",
+            "japanese": "川",
+            "category": "nature",
+            "distractors": [
+              "tree",
+              "flower",
+              "grass"
+            ]
+          },
+          {
+            "english": "kite",
+            "japanese": "凧",
+            "category": "toy",
+            "distractors": [
+              "ball",
+              "doll",
+              "game"
+            ]
+          },
+          {
+            "english": "library",
+            "japanese": "図書館",
+            "category": "building",
+            "distractors": [
+              "house",
+              "school",
+              "hospital"
+            ]
+          },
+          {
+            "english": "ship",
+            "japanese": "船",
+            "category": "vehicle",
+            "distractors": [
+              "car",
+              "bus",
+              "train"
+            ]
+          },
+          {
+            "english": "soda",
+            "japanese": "ソーダ",
+            "category": "drink",
+            "distractors": [
+              "water",
+              "milk",
+              "juice"
+            ]
+          },
+          {
+            "english": "surprised",
+            "japanese": "驚いた",
+            "category": "emotion",
+            "distractors": [
+              "happy",
+              "sad",
+              "angry"
+            ]
+          }
+        ],
+        "grade4": [
+          {
+            "english": "beautiful",
+            "japanese": "美しい",
+            "category": "adjective",
+            "distractors": [
+              "pretty",
+              "lovely",
+              "wonderful"
+            ]
+          },
+          {
+            "english": "garden",
+            "japanese": "庭",
+            "category": "place",
+            "distractors": [
+              "park",
+              "beach",
+              "forest"
+            ],
+            "image": "/src/assets/images/vocabulary/garden.jpg"
+          },
+          {
+            "english": "computer",
+            "japanese": "コンピュータ",
+            "category": "technology",
+            "distractors": [
+              "phone",
+              "tablet",
+              "camera"
+            ],
+            "image": "/src/assets/images/vocabulary/computer.jpg"
+          },
+          {
+            "english": "healthy",
+            "japanese": "健康的な",
+            "category": "health",
+            "distractors": [
+              "sick",
+              "tired",
+              "weak"
+            ]
+          },
+          {
+            "english": "running",
+            "japanese": "走る",
+            "category": "activity",
+            "distractors": [
+              "walking",
+              "jumping",
+              "swimming"
+            ]
+          },
+          {
+            "english": "interesting",
+            "japanese": "興味深い",
+            "category": "adjective",
+            "distractors": [
+              "exciting",
+              "amazing",
+              "wonderful"
+            ]
+          },
+          {
+            "english": "restaurant",
+            "japanese": "レストラン",
+            "category": "place",
+            "distractors": [
+              "cafe",
+              "hotel",
+              "market"
+            ]
+          },
+          {
+            "english": "smartphone",
+            "japanese": "スマートフォン",
+            "category": "technology",
+            "distractors": [
+              "computer",
+              "tablet",
+              "camera"
+            ]
+          },
+          {
+            "english": "exercise",
+            "japanese": "運動",
+            "category": "health",
+            "distractors": [
+              "sports",
+              "fitness",
+              "training"
+            ]
+          },
+          {
+            "english": "swimming",
+            "japanese": "泳ぐ",
+            "category": "activity",
+            "distractors": [
+              "running",
+              "jumping",
+              "walking"
+            ]
+          },
+          {
+            "english": "difficult",
+            "japanese": "難しい",
+            "category": "adjective",
+            "distractors": [
+              "hard",
+              "complex",
+              "challenging"
+            ]
+          },
+          {
+            "english": "museum",
+            "japanese": "博物館",
+            "category": "place",
+            "distractors": [
+              "gallery",
+              "exhibition",
+              "library"
+            ]
+          },
+          {
+            "english": "internet",
+            "japanese": "インターネット",
+            "category": "technology",
+            "distractors": [
+              "network",
+              "website",
+              "online"
+            ]
+          },
+          {
+            "english": "medicine",
+            "japanese": "薬",
+            "category": "health",
+            "distractors": [
+              "drug",
+              "pill",
+              "treatment"
+            ]
+          },
+          {
+            "english": "dancing",
+            "japanese": "踊る",
+            "category": "activity",
+            "distractors": [
+              "singing",
+              "playing",
+              "acting"
+            ]
+          },
+          {
+            "english": "expensive",
+            "japanese": "高価な",
+            "category": "adjective",
+            "distractors": [
+              "costly",
+              "pricey",
+              "valuable"
+            ]
+          },
+          {
+            "english": "station",
+            "japanese": "駅",
+            "category": "place",
+            "distractors": [
+              "terminal",
+              "depot",
+              "stop"
+            ]
+          },
+          {
+            "english": "software",
+            "japanese": "ソフトウェア",
+            "category": "technology",
+            "distractors": [
+              "program",
+              "application",
+              "system"
+            ]
+          },
+          {
+            "english": "hospital",
+            "japanese": "病院",
+            "category": "health",
+            "distractors": [
+              "clinic",
+              "medical",
+              "treatment"
+            ]
+          },
+          {
+            "english": "singing",
+            "japanese": "歌う",
+            "category": "activity",
+            "distractors": [
+              "dancing",
+              "playing",
+              "acting"
+            ]
+          },
+          {
+            "english": "important",
+            "japanese": "重要な",
+            "category": "adjective",
+            "distractors": [
+              "significant",
+              "essential",
+              "crucial"
+            ]
+          },
+          {
+            "english": "airport",
+            "japanese": "空港",
+            "category": "place",
+            "distractors": [
+              "terminal",
+              "runway",
+              "hangar"
+            ]
+          },
+          {
+            "english": "database",
+            "japanese": "データベース",
+            "category": "technology",
+            "distractors": [
+              "system",
+              "storage",
+              "server"
+            ]
+          },
+          {
+            "english": "doctor",
+            "japanese": "医者",
+            "category": "health",
+            "distractors": [
+              "nurse",
+              "patient",
+              "medical"
+            ]
+          },
+          {
+            "english": "painting",
+            "japanese": "絵を描く",
+            "category": "activity",
+            "distractors": [
+              "drawing",
+              "sketching",
+              "art"
+            ]
+          },
+          {
+            "english": "necessary",
+            "japanese": "必要な",
+            "category": "adjective",
+            "distractors": [
+              "required",
+              "essential",
+              "needed"
+            ]
+          },
+          {
+            "english": "university",
+            "japanese": "大学",
+            "category": "place",
+            "distractors": [
+              "college",
+              "school",
+              "institution"
+            ]
+          },
+          {
+            "english": "hardware",
+            "japanese": "ハードウェア",
+            "category": "technology",
+            "distractors": [
+              "equipment",
+              "device",
+              "machine"
+            ]
+          },
+          {
+            "english": "patient",
+            "japanese": "患者",
+            "category": "health",
+            "distractors": [
+              "doctor",
+              "nurse",
+              "medical"
+            ]
+          },
+          {
+            "english": "reading",
+            "japanese": "読む",
+            "category": "activity",
+            "distractors": [
+              "writing",
+              "studying",
+              "learning"
+            ]
+          },
+          {
+            "english": "possible",
+            "japanese": "可能な",
+            "category": "adjective",
+            "distractors": [
+              "feasible",
+              "achievable",
+              "attainable"
+            ]
+          },
+          {
+            "english": "supermarket",
+            "japanese": "スーパーマーケット",
+            "category": "place",
+            "distractors": [
+              "market",
+              "store",
+              "shop"
+            ]
+          },
+          {
+            "english": "network",
+            "japanese": "ネットワーク",
+            "category": "technology",
+            "distractors": [
+              "system",
+              "connection",
+              "link"
+            ]
+          },
+          {
+            "english": "nurse",
+            "japanese": "看護師",
+            "category": "health",
+            "distractors": [
+              "doctor",
+              "patient",
+              "medical"
+            ]
+          },
+          {
+            "english": "writing",
+            "japanese": "書く",
+            "category": "activity",
+            "distractors": [
+              "reading",
+              "typing",
+              "composing"
+            ]
+          },
+          {
+            "english": "different",
+            "japanese": "異なる",
+            "category": "adjective",
+            "distractors": [
+              "various",
+              "diverse",
+              "distinct"
+            ]
+          },
+          {
+            "english": "shopping",
+            "japanese": "買い物",
+            "category": "place",
+            "distractors": [
+              "market",
+              "store",
+              "mall"
+            ]
+          },
+          {
+            "english": "security",
+            "japanese": "セキュリティ",
+            "category": "technology",
+            "distractors": [
+              "safety",
+              "protection",
+              "defense"
+            ]
+          },
+          {
+            "english": "treatment",
+            "japanese": "治療",
+            "category": "health",
+            "distractors": [
+              "medicine",
+              "therapy",
+              "care"
+            ]
+          },
+          {
+            "english": "studying",
+            "japanese": "勉強する",
+            "category": "activity",
+            "distractors": [
+              "learning",
+              "reading",
+              "practicing"
+            ]
+          },
+          {
+            "english": "successful",
+            "japanese": "成功した",
+            "category": "adjective",
+            "distractors": [
+              "achieving",
+              "winning",
+              "prosperous"
+            ]
+          },
+          {
+            "english": "shopping",
+            "japanese": "ショッピング",
+            "category": "place",
+            "distractors": [
+              "market",
+              "store",
+              "mall"
+            ]
+          },
+          {
+            "english": "password",
+            "japanese": "パスワード",
+            "category": "technology",
+            "distractors": [
+              "code",
+              "key",
+              "security"
+            ]
+          },
+          {
+            "english": "recovery",
+            "japanese": "回復",
+            "category": "health",
+            "distractors": [
+              "healing",
+              "improvement",
+              "restoration"
+            ]
+          },
+          {
+            "english": "learning",
+            "japanese": "学ぶ",
+            "category": "activity",
+            "distractors": [
+              "studying",
+              "practicing",
+              "training"
+            ]
+          },
+          {
+            "english": "wonderful",
+            "japanese": "素晴らしい",
+            "category": "adjective",
+            "distractors": [
+              "amazing",
+              "excellent",
+              "fantastic"
+            ]
+          },
+          {
+            "english": "shopping",
+            "japanese": "ショッピング",
+            "category": "place",
+            "distractors": [
+              "market",
+              "store",
+              "mall"
+            ]
+          },
+          {
+            "english": "download",
+            "japanese": "ダウンロード",
+            "category": "technology",
+            "distractors": [
+              "upload",
+              "transfer",
+              "save"
+            ]
+          },
+          {
+            "english": "prevention",
+            "japanese": "予防",
+            "category": "health",
+            "distractors": [
+              "protection",
+              "avoidance",
+              "safety"
+            ]
+          },
+          {
+            "english": "practicing",
+            "japanese": "練習する",
+            "category": "activity",
+            "distractors": [
+              "training",
+              "rehearsing",
+              "exercising"
+            ]
+          },
+          {
+            "english": "excellent",
+            "japanese": "優秀な",
+            "category": "adjective",
+            "distractors": [
+              "outstanding",
+              "superb",
+              "exceptional"
+            ]
+          },
+          {
+            "english": "shopping",
+            "japanese": "ショッピング",
+            "category": "place",
+            "distractors": [
+              "market",
+              "store",
+              "mall"
+            ]
+          },
+          {
+            "english": "upload",
+            "japanese": "アップロード",
+            "category": "technology",
+            "distractors": [
+              "download",
+              "transfer",
+              "send"
+            ]
+          },
+          {
+            "english": "diagnosis",
+            "japanese": "診断",
+            "category": "health",
+            "distractors": [
+              "examination",
+              "assessment",
+              "evaluation"
+            ]
+          },
+          {
+            "english": "training",
+            "japanese": "訓練する",
+            "category": "activity",
+            "distractors": [
+              "practicing",
+              "exercising",
+              "learning"
+            ]
+          }
+        ],
+        "grade3": [
+          {
+            "english": "science",
+            "japanese": "科学",
+            "category": "academic",
+            "distractors": [
+              "math",
+              "history",
+              "art"
+            ]
+          },
+          {
+            "english": "freedom",
+            "japanese": "自由",
+            "category": "concept",
+            "distractors": [
+              "peace",
+              "love",
+              "happiness"
+            ]
+          },
+          {
+            "english": "company",
+            "japanese": "会社",
+            "category": "business",
+            "distractors": [
+              "school",
+              "hospital",
+              "store"
+            ]
+          },
+          {
+            "english": "music",
+            "japanese": "音楽",
+            "category": "art",
+            "distractors": [
+              "dance",
+              "theater",
+              "painting"
+            ]
+          },
+          {
+            "english": "medicine",
+            "japanese": "薬",
+            "category": "health",
+            "distractors": [
+              "doctor",
+              "hospital",
+              "nurse"
+            ]
+          },
+          {
+            "english": "history",
+            "japanese": "歴史",
+            "category": "academic",
+            "distractors": [
+              "science",
+              "math",
+              "geography"
+            ]
+          },
+          {
+            "english": "peace",
+            "japanese": "平和",
+            "category": "concept",
+            "distractors": [
+              "freedom",
+              "love",
+              "happiness"
+            ]
+          },
+          {
+            "english": "business",
+            "japanese": "ビジネス",
+            "category": "business",
+            "distractors": [
+              "company",
+              "office",
+              "work"
+            ]
+          },
+          {
+            "english": "dance",
+            "japanese": "ダンス",
+            "category": "art",
+            "distractors": [
+              "music",
+              "theater",
+              "painting"
+            ]
+          },
+          {
+            "english": "hospital",
+            "japanese": "病院",
+            "category": "health",
+            "distractors": [
+              "doctor",
+              "medicine",
+              "nurse"
+            ]
+          },
+          {
+            "english": "mathematics",
+            "japanese": "数学",
+            "category": "academic",
+            "distractors": [
+              "science",
+              "history",
+              "geography"
+            ]
+          },
+          {
+            "english": "love",
+            "japanese": "愛",
+            "category": "concept",
+            "distractors": [
+              "peace",
+              "freedom",
+              "happiness"
+            ]
+          },
+          {
+            "english": "office",
+            "japanese": "オフィス",
+            "category": "business",
+            "distractors": [
+              "company",
+              "business",
+              "work"
+            ]
+          },
+          {
+            "english": "theater",
+            "japanese": "劇場",
+            "category": "art",
+            "distractors": [
+              "music",
+              "dance",
+              "painting"
+            ]
+          },
+          {
+            "english": "doctor",
+            "japanese": "医者",
+            "category": "health",
+            "distractors": [
+              "hospital",
+              "medicine",
+              "nurse"
+            ]
+          },
+          {
+            "english": "geography",
+            "japanese": "地理",
+            "category": "academic",
+            "distractors": [
+              "science",
+              "history",
+              "math"
+            ]
+          },
+          {
+            "english": "happiness",
+            "japanese": "幸福",
+            "category": "concept",
+            "distractors": [
+              "peace",
+              "freedom",
+              "love"
+            ]
+          },
+          {
+            "english": "work",
+            "japanese": "仕事",
+            "category": "business",
+            "distractors": [
+              "company",
+              "office",
+              "business"
+            ]
+          },
+          {
+            "english": "painting",
+            "japanese": "絵画",
+            "category": "art",
+            "distractors": [
+              "music",
+              "dance",
+              "theater"
+            ]
+          },
+          {
+            "english": "nurse",
+            "japanese": "看護師",
+            "category": "health",
+            "distractors": [
+              "doctor",
+              "hospital",
+              "medicine"
+            ]
+          },
+          {
+            "english": "literature",
+            "japanese": "文学",
+            "category": "academic",
+            "distractors": [
+              "history",
+              "science",
+              "math"
+            ]
+          },
+          {
+            "english": "justice",
+            "japanese": "正義",
+            "category": "concept",
+            "distractors": [
+              "peace",
+              "freedom",
+              "love"
+            ]
+          },
+          {
+            "english": "industry",
+            "japanese": "産業",
+            "category": "business",
+            "distractors": [
+              "company",
+              "office",
+              "work"
+            ]
+          },
+          {
+            "english": "sculpture",
+            "japanese": "彫刻",
+            "category": "art",
+            "distractors": [
+              "music",
+              "dance",
+              "painting"
+            ]
+          },
+          {
+            "english": "clinic",
+            "japanese": "診療所",
+            "category": "health",
+            "distractors": [
+              "hospital",
+              "doctor",
+              "medicine"
+            ]
+          },
+          {
+            "english": "physics",
+            "japanese": "物理学",
+            "category": "academic",
+            "distractors": [
+              "science",
+              "math",
+              "chemistry"
+            ]
+          },
+          {
+            "english": "equality",
+            "japanese": "平等",
+            "category": "concept",
+            "distractors": [
+              "peace",
+              "freedom",
+              "justice"
+            ]
+          },
+          {
+            "english": "factory",
+            "japanese": "工場",
+            "category": "business",
+            "distractors": [
+              "company",
+              "office",
+              "industry"
+            ]
+          },
+          {
+            "english": "photography",
+            "japanese": "写真",
+            "category": "art",
+            "distractors": [
+              "painting",
+              "sculpture",
+              "design"
+            ]
+          },
+          {
+            "english": "pharmacy",
+            "japanese": "薬局",
+            "category": "health",
+            "distractors": [
+              "hospital",
+              "clinic",
+              "medicine"
+            ]
+          },
+          {
+            "english": "chemistry",
+            "japanese": "化学",
+            "category": "academic",
+            "distractors": [
+              "physics",
+              "biology",
+              "science"
+            ]
+          },
+          {
+            "english": "democracy",
+            "japanese": "民主主義",
+            "category": "concept",
+            "distractors": [
+              "freedom",
+              "equality",
+              "justice"
+            ]
+          },
+          {
+            "english": "market",
+            "japanese": "市場",
+            "category": "business",
+            "distractors": [
+              "company",
+              "factory",
+              "industry"
+            ]
+          },
+          {
+            "english": "design",
+            "japanese": "デザイン",
+            "category": "art",
+            "distractors": [
+              "photography",
+              "painting",
+              "sculpture"
+            ]
+          },
+          {
+            "english": "ambulance",
+            "japanese": "救急車",
+            "category": "health",
+            "distractors": [
+              "hospital",
+              "clinic",
+              "pharmacy"
+            ]
+          },
+          {
+            "english": "biology",
+            "japanese": "生物学",
+            "category": "academic",
+            "distractors": [
+              "chemistry",
+              "physics",
+              "science"
+            ]
+          },
+          {
+            "english": "liberty",
+            "japanese": "自由",
+            "category": "concept",
+            "distractors": [
+              "freedom",
+              "democracy",
+              "equality"
+            ]
+          },
+          {
+            "english": "store",
+            "japanese": "店",
+            "category": "business",
+            "distractors": [
+              "market",
+              "company",
+              "factory"
+            ]
+          },
+          {
+            "english": "architecture",
+            "japanese": "建築",
+            "category": "art",
+            "distractors": [
+              "design",
+              "sculpture",
+              "painting"
+            ],
+            "image": "/src/assets/images/vocabulary/architecture.jpg"
+          },
+          {
+            "english": "emergency",
+            "japanese": "緊急",
+            "category": "health",
+            "distractors": [
+              "ambulance",
+              "hospital",
+              "clinic"
+            ]
+          },
+          {
+            "english": "astronomy",
+            "japanese": "天文学",
+            "category": "academic",
+            "distractors": [
+              "physics",
+              "biology",
+              "chemistry"
+            ]
+          },
+          {
+            "english": "rights",
+            "japanese": "権利",
+            "category": "concept",
+            "distractors": [
+              "freedom",
+              "liberty",
+              "democracy"
+            ]
+          },
+          {
+            "english": "shop",
+            "japanese": "ショップ",
+            "category": "business",
+            "distractors": [
+              "store",
+              "market",
+              "company"
+            ]
+          },
+          {
+            "english": "fashion",
+            "japanese": "ファッション",
+            "category": "art",
+            "distractors": [
+              "design",
+              "architecture",
+              "photography"
+            ]
+          },
+          {
+            "english": "surgery",
+            "japanese": "手術",
+            "category": "health",
+            "distractors": [
+              "emergency",
+              "hospital",
+              "clinic"
+            ]
+          },
+          {
+            "english": "geology",
+            "japanese": "地質学",
+            "category": "academic",
+            "distractors": [
+              "astronomy",
+              "biology",
+              "chemistry"
+            ]
+          },
+          {
+            "english": "duty",
+            "japanese": "義務",
+            "category": "concept",
+            "distractors": [
+              "rights",
+              "responsibility",
+              "obligation"
+            ]
+          },
+          {
+            "english": "bank",
+            "japanese": "銀行",
+            "category": "business",
+            "distractors": [
+              "shop",
+              "store",
+              "market"
+            ]
+          },
+          {
+            "english": "cinema",
+            "japanese": "映画",
+            "category": "art",
+            "distractors": [
+              "theater",
+              "music",
+              "dance"
+            ]
+          },
+          {
+            "english": "treatment",
+            "japanese": "治療",
+            "category": "health",
+            "distractors": [
+              "surgery",
+              "medicine",
+              "emergency"
+            ]
+          },
+          {
+            "english": "psychology",
+            "japanese": "心理学",
+            "category": "academic",
+            "distractors": [
+              "biology",
+              "geology",
+              "astronomy"
+            ]
+          },
+          {
+            "english": "responsibility",
+            "japanese": "責任",
+            "category": "concept",
+            "distractors": [
+              "duty",
+              "obligation",
+              "rights"
+            ]
+          },
+          {
+            "english": "restaurant",
+            "japanese": "レストラン",
+            "category": "business",
+            "distractors": [
+              "shop",
+              "store",
+              "bank"
+            ]
+          },
+          {
+            "english": "opera",
+            "japanese": "オペラ",
+            "category": "art",
+            "distractors": [
+              "cinema",
+              "theater",
+              "music"
+            ]
+          },
+          {
+            "english": "recovery",
+            "japanese": "回復",
+            "category": "health",
+            "distractors": [
+              "treatment",
+              "surgery",
+              "emergency"
+            ]
+          },
+          {
+            "english": "sociology",
+            "japanese": "社会学",
+            "category": "academic",
+            "distractors": [
+              "psychology",
+              "geology",
+              "astronomy"
+            ]
+          },
+          {
+            "english": "obligation",
+            "japanese": "義務",
+            "category": "concept",
+            "distractors": [
+              "duty",
+              "responsibility",
+              "rights"
+            ]
+          },
+          {
+            "english": "hotel",
+            "japanese": "ホテル",
+            "category": "business",
+            "distractors": [
+              "restaurant",
+              "shop",
+              "store"
+            ]
+          },
+          {
+            "english": "ballet",
+            "japanese": "バレエ",
+            "category": "art",
+            "distractors": [
+              "opera",
+              "dance",
+              "music"
+            ]
+          },
+          {
+            "english": "prevention",
+            "japanese": "予防",
+            "category": "health",
+            "distractors": [
+              "recovery",
+              "treatment",
+              "surgery"
+            ]
+          }
+        ],
+        "pre2": [
+          {
+            "english": "philosophy",
+            "japanese": "哲学",
+            "category": "academic",
+            "distractors": [
+              "psychology",
+              "sociology",
+              "anthropology"
+            ],
+            "image": "/src/assets/images/vocabulary/philosophy.jpg"
+          },
+          {
+            "english": "architecture",
+            "japanese": "建築",
+            "category": "art",
+            "distractors": [
+              "design",
+              "engineering",
+              "construction"
+            ],
+            "image": "/src/assets/images/vocabulary/architecture.jpg"
+          },
+          {
+            "english": "democracy",
+            "japanese": "民主主義",
+            "category": "politics",
+            "distractors": [
+              "monarchy",
+              "dictatorship",
+              "oligarchy"
+            ]
+          },
+          {
+            "english": "sustainability",
+            "japanese": "持続可能性",
+            "category": "environment",
+            "distractors": [
+              "conservation",
+              "preservation",
+              "protection"
+            ]
+          },
+          {
+            "english": "innovation",
+            "japanese": "革新",
+            "category": "business",
+            "distractors": [
+              "improvement",
+              "development",
+              "progress"
+            ]
+          },
+          {
+            "english": "anthropology",
+            "japanese": "人類学",
+            "category": "academic",
+            "distractors": [
+              "sociology",
+              "psychology",
+              "philosophy"
+            ]
+          },
+          {
+            "english": "engineering",
+            "japanese": "工学",
+            "category": "art",
+            "distractors": [
+              "architecture",
+              "design",
+              "construction"
+            ]
+          },
+          {
+            "english": "monarchy",
+            "japanese": "君主制",
+            "category": "politics",
+            "distractors": [
+              "democracy",
+              "republic",
+              "dictatorship"
+            ]
+          },
+          {
+            "english": "conservation",
+            "japanese": "保全",
+            "category": "environment",
+            "distractors": [
+              "sustainability",
+              "preservation",
+              "protection"
+            ]
+          },
+          {
+            "english": "development",
+            "japanese": "開発",
+            "category": "business",
+            "distractors": [
+              "innovation",
+              "improvement",
+              "progress"
+            ]
+          },
+          {
+            "english": "sociology",
+            "japanese": "社会学",
+            "category": "academic",
+            "distractors": [
+              "anthropology",
+              "psychology",
+              "philosophy"
+            ]
+          },
+          {
+            "english": "construction",
+            "japanese": "建設",
+            "category": "art",
+            "distractors": [
+              "engineering",
+              "architecture",
+              "design"
+            ]
+          },
+          {
+            "english": "republic",
+            "japanese": "共和制",
+            "category": "politics",
+            "distractors": [
+              "monarchy",
+              "democracy",
+              "dictatorship"
+            ]
+          },
+          {
+            "english": "preservation",
+            "japanese": "保存",
+            "category": "environment",
+            "distractors": [
+              "conservation",
+              "sustainability",
+              "protection"
+            ]
+          },
+          {
+            "english": "improvement",
+            "japanese": "改善",
+            "category": "business",
+            "distractors": [
+              "development",
+              "innovation",
+              "progress"
+            ]
+          },
+          {
+            "english": "psychology",
+            "japanese": "心理学",
+            "category": "academic",
+            "distractors": [
+              "sociology",
+              "anthropology",
+              "philosophy"
+            ]
+          },
+          {
+            "english": "design",
+            "japanese": "デザイン",
+            "category": "art",
+            "distractors": [
+              "construction",
+              "engineering",
+              "architecture"
+            ]
+          },
+          {
+            "english": "dictatorship",
+            "japanese": "独裁制",
+            "category": "politics",
+            "distractors": [
+              "republic",
+              "monarchy",
+              "democracy"
+            ]
+          },
+          {
+            "english": "protection",
+            "japanese": "保護",
+            "category": "environment",
+            "distractors": [
+              "preservation",
+              "conservation",
+              "sustainability"
+            ]
+          },
+          {
+            "english": "progress",
+            "japanese": "進歩",
+            "category": "business",
+            "distractors": [
+              "improvement",
+              "development",
+              "innovation"
+            ]
+          },
+          {
+            "english": "economics",
+            "japanese": "経済学",
+            "category": "academic",
+            "distractors": [
+              "business",
+              "finance",
+              "commerce"
+            ]
+          },
+          {
+            "english": "sculpture",
+            "japanese": "彫刻",
+            "category": "art",
+            "distractors": [
+              "design",
+              "construction",
+              "engineering"
+            ]
+          },
+          {
+            "english": "oligarchy",
+            "japanese": "寡頭制",
+            "category": "politics",
+            "distractors": [
+              "dictatorship",
+              "republic",
+              "monarchy"
+            ]
+          },
+          {
+            "english": "ecology",
+            "japanese": "生態学",
+            "category": "environment",
+            "distractors": [
+              "protection",
+              "preservation",
+              "conservation"
+            ]
+          },
+          {
+            "english": "management",
+            "japanese": "経営",
+            "category": "business",
+            "distractors": [
+              "progress",
+              "improvement",
+              "development"
+            ]
+          },
+          {
+            "english": "linguistics",
+            "japanese": "言語学",
+            "category": "academic",
+            "distractors": [
+              "economics",
+              "psychology",
+              "sociology"
+            ]
+          },
+          {
+            "english": "painting",
+            "japanese": "絵画",
+            "category": "art",
+            "distractors": [
+              "sculpture",
+              "design",
+              "construction"
+            ]
+          },
+          {
+            "english": "federation",
+            "japanese": "連邦",
+            "category": "politics",
+            "distractors": [
+              "oligarchy",
+              "dictatorship",
+              "republic"
+            ]
+          },
+          {
+            "english": "biodiversity",
+            "japanese": "生物多様性",
+            "category": "environment",
+            "distractors": [
+              "ecology",
+              "protection",
+              "preservation"
+            ]
+          },
+          {
+            "english": "leadership",
+            "japanese": "リーダーシップ",
+            "category": "business",
+            "distractors": [
+              "management",
+              "progress",
+              "improvement"
+            ]
+          },
+          {
+            "english": "archaeology",
+            "japanese": "考古学",
+            "category": "academic",
+            "distractors": [
+              "linguistics",
+              "economics",
+              "psychology"
+            ]
+          },
+          {
+            "english": "photography",
+            "japanese": "写真",
+            "category": "art",
+            "distractors": [
+              "painting",
+              "sculpture",
+              "design"
+            ]
+          },
+          {
+            "english": "confederation",
+            "japanese": "同盟",
+            "category": "politics",
+            "distractors": [
+              "federation",
+              "oligarchy",
+              "dictatorship"
+            ]
+          },
+          {
+            "english": "ecosystem",
+            "japanese": "生態系",
+            "category": "environment",
+            "distractors": [
+              "biodiversity",
+              "ecology",
+              "protection"
+            ]
+          },
+          {
+            "english": "strategy",
+            "japanese": "戦略",
+            "category": "business",
+            "distractors": [
+              "leadership",
+              "management",
+              "progress"
+            ]
+          },
+          {
+            "english": "geography",
+            "japanese": "地理学",
+            "category": "academic",
+            "distractors": [
+              "archaeology",
+              "linguistics",
+              "economics"
+            ]
+          },
+          {
+            "english": "cinema",
+            "japanese": "映画",
+            "category": "art",
+            "distractors": [
+              "photography",
+              "painting",
+              "sculpture"
+            ]
+          },
+          {
+            "english": "alliance",
+            "japanese": "同盟",
+            "category": "politics",
+            "distractors": [
+              "confederation",
+              "federation",
+              "oligarchy"
+            ]
+          },
+          {
+            "english": "climate",
+            "japanese": "気候",
+            "category": "environment",
+            "distractors": [
+              "ecosystem",
+              "biodiversity",
+              "ecology"
+            ]
+          },
+          {
+            "english": "marketing",
+            "japanese": "マーケティング",
+            "category": "business",
+            "distractors": [
+              "strategy",
+              "leadership",
+              "management"
+            ]
+          },
+          {
+            "english": "geology",
+            "japanese": "地質学",
+            "category": "academic",
+            "distractors": [
+              "geography",
+              "archaeology",
+              "linguistics"
+            ]
+          },
+          {
+            "english": "theater",
+            "japanese": "演劇",
+            "category": "art",
+            "distractors": [
+              "cinema",
+              "photography",
+              "painting"
+            ]
+          },
+          {
+            "english": "treaty",
+            "japanese": "条約",
+            "category": "politics",
+            "distractors": [
+              "alliance",
+              "confederation",
+              "federation"
+            ]
+          },
+          {
+            "english": "pollution",
+            "japanese": "汚染",
+            "category": "environment",
+            "distractors": [
+              "climate",
+              "ecosystem",
+              "biodiversity"
+            ]
+          },
+          {
+            "english": "finance",
+            "japanese": "金融",
+            "category": "business",
+            "distractors": [
+              "marketing",
+              "strategy",
+              "leadership"
+            ]
+          },
+          {
+            "english": "meteorology",
+            "japanese": "気象学",
+            "category": "academic",
+            "distractors": [
+              "geology",
+              "geography",
+              "archaeology"
+            ]
+          },
+          {
+            "english": "opera",
+            "japanese": "オペラ",
+            "category": "art",
+            "distractors": [
+              "theater",
+              "cinema",
+              "photography"
+            ]
+          },
+          {
+            "english": "diplomacy",
+            "japanese": "外交",
+            "category": "politics",
+            "distractors": [
+              "treaty",
+              "alliance",
+              "confederation"
+            ]
+          },
+          {
+            "english": "recycling",
+            "japanese": "リサイクル",
+            "category": "environment",
+            "distractors": [
+              "pollution",
+              "climate",
+              "ecosystem"
+            ]
+          },
+          {
+            "english": "investment",
+            "japanese": "投資",
+            "category": "business",
+            "distractors": [
+              "finance",
+              "marketing",
+              "strategy"
+            ]
+          },
+          {
+            "english": "astronomy",
+            "japanese": "天文学",
+            "category": "academic",
+            "distractors": [
+              "meteorology",
+              "geology",
+              "geography"
+            ]
+          },
+          {
+            "english": "ballet",
+            "japanese": "バレエ",
+            "category": "art",
+            "distractors": [
+              "opera",
+              "theater",
+              "cinema"
+            ]
+          },
+          {
+            "english": "negotiation",
+            "japanese": "交渉",
+            "category": "politics",
+            "distractors": [
+              "diplomacy",
+              "treaty",
+              "alliance"
+            ]
+          },
+          {
+            "english": "renewable",
+            "japanese": "再生可能な",
+            "category": "environment",
+            "distractors": [
+              "recycling",
+              "pollution",
+              "climate"
+            ]
+          },
+          {
+            "english": "entrepreneur",
+            "japanese": "起業家",
+            "category": "business",
+            "distractors": [
+              "investment",
+              "finance",
+              "marketing"
+            ]
+          },
+          {
+            "english": "cosmology",
+            "japanese": "宇宙論",
+            "category": "academic",
+            "distractors": [
+              "astronomy",
+              "meteorology",
+              "geology"
+            ]
+          },
+          {
+            "english": "symphony",
+            "japanese": "交響曲",
+            "category": "art",
+            "distractors": [
+              "ballet",
+              "opera",
+              "theater"
+            ]
+          },
+          {
+            "english": "mediation",
+            "japanese": "調停",
+            "category": "politics",
+            "distractors": [
+              "negotiation",
+              "diplomacy",
+              "treaty"
+            ]
+          },
+          {
+            "english": "sustainable",
+            "japanese": "持続可能な",
+            "category": "environment",
+            "distractors": [
+              "renewable",
+              "recycling",
+              "pollution"
+            ]
+          },
+          {
+            "english": "corporation",
+            "japanese": "企業",
+            "category": "business",
+            "distractors": [
+              "entrepreneur",
+              "investment",
+              "finance"
+            ]
+          }
+        ],
+        "grade2": [
+          {
+            "english": "consciousness",
+            "japanese": "意識",
+            "category": "psychology",
+            "distractors": [
+              "awareness",
+              "perception",
+              "cognition"
+            ]
+          },
+          {
+            "english": "globalization",
+            "japanese": "グローバル化",
+            "category": "society",
+            "distractors": [
+              "internationalization",
+              "modernization",
+              "urbanization"
+            ]
+          },
+          {
+            "english": "biodiversity",
+            "japanese": "生物多様性",
+            "category": "environment",
+            "distractors": [
+              "ecology",
+              "conservation",
+              "sustainability"
+            ]
+          },
+          {
+            "english": "quantum",
+            "japanese": "量子",
+            "category": "physics",
+            "distractors": [
+              "atomic",
+              "nuclear",
+              "molecular"
+            ]
+          },
+          {
+            "english": "metaphysics",
+            "japanese": "形而上学",
+            "category": "philosophy",
+            "distractors": [
+              "ontology",
+              "epistemology",
+              "ethics"
+            ]
+          },
+          {
+            "english": "perception",
+            "japanese": "知覚",
+            "category": "psychology",
+            "distractors": [
+              "consciousness",
+              "awareness",
+              "cognition"
+            ]
+          },
+          {
+            "english": "urbanization",
+            "japanese": "都市化",
+            "category": "society",
+            "distractors": [
+              "globalization",
+              "modernization",
+              "development"
+            ]
+          },
+          {
+            "english": "ecosystem",
+            "japanese": "生態系",
+            "category": "environment",
+            "distractors": [
+              "biodiversity",
+              "ecology",
+              "sustainability"
+            ]
+          },
+          {
+            "english": "atomic",
+            "japanese": "原子",
+            "category": "physics",
+            "distractors": [
+              "quantum",
+              "nuclear",
+              "molecular"
+            ]
+          },
+          {
+            "english": "ontology",
+            "japanese": "存在論",
+            "category": "philosophy",
+            "distractors": [
+              "metaphysics",
+              "epistemology",
+              "ethics"
+            ]
+          },
+          {
+            "english": "cognition",
+            "japanese": "認知",
+            "category": "psychology",
+            "distractors": [
+              "perception",
+              "consciousness",
+              "awareness"
+            ]
+          },
+          {
+            "english": "modernization",
+            "japanese": "近代化",
+            "category": "society",
+            "distractors": [
+              "urbanization",
+              "globalization",
+              "development"
+            ]
+          },
+          {
+            "english": "sustainability",
+            "japanese": "持続可能性",
+            "category": "environment",
+            "distractors": [
+              "ecosystem",
+              "biodiversity",
+              "ecology"
+            ]
+          },
+          {
+            "english": "nuclear",
+            "japanese": "核",
+            "category": "physics",
+            "distractors": [
+              "atomic",
+              "quantum",
+              "molecular"
+            ]
+          },
+          {
+            "english": "epistemology",
+            "japanese": "認識論",
+            "category": "philosophy",
+            "distractors": [
+              "ontology",
+              "metaphysics",
+              "ethics"
+            ]
+          },
+          {
+            "english": "awareness",
+            "japanese": "認識",
+            "category": "psychology",
+            "distractors": [
+              "cognition",
+              "perception",
+              "consciousness"
+            ]
+          },
+          {
+            "english": "development",
+            "japanese": "発展",
+            "category": "society",
+            "distractors": [
+              "modernization",
+              "urbanization",
+              "globalization"
+            ]
+          },
+          {
+            "english": "conservation",
+            "japanese": "保全",
+            "category": "environment",
+            "distractors": [
+              "sustainability",
+              "ecosystem",
+              "biodiversity"
+            ]
+          },
+          {
+            "english": "molecular",
+            "japanese": "分子",
+            "category": "physics",
+            "distractors": [
+              "nuclear",
+              "atomic",
+              "quantum"
+            ]
+          },
+          {
+            "english": "ethics",
+            "japanese": "倫理学",
+            "category": "philosophy",
+            "distractors": [
+              "epistemology",
+              "ontology",
+              "metaphysics"
+            ]
+          },
+          {
+            "english": "psychology",
+            "japanese": "心理学",
+            "category": "psychology",
+            "distractors": [
+              "awareness",
+              "cognition",
+              "perception"
+            ]
+          },
+          {
+            "english": "industrialization",
+            "japanese": "工業化",
+            "category": "society",
+            "distractors": [
+              "development",
+              "modernization",
+              "urbanization"
+            ]
+          },
+          {
+            "english": "preservation",
+            "japanese": "保存",
+            "category": "environment",
+            "distractors": [
+              "conservation",
+              "sustainability",
+              "ecosystem"
+            ]
+          },
+          {
+            "english": "relativity",
+            "japanese": "相対性",
+            "category": "physics",
+            "distractors": [
+              "quantum",
+              "atomic",
+              "nuclear"
+            ]
+          },
+          {
+            "english": "aesthetics",
+            "japanese": "美学",
+            "category": "philosophy",
+            "distractors": [
+              "ethics",
+              "epistemology",
+              "ontology"
+            ]
+          },
+          {
+            "english": "neuroscience",
+            "japanese": "神経科学",
+            "category": "psychology",
+            "distractors": [
+              "psychology",
+              "cognition",
+              "perception"
+            ]
+          },
+          {
+            "english": "democratization",
+            "japanese": "民主化",
+            "category": "society",
+            "distractors": [
+              "industrialization",
+              "development",
+              "modernization"
+            ]
+          },
+          {
+            "english": "renewable",
+            "japanese": "再生可能な",
+            "category": "environment",
+            "distractors": [
+              "preservation",
+              "conservation",
+              "sustainability"
+            ]
+          },
+          {
+            "english": "mechanics",
+            "japanese": "力学",
+            "category": "physics",
+            "distractors": [
+              "acoustics",
+              "electromagnetism",
+              "optics"
+            ]
+          },
+          {
+            "english": "logic",
+            "japanese": "論理学",
+            "category": "philosophy",
+            "distractors": [
+              "aesthetics",
+              "ethics",
+              "epistemology"
+            ]
+          },
+          {
+            "english": "behaviorism",
+            "japanese": "行動主義",
+            "category": "psychology",
+            "distractors": [
+              "neuroscience",
+              "psychology",
+              "cognition"
+            ]
+          },
+          {
+            "english": "liberalization",
+            "japanese": "自由化",
+            "category": "society",
+            "distractors": [
+              "democratization",
+              "industrialization",
+              "development"
+            ]
+          },
+          {
+            "english": "pollution",
+            "japanese": "汚染",
+            "category": "environment",
+            "distractors": [
+              "renewable",
+              "preservation",
+              "conservation"
+            ]
+          },
+          {
+            "english": "thermodynamics",
+            "japanese": "熱力学",
+            "category": "physics",
+            "distractors": [
+              "mechanics",
+              "relativity",
+              "quantum"
+            ]
+          },
+          {
+            "english": "existentialism",
+            "japanese": "実存主義",
+            "category": "philosophy",
+            "distractors": [
+              "logic",
+              "aesthetics",
+              "ethics"
+            ]
+          },
+          {
+            "english": "psychoanalysis",
+            "japanese": "精神分析",
+            "category": "psychology",
+            "distractors": [
+              "behaviorism",
+              "neuroscience",
+              "psychology"
+            ]
+          },
+          {
+            "english": "privatization",
+            "japanese": "民営化",
+            "category": "society",
+            "distractors": [
+              "liberalization",
+              "democratization",
+              "industrialization"
+            ]
+          },
+          {
+            "english": "climate",
+            "japanese": "気候",
+            "category": "environment",
+            "distractors": [
+              "pollution",
+              "renewable",
+              "preservation"
+            ]
+          },
+          {
+            "english": "optics",
+            "japanese": "光学",
+            "category": "physics",
+            "distractors": [
+              "thermodynamics",
+              "mechanics",
+              "relativity"
+            ]
+          },
+          {
+            "english": "idealism",
+            "japanese": "観念論",
+            "category": "philosophy",
+            "distractors": [
+              "existentialism",
+              "logic",
+              "aesthetics"
+            ]
+          },
+          {
+            "english": "cognitive",
+            "japanese": "認知的",
+            "category": "psychology",
+            "distractors": [
+              "psychoanalysis",
+              "behaviorism",
+              "neuroscience"
+            ]
+          },
+          {
+            "english": "deregulation",
+            "japanese": "規制緩和",
+            "category": "society",
+            "distractors": [
+              "privatization",
+              "liberalization",
+              "democratization"
+            ]
+          },
+          {
+            "english": "emission",
+            "japanese": "排出",
+            "category": "environment",
+            "distractors": [
+              "climate",
+              "pollution",
+              "renewable"
+            ]
+          },
+          {
+            "english": "electromagnetism",
+            "japanese": "電磁気学",
+            "category": "physics",
+            "distractors": [
+              "optics",
+              "thermodynamics",
+              "mechanics"
+            ]
+          },
+          {
+            "english": "materialism",
+            "japanese": "唯物論",
+            "category": "philosophy",
+            "distractors": [
+              "idealism",
+              "existentialism",
+              "logic"
+            ]
+          },
+          {
+            "english": "behavioral",
+            "japanese": "行動的",
+            "category": "psychology",
+            "distractors": [
+              "cognitive",
+              "psychoanalysis",
+              "behaviorism"
+            ]
+          },
+          {
+            "english": "privatization",
+            "japanese": "民営化",
+            "category": "society",
+            "distractors": [
+              "deregulation",
+              "privatization",
+              "liberalization"
+            ]
+          },
+          {
+            "english": "recycling",
+            "japanese": "リサイクル",
+            "category": "environment",
+            "distractors": [
+              "emission",
+              "climate",
+              "pollution"
+            ]
+          },
+          {
+            "english": "acoustics",
+            "japanese": "音響学",
+            "category": "physics",
+            "distractors": [
+              "electromagnetism",
+              "optics",
+              "thermodynamics"
+            ]
+          },
+          {
+            "english": "dualism",
+            "japanese": "二元論",
+            "category": "philosophy",
+            "distractors": [
+              "materialism",
+              "idealism",
+              "existentialism"
+            ]
+          },
+          {
+            "english": "developmental",
+            "japanese": "発達的",
+            "category": "psychology",
+            "distractors": [
+              "behavioral",
+              "cognitive",
+              "psychoanalysis"
+            ]
+          },
+          {
+            "english": "globalization",
+            "japanese": "グローバル化",
+            "category": "society",
+            "distractors": [
+              "privatization",
+              "deregulation",
+              "privatization"
+            ]
+          },
+          {
+            "english": "sustainable",
+            "japanese": "持続可能な",
+            "category": "environment",
+            "distractors": [
+              "recycling",
+              "emission",
+              "climate"
+            ]
+          },
+          {
+            "english": "mechanics",
+            "japanese": "力学",
+            "category": "physics",
+            "distractors": [
+              "acoustics",
+              "electromagnetism",
+              "optics"
+            ]
+          },
+          {
+            "english": "pragmatism",
+            "japanese": "実用主義",
+            "category": "philosophy",
+            "distractors": [
+              "dualism",
+              "materialism",
+              "idealism"
+            ]
+          },
+          {
+            "english": "social",
+            "japanese": "社会的",
+            "category": "psychology",
+            "distractors": [
+              "developmental",
+              "behavioral",
+              "cognitive"
+            ]
+          },
+          {
+            "english": "integration",
+            "japanese": "統合",
+            "category": "society",
+            "distractors": [
+              "globalization",
+              "privatization",
+              "deregulation"
+            ]
+          },
+          {
+            "english": "renewable",
+            "japanese": "再生可能な",
+            "category": "environment",
+            "distractors": [
+              "sustainable",
+              "recycling",
+              "emission"
+            ]
+          },
+          {
+            "english": "dynamics",
+            "japanese": "動力学",
+            "category": "physics",
+            "distractors": [
+              "mechanics",
+              "acoustics",
+              "electromagnetism"
+            ]
+          },
+          {
+            "english": "utilitarianism",
+            "japanese": "功利主義",
+            "category": "philosophy",
+            "distractors": [
+              "pragmatism",
+              "dualism",
+              "materialism"
+            ]
+          },
+          {
+            "english": "clinical",
+            "japanese": "臨床的",
+            "category": "psychology",
+            "distractors": [
+              "social",
+              "developmental",
+              "behavioral"
+            ]
+          },
+          {
+            "english": "cooperation",
+            "japanese": "協力",
+            "category": "society",
+            "distractors": [
+              "integration",
+              "globalization",
+              "privatization"
+            ]
+          },
+          {
+            "english": "ecological",
+            "japanese": "生態学的",
+            "category": "environment",
+            "distractors": [
+              "renewable",
+              "sustainable",
+              "recycling"
+            ]
+          },
+          {
+            "english": "kinematics",
+            "japanese": "運動学",
+            "category": "physics",
+            "distractors": [
+              "dynamics",
+              "mechanics",
+              "acoustics"
+            ]
+          },
+          {
+            "english": "stoicism",
+            "japanese": "ストア派",
+            "category": "philosophy",
+            "distractors": [
+              "utilitarianism",
+              "pragmatism",
+              "dualism"
+            ]
+          },
+          {
+            "english": "experimental",
+            "japanese": "実験的",
+            "category": "psychology",
+            "distractors": [
+              "clinical",
+              "social",
+              "developmental"
+            ]
+          },
+          {
+            "english": "collaboration",
+            "japanese": "共同",
+            "category": "society",
+            "distractors": [
+              "cooperation",
+              "integration",
+              "globalization"
+            ]
+          },
+          {
+            "english": "environmental",
+            "japanese": "環境的",
+            "category": "environment",
+            "distractors": [
+              "ecological",
+              "renewable",
+              "sustainable"
+            ]
+          },
+          {
+            "english": "statics",
+            "japanese": "静力学",
+            "category": "physics",
+            "distractors": [
+              "kinematics",
+              "dynamics",
+              "mechanics"
+            ]
+          },
+          {
+            "english": "skepticism",
+            "japanese": "懐疑主義",
+            "category": "philosophy",
+            "distractors": [
+              "stoicism",
+              "utilitarianism",
+              "pragmatism"
+            ]
+          },
+          {
+            "english": "theoretical",
+            "japanese": "理論的",
+            "category": "psychology",
+            "distractors": [
+              "experimental",
+              "clinical",
+              "social"
+            ]
+          },
+          {
+            "english": "partnership",
+            "japanese": "パートナーシップ",
+            "category": "society",
+            "distractors": [
+              "collaboration",
+              "cooperation",
+              "integration"
+            ]
+          },
+          {
+            "english": "conservation",
+            "japanese": "保全",
+            "category": "environment",
+            "distractors": [
+              "environmental",
+              "ecological",
+              "renewable"
+            ]
+          }
+        ],
+        "pre1": [
+          {
+            "english": "entrepreneur",
+            "japanese": "起業家",
+            "category": "business",
+            "distractors": [
+              "manager",
+              "executive",
+              "consultant"
+            ]
+          },
+          {
+            "english": "sustainability",
+            "japanese": "持続可能性",
+            "category": "concept",
+            "distractors": [
+              "reliability",
+              "responsibility",
+              "accountability"
+            ]
+          },
+          {
+            "english": "consciousness",
+            "japanese": "意識",
+            "category": "psychology",
+            "distractors": [
+              "awareness",
+              "perception",
+              "cognition"
+            ]
+          },
+          {
+            "english": "globalization",
+            "japanese": "グローバル化",
+            "category": "society",
+            "distractors": [
+              "internationalization",
+              "modernization",
+              "urbanization"
+            ]
+          },
+          {
+            "english": "biodiversity",
+            "japanese": "生物多様性",
+            "category": "environment",
+            "distractors": [
+              "ecology",
+              "conservation",
+              "sustainability"
+            ]
+          },
+          {
+            "english": "preparation_in_progress",
+            "japanese": "準備中",
+            "category": "status",
+            "distractors": [
+              "coming_soon",
+              "under_development",
+              "in_progress"
+            ]
+          }
+        ],
+        "grade1": [
+          {
+            "english": "quantum",
+            "japanese": "量子",
+            "category": "physics",
+            "distractors": [
+              "atomic",
+              "nuclear",
+              "molecular"
+            ]
+          },
+          {
+            "english": "metaphysics",
+            "japanese": "形而上学",
+            "category": "philosophy",
+            "distractors": [
+              "ontology",
+              "epistemology",
+              "ethics"
+            ]
+          },
+          {
+            "english": "entrepreneur",
+            "japanese": "起業家",
+            "category": "business",
+            "distractors": [
+              "manager",
+              "executive",
+              "consultant"
+            ]
+          },
+          {
+            "english": "sustainability",
+            "japanese": "持続可能性",
+            "category": "concept",
+            "distractors": [
+              "reliability",
+              "responsibility",
+              "accountability"
+            ]
+          },
+          {
+            "english": "consciousness",
+            "japanese": "意識",
+            "category": "psychology",
+            "distractors": [
+              "awareness",
+              "perception",
+              "cognition"
+            ]
+          },
+          {
+            "english": "preparation_in_progress",
+            "japanese": "準備中",
+            "category": "status",
+            "distractors": [
+              "coming_soon",
+              "under_development",
+              "in_progress"
+            ]
+          }
+        ]
+      }
+    },
+    "toeic": {
+      "name": "TOEIC",
+      "description": "TOEIC対策用の単語",
+      "levels": {
+        "beginner": [
+          {
+            "english": "meeting",
+            "japanese": "会議",
+            "category": "business",
+            "distractors": [
+              "conference",
+              "appointment",
+              "interview"
+            ]
+          },
+          {
+            "english": "report",
+            "japanese": "報告書",
+            "category": "document",
+            "distractors": [
+              "document",
+              "memo",
+              "letter"
+            ]
+          },
+          {
+            "english": "schedule",
+            "japanese": "予定表",
+            "category": "planning",
+            "distractors": [
+              "timetable",
+              "agenda",
+              "calendar"
+            ]
+          },
+          {
+            "english": "deadline",
+            "japanese": "締め切り",
+            "category": "time",
+            "distractors": [
+              "due_date",
+              "cutoff",
+              "limit"
+            ]
+          },
+          {
+            "english": "budget",
+            "japanese": "予算",
+            "category": "finance",
+            "distractors": [
+              "expense",
+              "cost",
+              "fund"
+            ]
+          },
+          {
+            "english": "project",
+            "japanese": "プロジェクト",
+            "category": "work",
+            "distractors": [
+              "task",
+              "assignment",
+              "job"
+            ]
+          },
+          {
+            "english": "client",
+            "japanese": "顧客",
+            "category": "business",
+            "distractors": [
+              "customer",
+              "consumer",
+              "buyer"
+            ]
+          },
+          {
+            "english": "contract",
+            "japanese": "契約",
+            "category": "legal",
+            "distractors": [
+              "agreement",
+              "deal",
+              "treaty"
+            ]
+          },
+          {
+            "english": "invoice",
+            "japanese": "請求書",
+            "category": "finance",
+            "distractors": [
+              "bill",
+              "receipt",
+              "statement"
+            ]
+          },
+          {
+            "english": "resume",
+            "japanese": "履歴書",
+            "category": "employment",
+            "distractors": [
+              "cv",
+              "application",
+              "profile"
+            ]
+          },
+          {
+            "english": "interview",
+            "japanese": "面接",
+            "category": "employment",
+            "distractors": [
+              "meeting",
+              "appointment",
+              "consultation"
+            ]
+          },
+          {
+            "english": "salary",
+            "japanese": "給料",
+            "category": "finance",
+            "distractors": [
+              "wage",
+              "income",
+              "payment"
+            ]
+          },
+          {
+            "english": "office",
+            "japanese": "オフィス",
+            "category": "workplace",
+            "distractors": [
+              "workplace",
+              "company",
+              "building"
+            ]
+          },
+          {
+            "english": "colleague",
+            "japanese": "同僚",
+            "category": "work",
+            "distractors": [
+              "coworker",
+              "associate",
+              "partner"
+            ]
+          },
+          {
+            "english": "department",
+            "japanese": "部門",
+            "category": "organization",
+            "distractors": [
+              "division",
+              "section",
+              "unit"
+            ]
+          },
+          {
+            "english": "manager",
+            "japanese": "管理者",
+            "category": "position",
+            "distractors": [
+              "supervisor",
+              "director",
+              "chief"
+            ]
+          },
+          {
+            "english": "employee",
+            "japanese": "従業員",
+            "category": "work",
+            "distractors": [
+              "worker",
+              "staff",
+              "personnel"
+            ]
+          },
+          {
+            "english": "training",
+            "japanese": "研修",
+            "category": "education",
+            "distractors": [
+              "workshop",
+              "seminar",
+              "course"
+            ]
+          },
+          {
+            "english": "promotion",
+            "japanese": "昇進",
+            "category": "career",
+            "distractors": [
+              "advancement",
+              "upgrade",
+              "raise"
+            ]
+          },
+          {
+            "english": "benefit",
+            "japanese": "福利厚生",
+            "category": "employment",
+            "distractors": [
+              "perk",
+              "advantage",
+              "privilege"
+            ]
+          },
+          {
+            "english": "insurance",
+            "japanese": "保険",
+            "category": "finance",
+            "distractors": [
+              "coverage",
+              "protection",
+              "policy"
+            ]
+          },
+          {
+            "english": "pension",
+            "japanese": "年金",
+            "category": "finance",
+            "distractors": [
+              "retirement",
+              "annuity",
+              "fund"
+            ]
+          },
+          {
+            "english": "tax",
+            "japanese": "税金",
+            "category": "finance",
+            "distractors": [
+              "duty",
+              "levy",
+              "tariff"
+            ]
+          },
+          {
+            "english": "profit",
+            "japanese": "利益",
+            "category": "finance",
+            "distractors": [
+              "gain",
+              "earnings",
+              "revenue"
+            ]
+          },
+          {
+            "english": "loss",
+            "japanese": "損失",
+            "category": "finance",
+            "distractors": [
+              "deficit",
+              "damage",
+              "waste"
+            ]
+          },
+          {
+            "english": "investment",
+            "japanese": "投資",
+            "category": "finance",
+            "distractors": [
+              "funding",
+              "capital",
+              "venture"
+            ]
+          },
+          {
+            "english": "stock",
+            "japanese": "株式",
+            "category": "finance",
+            "distractors": [
+              "share",
+              "equity",
+              "security"
+            ]
+          },
+          {
+            "english": "market",
+            "japanese": "市場",
+            "category": "business",
+            "distractors": [
+              "industry",
+              "sector",
+              "field"
+            ]
+          },
+          {
+            "english": "competition",
+            "japanese": "競争",
+            "category": "business",
+            "distractors": [
+              "rivalry",
+              "contest",
+              "challenge"
+            ]
+          },
+          {
+            "english": "strategy",
+            "japanese": "戦略",
+            "category": "planning",
+            "distractors": [
+              "plan",
+              "approach",
+              "method"
+            ]
+          },
+          {
+            "english": "goal",
+            "japanese": "目標",
+            "category": "planning",
+            "distractors": [
+              "objective",
+              "target",
+              "aim"
+            ]
+          },
+          {
+            "english": "performance",
+            "japanese": "業績",
+            "category": "business",
+            "distractors": [
+              "achievement",
+              "result",
+              "outcome"
+            ]
+          },
+          {
+            "english": "efficiency",
+            "japanese": "効率",
+            "category": "work",
+            "distractors": [
+              "productivity",
+              "effectiveness",
+              "performance"
+            ]
+          },
+          {
+            "english": "quality",
+            "japanese": "品質",
+            "category": "product",
+            "distractors": [
+              "standard",
+              "grade",
+              "level"
+            ]
+          },
+          {
+            "english": "service",
+            "japanese": "サービス",
+            "category": "business",
+            "distractors": [
+              "support",
+              "assistance",
+              "help"
+            ]
+          },
+          {
+            "english": "product",
+            "japanese": "製品",
+            "category": "business",
+            "distractors": [
+              "item",
+              "goods",
+              "merchandise"
+            ]
+          },
+          {
+            "english": "brand",
+            "japanese": "ブランド",
+            "category": "marketing",
+            "distractors": [
+              "label",
+              "trademark",
+              "name"
+            ]
+          },
+          {
+            "english": "advertisement",
+            "japanese": "広告",
+            "category": "marketing",
+            "distractors": [
+              "commercial",
+              "promotion",
+              "campaign"
+            ]
+          },
+          {
+            "english": "campaign",
+            "japanese": "キャンペーン",
+            "category": "marketing",
+            "distractors": [
+              "promotion",
+              "drive",
+              "movement"
+            ]
+          },
+          {
+            "english": "survey",
+            "japanese": "調査",
+            "category": "research",
+            "distractors": [
+              "poll",
+              "study",
+              "inquiry"
+            ]
+          },
+          {
+            "english": "research",
+            "japanese": "研究",
+            "category": "study",
+            "distractors": [
+              "investigation",
+              "analysis",
+              "study"
+            ]
+          },
+          {
+            "english": "development",
+            "japanese": "開発",
+            "category": "business",
+            "distractors": [
+              "growth",
+              "progress",
+              "advancement"
+            ]
+          },
+          {
+            "english": "innovation",
+            "japanese": "革新",
+            "category": "business",
+            "distractors": [
+              "creation",
+              "invention",
+              "improvement"
+            ]
+          },
+          {
+            "english": "technology",
+            "japanese": "技術",
+            "category": "business",
+            "distractors": [
+              "technique",
+              "method",
+              "system"
+            ]
+          },
+          {
+            "english": "system",
+            "japanese": "システム",
+            "category": "technology",
+            "distractors": [
+              "method",
+              "process",
+              "procedure"
+            ]
+          },
+          {
+            "english": "software",
+            "japanese": "ソフトウェア",
+            "category": "technology",
+            "distractors": [
+              "program",
+              "application",
+              "system"
+            ]
+          },
+          {
+            "english": "hardware",
+            "japanese": "ハードウェア",
+            "category": "technology",
+            "distractors": [
+              "equipment",
+              "device",
+              "machine"
+            ]
+          },
+          {
+            "english": "network",
+            "japanese": "ネットワーク",
+            "category": "technology",
+            "distractors": [
+              "system",
+              "connection",
+              "link"
+            ]
+          },
+          {
+            "english": "database",
+            "japanese": "データベース",
+            "category": "technology",
+            "distractors": [
+              "system",
+              "storage",
+              "archive"
+            ]
+          },
+          {
+            "english": "security",
+            "japanese": "セキュリティ",
+            "category": "technology",
+            "distractors": [
+              "protection",
+              "safety",
+              "defense"
+            ]
+          },
+          {
+            "english": "password",
+            "japanese": "パスワード",
+            "category": "technology",
+            "distractors": [
+              "code",
+              "key",
+              "access"
+            ]
+          },
+          {
+            "english": "website",
+            "japanese": "ウェブサイト",
+            "category": "technology",
+            "distractors": [
+              "page",
+              "site",
+              "portal"
+            ]
+          },
+          {
+            "english": "email",
+            "japanese": "メール",
+            "category": "communication",
+            "distractors": [
+              "message",
+              "mail",
+              "correspondence"
+            ]
+          },
+          {
+            "english": "attachment",
+            "japanese": "添付ファイル",
+            "category": "communication",
+            "distractors": [
+              "file",
+              "document",
+              "enclosure"
+            ]
+          },
+          {
+            "english": "conference",
+            "japanese": "会議",
+            "category": "meeting",
+            "distractors": [
+              "meeting",
+              "convention",
+              "summit"
+            ]
+          },
+          {
+            "english": "presentation",
+            "japanese": "プレゼンテーション",
+            "category": "communication",
+            "distractors": [
+              "speech",
+              "talk",
+              "lecture"
+            ]
+          },
+          {
+            "english": "negotiation",
+            "japanese": "交渉",
+            "category": "business",
+            "distractors": [
+              "discussion",
+              "bargaining",
+              "deal"
+            ]
+          },
+          {
+            "english": "agreement",
+            "japanese": "合意",
+            "category": "business",
+            "distractors": [
+              "contract",
+              "deal",
+              "settlement"
+            ]
+          }
+        ],
+        "intermediate": [
+          {
+            "english": "preparation_in_progress",
+            "japanese": "準備中",
+            "category": "status",
+            "distractors": [
+              "coming_soon",
+              "under_development",
+              "in_progress"
+            ]
+          }
+        ],
+        "advanced": [
+          {
+            "english": "preparation_in_progress",
+            "japanese": "準備中",
+            "category": "status",
+            "distractors": [
+              "coming_soon",
+              "under_development",
+              "in_progress"
+            ]
+          }
+        ]
+      }
+    },
+    "toefl": {
+      "name": "TOEFL",
+      "description": "TOEFL対策用の単語",
+      "levels": {
+        "beginner": [
+          {
+            "english": "preparation_in_progress",
+            "japanese": "準備中",
+            "category": "status",
+            "distractors": [
+              "coming_soon",
+              "under_development",
+              "in_progress"
+            ]
+          }
+        ],
+        "intermediate": [
+          {
+            "english": "preparation_in_progress",
+            "japanese": "準備中",
+            "category": "status",
+            "distractors": [
+              "coming_soon",
+              "under_development",
+              "in_progress"
+            ]
+          }
+        ],
+        "advanced": [
+          {
+            "english": "preparation_in_progress",
+            "japanese": "準備中",
+            "category": "status",
+            "distractors": [
+              "coming_soon",
+              "under_development",
+              "in_progress"
+            ]
+          }
+        ]
+      }
+    },
+    "daily": {
+      "name": "日常英語",
+      "description": "日常会話でよく使う単語",
+      "levels": {
+        "beginner": [
+          {
+            "english": "preparation_in_progress",
+            "japanese": "準備中",
+            "category": "status",
+            "distractors": [
+              "coming_soon",
+              "under_development",
+              "in_progress"
+            ]
+          }
+        ],
+        "intermediate": [
+          {
+            "english": "preparation_in_progress",
+            "japanese": "準備中",
+            "category": "status",
+            "distractors": [
+              "coming_soon",
+              "under_development",
+              "in_progress"
+            ]
+          }
+        ],
+        "advanced": [
+          {
+            "english": "preparation_in_progress",
+            "japanese": "準備中",
+            "category": "status",
+            "distractors": [
+              "coming_soon",
+              "under_development",
+              "in_progress"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "lastUpdated": "2025-06-01",
+    "version": "1.0.0",
+    "totalWords": {
+      "kids": {
+        "beginner": 13,
+        "intermediate": 7,
+        "advanced": 5
+      },
+      "eiken": {
+        "grade5": 53,
+        "grade4": 52,
+        "grade3": 51,
+        "pre2": 52,
+        "grade2": 50,
+        "pre1": 1,
+        "grade1": 1
+      },
+      "toeic": {
+        "beginner": 50,
+        "intermediate": 1,
+        "advanced": 0
+      },
+      "toefl": {
+        "beginner": 1,
+        "intermediate": 1,
+        "advanced": 1
+      },
+      "daily": {
+        "beginner": 1,
+        "intermediate": 1,
+        "advanced": 1
+      }
+    }
+  }
+}

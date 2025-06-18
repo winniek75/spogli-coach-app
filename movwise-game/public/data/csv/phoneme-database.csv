@@ -1,0 +1,261 @@
+level,phoneme,word,category,difficulty,sounds,description,imageQuery,color,eiken_level
+1,s,sun,nature,1,"s","The 's' sound in sun","bright sun sky","from-yellow-400 to-orange-500",5
+1,s,sit,action,1,"s,ɪ,t","The 's' sound in sit","person sitting chair","from-yellow-400 to-orange-500",5
+1,s,sad,emotion,1,"s,æ,d","The 's' sound in sad","sad child face","from-yellow-400 to-orange-500",5
+1,s,set,action,1,"s,ɛ,t","The 's' sound in set","table setting dishes","from-yellow-400 to-orange-500",5
+1,s,see,action,1,"s,iː","The 's' sound in see","eyes looking watching","from-yellow-400 to-orange-500",5
+1,a,ant,animal,1,"æ,n,t","The 'a' sound in ant","black ant insect","from-red-400 to-pink-500",5
+1,a,apple,food,1,"æ,p,əl","The 'a' sound in apple","red apple fruit","from-red-400 to-pink-500",5
+1,a,ask,action,1,"æ,s,k","The 'a' sound in ask","child raising hand asking","from-red-400 to-pink-500",5
+1,a,am,grammar,1,"æ,m","The 'a' sound in am","person pointing self","from-red-400 to-pink-500",5
+1,a,at,grammar,1,"æ,t","The 'a' sound in at","arrow pointing location","from-red-400 to-pink-500",5
+1,t,top,position,1,"t,ɒ,p","The 't' sound in top","mountain top peak","from-blue-400 to-indigo-500",5
+1,t,ten,number,1,"t,ɛ,n","The 't' sound in ten","number 10 fingers","from-blue-400 to-indigo-500",5
+1,t,tap,action,1,"t,æ,p","The 't' sound in tap","finger tapping table","from-blue-400 to-indigo-500",5
+1,t,tin,object,1,"t,ɪ,n","The 't' sound in tin","metal tin can","from-blue-400 to-indigo-500",5
+1,t,tip,object,1,"t,ɪ,p","The 't' sound in tip","pencil tip point","from-blue-400 to-indigo-500",5
+1,i,in,position,1,"ɪ,n","The 'i' sound in in","box with object inside","from-green-400 to-teal-500",5
+1,i,it,grammar,1,"ɪ,t","The 'i' sound in it","pointing at object","from-green-400 to-teal-500",5
+1,i,is,grammar,1,"ɪ,z","The 'i' sound in is","equals sign math","from-green-400 to-teal-500",5
+1,i,if,grammar,1,"ɪ,f","The 'i' sound in if","question mark thinking","from-green-400 to-teal-500",5
+1,i,ink,object,1,"ɪ,ŋ,k","The 'i' sound in ink","blue ink pen writing","from-green-400 to-teal-500",5
+1,p,pin,object,1,"p,ɪ,n","The 'p' sound in pin","safety pin metal","from-purple-400 to-pink-500",5
+1,p,pan,object,1,"p,æ,n","The 'p' sound in pan","cooking pan kitchen","from-purple-400 to-pink-500",5
+1,p,pat,action,1,"p,æ,t","The 'p' sound in pat","hand patting dog","from-purple-400 to-pink-500",5
+1,p,pit,place,1,"p,ɪ,t","The 'p' sound in pit","deep hole ground","from-purple-400 to-pink-500",5
+1,p,pot,object,1,"p,ɒ,t","The 'p' sound in pot","cooking pot kitchen","from-purple-400 to-pink-500",5
+1,n,net,object,1,"n,ɛ,t","The 'n' sound in net","fishing net mesh","from-indigo-400 to-purple-500",5
+1,n,nap,action,1,"n,æ,p","The 'n' sound in nap","child sleeping nap","from-indigo-400 to-purple-500",5
+1,n,not,grammar,1,"n,ɒ,t","The 'n' sound in not","no symbol red cross","from-indigo-400 to-purple-500",5
+1,n,nip,action,1,"n,ɪ,p","The 'n' sound in nip","fingers pinching","from-indigo-400 to-purple-500",5
+1,n,nut,food,1,"n,ʌ,t","The 'n' sound in nut","walnut brown shell","from-indigo-400 to-purple-500",5
+2,c,cat,animal,2,"k,æ,t","The 'c' sound in cat","orange tabby cat cute","from-orange-400 to-red-500",5
+2,c,cup,object,2,"k,ʌ,p","The 'c' sound in cup","white coffee cup","from-orange-400 to-red-500",5
+2,c,can,modal,2,"k,æ,n","The 'c' sound in can","metal can food","from-orange-400 to-red-500",5
+2,c,cap,object,2,"k,æ,p","The 'c' sound in cap","baseball cap hat","from-orange-400 to-red-500",5
+2,c,cut,action,2,"k,ʌ,t","The 'c' sound in cut","scissors cutting paper","from-orange-400 to-red-500",5
+2,k,kit,object,2,"k,ɪ,t","The 'k' sound in kit","first aid kit box","from-cyan-400 to-blue-500",4
+2,k,kid,person,2,"k,ɪ,d","The 'k' sound in kid","happy child playing","from-cyan-400 to-blue-500",4
+2,k,key,object,2,"k,iː","The 'k' sound in key","golden door key","from-cyan-400 to-blue-500",4
+2,k,keep,action,2,"k,iː,p","The 'k' sound in keep","hands holding treasure","from-cyan-400 to-blue-500",4
+2,k,kick,action,2,"k,ɪ,k","The 'k' sound in kick","foot kicking ball","from-cyan-400 to-blue-500",4
+2,e,end,position,2,"ɛ,n,d","The 'e' sound in end","finish line race","from-emerald-400 to-green-500",5
+2,e,egg,food,2,"ɛ,g","The 'e' sound in egg","white chicken egg","from-emerald-400 to-green-500",5
+2,e,elf,fantasy,2,"ɛ,l,f","The 'e' sound in elf","cute elf character","from-emerald-400 to-green-500",5
+2,e,elk,animal,2,"ɛ,l,k","The 'e' sound in elk","large elk deer","from-emerald-400 to-green-500",5
+2,e,eat,action,2,"iː,t","The 'e' sound in eat","child eating food","from-emerald-400 to-green-500",5
+2,h,hat,object,2,"h,æ,t","The 'h' sound in hat","red winter hat","from-rose-400 to-pink-500",4
+2,h,hit,action,2,"h,ɪ,t","The 'h' sound in hit","hammer hitting nail","from-rose-400 to-pink-500",4
+2,h,hot,weather,2,"h,ɒ,t","The 'h' sound in hot","fire flames heat","from-rose-400 to-pink-500",4
+2,h,hop,action,2,"h,ɒ,p","The 'h' sound in hop","rabbit hopping grass","from-rose-400 to-pink-500",4
+2,h,hut,building,2,"h,ʌ,t","The 'h' sound in hut","small wooden hut","from-rose-400 to-pink-500",4
+2,r,rat,animal,2,"r,æ,t","The 'r' sound in rat","gray rat rodent","from-amber-400 to-orange-500",4
+2,r,run,action,2,"r,ʌ,n","The 'r' sound in run","person running exercise","from-amber-400 to-orange-500",4
+2,r,red,color,2,"r,ɛ,d","The 'r' sound in red","bright red color","from-amber-400 to-orange-500",4
+2,r,rip,action,2,"r,ɪ,p","The 'r' sound in rip","paper being torn","from-amber-400 to-orange-500",4
+2,r,rod,object,2,"r,ɒ,d","The 'r' sound in rod","fishing rod water","from-amber-400 to-orange-500",4
+2,m,man,person,2,"m,æ,n","The 'm' sound in man","adult man portrait","from-lime-400 to-green-500",5
+2,m,map,object,2,"m,æ,p","The 'm' sound in map","world map geography","from-lime-400 to-green-500",5
+2,m,mat,object,2,"m,æ,t","The 'm' sound in mat","yoga exercise mat","from-lime-400 to-green-500",5
+2,m,mix,action,2,"m,ɪ,ks","The 'm' sound in mix","mixing bowl cooking","from-lime-400 to-green-500",5
+2,m,mud,nature,2,"m,ʌ,d","The 'm' sound in mud","brown mud puddle","from-lime-400 to-green-500",5
+2,d,dog,animal,2,"d,ɒ,g","The 'd' sound in dog","golden retriever dog","from-sky-400 to-blue-500",5
+2,d,dad,family,2,"d,æ,d","The 'd' sound in dad","father with child","from-sky-400 to-blue-500",5
+2,d,dig,action,2,"d,ɪ,g","The 'd' sound in dig","shovel digging soil","from-sky-400 to-blue-500",5
+2,d,dot,shape,2,"d,ɒ,t","The 'd' sound in dot","black dot circle","from-sky-400 to-blue-500",5
+2,d,den,place,2,"d,ɛ,n","The 'd' sound in den","cozy den room","from-sky-400 to-blue-500",5
+3,g,get,action,3,"g,ɛ,t","The 'g' sound in get","hand reaching getting","from-violet-400 to-purple-500",4
+3,g,gap,space,3,"g,æ,p","The 'g' sound in gap","gap between teeth","from-violet-400 to-purple-500",4
+3,g,gun,object,3,"g,ʌ,n","The 'g' sound in gun","water gun toy","from-violet-400 to-purple-500",4
+3,g,gum,food,3,"g,ʌ,m","The 'g' sound in gum","chewing gum pink","from-violet-400 to-purple-500",4
+3,g,gym,place,3,"dʒ,ɪ,m","The 'g' sound in gym","fitness gym equipment","from-violet-400 to-purple-500",4
+3,o,odd,description,3,"ɒ,d","The 'o' sound in odd","strange unusual object","from-orange-400 to-red-500",4
+3,o,old,description,3,"oʊ,l,d","The 'o' sound in old","elderly person wise","from-orange-400 to-red-500",4
+3,o,owl,animal,3,"aʊ,l","The 'o' sound in owl","wise owl bird","from-orange-400 to-red-500",4
+3,o,oil,liquid,3,"ɔɪ,l","The 'o' sound in oil","cooking oil bottle","from-orange-400 to-red-500",4
+3,o,off,position,3,"ɒ,f","The 'o' sound in off","switch turned off","from-orange-400 to-red-500",4
+3,u,up,direction,3,"ʌ,p","The 'u' sound in up","arrow pointing upward","from-teal-400 to-cyan-500",5
+3,u,use,action,3,"j,uː,z","The 'u' sound in use","hands using tool","from-teal-400 to-cyan-500",4
+3,u,us,pronoun,3,"ʌ,s","The 'u' sound in us","group of people together","from-teal-400 to-cyan-500",4
+3,u,under,position,3,"ʌ,n,d,ər","The 'u' sound in under","object under table","from-teal-400 to-cyan-500",4
+3,u,until,time,3,"ʌ,n,t,ɪ,l","The 'u' sound in until","clock showing time","from-teal-400 to-cyan-500",4
+3,l,leg,body,3,"l,ɛ,g","The 'l' sound in leg","human leg anatomy","from-pink-400 to-rose-500",4
+3,l,let,action,3,"l,ɛ,t","The 'l' sound in let","door opening permission","from-pink-400 to-rose-500",4
+3,l,lot,quantity,3,"l,ɒ,t","The 'l' sound in lot","many objects pile","from-pink-400 to-rose-500",4
+3,l,lip,body,3,"l,ɪ,p","The 'l' sound in lip","red lips mouth","from-pink-400 to-rose-500",4
+3,l,log,object,3,"l,ɒ,g","The 'l' sound in log","wooden log tree","from-pink-400 to-rose-500",4
+3,f,fun,emotion,3,"f,ʌ,n","The 'f' sound in fun","children playing fun","from-yellow-400 to-amber-500",4
+3,f,fan,object,3,"f,æ,n","The 'f' sound in fan","electric cooling fan","from-yellow-400 to-amber-500",4
+3,f,fit,description,3,"f,ɪ,t","The 'f' sound in fit","athletic person fitness","from-yellow-400 to-amber-500",4
+3,f,fat,description,3,"f,æ,t","The 'f' sound in fat","overweight cat funny","from-yellow-400 to-amber-500",4
+3,f,fog,weather,3,"f,ɒ,g","The 'f' sound in fog","thick fog morning","from-yellow-400 to-amber-500",4
+3,b,big,size,3,"b,ɪ,g","The 'b' sound in big","large elephant big","from-blue-400 to-indigo-500",5
+3,b,bed,furniture,3,"b,ɛ,d","The 'b' sound in bed","comfortable bed bedroom","from-blue-400 to-indigo-500",5
+3,b,bag,object,3,"b,æ,g","The 'b' sound in bag","shopping bag paper","from-blue-400 to-indigo-500",5
+3,b,bad,description,3,"b,æ,d","The 'b' sound in bad","broken toy bad","from-blue-400 to-indigo-500",5
+3,b,bus,transport,3,"b,ʌ,s","The 'b' sound in bus","yellow school bus","from-blue-400 to-indigo-500",5
+4,ai,rain,weather,4,"r,eɪ,n","The 'ai' sound in rain","rain drops water","from-blue-400 to-cyan-500",4
+4,ai,pain,feeling,4,"p,eɪ,n","The 'ai' sound in pain","person holding hurt area","from-blue-400 to-cyan-500",4
+4,ai,main,description,4,"m,eɪ,n","The 'ai' sound in main","main entrance door","from-blue-400 to-cyan-500",4
+4,ai,wait,action,4,"w,eɪ,t","The 'ai' sound in wait","person waiting bus stop","from-blue-400 to-cyan-500",4
+4,ai,train,transport,4,"t,r,eɪ,n","The 'ai' sound in train","fast train railway","from-blue-400 to-cyan-500",4
+4,j,jam,food,4,"dʒ,æ,m","The 'j' sound in jam","strawberry jam jar","from-red-400 to-pink-500",4
+4,j,jet,transport,4,"dʒ,ɛ,t","The 'j' sound in jet","fighter jet airplane","from-red-400 to-pink-500",4
+4,j,jog,action,4,"dʒ,ɒ,g","The 'j' sound in jog","person jogging park","from-red-400 to-pink-500",4
+4,j,job,work,4,"dʒ,ɒ,b","The 'j' sound in job","office worker job","from-red-400 to-pink-500",4
+4,j,joy,emotion,4,"dʒ,ɔɪ","The 'j' sound in joy","child jumping joy","from-red-400 to-pink-500",4
+4,oa,coat,clothing,4,"k,oʊ,t","The 'oa' sound in coat","winter coat warm","from-emerald-400 to-teal-500",4
+4,oa,boat,transport,4,"b,oʊ,t","The 'oa' sound in boat","sailing boat ocean","from-emerald-400 to-teal-500",4
+4,oa,goat,animal,4,"g,oʊ,t","The 'oa' sound in goat","white goat farm","from-emerald-400 to-teal-500",4
+4,oa,soap,object,4,"s,oʊ,p","The 'oa' sound in soap","bar of soap bubbles","from-emerald-400 to-teal-500",4
+4,oa,road,place,4,"r,oʊ,d","The 'oa' sound in road","highway road cars","from-emerald-400 to-teal-500",4
+4,ie,pie,food,4,"p,aɪ","The 'ie' sound in pie","apple pie dessert","from-purple-400 to-pink-500",4
+4,ie,tie,clothing,4,"t,aɪ","The 'ie' sound in tie","necktie formal wear","from-purple-400 to-pink-500",4
+4,ie,lie,action,4,"l,aɪ","The 'ie' sound in lie","person lying down","from-purple-400 to-pink-500",4
+4,ie,die,action,4,"d,aɪ","The 'ie' sound in die","game dice rolling","from-purple-400 to-pink-500",4
+4,ie,field,place,4,"f,iː,l,d","The 'ie' sound in field","green grass field","from-purple-400 to-pink-500",4
+4,ee,tree,nature,4,"t,r,iː","The 'ee' sound in tree","tall green tree","from-green-400 to-emerald-500",4
+4,ee,free,description,4,"f,r,iː","The 'ee' sound in free","bird flying free","from-green-400 to-emerald-500",4
+4,ee,three,number,4,"θ,r,iː","The 'ee' sound in three","number 3 fingers","from-green-400 to-emerald-500",4
+4,ee,knee,body,4,"n,iː","The 'ee' sound in knee","human knee joint","from-green-400 to-emerald-500",4
+4,ee,sleep,action,4,"s,l,iː,p","The 'ee' sound in sleep","child sleeping peacefully","from-green-400 to-emerald-500",4
+4,or,fork,object,4,"f,ɔr,k","The 'or' sound in fork","silver fork utensil","from-amber-400 to-orange-500",4
+4,or,horse,animal,4,"h,ɔr,s","The 'or' sound in horse","brown horse galloping","from-amber-400 to-orange-500",4
+4,or,short,description,4,"ʃ,ɔr,t","The 'or' sound in short","short person height","from-amber-400 to-orange-500",4
+4,or,morning,time,4,"m,ɔr,n,ɪ,ŋ","The 'or' sound in morning","sunrise morning light","from-amber-400 to-orange-500",4
+4,or,born,action,4,"b,ɔr,n","The 'or' sound in born","newborn baby cute","from-amber-400 to-orange-500",4
+5,z,zoo,place,5,"z,uː","The 'z' sound in zoo","animals zoo park","from-indigo-400 to-purple-500",4
+5,z,zip,action,5,"z,ɪ,p","The 'z' sound in zip","zipper jacket closing","from-indigo-400 to-purple-500",4
+5,z,zero,number,5,"z,ɪə,r,oʊ","The 'z' sound in zero","number 0 zero","from-indigo-400 to-purple-500",4
+5,z,zone,place,5,"z,oʊ,n","The 'z' sound in zone","construction zone sign","from-indigo-400 to-purple-500",4
+5,z,buzz,sound,5,"b,ʌ,z","The 'z' sound in buzz","bee buzzing flower","from-indigo-400 to-purple-500",4
+5,w,win,action,5,"w,ɪ,n","The 'w' sound in win","trophy winner celebration","from-cyan-400 to-blue-500",4
+5,w,wet,description,5,"w,ɛ,t","The 'w' sound in wet","wet towel water","from-cyan-400 to-blue-500",4
+5,w,way,direction,5,"w,eɪ","The 'w' sound in way","path way forest","from-cyan-400 to-blue-500",4
+5,w,well,description,5,"w,ɛ,l","The 'w' sound in well","water well village","from-cyan-400 to-blue-500",4
+5,w,world,place,5,"w,ɜr,l,d","The 'w' sound in world","planet earth globe","from-cyan-400 to-blue-500",3
+5,ng,ring,object,5,"r,ɪ,ŋ","The 'ng' sound in ring","gold wedding ring","from-rose-400 to-pink-500",4
+5,ng,sing,action,5,"s,ɪ,ŋ","The 'ng' sound in sing","child singing microphone","from-rose-400 to-pink-500",4
+5,ng,long,description,5,"l,ɒ,ŋ","The 'ng' sound in long","long rope length","from-rose-400 to-pink-500",4
+5,ng,king,person,5,"k,ɪ,ŋ","The 'ng' sound in king","king crown royal","from-rose-400 to-pink-500",4
+5,ng,thing,object,5,"θ,ɪ,ŋ","The 'ng' sound in thing","mysterious object thing","from-rose-400 to-pink-500",4
+5,v,van,transport,5,"v,æ,n","The 'v' sound in van","delivery van vehicle","from-lime-400 to-green-500",4
+5,v,very,adverb,5,"v,ɛ,r,i","The 'v' sound in very","very excited person","from-lime-400 to-green-500",4
+5,v,visit,action,5,"v,ɪ,z,ɪ,t","The 'v' sound in visit","family visit grandparents","from-lime-400 to-green-500",4
+5,v,voice,sound,5,"v,ɔɪ,s","The 'v' sound in voice","person speaking voice","from-lime-400 to-green-500",3
+5,v,love,emotion,5,"l,ʌ,v","The 'v' sound in love","heart love symbol","from-lime-400 to-green-500",4
+5,oo_long,moon,nature,5,"m,uː,n","The long 'oo' sound in moon","full moon night","from-slate-400 to-gray-500",4
+5,oo_long,food,general,5,"f,uː,d","The long 'oo' sound in food","healthy food plate","from-slate-400 to-gray-500",4
+5,oo_long,cool,temperature,5,"k,uː,l","The long 'oo' sound in cool","ice cube cool","from-slate-400 to-gray-500",4
+5,oo_long,pool,place,5,"p,uː,l","The long 'oo' sound in pool","swimming pool water","from-slate-400 to-gray-500",4
+5,oo_long,school,place,5,"s,k,uː,l","The long 'oo' sound in school","school building education","from-slate-400 to-gray-500",4
+5,oo_short,book,object,5,"b,ʊ,k","The short 'oo' sound in book","open book reading","from-stone-400 to-gray-500",4
+5,oo_short,look,action,5,"l,ʊ,k","The short 'oo' sound in look","eyes looking watching","from-stone-400 to-gray-500",4
+5,oo_short,cook,action,5,"k,ʊ,k","The short 'oo' sound in cook","chef cooking kitchen","from-stone-400 to-gray-500",4
+5,oo_short,good,description,5,"g,ʊ,d","The short 'oo' sound in good","thumbs up good","from-stone-400 to-gray-500",4
+5,oo_short,foot,body,5,"f,ʊ,t","The short 'oo' sound in foot","human foot walking","from-stone-400 to-gray-500",4
+6,y,yes,response,6,"j,ɛ,s","The 'y' sound in yes","thumbs up yes gesture","from-yellow-400 to-amber-500",4
+6,y,yet,time,6,"j,ɛ,t","The 'y' sound in yet","clock not yet time","from-yellow-400 to-amber-500",3
+6,y,year,time,6,"j,ɪr","The 'y' sound in year","calendar year months","from-yellow-400 to-amber-500",4
+6,y,young,age,6,"j,ʌ,ŋ","The 'y' sound in young","young child playing","from-yellow-400 to-amber-500",4
+6,y,yellow,color,6,"j,ɛ,l,oʊ","The 'y' sound in yellow","bright yellow color","from-yellow-400 to-amber-500",4
+6,x,box,object,6,"b,ɒ,ks","The 'x' sound in box","cardboard box package","from-gray-400 to-slate-500",4
+6,x,fox,animal,6,"f,ɒ,ks","The 'x' sound in fox","red fox forest","from-gray-400 to-slate-500",4
+6,x,six,number,6,"s,ɪ,ks","The 'x' sound in six","number 6 fingers","from-gray-400 to-slate-500",4
+6,x,mix,action,6,"m,ɪ,ks","The 'x' sound in mix","mixing ingredients bowl","from-gray-400 to-slate-500",4
+6,x,exit,action,6,"ɛ,g,z,ɪ,t","The 'x' sound in exit","exit door sign","from-gray-400 to-slate-500",3
+6,ch,chair,furniture,6,"ʧ,ɛr","The 'ch' sound in chair","wooden chair seat","from-amber-400 to-yellow-500",4
+6,ch,cheese,food,6,"ʧ,iː,z","The 'ch' sound in cheese","yellow cheese slice","from-amber-400 to-yellow-500",4
+6,ch,church,building,6,"ʧ,ɜr,ʧ","The 'ch' sound in church","beautiful church building","from-amber-400 to-yellow-500",4
+6,ch,chip,food,6,"ʧ,ɪ,p","The 'ch' sound in chip","potato chips crispy","from-amber-400 to-yellow-500",4
+6,ch,chop,action,6,"ʧ,ɒ,p","The 'ch' sound in chop","chopping vegetables knife","from-amber-400 to-yellow-500",4
+6,sh,ship,transport,6,"ʃ,ɪ,p","The 'sh' sound in ship","large cargo ship ocean","from-teal-400 to-cyan-500",4
+6,sh,shell,object,6,"ʃ,ɛ,l","The 'sh' sound in shell","seashell beach sand","from-teal-400 to-cyan-500",4
+6,sh,fish,animal,6,"f,ɪ,ʃ","The 'sh' sound in fish","colorful fish swimming","from-teal-400 to-cyan-500",4
+6,sh,wish,action,6,"w,ɪ,ʃ","The 'sh' sound in wish","child making wish star","from-teal-400 to-cyan-500",4
+6,sh,shop,place,6,"ʃ,ɒ,p","The 'sh' sound in shop","busy shop store","from-teal-400 to-cyan-500",4
+6,th_voiced,this,grammar,6,"ð,ɪ,s","The voiced 'th' sound in this","pointing at this object","from-emerald-400 to-green-500",4
+6,th_voiced,that,grammar,6,"ð,æ,t","The voiced 'th' sound in that","pointing at that object","from-emerald-400 to-green-500",4
+6,th_voiced,the,grammar,6,"ð,ə","The voiced 'th' sound in the","the definite article","from-emerald-400 to-green-500",5
+6,th_voiced,then,time,6,"ð,ɛ,n","The voiced 'th' sound in then","sequence then next","from-emerald-400 to-green-500",4
+6,th_voiced,they,pronoun,6,"ð,eɪ","The voiced 'th' sound in they","group of people they","from-emerald-400 to-green-500",4
+6,th_unvoiced,think,action,6,"θ,ɪ,ŋ,k","The unvoiced 'th' sound in think","person thinking brain","from-violet-400 to-purple-500",4
+6,th_unvoiced,three,number,6,"θ,r,iː","The unvoiced 'th' sound in three","number 3 three","from-violet-400 to-purple-500",4
+6,th_unvoiced,bath,action,6,"b,æ,θ","The unvoiced 'th' sound in bath","bathtub bath time","from-violet-400 to-purple-500",4
+6,th_unvoiced,tooth,body,6,"t,uː,θ","The unvoiced 'th' sound in tooth","white tooth smile","from-violet-400 to-purple-500",4
+6,th_unvoiced,math,subject,6,"m,æ,θ","The unvoiced 'th' sound in math","math equations numbers","from-violet-400 to-purple-500",3
+7,qu,queen,person,7,"k,w,iː,n","The 'qu' sound in queen","royal queen crown","from-purple-400 to-pink-500",4
+7,qu,quick,speed,7,"k,w,ɪ,k","The 'qu' sound in quick","fast quick movement","from-purple-400 to-pink-500",4
+7,qu,quiet,sound,7,"k,w,aɪ,ə,t","The 'qu' sound in quiet","quiet library silence","from-purple-400 to-pink-500",4
+7,qu,question,grammar,7,"k,w,ɛ,s,ʧ,ən","The 'qu' sound in question","question mark ask","from-purple-400 to-pink-500",4
+7,qu,quack,sound,7,"k,w,æ,k","The 'qu' sound in quack","duck quacking sound","from-purple-400 to-pink-500",4
+7,ou,house,building,7,"h,aʊ,s","The 'ou' sound in house","beautiful house home","from-orange-400 to-red-500",4
+7,ou,mouse,animal,7,"m,aʊ,s","The 'ou' sound in mouse","small mouse cute","from-orange-400 to-red-500",4
+7,ou,loud,sound,7,"l,aʊ,d","The 'ou' sound in loud","loud speaker sound","from-orange-400 to-red-500",4
+7,ou,count,action,7,"k,aʊ,n,t","The 'ou' sound in count","counting numbers fingers","from-orange-400 to-red-500",4
+7,ou,about,preposition,7,"ə,b,aʊ,t","The 'ou' sound in about","about information topic","from-orange-400 to-red-500",3
+7,oi,coin,object,7,"k,ɔɪ,n","The 'oi' sound in coin","golden coin money","from-yellow-400 to-orange-500",4
+7,oi,oil,liquid,7,"ɔɪ,l","The 'oi' sound in oil","cooking oil bottle","from-yellow-400 to-orange-500",4
+7,oi,point,action,7,"p,ɔɪ,n,t","The 'oi' sound in point","finger pointing direction","from-yellow-400 to-orange-500",4
+7,oi,voice,sound,7,"v,ɔɪ,s","The 'oi' sound in voice","person speaking voice","from-yellow-400 to-orange-500",3
+7,oi,choice,decision,7,"ʧ,ɔɪ,s","The 'oi' sound in choice","making choice decision","from-yellow-400 to-orange-500",3
+7,ue,blue,color,7,"b,l,uː","The 'ue' sound in blue","bright blue color","from-blue-400 to-indigo-500",4
+7,ue,true,description,7,"t,r,uː","The 'ue' sound in true","true fact correct","from-blue-400 to-indigo-500",3
+7,ue,glue,object,7,"g,l,uː","The 'ue' sound in glue","glue stick adhesive","from-blue-400 to-indigo-500",4
+7,ue,clue,mystery,7,"k,l,uː","The 'ue' sound in clue","detective clue mystery","from-blue-400 to-indigo-500",4
+7,ue,due,time,7,"d,j,uː","The 'ue' sound in due","due date calendar","from-blue-400 to-indigo-500",3
+7,ew,new,description,7,"n,j,uː","The 'ew' sound in new","new fresh beginning","from-green-400 to-teal-500",4
+7,ew,few,quantity,7,"f,j,uː","The 'ew' sound in few","few small amount","from-green-400 to-teal-500",3
+7,ew,grew,action,7,"g,r,uː","The 'ew' sound in grew","plant grew tall","from-green-400 to-teal-500",4
+7,ew,flew,action,7,"f,l,uː","The 'ew' sound in flew","bird flew sky","from-green-400 to-teal-500",4
+7,ew,knew,knowledge,7,"n,uː","The 'ew' sound in knew","knew information brain","from-green-400 to-teal-500",3
+8,er,her,pronoun,8,"h,ɜr","The 'er' sound in her","pointing to her","from-pink-400 to-rose-500",4
+8,er,under,position,8,"ʌ,n,d,ɜr","The 'er' sound in under","object under table","from-pink-400 to-rose-500",4
+8,er,water,liquid,8,"w,ɔː,t,ɜr","The 'er' sound in water","clear water glass","from-pink-400 to-rose-500",4
+8,er,letter,object,8,"l,ɛ,t,ɜr","The 'er' sound in letter","envelope letter mail","from-pink-400 to-rose-500",4
+8,er,better,comparison,8,"b,ɛ,t,ɜr","The 'er' sound in better","better improvement progress","from-pink-400 to-rose-500",3
+8,ir,bird,animal,8,"b,ɜr,d","The 'ir' sound in bird","colorful bird flying","from-sky-400 to-blue-500",4
+8,ir,girl,person,8,"g,ɜr,l","The 'ir' sound in girl","happy girl child","from-sky-400 to-blue-500",4
+8,ir,shirt,clothing,8,"ʃ,ɜr,t","The 'ir' sound in shirt","casual shirt clothing","from-sky-400 to-blue-500",4
+8,ir,first,order,8,"f,ɜr,s,t","The 'ir' sound in first","first place winner","from-sky-400 to-blue-500",4
+8,ir,third,order,8,"θ,ɜr,d","The 'ir' sound in third","third place bronze","from-sky-400 to-blue-500",4
+8,ur,turn,action,8,"t,ɜr,n","The 'ur' sound in turn","turn corner direction","from-amber-400 to-orange-500",4
+8,ur,hurt,feeling,8,"h,ɜr,t","The 'ur' sound in hurt","hurt pain bandage","from-amber-400 to-orange-500",4
+8,ur,burn,action,8,"b,ɜr,n","The 'ur' sound in burn","fire burn flame","from-amber-400 to-orange-500",4
+8,ur,nurse,profession,8,"n,ɜr,s","The 'ur' sound in nurse","nurse hospital care","from-amber-400 to-orange-500",4
+8,ur,purse,object,8,"p,ɜr,s","The 'ur' sound in purse","leather purse bag","from-amber-400 to-orange-500",4
+8,ar,car,transport,8,"k,ɑr","The 'ar' sound in car","red car vehicle","from-red-400 to-pink-500",4
+8,ar,star,space,8,"s,t,ɑr","The 'ar' sound in star","bright star night","from-red-400 to-pink-500",4
+8,ar,park,place,8,"p,ɑr,k","The 'ar' sound in park","green park trees","from-red-400 to-pink-500",4
+8,ar,hard,description,8,"h,ɑr,d","The 'ar' sound in hard","hard rock stone","from-red-400 to-pink-500",4
+8,ar,start,action,8,"s,t,ɑr,t","The 'ar' sound in start","start begin race","from-red-400 to-pink-500",4
+9,ph,phone,object,9,"f,oʊ,n","The 'ph' sound in phone","mobile phone technology","from-indigo-400 to-purple-500",3
+9,ph,photo,object,9,"f,oʊ,t,oʊ","The 'ph' sound in photo","family photo picture","from-indigo-400 to-purple-500",3
+9,ph,graph,object,9,"g,r,æ,f","The 'ph' sound in graph","data graph chart","from-indigo-400 to-purple-500",3
+9,ph,elephant,animal,9,"ɛ,l,ə,f,ə,n,t","The 'ph' sound in elephant","large elephant trunk","from-indigo-400 to-purple-500",4
+9,ph,alphabet,system,9,"æ,l,f,ə,b,ɛ,t","The 'ph' sound in alphabet","alphabet letters abc","from-indigo-400 to-purple-500",3
+9,wh,what,question,9,"w,ʌ,t","The 'wh' sound in what","what question mark","from-cyan-400 to-blue-500",4
+9,wh,when,question,9,"w,ɛ,n","The 'wh' sound in when","when time clock","from-cyan-400 to-blue-500",4
+9,wh,where,question,9,"w,ɛr","The 'wh' sound in where","where location map","from-cyan-400 to-blue-500",4
+9,wh,white,color,9,"w,aɪ,t","The 'wh' sound in white","pure white color","from-cyan-400 to-blue-500",4
+9,wh,which,question,9,"w,ɪ,ʧ","The 'wh' sound in which","which choice options","from-cyan-400 to-blue-500",3
+9,ck,back,direction,9,"b,æ,k","The 'ck' sound in back","back direction arrow","from-slate-400 to-gray-500",4
+9,ck,duck,animal,9,"d,ʌ,k","The 'ck' sound in duck","yellow duck pond","from-slate-400 to-gray-500",4
+9,ck,lock,object,9,"l,ɒ,k","The 'ck' sound in lock","door lock security","from-slate-400 to-gray-500",4
+9,ck,pick,action,9,"p,ɪ,k","The 'ck' sound in pick","pick choose select","from-slate-400 to-gray-500",4
+9,ck,check,action,9,"ʧ,ɛ,k","The 'ck' sound in check","check mark correct","from-slate-400 to-gray-500",3
+9,dge,bridge,structure,9,"b,r,ɪ,dʒ","The 'dge' sound in bridge","stone bridge river","from-emerald-400 to-green-500",4
+9,dge,judge,profession,9,"dʒ,ʌ,dʒ","The 'dge' sound in judge","judge court law","from-emerald-400 to-green-500",3
+9,dge,edge,position,9,"ɛ,dʒ","The 'dge' sound in edge","cliff edge dangerous","from-emerald-400 to-green-500",3
+9,dge,badge,object,9,"b,æ,dʒ","The 'dge' sound in badge","police badge metal","from-emerald-400 to-green-500",3
+9,dge,fudge,food,9,"f,ʌ,dʒ","The 'dge' sound in fudge","chocolate fudge sweet","from-emerald-400 to-green-500",4
+10,tion,action,process,10,"æ,k,ʃ,ə,n","The 'tion' sound in action","action movement energy","from-orange-400 to-red-500",3
+10,tion,nation,place,10,"n,eɪ,ʃ,ə,n","The 'tion' sound in nation","nation country flag","from-orange-400 to-red-500",3
+10,tion,station,place,10,"s,t,eɪ,ʃ,ə,n","The 'tion' sound in station","train station platform","from-orange-400 to-red-500",3
+10,tion,question,grammar,10,"k,w,ɛ,s,ʧ,ə,n","The 'tion' sound in question","question mark inquiry","from-orange-400 to-red-500",4
+10,tion,vacation,time,10,"v,eɪ,k,eɪ,ʃ,ə,n","The 'tion' sound in vacation","beach vacation holiday","from-orange-400 to-red-500",3
+10,sion,decision,process,10,"d,ɪ,s,ɪ,ʒ,ə,n","The 'sion' sound in decision","decision choice thinking","from-purple-400 to-pink-500",3
+10,sion,television,object,10,"t,ɛ,l,ə,v,ɪ,ʒ,ə,n","The 'sion' sound in television","television tv screen","from-purple-400 to-pink-500",3
+10,sion,vision,ability,10,"v,ɪ,ʒ,ə,n","The 'sion' sound in vision","vision eyes sight","from-purple-400 to-pink-500",3
+10,sion,mission,purpose,10,"m,ɪ,ʃ,ə,n","The 'sion' sound in mission","space mission rocket","from-purple-400 to-pink-500",3
+10,sion,explosion,event,10,"ɪ,k,s,p,l,oʊ,ʒ,ə,n","The 'sion' sound in explosion","explosion blast fire","from-purple-400 to-pink-500",3

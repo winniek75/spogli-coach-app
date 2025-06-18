@@ -1,0 +1,292 @@
+level,word,example_sentence,image_url,difficulty,category
+1,the,The cat is on the mat,cat_on_mat.png,easy,articles
+1,and,The dog and cat are friends,dog_cat_friends.png,easy,conjunctions
+1,to,I go to school every day,go_to_school.png,easy,prepositions
+1,a,I see a red apple,red_apple.png,easy,articles
+1,I,I am a happy child,happy_child.png,easy,pronouns
+1,it,It is a sunny day,sunny_day.png,easy,pronouns
+1,in,The ball is in the box,ball_in_box.png,easy,prepositions
+1,is,The sun is bright,bright_sun.png,easy,verbs
+1,you,You are my best friend,best_friends.png,easy,pronouns
+1,that,That is a big tree,big_tree.png,easy,demonstratives
+1,he,He plays with his toys,boy_with_toys.png,easy,pronouns
+1,was,The cat was sleeping,sleeping_cat.png,easy,verbs
+1,for,This gift is for you,gift_giving.png,easy,prepositions
+1,on,The book is on the table,book_on_table.png,easy,prepositions
+1,are,We are good friends,group_of_friends.png,easy,verbs
+1,as,She runs as fast as wind,running_fast.png,easy,comparisons
+1,with,I play with my brother,siblings_playing.png,easy,prepositions
+1,his,His bag is very heavy,heavy_bag.png,easy,possessives
+1,they,They love to play outside,children_playing_outside.png,easy,pronouns
+1,be,I want to be a teacher,teacher_classroom.png,easy,verbs
+1,at,Meet me at the park,meeting_at_park.png,easy,prepositions
+1,one,I have one pet dog,one_pet_dog.png,easy,numbers
+1,have,I have a new bicycle,new_bicycle.png,easy,verbs
+1,this,This flower smells sweet,sweet_flower.png,easy,demonstratives
+1,from,The letter is from grandma,letter_from_grandma.png,easy,prepositions
+1,or,Do you want cake or ice cream,cake_or_icecream.png,easy,conjunctions
+1,had,She had a wonderful dream,wonderful_dream.png,easy,verbs
+1,by,The river flows by the house,river_by_house.png,easy,prepositions
+1,but,I like apples but not oranges,apples_not_oranges.png,easy,conjunctions
+1,not,The door is not open,closed_door.png,easy,negatives
+1,what,What color is the sky,blue_sky.png,easy,questions
+1,all,All the birds are singing,birds_singing.png,easy,quantifiers
+1,were,The children were very happy,happy_children.png,easy,verbs
+1,we,We go swimming together,swimming_together.png,easy,pronouns
+1,when,When will you come home,coming_home.png,easy,questions
+1,your,Your smile is beautiful,beautiful_smile.png,easy,possessives
+1,can,I can ride a bicycle,riding_bicycle.png,easy,modals
+1,said,Mom said dinner is ready,dinner_ready.png,easy,verbs
+1,there,There is a rainbow outside,rainbow_outside.png,easy,adverbs
+1,each,Each student has a book,students_with_books.png,easy,quantifiers
+1,which,Which toy do you like,choosing_toys.png,easy,questions
+1,she,She loves to read books,girl_reading_books.png,easy,pronouns
+1,do,Do you like chocolate cake,chocolate_cake.png,easy,verbs
+1,how,How do you make cookies,making_cookies.png,easy,questions
+1,their,Their house is very big,big_house.png,easy,possessives
+1,if,If it rains we stay inside,staying_inside_rain.png,easy,conditionals
+1,will,We will visit the zoo tomorrow,visiting_zoo.png,easy,modals
+1,up,The balloon goes up high,balloon_going_up.png,easy,directions
+1,other,The other book is red,red_book.png,easy,adjectives
+1,about,Tell me about your day,telling_about_day.png,easy,prepositions
+1,out,The cat went out to play,cat_going_out.png,easy,directions
+2,who,Who is your favorite teacher,favorite_teacher.png,medium,questions
+2,oil,The car needs fresh oil,car_oil_change.png,medium,things
+2,its,The dog wagged its tail,dog_wagging_tail.png,medium,possessives
+2,now,We must leave right now,leaving_right_now.png,medium,time
+2,find,Can you find the hidden treasure,hidden_treasure.png,medium,verbs
+2,long,The snake is very long,very_long_snake.png,medium,adjectives
+2,down,The ball rolled down the hill,ball_down_hill.png,medium,directions
+2,day,Today is a beautiful day,beautiful_day.png,medium,time
+2,did,Did you finish your homework,finished_homework.png,medium,verbs
+2,get,Please get the milk from fridge,milk_from_fridge.png,medium,verbs
+2,has,She has a pet rabbit,pet_rabbit.png,medium,verbs
+2,him,Give the book to him,giving_book.png,medium,pronouns
+2,old,My grandfather is very old,old_grandfather.png,medium,adjectives
+2,see,I can see the mountains,seeing_mountains.png,medium,verbs
+2,two,I have two best friends,two_best_friends.png,medium,numbers
+2,way,This is the way home,way_home.png,medium,directions
+2,may,May I have some water,asking_for_water.png,medium,modals
+2,say,What did you say to her,talking_to_friend.png,medium,verbs
+2,new,I got a new backpack,new_backpack.png,medium,adjectives
+2,take,Take an umbrella with you,taking_umbrella.png,medium,verbs
+2,only,Only one cookie is left,one_cookie_left.png,medium,quantifiers
+2,little,The little mouse is cute,cute_little_mouse.png,medium,adjectives
+2,work,Dad goes to work early,going_to_work.png,medium,verbs
+2,know,I know how to swim,knowing_how_to_swim.png,medium,verbs
+2,place,This is my favorite place,favorite_place.png,medium,places
+2,year,Last year we moved here,moved_last_year.png,medium,time
+2,live,Fish live in the water,fish_in_water.png,medium,verbs
+2,me,Please come with me,come_with_me.png,medium,pronouns
+2,back,Come back before dinner,come_back_dinner.png,medium,directions
+2,give,Give me a big hug,giving_big_hug.png,medium,verbs
+2,most,Most birds can fly high,birds_flying_high.png,medium,quantifiers
+2,very,The flower is very pretty,very_pretty_flower.png,medium,adverbs
+2,after,We play after school,playing_after_school.png,medium,time
+2,thing,That is a strange thing,strange_thing.png,medium,things
+2,our,Our family loves picnics,family_picnic.png,medium,possessives
+2,just,I just finished my lunch,finished_lunch.png,medium,adverbs
+2,name,What is your pet's name,pet_name.png,medium,things
+2,good,This soup tastes very good,good_tasting_soup.png,medium,adjectives
+2,sentence,Write a complete sentence,writing_sentence.png,medium,language
+2,man,The old man feeds birds,old_man_feeding_birds.png,medium,people
+2,think,I think it will rain,thinking_about_rain.png,medium,verbs
+2,before,Wash hands before eating,washing_hands_before_eating.png,medium,time
+2,move,The turtle moves very slowly,turtle_moving_slowly.png,medium,verbs
+2,right,Turn right at the corner,turning_right_corner.png,medium,directions
+2,boy,The little boy is laughing,little_boy_laughing.png,medium,people
+2,show,Show me your drawing,showing_drawing.png,medium,verbs
+2,too,This bag is too heavy,too_heavy_bag.png,medium,adverbs
+2,any,Do you have any questions,asking_questions.png,medium,quantifiers
+2,same,We wear the same uniform,same_uniform.png,medium,adjectives
+2,tell,Tell me a funny story,telling_funny_story.png,medium,verbs
+2,does,Does your dog like treats,dog_likes_treats.png,medium,verbs
+2,set,Please set the table,setting_table.png,medium,verbs
+2,three,I see three colorful balloons,three_colorful_balloons.png,medium,numbers
+2,want,I want to learn guitar,learning_guitar.png,medium,verbs
+2,air,The air smells like flowers,air_smells_flowers.png,medium,nature
+3,well,She sings very well,singing_very_well.png,hard,adverbs
+3,also,I also like chocolate,also_like_chocolate.png,hard,adverbs
+3,play,Children love to play games,children_playing_games.png,hard,verbs
+3,small,The ant is very small,very_small_ant.png,hard,adjectives
+3,end,This is the end of story,end_of_story.png,hard,things
+3,put,Put the toys in the box,putting_toys_in_box.png,hard,verbs
+3,home,I feel happy at home,happy_at_home.png,hard,places
+3,read,I love to read adventure books,reading_adventure_books.png,hard,verbs
+3,hand,Raise your hand to answer,raising_hand_answer.png,hard,body
+3,large,The elephant is very large,very_large_elephant.png,hard,adjectives
+3,spell,Can you spell your name,spelling_name.png,hard,verbs
+3,add,Add sugar to the tea,adding_sugar_tea.png,hard,verbs
+3,even,Even babies can learn music,babies_learning_music.png,hard,adverbs
+3,land,The plane will land soon,plane_landing_soon.png,hard,verbs
+3,here,Come here and sit down,come_sit_here.png,hard,adverbs
+3,must,We must brush our teeth,brushing_teeth.png,hard,modals
+3,big,The whale is very big,very_big_whale.png,hard,adjectives
+3,high,The mountain is very high,very_high_mountain.png,hard,adjectives
+3,such,Such beautiful music makes me happy,beautiful_music_happy.png,hard,adjectives
+3,follow,Follow the yellow brick road,following_yellow_road.png,hard,verbs
+3,act,The actors act on stage,actors_on_stage.png,hard,verbs
+3,why,Why do flowers need water,flowers_need_water.png,hard,questions
+3,ask,Ask the teacher for help,asking_teacher_help.png,hard,verbs
+3,men,The men are building a house,men_building_house.png,hard,people
+3,change,Caterpillars change into butterflies,caterpillar_to_butterfly.png,hard,verbs
+3,went,We went to the beach yesterday,went_to_beach.png,hard,verbs
+3,light,The light helps us see,light_helps_see.png,hard,things
+3,kind,She is a very kind person,very_kind_person.png,hard,adjectives
+3,off,Turn off the lights,turning_off_lights.png,hard,directions
+3,need,Plants need water to grow,plants_need_water.png,hard,verbs
+3,house,Our house has a red roof,house_red_roof.png,hard,places
+3,picture,This picture shows my family,picture_shows_family.png,hard,things
+3,try,Try to solve this puzzle,solving_puzzle.png,hard,verbs
+3,us,Come and play with us,come_play_with_us.png,hard,pronouns
+3,again,Please read the story again,reading_story_again.png,hard,adverbs
+3,animal,My favorite animal is elephant,favorite_animal_elephant.png,hard,animals
+3,point,Point to the correct answer,pointing_correct_answer.png,hard,verbs
+3,mother,My mother makes delicious cookies,mother_making_cookies.png,hard,people
+3,world,The world is full of wonders,world_full_wonders.png,hard,places
+3,near,The library is near school,library_near_school.png,hard,prepositions
+3,build,Let's build a sandcastle,building_sandcastle.png,hard,verbs
+3,self,Believe in yourself always,believe_in_yourself.png,hard,pronouns
+3,earth,Earth is our beautiful planet,earth_beautiful_planet.png,hard,places
+3,father,My father teaches me guitar,father_teaching_guitar.png,hard,people
+3,head,Wear a helmet on your head,helmet_on_head.png,hard,body
+3,page,Turn to the next page,turning_next_page.png,hard,things
+3,country,Japan is a beautiful country,japan_beautiful_country.png,hard,places
+3,found,I found a shiny seashell,found_shiny_seashell.png,hard,verbs
+3,answer,Raise your hand to answer,raising_hand_to_answer.png,hard,verbs
+3,school,I love going to school,love_going_school.png,hard,places
+3,grow,Watch the flowers grow tall,flowers_growing_tall.png,hard,verbs
+3,study,I study hard for tests,studying_hard_tests.png,hard,verbs
+3,still,The lake is very still,very_still_lake.png,hard,adjectives
+3,learn,We learn something new daily,learning_something_new.png,hard,verbs
+3,should,You should eat healthy food,eating_healthy_food.png,hard,modals
+4,America,America is a large country,america_large_country.png,veryhard,places
+4,around,The Earth goes around the sun,earth_around_sun.png,veryhard,prepositions
+4,another,Give me another chance please,another_chance_please.png,veryhard,adjectives
+4,came,The mailman came this morning,mailman_came_morning.png,veryhard,verbs
+4,come,Come to my birthday party,come_birthday_party.png,veryhard,verbs
+4,work,Hard work brings success,hard_work_success.png,veryhard,verbs
+4,word,Choose the correct word,choosing_correct_word.png,veryhard,language
+4,where,Where did you hide the treasure,hiding_treasure.png,veryhard,questions
+4,much,How much does this cost,asking_cost.png,veryhard,quantifiers
+4,through,The train goes through tunnel,train_through_tunnel.png,veryhard,prepositions
+4,them,Give them some fresh water,giving_fresh_water.png,veryhard,pronouns
+4,these,These apples taste very sweet,sweet_tasting_apples.png,veryhard,demonstratives
+4,many,Many stars shine at night,stars_shine_night.png,veryhard,quantifiers
+4,some,Some birds migrate in winter,birds_migrate_winter.png,veryhard,quantifiers
+4,time,Time passes quickly when having fun,time_passes_having_fun.png,veryhard,time
+4,look,Look at the beautiful sunset,beautiful_sunset.png,veryhard,verbs
+4,more,I want more ice cream,wanting_more_icecream.png,veryhard,quantifiers
+4,write,I write letters to grandpa,writing_letters_grandpa.png,veryhard,verbs
+4,go,Let's go explore the forest,exploring_forest.png,veryhard,verbs
+4,number,What number comes after ten,number_after_ten.png,veryhard,numbers
+4,no,No entry beyond this point,no_entry_point.png,veryhard,negatives
+4,people,Many people enjoy gardening,people_enjoy_gardening.png,veryhard,people
+4,my,My grandmother tells great stories,grandmother_tells_stories.png,veryhard,possessives
+4,over,The bridge goes over river,bridge_over_river.png,veryhard,prepositions
+4,water,Clean water is precious,clean_water_precious.png,veryhard,nature
+4,than,Elephants are bigger than mice,elephants_bigger_mice.png,veryhard,comparisons
+4,call,Call me when you arrive,calling_when_arrive.png,veryhard,verbs
+4,first,She finished first in race,finished_first_race.png,veryhard,ordinals
+4,down,The leaves fall down gently,leaves_fall_gently.png,veryhard,directions
+4,been,I have been to many countries,traveled_many_countries.png,veryhard,verbs
+4,into,Put the ball into the box,ball_into_box.png,veryhard,prepositions
+4,could,Could you help me please,asking_for_help.png,veryhard,modals
+4,made,She made a beautiful painting,beautiful_painting.png,veryhard,verbs
+4,oil,We use oil for cooking,cooking_oil.png,veryhard,things
+4,part,This is part of the game,part_of_game.png,veryhard,things
+4,sound,Listen to the beautiful sound,beautiful_sound.png,veryhard,things
+4,only,Only you can make this choice,making_choice.png,veryhard,adverbs
+4,little,A little help goes far,helping_others.png,veryhard,adjectives
+4,years,Many years have passed,years_passing.png,veryhard,time
+4,great,That was a great movie,great_movie.png,veryhard,adjectives
+4,help,Please help your friend,helping_friend.png,veryhard,verbs
+4,line,Draw a straight line,drawing_line.png,veryhard,things
+4,turn,Turn the page carefully,turning_page.png,veryhard,verbs
+4,cause,What is the cause of rain,cause_of_rain.png,veryhard,abstract
+4,mean,What does this word mean,word_meaning.png,veryhard,verbs
+4,move,Let's move to the garden,moving_to_garden.png,veryhard,verbs
+4,right,You made the right choice,right_choice.png,veryhard,adjectives
+4,boy,The boy loves adventure stories,boy_adventure_stories.png,veryhard,people
+4,old,The old tree tells stories,old_tree_stories.png,veryhard,adjectives
+4,too,This puzzle is too difficult,difficult_puzzle.png,veryhard,adverbs
+4,does,What does your father do,father_job.png,veryhard,verbs
+4,different,Everyone has different talents,different_talents.png,veryhard,adjectives
+5,because,We stayed inside because of rain,stayed_inside_rain.png,extreme,conjunctions
+5,before,Stretch before exercising always,stretching_before_exercise.png,extreme,time
+5,between,The secret lies between two mountains,secret_between_mountains.png,extreme,prepositions
+5,important,Education is very important,education_very_important.png,extreme,adjectives
+5,often,We often visit the museum,often_visit_museum.png,extreme,adverbs
+5,until,Wait until the flowers bloom,wait_flowers_bloom.png,extreme,time
+5,children,Children love discovering new things,children_discovering_things.png,extreme,people
+5,side,The other side has treasures,other_side_treasures.png,extreme,places
+5,feet,My feet love walking on sand,feet_walking_sand.png,extreme,body
+5,car,The electric car is quiet,electric_car_quiet.png,extreme,vehicles
+5,mile,We walked one mile today,walked_one_mile.png,extreme,measurements
+5,night,The stars shine bright at night,stars_bright_night.png,extreme,time
+5,walk,Let's walk through the garden,walking_through_garden.png,extreme,verbs
+5,white,The white snow covers mountains,white_snow_mountains.png,extreme,colors
+5,sea,The deep sea holds mysteries,deep_sea_mysteries.png,extreme,nature
+5,began,The adventure began at dawn,adventure_began_dawn.png,extreme,verbs
+5,grow,Ideas grow in curious minds,ideas_grow_minds.png,extreme,verbs
+5,took,She took the path less traveled,path_less_traveled.png,extreme,verbs
+5,river,The river flows to ocean,river_flows_ocean.png,extreme,nature
+5,four,Four seasons bring different beauty,four_seasons_beauty.png,extreme,numbers
+5,carry,Ants carry food to home,ants_carry_food.png,extreme,verbs
+5,state,Each state has unique culture,state_unique_culture.png,extreme,places
+5,once,Once upon a time magic existed,once_magic_existed.png,extreme,time
+5,book,Every book opens new worlds,book_opens_worlds.png,extreme,things
+5,hear,I can hear ocean waves,hearing_ocean_waves.png,extreme,verbs
+5,stop,Stop and smell the roses,stop_smell_roses.png,extreme,verbs
+5,without,Without rain flowers cannot bloom,without_rain_flowers.png,extreme,prepositions
+5,second,Every second is precious,every_second_precious.png,extreme,time
+5,later,We'll explore the cave later,explore_cave_later.png,extreme,time
+5,miss,I miss my old friends,missing_old_friends.png,extreme,verbs
+5,idea,That's a brilliant idea,brilliant_idea.png,extreme,things
+5,enough,We have enough supplies,enough_supplies.png,extreme,quantifiers
+5,eat,Healthy food helps us grow,healthy_food_grow.png,extreme,verbs
+5,face,Her face shows pure joy,face_shows_joy.png,extreme,body
+5,watch,Watch the sunrise paint sky,watching_sunrise_sky.png,extreme,verbs
+5,far,The stars are very far,stars_very_far.png,extreme,adjectives
+5,really,Dreams can really come true,dreams_come_true.png,extreme,adverbs
+5,almost,We almost reached the summit,almost_reached_summit.png,extreme,adverbs
+5,let,Let your imagination soar high,imagination_soar_high.png,extreme,verbs
+5,above,Eagles soar high above clouds,eagles_above_clouds.png,extreme,prepositions
+5,girl,The curious girl asks questions,curious_girl_questions.png,extreme,people
+5,sometimes,Sometimes miracles happen unexpectedly,miracles_happen_unexpectedly.png,extreme,adverbs
+5,mountain,The mountain touches the sky,mountain_touches_sky.png,extreme,nature
+5,cut,Cut the paper carefully,cutting_paper_carefully.png,extreme,verbs
+5,young,Young minds are full of wonder,young_minds_wonder.png,extreme,adjectives
+5,talk,Let's talk about our dreams,talking_about_dreams.png,extreme,verbs
+5,soon,Spring will come soon,spring_coming_soon.png,extreme,time
+5,list,Make a list of goals,making_list_goals.png,extreme,things
+5,song,The bird's song is beautiful,bird_song_beautiful.png,extreme,things
+5,leave,Leaves leave trees in autumn,leaves_leave_autumn.png,extreme,verbs
+5,family,Family bonds are strongest,family_bonds_strongest.png,extreme,people
+5,body,Take care of your body,taking_care_body.png,extreme,body
+5,music,Music brings people together,music_brings_together.png,extreme,art
+5,color,What color makes you happy,color_makes_happy.png,extreme,colors
+5,stand,Stand up for what's right,standing_for_right.png,extreme,verbs
+5,questions,Good questions lead to answers,questions_lead_answers.png,extreme,language
+5,fish,Fish swim in clear water,fish_clear_water.png,extreme,animals
+5,area,This area needs protection,area_needs_protection.png,extreme,places
+6,example,This painting is perfect example,painting_perfect_example.png,expert,things
+6,beginning,Every beginning holds promise,beginning_holds_promise.png,expert,time
+6,thought,Deep thought leads to wisdom,deep_thought_wisdom.png,expert,abstract
+6,open,Open minds discover new possibilities,open_minds_possibilities.png,expert,verbs
+6,public,Public libraries serve communities,libraries_serve_communities.png,expert,adjectives
+6,follow,Follow your passion always,following_passion_always.png,expert,verbs
+6,during,During winter animals hibernate,winter_animals_hibernate.png,expert,prepositions
+6,present,Live in the present moment,living_present_moment.png,expert,time
+6,government,Good government serves people,government_serves_people.png,expert,politics
+6,second,Second chances are precious,second_chances_precious.png,expert,ordinals
+6,group,Our study group meets weekly,study_group_meets.png,expert,people
+6,problem,Every problem has solution,problem_has_solution.png,expert,abstract
+6,fact,Science reveals fascinating facts,science_reveals_facts.png,expert,abstract
+6,money,Money cannot buy happiness,money_cannot_buy_happiness.png,expert,things
+6,point,Make your point clearly,making_point_clearly.png,expert,abstract
+6,member,Each team member contributes,team_member_contributes.png,expert,people
+6,power,Knowledge gives true power,knowledge_gives_power.png,expert,abstract
+6,while,While studying remember to rest,studying_remember_rest.png,expert,time
+6,right,Everyone has right to education,right_to_education.png,expert,abstract
+6,question,Good questions lead to discovery,questions_lead_discovery.png,expert,language

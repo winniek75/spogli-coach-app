@@ -1,0 +1,7134 @@
+[
+  {
+    "level": 1,
+    "word": "cat",
+    "ending_sound": "at",
+    "rhymes": [
+      "hat",
+      "bat",
+      "rat",
+      "mat",
+      "sat"
+    ],
+    "non_rhymes": [
+      "dog",
+      "fish",
+      "sun",
+      "run",
+      "pen"
+    ],
+    "difficulty": "easy",
+    "category": "animals"
+  },
+  {
+    "level": 1,
+    "word": "bat",
+    "ending_sound": "at",
+    "rhymes": [
+      "cat",
+      "hat",
+      "rat",
+      "mat",
+      "sat"
+    ],
+    "non_rhymes": [
+      "dog",
+      "fish",
+      "sun",
+      "run",
+      "pen"
+    ],
+    "difficulty": "easy",
+    "category": "animals"
+  },
+  {
+    "level": 1,
+    "word": "rat",
+    "ending_sound": "at",
+    "rhymes": [
+      "cat",
+      "bat",
+      "hat",
+      "mat",
+      "sat"
+    ],
+    "non_rhymes": [
+      "dog",
+      "fish",
+      "sun",
+      "run",
+      "pen"
+    ],
+    "difficulty": "easy",
+    "category": "animals"
+  },
+  {
+    "level": 1,
+    "word": "hat",
+    "ending_sound": "at",
+    "rhymes": [
+      "cat",
+      "bat",
+      "rat",
+      "mat",
+      "sat"
+    ],
+    "non_rhymes": [
+      "dog",
+      "fish",
+      "sun",
+      "run",
+      "pen"
+    ],
+    "difficulty": "easy",
+    "category": "clothes"
+  },
+  {
+    "level": 1,
+    "word": "mat",
+    "ending_sound": "at",
+    "rhymes": [
+      "cat",
+      "bat",
+      "rat",
+      "hat",
+      "sat"
+    ],
+    "non_rhymes": [
+      "dog",
+      "fish",
+      "sun",
+      "run",
+      "pen"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "sat",
+    "ending_sound": "at",
+    "rhymes": [
+      "cat",
+      "bat",
+      "rat",
+      "mat",
+      "hat"
+    ],
+    "non_rhymes": [
+      "dog",
+      "fish",
+      "sun",
+      "run",
+      "pen"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "pen",
+    "ending_sound": "en",
+    "rhymes": [
+      "hen",
+      "men",
+      "ten",
+      "den",
+      "when"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "hen",
+    "ending_sound": "en",
+    "rhymes": [
+      "pen",
+      "men",
+      "ten",
+      "den",
+      "when"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "animals"
+  },
+  {
+    "level": 1,
+    "word": "ten",
+    "ending_sound": "en",
+    "rhymes": [
+      "pen",
+      "hen",
+      "men",
+      "den",
+      "when"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "numbers"
+  },
+  {
+    "level": 1,
+    "word": "men",
+    "ending_sound": "en",
+    "rhymes": [
+      "pen",
+      "hen",
+      "ten",
+      "den",
+      "when"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "people"
+  },
+  {
+    "level": 1,
+    "word": "den",
+    "ending_sound": "en",
+    "rhymes": [
+      "pen",
+      "hen",
+      "ten",
+      "men",
+      "when"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "places"
+  },
+  {
+    "level": 1,
+    "word": "run",
+    "ending_sound": "un",
+    "rhymes": [
+      "sun",
+      "fun",
+      "bun",
+      "gun",
+      "nun"
+    ],
+    "non_rhymes": [
+      "cat",
+      "bat",
+      "hat",
+      "pen",
+      "ten"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "sun",
+    "ending_sound": "un",
+    "rhymes": [
+      "run",
+      "fun",
+      "bun",
+      "gun",
+      "nun"
+    ],
+    "non_rhymes": [
+      "cat",
+      "bat",
+      "hat",
+      "pen",
+      "ten"
+    ],
+    "difficulty": "easy",
+    "category": "nature"
+  },
+  {
+    "level": 1,
+    "word": "fun",
+    "ending_sound": "un",
+    "rhymes": [
+      "run",
+      "sun",
+      "bun",
+      "gun",
+      "nun"
+    ],
+    "non_rhymes": [
+      "cat",
+      "bat",
+      "hat",
+      "pen",
+      "ten"
+    ],
+    "difficulty": "easy",
+    "category": "feelings"
+  },
+  {
+    "level": 1,
+    "word": "bun",
+    "ending_sound": "un",
+    "rhymes": [
+      "run",
+      "sun",
+      "fun",
+      "gun",
+      "nun"
+    ],
+    "non_rhymes": [
+      "cat",
+      "bat",
+      "hat",
+      "pen",
+      "ten"
+    ],
+    "difficulty": "easy",
+    "category": "food"
+  },
+  {
+    "level": 1,
+    "word": "gun",
+    "ending_sound": "un",
+    "rhymes": [
+      "run",
+      "sun",
+      "fun",
+      "bun",
+      "nun"
+    ],
+    "non_rhymes": [
+      "cat",
+      "bat",
+      "hat",
+      "pen",
+      "ten"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "log",
+    "ending_sound": "og",
+    "rhymes": [
+      "dog",
+      "hog",
+      "fog",
+      "jog",
+      "bog"
+    ],
+    "non_rhymes": [
+      "cat",
+      "bat",
+      "hat",
+      "pen",
+      "ten"
+    ],
+    "difficulty": "easy",
+    "category": "nature"
+  },
+  {
+    "level": 1,
+    "word": "dog",
+    "ending_sound": "og",
+    "rhymes": [
+      "log",
+      "hog",
+      "fog",
+      "jog",
+      "bog"
+    ],
+    "non_rhymes": [
+      "cat",
+      "bat",
+      "hat",
+      "pen",
+      "ten"
+    ],
+    "difficulty": "easy",
+    "category": "animals"
+  },
+  {
+    "level": 1,
+    "word": "hog",
+    "ending_sound": "og",
+    "rhymes": [
+      "log",
+      "dog",
+      "fog",
+      "jog",
+      "bog"
+    ],
+    "non_rhymes": [
+      "cat",
+      "bat",
+      "hat",
+      "pen",
+      "ten"
+    ],
+    "difficulty": "easy",
+    "category": "animals"
+  },
+  {
+    "level": 1,
+    "word": "fog",
+    "ending_sound": "og",
+    "rhymes": [
+      "log",
+      "dog",
+      "hog",
+      "jog",
+      "bog"
+    ],
+    "non_rhymes": [
+      "cat",
+      "bat",
+      "hat",
+      "pen",
+      "ten"
+    ],
+    "difficulty": "easy",
+    "category": "nature"
+  },
+  {
+    "level": 1,
+    "word": "jog",
+    "ending_sound": "og",
+    "rhymes": [
+      "log",
+      "dog",
+      "hog",
+      "fog",
+      "bog"
+    ],
+    "non_rhymes": [
+      "cat",
+      "bat",
+      "hat",
+      "pen",
+      "ten"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "bog",
+    "ending_sound": "og",
+    "rhymes": [
+      "log",
+      "dog",
+      "hog",
+      "fog",
+      "jog"
+    ],
+    "non_rhymes": [
+      "cat",
+      "bat",
+      "hat",
+      "pen",
+      "ten"
+    ],
+    "difficulty": "easy",
+    "category": "nature"
+  },
+  {
+    "level": 1,
+    "word": "fan",
+    "ending_sound": "an",
+    "rhymes": [
+      "man",
+      "pan",
+      "can",
+      "ran",
+      "tan"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "man",
+    "ending_sound": "an",
+    "rhymes": [
+      "fan",
+      "pan",
+      "can",
+      "ran",
+      "tan"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "people"
+  },
+  {
+    "level": 1,
+    "word": "pan",
+    "ending_sound": "an",
+    "rhymes": [
+      "fan",
+      "man",
+      "can",
+      "ran",
+      "tan"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "can",
+    "ending_sound": "an",
+    "rhymes": [
+      "fan",
+      "man",
+      "pan",
+      "ran",
+      "tan"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "ran",
+    "ending_sound": "an",
+    "rhymes": [
+      "fan",
+      "man",
+      "pan",
+      "can",
+      "tan"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "tan",
+    "ending_sound": "an",
+    "rhymes": [
+      "fan",
+      "man",
+      "pan",
+      "can",
+      "ran"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "colors"
+  },
+  {
+    "level": 1,
+    "word": "nap",
+    "ending_sound": "ap",
+    "rhymes": [
+      "map",
+      "cap",
+      "tap",
+      "lap",
+      "gap"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "map",
+    "ending_sound": "ap",
+    "rhymes": [
+      "nap",
+      "cap",
+      "tap",
+      "lap",
+      "gap"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "cap",
+    "ending_sound": "ap",
+    "rhymes": [
+      "nap",
+      "map",
+      "tap",
+      "lap",
+      "gap"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "clothes"
+  },
+  {
+    "level": 1,
+    "word": "tap",
+    "ending_sound": "ap",
+    "rhymes": [
+      "nap",
+      "map",
+      "cap",
+      "lap",
+      "gap"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "lap",
+    "ending_sound": "ap",
+    "rhymes": [
+      "nap",
+      "map",
+      "cap",
+      "tap",
+      "gap"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "body"
+  },
+  {
+    "level": 1,
+    "word": "gap",
+    "ending_sound": "ap",
+    "rhymes": [
+      "nap",
+      "map",
+      "cap",
+      "tap",
+      "lap"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "space"
+  },
+  {
+    "level": 1,
+    "word": "red",
+    "ending_sound": "ed",
+    "rhymes": [
+      "bed",
+      "fed",
+      "led",
+      "wed",
+      "shed"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "colors"
+  },
+  {
+    "level": 1,
+    "word": "bed",
+    "ending_sound": "ed",
+    "rhymes": [
+      "red",
+      "fed",
+      "led",
+      "wed",
+      "shed"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "fed",
+    "ending_sound": "ed",
+    "rhymes": [
+      "red",
+      "bed",
+      "led",
+      "wed",
+      "shed"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "led",
+    "ending_sound": "ed",
+    "rhymes": [
+      "red",
+      "bed",
+      "fed",
+      "wed",
+      "shed"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "wed",
+    "ending_sound": "ed",
+    "rhymes": [
+      "red",
+      "bed",
+      "fed",
+      "led",
+      "shed"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "shed",
+    "ending_sound": "ed",
+    "rhymes": [
+      "red",
+      "bed",
+      "fed",
+      "led",
+      "wed"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "places"
+  },
+  {
+    "level": 1,
+    "word": "bug",
+    "ending_sound": "ug",
+    "rhymes": [
+      "rug",
+      "jug",
+      "hug",
+      "mug",
+      "dug"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "animals"
+  },
+  {
+    "level": 1,
+    "word": "rug",
+    "ending_sound": "ug",
+    "rhymes": [
+      "bug",
+      "jug",
+      "hug",
+      "mug",
+      "dug"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "jug",
+    "ending_sound": "ug",
+    "rhymes": [
+      "bug",
+      "rug",
+      "hug",
+      "mug",
+      "dug"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "hug",
+    "ending_sound": "ug",
+    "rhymes": [
+      "bug",
+      "rug",
+      "jug",
+      "mug",
+      "dug"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "mug",
+    "ending_sound": "ug",
+    "rhymes": [
+      "bug",
+      "rug",
+      "jug",
+      "hug",
+      "dug"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "dug",
+    "ending_sound": "ug",
+    "rhymes": [
+      "bug",
+      "rug",
+      "jug",
+      "hug",
+      "mug"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "sit",
+    "ending_sound": "it",
+    "rhymes": [
+      "bit",
+      "hit",
+      "kit",
+      "pit",
+      "fit"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "hit",
+    "ending_sound": "it",
+    "rhymes": [
+      "sit",
+      "bit",
+      "kit",
+      "pit",
+      "fit"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "kit",
+    "ending_sound": "it",
+    "rhymes": [
+      "sit",
+      "hit",
+      "bit",
+      "pit",
+      "fit"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "bit",
+    "ending_sound": "it",
+    "rhymes": [
+      "sit",
+      "hit",
+      "kit",
+      "pit",
+      "fit"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "quantity"
+  },
+  {
+    "level": 1,
+    "word": "pit",
+    "ending_sound": "it",
+    "rhymes": [
+      "sit",
+      "hit",
+      "kit",
+      "bit",
+      "fit"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "nature"
+  },
+  {
+    "level": 1,
+    "word": "fit",
+    "ending_sound": "it",
+    "rhymes": [
+      "sit",
+      "hit",
+      "kit",
+      "bit",
+      "pit"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "conditions"
+  },
+  {
+    "level": 1,
+    "word": "pin",
+    "ending_sound": "in",
+    "rhymes": [
+      "bin",
+      "fin",
+      "win",
+      "tin",
+      "sin"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "bin",
+    "ending_sound": "in",
+    "rhymes": [
+      "pin",
+      "fin",
+      "win",
+      "tin",
+      "sin"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "fin",
+    "ending_sound": "in",
+    "rhymes": [
+      "pin",
+      "bin",
+      "win",
+      "tin",
+      "sin"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "animals"
+  },
+  {
+    "level": 1,
+    "word": "win",
+    "ending_sound": "in",
+    "rhymes": [
+      "pin",
+      "bin",
+      "fin",
+      "tin",
+      "sin"
+    ],
+    "non_rhymes": [
+      "cat",
+      "dog",
+      "bat",
+      "sun",
+      "run"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "zip",
+    "ending_sound": "ip",
+    "rhymes": [
+      "tip",
+      "dip",
+      "lip",
+      "hip",
+      "rip"
+    ],
+    "non_rhymes": [
+      "bag",
+      "hat",
+      "sun",
+      "cat",
+      "dog"
+    ],
+    "difficulty": "medium",
+    "category": "clothes"
+  },
+  {
+    "level": 2,
+    "word": "tip",
+    "ending_sound": "ip",
+    "rhymes": [
+      "zip",
+      "dip",
+      "lip",
+      "hip",
+      "rip"
+    ],
+    "non_rhymes": [
+      "bag",
+      "hat",
+      "sun",
+      "cat",
+      "dog"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "dip",
+    "ending_sound": "ip",
+    "rhymes": [
+      "zip",
+      "tip",
+      "lip",
+      "hip",
+      "rip"
+    ],
+    "non_rhymes": [
+      "bag",
+      "hat",
+      "sun",
+      "cat",
+      "dog"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "lip",
+    "ending_sound": "ip",
+    "rhymes": [
+      "zip",
+      "tip",
+      "dip",
+      "hip",
+      "rip"
+    ],
+    "non_rhymes": [
+      "bag",
+      "hat",
+      "sun",
+      "cat",
+      "dog"
+    ],
+    "difficulty": "medium",
+    "category": "body"
+  },
+  {
+    "level": 2,
+    "word": "hip",
+    "ending_sound": "ip",
+    "rhymes": [
+      "zip",
+      "tip",
+      "dip",
+      "lip",
+      "rip"
+    ],
+    "non_rhymes": [
+      "bag",
+      "hat",
+      "sun",
+      "cat",
+      "dog"
+    ],
+    "difficulty": "medium",
+    "category": "body"
+  },
+  {
+    "level": 2,
+    "word": "rip",
+    "ending_sound": "ip",
+    "rhymes": [
+      "zip",
+      "tip",
+      "dip",
+      "lip",
+      "hip"
+    ],
+    "non_rhymes": [
+      "bag",
+      "hat",
+      "sun",
+      "cat",
+      "dog"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "leg",
+    "ending_sound": "eg",
+    "rhymes": [
+      "beg",
+      "peg",
+      "meg",
+      "keg",
+      "egg"
+    ],
+    "non_rhymes": [
+      "zip",
+      "tip",
+      "lip",
+      "hip",
+      "rip"
+    ],
+    "difficulty": "medium",
+    "category": "body"
+  },
+  {
+    "level": 2,
+    "word": "beg",
+    "ending_sound": "eg",
+    "rhymes": [
+      "leg",
+      "peg",
+      "meg",
+      "keg",
+      "egg"
+    ],
+    "non_rhymes": [
+      "zip",
+      "tip",
+      "lip",
+      "hip",
+      "rip"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "peg",
+    "ending_sound": "eg",
+    "rhymes": [
+      "leg",
+      "beg",
+      "meg",
+      "keg",
+      "egg"
+    ],
+    "non_rhymes": [
+      "zip",
+      "tip",
+      "lip",
+      "hip",
+      "rip"
+    ],
+    "difficulty": "medium",
+    "category": "things"
+  },
+  {
+    "level": 2,
+    "word": "meg",
+    "ending_sound": "eg",
+    "rhymes": [
+      "leg",
+      "beg",
+      "peg",
+      "keg",
+      "egg"
+    ],
+    "non_rhymes": [
+      "zip",
+      "tip",
+      "lip",
+      "hip",
+      "rip"
+    ],
+    "difficulty": "medium",
+    "category": "units"
+  },
+  {
+    "level": 2,
+    "word": "keg",
+    "ending_sound": "eg",
+    "rhymes": [
+      "leg",
+      "beg",
+      "peg",
+      "meg",
+      "egg"
+    ],
+    "non_rhymes": [
+      "zip",
+      "tip",
+      "lip",
+      "hip",
+      "rip"
+    ],
+    "difficulty": "medium",
+    "category": "things"
+  },
+  {
+    "level": 2,
+    "word": "egg",
+    "ending_sound": "eg",
+    "rhymes": [
+      "leg",
+      "beg",
+      "peg",
+      "meg",
+      "keg"
+    ],
+    "non_rhymes": [
+      "zip",
+      "tip",
+      "lip",
+      "hip",
+      "rip"
+    ],
+    "difficulty": "medium",
+    "category": "food"
+  },
+  {
+    "level": 2,
+    "word": "jam",
+    "ending_sound": "am",
+    "rhymes": [
+      "ham",
+      "ram",
+      "dam",
+      "cam",
+      "yam"
+    ],
+    "non_rhymes": [
+      "leg",
+      "beg",
+      "peg",
+      "egg",
+      "keg"
+    ],
+    "difficulty": "medium",
+    "category": "food"
+  },
+  {
+    "level": 2,
+    "word": "ham",
+    "ending_sound": "am",
+    "rhymes": [
+      "jam",
+      "ram",
+      "dam",
+      "cam",
+      "yam"
+    ],
+    "non_rhymes": [
+      "leg",
+      "beg",
+      "peg",
+      "egg",
+      "keg"
+    ],
+    "difficulty": "medium",
+    "category": "food"
+  },
+  {
+    "level": 2,
+    "word": "ram",
+    "ending_sound": "am",
+    "rhymes": [
+      "jam",
+      "ham",
+      "dam",
+      "cam",
+      "yam"
+    ],
+    "non_rhymes": [
+      "leg",
+      "beg",
+      "peg",
+      "egg",
+      "keg"
+    ],
+    "difficulty": "medium",
+    "category": "animals"
+  },
+  {
+    "level": 2,
+    "word": "dam",
+    "ending_sound": "am",
+    "rhymes": [
+      "jam",
+      "ham",
+      "ram",
+      "cam",
+      "yam"
+    ],
+    "non_rhymes": [
+      "leg",
+      "beg",
+      "peg",
+      "egg",
+      "keg"
+    ],
+    "difficulty": "medium",
+    "category": "structures"
+  },
+  {
+    "level": 2,
+    "word": "cam",
+    "ending_sound": "am",
+    "rhymes": [
+      "jam",
+      "ham",
+      "ram",
+      "dam",
+      "yam"
+    ],
+    "non_rhymes": [
+      "leg",
+      "beg",
+      "peg",
+      "egg",
+      "keg"
+    ],
+    "difficulty": "medium",
+    "category": "mechanics"
+  },
+  {
+    "level": 2,
+    "word": "yam",
+    "ending_sound": "am",
+    "rhymes": [
+      "jam",
+      "ham",
+      "ram",
+      "dam",
+      "cam"
+    ],
+    "non_rhymes": [
+      "leg",
+      "beg",
+      "peg",
+      "egg",
+      "keg"
+    ],
+    "difficulty": "medium",
+    "category": "food"
+  },
+  {
+    "level": 2,
+    "word": "fig",
+    "ending_sound": "ig",
+    "rhymes": [
+      "big",
+      "dig",
+      "pig",
+      "wig",
+      "jig"
+    ],
+    "non_rhymes": [
+      "jam",
+      "ham",
+      "ram",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "medium",
+    "category": "food"
+  },
+  {
+    "level": 2,
+    "word": "big",
+    "ending_sound": "ig",
+    "rhymes": [
+      "fig",
+      "dig",
+      "pig",
+      "wig",
+      "jig"
+    ],
+    "non_rhymes": [
+      "jam",
+      "ham",
+      "ram",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "medium",
+    "category": "adjectives"
+  },
+  {
+    "level": 2,
+    "word": "dig",
+    "ending_sound": "ig",
+    "rhymes": [
+      "fig",
+      "big",
+      "pig",
+      "wig",
+      "jig"
+    ],
+    "non_rhymes": [
+      "jam",
+      "ham",
+      "ram",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "pig",
+    "ending_sound": "ig",
+    "rhymes": [
+      "fig",
+      "big",
+      "dig",
+      "wig",
+      "jig"
+    ],
+    "non_rhymes": [
+      "jam",
+      "ham",
+      "ram",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "medium",
+    "category": "animals"
+  },
+  {
+    "level": 2,
+    "word": "wig",
+    "ending_sound": "ig",
+    "rhymes": [
+      "fig",
+      "big",
+      "dig",
+      "pig",
+      "jig"
+    ],
+    "non_rhymes": [
+      "jam",
+      "ham",
+      "ram",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "medium",
+    "category": "clothes"
+  },
+  {
+    "level": 2,
+    "word": "jig",
+    "ending_sound": "ig",
+    "rhymes": [
+      "fig",
+      "big",
+      "dig",
+      "pig",
+      "wig"
+    ],
+    "non_rhymes": [
+      "jam",
+      "ham",
+      "ram",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "medium",
+    "category": "dance"
+  },
+  {
+    "level": 2,
+    "word": "log",
+    "ending_sound": "og",
+    "rhymes": [
+      "cog",
+      "fog",
+      "hog",
+      "jog",
+      "tog"
+    ],
+    "non_rhymes": [
+      "fig",
+      "big",
+      "dig",
+      "pig",
+      "wig"
+    ],
+    "difficulty": "medium",
+    "category": "nature"
+  },
+  {
+    "level": 2,
+    "word": "cog",
+    "ending_sound": "og",
+    "rhymes": [
+      "log",
+      "fog",
+      "hog",
+      "jog",
+      "tog"
+    ],
+    "non_rhymes": [
+      "fig",
+      "big",
+      "dig",
+      "pig",
+      "wig"
+    ],
+    "difficulty": "medium",
+    "category": "mechanics"
+  },
+  {
+    "level": 2,
+    "word": "fog",
+    "ending_sound": "og",
+    "rhymes": [
+      "log",
+      "cog",
+      "hog",
+      "jog",
+      "tog"
+    ],
+    "non_rhymes": [
+      "fig",
+      "big",
+      "dig",
+      "pig",
+      "wig"
+    ],
+    "difficulty": "medium",
+    "category": "weather"
+  },
+  {
+    "level": 2,
+    "word": "hog",
+    "ending_sound": "og",
+    "rhymes": [
+      "log",
+      "cog",
+      "fog",
+      "jog",
+      "tog"
+    ],
+    "non_rhymes": [
+      "fig",
+      "big",
+      "dig",
+      "pig",
+      "wig"
+    ],
+    "difficulty": "medium",
+    "category": "animals"
+  },
+  {
+    "level": 2,
+    "word": "jog",
+    "ending_sound": "og",
+    "rhymes": [
+      "log",
+      "cog",
+      "fog",
+      "hog",
+      "tog"
+    ],
+    "non_rhymes": [
+      "fig",
+      "big",
+      "dig",
+      "pig",
+      "wig"
+    ],
+    "difficulty": "medium",
+    "category": "exercise"
+  },
+  {
+    "level": 2,
+    "word": "tog",
+    "ending_sound": "og",
+    "rhymes": [
+      "log",
+      "cog",
+      "fog",
+      "hog",
+      "jog"
+    ],
+    "non_rhymes": [
+      "fig",
+      "big",
+      "dig",
+      "pig",
+      "wig"
+    ],
+    "difficulty": "medium",
+    "category": "clothing"
+  },
+  {
+    "level": 2,
+    "word": "mud",
+    "ending_sound": "ud",
+    "rhymes": [
+      "bud",
+      "cud",
+      "dud",
+      "sud",
+      "thud"
+    ],
+    "non_rhymes": [
+      "log",
+      "cog",
+      "fog",
+      "hog",
+      "jog"
+    ],
+    "difficulty": "medium",
+    "category": "nature"
+  },
+  {
+    "level": 2,
+    "word": "bud",
+    "ending_sound": "ud",
+    "rhymes": [
+      "mud",
+      "cud",
+      "dud",
+      "sud",
+      "thud"
+    ],
+    "non_rhymes": [
+      "log",
+      "cog",
+      "fog",
+      "hog",
+      "jog"
+    ],
+    "difficulty": "medium",
+    "category": "nature"
+  },
+  {
+    "level": 2,
+    "word": "cud",
+    "ending_sound": "ud",
+    "rhymes": [
+      "mud",
+      "bud",
+      "dud",
+      "sud",
+      "thud"
+    ],
+    "non_rhymes": [
+      "log",
+      "cog",
+      "fog",
+      "hog",
+      "jog"
+    ],
+    "difficulty": "medium",
+    "category": "animals"
+  },
+  {
+    "level": 2,
+    "word": "dud",
+    "ending_sound": "ud",
+    "rhymes": [
+      "mud",
+      "bud",
+      "cud",
+      "sud",
+      "thud"
+    ],
+    "non_rhymes": [
+      "log",
+      "cog",
+      "fog",
+      "hog",
+      "jog"
+    ],
+    "difficulty": "medium",
+    "category": "things"
+  },
+  {
+    "level": 2,
+    "word": "sud",
+    "ending_sound": "ud",
+    "rhymes": [
+      "mud",
+      "bud",
+      "cud",
+      "dud",
+      "thud"
+    ],
+    "non_rhymes": [
+      "log",
+      "cog",
+      "fog",
+      "hog",
+      "jog"
+    ],
+    "difficulty": "medium",
+    "category": "things"
+  },
+  {
+    "level": 2,
+    "word": "thud",
+    "ending_sound": "ud",
+    "rhymes": [
+      "mud",
+      "bud",
+      "cud",
+      "dud",
+      "sud"
+    ],
+    "non_rhymes": [
+      "log",
+      "cog",
+      "fog",
+      "hog",
+      "jog"
+    ],
+    "difficulty": "medium",
+    "category": "sounds"
+  },
+  {
+    "level": 2,
+    "word": "van",
+    "ending_sound": "an",
+    "rhymes": [
+      "ban",
+      "can",
+      "fan",
+      "man",
+      "pan"
+    ],
+    "non_rhymes": [
+      "mud",
+      "bud",
+      "cud",
+      "dud",
+      "sud"
+    ],
+    "difficulty": "medium",
+    "category": "vehicles"
+  },
+  {
+    "level": 2,
+    "word": "ban",
+    "ending_sound": "an",
+    "rhymes": [
+      "van",
+      "can",
+      "fan",
+      "man",
+      "pan"
+    ],
+    "non_rhymes": [
+      "mud",
+      "bud",
+      "cud",
+      "dud",
+      "sud"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "can",
+    "ending_sound": "an",
+    "rhymes": [
+      "van",
+      "ban",
+      "fan",
+      "man",
+      "pan"
+    ],
+    "non_rhymes": [
+      "mud",
+      "bud",
+      "cud",
+      "dud",
+      "sud"
+    ],
+    "difficulty": "medium",
+    "category": "things"
+  },
+  {
+    "level": 2,
+    "word": "fan",
+    "ending_sound": "an",
+    "rhymes": [
+      "van",
+      "ban",
+      "can",
+      "man",
+      "pan"
+    ],
+    "non_rhymes": [
+      "mud",
+      "bud",
+      "cud",
+      "dud",
+      "sud"
+    ],
+    "difficulty": "medium",
+    "category": "things"
+  },
+  {
+    "level": 2,
+    "word": "man",
+    "ending_sound": "an",
+    "rhymes": [
+      "van",
+      "ban",
+      "can",
+      "fan",
+      "pan"
+    ],
+    "non_rhymes": [
+      "mud",
+      "bud",
+      "cud",
+      "dud",
+      "sud"
+    ],
+    "difficulty": "medium",
+    "category": "people"
+  },
+  {
+    "level": 2,
+    "word": "pan",
+    "ending_sound": "an",
+    "rhymes": [
+      "van",
+      "ban",
+      "can",
+      "fan",
+      "man"
+    ],
+    "non_rhymes": [
+      "mud",
+      "bud",
+      "cud",
+      "dud",
+      "sud"
+    ],
+    "difficulty": "medium",
+    "category": "things"
+  },
+  {
+    "level": 2,
+    "word": "jet",
+    "ending_sound": "et",
+    "rhymes": [
+      "net",
+      "pet",
+      "wet",
+      "set",
+      "get"
+    ],
+    "non_rhymes": [
+      "van",
+      "ban",
+      "can",
+      "fan",
+      "man"
+    ],
+    "difficulty": "medium",
+    "category": "vehicles"
+  },
+  {
+    "level": 2,
+    "word": "net",
+    "ending_sound": "et",
+    "rhymes": [
+      "jet",
+      "pet",
+      "wet",
+      "set",
+      "get"
+    ],
+    "non_rhymes": [
+      "van",
+      "ban",
+      "can",
+      "fan",
+      "man"
+    ],
+    "difficulty": "medium",
+    "category": "things"
+  },
+  {
+    "level": 2,
+    "word": "pet",
+    "ending_sound": "et",
+    "rhymes": [
+      "jet",
+      "net",
+      "wet",
+      "set",
+      "get"
+    ],
+    "non_rhymes": [
+      "van",
+      "ban",
+      "can",
+      "fan",
+      "man"
+    ],
+    "difficulty": "medium",
+    "category": "animals"
+  },
+  {
+    "level": 2,
+    "word": "wet",
+    "ending_sound": "et",
+    "rhymes": [
+      "jet",
+      "net",
+      "pet",
+      "set",
+      "get"
+    ],
+    "non_rhymes": [
+      "van",
+      "ban",
+      "can",
+      "fan",
+      "man"
+    ],
+    "difficulty": "medium",
+    "category": "conditions"
+  },
+  {
+    "level": 2,
+    "word": "set",
+    "ending_sound": "et",
+    "rhymes": [
+      "jet",
+      "net",
+      "pet",
+      "wet",
+      "get"
+    ],
+    "non_rhymes": [
+      "van",
+      "ban",
+      "can",
+      "fan",
+      "man"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "get",
+    "ending_sound": "et",
+    "rhymes": [
+      "jet",
+      "net",
+      "pet",
+      "wet",
+      "set"
+    ],
+    "non_rhymes": [
+      "van",
+      "ban",
+      "can",
+      "fan",
+      "man"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "kit",
+    "ending_sound": "it",
+    "rhymes": [
+      "bit",
+      "fit",
+      "hit",
+      "lit",
+      "pit"
+    ],
+    "non_rhymes": [
+      "jet",
+      "net",
+      "pet",
+      "wet",
+      "set"
+    ],
+    "difficulty": "medium",
+    "category": "things"
+  },
+  {
+    "level": 2,
+    "word": "bit",
+    "ending_sound": "it",
+    "rhymes": [
+      "kit",
+      "fit",
+      "hit",
+      "lit",
+      "pit"
+    ],
+    "non_rhymes": [
+      "jet",
+      "net",
+      "pet",
+      "wet",
+      "set"
+    ],
+    "difficulty": "medium",
+    "category": "quantity"
+  },
+  {
+    "level": 2,
+    "word": "fit",
+    "ending_sound": "it",
+    "rhymes": [
+      "kit",
+      "bit",
+      "hit",
+      "lit",
+      "pit"
+    ],
+    "non_rhymes": [
+      "jet",
+      "net",
+      "pet",
+      "wet",
+      "set"
+    ],
+    "difficulty": "medium",
+    "category": "conditions"
+  },
+  {
+    "level": 2,
+    "word": "hit",
+    "ending_sound": "it",
+    "rhymes": [
+      "kit",
+      "bit",
+      "fit",
+      "lit",
+      "pit"
+    ],
+    "non_rhymes": [
+      "jet",
+      "net",
+      "pet",
+      "wet",
+      "set"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "lit",
+    "ending_sound": "it",
+    "rhymes": [
+      "kit",
+      "bit",
+      "fit",
+      "hit",
+      "pit"
+    ],
+    "non_rhymes": [
+      "jet",
+      "net",
+      "pet",
+      "wet",
+      "set"
+    ],
+    "difficulty": "medium",
+    "category": "conditions"
+  },
+  {
+    "level": 2,
+    "word": "pit",
+    "ending_sound": "it",
+    "rhymes": [
+      "kit",
+      "bit",
+      "fit",
+      "hit",
+      "lit"
+    ],
+    "non_rhymes": [
+      "jet",
+      "net",
+      "pet",
+      "wet",
+      "set"
+    ],
+    "difficulty": "medium",
+    "category": "nature"
+  },
+  {
+    "level": 2,
+    "word": "rod",
+    "ending_sound": "od",
+    "rhymes": [
+      "cod",
+      "god",
+      "hod",
+      "mod",
+      "nod"
+    ],
+    "non_rhymes": [
+      "kit",
+      "bit",
+      "fit",
+      "hit",
+      "lit"
+    ],
+    "difficulty": "medium",
+    "category": "things"
+  },
+  {
+    "level": 2,
+    "word": "cod",
+    "ending_sound": "od",
+    "rhymes": [
+      "rod",
+      "god",
+      "hod",
+      "mod",
+      "nod"
+    ],
+    "non_rhymes": [
+      "kit",
+      "bit",
+      "fit",
+      "hit",
+      "lit"
+    ],
+    "difficulty": "medium",
+    "category": "fish"
+  },
+  {
+    "level": 2,
+    "word": "god",
+    "ending_sound": "od",
+    "rhymes": [
+      "rod",
+      "cod",
+      "hod",
+      "mod",
+      "nod"
+    ],
+    "non_rhymes": [
+      "kit",
+      "bit",
+      "fit",
+      "hit",
+      "lit"
+    ],
+    "difficulty": "medium",
+    "category": "religion"
+  },
+  {
+    "level": 2,
+    "word": "hod",
+    "ending_sound": "od",
+    "rhymes": [
+      "rod",
+      "cod",
+      "god",
+      "mod",
+      "nod"
+    ],
+    "non_rhymes": [
+      "kit",
+      "bit",
+      "fit",
+      "hit",
+      "lit"
+    ],
+    "difficulty": "medium",
+    "category": "tools"
+  },
+  {
+    "level": 2,
+    "word": "mod",
+    "ending_sound": "od",
+    "rhymes": [
+      "rod",
+      "cod",
+      "god",
+      "hod",
+      "nod"
+    ],
+    "non_rhymes": [
+      "kit",
+      "bit",
+      "fit",
+      "hit",
+      "lit"
+    ],
+    "difficulty": "medium",
+    "category": "style"
+  },
+  {
+    "level": 2,
+    "word": "nod",
+    "ending_sound": "od",
+    "rhymes": [
+      "rod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "non_rhymes": [
+      "kit",
+      "bit",
+      "fit",
+      "hit",
+      "lit"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 3,
+    "word": "gem",
+    "ending_sound": "em",
+    "rhymes": [
+      "hem",
+      "stem",
+      "them"
+    ],
+    "non_rhymes": [
+      "rod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "difficulty": "hard",
+    "category": "things"
+  },
+  {
+    "level": 3,
+    "word": "hem",
+    "ending_sound": "em",
+    "rhymes": [
+      "gem",
+      "stem",
+      "them"
+    ],
+    "non_rhymes": [
+      "rod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "difficulty": "hard",
+    "category": "sewing"
+  },
+  {
+    "level": 3,
+    "word": "stem",
+    "ending_sound": "em",
+    "rhymes": [
+      "gem",
+      "hem",
+      "them"
+    ],
+    "non_rhymes": [
+      "rod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "difficulty": "hard",
+    "category": "nature"
+  },
+  {
+    "level": 3,
+    "word": "them",
+    "ending_sound": "em",
+    "rhymes": [
+      "gem",
+      "hem",
+      "stem"
+    ],
+    "non_rhymes": [
+      "rod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "difficulty": "hard",
+    "category": "pronouns"
+  },
+  {
+    "level": 3,
+    "word": "wax",
+    "ending_sound": "ax",
+    "rhymes": [
+      "tax",
+      "max",
+      "fax",
+      "sax"
+    ],
+    "non_rhymes": [
+      "gem",
+      "hem",
+      "stem",
+      "them"
+    ],
+    "difficulty": "hard",
+    "category": "materials"
+  },
+  {
+    "level": 3,
+    "word": "tax",
+    "ending_sound": "ax",
+    "rhymes": [
+      "wax",
+      "max",
+      "fax",
+      "sax"
+    ],
+    "non_rhymes": [
+      "gem",
+      "hem",
+      "stem",
+      "them"
+    ],
+    "difficulty": "hard",
+    "category": "finance"
+  },
+  {
+    "level": 3,
+    "word": "max",
+    "ending_sound": "ax",
+    "rhymes": [
+      "wax",
+      "tax",
+      "fax",
+      "sax"
+    ],
+    "non_rhymes": [
+      "gem",
+      "hem",
+      "stem",
+      "them"
+    ],
+    "difficulty": "hard",
+    "category": "limits"
+  },
+  {
+    "level": 3,
+    "word": "fax",
+    "ending_sound": "ax",
+    "rhymes": [
+      "wax",
+      "tax",
+      "max",
+      "sax"
+    ],
+    "non_rhymes": [
+      "gem",
+      "hem",
+      "stem",
+      "them"
+    ],
+    "difficulty": "hard",
+    "category": "technology"
+  },
+  {
+    "level": 3,
+    "word": "sax",
+    "ending_sound": "ax",
+    "rhymes": [
+      "wax",
+      "tax",
+      "max",
+      "fax"
+    ],
+    "non_rhymes": [
+      "gem",
+      "hem",
+      "stem",
+      "them"
+    ],
+    "difficulty": "hard",
+    "category": "music"
+  },
+  {
+    "level": 3,
+    "word": "gas",
+    "ending_sound": "as",
+    "rhymes": [
+      "has",
+      "was"
+    ],
+    "non_rhymes": [
+      "wax",
+      "tax",
+      "max",
+      "fax",
+      "sax"
+    ],
+    "difficulty": "hard",
+    "category": "things"
+  },
+  {
+    "level": 3,
+    "word": "has",
+    "ending_sound": "as",
+    "rhymes": [
+      "gas",
+      "was"
+    ],
+    "non_rhymes": [
+      "wax",
+      "tax",
+      "max",
+      "fax",
+      "sax"
+    ],
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "was",
+    "ending_sound": "as",
+    "rhymes": [
+      "gas",
+      "has"
+    ],
+    "non_rhymes": [
+      "wax",
+      "tax",
+      "max",
+      "fax",
+      "sax"
+    ],
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "ram",
+    "ending_sound": "am",
+    "rhymes": [
+      "jam",
+      "ham",
+      "dam",
+      "cam",
+      "yam"
+    ],
+    "non_rhymes": [
+      "gas",
+      "has",
+      "was"
+    ],
+    "difficulty": "hard",
+    "category": "animals"
+  },
+  {
+    "level": 3,
+    "word": "jam",
+    "ending_sound": "am",
+    "rhymes": [
+      "ram",
+      "ham",
+      "dam",
+      "cam",
+      "yam"
+    ],
+    "non_rhymes": [
+      "gas",
+      "has",
+      "was"
+    ],
+    "difficulty": "hard",
+    "category": "food"
+  },
+  {
+    "level": 3,
+    "word": "ham",
+    "ending_sound": "am",
+    "rhymes": [
+      "ram",
+      "jam",
+      "dam",
+      "cam",
+      "yam"
+    ],
+    "non_rhymes": [
+      "gas",
+      "has",
+      "was"
+    ],
+    "difficulty": "hard",
+    "category": "food"
+  },
+  {
+    "level": 3,
+    "word": "dam",
+    "ending_sound": "am",
+    "rhymes": [
+      "ram",
+      "jam",
+      "ham",
+      "cam",
+      "yam"
+    ],
+    "non_rhymes": [
+      "gas",
+      "has",
+      "was"
+    ],
+    "difficulty": "hard",
+    "category": "structures"
+  },
+  {
+    "level": 3,
+    "word": "cam",
+    "ending_sound": "am",
+    "rhymes": [
+      "ram",
+      "jam",
+      "ham",
+      "dam",
+      "yam"
+    ],
+    "non_rhymes": [
+      "gas",
+      "has",
+      "was"
+    ],
+    "difficulty": "hard",
+    "category": "mechanics"
+  },
+  {
+    "level": 3,
+    "word": "yam",
+    "ending_sound": "am",
+    "rhymes": [
+      "ram",
+      "jam",
+      "ham",
+      "dam",
+      "cam"
+    ],
+    "non_rhymes": [
+      "gas",
+      "has",
+      "was"
+    ],
+    "difficulty": "hard",
+    "category": "food"
+  },
+  {
+    "level": 3,
+    "word": "cub",
+    "ending_sound": "ub",
+    "rhymes": [
+      "hub",
+      "pub",
+      "rub",
+      "sub",
+      "tub"
+    ],
+    "non_rhymes": [
+      "ram",
+      "jam",
+      "ham",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "hard",
+    "category": "animals"
+  },
+  {
+    "level": 3,
+    "word": "hub",
+    "ending_sound": "ub",
+    "rhymes": [
+      "cub",
+      "pub",
+      "rub",
+      "sub",
+      "tub"
+    ],
+    "non_rhymes": [
+      "ram",
+      "jam",
+      "ham",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "hard",
+    "category": "things"
+  },
+  {
+    "level": 3,
+    "word": "pub",
+    "ending_sound": "ub",
+    "rhymes": [
+      "cub",
+      "hub",
+      "rub",
+      "sub",
+      "tub"
+    ],
+    "non_rhymes": [
+      "ram",
+      "jam",
+      "ham",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "hard",
+    "category": "places"
+  },
+  {
+    "level": 3,
+    "word": "rub",
+    "ending_sound": "ub",
+    "rhymes": [
+      "cub",
+      "hub",
+      "pub",
+      "sub",
+      "tub"
+    ],
+    "non_rhymes": [
+      "ram",
+      "jam",
+      "ham",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "hard",
+    "category": "actions"
+  },
+  {
+    "level": 3,
+    "word": "sub",
+    "ending_sound": "ub",
+    "rhymes": [
+      "cub",
+      "hub",
+      "pub",
+      "rub",
+      "tub"
+    ],
+    "non_rhymes": [
+      "ram",
+      "jam",
+      "ham",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "hard",
+    "category": "things"
+  },
+  {
+    "level": 3,
+    "word": "tub",
+    "ending_sound": "ub",
+    "rhymes": [
+      "cub",
+      "hub",
+      "pub",
+      "rub",
+      "sub"
+    ],
+    "non_rhymes": [
+      "ram",
+      "jam",
+      "ham",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "hard",
+    "category": "things"
+  },
+  {
+    "level": 3,
+    "word": "pup",
+    "ending_sound": "up",
+    "rhymes": [
+      "cup",
+      "sup"
+    ],
+    "non_rhymes": [
+      "cub",
+      "hub",
+      "pub",
+      "rub",
+      "sub"
+    ],
+    "difficulty": "hard",
+    "category": "animals"
+  },
+  {
+    "level": 3,
+    "word": "cup",
+    "ending_sound": "up",
+    "rhymes": [
+      "pup",
+      "sup"
+    ],
+    "non_rhymes": [
+      "cub",
+      "hub",
+      "pub",
+      "rub",
+      "sub"
+    ],
+    "difficulty": "hard",
+    "category": "things"
+  },
+  {
+    "level": 3,
+    "word": "sup",
+    "ending_sound": "up",
+    "rhymes": [
+      "pup",
+      "cup"
+    ],
+    "non_rhymes": [
+      "cub",
+      "hub",
+      "pub",
+      "rub",
+      "sub"
+    ],
+    "difficulty": "hard",
+    "category": "actions"
+  },
+  {
+    "level": 3,
+    "word": "fin",
+    "ending_sound": "in",
+    "rhymes": [
+      "bin",
+      "din",
+      "gin",
+      "kin",
+      "pin"
+    ],
+    "non_rhymes": [
+      "pup",
+      "cup",
+      "sup"
+    ],
+    "difficulty": "hard",
+    "category": "animals"
+  },
+  {
+    "level": 3,
+    "word": "bin",
+    "ending_sound": "in",
+    "rhymes": [
+      "fin",
+      "din",
+      "gin",
+      "kin",
+      "pin"
+    ],
+    "non_rhymes": [
+      "pup",
+      "cup",
+      "sup"
+    ],
+    "difficulty": "hard",
+    "category": "things"
+  },
+  {
+    "level": 3,
+    "word": "din",
+    "ending_sound": "in",
+    "rhymes": [
+      "fin",
+      "bin",
+      "gin",
+      "kin",
+      "pin"
+    ],
+    "non_rhymes": [
+      "pup",
+      "cup",
+      "sup"
+    ],
+    "difficulty": "hard",
+    "category": "sounds"
+  },
+  {
+    "level": 3,
+    "word": "gin",
+    "ending_sound": "in",
+    "rhymes": [
+      "fin",
+      "bin",
+      "din",
+      "kin",
+      "pin"
+    ],
+    "non_rhymes": [
+      "pup",
+      "cup",
+      "sup"
+    ],
+    "difficulty": "hard",
+    "category": "drinks"
+  },
+  {
+    "level": 3,
+    "word": "kin",
+    "ending_sound": "in",
+    "rhymes": [
+      "fin",
+      "bin",
+      "din",
+      "gin",
+      "pin"
+    ],
+    "non_rhymes": [
+      "pup",
+      "cup",
+      "sup"
+    ],
+    "difficulty": "hard",
+    "category": "family"
+  },
+  {
+    "level": 3,
+    "word": "pin",
+    "ending_sound": "in",
+    "rhymes": [
+      "fin",
+      "bin",
+      "din",
+      "gin",
+      "kin"
+    ],
+    "non_rhymes": [
+      "pup",
+      "cup",
+      "sup"
+    ],
+    "difficulty": "hard",
+    "category": "things"
+  },
+  {
+    "level": 3,
+    "word": "hog",
+    "ending_sound": "og",
+    "rhymes": [
+      "bog",
+      "cog",
+      "dog",
+      "fog",
+      "jog"
+    ],
+    "non_rhymes": [
+      "fin",
+      "bin",
+      "din",
+      "gin",
+      "kin"
+    ],
+    "difficulty": "hard",
+    "category": "animals"
+  },
+  {
+    "level": 3,
+    "word": "bog",
+    "ending_sound": "og",
+    "rhymes": [
+      "hog",
+      "cog",
+      "dog",
+      "fog",
+      "jog"
+    ],
+    "non_rhymes": [
+      "fin",
+      "bin",
+      "din",
+      "gin",
+      "kin"
+    ],
+    "difficulty": "hard",
+    "category": "nature"
+  },
+  {
+    "level": 3,
+    "word": "cog",
+    "ending_sound": "og",
+    "rhymes": [
+      "hog",
+      "bog",
+      "dog",
+      "fog",
+      "jog"
+    ],
+    "non_rhymes": [
+      "fin",
+      "bin",
+      "din",
+      "gin",
+      "kin"
+    ],
+    "difficulty": "hard",
+    "category": "mechanics"
+  },
+  {
+    "level": 3,
+    "word": "dog",
+    "ending_sound": "og",
+    "rhymes": [
+      "hog",
+      "bog",
+      "cog",
+      "fog",
+      "jog"
+    ],
+    "non_rhymes": [
+      "fin",
+      "bin",
+      "din",
+      "gin",
+      "kin"
+    ],
+    "difficulty": "hard",
+    "category": "animals"
+  },
+  {
+    "level": 3,
+    "word": "fog",
+    "ending_sound": "og",
+    "rhymes": [
+      "hog",
+      "bog",
+      "cog",
+      "dog",
+      "jog"
+    ],
+    "non_rhymes": [
+      "fin",
+      "bin",
+      "din",
+      "gin",
+      "kin"
+    ],
+    "difficulty": "hard",
+    "category": "weather"
+  },
+  {
+    "level": 3,
+    "word": "jog",
+    "ending_sound": "og",
+    "rhymes": [
+      "hog",
+      "bog",
+      "cog",
+      "dog",
+      "fog"
+    ],
+    "non_rhymes": [
+      "fin",
+      "bin",
+      "din",
+      "gin",
+      "kin"
+    ],
+    "difficulty": "hard",
+    "category": "exercise"
+  },
+  {
+    "level": 3,
+    "word": "gum",
+    "ending_sound": "um",
+    "rhymes": [
+      "hum",
+      "rum",
+      "sum",
+      "yum"
+    ],
+    "non_rhymes": [
+      "hog",
+      "bog",
+      "cog",
+      "dog",
+      "fog"
+    ],
+    "difficulty": "hard",
+    "category": "food"
+  },
+  {
+    "level": 3,
+    "word": "hum",
+    "ending_sound": "um",
+    "rhymes": [
+      "gum",
+      "rum",
+      "sum",
+      "yum"
+    ],
+    "non_rhymes": [
+      "hog",
+      "bog",
+      "cog",
+      "dog",
+      "fog"
+    ],
+    "difficulty": "hard",
+    "category": "actions"
+  },
+  {
+    "level": 3,
+    "word": "rum",
+    "ending_sound": "um",
+    "rhymes": [
+      "gum",
+      "hum",
+      "sum",
+      "yum"
+    ],
+    "non_rhymes": [
+      "hog",
+      "bog",
+      "cog",
+      "dog",
+      "fog"
+    ],
+    "difficulty": "hard",
+    "category": "drinks"
+  },
+  {
+    "level": 3,
+    "word": "sum",
+    "ending_sound": "um",
+    "rhymes": [
+      "gum",
+      "hum",
+      "rum",
+      "yum"
+    ],
+    "non_rhymes": [
+      "hog",
+      "bog",
+      "cog",
+      "dog",
+      "fog"
+    ],
+    "difficulty": "hard",
+    "category": "math"
+  },
+  {
+    "level": 3,
+    "word": "yum",
+    "ending_sound": "um",
+    "rhymes": [
+      "gum",
+      "hum",
+      "rum",
+      "sum"
+    ],
+    "non_rhymes": [
+      "hog",
+      "bog",
+      "cog",
+      "dog",
+      "fog"
+    ],
+    "difficulty": "hard",
+    "category": "expressions"
+  },
+  {
+    "level": 3,
+    "word": "hut",
+    "ending_sound": "ut",
+    "rhymes": [
+      "but",
+      "cut",
+      "gut",
+      "nut",
+      "rut"
+    ],
+    "non_rhymes": [
+      "gum",
+      "hum",
+      "rum",
+      "sum",
+      "yum"
+    ],
+    "difficulty": "hard",
+    "category": "places"
+  },
+  {
+    "level": 3,
+    "word": "but",
+    "ending_sound": "ut",
+    "rhymes": [
+      "hut",
+      "cut",
+      "gut",
+      "nut",
+      "rut"
+    ],
+    "non_rhymes": [
+      "gum",
+      "hum",
+      "rum",
+      "sum",
+      "yum"
+    ],
+    "difficulty": "hard",
+    "category": "conjunctions"
+  },
+  {
+    "level": 3,
+    "word": "cut",
+    "ending_sound": "ut",
+    "rhymes": [
+      "hut",
+      "but",
+      "gut",
+      "nut",
+      "rut"
+    ],
+    "non_rhymes": [
+      "gum",
+      "hum",
+      "rum",
+      "sum",
+      "yum"
+    ],
+    "difficulty": "hard",
+    "category": "actions"
+  },
+  {
+    "level": 3,
+    "word": "gut",
+    "ending_sound": "ut",
+    "rhymes": [
+      "hut",
+      "but",
+      "cut",
+      "nut",
+      "rut"
+    ],
+    "non_rhymes": [
+      "gum",
+      "hum",
+      "rum",
+      "sum",
+      "yum"
+    ],
+    "difficulty": "hard",
+    "category": "body"
+  },
+  {
+    "level": 3,
+    "word": "nut",
+    "ending_sound": "ut",
+    "rhymes": [
+      "hut",
+      "but",
+      "cut",
+      "gut",
+      "rut"
+    ],
+    "non_rhymes": [
+      "gum",
+      "hum",
+      "rum",
+      "sum",
+      "yum"
+    ],
+    "difficulty": "hard",
+    "category": "food"
+  },
+  {
+    "level": 3,
+    "word": "rut",
+    "ending_sound": "ut",
+    "rhymes": [
+      "hut",
+      "but",
+      "cut",
+      "gut",
+      "nut"
+    ],
+    "non_rhymes": [
+      "gum",
+      "hum",
+      "rum",
+      "sum",
+      "yum"
+    ],
+    "difficulty": "hard",
+    "category": "nature"
+  },
+  {
+    "level": 3,
+    "word": "gym",
+    "ending_sound": "ym",
+    "rhymes": [
+      "him",
+      "dim",
+      "rim",
+      "vim"
+    ],
+    "non_rhymes": [
+      "hut",
+      "but",
+      "cut",
+      "gut",
+      "nut"
+    ],
+    "difficulty": "hard",
+    "category": "places"
+  },
+  {
+    "level": 3,
+    "word": "him",
+    "ending_sound": "im",
+    "rhymes": [
+      "gym",
+      "dim",
+      "rim",
+      "vim"
+    ],
+    "non_rhymes": [
+      "hut",
+      "but",
+      "cut",
+      "gut",
+      "nut"
+    ],
+    "difficulty": "hard",
+    "category": "pronouns"
+  },
+  {
+    "level": 3,
+    "word": "dim",
+    "ending_sound": "im",
+    "rhymes": [
+      "gym",
+      "him",
+      "rim",
+      "vim"
+    ],
+    "non_rhymes": [
+      "hut",
+      "but",
+      "cut",
+      "gut",
+      "nut"
+    ],
+    "difficulty": "hard",
+    "category": "adjectives"
+  },
+  {
+    "level": 3,
+    "word": "rim",
+    "ending_sound": "im",
+    "rhymes": [
+      "gym",
+      "him",
+      "dim",
+      "vim"
+    ],
+    "non_rhymes": [
+      "hut",
+      "but",
+      "cut",
+      "gut",
+      "nut"
+    ],
+    "difficulty": "hard",
+    "category": "things"
+  },
+  {
+    "level": 3,
+    "word": "vim",
+    "ending_sound": "im",
+    "rhymes": [
+      "gym",
+      "him",
+      "dim",
+      "rim"
+    ],
+    "non_rhymes": [
+      "hut",
+      "but",
+      "cut",
+      "gut",
+      "nut"
+    ],
+    "difficulty": "hard",
+    "category": "energy"
+  },
+  {
+    "level": 4,
+    "word": "pad",
+    "ending_sound": "ad",
+    "rhymes": [
+      "bad",
+      "dad",
+      "had",
+      "lad",
+      "mad"
+    ],
+    "non_rhymes": [
+      "gym",
+      "him",
+      "dim",
+      "rim",
+      "vim"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "bad",
+    "ending_sound": "ad",
+    "rhymes": [
+      "pad",
+      "dad",
+      "had",
+      "lad",
+      "mad"
+    ],
+    "non_rhymes": [
+      "gym",
+      "him",
+      "dim",
+      "rim",
+      "vim"
+    ],
+    "difficulty": "veryhard",
+    "category": "adjectives"
+  },
+  {
+    "level": 4,
+    "word": "dad",
+    "ending_sound": "ad",
+    "rhymes": [
+      "pad",
+      "bad",
+      "had",
+      "lad",
+      "mad"
+    ],
+    "non_rhymes": [
+      "gym",
+      "him",
+      "dim",
+      "rim",
+      "vim"
+    ],
+    "difficulty": "veryhard",
+    "category": "people"
+  },
+  {
+    "level": 4,
+    "word": "had",
+    "ending_sound": "ad",
+    "rhymes": [
+      "pad",
+      "bad",
+      "dad",
+      "lad",
+      "mad"
+    ],
+    "non_rhymes": [
+      "gym",
+      "him",
+      "dim",
+      "rim",
+      "vim"
+    ],
+    "difficulty": "veryhard",
+    "category": "verbs"
+  },
+  {
+    "level": 4,
+    "word": "lad",
+    "ending_sound": "ad",
+    "rhymes": [
+      "pad",
+      "bad",
+      "dad",
+      "had",
+      "mad"
+    ],
+    "non_rhymes": [
+      "gym",
+      "him",
+      "dim",
+      "rim",
+      "vim"
+    ],
+    "difficulty": "veryhard",
+    "category": "people"
+  },
+  {
+    "level": 4,
+    "word": "mad",
+    "ending_sound": "ad",
+    "rhymes": [
+      "pad",
+      "bad",
+      "dad",
+      "had",
+      "lad"
+    ],
+    "non_rhymes": [
+      "gym",
+      "him",
+      "dim",
+      "rim",
+      "vim"
+    ],
+    "difficulty": "veryhard",
+    "category": "feelings"
+  },
+  {
+    "level": 4,
+    "word": "tab",
+    "ending_sound": "ab",
+    "rhymes": [
+      "cab",
+      "dab",
+      "fab",
+      "gab",
+      "jab"
+    ],
+    "non_rhymes": [
+      "pad",
+      "bad",
+      "dad",
+      "had",
+      "lad"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "cab",
+    "ending_sound": "ab",
+    "rhymes": [
+      "tab",
+      "dab",
+      "fab",
+      "gab",
+      "jab"
+    ],
+    "non_rhymes": [
+      "pad",
+      "bad",
+      "dad",
+      "had",
+      "lad"
+    ],
+    "difficulty": "veryhard",
+    "category": "vehicles"
+  },
+  {
+    "level": 4,
+    "word": "dab",
+    "ending_sound": "ab",
+    "rhymes": [
+      "tab",
+      "cab",
+      "fab",
+      "gab",
+      "jab"
+    ],
+    "non_rhymes": [
+      "pad",
+      "bad",
+      "dad",
+      "had",
+      "lad"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "fab",
+    "ending_sound": "ab",
+    "rhymes": [
+      "tab",
+      "cab",
+      "dab",
+      "gab",
+      "jab"
+    ],
+    "non_rhymes": [
+      "pad",
+      "bad",
+      "dad",
+      "had",
+      "lad"
+    ],
+    "difficulty": "veryhard",
+    "category": "adjectives"
+  },
+  {
+    "level": 4,
+    "word": "gab",
+    "ending_sound": "ab",
+    "rhymes": [
+      "tab",
+      "cab",
+      "dab",
+      "fab",
+      "jab"
+    ],
+    "non_rhymes": [
+      "pad",
+      "bad",
+      "dad",
+      "had",
+      "lad"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "jab",
+    "ending_sound": "ab",
+    "rhymes": [
+      "tab",
+      "cab",
+      "dab",
+      "fab",
+      "gab"
+    ],
+    "non_rhymes": [
+      "pad",
+      "bad",
+      "dad",
+      "had",
+      "lad"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "peg",
+    "ending_sound": "eg",
+    "rhymes": [
+      "beg",
+      "keg",
+      "leg",
+      "meg"
+    ],
+    "non_rhymes": [
+      "tab",
+      "cab",
+      "dab",
+      "fab",
+      "gab"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "beg",
+    "ending_sound": "eg",
+    "rhymes": [
+      "peg",
+      "keg",
+      "leg",
+      "meg"
+    ],
+    "non_rhymes": [
+      "tab",
+      "cab",
+      "dab",
+      "fab",
+      "gab"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "keg",
+    "ending_sound": "eg",
+    "rhymes": [
+      "peg",
+      "beg",
+      "leg",
+      "meg"
+    ],
+    "non_rhymes": [
+      "tab",
+      "cab",
+      "dab",
+      "fab",
+      "gab"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "leg",
+    "ending_sound": "eg",
+    "rhymes": [
+      "peg",
+      "beg",
+      "keg",
+      "meg"
+    ],
+    "non_rhymes": [
+      "tab",
+      "cab",
+      "dab",
+      "fab",
+      "gab"
+    ],
+    "difficulty": "veryhard",
+    "category": "body"
+  },
+  {
+    "level": 4,
+    "word": "meg",
+    "ending_sound": "eg",
+    "rhymes": [
+      "peg",
+      "beg",
+      "keg",
+      "leg"
+    ],
+    "non_rhymes": [
+      "tab",
+      "cab",
+      "dab",
+      "fab",
+      "gab"
+    ],
+    "difficulty": "veryhard",
+    "category": "units"
+  },
+  {
+    "level": 4,
+    "word": "rim",
+    "ending_sound": "im",
+    "rhymes": [
+      "dim",
+      "him",
+      "vim"
+    ],
+    "non_rhymes": [
+      "peg",
+      "beg",
+      "keg",
+      "leg",
+      "meg"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "dim",
+    "ending_sound": "im",
+    "rhymes": [
+      "rim",
+      "him",
+      "vim"
+    ],
+    "non_rhymes": [
+      "peg",
+      "beg",
+      "keg",
+      "leg",
+      "meg"
+    ],
+    "difficulty": "veryhard",
+    "category": "adjectives"
+  },
+  {
+    "level": 4,
+    "word": "him",
+    "ending_sound": "im",
+    "rhymes": [
+      "rim",
+      "dim",
+      "vim"
+    ],
+    "non_rhymes": [
+      "peg",
+      "beg",
+      "keg",
+      "leg",
+      "meg"
+    ],
+    "difficulty": "veryhard",
+    "category": "pronouns"
+  },
+  {
+    "level": 4,
+    "word": "vim",
+    "ending_sound": "im",
+    "rhymes": [
+      "rim",
+      "dim",
+      "him"
+    ],
+    "non_rhymes": [
+      "peg",
+      "beg",
+      "keg",
+      "leg",
+      "meg"
+    ],
+    "difficulty": "veryhard",
+    "category": "energy"
+  },
+  {
+    "level": 4,
+    "word": "wad",
+    "ending_sound": "ad",
+    "rhymes": [
+      "bad",
+      "cad",
+      "dad",
+      "fad",
+      "gad"
+    ],
+    "non_rhymes": [
+      "rim",
+      "dim",
+      "him",
+      "vim"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "cad",
+    "ending_sound": "ad",
+    "rhymes": [
+      "wad",
+      "bad",
+      "dad",
+      "fad",
+      "gad"
+    ],
+    "non_rhymes": [
+      "rim",
+      "dim",
+      "him",
+      "vim"
+    ],
+    "difficulty": "veryhard",
+    "category": "people"
+  },
+  {
+    "level": 4,
+    "word": "fad",
+    "ending_sound": "ad",
+    "rhymes": [
+      "wad",
+      "bad",
+      "cad",
+      "dad",
+      "gad"
+    ],
+    "non_rhymes": [
+      "rim",
+      "dim",
+      "him",
+      "vim"
+    ],
+    "difficulty": "veryhard",
+    "category": "trends"
+  },
+  {
+    "level": 4,
+    "word": "gad",
+    "ending_sound": "ad",
+    "rhymes": [
+      "wad",
+      "bad",
+      "cad",
+      "dad",
+      "fad"
+    ],
+    "non_rhymes": [
+      "rim",
+      "dim",
+      "him",
+      "vim"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "sod",
+    "ending_sound": "od",
+    "rhymes": [
+      "cod",
+      "god",
+      "hod",
+      "mod",
+      "nod"
+    ],
+    "non_rhymes": [
+      "wad",
+      "cad",
+      "fad",
+      "gad"
+    ],
+    "difficulty": "veryhard",
+    "category": "nature"
+  },
+  {
+    "level": 4,
+    "word": "cod",
+    "ending_sound": "od",
+    "rhymes": [
+      "sod",
+      "god",
+      "hod",
+      "mod",
+      "nod"
+    ],
+    "non_rhymes": [
+      "wad",
+      "cad",
+      "fad",
+      "gad"
+    ],
+    "difficulty": "veryhard",
+    "category": "fish"
+  },
+  {
+    "level": 4,
+    "word": "god",
+    "ending_sound": "od",
+    "rhymes": [
+      "sod",
+      "cod",
+      "hod",
+      "mod",
+      "nod"
+    ],
+    "non_rhymes": [
+      "wad",
+      "cad",
+      "fad",
+      "gad"
+    ],
+    "difficulty": "veryhard",
+    "category": "religion"
+  },
+  {
+    "level": 4,
+    "word": "hod",
+    "ending_sound": "od",
+    "rhymes": [
+      "sod",
+      "cod",
+      "god",
+      "mod",
+      "nod"
+    ],
+    "non_rhymes": [
+      "wad",
+      "cad",
+      "fad",
+      "gad"
+    ],
+    "difficulty": "veryhard",
+    "category": "tools"
+  },
+  {
+    "level": 4,
+    "word": "mod",
+    "ending_sound": "od",
+    "rhymes": [
+      "sod",
+      "cod",
+      "god",
+      "hod",
+      "nod"
+    ],
+    "non_rhymes": [
+      "wad",
+      "cad",
+      "fad",
+      "gad"
+    ],
+    "difficulty": "veryhard",
+    "category": "style"
+  },
+  {
+    "level": 4,
+    "word": "nod",
+    "ending_sound": "od",
+    "rhymes": [
+      "sod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "non_rhymes": [
+      "wad",
+      "cad",
+      "fad",
+      "gad"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "pod",
+    "ending_sound": "od",
+    "rhymes": [
+      "bod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "non_rhymes": [
+      "sod",
+      "nod"
+    ],
+    "difficulty": "veryhard",
+    "category": "nature"
+  },
+  {
+    "level": 4,
+    "word": "bod",
+    "ending_sound": "od",
+    "rhymes": [
+      "pod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "non_rhymes": [
+      "sod",
+      "nod"
+    ],
+    "difficulty": "veryhard",
+    "category": "slang"
+  },
+  {
+    "level": 4,
+    "word": "bud",
+    "ending_sound": "ud",
+    "rhymes": [
+      "cud",
+      "dud",
+      "mud",
+      "sud"
+    ],
+    "non_rhymes": [
+      "pod",
+      "bod"
+    ],
+    "difficulty": "veryhard",
+    "category": "nature"
+  },
+  {
+    "level": 4,
+    "word": "cud",
+    "ending_sound": "ud",
+    "rhymes": [
+      "bud",
+      "dud",
+      "mud",
+      "sud"
+    ],
+    "non_rhymes": [
+      "pod",
+      "bod"
+    ],
+    "difficulty": "veryhard",
+    "category": "animals"
+  },
+  {
+    "level": 4,
+    "word": "dud",
+    "ending_sound": "ud",
+    "rhymes": [
+      "bud",
+      "cud",
+      "mud",
+      "sud"
+    ],
+    "non_rhymes": [
+      "pod",
+      "bod"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "mud",
+    "ending_sound": "ud",
+    "rhymes": [
+      "bud",
+      "cud",
+      "dud",
+      "sud"
+    ],
+    "non_rhymes": [
+      "pod",
+      "bod"
+    ],
+    "difficulty": "veryhard",
+    "category": "nature"
+  },
+  {
+    "level": 4,
+    "word": "sud",
+    "ending_sound": "ud",
+    "rhymes": [
+      "bud",
+      "cud",
+      "dud",
+      "mud"
+    ],
+    "non_rhymes": [
+      "pod",
+      "bod"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "sap",
+    "ending_sound": "ap",
+    "rhymes": [
+      "cap",
+      "gap",
+      "lap",
+      "map",
+      "nap"
+    ],
+    "non_rhymes": [
+      "bud",
+      "cud",
+      "dud",
+      "mud",
+      "sud"
+    ],
+    "difficulty": "veryhard",
+    "category": "nature"
+  },
+  {
+    "level": 4,
+    "word": "cap",
+    "ending_sound": "ap",
+    "rhymes": [
+      "sap",
+      "gap",
+      "lap",
+      "map",
+      "nap"
+    ],
+    "non_rhymes": [
+      "bud",
+      "cud",
+      "dud",
+      "mud",
+      "sud"
+    ],
+    "difficulty": "veryhard",
+    "category": "clothes"
+  },
+  {
+    "level": 4,
+    "word": "gap",
+    "ending_sound": "ap",
+    "rhymes": [
+      "sap",
+      "cap",
+      "lap",
+      "map",
+      "nap"
+    ],
+    "non_rhymes": [
+      "bud",
+      "cud",
+      "dud",
+      "mud",
+      "sud"
+    ],
+    "difficulty": "veryhard",
+    "category": "space"
+  },
+  {
+    "level": 4,
+    "word": "lap",
+    "ending_sound": "ap",
+    "rhymes": [
+      "sap",
+      "cap",
+      "gap",
+      "map",
+      "nap"
+    ],
+    "non_rhymes": [
+      "bud",
+      "cud",
+      "dud",
+      "mud",
+      "sud"
+    ],
+    "difficulty": "veryhard",
+    "category": "body"
+  },
+  {
+    "level": 4,
+    "word": "map",
+    "ending_sound": "ap",
+    "rhymes": [
+      "sap",
+      "cap",
+      "gap",
+      "lap",
+      "nap"
+    ],
+    "non_rhymes": [
+      "bud",
+      "cud",
+      "dud",
+      "mud",
+      "sud"
+    ],
+    "difficulty": "veryhard",
+    "category": "navigation"
+  },
+  {
+    "level": 4,
+    "word": "nap",
+    "ending_sound": "ap",
+    "rhymes": [
+      "sap",
+      "cap",
+      "gap",
+      "lap",
+      "map"
+    ],
+    "non_rhymes": [
+      "bud",
+      "cud",
+      "dud",
+      "mud",
+      "sud"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "bet",
+    "ending_sound": "et",
+    "rhymes": [
+      "get",
+      "jet",
+      "let",
+      "met",
+      "net"
+    ],
+    "non_rhymes": [
+      "sap",
+      "cap",
+      "gap",
+      "lap",
+      "map"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "get",
+    "ending_sound": "et",
+    "rhymes": [
+      "bet",
+      "jet",
+      "let",
+      "met",
+      "net"
+    ],
+    "non_rhymes": [
+      "sap",
+      "cap",
+      "gap",
+      "lap",
+      "map"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "jet",
+    "ending_sound": "et",
+    "rhymes": [
+      "bet",
+      "get",
+      "let",
+      "met",
+      "net"
+    ],
+    "non_rhymes": [
+      "sap",
+      "cap",
+      "gap",
+      "lap",
+      "map"
+    ],
+    "difficulty": "veryhard",
+    "category": "vehicles"
+  },
+  {
+    "level": 4,
+    "word": "let",
+    "ending_sound": "et",
+    "rhymes": [
+      "bet",
+      "get",
+      "jet",
+      "met",
+      "net"
+    ],
+    "non_rhymes": [
+      "sap",
+      "cap",
+      "gap",
+      "lap",
+      "map"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "met",
+    "ending_sound": "et",
+    "rhymes": [
+      "bet",
+      "get",
+      "jet",
+      "let",
+      "net"
+    ],
+    "non_rhymes": [
+      "sap",
+      "cap",
+      "gap",
+      "lap",
+      "map"
+    ],
+    "difficulty": "veryhard",
+    "category": "verbs"
+  },
+  {
+    "level": 4,
+    "word": "net",
+    "ending_sound": "et",
+    "rhymes": [
+      "bet",
+      "get",
+      "jet",
+      "let",
+      "met"
+    ],
+    "non_rhymes": [
+      "sap",
+      "cap",
+      "gap",
+      "lap",
+      "map"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "pat",
+    "ending_sound": "at",
+    "rhymes": [
+      "bat",
+      "cat",
+      "fat",
+      "hat",
+      "mat"
+    ],
+    "non_rhymes": [
+      "bet",
+      "get",
+      "jet",
+      "let",
+      "met"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "bat",
+    "ending_sound": "at",
+    "rhymes": [
+      "pat",
+      "cat",
+      "fat",
+      "hat",
+      "mat"
+    ],
+    "non_rhymes": [
+      "bet",
+      "get",
+      "jet",
+      "let",
+      "met"
+    ],
+    "difficulty": "veryhard",
+    "category": "animals"
+  },
+  {
+    "level": 4,
+    "word": "cat",
+    "ending_sound": "at",
+    "rhymes": [
+      "pat",
+      "bat",
+      "fat",
+      "hat",
+      "mat"
+    ],
+    "non_rhymes": [
+      "bet",
+      "get",
+      "jet",
+      "let",
+      "met"
+    ],
+    "difficulty": "veryhard",
+    "category": "animals"
+  },
+  {
+    "level": 4,
+    "word": "fat",
+    "ending_sound": "at",
+    "rhymes": [
+      "pat",
+      "bat",
+      "cat",
+      "hat",
+      "mat"
+    ],
+    "non_rhymes": [
+      "bet",
+      "get",
+      "jet",
+      "let",
+      "met"
+    ],
+    "difficulty": "veryhard",
+    "category": "adjectives"
+  },
+  {
+    "level": 4,
+    "word": "hat",
+    "ending_sound": "at",
+    "rhymes": [
+      "pat",
+      "bat",
+      "cat",
+      "fat",
+      "mat"
+    ],
+    "non_rhymes": [
+      "bet",
+      "get",
+      "jet",
+      "let",
+      "met"
+    ],
+    "difficulty": "veryhard",
+    "category": "clothes"
+  },
+  {
+    "level": 4,
+    "word": "mat",
+    "ending_sound": "at",
+    "rhymes": [
+      "pat",
+      "bat",
+      "cat",
+      "fat",
+      "hat"
+    ],
+    "non_rhymes": [
+      "bet",
+      "get",
+      "jet",
+      "let",
+      "met"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "sat",
+    "ending_sound": "at",
+    "rhymes": [
+      "pat",
+      "bat",
+      "cat",
+      "fat",
+      "hat"
+    ],
+    "non_rhymes": [
+      "bet",
+      "get",
+      "jet",
+      "let",
+      "met"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "vat",
+    "ending_sound": "at",
+    "rhymes": [
+      "pat",
+      "bat",
+      "cat",
+      "fat",
+      "hat"
+    ],
+    "non_rhymes": [
+      "bet",
+      "get",
+      "jet",
+      "let",
+      "met"
+    ],
+    "difficulty": "veryhard",
+    "category": "containers"
+  },
+  {
+    "level": 4,
+    "word": "ban",
+    "ending_sound": "an",
+    "rhymes": [
+      "can",
+      "fan",
+      "man",
+      "pan",
+      "ran"
+    ],
+    "non_rhymes": [
+      "pat",
+      "bat",
+      "cat",
+      "fat",
+      "mat"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "can",
+    "ending_sound": "an",
+    "rhymes": [
+      "ban",
+      "fan",
+      "man",
+      "pan",
+      "ran"
+    ],
+    "non_rhymes": [
+      "pat",
+      "bat",
+      "cat",
+      "fat",
+      "mat"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "fan",
+    "ending_sound": "an",
+    "rhymes": [
+      "ban",
+      "can",
+      "man",
+      "pan",
+      "ran"
+    ],
+    "non_rhymes": [
+      "pat",
+      "bat",
+      "cat",
+      "fat",
+      "mat"
+    ],
+    "difficulty": "veryhard",
+    "category": "people"
+  },
+  {
+    "level": 4,
+    "word": "man",
+    "ending_sound": "an",
+    "rhymes": [
+      "ban",
+      "can",
+      "fan",
+      "pan",
+      "ran"
+    ],
+    "non_rhymes": [
+      "pat",
+      "bat",
+      "cat",
+      "fat",
+      "mat"
+    ],
+    "difficulty": "veryhard",
+    "category": "people"
+  },
+  {
+    "level": 4,
+    "word": "pan",
+    "ending_sound": "an",
+    "rhymes": [
+      "ban",
+      "can",
+      "fan",
+      "man",
+      "ran"
+    ],
+    "non_rhymes": [
+      "pat",
+      "bat",
+      "cat",
+      "fat",
+      "mat"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "ran",
+    "ending_sound": "an",
+    "rhymes": [
+      "ban",
+      "can",
+      "fan",
+      "man",
+      "pan"
+    ],
+    "non_rhymes": [
+      "pat",
+      "bat",
+      "cat",
+      "fat",
+      "mat"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "sin",
+    "ending_sound": "in",
+    "rhymes": [
+      "bin",
+      "din",
+      "fin",
+      "pin",
+      "tin"
+    ],
+    "non_rhymes": [
+      "man",
+      "can",
+      "fan",
+      "pan",
+      "ran"
+    ],
+    "difficulty": "veryhard",
+    "category": "religion"
+  },
+  {
+    "level": 4,
+    "word": "bin",
+    "ending_sound": "in",
+    "rhymes": [
+      "sin",
+      "din",
+      "fin",
+      "pin",
+      "tin"
+    ],
+    "non_rhymes": [
+      "man",
+      "can",
+      "fan",
+      "pan",
+      "ran"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "din",
+    "ending_sound": "in",
+    "rhymes": [
+      "sin",
+      "bin",
+      "fin",
+      "pin",
+      "tin"
+    ],
+    "non_rhymes": [
+      "man",
+      "can",
+      "fan",
+      "pan",
+      "ran"
+    ],
+    "difficulty": "veryhard",
+    "category": "sounds"
+  },
+  {
+    "level": 4,
+    "word": "fin",
+    "ending_sound": "in",
+    "rhymes": [
+      "sin",
+      "bin",
+      "din",
+      "pin",
+      "tin"
+    ],
+    "non_rhymes": [
+      "man",
+      "can",
+      "fan",
+      "pan",
+      "ran"
+    ],
+    "difficulty": "veryhard",
+    "category": "animals"
+  },
+  {
+    "level": 4,
+    "word": "pin",
+    "ending_sound": "in",
+    "rhymes": [
+      "sin",
+      "bin",
+      "din",
+      "fin",
+      "tin"
+    ],
+    "non_rhymes": [
+      "man",
+      "can",
+      "fan",
+      "pan",
+      "ran"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "tin",
+    "ending_sound": "in",
+    "rhymes": [
+      "sin",
+      "bin",
+      "din",
+      "fin",
+      "pin"
+    ],
+    "non_rhymes": [
+      "man",
+      "can",
+      "fan",
+      "pan",
+      "ran"
+    ],
+    "difficulty": "veryhard",
+    "category": "materials"
+  },
+  {
+    "level": 4,
+    "word": "bag",
+    "ending_sound": "ag",
+    "rhymes": [
+      "rag",
+      "tag",
+      "wag",
+      "nag",
+      "sag"
+    ],
+    "non_rhymes": [
+      "sin",
+      "bin",
+      "din",
+      "fin",
+      "pin"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "rag",
+    "ending_sound": "ag",
+    "rhymes": [
+      "bag",
+      "tag",
+      "wag",
+      "nag",
+      "sag"
+    ],
+    "non_rhymes": [
+      "sin",
+      "bin",
+      "din",
+      "fin",
+      "pin"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "tag",
+    "ending_sound": "ag",
+    "rhymes": [
+      "bag",
+      "rag",
+      "wag",
+      "nag",
+      "sag"
+    ],
+    "non_rhymes": [
+      "sin",
+      "bin",
+      "din",
+      "fin",
+      "pin"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "wag",
+    "ending_sound": "ag",
+    "rhymes": [
+      "bag",
+      "rag",
+      "tag",
+      "nag",
+      "sag"
+    ],
+    "non_rhymes": [
+      "sin",
+      "bin",
+      "din",
+      "fin",
+      "pin"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "nag",
+    "ending_sound": "ag",
+    "rhymes": [
+      "bag",
+      "rag",
+      "tag",
+      "wag",
+      "sag"
+    ],
+    "non_rhymes": [
+      "sin",
+      "bin",
+      "din",
+      "fin",
+      "pin"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "sag",
+    "ending_sound": "ag",
+    "rhymes": [
+      "bag",
+      "rag",
+      "tag",
+      "wag",
+      "nag"
+    ],
+    "non_rhymes": [
+      "sin",
+      "bin",
+      "din",
+      "fin",
+      "pin"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "cop",
+    "ending_sound": "op",
+    "rhymes": [
+      "hop",
+      "mop",
+      "pop",
+      "top",
+      "bop"
+    ],
+    "non_rhymes": [
+      "bag",
+      "rag",
+      "tag",
+      "wag",
+      "nag"
+    ],
+    "difficulty": "veryhard",
+    "category": "people"
+  },
+  {
+    "level": 4,
+    "word": "hop",
+    "ending_sound": "op",
+    "rhymes": [
+      "cop",
+      "mop",
+      "pop",
+      "top",
+      "bop"
+    ],
+    "non_rhymes": [
+      "bag",
+      "rag",
+      "tag",
+      "wag",
+      "nag"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "mop",
+    "ending_sound": "op",
+    "rhymes": [
+      "cop",
+      "hop",
+      "pop",
+      "top",
+      "bop"
+    ],
+    "non_rhymes": [
+      "bag",
+      "rag",
+      "tag",
+      "wag",
+      "nag"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "pop",
+    "ending_sound": "op",
+    "rhymes": [
+      "cop",
+      "hop",
+      "mop",
+      "top",
+      "bop"
+    ],
+    "non_rhymes": [
+      "bag",
+      "rag",
+      "tag",
+      "wag",
+      "nag"
+    ],
+    "difficulty": "veryhard",
+    "category": "sounds"
+  },
+  {
+    "level": 4,
+    "word": "top",
+    "ending_sound": "op",
+    "rhymes": [
+      "cop",
+      "hop",
+      "mop",
+      "pop",
+      "bop"
+    ],
+    "non_rhymes": [
+      "bag",
+      "rag",
+      "tag",
+      "wag",
+      "nag"
+    ],
+    "difficulty": "veryhard",
+    "category": "position"
+  },
+  {
+    "level": 4,
+    "word": "bop",
+    "ending_sound": "op",
+    "rhymes": [
+      "cop",
+      "hop",
+      "mop",
+      "pop",
+      "top"
+    ],
+    "non_rhymes": [
+      "bag",
+      "rag",
+      "tag",
+      "wag",
+      "nag"
+    ],
+    "difficulty": "veryhard",
+    "category": "music"
+  },
+  {
+    "level": 5,
+    "word": "hex",
+    "ending_sound": "ex",
+    "rhymes": [
+      "rex",
+      "sex",
+      "vex",
+      "pex"
+    ],
+    "non_rhymes": [
+      "cop",
+      "hop",
+      "mop",
+      "pop",
+      "top"
+    ],
+    "difficulty": "extreme",
+    "category": "magic"
+  },
+  {
+    "level": 5,
+    "word": "rex",
+    "ending_sound": "ex",
+    "rhymes": [
+      "hex",
+      "sex",
+      "vex",
+      "pex"
+    ],
+    "non_rhymes": [
+      "cop",
+      "hop",
+      "mop",
+      "pop",
+      "top"
+    ],
+    "difficulty": "extreme",
+    "category": "names"
+  },
+  {
+    "level": 5,
+    "word": "sex",
+    "ending_sound": "ex",
+    "rhymes": [
+      "hex",
+      "rex",
+      "vex",
+      "pex"
+    ],
+    "non_rhymes": [
+      "cop",
+      "hop",
+      "mop",
+      "pop",
+      "top"
+    ],
+    "difficulty": "extreme",
+    "category": "biology"
+  },
+  {
+    "level": 5,
+    "word": "vex",
+    "ending_sound": "ex",
+    "rhymes": [
+      "hex",
+      "rex",
+      "sex",
+      "pex"
+    ],
+    "non_rhymes": [
+      "cop",
+      "hop",
+      "mop",
+      "pop",
+      "top"
+    ],
+    "difficulty": "extreme",
+    "category": "emotions"
+  },
+  {
+    "level": 5,
+    "word": "pex",
+    "ending_sound": "ex",
+    "rhymes": [
+      "hex",
+      "rex",
+      "sex",
+      "vex"
+    ],
+    "non_rhymes": [
+      "cop",
+      "hop",
+      "mop",
+      "pop",
+      "top"
+    ],
+    "difficulty": "extreme",
+    "category": "things"
+  },
+  {
+    "level": 5,
+    "word": "box",
+    "ending_sound": "ox",
+    "rhymes": [
+      "cox",
+      "fox",
+      "lox",
+      "pox",
+      "sox"
+    ],
+    "non_rhymes": [
+      "hex",
+      "rex",
+      "sex",
+      "vex",
+      "pex"
+    ],
+    "difficulty": "extreme",
+    "category": "things"
+  },
+  {
+    "level": 5,
+    "word": "cox",
+    "ending_sound": "ox",
+    "rhymes": [
+      "box",
+      "fox",
+      "lox",
+      "pox",
+      "sox"
+    ],
+    "non_rhymes": [
+      "hex",
+      "rex",
+      "sex",
+      "vex",
+      "pex"
+    ],
+    "difficulty": "extreme",
+    "category": "sports"
+  },
+  {
+    "level": 5,
+    "word": "fox",
+    "ending_sound": "ox",
+    "rhymes": [
+      "box",
+      "cox",
+      "lox",
+      "pox",
+      "sox"
+    ],
+    "non_rhymes": [
+      "hex",
+      "rex",
+      "sex",
+      "vex",
+      "pex"
+    ],
+    "difficulty": "extreme",
+    "category": "animals"
+  },
+  {
+    "level": 5,
+    "word": "lox",
+    "ending_sound": "ox",
+    "rhymes": [
+      "box",
+      "cox",
+      "fox",
+      "pox",
+      "sox"
+    ],
+    "non_rhymes": [
+      "hex",
+      "rex",
+      "sex",
+      "vex",
+      "pex"
+    ],
+    "difficulty": "extreme",
+    "category": "food"
+  },
+  {
+    "level": 5,
+    "word": "pox",
+    "ending_sound": "ox",
+    "rhymes": [
+      "box",
+      "cox",
+      "fox",
+      "lox",
+      "sox"
+    ],
+    "non_rhymes": [
+      "hex",
+      "rex",
+      "sex",
+      "vex",
+      "pex"
+    ],
+    "difficulty": "extreme",
+    "category": "diseases"
+  },
+  {
+    "level": 5,
+    "word": "sox",
+    "ending_sound": "ox",
+    "rhymes": [
+      "box",
+      "cox",
+      "fox",
+      "lox",
+      "pox"
+    ],
+    "non_rhymes": [
+      "hex",
+      "rex",
+      "sex",
+      "vex",
+      "pex"
+    ],
+    "difficulty": "extreme",
+    "category": "clothes"
+  },
+  {
+    "level": 5,
+    "word": "lux",
+    "ending_sound": "ux",
+    "rhymes": [
+      "tux",
+      "dux",
+      "flux"
+    ],
+    "non_rhymes": [
+      "box",
+      "cox",
+      "fox",
+      "lox",
+      "pox"
+    ],
+    "difficulty": "extreme",
+    "category": "units"
+  },
+  {
+    "level": 5,
+    "word": "tux",
+    "ending_sound": "ux",
+    "rhymes": [
+      "lux",
+      "dux",
+      "flux"
+    ],
+    "non_rhymes": [
+      "box",
+      "cox",
+      "fox",
+      "lox",
+      "pox"
+    ],
+    "difficulty": "extreme",
+    "category": "clothes"
+  },
+  {
+    "level": 5,
+    "word": "dux",
+    "ending_sound": "ux",
+    "rhymes": [
+      "lux",
+      "tux",
+      "flux"
+    ],
+    "non_rhymes": [
+      "box",
+      "cox",
+      "fox",
+      "lox",
+      "pox"
+    ],
+    "difficulty": "extreme",
+    "category": "titles"
+  },
+  {
+    "level": 5,
+    "word": "flux",
+    "ending_sound": "ux",
+    "rhymes": [
+      "lux",
+      "tux",
+      "dux"
+    ],
+    "non_rhymes": [
+      "box",
+      "cox",
+      "fox",
+      "lox",
+      "pox"
+    ],
+    "difficulty": "extreme",
+    "category": "science"
+  },
+  {
+    "level": 5,
+    "word": "bid",
+    "ending_sound": "id",
+    "rhymes": [
+      "did",
+      "hid",
+      "kid",
+      "lid",
+      "rid"
+    ],
+    "non_rhymes": [
+      "lux",
+      "tux",
+      "dux",
+      "flux"
+    ],
+    "difficulty": "extreme",
+    "category": "actions"
+  },
+  {
+    "level": 5,
+    "word": "did",
+    "ending_sound": "id",
+    "rhymes": [
+      "bid",
+      "hid",
+      "kid",
+      "lid",
+      "rid"
+    ],
+    "non_rhymes": [
+      "lux",
+      "tux",
+      "dux",
+      "flux"
+    ],
+    "difficulty": "extreme",
+    "category": "actions"
+  },
+  {
+    "level": 5,
+    "word": "hid",
+    "ending_sound": "id",
+    "rhymes": [
+      "bid",
+      "did",
+      "kid",
+      "lid",
+      "rid"
+    ],
+    "non_rhymes": [
+      "lux",
+      "tux",
+      "dux",
+      "flux"
+    ],
+    "difficulty": "extreme",
+    "category": "actions"
+  },
+  {
+    "level": 5,
+    "word": "kid",
+    "ending_sound": "id",
+    "rhymes": [
+      "bid",
+      "did",
+      "hid",
+      "lid",
+      "rid"
+    ],
+    "non_rhymes": [
+      "lux",
+      "tux",
+      "dux",
+      "flux"
+    ],
+    "difficulty": "extreme",
+    "category": "people"
+  },
+  {
+    "level": 5,
+    "word": "lid",
+    "ending_sound": "id",
+    "rhymes": [
+      "bid",
+      "did",
+      "hid",
+      "kid",
+      "rid"
+    ],
+    "non_rhymes": [
+      "lux",
+      "tux",
+      "dux",
+      "flux"
+    ],
+    "difficulty": "extreme",
+    "category": "things"
+  },
+  {
+    "level": 5,
+    "word": "rid",
+    "ending_sound": "id",
+    "rhymes": [
+      "bid",
+      "did",
+      "hid",
+      "kid",
+      "lid"
+    ],
+    "non_rhymes": [
+      "lux",
+      "tux",
+      "dux",
+      "flux"
+    ],
+    "difficulty": "extreme",
+    "category": "actions"
+  },
+  {
+    "level": 5,
+    "word": "win",
+    "ending_sound": "in",
+    "rhymes": [
+      "bin",
+      "din",
+      "fin",
+      "gin",
+      "kin"
+    ],
+    "non_rhymes": [
+      "bid",
+      "did",
+      "hid",
+      "kid",
+      "lid"
+    ],
+    "difficulty": "extreme",
+    "category": "actions"
+  },
+  {
+    "level": 5,
+    "word": "bin",
+    "ending_sound": "in",
+    "rhymes": [
+      "win",
+      "din",
+      "fin",
+      "gin",
+      "kin"
+    ],
+    "non_rhymes": [
+      "bid",
+      "did",
+      "hid",
+      "kid",
+      "lid"
+    ],
+    "difficulty": "extreme",
+    "category": "things"
+  },
+  {
+    "level": 5,
+    "word": "din",
+    "ending_sound": "in",
+    "rhymes": [
+      "win",
+      "bin",
+      "fin",
+      "gin",
+      "kin"
+    ],
+    "non_rhymes": [
+      "bid",
+      "did",
+      "hid",
+      "kid",
+      "lid"
+    ],
+    "difficulty": "extreme",
+    "category": "sounds"
+  },
+  {
+    "level": 5,
+    "word": "fin",
+    "ending_sound": "in",
+    "rhymes": [
+      "win",
+      "bin",
+      "din",
+      "gin",
+      "kin"
+    ],
+    "non_rhymes": [
+      "bid",
+      "did",
+      "hid",
+      "kid",
+      "lid"
+    ],
+    "difficulty": "extreme",
+    "category": "animals"
+  },
+  {
+    "level": 5,
+    "word": "gin",
+    "ending_sound": "in",
+    "rhymes": [
+      "win",
+      "bin",
+      "din",
+      "fin",
+      "kin"
+    ],
+    "non_rhymes": [
+      "bid",
+      "did",
+      "hid",
+      "kid",
+      "lid"
+    ],
+    "difficulty": "extreme",
+    "category": "drinks"
+  },
+  {
+    "level": 5,
+    "word": "kin",
+    "ending_sound": "in",
+    "rhymes": [
+      "win",
+      "bin",
+      "din",
+      "fin",
+      "gin"
+    ],
+    "non_rhymes": [
+      "bid",
+      "did",
+      "hid",
+      "kid",
+      "lid"
+    ],
+    "difficulty": "extreme",
+    "category": "family"
+  },
+  {
+    "level": 5,
+    "word": "rig",
+    "ending_sound": "ig",
+    "rhymes": [
+      "big",
+      "dig",
+      "fig",
+      "jig",
+      "pig"
+    ],
+    "non_rhymes": [
+      "win",
+      "bin",
+      "din",
+      "fin",
+      "gin"
+    ],
+    "difficulty": "extreme",
+    "category": "equipment"
+  },
+  {
+    "level": 5,
+    "word": "big",
+    "ending_sound": "ig",
+    "rhymes": [
+      "rig",
+      "dig",
+      "fig",
+      "jig",
+      "pig"
+    ],
+    "non_rhymes": [
+      "win",
+      "bin",
+      "din",
+      "fin",
+      "gin"
+    ],
+    "difficulty": "extreme",
+    "category": "adjectives"
+  },
+  {
+    "level": 5,
+    "word": "dig",
+    "ending_sound": "ig",
+    "rhymes": [
+      "rig",
+      "big",
+      "fig",
+      "jig",
+      "pig"
+    ],
+    "non_rhymes": [
+      "win",
+      "bin",
+      "din",
+      "fin",
+      "gin"
+    ],
+    "difficulty": "extreme",
+    "category": "actions"
+  },
+  {
+    "level": 5,
+    "word": "fig",
+    "ending_sound": "ig",
+    "rhymes": [
+      "rig",
+      "big",
+      "dig",
+      "jig",
+      "pig"
+    ],
+    "non_rhymes": [
+      "win",
+      "bin",
+      "din",
+      "fin",
+      "gin"
+    ],
+    "difficulty": "extreme",
+    "category": "food"
+  },
+  {
+    "level": 5,
+    "word": "jig",
+    "ending_sound": "ig",
+    "rhymes": [
+      "rig",
+      "big",
+      "dig",
+      "fig",
+      "pig"
+    ],
+    "non_rhymes": [
+      "win",
+      "bin",
+      "din",
+      "fin",
+      "gin"
+    ],
+    "difficulty": "extreme",
+    "category": "dance"
+  },
+  {
+    "level": 5,
+    "word": "pig",
+    "ending_sound": "ig",
+    "rhymes": [
+      "rig",
+      "big",
+      "dig",
+      "fig",
+      "jig"
+    ],
+    "non_rhymes": [
+      "win",
+      "bin",
+      "din",
+      "fin",
+      "gin"
+    ],
+    "difficulty": "extreme",
+    "category": "animals"
+  },
+  {
+    "level": 5,
+    "word": "zen",
+    "ending_sound": "en",
+    "rhymes": [
+      "den",
+      "hen",
+      "ken",
+      "men",
+      "pen"
+    ],
+    "non_rhymes": [
+      "rig",
+      "big",
+      "dig",
+      "fig",
+      "jig"
+    ],
+    "difficulty": "extreme",
+    "category": "philosophy"
+  },
+  {
+    "level": 5,
+    "word": "den",
+    "ending_sound": "en",
+    "rhymes": [
+      "zen",
+      "hen",
+      "ken",
+      "men",
+      "pen"
+    ],
+    "non_rhymes": [
+      "rig",
+      "big",
+      "dig",
+      "fig",
+      "jig"
+    ],
+    "difficulty": "extreme",
+    "category": "places"
+  },
+  {
+    "level": 5,
+    "word": "hen",
+    "ending_sound": "en",
+    "rhymes": [
+      "zen",
+      "den",
+      "ken",
+      "men",
+      "pen"
+    ],
+    "non_rhymes": [
+      "rig",
+      "big",
+      "dig",
+      "fig",
+      "jig"
+    ],
+    "difficulty": "extreme",
+    "category": "animals"
+  },
+  {
+    "level": 5,
+    "word": "ken",
+    "ending_sound": "en",
+    "rhymes": [
+      "zen",
+      "den",
+      "hen",
+      "men",
+      "pen"
+    ],
+    "non_rhymes": [
+      "rig",
+      "big",
+      "dig",
+      "fig",
+      "jig"
+    ],
+    "difficulty": "extreme",
+    "category": "knowledge"
+  },
+  {
+    "level": 5,
+    "word": "men",
+    "ending_sound": "en",
+    "rhymes": [
+      "zen",
+      "den",
+      "hen",
+      "ken",
+      "pen"
+    ],
+    "non_rhymes": [
+      "rig",
+      "big",
+      "dig",
+      "fig",
+      "jig"
+    ],
+    "difficulty": "extreme",
+    "category": "people"
+  },
+  {
+    "level": 5,
+    "word": "pen",
+    "ending_sound": "en",
+    "rhymes": [
+      "zen",
+      "den",
+      "hen",
+      "ken",
+      "men"
+    ],
+    "non_rhymes": [
+      "rig",
+      "big",
+      "dig",
+      "fig",
+      "jig"
+    ],
+    "difficulty": "extreme",
+    "category": "things"
+  },
+  {
+    "level": 5,
+    "word": "max",
+    "ending_sound": "ax",
+    "rhymes": [
+      "tax",
+      "wax",
+      "fax",
+      "sax",
+      "pax"
+    ],
+    "non_rhymes": [
+      "zen",
+      "den",
+      "hen",
+      "ken",
+      "men"
+    ],
+    "difficulty": "extreme",
+    "category": "limits"
+  },
+  {
+    "level": 5,
+    "word": "tax",
+    "ending_sound": "ax",
+    "rhymes": [
+      "max",
+      "wax",
+      "fax",
+      "sax",
+      "pax"
+    ],
+    "non_rhymes": [
+      "zen",
+      "den",
+      "hen",
+      "ken",
+      "men"
+    ],
+    "difficulty": "extreme",
+    "category": "finance"
+  },
+  {
+    "level": 5,
+    "word": "wax",
+    "ending_sound": "ax",
+    "rhymes": [
+      "max",
+      "tax",
+      "fax",
+      "sax",
+      "pax"
+    ],
+    "non_rhymes": [
+      "zen",
+      "den",
+      "hen",
+      "ken",
+      "men"
+    ],
+    "difficulty": "extreme",
+    "category": "materials"
+  },
+  {
+    "level": 5,
+    "word": "fax",
+    "ending_sound": "ax",
+    "rhymes": [
+      "max",
+      "tax",
+      "wax",
+      "sax",
+      "pax"
+    ],
+    "non_rhymes": [
+      "zen",
+      "den",
+      "hen",
+      "ken",
+      "men"
+    ],
+    "difficulty": "extreme",
+    "category": "technology"
+  },
+  {
+    "level": 5,
+    "word": "sax",
+    "ending_sound": "ax",
+    "rhymes": [
+      "max",
+      "tax",
+      "wax",
+      "fax",
+      "pax"
+    ],
+    "non_rhymes": [
+      "zen",
+      "den",
+      "hen",
+      "ken",
+      "men"
+    ],
+    "difficulty": "extreme",
+    "category": "music"
+  },
+  {
+    "level": 5,
+    "word": "pax",
+    "ending_sound": "ax",
+    "rhymes": [
+      "max",
+      "tax",
+      "wax",
+      "fax",
+      "sax"
+    ],
+    "non_rhymes": [
+      "zen",
+      "den",
+      "hen",
+      "ken",
+      "men"
+    ],
+    "difficulty": "extreme",
+    "category": "peace"
+  },
+  {
+    "level": 5,
+    "word": "fix",
+    "ending_sound": "ix",
+    "rhymes": [
+      "mix",
+      "nix",
+      "six",
+      "pix"
+    ],
+    "non_rhymes": [
+      "max",
+      "tax",
+      "wax",
+      "fax",
+      "sax"
+    ],
+    "difficulty": "extreme",
+    "category": "actions"
+  },
+  {
+    "level": 5,
+    "word": "mix",
+    "ending_sound": "ix",
+    "rhymes": [
+      "fix",
+      "nix",
+      "six",
+      "pix"
+    ],
+    "non_rhymes": [
+      "max",
+      "tax",
+      "wax",
+      "fax",
+      "sax"
+    ],
+    "difficulty": "extreme",
+    "category": "actions"
+  },
+  {
+    "level": 5,
+    "word": "nix",
+    "ending_sound": "ix",
+    "rhymes": [
+      "fix",
+      "mix",
+      "six",
+      "pix"
+    ],
+    "non_rhymes": [
+      "max",
+      "tax",
+      "wax",
+      "fax",
+      "sax"
+    ],
+    "difficulty": "extreme",
+    "category": "actions"
+  },
+  {
+    "level": 5,
+    "word": "six",
+    "ending_sound": "ix",
+    "rhymes": [
+      "fix",
+      "mix",
+      "nix",
+      "pix"
+    ],
+    "non_rhymes": [
+      "max",
+      "tax",
+      "wax",
+      "fax",
+      "sax"
+    ],
+    "difficulty": "extreme",
+    "category": "numbers"
+  },
+  {
+    "level": 5,
+    "word": "pix",
+    "ending_sound": "ix",
+    "rhymes": [
+      "fix",
+      "mix",
+      "nix",
+      "six"
+    ],
+    "non_rhymes": [
+      "max",
+      "tax",
+      "wax",
+      "fax",
+      "sax"
+    ],
+    "difficulty": "extreme",
+    "category": "images"
+  },
+  {
+    "level": 6,
+    "word": "hub",
+    "ending_sound": "ub",
+    "rhymes": [
+      "bub",
+      "cub",
+      "dub",
+      "nub",
+      "pub"
+    ],
+    "non_rhymes": [
+      "fix",
+      "mix",
+      "nix",
+      "six",
+      "pix"
+    ],
+    "difficulty": "expert",
+    "category": "things"
+  },
+  {
+    "level": 6,
+    "word": "bub",
+    "ending_sound": "ub",
+    "rhymes": [
+      "hub",
+      "cub",
+      "dub",
+      "nub",
+      "pub"
+    ],
+    "non_rhymes": [
+      "fix",
+      "mix",
+      "nix",
+      "six",
+      "pix"
+    ],
+    "difficulty": "expert",
+    "category": "people"
+  },
+  {
+    "level": 6,
+    "word": "cub",
+    "ending_sound": "ub",
+    "rhymes": [
+      "hub",
+      "bub",
+      "dub",
+      "nub",
+      "pub"
+    ],
+    "non_rhymes": [
+      "fix",
+      "mix",
+      "nix",
+      "six",
+      "pix"
+    ],
+    "difficulty": "expert",
+    "category": "animals"
+  },
+  {
+    "level": 6,
+    "word": "dub",
+    "ending_sound": "ub",
+    "rhymes": [
+      "hub",
+      "bub",
+      "cub",
+      "nub",
+      "pub"
+    ],
+    "non_rhymes": [
+      "fix",
+      "mix",
+      "nix",
+      "six",
+      "pix"
+    ],
+    "difficulty": "expert",
+    "category": "actions"
+  },
+  {
+    "level": 6,
+    "word": "nub",
+    "ending_sound": "ub",
+    "rhymes": [
+      "hub",
+      "bub",
+      "cub",
+      "dub",
+      "pub"
+    ],
+    "non_rhymes": [
+      "fix",
+      "mix",
+      "nix",
+      "six",
+      "pix"
+    ],
+    "difficulty": "expert",
+    "category": "things"
+  },
+  {
+    "level": 6,
+    "word": "pub",
+    "ending_sound": "ub",
+    "rhymes": [
+      "hub",
+      "bub",
+      "cub",
+      "dub",
+      "nub"
+    ],
+    "non_rhymes": [
+      "fix",
+      "mix",
+      "nix",
+      "six",
+      "pix"
+    ],
+    "difficulty": "expert",
+    "category": "places"
+  },
+  {
+    "level": 6,
+    "word": "bob",
+    "ending_sound": "ob",
+    "rhymes": [
+      "cob",
+      "gob",
+      "hob",
+      "job",
+      "lob"
+    ],
+    "non_rhymes": [
+      "hub",
+      "bub",
+      "cub",
+      "dub",
+      "nub"
+    ],
+    "difficulty": "expert",
+    "category": "names"
+  },
+  {
+    "level": 6,
+    "word": "cob",
+    "ending_sound": "ob",
+    "rhymes": [
+      "bob",
+      "gob",
+      "hob",
+      "job",
+      "lob"
+    ],
+    "non_rhymes": [
+      "hub",
+      "bub",
+      "cub",
+      "dub",
+      "nub"
+    ],
+    "difficulty": "expert",
+    "category": "corn"
+  },
+  {
+    "level": 6,
+    "word": "gob",
+    "ending_sound": "ob",
+    "rhymes": [
+      "bob",
+      "cob",
+      "hob",
+      "job",
+      "lob"
+    ],
+    "non_rhymes": [
+      "hub",
+      "bub",
+      "cub",
+      "dub",
+      "nub"
+    ],
+    "difficulty": "expert",
+    "category": "slang"
+  },
+  {
+    "level": 6,
+    "word": "hob",
+    "ending_sound": "ob",
+    "rhymes": [
+      "bob",
+      "cob",
+      "gob",
+      "job",
+      "lob"
+    ],
+    "non_rhymes": [
+      "hub",
+      "bub",
+      "cub",
+      "dub",
+      "nub"
+    ],
+    "difficulty": "expert",
+    "category": "cooking"
+  },
+  {
+    "level": 6,
+    "word": "job",
+    "ending_sound": "ob",
+    "rhymes": [
+      "bob",
+      "cob",
+      "gob",
+      "hob",
+      "lob"
+    ],
+    "non_rhymes": [
+      "hub",
+      "bub",
+      "cub",
+      "dub",
+      "nub"
+    ],
+    "difficulty": "expert",
+    "category": "work"
+  },
+  {
+    "level": 6,
+    "word": "lob",
+    "ending_sound": "ob",
+    "rhymes": [
+      "bob",
+      "cob",
+      "gob",
+      "hob",
+      "job"
+    ],
+    "non_rhymes": [
+      "hub",
+      "bub",
+      "cub",
+      "dub",
+      "nub"
+    ],
+    "difficulty": "expert",
+    "category": "actions"
+  },
+  {
+    "level": 6,
+    "word": "mob",
+    "ending_sound": "ob",
+    "rhymes": [
+      "rob",
+      "sob",
+      "yob"
+    ],
+    "non_rhymes": [
+      "bob",
+      "cob",
+      "gob",
+      "hob",
+      "job"
+    ],
+    "difficulty": "expert",
+    "category": "groups"
+  },
+  {
+    "level": 6,
+    "word": "rob",
+    "ending_sound": "ob",
+    "rhymes": [
+      "mob",
+      "sob",
+      "yob"
+    ],
+    "non_rhymes": [
+      "bob",
+      "cob",
+      "gob",
+      "hob",
+      "job"
+    ],
+    "difficulty": "expert",
+    "category": "actions"
+  },
+  {
+    "level": 6,
+    "word": "sob",
+    "ending_sound": "ob",
+    "rhymes": [
+      "mob",
+      "rob",
+      "yob"
+    ],
+    "non_rhymes": [
+      "bob",
+      "cob",
+      "gob",
+      "hob",
+      "job"
+    ],
+    "difficulty": "expert",
+    "category": "emotions"
+  },
+  {
+    "level": 6,
+    "word": "yob",
+    "ending_sound": "ob",
+    "rhymes": [
+      "mob",
+      "rob",
+      "sob"
+    ],
+    "non_rhymes": [
+      "bob",
+      "cob",
+      "gob",
+      "hob",
+      "job"
+    ],
+    "difficulty": "expert",
+    "category": "slang"
+  },
+  {
+    "level": 6,
+    "word": "bog",
+    "ending_sound": "og",
+    "rhymes": [
+      "cog",
+      "dog",
+      "fog",
+      "hog",
+      "log"
+    ],
+    "non_rhymes": [
+      "mob",
+      "rob",
+      "sob",
+      "yob"
+    ],
+    "difficulty": "expert",
+    "category": "nature"
+  },
+  {
+    "level": 6,
+    "word": "cog",
+    "ending_sound": "og",
+    "rhymes": [
+      "bog",
+      "dog",
+      "fog",
+      "hog",
+      "log"
+    ],
+    "non_rhymes": [
+      "mob",
+      "rob",
+      "sob",
+      "yob"
+    ],
+    "difficulty": "expert",
+    "category": "mechanics"
+  },
+  {
+    "level": 6,
+    "word": "dog",
+    "ending_sound": "og",
+    "rhymes": [
+      "bog",
+      "cog",
+      "fog",
+      "hog",
+      "log"
+    ],
+    "non_rhymes": [
+      "mob",
+      "rob",
+      "sob",
+      "yob"
+    ],
+    "difficulty": "expert",
+    "category": "animals"
+  },
+  {
+    "level": 6,
+    "word": "fog",
+    "ending_sound": "og",
+    "rhymes": [
+      "bog",
+      "cog",
+      "dog",
+      "hog",
+      "log"
+    ],
+    "non_rhymes": [
+      "mob",
+      "rob",
+      "sob",
+      "yob"
+    ],
+    "difficulty": "expert",
+    "category": "weather"
+  },
+  {
+    "level": 6,
+    "word": "hog",
+    "ending_sound": "og",
+    "rhymes": [
+      "bog",
+      "cog",
+      "dog",
+      "fog",
+      "log"
+    ],
+    "non_rhymes": [
+      "mob",
+      "rob",
+      "sob",
+      "yob"
+    ],
+    "difficulty": "expert",
+    "category": "animals"
+  },
+  {
+    "level": 6,
+    "word": "log",
+    "ending_sound": "og",
+    "rhymes": [
+      "bog",
+      "cog",
+      "dog",
+      "fog",
+      "hog"
+    ],
+    "non_rhymes": [
+      "mob",
+      "rob",
+      "sob",
+      "yob"
+    ],
+    "difficulty": "expert",
+    "category": "nature"
+  },
+  {
+    "level": 6,
+    "word": "jog",
+    "ending_sound": "og",
+    "rhymes": [
+      "nog",
+      "tog"
+    ],
+    "non_rhymes": [
+      "bog",
+      "cog",
+      "dog",
+      "fog",
+      "hog"
+    ],
+    "difficulty": "expert",
+    "category": "exercise"
+  },
+  {
+    "level": 6,
+    "word": "nog",
+    "ending_sound": "og",
+    "rhymes": [
+      "jog",
+      "tog"
+    ],
+    "non_rhymes": [
+      "bog",
+      "cog",
+      "dog",
+      "fog",
+      "hog"
+    ],
+    "difficulty": "expert",
+    "category": "drinks"
+  },
+  {
+    "level": 6,
+    "word": "tog",
+    "ending_sound": "og",
+    "rhymes": [
+      "jog",
+      "nog"
+    ],
+    "non_rhymes": [
+      "bog",
+      "cog",
+      "dog",
+      "fog",
+      "hog"
+    ],
+    "difficulty": "expert",
+    "category": "clothing"
+  },
+  {
+    "level": 6,
+    "word": "bud",
+    "ending_sound": "ud",
+    "rhymes": [
+      "cud",
+      "dud",
+      "mud",
+      "sud",
+      "thud"
+    ],
+    "non_rhymes": [
+      "jog",
+      "nog",
+      "tog"
+    ],
+    "difficulty": "expert",
+    "category": "nature"
+  },
+  {
+    "level": 6,
+    "word": "cud",
+    "ending_sound": "ud",
+    "rhymes": [
+      "bud",
+      "dud",
+      "mud",
+      "sud",
+      "thud"
+    ],
+    "non_rhymes": [
+      "jog",
+      "nog",
+      "tog"
+    ],
+    "difficulty": "expert",
+    "category": "animals"
+  },
+  {
+    "level": 6,
+    "word": "dud",
+    "ending_sound": "ud",
+    "rhymes": [
+      "bud",
+      "cud",
+      "mud",
+      "sud",
+      "thud"
+    ],
+    "non_rhymes": [
+      "jog",
+      "nog",
+      "tog"
+    ],
+    "difficulty": "expert",
+    "category": "things"
+  },
+  {
+    "level": 6,
+    "word": "mud",
+    "ending_sound": "ud",
+    "rhymes": [
+      "bud",
+      "cud",
+      "dud",
+      "sud",
+      "thud"
+    ],
+    "non_rhymes": [
+      "jog",
+      "nog",
+      "tog"
+    ],
+    "difficulty": "expert",
+    "category": "nature"
+  },
+  {
+    "level": 6,
+    "word": "sud",
+    "ending_sound": "ud",
+    "rhymes": [
+      "bud",
+      "cud",
+      "dud",
+      "mud",
+      "thud"
+    ],
+    "non_rhymes": [
+      "jog",
+      "nog",
+      "tog"
+    ],
+    "difficulty": "expert",
+    "category": "things"
+  },
+  {
+    "level": 6,
+    "word": "thud",
+    "ending_sound": "ud",
+    "rhymes": [
+      "bud",
+      "cud",
+      "dud",
+      "mud",
+      "sud"
+    ],
+    "non_rhymes": [
+      "jog",
+      "nog",
+      "tog"
+    ],
+    "difficulty": "expert",
+    "category": "sounds"
+  },
+  {
+    "level": 6,
+    "word": "club",
+    "ending_sound": "ub",
+    "rhymes": [
+      "grub",
+      "scrub",
+      "shrub",
+      "stub"
+    ],
+    "non_rhymes": [
+      "bud",
+      "cud",
+      "dud",
+      "mud",
+      "sud"
+    ],
+    "difficulty": "expert",
+    "category": "things"
+  },
+  {
+    "level": 6,
+    "word": "grub",
+    "ending_sound": "ub",
+    "rhymes": [
+      "club",
+      "scrub",
+      "shrub",
+      "stub"
+    ],
+    "non_rhymes": [
+      "bud",
+      "cud",
+      "dud",
+      "mud",
+      "sud"
+    ],
+    "difficulty": "expert",
+    "category": "food"
+  },
+  {
+    "level": 6,
+    "word": "scrub",
+    "ending_sound": "ub",
+    "rhymes": [
+      "club",
+      "grub",
+      "shrub",
+      "stub"
+    ],
+    "non_rhymes": [
+      "bud",
+      "cud",
+      "dud",
+      "mud",
+      "sud"
+    ],
+    "difficulty": "expert",
+    "category": "actions"
+  },
+  {
+    "level": 6,
+    "word": "shrub",
+    "ending_sound": "ub",
+    "rhymes": [
+      "club",
+      "grub",
+      "scrub",
+      "stub"
+    ],
+    "non_rhymes": [
+      "bud",
+      "cud",
+      "dud",
+      "mud",
+      "sud"
+    ],
+    "difficulty": "expert",
+    "category": "plants"
+  },
+  {
+    "level": 6,
+    "word": "stub",
+    "ending_sound": "ub",
+    "rhymes": [
+      "club",
+      "grub",
+      "scrub",
+      "shrub"
+    ],
+    "non_rhymes": [
+      "bud",
+      "cud",
+      "dud",
+      "mud",
+      "sud"
+    ],
+    "difficulty": "expert",
+    "category": "things"
+  },
+  {
+    "level": 6,
+    "word": "drug",
+    "ending_sound": "ug",
+    "rhymes": [
+      "shrug",
+      "snug",
+      "smug"
+    ],
+    "non_rhymes": [
+      "club",
+      "grub",
+      "scrub",
+      "shrub",
+      "stub"
+    ],
+    "difficulty": "expert",
+    "category": "medicine"
+  },
+  {
+    "level": 6,
+    "word": "shrug",
+    "ending_sound": "ug",
+    "rhymes": [
+      "drug",
+      "snug",
+      "smug"
+    ],
+    "non_rhymes": [
+      "club",
+      "grub",
+      "scrub",
+      "shrub",
+      "stub"
+    ],
+    "difficulty": "expert",
+    "category": "actions"
+  },
+  {
+    "level": 6,
+    "word": "snug",
+    "ending_sound": "ug",
+    "rhymes": [
+      "drug",
+      "shrug",
+      "smug"
+    ],
+    "non_rhymes": [
+      "club",
+      "grub",
+      "scrub",
+      "shrub",
+      "stub"
+    ],
+    "difficulty": "expert",
+    "category": "adjectives"
+  },
+  {
+    "level": 6,
+    "word": "smug",
+    "ending_sound": "ug",
+    "rhymes": [
+      "drug",
+      "shrug",
+      "snug"
+    ],
+    "non_rhymes": [
+      "club",
+      "grub",
+      "scrub",
+      "shrub",
+      "stub"
+    ],
+    "difficulty": "expert",
+    "category": "adjectives"
+  },
+  {
+    "level": 6,
+    "word": "chug",
+    "ending_sound": "ug",
+    "rhymes": [
+      "hug",
+      "jug",
+      "lug",
+      "mug",
+      "rug"
+    ],
+    "non_rhymes": [
+      "drug",
+      "shrug",
+      "snug",
+      "smug"
+    ],
+    "difficulty": "expert",
+    "category": "actions"
+  },
+  {
+    "level": 6,
+    "word": "hug",
+    "ending_sound": "ug",
+    "rhymes": [
+      "chug",
+      "jug",
+      "lug",
+      "mug",
+      "rug"
+    ],
+    "non_rhymes": [
+      "drug",
+      "shrug",
+      "snug",
+      "smug"
+    ],
+    "difficulty": "expert",
+    "category": "actions"
+  },
+  {
+    "level": 6,
+    "word": "jug",
+    "ending_sound": "ug",
+    "rhymes": [
+      "chug",
+      "hug",
+      "lug",
+      "mug",
+      "rug"
+    ],
+    "non_rhymes": [
+      "drug",
+      "shrug",
+      "snug",
+      "smug"
+    ],
+    "difficulty": "expert",
+    "category": "things"
+  },
+  {
+    "level": 6,
+    "word": "lug",
+    "ending_sound": "ug",
+    "rhymes": [
+      "chug",
+      "hug",
+      "jug",
+      "mug",
+      "rug"
+    ],
+    "non_rhymes": [
+      "drug",
+      "shrug",
+      "snug",
+      "smug"
+    ],
+    "difficulty": "expert",
+    "category": "actions"
+  },
+  {
+    "level": 6,
+    "word": "mug",
+    "ending_sound": "ug",
+    "rhymes": [
+      "chug",
+      "hug",
+      "jug",
+      "lug",
+      "rug"
+    ],
+    "non_rhymes": [
+      "drug",
+      "shrug",
+      "snug",
+      "smug"
+    ],
+    "difficulty": "expert",
+    "category": "things"
+  },
+  {
+    "level": 6,
+    "word": "rug",
+    "ending_sound": "ug",
+    "rhymes": [
+      "chug",
+      "hug",
+      "jug",
+      "lug",
+      "mug"
+    ],
+    "non_rhymes": [
+      "drug",
+      "shrug",
+      "snug",
+      "smug"
+    ],
+    "difficulty": "expert",
+    "category": "things"
+  }
+]

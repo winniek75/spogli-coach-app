@@ -1,0 +1,485 @@
+// src/router/index.js
+import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '../views/HomeView.vue'
+import RhymingGame from '@/components/games/RhymingGame.vue'
+import SyllableGame from '@/components/games/SyllableGame.vue'
+import AlliterationGame from '@/components/games/AlliterationGame.vue'
+import RhymeEndingGame from '@/components/games/RhymeEndingGame.vue'
+
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: HomeView
+    },
+
+    // ===========================================
+    // 🎵 サウンド・アドベンチャー メインハブ
+    // ===========================================
+    {
+      path: '/sound-adventure',
+      name: 'SoundAdventureHub',
+      component: () => import('../views/SoundAdventureHub.vue'),
+      meta: {
+        title: 'サウンド・アドベンチャー',
+        description: '音の世界を冒険して、英語マスターになろう！',
+        requiresAuth: false,
+        showInNav: true,
+        icon: '🎵'
+      }
+    },
+
+    // 旧ルート（リダイレクト用）
+    {
+      path: '/sound-master',
+      redirect: '/sound-adventure'
+    },
+
+    // ===========================================
+    // 🏝️ オトの島 - はじめの冒険
+    // ===========================================
+    {
+      path: '/games/rhyming',
+      name: 'rhyme-hunter',
+      component: RhymingGame,
+      meta: {
+        title: 'ライム・ハンター',
+        description: '韻を踏む単語をキャッチしろ！',
+        stage: 'island',
+        difficulty: 'beginner',
+        gameId: 'rhyming',
+        icon: '🎵'
+      }
+    },
+    {
+      path: '/games/syllable',
+      name: 'syllable-master',
+      component: SyllableGame,
+      meta: {
+        title: 'シラブル・マスター',
+        description: '音節をカウントしてリズムを作ろう！',
+        stage: 'island',
+        difficulty: 'beginner',
+        gameId: 'syllable',
+        icon: '👏'
+      }
+    },
+
+    // ===========================================
+    // 🌲 リズムの森 - 音の探検隊
+    // ===========================================
+    {
+      path: '/games/alliteration',
+      name: 'alliteration-ranger',
+      component: AlliterationGame,
+      meta: {
+        title: '頭韻レンジャー',
+        description: '同じ音で始まる仲間を見つけよう！',
+        stage: 'forest',
+        difficulty: 'intermediate',
+        gameId: 'alliteration',
+        icon: '🅰️'
+      }
+    },
+    {
+      path: '/games/rhyme-ending',
+      name: 'end-sound-master',
+      component: RhymeEndingGame,
+      meta: {
+        title: 'エンド・サウンド',
+        description: '語尾の音をマッチさせろ！',
+        stage: 'forest',
+        difficulty: 'intermediate',
+        gameId: 'rhymeEnding',
+        icon: '🔚'
+      }
+    },
+    {
+      path: '/games/medial-sound',
+      name: 'middle-catcher',
+      component: () => import('@/components/games/MedialSoundGame.vue'),
+      meta: {
+        title: 'ミドル・キャッチャー',
+        description: '単語の真ん中の音を当てよう！',
+        stage: 'forest',
+        difficulty: 'intermediate',
+        gameId: 'medialSound',
+        icon: '🎯'
+      }
+    },
+
+    // ===========================================
+    // 🏰 サウンド城 - 最終試練
+    // ===========================================
+    {
+      path: '/games/phonics-master',
+      name: 'phonics-king',
+      component: () => import('@/components/games/PhonicsKingGame.vue'),
+      meta: {
+        title: 'フォニックス・キング',
+        description: '究極の音韻マスターに挑戦！',
+        stage: 'castle',
+        difficulty: 'advanced',
+        gameId: 'phonicsMaster',
+        icon: '👑',
+        requiresUnlock: true,
+        unlockCondition: 'forest_80_percent'
+      }
+    },
+    {
+      path: '/games/speed-challenge',
+      name: 'speed-lightning',
+      component: () => import('@/components/games/SpeedChallengeGame.vue'),
+      meta: {
+        title: 'スピード・チャレンジ',
+        description: '制限時間内に素早く答えよう！',
+        stage: 'castle',
+        difficulty: 'advanced',
+        gameId: 'speedChallenge',
+        icon: '⚡',
+        requiresUnlock: true,
+        unlockCondition: 'forest_80_percent'
+      }
+    },
+    {
+      path: '/games/sound-master-final',
+      name: 'ultimate-master',
+      component: () => import('@/components/games/UltimateMasterGame.vue'),
+      meta: {
+        title: 'アルティメット・マスター',
+        description: 'すべての音韻スキルを駆使せよ！',
+        stage: 'castle',
+        difficulty: 'expert',
+        gameId: 'ultimateMaster',
+        icon: '🌟',
+        requiresUnlock: true,
+        unlockCondition: 'all_castle_complete'
+      }
+    },
+
+    // ===========================================
+    // 🎮 追加ゲームモード
+    // ===========================================
+    {
+      path: '/games/word-rush',
+      name: 'word-rush-adventure',
+      component: () => import('../components/games/WordRushGame.vue'),
+      meta: {
+        title: 'ワード・ラッシュ・アドベンチャー',
+        description: '単語を素早く選択してスコアアップ！',
+        stage: 'bonus',
+        difficulty: 'intermediate',
+        gameId: 'wordRush',
+        icon: '💨'
+      }
+    },
+    {
+      path: '/games/pattern-builder',
+      name: 'sentence-architect',
+      component: () => import('../components/games/PatternBuilderGame.vue'),
+      meta: {
+        title: 'センテンス・アーキテクト',
+        description: '文法ブロックで完璧な文を作ろう！',
+        stage: 'bonus',
+        difficulty: 'intermediate',
+        gameId: 'patternBuilder',
+        icon: '🏗️'
+      }
+    },
+
+    // 旧ゲームルート（リダイレクト用）
+    {
+      path: '/games/sound-master',
+      redirect: '/sound-adventure'
+    },
+
+    // src/router/index.js の該当部分を以下のように修正
+
+    // ===========================================
+    // 🎯 特別モード・チャレンジ（一時的にコメントアウト）
+    // ===========================================
+
+    // TODO: 以下のファイルを作成後にコメント解除
+    /*
+    {
+      path: '/challenges',
+      name: 'daily-challenges',
+      component: () => import('../views/DailyChallengesView.vue'),
+      meta: {
+        title: 'デイリーチャレンジ',
+        description: '毎日変わる特別な挑戦！',
+        showInNav: true,
+        icon: '🎯'
+      }
+    },
+    {
+      path: '/challenges/weekly',
+      name: 'weekly-tournament',
+      component: () => import('../views/WeeklyTournamentView.vue'),
+      meta: {
+        title: 'ウィークリー・トーナメント',
+        description: '他のプレイヤーと競争しよう！',
+        icon: '🏆'
+      }
+    },
+    {
+      path: '/vr-mode',
+      name: 'vr-experience',
+      component: () => import('../views/VRExperienceView.vue'),
+      meta: {
+        title: 'VR体験モード',
+        description: '仮想現実で音の世界に没入！',
+        icon: '🥽',
+        requiresVR: true
+      }
+    },
+    */
+
+    // ===========================================
+    // 📊 プレイヤー情報・統計（一時的にコメントアウト）
+    // ===========================================
+
+    // TODO: 以下のファイルを作成後にコメント解除
+    /*
+    {
+      path: '/profile',
+      name: 'player-profile',
+      component: () => import('../views/PlayerProfileView.vue'),
+      meta: {
+        title: 'プレイヤープロフィール',
+        description: 'あなたの冒険の記録',
+        showInNav: true,
+        icon: '👤'
+      }
+    },
+    {
+      path: '/progress',
+      name: 'adventure-progress',
+      component: () => import('../views/AdventureProgressView.vue'),
+      meta: {
+        title: '冒険の進捗',
+        description: 'あなたの成長を確認しよう',
+        showInNav: true,
+        icon: '📈'
+      }
+    },
+    {
+      path: '/achievements',
+      name: 'trophy-room',
+      component: () => import('../views/TrophyRoomView.vue'),
+      meta: {
+        title: 'トロフィールーム',
+        description: '獲得した実績を確認',
+        showInNav: true,
+        icon: '🏆'
+      }
+    },
+    {
+      path: '/leaderboard',
+      name: 'adventure-leaderboard',
+      component: () => import('../views/LeaderboardView.vue'),
+      meta: {
+        title: 'アドベンチャー・ランキング',
+        description: '冒険者たちのランキング',
+        icon: '🥇'
+      }
+    },
+    */
+
+    // ===========================================
+    // ⚙️ 設定・サポート（一時的にコメントアウト）
+    // ===========================================
+
+    // TODO: 以下のファイルを作成後にコメント解除
+    /*
+    {
+      path: '/settings',
+      name: 'adventure-settings',
+      component: () => import('../views/AdventureSettingsView.vue'),
+      meta: {
+        title: '冒険の設定',
+        description: 'ゲーム設定をカスタマイズ',
+        showInNav: true,
+        icon: '⚙️'
+      }
+    },
+    {
+      path: '/help',
+      name: 'adventure-guide',
+      component: () => import('../views/AdventureGuideView.vue'),
+      meta: {
+        title: '冒険者ガイド',
+        description: 'ゲームの遊び方を学ぼう',
+        icon: '📚'
+      }
+    },
+    {
+      path: '/about',
+      name: 'about-adventure',
+      component: () => import('../views/AboutAdventureView.vue'),
+      meta: {
+        title: 'サウンド・アドベンチャーについて',
+        description: 'アプリの詳細情報',
+        icon: 'ℹ️'
+      }
+    },
+    */
+
+    // ===========================================
+    // 🔄 エラーハンドリング
+    // ===========================================
+    {
+      path: '/loading',
+      name: 'adventure-loading',
+      component: () => import('../views/LoadingView.vue'),
+      meta: {
+        title: '冒険準備中...',
+        hideFromNav: true
+      }
+    },
+    {
+      path: '/error',
+      name: 'adventure-error',
+      component: () => import('../views/ErrorView.vue'),
+      meta: {
+        title: 'エラーが発生しました',
+        hideFromNav: true
+      }
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'not-found',
+      component: () => import('../views/NotFoundView.vue'),
+      meta: {
+        title: 'ページが見つかりません',
+        hideFromNav: true
+      }
+    }
+  ]
+})
+
+// ===========================================
+// 🛡️ ナビゲーションガード
+// ===========================================
+
+// ルート変更前の処理
+router.beforeEach(async (to, from, next) => {
+  // タイトル設定
+  const title = to.meta.title ? `${to.meta.title} - サウンド・アドベンチャー` : 'サウンド・アドベンチャー'
+  document.title = title
+
+  // メタタグ設定
+  updateMetaTags(to.meta)
+
+  // VR要件チェック
+  if (to.meta.requiresVR && !isVRSupported()) {
+    console.warn('VR機能が利用できません')
+    next({ name: 'sound-adventure-hub', query: { vrError: 'unsupported' } })
+    return
+  }
+
+  // ゲーム解放条件チェック
+  if (to.meta.requiresUnlock && !checkUnlockCondition(to.meta.unlockCondition)) {
+    console.warn(`ゲームが解放されていません: ${to.meta.unlockCondition}`)
+    next({ name: 'sound-adventure-hub', query: { locked: to.meta.gameId } })
+    return
+  }
+
+  // ローディング表示（重いページの場合）
+  if (to.meta.showLoading) {
+    showLoadingScreen()
+  }
+
+  next()
+})
+
+// ルート変更後の処理
+router.afterEach((to, from) => {
+  // ローディング非表示
+  hideLoadingScreen()
+
+  // Google Analytics（実装する場合）
+  if (typeof gtag !== 'undefined') {
+    gtag('config', 'GA_MEASUREMENT_ID', {
+      page_title: to.meta.title,
+      page_location: window.location.href
+    })
+  }
+
+  // スクロール位置をトップに
+  window.scrollTo(0, 0)
+
+  // ゲームプレイ統計（必要に応じて）
+  if (to.meta.gameId) {
+    recordGameAccess(to.meta.gameId)
+  }
+})
+
+// ===========================================
+// 🔧 ヘルパー関数
+// ===========================================
+
+// メタタグ更新
+function updateMetaTags(meta) {
+  if (meta.description) {
+    let descTag = document.querySelector('meta[name="description"]')
+    if (!descTag) {
+      descTag = document.createElement('meta')
+      descTag.name = 'description'
+      document.head.appendChild(descTag)
+    }
+    descTag.content = meta.description
+  }
+}
+
+// VRサポート確認
+function isVRSupported() {
+  return 'xr' in navigator && 'isSessionSupported' in navigator.xr
+}
+
+// ゲーム解放条件チェック
+function checkUnlockCondition(condition) {
+  // ここで実際の解放条件をチェック
+  // 例: gameStore.checkUnlockCondition(condition)
+  return true // 一時的にtrueを返す
+}
+
+// ローディング画面表示/非表示
+function showLoadingScreen() {
+  const loading = document.getElementById('loading-overlay')
+  if (loading) loading.style.display = 'flex'
+}
+
+function hideLoadingScreen() {
+  const loading = document.getElementById('loading-overlay')
+  if (loading) loading.style.display = 'none'
+}
+
+// ゲームアクセス記録
+function recordGameAccess(gameId) {
+  // 統計記録（実装時に gameStore を使用）
+  console.log(`Game accessed: ${gameId}`)
+}
+
+// ===========================================
+// 🎮 ルートヘルパー
+// ===========================================
+
+// ゲーム一覧取得
+export function getGameRoutes() {
+  return router.getRoutes().filter(route => route.meta?.gameId)
+}
+
+// ステージ別ゲーム取得
+export function getGamesByStage(stage) {
+  return router.getRoutes().filter(route => route.meta?.stage === stage)
+}
+
+// ナビゲーション表示ルート取得
+export function getNavRoutes() {
+  return router.getRoutes().filter(route => route.meta?.showInNav)
+}
+
+export default router

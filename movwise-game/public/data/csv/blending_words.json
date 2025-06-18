@@ -1,0 +1,6920 @@
+[
+  {
+    "level": 1,
+    "word": "ship",
+    "initial_sound": "sh",
+    "blends": [
+      "shop",
+      "shoe",
+      "sheep",
+      "shell",
+      "shine"
+    ],
+    "non_blends": [
+      "cat",
+      "dog",
+      "sun",
+      "run",
+      "pen"
+    ],
+    "difficulty": "easy",
+    "category": "transport"
+  },
+  {
+    "level": 1,
+    "word": "shop",
+    "initial_sound": "sh",
+    "blends": [
+      "ship",
+      "shoe",
+      "sheep",
+      "shell",
+      "shine"
+    ],
+    "non_blends": [
+      "cat",
+      "dog",
+      "sun",
+      "run",
+      "pen"
+    ],
+    "difficulty": "easy",
+    "category": "places"
+  },
+  {
+    "level": 1,
+    "word": "shoe",
+    "initial_sound": "sh",
+    "blends": [
+      "ship",
+      "shop",
+      "sheep",
+      "shell",
+      "shine"
+    ],
+    "non_blends": [
+      "cat",
+      "dog",
+      "sun",
+      "run",
+      "pen"
+    ],
+    "difficulty": "easy",
+    "category": "clothes"
+  },
+  {
+    "level": 1,
+    "word": "sheep",
+    "initial_sound": "sh",
+    "blends": [
+      "ship",
+      "shop",
+      "shoe",
+      "shell",
+      "shine"
+    ],
+    "non_blends": [
+      "cat",
+      "dog",
+      "sun",
+      "run",
+      "pen"
+    ],
+    "difficulty": "easy",
+    "category": "animals"
+  },
+  {
+    "level": 1,
+    "word": "shell",
+    "initial_sound": "sh",
+    "blends": [
+      "ship",
+      "shop",
+      "shoe",
+      "sheep",
+      "shine"
+    ],
+    "non_blends": [
+      "cat",
+      "dog",
+      "sun",
+      "run",
+      "pen"
+    ],
+    "difficulty": "easy",
+    "category": "nature"
+  },
+  {
+    "level": 1,
+    "word": "shine",
+    "initial_sound": "sh",
+    "blends": [
+      "ship",
+      "shop",
+      "shoe",
+      "sheep",
+      "shell"
+    ],
+    "non_blends": [
+      "cat",
+      "dog",
+      "sun",
+      "run",
+      "pen"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "chair",
+    "initial_sound": "ch",
+    "blends": [
+      "cheese",
+      "child",
+      "church",
+      "chicken",
+      "chocolate"
+    ],
+    "non_blends": [
+      "bat",
+      "rat",
+      "hat",
+      "mat",
+      "sat"
+    ],
+    "difficulty": "easy",
+    "category": "furniture"
+  },
+  {
+    "level": 1,
+    "word": "cheese",
+    "initial_sound": "ch",
+    "blends": [
+      "chair",
+      "child",
+      "church",
+      "chicken",
+      "chocolate"
+    ],
+    "non_blends": [
+      "bat",
+      "rat",
+      "hat",
+      "mat",
+      "sat"
+    ],
+    "difficulty": "easy",
+    "category": "food"
+  },
+  {
+    "level": 1,
+    "word": "child",
+    "initial_sound": "ch",
+    "blends": [
+      "chair",
+      "cheese",
+      "church",
+      "chicken",
+      "chocolate"
+    ],
+    "non_blends": [
+      "bat",
+      "rat",
+      "hat",
+      "mat",
+      "sat"
+    ],
+    "difficulty": "easy",
+    "category": "people"
+  },
+  {
+    "level": 1,
+    "word": "church",
+    "initial_sound": "ch",
+    "blends": [
+      "chair",
+      "cheese",
+      "child",
+      "chicken",
+      "chocolate"
+    ],
+    "non_blends": [
+      "bat",
+      "rat",
+      "hat",
+      "mat",
+      "sat"
+    ],
+    "difficulty": "easy",
+    "category": "places"
+  },
+  {
+    "level": 1,
+    "word": "chicken",
+    "initial_sound": "ch",
+    "blends": [
+      "chair",
+      "cheese",
+      "child",
+      "church",
+      "chocolate"
+    ],
+    "non_blends": [
+      "bat",
+      "rat",
+      "hat",
+      "mat",
+      "sat"
+    ],
+    "difficulty": "easy",
+    "category": "animals"
+  },
+  {
+    "level": 1,
+    "word": "chocolate",
+    "initial_sound": "ch",
+    "blends": [
+      "chair",
+      "cheese",
+      "child",
+      "church",
+      "chicken"
+    ],
+    "non_blends": [
+      "bat",
+      "rat",
+      "hat",
+      "mat",
+      "sat"
+    ],
+    "difficulty": "easy",
+    "category": "food"
+  },
+  {
+    "level": 1,
+    "word": "thumb",
+    "initial_sound": "th",
+    "blends": [
+      "think",
+      "thin",
+      "three",
+      "bath",
+      "path"
+    ],
+    "non_blends": [
+      "pen",
+      "hen",
+      "ten",
+      "men",
+      "den"
+    ],
+    "difficulty": "easy",
+    "category": "body"
+  },
+  {
+    "level": 1,
+    "word": "think",
+    "initial_sound": "th",
+    "blends": [
+      "thumb",
+      "thin",
+      "three",
+      "bath",
+      "path"
+    ],
+    "non_blends": [
+      "pen",
+      "hen",
+      "ten",
+      "men",
+      "den"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "thin",
+    "initial_sound": "th",
+    "blends": [
+      "thumb",
+      "think",
+      "three",
+      "bath",
+      "path"
+    ],
+    "non_blends": [
+      "pen",
+      "hen",
+      "ten",
+      "men",
+      "den"
+    ],
+    "difficulty": "easy",
+    "category": "adjectives"
+  },
+  {
+    "level": 1,
+    "word": "three",
+    "initial_sound": "th",
+    "blends": [
+      "thumb",
+      "think",
+      "thin",
+      "bath",
+      "path"
+    ],
+    "non_blends": [
+      "pen",
+      "hen",
+      "ten",
+      "men",
+      "den"
+    ],
+    "difficulty": "easy",
+    "category": "numbers"
+  },
+  {
+    "level": 1,
+    "word": "bath",
+    "initial_sound": "th",
+    "blends": [
+      "thumb",
+      "think",
+      "thin",
+      "three",
+      "path"
+    ],
+    "non_blends": [
+      "pen",
+      "hen",
+      "ten",
+      "men",
+      "den"
+    ],
+    "difficulty": "easy",
+    "category": "places"
+  },
+  {
+    "level": 1,
+    "word": "path",
+    "initial_sound": "th",
+    "blends": [
+      "thumb",
+      "think",
+      "thin",
+      "three",
+      "bath"
+    ],
+    "non_blends": [
+      "pen",
+      "hen",
+      "ten",
+      "men",
+      "den"
+    ],
+    "difficulty": "easy",
+    "category": "places"
+  },
+  {
+    "level": 1,
+    "word": "wheel",
+    "initial_sound": "wh",
+    "blends": [
+      "what",
+      "when",
+      "where",
+      "why",
+      "white"
+    ],
+    "non_blends": [
+      "run",
+      "sun",
+      "fun",
+      "bun",
+      "gun"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "what",
+    "initial_sound": "wh",
+    "blends": [
+      "wheel",
+      "when",
+      "where",
+      "why",
+      "white"
+    ],
+    "non_blends": [
+      "run",
+      "sun",
+      "fun",
+      "bun",
+      "gun"
+    ],
+    "difficulty": "easy",
+    "category": "questions"
+  },
+  {
+    "level": 1,
+    "word": "when",
+    "initial_sound": "wh",
+    "blends": [
+      "wheel",
+      "what",
+      "where",
+      "why",
+      "white"
+    ],
+    "non_blends": [
+      "run",
+      "sun",
+      "fun",
+      "bun",
+      "gun"
+    ],
+    "difficulty": "easy",
+    "category": "questions"
+  },
+  {
+    "level": 1,
+    "word": "where",
+    "initial_sound": "wh",
+    "blends": [
+      "wheel",
+      "what",
+      "when",
+      "why",
+      "white"
+    ],
+    "non_blends": [
+      "run",
+      "sun",
+      "fun",
+      "bun",
+      "gun"
+    ],
+    "difficulty": "easy",
+    "category": "questions"
+  },
+  {
+    "level": 1,
+    "word": "why",
+    "initial_sound": "wh",
+    "blends": [
+      "wheel",
+      "what",
+      "when",
+      "where",
+      "white"
+    ],
+    "non_blends": [
+      "run",
+      "sun",
+      "fun",
+      "bun",
+      "gun"
+    ],
+    "difficulty": "easy",
+    "category": "questions"
+  },
+  {
+    "level": 1,
+    "word": "white",
+    "initial_sound": "wh",
+    "blends": [
+      "wheel",
+      "what",
+      "when",
+      "where",
+      "why"
+    ],
+    "non_blends": [
+      "run",
+      "sun",
+      "fun",
+      "bun",
+      "gun"
+    ],
+    "difficulty": "easy",
+    "category": "colors"
+  },
+  {
+    "level": 1,
+    "word": "stop",
+    "initial_sound": "st",
+    "blends": [
+      "star",
+      "stone",
+      "street",
+      "stand",
+      "start"
+    ],
+    "non_blends": [
+      "log",
+      "dog",
+      "hog",
+      "fog",
+      "jog"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "star",
+    "initial_sound": "st",
+    "blends": [
+      "stop",
+      "stone",
+      "street",
+      "stand",
+      "start"
+    ],
+    "non_blends": [
+      "log",
+      "dog",
+      "hog",
+      "fog",
+      "jog"
+    ],
+    "difficulty": "easy",
+    "category": "nature"
+  },
+  {
+    "level": 1,
+    "word": "stone",
+    "initial_sound": "st",
+    "blends": [
+      "stop",
+      "star",
+      "street",
+      "stand",
+      "start"
+    ],
+    "non_blends": [
+      "log",
+      "dog",
+      "hog",
+      "fog",
+      "jog"
+    ],
+    "difficulty": "easy",
+    "category": "nature"
+  },
+  {
+    "level": 1,
+    "word": "street",
+    "initial_sound": "st",
+    "blends": [
+      "stop",
+      "star",
+      "stone",
+      "stand",
+      "start"
+    ],
+    "non_blends": [
+      "log",
+      "dog",
+      "hog",
+      "fog",
+      "jog"
+    ],
+    "difficulty": "easy",
+    "category": "places"
+  },
+  {
+    "level": 1,
+    "word": "stand",
+    "initial_sound": "st",
+    "blends": [
+      "stop",
+      "star",
+      "stone",
+      "street",
+      "start"
+    ],
+    "non_blends": [
+      "log",
+      "dog",
+      "hog",
+      "fog",
+      "jog"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "start",
+    "initial_sound": "st",
+    "blends": [
+      "stop",
+      "star",
+      "stone",
+      "street",
+      "stand"
+    ],
+    "non_blends": [
+      "log",
+      "dog",
+      "hog",
+      "fog",
+      "jog"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "spin",
+    "initial_sound": "sp",
+    "blends": [
+      "spot",
+      "spoon",
+      "speak",
+      "space",
+      "special"
+    ],
+    "non_blends": [
+      "fan",
+      "man",
+      "pan",
+      "can",
+      "ran"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "spot",
+    "initial_sound": "sp",
+    "blends": [
+      "spin",
+      "spoon",
+      "speak",
+      "space",
+      "special"
+    ],
+    "non_blends": [
+      "fan",
+      "man",
+      "pan",
+      "can",
+      "ran"
+    ],
+    "difficulty": "easy",
+    "category": "places"
+  },
+  {
+    "level": 1,
+    "word": "spoon",
+    "initial_sound": "sp",
+    "blends": [
+      "spin",
+      "spot",
+      "speak",
+      "space",
+      "special"
+    ],
+    "non_blends": [
+      "fan",
+      "man",
+      "pan",
+      "can",
+      "ran"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "speak",
+    "initial_sound": "sp",
+    "blends": [
+      "spin",
+      "spot",
+      "spoon",
+      "space",
+      "special"
+    ],
+    "non_blends": [
+      "fan",
+      "man",
+      "pan",
+      "can",
+      "ran"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "space",
+    "initial_sound": "sp",
+    "blends": [
+      "spin",
+      "spot",
+      "spoon",
+      "speak",
+      "special"
+    ],
+    "non_blends": [
+      "fan",
+      "man",
+      "pan",
+      "can",
+      "ran"
+    ],
+    "difficulty": "easy",
+    "category": "space"
+  },
+  {
+    "level": 1,
+    "word": "special",
+    "initial_sound": "sp",
+    "blends": [
+      "spin",
+      "spot",
+      "spoon",
+      "speak",
+      "space"
+    ],
+    "non_blends": [
+      "fan",
+      "man",
+      "pan",
+      "can",
+      "ran"
+    ],
+    "difficulty": "easy",
+    "category": "adjectives"
+  },
+  {
+    "level": 1,
+    "word": "play",
+    "initial_sound": "pl",
+    "blends": [
+      "plant",
+      "plate",
+      "plane",
+      "please",
+      "plastic"
+    ],
+    "non_blends": [
+      "nap",
+      "map",
+      "cap",
+      "tap",
+      "lap"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "plant",
+    "initial_sound": "pl",
+    "blends": [
+      "play",
+      "plate",
+      "plane",
+      "please",
+      "plastic"
+    ],
+    "non_blends": [
+      "nap",
+      "map",
+      "cap",
+      "tap",
+      "lap"
+    ],
+    "difficulty": "easy",
+    "category": "nature"
+  },
+  {
+    "level": 1,
+    "word": "plate",
+    "initial_sound": "pl",
+    "blends": [
+      "play",
+      "plant",
+      "plane",
+      "please",
+      "plastic"
+    ],
+    "non_blends": [
+      "nap",
+      "map",
+      "cap",
+      "tap",
+      "lap"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "plane",
+    "initial_sound": "pl",
+    "blends": [
+      "play",
+      "plant",
+      "plate",
+      "please",
+      "plastic"
+    ],
+    "non_blends": [
+      "nap",
+      "map",
+      "cap",
+      "tap",
+      "lap"
+    ],
+    "difficulty": "easy",
+    "category": "vehicles"
+  },
+  {
+    "level": 1,
+    "word": "please",
+    "initial_sound": "pl",
+    "blends": [
+      "play",
+      "plant",
+      "plate",
+      "plane",
+      "plastic"
+    ],
+    "non_blends": [
+      "nap",
+      "map",
+      "cap",
+      "tap",
+      "lap"
+    ],
+    "difficulty": "easy",
+    "category": "expressions"
+  },
+  {
+    "level": 1,
+    "word": "plastic",
+    "initial_sound": "pl",
+    "blends": [
+      "play",
+      "plant",
+      "plate",
+      "plane",
+      "please"
+    ],
+    "non_blends": [
+      "nap",
+      "map",
+      "cap",
+      "tap",
+      "lap"
+    ],
+    "difficulty": "easy",
+    "category": "materials"
+  },
+  {
+    "level": 1,
+    "word": "blue",
+    "initial_sound": "bl",
+    "blends": [
+      "black",
+      "block",
+      "blow",
+      "blood",
+      "bloom"
+    ],
+    "non_blends": [
+      "red",
+      "bed",
+      "fed",
+      "led",
+      "wed"
+    ],
+    "difficulty": "easy",
+    "category": "colors"
+  },
+  {
+    "level": 1,
+    "word": "black",
+    "initial_sound": "bl",
+    "blends": [
+      "blue",
+      "block",
+      "blow",
+      "blood",
+      "bloom"
+    ],
+    "non_blends": [
+      "red",
+      "bed",
+      "fed",
+      "led",
+      "wed"
+    ],
+    "difficulty": "easy",
+    "category": "colors"
+  },
+  {
+    "level": 1,
+    "word": "block",
+    "initial_sound": "bl",
+    "blends": [
+      "blue",
+      "black",
+      "blow",
+      "blood",
+      "bloom"
+    ],
+    "non_blends": [
+      "red",
+      "bed",
+      "fed",
+      "led",
+      "wed"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "blow",
+    "initial_sound": "bl",
+    "blends": [
+      "blue",
+      "black",
+      "block",
+      "blood",
+      "bloom"
+    ],
+    "non_blends": [
+      "red",
+      "bed",
+      "fed",
+      "led",
+      "wed"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "blood",
+    "initial_sound": "bl",
+    "blends": [
+      "blue",
+      "black",
+      "block",
+      "blow",
+      "bloom"
+    ],
+    "non_blends": [
+      "red",
+      "bed",
+      "fed",
+      "led",
+      "wed"
+    ],
+    "difficulty": "easy",
+    "category": "body"
+  },
+  {
+    "level": 1,
+    "word": "bloom",
+    "initial_sound": "bl",
+    "blends": [
+      "blue",
+      "black",
+      "block",
+      "blow",
+      "blood"
+    ],
+    "non_blends": [
+      "red",
+      "bed",
+      "fed",
+      "led",
+      "wed"
+    ],
+    "difficulty": "easy",
+    "category": "nature"
+  },
+  {
+    "level": 1,
+    "word": "flag",
+    "initial_sound": "fl",
+    "blends": [
+      "flip",
+      "flee",
+      "flute",
+      "flower",
+      "flat"
+    ],
+    "non_blends": [
+      "bug",
+      "rug",
+      "jug",
+      "hug",
+      "mug"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "flip",
+    "initial_sound": "fl",
+    "blends": [
+      "flag",
+      "flee",
+      "flute",
+      "flower",
+      "flat"
+    ],
+    "non_blends": [
+      "bug",
+      "rug",
+      "jug",
+      "hug",
+      "mug"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "flee",
+    "initial_sound": "fl",
+    "blends": [
+      "flag",
+      "flip",
+      "flute",
+      "flower",
+      "flat"
+    ],
+    "non_blends": [
+      "bug",
+      "rug",
+      "jug",
+      "hug",
+      "mug"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "flute",
+    "initial_sound": "fl",
+    "blends": [
+      "flag",
+      "flip",
+      "flee",
+      "flower",
+      "flat"
+    ],
+    "non_blends": [
+      "bug",
+      "rug",
+      "jug",
+      "hug",
+      "mug"
+    ],
+    "difficulty": "easy",
+    "category": "instruments"
+  },
+  {
+    "level": 1,
+    "word": "flower",
+    "initial_sound": "fl",
+    "blends": [
+      "flag",
+      "flip",
+      "flee",
+      "flute",
+      "flat"
+    ],
+    "non_blends": [
+      "bug",
+      "rug",
+      "jug",
+      "hug",
+      "mug"
+    ],
+    "difficulty": "easy",
+    "category": "nature"
+  },
+  {
+    "level": 1,
+    "word": "flat",
+    "initial_sound": "fl",
+    "blends": [
+      "flag",
+      "flip",
+      "flee",
+      "flute",
+      "flower"
+    ],
+    "non_blends": [
+      "bug",
+      "rug",
+      "jug",
+      "hug",
+      "mug"
+    ],
+    "difficulty": "easy",
+    "category": "adjectives"
+  },
+  {
+    "level": 1,
+    "word": "glass",
+    "initial_sound": "gl",
+    "blends": [
+      "glove",
+      "glue",
+      "glide",
+      "globe",
+      "glitter"
+    ],
+    "non_blends": [
+      "sit",
+      "hit",
+      "kit",
+      "bit",
+      "pit"
+    ],
+    "difficulty": "easy",
+    "category": "materials"
+  },
+  {
+    "level": 1,
+    "word": "glove",
+    "initial_sound": "gl",
+    "blends": [
+      "glass",
+      "glue",
+      "glide",
+      "globe",
+      "glitter"
+    ],
+    "non_blends": [
+      "sit",
+      "hit",
+      "kit",
+      "bit",
+      "pit"
+    ],
+    "difficulty": "easy",
+    "category": "clothes"
+  },
+  {
+    "level": 1,
+    "word": "glue",
+    "initial_sound": "gl",
+    "blends": [
+      "glass",
+      "glove",
+      "glide",
+      "globe",
+      "glitter"
+    ],
+    "non_blends": [
+      "sit",
+      "hit",
+      "kit",
+      "bit",
+      "pit"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "glide",
+    "initial_sound": "gl",
+    "blends": [
+      "glass",
+      "glove",
+      "glue",
+      "globe",
+      "glitter"
+    ],
+    "non_blends": [
+      "sit",
+      "hit",
+      "kit",
+      "bit",
+      "pit"
+    ],
+    "difficulty": "easy",
+    "category": "actions"
+  },
+  {
+    "level": 1,
+    "word": "globe",
+    "initial_sound": "gl",
+    "blends": [
+      "glass",
+      "glove",
+      "glue",
+      "glide",
+      "glitter"
+    ],
+    "non_blends": [
+      "sit",
+      "hit",
+      "kit",
+      "bit",
+      "pit"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 1,
+    "word": "glitter",
+    "initial_sound": "gl",
+    "blends": [
+      "glass",
+      "glove",
+      "glue",
+      "glide",
+      "globe"
+    ],
+    "non_blends": [
+      "sit",
+      "hit",
+      "kit",
+      "bit",
+      "pit"
+    ],
+    "difficulty": "easy",
+    "category": "things"
+  },
+  {
+    "level": 2,
+    "word": "clap",
+    "initial_sound": "cl",
+    "blends": [
+      "clean",
+      "cloud",
+      "climb",
+      "clock",
+      "clothes"
+    ],
+    "non_blends": [
+      "pin",
+      "bin",
+      "fin",
+      "win",
+      "tin"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "clean",
+    "initial_sound": "cl",
+    "blends": [
+      "clap",
+      "cloud",
+      "climb",
+      "clock",
+      "clothes"
+    ],
+    "non_blends": [
+      "pin",
+      "bin",
+      "fin",
+      "win",
+      "tin"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "cloud",
+    "initial_sound": "cl",
+    "blends": [
+      "clap",
+      "clean",
+      "climb",
+      "clock",
+      "clothes"
+    ],
+    "non_blends": [
+      "pin",
+      "bin",
+      "fin",
+      "win",
+      "tin"
+    ],
+    "difficulty": "medium",
+    "category": "nature"
+  },
+  {
+    "level": 2,
+    "word": "climb",
+    "initial_sound": "cl",
+    "blends": [
+      "clap",
+      "clean",
+      "cloud",
+      "clock",
+      "clothes"
+    ],
+    "non_blends": [
+      "pin",
+      "bin",
+      "fin",
+      "win",
+      "tin"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "clock",
+    "initial_sound": "cl",
+    "blends": [
+      "clap",
+      "clean",
+      "cloud",
+      "climb",
+      "clothes"
+    ],
+    "non_blends": [
+      "pin",
+      "bin",
+      "fin",
+      "win",
+      "tin"
+    ],
+    "difficulty": "medium",
+    "category": "things"
+  },
+  {
+    "level": 2,
+    "word": "clothes",
+    "initial_sound": "cl",
+    "blends": [
+      "clap",
+      "clean",
+      "cloud",
+      "climb",
+      "clock"
+    ],
+    "non_blends": [
+      "pin",
+      "bin",
+      "fin",
+      "win",
+      "tin"
+    ],
+    "difficulty": "medium",
+    "category": "clothes"
+  },
+  {
+    "level": 2,
+    "word": "sleep",
+    "initial_sound": "sl",
+    "blends": [
+      "slide",
+      "slow",
+      "slim",
+      "slip",
+      "slap"
+    ],
+    "non_blends": [
+      "zip",
+      "tip",
+      "dip",
+      "lip",
+      "hip"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "slide",
+    "initial_sound": "sl",
+    "blends": [
+      "sleep",
+      "slow",
+      "slim",
+      "slip",
+      "slap"
+    ],
+    "non_blends": [
+      "zip",
+      "tip",
+      "dip",
+      "lip",
+      "hip"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "slow",
+    "initial_sound": "sl",
+    "blends": [
+      "sleep",
+      "slide",
+      "slim",
+      "slip",
+      "slap"
+    ],
+    "non_blends": [
+      "zip",
+      "tip",
+      "dip",
+      "lip",
+      "hip"
+    ],
+    "difficulty": "medium",
+    "category": "adjectives"
+  },
+  {
+    "level": 2,
+    "word": "slim",
+    "initial_sound": "sl",
+    "blends": [
+      "sleep",
+      "slide",
+      "slow",
+      "slip",
+      "slap"
+    ],
+    "non_blends": [
+      "zip",
+      "tip",
+      "dip",
+      "lip",
+      "hip"
+    ],
+    "difficulty": "medium",
+    "category": "adjectives"
+  },
+  {
+    "level": 2,
+    "word": "slip",
+    "initial_sound": "sl",
+    "blends": [
+      "sleep",
+      "slide",
+      "slow",
+      "slim",
+      "slap"
+    ],
+    "non_blends": [
+      "zip",
+      "tip",
+      "dip",
+      "lip",
+      "hip"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "slap",
+    "initial_sound": "sl",
+    "blends": [
+      "sleep",
+      "slide",
+      "slow",
+      "slim",
+      "slip"
+    ],
+    "non_blends": [
+      "zip",
+      "tip",
+      "dip",
+      "lip",
+      "hip"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "bread",
+    "initial_sound": "br",
+    "blends": [
+      "brown",
+      "bring",
+      "break",
+      "bridge",
+      "brush"
+    ],
+    "non_blends": [
+      "leg",
+      "beg",
+      "peg",
+      "meg",
+      "keg"
+    ],
+    "difficulty": "medium",
+    "category": "food"
+  },
+  {
+    "level": 2,
+    "word": "brown",
+    "initial_sound": "br",
+    "blends": [
+      "bread",
+      "bring",
+      "break",
+      "bridge",
+      "brush"
+    ],
+    "non_blends": [
+      "leg",
+      "beg",
+      "peg",
+      "meg",
+      "keg"
+    ],
+    "difficulty": "medium",
+    "category": "colors"
+  },
+  {
+    "level": 2,
+    "word": "bring",
+    "initial_sound": "br",
+    "blends": [
+      "bread",
+      "brown",
+      "break",
+      "bridge",
+      "brush"
+    ],
+    "non_blends": [
+      "leg",
+      "beg",
+      "peg",
+      "meg",
+      "keg"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "break",
+    "initial_sound": "br",
+    "blends": [
+      "bread",
+      "brown",
+      "bring",
+      "bridge",
+      "brush"
+    ],
+    "non_blends": [
+      "leg",
+      "beg",
+      "peg",
+      "meg",
+      "keg"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "bridge",
+    "initial_sound": "br",
+    "blends": [
+      "bread",
+      "brown",
+      "bring",
+      "break",
+      "brush"
+    ],
+    "non_blends": [
+      "leg",
+      "beg",
+      "peg",
+      "meg",
+      "keg"
+    ],
+    "difficulty": "medium",
+    "category": "structures"
+  },
+  {
+    "level": 2,
+    "word": "brush",
+    "initial_sound": "br",
+    "blends": [
+      "bread",
+      "brown",
+      "bring",
+      "break",
+      "bridge"
+    ],
+    "non_blends": [
+      "leg",
+      "beg",
+      "peg",
+      "meg",
+      "keg"
+    ],
+    "difficulty": "medium",
+    "category": "things"
+  },
+  {
+    "level": 2,
+    "word": "cry",
+    "initial_sound": "cr",
+    "blends": [
+      "crab",
+      "crow",
+      "crawl",
+      "crash",
+      "cream"
+    ],
+    "non_blends": [
+      "jam",
+      "ham",
+      "ram",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "crab",
+    "initial_sound": "cr",
+    "blends": [
+      "cry",
+      "crow",
+      "crawl",
+      "crash",
+      "cream"
+    ],
+    "non_blends": [
+      "jam",
+      "ham",
+      "ram",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "medium",
+    "category": "animals"
+  },
+  {
+    "level": 2,
+    "word": "crow",
+    "initial_sound": "cr",
+    "blends": [
+      "cry",
+      "crab",
+      "crawl",
+      "crash",
+      "cream"
+    ],
+    "non_blends": [
+      "jam",
+      "ham",
+      "ram",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "medium",
+    "category": "animals"
+  },
+  {
+    "level": 2,
+    "word": "crawl",
+    "initial_sound": "cr",
+    "blends": [
+      "cry",
+      "crab",
+      "crow",
+      "crash",
+      "cream"
+    ],
+    "non_blends": [
+      "jam",
+      "ham",
+      "ram",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "crash",
+    "initial_sound": "cr",
+    "blends": [
+      "cry",
+      "crab",
+      "crow",
+      "crawl",
+      "cream"
+    ],
+    "non_blends": [
+      "jam",
+      "ham",
+      "ram",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "cream",
+    "initial_sound": "cr",
+    "blends": [
+      "cry",
+      "crab",
+      "crow",
+      "crawl",
+      "crash"
+    ],
+    "non_blends": [
+      "jam",
+      "ham",
+      "ram",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "medium",
+    "category": "food"
+  },
+  {
+    "level": 2,
+    "word": "drum",
+    "initial_sound": "dr",
+    "blends": [
+      "drink",
+      "drive",
+      "drop",
+      "dress",
+      "dream"
+    ],
+    "non_blends": [
+      "fig",
+      "big",
+      "dig",
+      "pig",
+      "wig"
+    ],
+    "difficulty": "medium",
+    "category": "music"
+  },
+  {
+    "level": 2,
+    "word": "drink",
+    "initial_sound": "dr",
+    "blends": [
+      "drum",
+      "drive",
+      "drop",
+      "dress",
+      "dream"
+    ],
+    "non_blends": [
+      "fig",
+      "big",
+      "dig",
+      "pig",
+      "wig"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "drive",
+    "initial_sound": "dr",
+    "blends": [
+      "drum",
+      "drink",
+      "drop",
+      "dress",
+      "dream"
+    ],
+    "non_blends": [
+      "fig",
+      "big",
+      "dig",
+      "pig",
+      "wig"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "drop",
+    "initial_sound": "dr",
+    "blends": [
+      "drum",
+      "drink",
+      "drive",
+      "dress",
+      "dream"
+    ],
+    "non_blends": [
+      "fig",
+      "big",
+      "dig",
+      "pig",
+      "wig"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "dress",
+    "initial_sound": "dr",
+    "blends": [
+      "drum",
+      "drink",
+      "drive",
+      "drop",
+      "dream"
+    ],
+    "non_blends": [
+      "fig",
+      "big",
+      "dig",
+      "pig",
+      "wig"
+    ],
+    "difficulty": "medium",
+    "category": "clothes"
+  },
+  {
+    "level": 2,
+    "word": "dream",
+    "initial_sound": "dr",
+    "blends": [
+      "drum",
+      "drink",
+      "drive",
+      "drop",
+      "dress"
+    ],
+    "non_blends": [
+      "fig",
+      "big",
+      "dig",
+      "pig",
+      "wig"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "frog",
+    "initial_sound": "fr",
+    "blends": [
+      "friend",
+      "from",
+      "fruit",
+      "front",
+      "freeze"
+    ],
+    "non_blends": [
+      "log",
+      "cog",
+      "fog",
+      "hog",
+      "jog"
+    ],
+    "difficulty": "medium",
+    "category": "animals"
+  },
+  {
+    "level": 2,
+    "word": "friend",
+    "initial_sound": "fr",
+    "blends": [
+      "frog",
+      "from",
+      "fruit",
+      "front",
+      "freeze"
+    ],
+    "non_blends": [
+      "log",
+      "cog",
+      "fog",
+      "hog",
+      "jog"
+    ],
+    "difficulty": "medium",
+    "category": "people"
+  },
+  {
+    "level": 2,
+    "word": "from",
+    "initial_sound": "fr",
+    "blends": [
+      "frog",
+      "friend",
+      "fruit",
+      "front",
+      "freeze"
+    ],
+    "non_blends": [
+      "log",
+      "cog",
+      "fog",
+      "hog",
+      "jog"
+    ],
+    "difficulty": "medium",
+    "category": "prepositions"
+  },
+  {
+    "level": 2,
+    "word": "fruit",
+    "initial_sound": "fr",
+    "blends": [
+      "frog",
+      "friend",
+      "from",
+      "front",
+      "freeze"
+    ],
+    "non_blends": [
+      "log",
+      "cog",
+      "fog",
+      "hog",
+      "jog"
+    ],
+    "difficulty": "medium",
+    "category": "food"
+  },
+  {
+    "level": 2,
+    "word": "front",
+    "initial_sound": "fr",
+    "blends": [
+      "frog",
+      "friend",
+      "from",
+      "fruit",
+      "freeze"
+    ],
+    "non_blends": [
+      "log",
+      "cog",
+      "fog",
+      "hog",
+      "jog"
+    ],
+    "difficulty": "medium",
+    "category": "position"
+  },
+  {
+    "level": 2,
+    "word": "freeze",
+    "initial_sound": "fr",
+    "blends": [
+      "frog",
+      "friend",
+      "from",
+      "fruit",
+      "front"
+    ],
+    "non_blends": [
+      "log",
+      "cog",
+      "fog",
+      "hog",
+      "jog"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "grass",
+    "initial_sound": "gr",
+    "blends": [
+      "green",
+      "grow",
+      "ground",
+      "great",
+      "grape"
+    ],
+    "non_blends": [
+      "mud",
+      "bud",
+      "cud",
+      "dud",
+      "sud"
+    ],
+    "difficulty": "medium",
+    "category": "nature"
+  },
+  {
+    "level": 2,
+    "word": "green",
+    "initial_sound": "gr",
+    "blends": [
+      "grass",
+      "grow",
+      "ground",
+      "great",
+      "grape"
+    ],
+    "non_blends": [
+      "mud",
+      "bud",
+      "cud",
+      "dud",
+      "sud"
+    ],
+    "difficulty": "medium",
+    "category": "colors"
+  },
+  {
+    "level": 2,
+    "word": "grow",
+    "initial_sound": "gr",
+    "blends": [
+      "grass",
+      "green",
+      "ground",
+      "great",
+      "grape"
+    ],
+    "non_blends": [
+      "mud",
+      "bud",
+      "cud",
+      "dud",
+      "sud"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "ground",
+    "initial_sound": "gr",
+    "blends": [
+      "grass",
+      "green",
+      "grow",
+      "great",
+      "grape"
+    ],
+    "non_blends": [
+      "mud",
+      "bud",
+      "cud",
+      "dud",
+      "sud"
+    ],
+    "difficulty": "medium",
+    "category": "places"
+  },
+  {
+    "level": 2,
+    "word": "great",
+    "initial_sound": "gr",
+    "blends": [
+      "grass",
+      "green",
+      "grow",
+      "ground",
+      "grape"
+    ],
+    "non_blends": [
+      "mud",
+      "bud",
+      "cud",
+      "dud",
+      "sud"
+    ],
+    "difficulty": "medium",
+    "category": "adjectives"
+  },
+  {
+    "level": 2,
+    "word": "grape",
+    "initial_sound": "gr",
+    "blends": [
+      "grass",
+      "green",
+      "grow",
+      "ground",
+      "great"
+    ],
+    "non_blends": [
+      "mud",
+      "bud",
+      "cud",
+      "dud",
+      "sud"
+    ],
+    "difficulty": "medium",
+    "category": "food"
+  },
+  {
+    "level": 2,
+    "word": "pray",
+    "initial_sound": "pr",
+    "blends": [
+      "present",
+      "price",
+      "print",
+      "proud",
+      "pretty"
+    ],
+    "non_blends": [
+      "van",
+      "ban",
+      "can",
+      "fan",
+      "man"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "present",
+    "initial_sound": "pr",
+    "blends": [
+      "pray",
+      "price",
+      "print",
+      "proud",
+      "pretty"
+    ],
+    "non_blends": [
+      "van",
+      "ban",
+      "can",
+      "fan",
+      "man"
+    ],
+    "difficulty": "medium",
+    "category": "things"
+  },
+  {
+    "level": 2,
+    "word": "price",
+    "initial_sound": "pr",
+    "blends": [
+      "pray",
+      "present",
+      "print",
+      "proud",
+      "pretty"
+    ],
+    "non_blends": [
+      "van",
+      "ban",
+      "can",
+      "fan",
+      "man"
+    ],
+    "difficulty": "medium",
+    "category": "finance"
+  },
+  {
+    "level": 2,
+    "word": "print",
+    "initial_sound": "pr",
+    "blends": [
+      "pray",
+      "present",
+      "price",
+      "proud",
+      "pretty"
+    ],
+    "non_blends": [
+      "van",
+      "ban",
+      "can",
+      "fan",
+      "man"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "proud",
+    "initial_sound": "pr",
+    "blends": [
+      "pray",
+      "present",
+      "price",
+      "print",
+      "pretty"
+    ],
+    "non_blends": [
+      "van",
+      "ban",
+      "can",
+      "fan",
+      "man"
+    ],
+    "difficulty": "medium",
+    "category": "feelings"
+  },
+  {
+    "level": 2,
+    "word": "pretty",
+    "initial_sound": "pr",
+    "blends": [
+      "pray",
+      "present",
+      "price",
+      "print",
+      "proud"
+    ],
+    "non_blends": [
+      "van",
+      "ban",
+      "can",
+      "fan",
+      "man"
+    ],
+    "difficulty": "medium",
+    "category": "adjectives"
+  },
+  {
+    "level": 2,
+    "word": "train",
+    "initial_sound": "tr",
+    "blends": [
+      "tree",
+      "truck",
+      "travel",
+      "trip",
+      "try"
+    ],
+    "non_blends": [
+      "jet",
+      "net",
+      "pet",
+      "wet",
+      "set"
+    ],
+    "difficulty": "medium",
+    "category": "vehicles"
+  },
+  {
+    "level": 2,
+    "word": "tree",
+    "initial_sound": "tr",
+    "blends": [
+      "train",
+      "truck",
+      "travel",
+      "trip",
+      "try"
+    ],
+    "non_blends": [
+      "jet",
+      "net",
+      "pet",
+      "wet",
+      "set"
+    ],
+    "difficulty": "medium",
+    "category": "nature"
+  },
+  {
+    "level": 2,
+    "word": "truck",
+    "initial_sound": "tr",
+    "blends": [
+      "train",
+      "tree",
+      "travel",
+      "trip",
+      "try"
+    ],
+    "non_blends": [
+      "jet",
+      "net",
+      "pet",
+      "wet",
+      "set"
+    ],
+    "difficulty": "medium",
+    "category": "vehicles"
+  },
+  {
+    "level": 2,
+    "word": "travel",
+    "initial_sound": "tr",
+    "blends": [
+      "train",
+      "tree",
+      "truck",
+      "trip",
+      "try"
+    ],
+    "non_blends": [
+      "jet",
+      "net",
+      "pet",
+      "wet",
+      "set"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "trip",
+    "initial_sound": "tr",
+    "blends": [
+      "train",
+      "tree",
+      "truck",
+      "travel",
+      "try"
+    ],
+    "non_blends": [
+      "jet",
+      "net",
+      "pet",
+      "wet",
+      "set"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "try",
+    "initial_sound": "tr",
+    "blends": [
+      "train",
+      "tree",
+      "truck",
+      "travel",
+      "trip"
+    ],
+    "non_blends": [
+      "jet",
+      "net",
+      "pet",
+      "wet",
+      "set"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "small",
+    "initial_sound": "sm",
+    "blends": [
+      "smell",
+      "smile",
+      "smoke",
+      "smooth",
+      "smart"
+    ],
+    "non_blends": [
+      "kit",
+      "bit",
+      "fit",
+      "hit",
+      "lit"
+    ],
+    "difficulty": "medium",
+    "category": "adjectives"
+  },
+  {
+    "level": 2,
+    "word": "smell",
+    "initial_sound": "sm",
+    "blends": [
+      "small",
+      "smile",
+      "smoke",
+      "smooth",
+      "smart"
+    ],
+    "non_blends": [
+      "kit",
+      "bit",
+      "fit",
+      "hit",
+      "lit"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "smile",
+    "initial_sound": "sm",
+    "blends": [
+      "small",
+      "smell",
+      "smoke",
+      "smooth",
+      "smart"
+    ],
+    "non_blends": [
+      "kit",
+      "bit",
+      "fit",
+      "hit",
+      "lit"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "smoke",
+    "initial_sound": "sm",
+    "blends": [
+      "small",
+      "smell",
+      "smile",
+      "smooth",
+      "smart"
+    ],
+    "non_blends": [
+      "kit",
+      "bit",
+      "fit",
+      "hit",
+      "lit"
+    ],
+    "difficulty": "medium",
+    "category": "nature"
+  },
+  {
+    "level": 2,
+    "word": "smooth",
+    "initial_sound": "sm",
+    "blends": [
+      "small",
+      "smell",
+      "smile",
+      "smoke",
+      "smart"
+    ],
+    "non_blends": [
+      "kit",
+      "bit",
+      "fit",
+      "hit",
+      "lit"
+    ],
+    "difficulty": "medium",
+    "category": "adjectives"
+  },
+  {
+    "level": 2,
+    "word": "smart",
+    "initial_sound": "sm",
+    "blends": [
+      "small",
+      "smell",
+      "smile",
+      "smoke",
+      "smooth"
+    ],
+    "non_blends": [
+      "kit",
+      "bit",
+      "fit",
+      "hit",
+      "lit"
+    ],
+    "difficulty": "medium",
+    "category": "adjectives"
+  },
+  {
+    "level": 2,
+    "word": "snow",
+    "initial_sound": "sn",
+    "blends": [
+      "snack",
+      "snail",
+      "snake",
+      "sniff",
+      "snore"
+    ],
+    "non_blends": [
+      "rod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "difficulty": "medium",
+    "category": "weather"
+  },
+  {
+    "level": 2,
+    "word": "snack",
+    "initial_sound": "sn",
+    "blends": [
+      "snow",
+      "snail",
+      "snake",
+      "sniff",
+      "snore"
+    ],
+    "non_blends": [
+      "rod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "difficulty": "medium",
+    "category": "food"
+  },
+  {
+    "level": 2,
+    "word": "snail",
+    "initial_sound": "sn",
+    "blends": [
+      "snow",
+      "snack",
+      "snake",
+      "sniff",
+      "snore"
+    ],
+    "non_blends": [
+      "rod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "difficulty": "medium",
+    "category": "animals"
+  },
+  {
+    "level": 2,
+    "word": "snake",
+    "initial_sound": "sn",
+    "blends": [
+      "snow",
+      "snack",
+      "snail",
+      "sniff",
+      "snore"
+    ],
+    "non_blends": [
+      "rod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "difficulty": "medium",
+    "category": "animals"
+  },
+  {
+    "level": 2,
+    "word": "sniff",
+    "initial_sound": "sn",
+    "blends": [
+      "snow",
+      "snack",
+      "snail",
+      "snake",
+      "snore"
+    ],
+    "non_blends": [
+      "rod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "snore",
+    "initial_sound": "sn",
+    "blends": [
+      "snow",
+      "snack",
+      "snail",
+      "snake",
+      "sniff"
+    ],
+    "non_blends": [
+      "rod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "swim",
+    "initial_sound": "sw",
+    "blends": [
+      "sweet",
+      "sweep",
+      "swing",
+      "switch",
+      "swallow"
+    ],
+    "non_blends": [
+      "gem",
+      "hem",
+      "stem",
+      "them"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "sweet",
+    "initial_sound": "sw",
+    "blends": [
+      "swim",
+      "sweep",
+      "swing",
+      "switch",
+      "swallow"
+    ],
+    "non_blends": [
+      "gem",
+      "hem",
+      "stem",
+      "them"
+    ],
+    "difficulty": "medium",
+    "category": "adjectives"
+  },
+  {
+    "level": 2,
+    "word": "sweep",
+    "initial_sound": "sw",
+    "blends": [
+      "swim",
+      "sweet",
+      "swing",
+      "switch",
+      "swallow"
+    ],
+    "non_blends": [
+      "gem",
+      "hem",
+      "stem",
+      "them"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "swing",
+    "initial_sound": "sw",
+    "blends": [
+      "swim",
+      "sweet",
+      "sweep",
+      "switch",
+      "swallow"
+    ],
+    "non_blends": [
+      "gem",
+      "hem",
+      "stem",
+      "them"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 2,
+    "word": "switch",
+    "initial_sound": "sw",
+    "blends": [
+      "swim",
+      "sweet",
+      "sweep",
+      "swing",
+      "swallow"
+    ],
+    "non_blends": [
+      "gem",
+      "hem",
+      "stem",
+      "them"
+    ],
+    "difficulty": "medium",
+    "category": "things"
+  },
+  {
+    "level": 2,
+    "word": "swallow",
+    "initial_sound": "sw",
+    "blends": [
+      "swim",
+      "sweet",
+      "sweep",
+      "swing",
+      "switch"
+    ],
+    "non_blends": [
+      "gem",
+      "hem",
+      "stem",
+      "them"
+    ],
+    "difficulty": "medium",
+    "category": "actions"
+  },
+  {
+    "level": 3,
+    "word": "sky",
+    "initial_sound": "sk",
+    "blends": [
+      "skip",
+      "skate",
+      "skin",
+      "skill",
+      "sketch"
+    ],
+    "non_blends": [
+      "wax",
+      "tax",
+      "max",
+      "fax",
+      "sax"
+    ],
+    "difficulty": "hard",
+    "category": "nature"
+  },
+  {
+    "level": 3,
+    "word": "skip",
+    "initial_sound": "sk",
+    "blends": [
+      "sky",
+      "skate",
+      "skin",
+      "skill",
+      "sketch"
+    ],
+    "non_blends": [
+      "wax",
+      "tax",
+      "max",
+      "fax",
+      "sax"
+    ],
+    "difficulty": "hard",
+    "category": "actions"
+  },
+  {
+    "level": 3,
+    "word": "skate",
+    "initial_sound": "sk",
+    "blends": [
+      "sky",
+      "skip",
+      "skin",
+      "skill",
+      "sketch"
+    ],
+    "non_blends": [
+      "wax",
+      "tax",
+      "max",
+      "fax",
+      "sax"
+    ],
+    "difficulty": "hard",
+    "category": "actions"
+  },
+  {
+    "level": 3,
+    "word": "skin",
+    "initial_sound": "sk",
+    "blends": [
+      "sky",
+      "skip",
+      "skate",
+      "skill",
+      "sketch"
+    ],
+    "non_blends": [
+      "wax",
+      "tax",
+      "max",
+      "fax",
+      "sax"
+    ],
+    "difficulty": "hard",
+    "category": "body"
+  },
+  {
+    "level": 3,
+    "word": "skill",
+    "initial_sound": "sk",
+    "blends": [
+      "sky",
+      "skip",
+      "skate",
+      "skin",
+      "sketch"
+    ],
+    "non_blends": [
+      "wax",
+      "tax",
+      "max",
+      "fax",
+      "sax"
+    ],
+    "difficulty": "hard",
+    "category": "abilities"
+  },
+  {
+    "level": 3,
+    "word": "sketch",
+    "initial_sound": "sk",
+    "blends": [
+      "sky",
+      "skip",
+      "skate",
+      "skin",
+      "skill"
+    ],
+    "non_blends": [
+      "wax",
+      "tax",
+      "max",
+      "fax",
+      "sax"
+    ],
+    "difficulty": "hard",
+    "category": "actions"
+  },
+  {
+    "level": 3,
+    "word": "queen",
+    "initial_sound": "qu",
+    "blends": [
+      "quick",
+      "quiet",
+      "quiz",
+      "quack",
+      "quake"
+    ],
+    "non_blends": [
+      "gas",
+      "has",
+      "was"
+    ],
+    "difficulty": "hard",
+    "category": "people"
+  },
+  {
+    "level": 3,
+    "word": "quick",
+    "initial_sound": "qu",
+    "blends": [
+      "queen",
+      "quiet",
+      "quiz",
+      "quack",
+      "quake"
+    ],
+    "non_blends": [
+      "gas",
+      "has",
+      "was"
+    ],
+    "difficulty": "hard",
+    "category": "adjectives"
+  },
+  {
+    "level": 3,
+    "word": "quiet",
+    "initial_sound": "qu",
+    "blends": [
+      "queen",
+      "quick",
+      "quiz",
+      "quack",
+      "quake"
+    ],
+    "non_blends": [
+      "gas",
+      "has",
+      "was"
+    ],
+    "difficulty": "hard",
+    "category": "adjectives"
+  },
+  {
+    "level": 3,
+    "word": "quiz",
+    "initial_sound": "qu",
+    "blends": [
+      "queen",
+      "quick",
+      "quiet",
+      "quack",
+      "quake"
+    ],
+    "non_blends": [
+      "gas",
+      "has",
+      "was"
+    ],
+    "difficulty": "hard",
+    "category": "activities"
+  },
+  {
+    "level": 3,
+    "word": "quack",
+    "initial_sound": "qu",
+    "blends": [
+      "queen",
+      "quick",
+      "quiet",
+      "quiz",
+      "quake"
+    ],
+    "non_blends": [
+      "gas",
+      "has",
+      "was"
+    ],
+    "difficulty": "hard",
+    "category": "sounds"
+  },
+  {
+    "level": 3,
+    "word": "quake",
+    "initial_sound": "qu",
+    "blends": [
+      "queen",
+      "quick",
+      "quiet",
+      "quiz",
+      "quack"
+    ],
+    "non_blends": [
+      "gas",
+      "has",
+      "was"
+    ],
+    "difficulty": "hard",
+    "category": "nature"
+  },
+  {
+    "level": 3,
+    "word": "school",
+    "initial_sound": "sc",
+    "blends": [
+      "science",
+      "score",
+      "scale",
+      "screen",
+      "scared"
+    ],
+    "non_blends": [
+      "ram",
+      "jam",
+      "ham",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "hard",
+    "category": "education"
+  },
+  {
+    "level": 3,
+    "word": "science",
+    "initial_sound": "sc",
+    "blends": [
+      "school",
+      "score",
+      "scale",
+      "screen",
+      "scared"
+    ],
+    "non_blends": [
+      "ram",
+      "jam",
+      "ham",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "hard",
+    "category": "education"
+  },
+  {
+    "level": 3,
+    "word": "score",
+    "initial_sound": "sc",
+    "blends": [
+      "school",
+      "science",
+      "scale",
+      "screen",
+      "scared"
+    ],
+    "non_blends": [
+      "ram",
+      "jam",
+      "ham",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "hard",
+    "category": "sports"
+  },
+  {
+    "level": 3,
+    "word": "scale",
+    "initial_sound": "sc",
+    "blends": [
+      "school",
+      "science",
+      "score",
+      "screen",
+      "scared"
+    ],
+    "non_blends": [
+      "ram",
+      "jam",
+      "ham",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "hard",
+    "category": "things"
+  },
+  {
+    "level": 3,
+    "word": "screen",
+    "initial_sound": "sc",
+    "blends": [
+      "school",
+      "science",
+      "score",
+      "scale",
+      "scared"
+    ],
+    "non_blends": [
+      "ram",
+      "jam",
+      "ham",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "hard",
+    "category": "technology"
+  },
+  {
+    "level": 3,
+    "word": "scared",
+    "initial_sound": "sc",
+    "blends": [
+      "school",
+      "science",
+      "score",
+      "scale",
+      "screen"
+    ],
+    "non_blends": [
+      "ram",
+      "jam",
+      "ham",
+      "dam",
+      "cam"
+    ],
+    "difficulty": "hard",
+    "category": "feelings"
+  },
+  {
+    "level": 3,
+    "word": "throw",
+    "initial_sound": "thr",
+    "blends": [
+      "three",
+      "through",
+      "throat",
+      "thread",
+      "throne"
+    ],
+    "non_blends": [
+      "cub",
+      "hub",
+      "pub",
+      "rub",
+      "sub"
+    ],
+    "difficulty": "hard",
+    "category": "actions"
+  },
+  {
+    "level": 3,
+    "word": "three",
+    "initial_sound": "thr",
+    "blends": [
+      "throw",
+      "through",
+      "throat",
+      "thread",
+      "throne"
+    ],
+    "non_blends": [
+      "cub",
+      "hub",
+      "pub",
+      "rub",
+      "sub"
+    ],
+    "difficulty": "hard",
+    "category": "numbers"
+  },
+  {
+    "level": 3,
+    "word": "through",
+    "initial_sound": "thr",
+    "blends": [
+      "throw",
+      "three",
+      "throat",
+      "thread",
+      "throne"
+    ],
+    "non_blends": [
+      "cub",
+      "hub",
+      "pub",
+      "rub",
+      "sub"
+    ],
+    "difficulty": "hard",
+    "category": "prepositions"
+  },
+  {
+    "level": 3,
+    "word": "throat",
+    "initial_sound": "thr",
+    "blends": [
+      "throw",
+      "three",
+      "through",
+      "thread",
+      "throne"
+    ],
+    "non_blends": [
+      "cub",
+      "hub",
+      "pub",
+      "rub",
+      "sub"
+    ],
+    "difficulty": "hard",
+    "category": "body"
+  },
+  {
+    "level": 3,
+    "word": "thread",
+    "initial_sound": "thr",
+    "blends": [
+      "throw",
+      "three",
+      "through",
+      "throat",
+      "throne"
+    ],
+    "non_blends": [
+      "cub",
+      "hub",
+      "pub",
+      "rub",
+      "sub"
+    ],
+    "difficulty": "hard",
+    "category": "things"
+  },
+  {
+    "level": 3,
+    "word": "throne",
+    "initial_sound": "thr",
+    "blends": [
+      "throw",
+      "three",
+      "through",
+      "throat",
+      "thread"
+    ],
+    "non_blends": [
+      "cub",
+      "hub",
+      "pub",
+      "rub",
+      "sub"
+    ],
+    "difficulty": "hard",
+    "category": "furniture"
+  },
+  {
+    "level": 3,
+    "word": "splash",
+    "initial_sound": "spl",
+    "blends": [
+      "split",
+      "spring",
+      "spread",
+      "spray",
+      "sprout"
+    ],
+    "non_blends": [
+      "pup",
+      "cup",
+      "sup"
+    ],
+    "difficulty": "hard",
+    "category": "actions"
+  },
+  {
+    "level": 3,
+    "word": "split",
+    "initial_sound": "spl",
+    "blends": [
+      "splash",
+      "spring",
+      "spread",
+      "spray",
+      "sprout"
+    ],
+    "non_blends": [
+      "pup",
+      "cup",
+      "sup"
+    ],
+    "difficulty": "hard",
+    "category": "actions"
+  },
+  {
+    "level": 3,
+    "word": "spring",
+    "initial_sound": "spr",
+    "blends": [
+      "splash",
+      "split",
+      "spread",
+      "spray",
+      "sprout"
+    ],
+    "non_blends": [
+      "pup",
+      "cup",
+      "sup"
+    ],
+    "difficulty": "hard",
+    "category": "seasons"
+  },
+  {
+    "level": 3,
+    "word": "spread",
+    "initial_sound": "spr",
+    "blends": [
+      "splash",
+      "split",
+      "spring",
+      "spray",
+      "sprout"
+    ],
+    "non_blends": [
+      "pup",
+      "cup",
+      "sup"
+    ],
+    "difficulty": "hard",
+    "category": "actions"
+  },
+  {
+    "level": 3,
+    "word": "spray",
+    "initial_sound": "spr",
+    "blends": [
+      "splash",
+      "split",
+      "spring",
+      "spread",
+      "sprout"
+    ],
+    "non_blends": [
+      "pup",
+      "cup",
+      "sup"
+    ],
+    "difficulty": "hard",
+    "category": "actions"
+  },
+  {
+    "level": 3,
+    "word": "sprout",
+    "initial_sound": "spr",
+    "blends": [
+      "splash",
+      "split",
+      "spring",
+      "spread",
+      "spray"
+    ],
+    "non_blends": [
+      "pup",
+      "cup",
+      "sup"
+    ],
+    "difficulty": "hard",
+    "category": "nature"
+  },
+  {
+    "level": 3,
+    "word": "square",
+    "initial_sound": "squ",
+    "blends": [
+      "squeeze",
+      "squirrel",
+      "squash",
+      "squeak",
+      "squid"
+    ],
+    "non_blends": [
+      "fin",
+      "bin",
+      "din",
+      "gin",
+      "kin"
+    ],
+    "difficulty": "hard",
+    "category": "shapes"
+  },
+  {
+    "level": 3,
+    "word": "squeeze",
+    "initial_sound": "squ",
+    "blends": [
+      "square",
+      "squirrel",
+      "squash",
+      "squeak",
+      "squid"
+    ],
+    "non_blends": [
+      "fin",
+      "bin",
+      "din",
+      "gin",
+      "kin"
+    ],
+    "difficulty": "hard",
+    "category": "actions"
+  },
+  {
+    "level": 3,
+    "word": "squirrel",
+    "initial_sound": "squ",
+    "blends": [
+      "square",
+      "squeeze",
+      "squash",
+      "squeak",
+      "squid"
+    ],
+    "non_blends": [
+      "fin",
+      "bin",
+      "din",
+      "gin",
+      "kin"
+    ],
+    "difficulty": "hard",
+    "category": "animals"
+  },
+  {
+    "level": 3,
+    "word": "squash",
+    "initial_sound": "squ",
+    "blends": [
+      "square",
+      "squeeze",
+      "squirrel",
+      "squeak",
+      "squid"
+    ],
+    "non_blends": [
+      "fin",
+      "bin",
+      "din",
+      "gin",
+      "kin"
+    ],
+    "difficulty": "hard",
+    "category": "food"
+  },
+  {
+    "level": 3,
+    "word": "squeak",
+    "initial_sound": "squ",
+    "blends": [
+      "square",
+      "squeeze",
+      "squirrel",
+      "squash",
+      "squid"
+    ],
+    "non_blends": [
+      "fin",
+      "bin",
+      "din",
+      "gin",
+      "kin"
+    ],
+    "difficulty": "hard",
+    "category": "sounds"
+  },
+  {
+    "level": 3,
+    "word": "squid",
+    "initial_sound": "squ",
+    "blends": [
+      "square",
+      "squeeze",
+      "squirrel",
+      "squash",
+      "squeak"
+    ],
+    "non_blends": [
+      "fin",
+      "bin",
+      "din",
+      "gin",
+      "kin"
+    ],
+    "difficulty": "hard",
+    "category": "animals"
+  },
+  {
+    "level": 3,
+    "word": "strange",
+    "initial_sound": "str",
+    "blends": [
+      "street",
+      "strong",
+      "string",
+      "stream",
+      "structure"
+    ],
+    "non_blends": [
+      "hog",
+      "bog",
+      "cog",
+      "dog",
+      "fog"
+    ],
+    "difficulty": "hard",
+    "category": "adjectives"
+  },
+  {
+    "level": 3,
+    "word": "street",
+    "initial_sound": "str",
+    "blends": [
+      "strange",
+      "strong",
+      "string",
+      "stream",
+      "structure"
+    ],
+    "non_blends": [
+      "hog",
+      "bog",
+      "cog",
+      "dog",
+      "fog"
+    ],
+    "difficulty": "hard",
+    "category": "places"
+  },
+  {
+    "level": 3,
+    "word": "strong",
+    "initial_sound": "str",
+    "blends": [
+      "strange",
+      "street",
+      "string",
+      "stream",
+      "structure"
+    ],
+    "non_blends": [
+      "hog",
+      "bog",
+      "cog",
+      "dog",
+      "fog"
+    ],
+    "difficulty": "hard",
+    "category": "adjectives"
+  },
+  {
+    "level": 3,
+    "word": "string",
+    "initial_sound": "str",
+    "blends": [
+      "strange",
+      "street",
+      "strong",
+      "stream",
+      "structure"
+    ],
+    "non_blends": [
+      "hog",
+      "bog",
+      "cog",
+      "dog",
+      "fog"
+    ],
+    "difficulty": "hard",
+    "category": "things"
+  },
+  {
+    "level": 3,
+    "word": "stream",
+    "initial_sound": "str",
+    "blends": [
+      "strange",
+      "street",
+      "strong",
+      "string",
+      "structure"
+    ],
+    "non_blends": [
+      "hog",
+      "bog",
+      "cog",
+      "dog",
+      "fog"
+    ],
+    "difficulty": "hard",
+    "category": "nature"
+  },
+  {
+    "level": 3,
+    "word": "structure",
+    "initial_sound": "str",
+    "blends": [
+      "strange",
+      "street",
+      "strong",
+      "string",
+      "stream"
+    ],
+    "non_blends": [
+      "hog",
+      "bog",
+      "cog",
+      "dog",
+      "fog"
+    ],
+    "difficulty": "hard",
+    "category": "things"
+  },
+  {
+    "level": 3,
+    "word": "twelve",
+    "initial_sound": "tw",
+    "blends": [
+      "twenty",
+      "twist",
+      "twin",
+      "twice",
+      "twilight"
+    ],
+    "non_blends": [
+      "gum",
+      "hum",
+      "rum",
+      "sum",
+      "yum"
+    ],
+    "difficulty": "hard",
+    "category": "numbers"
+  },
+  {
+    "level": 3,
+    "word": "twenty",
+    "initial_sound": "tw",
+    "blends": [
+      "twelve",
+      "twist",
+      "twin",
+      "twice",
+      "twilight"
+    ],
+    "non_blends": [
+      "gum",
+      "hum",
+      "rum",
+      "sum",
+      "yum"
+    ],
+    "difficulty": "hard",
+    "category": "numbers"
+  },
+  {
+    "level": 3,
+    "word": "twist",
+    "initial_sound": "tw",
+    "blends": [
+      "twelve",
+      "twenty",
+      "twin",
+      "twice",
+      "twilight"
+    ],
+    "non_blends": [
+      "gum",
+      "hum",
+      "rum",
+      "sum",
+      "yum"
+    ],
+    "difficulty": "hard",
+    "category": "actions"
+  },
+  {
+    "level": 3,
+    "word": "twin",
+    "initial_sound": "tw",
+    "blends": [
+      "twelve",
+      "twenty",
+      "twist",
+      "twice",
+      "twilight"
+    ],
+    "non_blends": [
+      "gum",
+      "hum",
+      "rum",
+      "sum",
+      "yum"
+    ],
+    "difficulty": "hard",
+    "category": "people"
+  },
+  {
+    "level": 3,
+    "word": "twice",
+    "initial_sound": "tw",
+    "blends": [
+      "twelve",
+      "twenty",
+      "twist",
+      "twin",
+      "twilight"
+    ],
+    "non_blends": [
+      "gum",
+      "hum",
+      "rum",
+      "sum",
+      "yum"
+    ],
+    "difficulty": "hard",
+    "category": "frequency"
+  },
+  {
+    "level": 3,
+    "word": "twilight",
+    "initial_sound": "tw",
+    "blends": [
+      "twelve",
+      "twenty",
+      "twist",
+      "twin",
+      "twice"
+    ],
+    "non_blends": [
+      "gum",
+      "hum",
+      "rum",
+      "sum",
+      "yum"
+    ],
+    "difficulty": "hard",
+    "category": "time"
+  },
+  {
+    "level": 3,
+    "word": "phrase",
+    "initial_sound": "phr",
+    "blends": [
+      "phone",
+      "photo",
+      "physical",
+      "philosophy"
+    ],
+    "non_blends": [
+      "hut",
+      "but",
+      "cut",
+      "gut",
+      "nut"
+    ],
+    "difficulty": "hard",
+    "category": "language"
+  },
+  {
+    "level": 3,
+    "word": "phone",
+    "initial_sound": "ph",
+    "blends": [
+      "phrase",
+      "photo",
+      "physical",
+      "philosophy"
+    ],
+    "non_blends": [
+      "hut",
+      "but",
+      "cut",
+      "gut",
+      "nut"
+    ],
+    "difficulty": "hard",
+    "category": "technology"
+  },
+  {
+    "level": 3,
+    "word": "photo",
+    "initial_sound": "ph",
+    "blends": [
+      "phrase",
+      "phone",
+      "physical",
+      "philosophy"
+    ],
+    "non_blends": [
+      "hut",
+      "but",
+      "cut",
+      "gut",
+      "nut"
+    ],
+    "difficulty": "hard",
+    "category": "things"
+  },
+  {
+    "level": 3,
+    "word": "physical",
+    "initial_sound": "ph",
+    "blends": [
+      "phrase",
+      "phone",
+      "photo",
+      "philosophy"
+    ],
+    "non_blends": [
+      "hut",
+      "but",
+      "cut",
+      "gut",
+      "nut"
+    ],
+    "difficulty": "hard",
+    "category": "adjectives"
+  },
+  {
+    "level": 3,
+    "word": "philosophy",
+    "initial_sound": "ph",
+    "blends": [
+      "phrase",
+      "phone",
+      "photo",
+      "physical"
+    ],
+    "non_blends": [
+      "hut",
+      "but",
+      "cut",
+      "gut",
+      "nut"
+    ],
+    "difficulty": "hard",
+    "category": "subjects"
+  },
+  {
+    "level": 3,
+    "word": "chrome",
+    "initial_sound": "chr",
+    "blends": [
+      "Christmas",
+      "chronic",
+      "church"
+    ],
+    "non_blends": [
+      "gym",
+      "him",
+      "dim",
+      "rim",
+      "vim"
+    ],
+    "difficulty": "hard",
+    "category": "colors"
+  },
+  {
+    "level": 3,
+    "word": "Christmas",
+    "initial_sound": "chr",
+    "blends": [
+      "chrome",
+      "chronic",
+      "church"
+    ],
+    "non_blends": [
+      "gym",
+      "him",
+      "dim",
+      "rim",
+      "vim"
+    ],
+    "difficulty": "hard",
+    "category": "holidays"
+  },
+  {
+    "level": 3,
+    "word": "chronic",
+    "initial_sound": "chr",
+    "blends": [
+      "chrome",
+      "Christmas",
+      "church"
+    ],
+    "non_blends": [
+      "gym",
+      "him",
+      "dim",
+      "rim",
+      "vim"
+    ],
+    "difficulty": "hard",
+    "category": "medical"
+  },
+  {
+    "level": 3,
+    "word": "church",
+    "initial_sound": "chr",
+    "blends": [
+      "chrome",
+      "Christmas",
+      "chronic"
+    ],
+    "non_blends": [
+      "gym",
+      "him",
+      "dim",
+      "rim",
+      "vim"
+    ],
+    "difficulty": "hard",
+    "category": "places"
+  },
+  {
+    "level": 4,
+    "word": "scrub",
+    "initial_sound": "scr",
+    "blends": [
+      "screen",
+      "scream",
+      "scratch",
+      "scrape",
+      "script"
+    ],
+    "non_blends": [
+      "pad",
+      "bad",
+      "dad",
+      "had",
+      "lad"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "screen",
+    "initial_sound": "scr",
+    "blends": [
+      "scrub",
+      "scream",
+      "scratch",
+      "scrape",
+      "script"
+    ],
+    "non_blends": [
+      "pad",
+      "bad",
+      "dad",
+      "had",
+      "lad"
+    ],
+    "difficulty": "veryhard",
+    "category": "technology"
+  },
+  {
+    "level": 4,
+    "word": "scream",
+    "initial_sound": "scr",
+    "blends": [
+      "scrub",
+      "screen",
+      "scratch",
+      "scrape",
+      "script"
+    ],
+    "non_blends": [
+      "pad",
+      "bad",
+      "dad",
+      "had",
+      "lad"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "scratch",
+    "initial_sound": "scr",
+    "blends": [
+      "scrub",
+      "screen",
+      "scream",
+      "scrape",
+      "script"
+    ],
+    "non_blends": [
+      "pad",
+      "bad",
+      "dad",
+      "had",
+      "lad"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "scrape",
+    "initial_sound": "scr",
+    "blends": [
+      "scrub",
+      "screen",
+      "scream",
+      "scratch",
+      "script"
+    ],
+    "non_blends": [
+      "pad",
+      "bad",
+      "dad",
+      "had",
+      "lad"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "script",
+    "initial_sound": "scr",
+    "blends": [
+      "scrub",
+      "screen",
+      "scream",
+      "scratch",
+      "scrape"
+    ],
+    "non_blends": [
+      "pad",
+      "bad",
+      "dad",
+      "had",
+      "lad"
+    ],
+    "difficulty": "veryhard",
+    "category": "writing"
+  },
+  {
+    "level": 4,
+    "word": "splint",
+    "initial_sound": "spl",
+    "blends": [
+      "split",
+      "splash",
+      "splatter",
+      "splice",
+      "splendid"
+    ],
+    "non_blends": [
+      "tab",
+      "cab",
+      "dab",
+      "fab",
+      "gab"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "split",
+    "initial_sound": "spl",
+    "blends": [
+      "splint",
+      "splash",
+      "splatter",
+      "splice",
+      "splendid"
+    ],
+    "non_blends": [
+      "tab",
+      "cab",
+      "dab",
+      "fab",
+      "gab"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "splash",
+    "initial_sound": "spl",
+    "blends": [
+      "splint",
+      "split",
+      "splatter",
+      "splice",
+      "splendid"
+    ],
+    "non_blends": [
+      "tab",
+      "cab",
+      "dab",
+      "fab",
+      "gab"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "splatter",
+    "initial_sound": "spl",
+    "blends": [
+      "splint",
+      "split",
+      "splash",
+      "splice",
+      "splendid"
+    ],
+    "non_blends": [
+      "tab",
+      "cab",
+      "dab",
+      "fab",
+      "gab"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "splice",
+    "initial_sound": "spl",
+    "blends": [
+      "splint",
+      "split",
+      "splash",
+      "splatter",
+      "splendid"
+    ],
+    "non_blends": [
+      "tab",
+      "cab",
+      "dab",
+      "fab",
+      "gab"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "splendid",
+    "initial_sound": "spl",
+    "blends": [
+      "splint",
+      "split",
+      "splash",
+      "splatter",
+      "splice"
+    ],
+    "non_blends": [
+      "tab",
+      "cab",
+      "dab",
+      "fab",
+      "gab"
+    ],
+    "difficulty": "veryhard",
+    "category": "adjectives"
+  },
+  {
+    "level": 4,
+    "word": "spring",
+    "initial_sound": "spr",
+    "blends": [
+      "spread",
+      "spray",
+      "sprout",
+      "sprinkle",
+      "spruce"
+    ],
+    "non_blends": [
+      "peg",
+      "beg",
+      "keg",
+      "leg",
+      "meg"
+    ],
+    "difficulty": "veryhard",
+    "category": "nature"
+  },
+  {
+    "level": 4,
+    "word": "spread",
+    "initial_sound": "spr",
+    "blends": [
+      "spring",
+      "spray",
+      "sprout",
+      "sprinkle",
+      "spruce"
+    ],
+    "non_blends": [
+      "peg",
+      "beg",
+      "keg",
+      "leg",
+      "meg"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "spray",
+    "initial_sound": "spr",
+    "blends": [
+      "spring",
+      "spread",
+      "sprout",
+      "sprinkle",
+      "spruce"
+    ],
+    "non_blends": [
+      "peg",
+      "beg",
+      "keg",
+      "leg",
+      "meg"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "sprout",
+    "initial_sound": "spr",
+    "blends": [
+      "spring",
+      "spread",
+      "spray",
+      "sprinkle",
+      "spruce"
+    ],
+    "non_blends": [
+      "peg",
+      "beg",
+      "keg",
+      "leg",
+      "meg"
+    ],
+    "difficulty": "veryhard",
+    "category": "nature"
+  },
+  {
+    "level": 4,
+    "word": "sprinkle",
+    "initial_sound": "spr",
+    "blends": [
+      "spring",
+      "spread",
+      "spray",
+      "sprout",
+      "spruce"
+    ],
+    "non_blends": [
+      "peg",
+      "beg",
+      "keg",
+      "leg",
+      "meg"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "spruce",
+    "initial_sound": "spr",
+    "blends": [
+      "spring",
+      "spread",
+      "spray",
+      "sprout",
+      "sprinkle"
+    ],
+    "non_blends": [
+      "peg",
+      "beg",
+      "keg",
+      "leg",
+      "meg"
+    ],
+    "difficulty": "veryhard",
+    "category": "nature"
+  },
+  {
+    "level": 4,
+    "word": "strength",
+    "initial_sound": "str",
+    "blends": [
+      "struggle",
+      "strategy",
+      "structure",
+      "straight",
+      "strange"
+    ],
+    "non_blends": [
+      "rim",
+      "dim",
+      "him",
+      "vim"
+    ],
+    "difficulty": "veryhard",
+    "category": "qualities"
+  },
+  {
+    "level": 4,
+    "word": "struggle",
+    "initial_sound": "str",
+    "blends": [
+      "strength",
+      "strategy",
+      "structure",
+      "straight",
+      "strange"
+    ],
+    "non_blends": [
+      "rim",
+      "dim",
+      "him",
+      "vim"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "strategy",
+    "initial_sound": "str",
+    "blends": [
+      "strength",
+      "struggle",
+      "structure",
+      "straight",
+      "strange"
+    ],
+    "non_blends": [
+      "rim",
+      "dim",
+      "him",
+      "vim"
+    ],
+    "difficulty": "veryhard",
+    "category": "planning"
+  },
+  {
+    "level": 4,
+    "word": "structure",
+    "initial_sound": "str",
+    "blends": [
+      "strength",
+      "struggle",
+      "strategy",
+      "straight",
+      "strange"
+    ],
+    "non_blends": [
+      "rim",
+      "dim",
+      "him",
+      "vim"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "straight",
+    "initial_sound": "str",
+    "blends": [
+      "strength",
+      "struggle",
+      "strategy",
+      "structure",
+      "strange"
+    ],
+    "non_blends": [
+      "rim",
+      "dim",
+      "him",
+      "vim"
+    ],
+    "difficulty": "veryhard",
+    "category": "adjectives"
+  },
+  {
+    "level": 4,
+    "word": "strange",
+    "initial_sound": "str",
+    "blends": [
+      "strength",
+      "struggle",
+      "strategy",
+      "structure",
+      "straight"
+    ],
+    "non_blends": [
+      "rim",
+      "dim",
+      "him",
+      "vim"
+    ],
+    "difficulty": "veryhard",
+    "category": "adjectives"
+  },
+  {
+    "level": 4,
+    "word": "through",
+    "initial_sound": "thr",
+    "blends": [
+      "throat",
+      "thread",
+      "three",
+      "throw",
+      "throne"
+    ],
+    "non_blends": [
+      "wad",
+      "cad",
+      "fad",
+      "gad"
+    ],
+    "difficulty": "veryhard",
+    "category": "prepositions"
+  },
+  {
+    "level": 4,
+    "word": "throat",
+    "initial_sound": "thr",
+    "blends": [
+      "through",
+      "thread",
+      "three",
+      "throw",
+      "throne"
+    ],
+    "non_blends": [
+      "wad",
+      "cad",
+      "fad",
+      "gad"
+    ],
+    "difficulty": "veryhard",
+    "category": "body"
+  },
+  {
+    "level": 4,
+    "word": "thread",
+    "initial_sound": "thr",
+    "blends": [
+      "through",
+      "throat",
+      "three",
+      "throw",
+      "throne"
+    ],
+    "non_blends": [
+      "wad",
+      "cad",
+      "fad",
+      "gad"
+    ],
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "three",
+    "initial_sound": "thr",
+    "blends": [
+      "thread",
+      "through",
+      "throat",
+      "throw",
+      "throne"
+    ],
+    "non_blends": [
+      "wad",
+      "cad",
+      "fad",
+      "gad"
+    ],
+    "difficulty": "veryhard",
+    "category": "numbers"
+  },
+  {
+    "level": 4,
+    "word": "throw",
+    "initial_sound": "thr",
+    "blends": [
+      "thread",
+      "three",
+      "through",
+      "throat",
+      "throne"
+    ],
+    "non_blends": [
+      "wad",
+      "cad",
+      "fad",
+      "gad"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "throne",
+    "initial_sound": "thr",
+    "blends": [
+      "thread",
+      "three",
+      "throw",
+      "through",
+      "throat"
+    ],
+    "non_blends": [
+      "wad",
+      "cad",
+      "fad",
+      "gad"
+    ],
+    "difficulty": "veryhard",
+    "category": "furniture"
+  },
+  {
+    "level": 4,
+    "word": "shrink",
+    "initial_sound": "shr",
+    "blends": [
+      "shrimp",
+      "shrub",
+      "shred",
+      "shrine",
+      "shrug"
+    ],
+    "non_blends": [
+      "sod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "shrimp",
+    "initial_sound": "shr",
+    "blends": [
+      "shrink",
+      "shrub",
+      "shred",
+      "shrine",
+      "shrug"
+    ],
+    "non_blends": [
+      "sod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "difficulty": "veryhard",
+    "category": "animals"
+  },
+  {
+    "level": 4,
+    "word": "shrub",
+    "initial_sound": "shr",
+    "blends": [
+      "shrink",
+      "shrimp",
+      "shred",
+      "shrine",
+      "shrug"
+    ],
+    "non_blends": [
+      "sod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "difficulty": "veryhard",
+    "category": "nature"
+  },
+  {
+    "level": 4,
+    "word": "shred",
+    "initial_sound": "shr",
+    "blends": [
+      "shrink",
+      "shrimp",
+      "shrub",
+      "shrine",
+      "shrug"
+    ],
+    "non_blends": [
+      "sod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "shrine",
+    "initial_sound": "shr",
+    "blends": [
+      "shrink",
+      "shrimp",
+      "shrub",
+      "shred",
+      "shrug"
+    ],
+    "non_blends": [
+      "sod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "difficulty": "veryhard",
+    "category": "places"
+  },
+  {
+    "level": 4,
+    "word": "shrug",
+    "initial_sound": "shr",
+    "blends": [
+      "shrink",
+      "shrimp",
+      "shrub",
+      "shred",
+      "shrine"
+    ],
+    "non_blends": [
+      "sod",
+      "cod",
+      "god",
+      "hod",
+      "mod"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "squash",
+    "initial_sound": "squ",
+    "blends": [
+      "square",
+      "squeeze",
+      "squirrel",
+      "squeak",
+      "squid"
+    ],
+    "non_blends": [
+      "pod",
+      "bod",
+      "bud",
+      "cud",
+      "dud"
+    ],
+    "difficulty": "veryhard",
+    "category": "food"
+  },
+  {
+    "level": 4,
+    "word": "square",
+    "initial_sound": "squ",
+    "blends": [
+      "squash",
+      "squeeze",
+      "squirrel",
+      "squeak",
+      "squid"
+    ],
+    "non_blends": [
+      "pod",
+      "bod",
+      "bud",
+      "cud",
+      "dud"
+    ],
+    "difficulty": "veryhard",
+    "category": "shapes"
+  },
+  {
+    "level": 4,
+    "word": "squeeze",
+    "initial_sound": "squ",
+    "blends": [
+      "squash",
+      "square",
+      "squirrel",
+      "squeak",
+      "squid"
+    ],
+    "non_blends": [
+      "pod",
+      "bod",
+      "bud",
+      "cud",
+      "dud"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "squirrel",
+    "initial_sound": "squ",
+    "blends": [
+      "squash",
+      "square",
+      "squeeze",
+      "squeak",
+      "squid"
+    ],
+    "non_blends": [
+      "pod",
+      "bod",
+      "bud",
+      "cud",
+      "dud"
+    ],
+    "difficulty": "veryhard",
+    "category": "animals"
+  },
+  {
+    "level": 4,
+    "word": "squeak",
+    "initial_sound": "squ",
+    "blends": [
+      "squash",
+      "square",
+      "squeeze",
+      "squirrel",
+      "squid"
+    ],
+    "non_blends": [
+      "pod",
+      "bod",
+      "bud",
+      "cud",
+      "dud"
+    ],
+    "difficulty": "veryhard",
+    "category": "sounds"
+  },
+  {
+    "level": 4,
+    "word": "squid",
+    "initial_sound": "squ",
+    "blends": [
+      "squash",
+      "square",
+      "squeeze",
+      "squirrel",
+      "squeak"
+    ],
+    "non_blends": [
+      "pod",
+      "bod",
+      "bud",
+      "cud",
+      "dud"
+    ],
+    "difficulty": "veryhard",
+    "category": "animals"
+  },
+  {
+    "level": 4,
+    "word": "twelve",
+    "initial_sound": "tw",
+    "blends": [
+      "twenty",
+      "twist",
+      "twin",
+      "twice",
+      "twilight"
+    ],
+    "non_blends": [
+      "sap",
+      "cap",
+      "gap",
+      "lap",
+      "map"
+    ],
+    "difficulty": "veryhard",
+    "category": "numbers"
+  },
+  {
+    "level": 4,
+    "word": "twenty",
+    "initial_sound": "tw",
+    "blends": [
+      "twelve",
+      "twist",
+      "twin",
+      "twice",
+      "twilight"
+    ],
+    "non_blends": [
+      "sap",
+      "cap",
+      "gap",
+      "lap",
+      "map"
+    ],
+    "difficulty": "veryhard",
+    "category": "numbers"
+  },
+  {
+    "level": 4,
+    "word": "twist",
+    "initial_sound": "tw",
+    "blends": [
+      "twelve",
+      "twenty",
+      "twin",
+      "twice",
+      "twilight"
+    ],
+    "non_blends": [
+      "sap",
+      "cap",
+      "gap",
+      "lap",
+      "map"
+    ],
+    "difficulty": "veryhard",
+    "category": "actions"
+  },
+  {
+    "level": 4,
+    "word": "twin",
+    "initial_sound": "tw",
+    "blends": [
+      "twelve",
+      "twenty",
+      "twist",
+      "twice",
+      "twilight"
+    ],
+    "non_blends": [
+      "sap",
+      "cap",
+      "gap",
+      "lap",
+      "map"
+    ],
+    "difficulty": "veryhard",
+    "category": "people"
+  },
+  {
+    "level": 4,
+    "word": "twice",
+    "initial_sound": "tw",
+    "blends": [
+      "twelve",
+      "twenty",
+      "twist",
+      "twin",
+      "twilight"
+    ],
+    "non_blends": [
+      "sap",
+      "cap",
+      "gap",
+      "lap",
+      "map"
+    ],
+    "difficulty": "veryhard",
+    "category": "frequency"
+  },
+  {
+    "level": 4,
+    "word": "twilight",
+    "initial_sound": "tw",
+    "blends": [
+      "twelve",
+      "twenty",
+      "twist",
+      "twin",
+      "twice"
+    ],
+    "non_blends": [
+      "sap",
+      "cap",
+      "gap",
+      "lap",
+      "map"
+    ],
+    "difficulty": "veryhard",
+    "category": "time"
+  },
+  {
+    "level": 4,
+    "word": "chrome",
+    "initial_sound": "chr",
+    "blends": [
+      "Christmas",
+      "chronic",
+      "chronicle",
+      "church"
+    ],
+    "non_blends": [
+      "bet",
+      "get",
+      "jet",
+      "let",
+      "met"
+    ],
+    "difficulty": "veryhard",
+    "category": "colors"
+  },
+  {
+    "level": 4,
+    "word": "Christmas",
+    "initial_sound": "chr",
+    "blends": [
+      "chrome",
+      "chronic",
+      "chronicle",
+      "church"
+    ],
+    "non_blends": [
+      "bet",
+      "get",
+      "jet",
+      "let",
+      "met"
+    ],
+    "difficulty": "veryhard",
+    "category": "holidays"
+  },
+  {
+    "level": 4,
+    "word": "chronic",
+    "initial_sound": "chr",
+    "blends": [
+      "chrome",
+      "Christmas",
+      "chronicle",
+      "church"
+    ],
+    "non_blends": [
+      "bet",
+      "get",
+      "jet",
+      "let",
+      "met"
+    ],
+    "difficulty": "veryhard",
+    "category": "medical"
+  },
+  {
+    "level": 4,
+    "word": "chronicle",
+    "initial_sound": "chr",
+    "blends": [
+      "chrome",
+      "Christmas",
+      "chronic",
+      "church"
+    ],
+    "non_blends": [
+      "bet",
+      "get",
+      "jet",
+      "let",
+      "met"
+    ],
+    "difficulty": "veryhard",
+    "category": "writing"
+  },
+  {
+    "level": 4,
+    "word": "church",
+    "initial_sound": "chr",
+    "blends": [
+      "chrome",
+      "Christmas",
+      "chronic",
+      "chronicle"
+    ],
+    "non_blends": [
+      "bet",
+      "get",
+      "jet",
+      "let",
+      "met"
+    ],
+    "difficulty": "veryhard",
+    "category": "places"
+  },
+  {
+    "level": 5,
+    "word": "scheme",
+    "initial_sound": "sch",
+    "blends": [
+      "school",
+      "schedule",
+      "scholar",
+      "scholarship",
+      "schism"
+    ],
+    "non_blends": [
+      "pat",
+      "bat",
+      "cat",
+      "fat",
+      "hat"
+    ],
+    "difficulty": "extreme",
+    "category": "planning"
+  },
+  {
+    "level": 5,
+    "word": "school",
+    "initial_sound": "sch",
+    "blends": [
+      "scheme",
+      "schedule",
+      "scholar",
+      "scholarship",
+      "schism"
+    ],
+    "non_blends": [
+      "pat",
+      "bat",
+      "cat",
+      "fat",
+      "hat"
+    ],
+    "difficulty": "extreme",
+    "category": "education"
+  },
+  {
+    "level": 5,
+    "word": "schedule",
+    "initial_sound": "sch",
+    "blends": [
+      "scheme",
+      "school",
+      "scholar",
+      "scholarship",
+      "schism"
+    ],
+    "non_blends": [
+      "pat",
+      "bat",
+      "cat",
+      "fat",
+      "hat"
+    ],
+    "difficulty": "extreme",
+    "category": "time"
+  },
+  {
+    "level": 5,
+    "word": "scholar",
+    "initial_sound": "sch",
+    "blends": [
+      "scheme",
+      "school",
+      "schedule",
+      "scholarship",
+      "schism"
+    ],
+    "non_blends": [
+      "pat",
+      "bat",
+      "cat",
+      "fat",
+      "hat"
+    ],
+    "difficulty": "extreme",
+    "category": "education"
+  },
+  {
+    "level": 5,
+    "word": "scholarship",
+    "initial_sound": "sch",
+    "blends": [
+      "scheme",
+      "school",
+      "schedule",
+      "scholar",
+      "schism"
+    ],
+    "non_blends": [
+      "pat",
+      "bat",
+      "cat",
+      "fat",
+      "hat"
+    ],
+    "difficulty": "extreme",
+    "category": "education"
+  },
+  {
+    "level": 5,
+    "word": "schism",
+    "initial_sound": "sch",
+    "blends": [
+      "scheme",
+      "school",
+      "schedule",
+      "scholar",
+      "scholarship"
+    ],
+    "non_blends": [
+      "pat",
+      "bat",
+      "cat",
+      "fat",
+      "hat"
+    ],
+    "difficulty": "extreme",
+    "category": "abstract"
+  },
+  {
+    "level": 5,
+    "word": "know",
+    "initial_sound": "kn",
+    "blends": [
+      "knee",
+      "knife",
+      "knock",
+      "knit",
+      "knot"
+    ],
+    "non_blends": [
+      "ban",
+      "can",
+      "fan",
+      "man",
+      "pan"
+    ],
+    "difficulty": "extreme",
+    "category": "knowledge"
+  },
+  {
+    "level": 5,
+    "word": "knee",
+    "initial_sound": "kn",
+    "blends": [
+      "know",
+      "knife",
+      "knock",
+      "knit",
+      "knot"
+    ],
+    "non_blends": [
+      "ban",
+      "can",
+      "fan",
+      "man",
+      "pan"
+    ],
+    "difficulty": "extreme",
+    "category": "body"
+  },
+  {
+    "level": 5,
+    "word": "knife",
+    "initial_sound": "kn",
+    "blends": [
+      "know",
+      "knee",
+      "knock",
+      "knit",
+      "knot"
+    ],
+    "non_blends": [
+      "ban",
+      "can",
+      "fan",
+      "man",
+      "pan"
+    ],
+    "difficulty": "extreme",
+    "category": "tools"
+  },
+  {
+    "level": 5,
+    "word": "knock",
+    "initial_sound": "kn",
+    "blends": [
+      "know",
+      "knee",
+      "knife",
+      "knit",
+      "knot"
+    ],
+    "non_blends": [
+      "ban",
+      "can",
+      "fan",
+      "man",
+      "pan"
+    ],
+    "difficulty": "extreme",
+    "category": "actions"
+  },
+  {
+    "level": 5,
+    "word": "knit",
+    "initial_sound": "kn",
+    "blends": [
+      "know",
+      "knee",
+      "knife",
+      "knock",
+      "knot"
+    ],
+    "non_blends": [
+      "ban",
+      "can",
+      "fan",
+      "man",
+      "pan"
+    ],
+    "difficulty": "extreme",
+    "category": "actions"
+  },
+  {
+    "level": 5,
+    "word": "knot",
+    "initial_sound": "kn",
+    "blends": [
+      "know",
+      "knee",
+      "knife",
+      "knock",
+      "knit"
+    ],
+    "non_blends": [
+      "ban",
+      "can",
+      "fan",
+      "man",
+      "pan"
+    ],
+    "difficulty": "extreme",
+    "category": "things"
+  },
+  {
+    "level": 5,
+    "word": "gnaw",
+    "initial_sound": "gn",
+    "blends": [
+      "gnome",
+      "gnat",
+      "gnarl",
+      "gnu"
+    ],
+    "non_blends": [
+      "sin",
+      "bin",
+      "din",
+      "fin",
+      "pin"
+    ],
+    "difficulty": "extreme",
+    "category": "actions"
+  },
+  {
+    "level": 5,
+    "word": "gnome",
+    "initial_sound": "gn",
+    "blends": [
+      "gnaw",
+      "gnat",
+      "gnarl",
+      "gnu"
+    ],
+    "non_blends": [
+      "sin",
+      "bin",
+      "din",
+      "fin",
+      "pin"
+    ],
+    "difficulty": "extreme",
+    "category": "fantasy"
+  },
+  {
+    "level": 5,
+    "word": "gnat",
+    "initial_sound": "gn",
+    "blends": [
+      "gnaw",
+      "gnome",
+      "gnarl",
+      "gnu"
+    ],
+    "non_blends": [
+      "sin",
+      "bin",
+      "din",
+      "fin",
+      "pin"
+    ],
+    "difficulty": "extreme",
+    "category": "animals"
+  },
+  {
+    "level": 5,
+    "word": "gnarl",
+    "initial_sound": "gn",
+    "blends": [
+      "gnaw",
+      "gnome",
+      "gnat",
+      "gnu"
+    ],
+    "non_blends": [
+      "sin",
+      "bin",
+      "din",
+      "fin",
+      "pin"
+    ],
+    "difficulty": "extreme",
+    "category": "nature"
+  },
+  {
+    "level": 5,
+    "word": "gnu",
+    "initial_sound": "gn",
+    "blends": [
+      "gnaw",
+      "gnome",
+      "gnat",
+      "gnarl"
+    ],
+    "non_blends": [
+      "sin",
+      "bin",
+      "din",
+      "fin",
+      "pin"
+    ],
+    "difficulty": "extreme",
+    "category": "animals"
+  },
+  {
+    "level": 5,
+    "word": "write",
+    "initial_sound": "wr",
+    "blends": [
+      "wrong",
+      "wrap",
+      "wrist",
+      "wreck",
+      "wrestle"
+    ],
+    "non_blends": [
+      "bag",
+      "rag",
+      "tag",
+      "wag",
+      "nag"
+    ],
+    "difficulty": "extreme",
+    "category": "actions"
+  },
+  {
+    "level": 5,
+    "word": "wrong",
+    "initial_sound": "wr",
+    "blends": [
+      "write",
+      "wrap",
+      "wrist",
+      "wreck",
+      "wrestle"
+    ],
+    "non_blends": [
+      "bag",
+      "rag",
+      "tag",
+      "wag",
+      "nag"
+    ],
+    "difficulty": "extreme",
+    "category": "adjectives"
+  },
+  {
+    "level": 5,
+    "word": "wrap",
+    "initial_sound": "wr",
+    "blends": [
+      "write",
+      "wrong",
+      "wrist",
+      "wreck",
+      "wrestle"
+    ],
+    "non_blends": [
+      "bag",
+      "rag",
+      "tag",
+      "wag",
+      "nag"
+    ],
+    "difficulty": "extreme",
+    "category": "actions"
+  },
+  {
+    "level": 5,
+    "word": "wrist",
+    "initial_sound": "wr",
+    "blends": [
+      "write",
+      "wrong",
+      "wrap",
+      "wreck",
+      "wrestle"
+    ],
+    "non_blends": [
+      "bag",
+      "rag",
+      "tag",
+      "wag",
+      "nag"
+    ],
+    "difficulty": "extreme",
+    "category": "body"
+  },
+  {
+    "level": 5,
+    "word": "wreck",
+    "initial_sound": "wr",
+    "blends": [
+      "write",
+      "wrong",
+      "wrap",
+      "wrist",
+      "wrestle"
+    ],
+    "non_blends": [
+      "bag",
+      "rag",
+      "tag",
+      "wag",
+      "nag"
+    ],
+    "difficulty": "extreme",
+    "category": "actions"
+  },
+  {
+    "level": 5,
+    "word": "wrestle",
+    "initial_sound": "wr",
+    "blends": [
+      "write",
+      "wrong",
+      "wrap",
+      "wrist",
+      "wreck"
+    ],
+    "non_blends": [
+      "bag",
+      "rag",
+      "tag",
+      "wag",
+      "nag"
+    ],
+    "difficulty": "extreme",
+    "category": "sports"
+  },
+  {
+    "level": 5,
+    "word": "phone",
+    "initial_sound": "ph",
+    "blends": [
+      "phrase",
+      "photo",
+      "physical",
+      "philosophy",
+      "phantom"
+    ],
+    "non_blends": [
+      "cop",
+      "hop",
+      "mop",
+      "pop",
+      "top"
+    ],
+    "difficulty": "extreme",
+    "category": "technology"
+  },
+  {
+    "level": 5,
+    "word": "phrase",
+    "initial_sound": "ph",
+    "blends": [
+      "phone",
+      "photo",
+      "physical",
+      "philosophy",
+      "phantom"
+    ],
+    "non_blends": [
+      "cop",
+      "hop",
+      "mop",
+      "pop",
+      "top"
+    ],
+    "difficulty": "extreme",
+    "category": "language"
+  },
+  {
+    "level": 5,
+    "word": "photo",
+    "initial_sound": "ph",
+    "blends": [
+      "phone",
+      "phrase",
+      "physical",
+      "philosophy",
+      "phantom"
+    ],
+    "non_blends": [
+      "cop",
+      "hop",
+      "mop",
+      "pop",
+      "top"
+    ],
+    "difficulty": "extreme",
+    "category": "things"
+  },
+  {
+    "level": 5,
+    "word": "physical",
+    "initial_sound": "ph",
+    "blends": [
+      "phone",
+      "phrase",
+      "photo",
+      "philosophy",
+      "phantom"
+    ],
+    "non_blends": [
+      "cop",
+      "hop",
+      "mop",
+      "pop",
+      "top"
+    ],
+    "difficulty": "extreme",
+    "category": "adjectives"
+  },
+  {
+    "level": 5,
+    "word": "philosophy",
+    "initial_sound": "ph",
+    "blends": [
+      "phone",
+      "phrase",
+      "photo",
+      "physical",
+      "phantom"
+    ],
+    "non_blends": [
+      "cop",
+      "hop",
+      "mop",
+      "pop",
+      "top"
+    ],
+    "difficulty": "extreme",
+    "category": "subjects"
+  },
+  {
+    "level": 5,
+    "word": "phantom",
+    "initial_sound": "ph",
+    "blends": [
+      "phone",
+      "phrase",
+      "photo",
+      "physical",
+      "philosophy"
+    ],
+    "non_blends": [
+      "cop",
+      "hop",
+      "mop",
+      "pop",
+      "top"
+    ],
+    "difficulty": "extreme",
+    "category": "supernatural"
+  },
+  {
+    "level": 5,
+    "word": "psychology",
+    "initial_sound": "psy",
+    "blends": [
+      "psychiatry",
+      "psychic",
+      "psyche",
+      "psychotic"
+    ],
+    "non_blends": [
+      "bop"
+    ],
+    "difficulty": "extreme",
+    "category": "science"
+  },
+  {
+    "level": 5,
+    "word": "psychiatry",
+    "initial_sound": "psy",
+    "blends": [
+      "psychology",
+      "psychic",
+      "psyche",
+      "psychotic"
+    ],
+    "non_blends": [
+      "bop"
+    ],
+    "difficulty": "extreme",
+    "category": "medicine"
+  },
+  {
+    "level": 5,
+    "word": "psychic",
+    "initial_sound": "psy",
+    "blends": [
+      "psychology",
+      "psychiatry",
+      "psyche",
+      "psychotic"
+    ],
+    "non_blends": [
+      "bop"
+    ],
+    "difficulty": "extreme",
+    "category": "supernatural"
+  },
+  {
+    "level": 5,
+    "word": "psyche",
+    "initial_sound": "psy",
+    "blends": [
+      "psychology",
+      "psychiatry",
+      "psychic",
+      "psychotic"
+    ],
+    "non_blends": [
+      "bop"
+    ],
+    "difficulty": "extreme",
+    "category": "mind"
+  },
+  {
+    "level": 5,
+    "word": "psychotic",
+    "initial_sound": "psy",
+    "blends": [
+      "psychology",
+      "psychiatry",
+      "psychic",
+      "psyche"
+    ],
+    "non_blends": [
+      "bop"
+    ],
+    "difficulty": "extreme",
+    "category": "medical"
+  },
+  {
+    "level": 5,
+    "word": "rhyme",
+    "initial_sound": "rh",
+    "blends": [
+      "rhythm",
+      "rhinoceros",
+      "rhubarb",
+      "rhetoric"
+    ],
+    "non_blends": [
+      "hex",
+      "rex",
+      "sex",
+      "vex",
+      "pex"
+    ],
+    "difficulty": "extreme",
+    "category": "language"
+  },
+  {
+    "level": 5,
+    "word": "rhythm",
+    "initial_sound": "rh",
+    "blends": [
+      "rhyme",
+      "rhinoceros",
+      "rhubarb",
+      "rhetoric"
+    ],
+    "non_blends": [
+      "hex",
+      "rex",
+      "sex",
+      "vex",
+      "pex"
+    ],
+    "difficulty": "extreme",
+    "category": "music"
+  },
+  {
+    "level": 5,
+    "word": "rhinoceros",
+    "initial_sound": "rh",
+    "blends": [
+      "rhyme",
+      "rhythm",
+      "rhubarb",
+      "rhetoric"
+    ],
+    "non_blends": [
+      "hex",
+      "rex",
+      "sex",
+      "vex",
+      "pex"
+    ],
+    "difficulty": "extreme",
+    "category": "animals"
+  },
+  {
+    "level": 5,
+    "word": "rhubarb",
+    "initial_sound": "rh",
+    "blends": [
+      "rhyme",
+      "rhythm",
+      "rhinoceros",
+      "rhetoric"
+    ],
+    "non_blends": [
+      "hex",
+      "rex",
+      "sex",
+      "vex",
+      "pex"
+    ],
+    "difficulty": "extreme",
+    "category": "food"
+  },
+  {
+    "level": 5,
+    "word": "rhetoric",
+    "initial_sound": "rh",
+    "blends": [
+      "rhyme",
+      "rhythm",
+      "rhinoceros",
+      "rhubarb"
+    ],
+    "non_blends": [
+      "hex",
+      "rex",
+      "sex",
+      "vex",
+      "pex"
+    ],
+    "difficulty": "extreme",
+    "category": "language"
+  },
+  {
+    "level": 5,
+    "word": "sphere",
+    "initial_sound": "sph",
+    "blends": [
+      "sphinx",
+      "phosphate"
+    ],
+    "non_blends": [
+      "box",
+      "cox",
+      "fox",
+      "lox",
+      "pox"
+    ],
+    "difficulty": "extreme",
+    "category": "shapes"
+  },
+  {
+    "level": 5,
+    "word": "sphinx",
+    "initial_sound": "sph",
+    "blends": [
+      "sphere",
+      "phosphate"
+    ],
+    "non_blends": [
+      "box",
+      "cox",
+      "fox",
+      "lox",
+      "pox"
+    ],
+    "difficulty": "extreme",
+    "category": "mythology"
+  },
+  {
+    "level": 5,
+    "word": "phosphate",
+    "initial_sound": "phos",
+    "blends": [
+      "sphere",
+      "sphinx"
+    ],
+    "non_blends": [
+      "box",
+      "cox",
+      "fox",
+      "lox",
+      "pox"
+    ],
+    "difficulty": "extreme",
+    "category": "chemistry"
+  },
+  {
+    "level": 5,
+    "word": "knuckle",
+    "initial_sound": "kn",
+    "blends": [
+      "knapsack",
+      "knead",
+      "knave",
+      "knoll"
+    ],
+    "non_blends": [
+      "sox"
+    ],
+    "difficulty": "extreme",
+    "category": "body"
+  },
+  {
+    "level": 5,
+    "word": "knapsack",
+    "initial_sound": "kn",
+    "blends": [
+      "knuckle",
+      "knead",
+      "knave",
+      "knoll"
+    ],
+    "non_blends": [
+      "sox"
+    ],
+    "difficulty": "extreme",
+    "category": "things"
+  },
+  {
+    "level": 5,
+    "word": "knead",
+    "initial_sound": "kn",
+    "blends": [
+      "knuckle",
+      "knapsack",
+      "knave",
+      "knoll"
+    ],
+    "non_blends": [
+      "sox"
+    ],
+    "difficulty": "extreme",
+    "category": "actions"
+  },
+  {
+    "level": 5,
+    "word": "knave",
+    "initial_sound": "kn",
+    "blends": [
+      "knuckle",
+      "knapsack",
+      "knead",
+      "knoll"
+    ],
+    "non_blends": [
+      "sox"
+    ],
+    "difficulty": "extreme",
+    "category": "people"
+  },
+  {
+    "level": 5,
+    "word": "knoll",
+    "initial_sound": "kn",
+    "blends": [
+      "knuckle",
+      "knapsack",
+      "knead",
+      "knave"
+    ],
+    "non_blends": [
+      "sox"
+    ],
+    "difficulty": "extreme",
+    "category": "nature"
+  },
+  {
+    "level": 5,
+    "word": "wring",
+    "initial_sound": "wr",
+    "blends": [
+      "wrinkle",
+      "wrath",
+      "wrench",
+      "wry"
+    ],
+    "non_blends": [
+      "lux",
+      "tux",
+      "dux",
+      "flux"
+    ],
+    "difficulty": "extreme",
+    "category": "actions"
+  },
+  {
+    "level": 5,
+    "word": "wrinkle",
+    "initial_sound": "wr",
+    "blends": [
+      "wring",
+      "wrath",
+      "wrench",
+      "wry"
+    ],
+    "non_blends": [
+      "lux",
+      "tux",
+      "dux",
+      "flux"
+    ],
+    "difficulty": "extreme",
+    "category": "body"
+  },
+  {
+    "level": 5,
+    "word": "wrath",
+    "initial_sound": "wr",
+    "blends": [
+      "wring",
+      "wrinkle",
+      "wrench",
+      "wry"
+    ],
+    "non_blends": [
+      "lux",
+      "tux",
+      "dux",
+      "flux"
+    ],
+    "difficulty": "extreme",
+    "category": "emotions"
+  },
+  {
+    "level": 5,
+    "word": "wrench",
+    "initial_sound": "wr",
+    "blends": [
+      "wring",
+      "wrinkle",
+      "wrath",
+      "wry"
+    ],
+    "non_blends": [
+      "lux",
+      "tux",
+      "dux",
+      "flux"
+    ],
+    "difficulty": "extreme",
+    "category": "tools"
+  },
+  {
+    "level": 5,
+    "word": "wry",
+    "initial_sound": "wr",
+    "blends": [
+      "wring",
+      "wrinkle",
+      "wrath",
+      "wrench"
+    ],
+    "non_blends": [
+      "lux",
+      "tux",
+      "dux",
+      "flux"
+    ],
+    "difficulty": "extreme",
+    "category": "adjectives"
+  },
+  {
+    "level": 6,
+    "word": "pneumonia",
+    "initial_sound": "pn",
+    "blends": [
+      "pneumatic",
+      "pneumatics"
+    ],
+    "non_blends": [
+      "bid",
+      "did",
+      "hid",
+      "kid",
+      "lid"
+    ],
+    "difficulty": "expert",
+    "category": "medical"
+  },
+  {
+    "level": 6,
+    "word": "pneumatic",
+    "initial_sound": "pn",
+    "blends": [
+      "pneumonia",
+      "pneumatics"
+    ],
+    "non_blends": [
+      "bid",
+      "did",
+      "hid",
+      "kid",
+      "lid"
+    ],
+    "difficulty": "expert",
+    "category": "technology"
+  },
+  {
+    "level": 6,
+    "word": "pneumatics",
+    "initial_sound": "pn",
+    "blends": [
+      "pneumonia",
+      "pneumatic"
+    ],
+    "non_blends": [
+      "bid",
+      "did",
+      "hid",
+      "kid",
+      "lid"
+    ],
+    "difficulty": "expert",
+    "category": "science"
+  },
+  {
+    "level": 6,
+    "word": "mnemonic",
+    "initial_sound": "mn",
+    "blends": [
+      "mnemonics"
+    ],
+    "non_blends": [
+      "rid"
+    ],
+    "difficulty": "expert",
+    "category": "memory"
+  },
+  {
+    "level": 6,
+    "word": "mnemonics",
+    "initial_sound": "mn",
+    "blends": [
+      "mnemonic"
+    ],
+    "non_blends": [
+      "rid"
+    ],
+    "difficulty": "expert",
+    "category": "memory"
+  },
+  {
+    "level": 6,
+    "word": "pterodactyl",
+    "initial_sound": "pt",
+    "blends": [
+      "ptomaine"
+    ],
+    "non_blends": [
+      "win",
+      "bin",
+      "din",
+      "fin",
+      "gin"
+    ],
+    "difficulty": "expert",
+    "category": "animals"
+  },
+  {
+    "level": 6,
+    "word": "ptomaine",
+    "initial_sound": "pt",
+    "blends": [
+      "pterodactyl"
+    ],
+    "non_blends": [
+      "win",
+      "bin",
+      "din",
+      "fin",
+      "gin"
+    ],
+    "difficulty": "expert",
+    "category": "chemistry"
+  },
+  {
+    "level": 6,
+    "word": "psychiatrist",
+    "initial_sound": "psy",
+    "blends": [
+      "psychoanalysis",
+      "psychotherapy",
+      "psychologist"
+    ],
+    "non_blends": [
+      "kin"
+    ],
+    "difficulty": "expert",
+    "category": "people"
+  },
+  {
+    "level": 6,
+    "word": "psychoanalysis",
+    "initial_sound": "psy",
+    "blends": [
+      "psychiatrist",
+      "psychotherapy",
+      "psychologist"
+    ],
+    "non_blends": [
+      "kin"
+    ],
+    "difficulty": "expert",
+    "category": "therapy"
+  },
+  {
+    "level": 6,
+    "word": "psychotherapy",
+    "initial_sound": "psy",
+    "blends": [
+      "psychiatrist",
+      "psychoanalysis",
+      "psychologist"
+    ],
+    "non_blends": [
+      "kin"
+    ],
+    "difficulty": "expert",
+    "category": "therapy"
+  },
+  {
+    "level": 6,
+    "word": "psychologist",
+    "initial_sound": "psy",
+    "blends": [
+      "psychiatrist",
+      "psychoanalysis",
+      "psychotherapy"
+    ],
+    "non_blends": [
+      "kin"
+    ],
+    "difficulty": "expert",
+    "category": "people"
+  },
+  {
+    "level": 6,
+    "word": "synchronize",
+    "initial_sound": "syn",
+    "blends": [
+      "symphony",
+      "synonym",
+      "synthesis",
+      "syndrome"
+    ],
+    "non_blends": [
+      "rig",
+      "big",
+      "dig",
+      "fig",
+      "jig"
+    ],
+    "difficulty": "expert",
+    "category": "actions"
+  },
+  {
+    "level": 6,
+    "word": "symphony",
+    "initial_sound": "syn",
+    "blends": [
+      "synchronize",
+      "synonym",
+      "synthesis",
+      "syndrome"
+    ],
+    "non_blends": [
+      "rig",
+      "big",
+      "dig",
+      "fig",
+      "jig"
+    ],
+    "difficulty": "expert",
+    "category": "music"
+  },
+  {
+    "level": 6,
+    "word": "synonym",
+    "initial_sound": "syn",
+    "blends": [
+      "synchronize",
+      "symphony",
+      "synthesis",
+      "syndrome"
+    ],
+    "non_blends": [
+      "rig",
+      "big",
+      "dig",
+      "fig",
+      "jig"
+    ],
+    "difficulty": "expert",
+    "category": "language"
+  },
+  {
+    "level": 6,
+    "word": "synthesis",
+    "initial_sound": "syn",
+    "blends": [
+      "synchronize",
+      "symphony",
+      "synonym",
+      "syndrome"
+    ],
+    "non_blends": [
+      "rig",
+      "big",
+      "dig",
+      "fig",
+      "jig"
+    ],
+    "difficulty": "expert",
+    "category": "science"
+  },
+  {
+    "level": 6,
+    "word": "syndrome",
+    "initial_sound": "syn",
+    "blends": [
+      "synchronize",
+      "symphony",
+      "synonym",
+      "synthesis"
+    ],
+    "non_blends": [
+      "rig",
+      "big",
+      "dig",
+      "fig",
+      "jig"
+    ],
+    "difficulty": "expert",
+    "category": "medical"
+  },
+  {
+    "level": 6,
+    "word": "xylophone",
+    "initial_sound": "xyl",
+    "blends": [
+      "xerography"
+    ],
+    "non_blends": [
+      "pig"
+    ],
+    "difficulty": "expert",
+    "category": "music"
+  },
+  {
+    "level": 6,
+    "word": "xerography",
+    "initial_sound": "xer",
+    "blends": [
+      "xylophone"
+    ],
+    "non_blends": [
+      "pig"
+    ],
+    "difficulty": "expert",
+    "category": "technology"
+  },
+  {
+    "level": 6,
+    "word": "chrysanthemum",
+    "initial_sound": "chr",
+    "blends": [
+      "chromosome",
+      "chronology",
+      "chronometer"
+    ],
+    "non_blends": [
+      "zen",
+      "den",
+      "hen",
+      "ken",
+      "men"
+    ],
+    "difficulty": "expert",
+    "category": "flowers"
+  },
+  {
+    "level": 6,
+    "word": "chromosome",
+    "initial_sound": "chr",
+    "blends": [
+      "chrysanthemum",
+      "chronology",
+      "chronometer"
+    ],
+    "non_blends": [
+      "zen",
+      "den",
+      "hen",
+      "ken",
+      "men"
+    ],
+    "difficulty": "expert",
+    "category": "science"
+  },
+  {
+    "level": 6,
+    "word": "chronology",
+    "initial_sound": "chr",
+    "blends": [
+      "chrysanthemum",
+      "chromosome",
+      "chronometer"
+    ],
+    "non_blends": [
+      "zen",
+      "den",
+      "hen",
+      "ken",
+      "men"
+    ],
+    "difficulty": "expert",
+    "category": "time"
+  },
+  {
+    "level": 6,
+    "word": "chronometer",
+    "initial_sound": "chr",
+    "blends": [
+      "chrysanthemum",
+      "chromosome",
+      "chronology"
+    ],
+    "non_blends": [
+      "zen",
+      "den",
+      "hen",
+      "ken",
+      "men"
+    ],
+    "difficulty": "expert",
+    "category": "instruments"
+  },
+  {
+    "level": 6,
+    "word": "phosphorous",
+    "initial_sound": "pho",
+    "blends": [
+      "photograph",
+      "phonics",
+      "pharmacy"
+    ],
+    "non_blends": [
+      "pen"
+    ],
+    "difficulty": "expert",
+    "category": "chemistry"
+  },
+  {
+    "level": 6,
+    "word": "photograph",
+    "initial_sound": "pho",
+    "blends": [
+      "phosphorous",
+      "phonics",
+      "pharmacy"
+    ],
+    "non_blends": [
+      "pen"
+    ],
+    "difficulty": "expert",
+    "category": "things"
+  },
+  {
+    "level": 6,
+    "word": "phonics",
+    "initial_sound": "pho",
+    "blends": [
+      "phosphorous",
+      "photograph",
+      "pharmacy"
+    ],
+    "non_blends": [
+      "pen"
+    ],
+    "difficulty": "expert",
+    "category": "education"
+  },
+  {
+    "level": 6,
+    "word": "pharmacy",
+    "initial_sound": "pho",
+    "blends": [
+      "phosphorous",
+      "photograph",
+      "phonics"
+    ],
+    "non_blends": [
+      "pen"
+    ],
+    "difficulty": "expert",
+    "category": "medicine"
+  },
+  {
+    "level": 6,
+    "word": "rhinoceros",
+    "initial_sound": "rhi",
+    "blends": [
+      "rheumatism",
+      "rhapsody"
+    ],
+    "non_blends": [
+      "max",
+      "tax",
+      "wax",
+      "fax",
+      "sax"
+    ],
+    "difficulty": "expert",
+    "category": "animals"
+  },
+  {
+    "level": 6,
+    "word": "rheumatism",
+    "initial_sound": "rhi",
+    "blends": [
+      "rhinoceros",
+      "rhapsody"
+    ],
+    "non_blends": [
+      "max",
+      "tax",
+      "wax",
+      "fax",
+      "sax"
+    ],
+    "difficulty": "expert",
+    "category": "medical"
+  },
+  {
+    "level": 6,
+    "word": "rhapsody",
+    "initial_sound": "rhi",
+    "blends": [
+      "rhinoceros",
+      "rheumatism"
+    ],
+    "non_blends": [
+      "max",
+      "tax",
+      "wax",
+      "fax",
+      "sax"
+    ],
+    "difficulty": "expert",
+    "category": "music"
+  },
+  {
+    "level": 6,
+    "word": "schizophrenia",
+    "initial_sound": "sch",
+    "blends": [
+      "scholarship",
+      "scholastic"
+    ],
+    "non_blends": [
+      "pax"
+    ],
+    "difficulty": "expert",
+    "category": "medical"
+  },
+  {
+    "level": 6,
+    "word": "scholarship",
+    "initial_sound": "sch",
+    "blends": [
+      "schizophrenia",
+      "scholastic"
+    ],
+    "non_blends": [
+      "pax"
+    ],
+    "difficulty": "expert",
+    "category": "education"
+  },
+  {
+    "level": 6,
+    "word": "scholastic",
+    "initial_sound": "sch",
+    "blends": [
+      "schizophrenia",
+      "scholarship"
+    ],
+    "non_blends": [
+      "pax"
+    ],
+    "difficulty": "expert",
+    "category": "education"
+  },
+  {
+    "level": 6,
+    "word": "knowledge",
+    "initial_sound": "kn",
+    "blends": [
+      "knight",
+      "knuckle"
+    ],
+    "non_blends": [
+      "fix",
+      "mix",
+      "nix",
+      "six",
+      "pix"
+    ],
+    "difficulty": "expert",
+    "category": "abstract"
+  },
+  {
+    "level": 6,
+    "word": "knight",
+    "initial_sound": "kn",
+    "blends": [
+      "knowledge",
+      "knuckle"
+    ],
+    "non_blends": [
+      "fix",
+      "mix",
+      "nix",
+      "six",
+      "pix"
+    ],
+    "difficulty": "expert",
+    "category": "people"
+  },
+  {
+    "level": 6,
+    "word": "knuckle",
+    "initial_sound": "kn",
+    "blends": [
+      "knowledge",
+      "knight"
+    ],
+    "non_blends": [
+      "fix",
+      "mix",
+      "nix",
+      "six",
+      "pix"
+    ],
+    "difficulty": "expert",
+    "category": "body"
+  },
+  {
+    "level": 6,
+    "word": "wreath",
+    "initial_sound": "wr",
+    "blends": [
+      "wrath",
+      "wrought"
+    ],
+    "non_blends": [
+      "hub",
+      "bub",
+      "cub",
+      "dub",
+      "nub"
+    ],
+    "difficulty": "expert",
+    "category": "decorations"
+  },
+  {
+    "level": 6,
+    "word": "wrath",
+    "initial_sound": "wr",
+    "blends": [
+      "wreath",
+      "wrought"
+    ],
+    "non_blends": [
+      "hub",
+      "bub",
+      "cub",
+      "dub",
+      "nub"
+    ],
+    "difficulty": "expert",
+    "category": "emotions"
+  },
+  {
+    "level": 6,
+    "word": "wrought",
+    "initial_sound": "wr",
+    "blends": [
+      "wreath",
+      "wrath"
+    ],
+    "non_blends": [
+      "hub",
+      "bub",
+      "cub",
+      "dub",
+      "nub"
+    ],
+    "difficulty": "expert",
+    "category": "materials"
+  },
+  {
+    "level": 6,
+    "word": "psalm",
+    "initial_sound": "ps",
+    "blends": [
+      "pseudo",
+      "psyche"
+    ],
+    "non_blends": [
+      "pub"
+    ],
+    "difficulty": "expert",
+    "category": "religion"
+  },
+  {
+    "level": 6,
+    "word": "pseudo",
+    "initial_sound": "ps",
+    "blends": [
+      "psalm",
+      "psyche"
+    ],
+    "non_blends": [
+      "pub"
+    ],
+    "difficulty": "expert",
+    "category": "adjectives"
+  },
+  {
+    "level": 6,
+    "word": "psyche",
+    "initial_sound": "ps",
+    "blends": [
+      "psalm",
+      "pseudo"
+    ],
+    "non_blends": [
+      "pub"
+    ],
+    "difficulty": "expert",
+    "category": "mind"
+  },
+  {
+    "level": 6,
+    "word": "technique",
+    "initial_sound": "tch",
+    "blends": [
+      "technology",
+      "technical"
+    ],
+    "non_blends": [
+      "bob",
+      "cob",
+      "gob",
+      "hob",
+      "job"
+    ],
+    "difficulty": "expert",
+    "category": "methods"
+  },
+  {
+    "level": 6,
+    "word": "technology",
+    "initial_sound": "tch",
+    "blends": [
+      "technique",
+      "technical"
+    ],
+    "non_blends": [
+      "bob",
+      "cob",
+      "gob",
+      "hob",
+      "job"
+    ],
+    "difficulty": "expert",
+    "category": "science"
+  },
+  {
+    "level": 6,
+    "word": "technical",
+    "initial_sound": "tch",
+    "blends": [
+      "technique",
+      "technology"
+    ],
+    "non_blends": [
+      "bob",
+      "cob",
+      "gob",
+      "hob",
+      "job"
+    ],
+    "difficulty": "expert",
+    "category": "adjectives"
+  },
+  {
+    "level": 6,
+    "word": "whisper",
+    "initial_sound": "wh",
+    "blends": [
+      "whistle",
+      "whether"
+    ],
+    "non_blends": [
+      "lob"
+    ],
+    "difficulty": "expert",
+    "category": "actions"
+  },
+  {
+    "level": 6,
+    "word": "whistle",
+    "initial_sound": "wh",
+    "blends": [
+      "whisper",
+      "whether"
+    ],
+    "non_blends": [
+      "lob"
+    ],
+    "difficulty": "expert",
+    "category": "actions"
+  },
+  {
+    "level": 6,
+    "word": "whether",
+    "initial_sound": "wh",
+    "blends": [
+      "whisper",
+      "whistle"
+    ],
+    "non_blends": [
+      "lob"
+    ],
+    "difficulty": "expert",
+    "category": "conjunctions"
+  },
+  {
+    "level": 6,
+    "word": "theory",
+    "initial_sound": "th",
+    "blends": [
+      "therapy",
+      "thesis"
+    ],
+    "non_blends": [
+      "mob",
+      "rob",
+      "sob",
+      "yob"
+    ],
+    "difficulty": "expert",
+    "category": "abstract"
+  },
+  {
+    "level": 6,
+    "word": "therapy",
+    "initial_sound": "th",
+    "blends": [
+      "theory",
+      "thesis"
+    ],
+    "non_blends": [
+      "mob",
+      "rob",
+      "sob",
+      "yob"
+    ],
+    "difficulty": "expert",
+    "category": "medical"
+  },
+  {
+    "level": 6,
+    "word": "thesis",
+    "initial_sound": "th",
+    "blends": [
+      "theory",
+      "therapy"
+    ],
+    "non_blends": [
+      "mob",
+      "rob",
+      "sob",
+      "yob"
+    ],
+    "difficulty": "expert",
+    "category": "education"
+  },
+  {
+    "level": 6,
+    "word": "ghoul",
+    "initial_sound": "gh",
+    "blends": [
+      "ghost",
+      "ghetto"
+    ],
+    "non_blends": [
+      "bog",
+      "cog",
+      "dog",
+      "fog",
+      "hog"
+    ],
+    "difficulty": "expert",
+    "category": "mythology"
+  },
+  {
+    "level": 6,
+    "word": "ghost",
+    "initial_sound": "gh",
+    "blends": [
+      "ghoul",
+      "ghetto"
+    ],
+    "non_blends": [
+      "bog",
+      "cog",
+      "dog",
+      "fog",
+      "hog"
+    ],
+    "difficulty": "expert",
+    "category": "supernatural"
+  },
+  {
+    "level": 6,
+    "word": "ghetto",
+    "initial_sound": "gh",
+    "blends": [
+      "ghoul",
+      "ghost"
+    ],
+    "non_blends": [
+      "bog",
+      "cog",
+      "dog",
+      "fog",
+      "hog"
+    ],
+    "difficulty": "expert",
+    "category": "places"
+  }
+]

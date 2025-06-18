@@ -1,0 +1,3756 @@
+[
+  {
+    "level": 1,
+    "word": "cat",
+    "sounds": [
+      "c",
+      "a",
+      "t"
+    ],
+    "category": "animals",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "dog",
+    "sounds": [
+      "d",
+      "o",
+      "g"
+    ],
+    "category": "animals",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "bat",
+    "sounds": [
+      "b",
+      "a",
+      "t"
+    ],
+    "category": "animals",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "rat",
+    "sounds": [
+      "r",
+      "a",
+      "t"
+    ],
+    "category": "animals",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "pig",
+    "sounds": [
+      "p",
+      "i",
+      "g"
+    ],
+    "category": "animals",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "hen",
+    "sounds": [
+      "h",
+      "e",
+      "n"
+    ],
+    "category": "animals",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "pet",
+    "sounds": [
+      "p",
+      "e",
+      "t"
+    ],
+    "category": "animals",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "cow",
+    "sounds": [
+      "c",
+      "o",
+      "w"
+    ],
+    "category": "animals",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "fox",
+    "sounds": [
+      "f",
+      "o",
+      "x"
+    ],
+    "category": "animals",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "bug",
+    "sounds": [
+      "b",
+      "u",
+      "g"
+    ],
+    "category": "animals",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "bed",
+    "sounds": [
+      "b",
+      "e",
+      "d"
+    ],
+    "category": "things",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "pen",
+    "sounds": [
+      "p",
+      "e",
+      "n"
+    ],
+    "category": "things",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "cap",
+    "sounds": [
+      "c",
+      "a",
+      "p"
+    ],
+    "category": "clothes",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "hat",
+    "sounds": [
+      "h",
+      "a",
+      "t"
+    ],
+    "category": "clothes",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "mat",
+    "sounds": [
+      "m",
+      "a",
+      "t"
+    ],
+    "category": "things",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "fan",
+    "sounds": [
+      "f",
+      "a",
+      "n"
+    ],
+    "category": "things",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "bag",
+    "sounds": [
+      "b",
+      "a",
+      "g"
+    ],
+    "category": "things",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "pan",
+    "sounds": [
+      "p",
+      "a",
+      "n"
+    ],
+    "category": "things",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "pot",
+    "sounds": [
+      "p",
+      "o",
+      "t"
+    ],
+    "category": "things",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "cup",
+    "sounds": [
+      "c",
+      "u",
+      "p"
+    ],
+    "category": "things",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "box",
+    "sounds": [
+      "b",
+      "o",
+      "x"
+    ],
+    "category": "things",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "net",
+    "sounds": [
+      "n",
+      "e",
+      "t"
+    ],
+    "category": "things",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "web",
+    "sounds": [
+      "w",
+      "e",
+      "b"
+    ],
+    "category": "things",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "mop",
+    "sounds": [
+      "m",
+      "o",
+      "p"
+    ],
+    "category": "things",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "man",
+    "sounds": [
+      "m",
+      "a",
+      "n"
+    ],
+    "category": "people",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "boy",
+    "sounds": [
+      "b",
+      "o",
+      "y"
+    ],
+    "category": "people",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "dad",
+    "sounds": [
+      "d",
+      "a",
+      "d"
+    ],
+    "category": "people",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "mom",
+    "sounds": [
+      "m",
+      "o",
+      "m"
+    ],
+    "category": "people",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "kid",
+    "sounds": [
+      "k",
+      "i",
+      "d"
+    ],
+    "category": "people",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "son",
+    "sounds": [
+      "s",
+      "o",
+      "n"
+    ],
+    "category": "people",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "red",
+    "sounds": [
+      "r",
+      "e",
+      "d"
+    ],
+    "category": "colors",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "sun",
+    "sounds": [
+      "s",
+      "u",
+      "n"
+    ],
+    "category": "nature",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "run",
+    "sounds": [
+      "r",
+      "u",
+      "n"
+    ],
+    "category": "actions",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "sit",
+    "sounds": [
+      "s",
+      "i",
+      "t"
+    ],
+    "category": "actions",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "hop",
+    "sounds": [
+      "h",
+      "o",
+      "p"
+    ],
+    "category": "actions",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "win",
+    "sounds": [
+      "w",
+      "i",
+      "n"
+    ],
+    "category": "actions",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "hit",
+    "sounds": [
+      "h",
+      "i",
+      "t"
+    ],
+    "category": "actions",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "get",
+    "sounds": [
+      "g",
+      "e",
+      "t"
+    ],
+    "category": "actions",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "set",
+    "sounds": [
+      "s",
+      "e",
+      "t"
+    ],
+    "category": "actions",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "put",
+    "sounds": [
+      "p",
+      "u",
+      "t"
+    ],
+    "category": "actions",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "fun",
+    "sounds": [
+      "f",
+      "u",
+      "n"
+    ],
+    "category": "feelings",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "sad",
+    "sounds": [
+      "s",
+      "a",
+      "d"
+    ],
+    "category": "feelings",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "mad",
+    "sounds": [
+      "m",
+      "a",
+      "d"
+    ],
+    "category": "feelings",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "bad",
+    "sounds": [
+      "b",
+      "a",
+      "d"
+    ],
+    "category": "feelings",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "hot",
+    "sounds": [
+      "h",
+      "o",
+      "t"
+    ],
+    "category": "adjectives",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "big",
+    "sounds": [
+      "b",
+      "i",
+      "g"
+    ],
+    "category": "adjectives",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "wet",
+    "sounds": [
+      "w",
+      "e",
+      "t"
+    ],
+    "category": "adjectives",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "ten",
+    "sounds": [
+      "t",
+      "e",
+      "n"
+    ],
+    "category": "numbers",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "six",
+    "sounds": [
+      "s",
+      "i",
+      "x"
+    ],
+    "category": "numbers",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 1,
+    "word": "yes",
+    "sounds": [
+      "y",
+      "e",
+      "s"
+    ],
+    "category": "responses",
+    "subcategory": "easy",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "zip",
+    "sounds": [
+      "z",
+      "i",
+      "p"
+    ],
+    "category": "clothes",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "wig",
+    "sounds": [
+      "w",
+      "i",
+      "g"
+    ],
+    "category": "clothes",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "leg",
+    "sounds": [
+      "l",
+      "e",
+      "g"
+    ],
+    "category": "body",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "lip",
+    "sounds": [
+      "l",
+      "i",
+      "p"
+    ],
+    "category": "body",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "arm",
+    "sounds": [
+      "a",
+      "r",
+      "m"
+    ],
+    "category": "body",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "hip",
+    "sounds": [
+      "h",
+      "i",
+      "p"
+    ],
+    "category": "body",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "jam",
+    "sounds": [
+      "j",
+      "a",
+      "m"
+    ],
+    "category": "food",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "ham",
+    "sounds": [
+      "h",
+      "a",
+      "m"
+    ],
+    "category": "food",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "fig",
+    "sounds": [
+      "f",
+      "i",
+      "g"
+    ],
+    "category": "food",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "bun",
+    "sounds": [
+      "b",
+      "u",
+      "n"
+    ],
+    "category": "food",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "nut",
+    "sounds": [
+      "n",
+      "u",
+      "t"
+    ],
+    "category": "food",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "log",
+    "sounds": [
+      "l",
+      "o",
+      "g"
+    ],
+    "category": "nature",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "mud",
+    "sounds": [
+      "m",
+      "u",
+      "d"
+    ],
+    "category": "nature",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "van",
+    "sounds": [
+      "v",
+      "a",
+      "n"
+    ],
+    "category": "vehicles",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "jet",
+    "sounds": [
+      "j",
+      "e",
+      "t"
+    ],
+    "category": "vehicles",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "cab",
+    "sounds": [
+      "c",
+      "a",
+      "b"
+    ],
+    "category": "vehicles",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "job",
+    "sounds": [
+      "j",
+      "o",
+      "b"
+    ],
+    "category": "activities",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "fix",
+    "sounds": [
+      "f",
+      "i",
+      "x"
+    ],
+    "category": "actions",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "mix",
+    "sounds": [
+      "m",
+      "i",
+      "x"
+    ],
+    "category": "actions",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "dip",
+    "sounds": [
+      "d",
+      "i",
+      "p"
+    ],
+    "category": "actions",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "tip",
+    "sounds": [
+      "t",
+      "i",
+      "p"
+    ],
+    "category": "actions",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "tap",
+    "sounds": [
+      "t",
+      "a",
+      "p"
+    ],
+    "category": "actions",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "nap",
+    "sounds": [
+      "n",
+      "a",
+      "p"
+    ],
+    "category": "actions",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "hug",
+    "sounds": [
+      "h",
+      "u",
+      "g"
+    ],
+    "category": "actions",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "dig",
+    "sounds": [
+      "d",
+      "i",
+      "g"
+    ],
+    "category": "actions",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "rob",
+    "sounds": [
+      "r",
+      "o",
+      "b"
+    ],
+    "category": "actions",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "nod",
+    "sounds": [
+      "n",
+      "o",
+      "d"
+    ],
+    "category": "actions",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "kit",
+    "sounds": [
+      "k",
+      "i",
+      "t"
+    ],
+    "category": "things",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "bin",
+    "sounds": [
+      "b",
+      "i",
+      "n"
+    ],
+    "category": "things",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "pin",
+    "sounds": [
+      "p",
+      "i",
+      "n"
+    ],
+    "category": "things",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "rod",
+    "sounds": [
+      "r",
+      "o",
+      "d"
+    ],
+    "category": "things",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "lid",
+    "sounds": [
+      "l",
+      "i",
+      "d"
+    ],
+    "category": "things",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "tag",
+    "sounds": [
+      "t",
+      "a",
+      "g"
+    ],
+    "category": "things",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "rug",
+    "sounds": [
+      "r",
+      "u",
+      "g"
+    ],
+    "category": "things",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "mug",
+    "sounds": [
+      "m",
+      "u",
+      "g"
+    ],
+    "category": "things",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "jug",
+    "sounds": [
+      "j",
+      "u",
+      "g"
+    ],
+    "category": "things",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "tub",
+    "sounds": [
+      "t",
+      "u",
+      "b"
+    ],
+    "category": "things",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "den",
+    "sounds": [
+      "d",
+      "e",
+      "n"
+    ],
+    "category": "places",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "lab",
+    "sounds": [
+      "l",
+      "a",
+      "b"
+    ],
+    "category": "places",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "pub",
+    "sounds": [
+      "p",
+      "u",
+      "b"
+    ],
+    "category": "places",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "vet",
+    "sounds": [
+      "v",
+      "e",
+      "t"
+    ],
+    "category": "people",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "cop",
+    "sounds": [
+      "c",
+      "o",
+      "p"
+    ],
+    "category": "people",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "dim",
+    "sounds": [
+      "d",
+      "i",
+      "m"
+    ],
+    "category": "adjectives",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "tan",
+    "sounds": [
+      "t",
+      "a",
+      "n"
+    ],
+    "category": "colors",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "lot",
+    "sounds": [
+      "l",
+      "o",
+      "t"
+    ],
+    "category": "quantity",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "bit",
+    "sounds": [
+      "b",
+      "i",
+      "t"
+    ],
+    "category": "quantity",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "top",
+    "sounds": [
+      "t",
+      "o",
+      "p"
+    ],
+    "category": "position",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "fit",
+    "sounds": [
+      "f",
+      "i",
+      "t"
+    ],
+    "category": "conditions",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "lit",
+    "sounds": [
+      "l",
+      "i",
+      "t"
+    ],
+    "category": "conditions",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "met",
+    "sounds": [
+      "m",
+      "e",
+      "t"
+    ],
+    "category": "past_actions",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "let",
+    "sounds": [
+      "l",
+      "e",
+      "t"
+    ],
+    "category": "actions",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 2,
+    "word": "got",
+    "sounds": [
+      "g",
+      "o",
+      "t"
+    ],
+    "category": "past_actions",
+    "subcategory": "medium",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "gem",
+    "sounds": [
+      "g",
+      "e",
+      "m"
+    ],
+    "category": "things",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "wax",
+    "sounds": [
+      "w",
+      "a",
+      "x"
+    ],
+    "category": "things",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "tax",
+    "sounds": [
+      "t",
+      "a",
+      "x"
+    ],
+    "category": "finance",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "gas",
+    "sounds": [
+      "g",
+      "a",
+      "s"
+    ],
+    "category": "things",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "cod",
+    "sounds": [
+      "c",
+      "o",
+      "d"
+    ],
+    "category": "animals",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "ram",
+    "sounds": [
+      "r",
+      "a",
+      "m"
+    ],
+    "category": "animals",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "cub",
+    "sounds": [
+      "c",
+      "u",
+      "b"
+    ],
+    "category": "animals",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "pup",
+    "sounds": [
+      "p",
+      "u",
+      "p"
+    ],
+    "category": "animals",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "fin",
+    "sounds": [
+      "f",
+      "i",
+      "n"
+    ],
+    "category": "animals",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "hog",
+    "sounds": [
+      "h",
+      "o",
+      "g"
+    ],
+    "category": "animals",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "yam",
+    "sounds": [
+      "y",
+      "a",
+      "m"
+    ],
+    "category": "food",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "gum",
+    "sounds": [
+      "g",
+      "u",
+      "m"
+    ],
+    "category": "food",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "rum",
+    "sounds": [
+      "r",
+      "u",
+      "m"
+    ],
+    "category": "drinks",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "hut",
+    "sounds": [
+      "h",
+      "u",
+      "t"
+    ],
+    "category": "places",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "gym",
+    "sounds": [
+      "g",
+      "y",
+      "m"
+    ],
+    "category": "places",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "pad",
+    "sounds": [
+      "p",
+      "a",
+      "d"
+    ],
+    "category": "things",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "tab",
+    "sounds": [
+      "t",
+      "a",
+      "b"
+    ],
+    "category": "things",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "peg",
+    "sounds": [
+      "p",
+      "e",
+      "g"
+    ],
+    "category": "things",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "rim",
+    "sounds": [
+      "r",
+      "i",
+      "m"
+    ],
+    "category": "things",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "wad",
+    "sounds": [
+      "w",
+      "a",
+      "d"
+    ],
+    "category": "things",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "sod",
+    "sounds": [
+      "s",
+      "o",
+      "d"
+    ],
+    "category": "nature",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "pod",
+    "sounds": [
+      "p",
+      "o",
+      "d"
+    ],
+    "category": "nature",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "bud",
+    "sounds": [
+      "b",
+      "u",
+      "d"
+    ],
+    "category": "nature",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "sap",
+    "sounds": [
+      "s",
+      "a",
+      "p"
+    ],
+    "category": "nature",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "bet",
+    "sounds": [
+      "b",
+      "e",
+      "t"
+    ],
+    "category": "actions",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "pat",
+    "sounds": [
+      "p",
+      "a",
+      "t"
+    ],
+    "category": "actions",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "jab",
+    "sounds": [
+      "j",
+      "a",
+      "b"
+    ],
+    "category": "actions",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "dab",
+    "sounds": [
+      "d",
+      "a",
+      "b"
+    ],
+    "category": "actions",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "rub",
+    "sounds": [
+      "r",
+      "u",
+      "b"
+    ],
+    "category": "actions",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "tug",
+    "sounds": [
+      "t",
+      "u",
+      "g"
+    ],
+    "category": "actions",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "lug",
+    "sounds": [
+      "l",
+      "u",
+      "g"
+    ],
+    "category": "actions",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "dug",
+    "sounds": [
+      "d",
+      "u",
+      "g"
+    ],
+    "category": "actions",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "cut",
+    "sounds": [
+      "c",
+      "u",
+      "t"
+    ],
+    "category": "actions",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "hum",
+    "sounds": [
+      "h",
+      "u",
+      "m"
+    ],
+    "category": "actions",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "sum",
+    "sounds": [
+      "s",
+      "u",
+      "m"
+    ],
+    "category": "math",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "nun",
+    "sounds": [
+      "n",
+      "u",
+      "n"
+    ],
+    "category": "people",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "lad",
+    "sounds": [
+      "l",
+      "a",
+      "d"
+    ],
+    "category": "people",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "mob",
+    "sounds": [
+      "m",
+      "o",
+      "b"
+    ],
+    "category": "people",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "vim",
+    "sounds": [
+      "v",
+      "i",
+      "m"
+    ],
+    "category": "feelings",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "zap",
+    "sounds": [
+      "z",
+      "a",
+      "p"
+    ],
+    "category": "actions",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "sip",
+    "sounds": [
+      "s",
+      "i",
+      "p"
+    ],
+    "category": "actions",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "lap",
+    "sounds": [
+      "l",
+      "a",
+      "p"
+    ],
+    "category": "body",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "gut",
+    "sounds": [
+      "g",
+      "u",
+      "t"
+    ],
+    "category": "body",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "gap",
+    "sounds": [
+      "g",
+      "a",
+      "p"
+    ],
+    "category": "space",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "rap",
+    "sounds": [
+      "r",
+      "a",
+      "p"
+    ],
+    "category": "music",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "pop",
+    "sounds": [
+      "p",
+      "o",
+      "p"
+    ],
+    "category": "actions",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "sob",
+    "sounds": [
+      "s",
+      "o",
+      "b"
+    ],
+    "category": "emotions",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "rot",
+    "sounds": [
+      "r",
+      "o",
+      "t"
+    ],
+    "category": "conditions",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "dot",
+    "sounds": [
+      "d",
+      "o",
+      "t"
+    ],
+    "category": "things",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "cot",
+    "sounds": [
+      "c",
+      "o",
+      "t"
+    ],
+    "category": "things",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "jog",
+    "sounds": [
+      "j",
+      "o",
+      "g"
+    ],
+    "category": "exercise",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "fog",
+    "sounds": [
+      "f",
+      "o",
+      "g"
+    ],
+    "category": "weather",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 3,
+    "word": "bog",
+    "sounds": [
+      "b",
+      "o",
+      "g"
+    ],
+    "category": "nature",
+    "subcategory": "hard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "hub",
+    "sounds": [
+      "h",
+      "u",
+      "b"
+    ],
+    "category": "things",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "sub",
+    "sounds": [
+      "s",
+      "u",
+      "b"
+    ],
+    "category": "things",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "dub",
+    "sounds": [
+      "d",
+      "u",
+      "b"
+    ],
+    "category": "actions",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "nub",
+    "sounds": [
+      "n",
+      "u",
+      "b"
+    ],
+    "category": "things",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "cud",
+    "sounds": [
+      "c",
+      "u",
+      "d"
+    ],
+    "category": "animals",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "sud",
+    "sounds": [
+      "s",
+      "u",
+      "d"
+    ],
+    "category": "things",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "fad",
+    "sounds": [
+      "f",
+      "a",
+      "d"
+    ],
+    "category": "trends",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "gad",
+    "sounds": [
+      "g",
+      "a",
+      "d"
+    ],
+    "category": "actions",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "rad",
+    "sounds": [
+      "r",
+      "a",
+      "d"
+    ],
+    "category": "slang",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "tad",
+    "sounds": [
+      "t",
+      "a",
+      "d"
+    ],
+    "category": "quantity",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "cad",
+    "sounds": [
+      "c",
+      "a",
+      "d"
+    ],
+    "category": "people",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "ban",
+    "sounds": [
+      "b",
+      "a",
+      "n"
+    ],
+    "category": "actions",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "can",
+    "sounds": [
+      "c",
+      "a",
+      "n"
+    ],
+    "category": "things",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "ran",
+    "sounds": [
+      "r",
+      "a",
+      "n"
+    ],
+    "category": "actions",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "wan",
+    "sounds": [
+      "w",
+      "a",
+      "n"
+    ],
+    "category": "adjectives",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "beg",
+    "sounds": [
+      "b",
+      "e",
+      "g"
+    ],
+    "category": "actions",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "keg",
+    "sounds": [
+      "k",
+      "e",
+      "g"
+    ],
+    "category": "things",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "meg",
+    "sounds": [
+      "m",
+      "e",
+      "g"
+    ],
+    "category": "units",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "veg",
+    "sounds": [
+      "v",
+      "e",
+      "g"
+    ],
+    "category": "food",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "ken",
+    "sounds": [
+      "k",
+      "e",
+      "n"
+    ],
+    "category": "knowledge",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "men",
+    "sounds": [
+      "m",
+      "e",
+      "n"
+    ],
+    "category": "people",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "yen",
+    "sounds": [
+      "y",
+      "e",
+      "n"
+    ],
+    "category": "currency",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "zen",
+    "sounds": [
+      "z",
+      "e",
+      "n"
+    ],
+    "category": "philosophy",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "bid",
+    "sounds": [
+      "b",
+      "i",
+      "d"
+    ],
+    "category": "actions",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "did",
+    "sounds": [
+      "d",
+      "i",
+      "d"
+    ],
+    "category": "actions",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "hid",
+    "sounds": [
+      "h",
+      "i",
+      "d"
+    ],
+    "category": "actions",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "mid",
+    "sounds": [
+      "m",
+      "i",
+      "d"
+    ],
+    "category": "position",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "rid",
+    "sounds": [
+      "r",
+      "i",
+      "d"
+    ],
+    "category": "actions",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "din",
+    "sounds": [
+      "d",
+      "i",
+      "n"
+    ],
+    "category": "sounds",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "gin",
+    "sounds": [
+      "g",
+      "i",
+      "n"
+    ],
+    "category": "drinks",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "kin",
+    "sounds": [
+      "k",
+      "i",
+      "n"
+    ],
+    "category": "family",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "sin",
+    "sounds": [
+      "s",
+      "i",
+      "n"
+    ],
+    "category": "religion",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "tin",
+    "sounds": [
+      "t",
+      "i",
+      "n"
+    ],
+    "category": "materials",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "rig",
+    "sounds": [
+      "r",
+      "i",
+      "g"
+    ],
+    "category": "equipment",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "jig",
+    "sounds": [
+      "j",
+      "i",
+      "g"
+    ],
+    "category": "dance",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "cog",
+    "sounds": [
+      "c",
+      "o",
+      "g"
+    ],
+    "category": "mechanics",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "nog",
+    "sounds": [
+      "n",
+      "o",
+      "g"
+    ],
+    "category": "drinks",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "tog",
+    "sounds": [
+      "t",
+      "o",
+      "g"
+    ],
+    "category": "clothing",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "fob",
+    "sounds": [
+      "f",
+      "o",
+      "b"
+    ],
+    "category": "accessories",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "gob",
+    "sounds": [
+      "g",
+      "o",
+      "b"
+    ],
+    "category": "slang",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "hob",
+    "sounds": [
+      "h",
+      "o",
+      "b"
+    ],
+    "category": "cooking",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "lob",
+    "sounds": [
+      "l",
+      "o",
+      "b"
+    ],
+    "category": "actions",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "nob",
+    "sounds": [
+      "n",
+      "o",
+      "b"
+    ],
+    "category": "people",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "yob",
+    "sounds": [
+      "y",
+      "o",
+      "b"
+    ],
+    "category": "slang",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "god",
+    "sounds": [
+      "g",
+      "o",
+      "d"
+    ],
+    "category": "religion",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "hod",
+    "sounds": [
+      "h",
+      "o",
+      "d"
+    ],
+    "category": "tools",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "mod",
+    "sounds": [
+      "m",
+      "o",
+      "d"
+    ],
+    "category": "style",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "tod",
+    "sounds": [
+      "t",
+      "o",
+      "d"
+    ],
+    "category": "animals",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "cox",
+    "sounds": [
+      "c",
+      "o",
+      "x"
+    ],
+    "category": "sports",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "pox",
+    "sounds": [
+      "p",
+      "o",
+      "x"
+    ],
+    "category": "diseases",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "sox",
+    "sounds": [
+      "s",
+      "o",
+      "x"
+    ],
+    "category": "clothes",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 4,
+    "word": "vex",
+    "sounds": [
+      "v",
+      "e",
+      "x"
+    ],
+    "category": "emotions",
+    "subcategory": "veryhard",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "hem",
+    "sounds": [
+      "h",
+      "e",
+      "m"
+    ],
+    "category": "sewing",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "dam",
+    "sounds": [
+      "d",
+      "a",
+      "m"
+    ],
+    "category": "structures",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "bam",
+    "sounds": [
+      "b",
+      "a",
+      "m"
+    ],
+    "category": "sounds",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "cam",
+    "sounds": [
+      "c",
+      "a",
+      "m"
+    ],
+    "category": "mechanics",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "gab",
+    "sounds": [
+      "g",
+      "a",
+      "b"
+    ],
+    "category": "actions",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "nab",
+    "sounds": [
+      "n",
+      "a",
+      "b"
+    ],
+    "category": "actions",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "fab",
+    "sounds": [
+      "f",
+      "a",
+      "b"
+    ],
+    "category": "adjectives",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "had",
+    "sounds": [
+      "h",
+      "a",
+      "d"
+    ],
+    "category": "verbs",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "map",
+    "sounds": [
+      "m",
+      "a",
+      "p"
+    ],
+    "category": "navigation",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "pap",
+    "sounds": [
+      "p",
+      "a",
+      "p"
+    ],
+    "category": "food",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "yap",
+    "sounds": [
+      "y",
+      "a",
+      "p"
+    ],
+    "category": "sounds",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "fat",
+    "sounds": [
+      "f",
+      "a",
+      "t"
+    ],
+    "category": "adjectives",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "sat",
+    "sounds": [
+      "s",
+      "a",
+      "t"
+    ],
+    "category": "actions",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "tat",
+    "sounds": [
+      "t",
+      "a",
+      "t"
+    ],
+    "category": "actions",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "vat",
+    "sounds": [
+      "v",
+      "a",
+      "t"
+    ],
+    "category": "containers",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "max",
+    "sounds": [
+      "m",
+      "a",
+      "x"
+    ],
+    "category": "limits",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "pax",
+    "sounds": [
+      "p",
+      "a",
+      "x"
+    ],
+    "category": "peace",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "nix",
+    "sounds": [
+      "n",
+      "i",
+      "x"
+    ],
+    "category": "actions",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "pix",
+    "sounds": [
+      "p",
+      "i",
+      "x"
+    ],
+    "category": "images",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "lux",
+    "sounds": [
+      "l",
+      "u",
+      "x"
+    ],
+    "category": "units",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "tux",
+    "sounds": [
+      "t",
+      "u",
+      "x"
+    ],
+    "category": "clothes",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "hex",
+    "sounds": [
+      "h",
+      "e",
+      "x"
+    ],
+    "category": "magic",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "rex",
+    "sounds": [
+      "r",
+      "e",
+      "x"
+    ],
+    "category": "titles",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "sex",
+    "sounds": [
+      "s",
+      "e",
+      "x"
+    ],
+    "category": "biology",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "cob",
+    "sounds": [
+      "c",
+      "o",
+      "b"
+    ],
+    "category": "corn",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "dux",
+    "sounds": [
+      "d",
+      "u",
+      "x"
+    ],
+    "category": "titles",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "vox",
+    "sounds": [
+      "v",
+      "o",
+      "x"
+    ],
+    "category": "voice",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "lox",
+    "sounds": [
+      "l",
+      "o",
+      "x"
+    ],
+    "category": "food",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "peg",
+    "sounds": [
+      "p",
+      "e",
+      "g"
+    ],
+    "category": "things",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "leg",
+    "sounds": [
+      "l",
+      "e",
+      "g"
+    ],
+    "category": "body",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "beg",
+    "sounds": [
+      "b",
+      "e",
+      "g"
+    ],
+    "category": "actions",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "keg",
+    "sounds": [
+      "k",
+      "e",
+      "g"
+    ],
+    "category": "things",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "pen",
+    "sounds": [
+      "p",
+      "e",
+      "n"
+    ],
+    "category": "things",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "ten",
+    "sounds": [
+      "t",
+      "e",
+      "n"
+    ],
+    "category": "numbers",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "den",
+    "sounds": [
+      "d",
+      "e",
+      "n"
+    ],
+    "category": "places",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "hen",
+    "sounds": [
+      "h",
+      "e",
+      "n"
+    ],
+    "category": "animals",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "men",
+    "sounds": [
+      "m",
+      "e",
+      "n"
+    ],
+    "category": "people",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "bin",
+    "sounds": [
+      "b",
+      "i",
+      "n"
+    ],
+    "category": "things",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "din",
+    "sounds": [
+      "d",
+      "i",
+      "n"
+    ],
+    "category": "sounds",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "fin",
+    "sounds": [
+      "f",
+      "i",
+      "n"
+    ],
+    "category": "animals",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "gin",
+    "sounds": [
+      "g",
+      "i",
+      "n"
+    ],
+    "category": "drinks",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "kin",
+    "sounds": [
+      "k",
+      "i",
+      "n"
+    ],
+    "category": "family",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "pin",
+    "sounds": [
+      "p",
+      "i",
+      "n"
+    ],
+    "category": "things",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "sin",
+    "sounds": [
+      "s",
+      "i",
+      "n"
+    ],
+    "category": "religion",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "tin",
+    "sounds": [
+      "t",
+      "i",
+      "n"
+    ],
+    "category": "materials",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "win",
+    "sounds": [
+      "w",
+      "i",
+      "n"
+    ],
+    "category": "actions",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "fig",
+    "sounds": [
+      "f",
+      "i",
+      "g"
+    ],
+    "category": "food",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "pig",
+    "sounds": [
+      "p",
+      "i",
+      "g"
+    ],
+    "category": "animals",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "wig",
+    "sounds": [
+      "w",
+      "i",
+      "g"
+    ],
+    "category": "clothes",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "jig",
+    "sounds": [
+      "j",
+      "i",
+      "g"
+    ],
+    "category": "dance",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 5,
+    "word": "rig",
+    "sounds": [
+      "r",
+      "i",
+      "g"
+    ],
+    "category": "equipment",
+    "subcategory": "extreme",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "lob",
+    "sounds": [
+      "l",
+      "o",
+      "b"
+    ],
+    "category": "actions",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "mob",
+    "sounds": [
+      "m",
+      "o",
+      "b"
+    ],
+    "category": "groups",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "nob",
+    "sounds": [
+      "n",
+      "o",
+      "b"
+    ],
+    "category": "people",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "rob",
+    "sounds": [
+      "r",
+      "o",
+      "b"
+    ],
+    "category": "actions",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "sob",
+    "sounds": [
+      "s",
+      "o",
+      "b"
+    ],
+    "category": "emotions",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "yob",
+    "sounds": [
+      "y",
+      "o",
+      "b"
+    ],
+    "category": "slang",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "cod",
+    "sounds": [
+      "c",
+      "o",
+      "d"
+    ],
+    "category": "fish",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "god",
+    "sounds": [
+      "g",
+      "o",
+      "d"
+    ],
+    "category": "religion",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "hod",
+    "sounds": [
+      "h",
+      "o",
+      "d"
+    ],
+    "category": "tools",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "mod",
+    "sounds": [
+      "m",
+      "o",
+      "d"
+    ],
+    "category": "style",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "nod",
+    "sounds": [
+      "n",
+      "o",
+      "d"
+    ],
+    "category": "actions",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "pod",
+    "sounds": [
+      "p",
+      "o",
+      "d"
+    ],
+    "category": "nature",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "rod",
+    "sounds": [
+      "r",
+      "o",
+      "d"
+    ],
+    "category": "tools",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "sod",
+    "sounds": [
+      "s",
+      "o",
+      "d"
+    ],
+    "category": "nature",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "tod",
+    "sounds": [
+      "t",
+      "o",
+      "d"
+    ],
+    "category": "animals",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "bog",
+    "sounds": [
+      "b",
+      "o",
+      "g"
+    ],
+    "category": "nature",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "cog",
+    "sounds": [
+      "c",
+      "o",
+      "g"
+    ],
+    "category": "mechanics",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "dog",
+    "sounds": [
+      "d",
+      "o",
+      "g"
+    ],
+    "category": "animals",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "fog",
+    "sounds": [
+      "f",
+      "o",
+      "g"
+    ],
+    "category": "weather",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "hog",
+    "sounds": [
+      "h",
+      "o",
+      "g"
+    ],
+    "category": "animals",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "jog",
+    "sounds": [
+      "j",
+      "o",
+      "g"
+    ],
+    "category": "exercise",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "log",
+    "sounds": [
+      "l",
+      "o",
+      "g"
+    ],
+    "category": "nature",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "nog",
+    "sounds": [
+      "n",
+      "o",
+      "g"
+    ],
+    "category": "drinks",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "tog",
+    "sounds": [
+      "t",
+      "o",
+      "g"
+    ],
+    "category": "clothing",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "hub",
+    "sounds": [
+      "h",
+      "u",
+      "b"
+    ],
+    "category": "things",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "sub",
+    "sounds": [
+      "s",
+      "u",
+      "b"
+    ],
+    "category": "things",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "dub",
+    "sounds": [
+      "d",
+      "u",
+      "b"
+    ],
+    "category": "actions",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "nub",
+    "sounds": [
+      "n",
+      "u",
+      "b"
+    ],
+    "category": "things",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "cud",
+    "sounds": [
+      "c",
+      "u",
+      "d"
+    ],
+    "category": "animals",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "sud",
+    "sounds": [
+      "s",
+      "u",
+      "d"
+    ],
+    "category": "things",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "bud",
+    "sounds": [
+      "b",
+      "u",
+      "d"
+    ],
+    "category": "nature",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "dud",
+    "sounds": [
+      "d",
+      "u",
+      "d"
+    ],
+    "category": "things",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "mud",
+    "sounds": [
+      "m",
+      "u",
+      "d"
+    ],
+    "category": "nature",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "pud",
+    "sounds": [
+      "p",
+      "u",
+      "d"
+    ],
+    "category": "food",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "spud",
+    "sounds": [
+      "s",
+      "p",
+      "u",
+      "d"
+    ],
+    "category": "food",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "thud",
+    "sounds": [
+      "t",
+      "h",
+      "u",
+      "d"
+    ],
+    "category": "sounds",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "stud",
+    "sounds": [
+      "s",
+      "t",
+      "u",
+      "d"
+    ],
+    "category": "things",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "crud",
+    "sounds": [
+      "c",
+      "r",
+      "u",
+      "d"
+    ],
+    "category": "things",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "scud",
+    "sounds": [
+      "s",
+      "c",
+      "u",
+      "d"
+    ],
+    "category": "weather",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "thud",
+    "sounds": [
+      "t",
+      "h",
+      "u",
+      "d"
+    ],
+    "category": "sounds",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "spud",
+    "sounds": [
+      "s",
+      "p",
+      "u",
+      "d"
+    ],
+    "category": "food",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "crud",
+    "sounds": [
+      "c",
+      "r",
+      "u",
+      "d"
+    ],
+    "category": "things",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "drug",
+    "sounds": [
+      "d",
+      "r",
+      "u",
+      "g"
+    ],
+    "category": "medicine",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "shrug",
+    "sounds": [
+      "s",
+      "h",
+      "r",
+      "u",
+      "g"
+    ],
+    "category": "actions",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "grub",
+    "sounds": [
+      "g",
+      "r",
+      "u",
+      "b"
+    ],
+    "category": "food",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "shrub",
+    "sounds": [
+      "s",
+      "h",
+      "r",
+      "u",
+      "b"
+    ],
+    "category": "plants",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "club",
+    "sounds": [
+      "c",
+      "l",
+      "u",
+      "b"
+    ],
+    "category": "things",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "stub",
+    "sounds": [
+      "s",
+      "t",
+      "u",
+      "b"
+    ],
+    "category": "things",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "snub",
+    "sounds": [
+      "s",
+      "n",
+      "u",
+      "b"
+    ],
+    "category": "actions",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "blub",
+    "sounds": [
+      "b",
+      "l",
+      "u",
+      "b"
+    ],
+    "category": "sounds",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "flub",
+    "sounds": [
+      "f",
+      "l",
+      "u",
+      "b"
+    ],
+    "category": "actions",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "glub",
+    "sounds": [
+      "g",
+      "l",
+      "u",
+      "b"
+    ],
+    "category": "sounds",
+    "subcategory": "expert",
+    "difficulty": "all"
+  },
+  {
+    "level": 6,
+    "word": "scrub",
+    "sounds": [
+      "s",
+      "c",
+      "r",
+      "u",
+      "b"
+    ],
+    "category": "actions",
+    "subcategory": "expert",
+    "difficulty": "all"
+  }
+]

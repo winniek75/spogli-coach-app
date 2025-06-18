@@ -1,0 +1,623 @@
+[
+  {
+    "word": "cat",
+    "rhyming": "hat",
+    "nonRhyming": [
+      "dog",
+      "sun",
+      "pen"
+    ]
+  },
+  {
+    "word": "dog",
+    "rhyming": "log",
+    "nonRhyming": [
+      "cat",
+      "fish",
+      "bird"
+    ]
+  },
+  {
+    "word": "sun",
+    "rhyming": "run",
+    "nonRhyming": [
+      "moon",
+      "star",
+      "cloud"
+    ]
+  },
+  {
+    "word": "moon",
+    "rhyming": "spoon",
+    "nonRhyming": [
+      "star",
+      "sun",
+      "cloud"
+    ]
+  },
+  {
+    "word": "star",
+    "rhyming": "car",
+    "nonRhyming": [
+      "moon",
+      "sun",
+      "cloud"
+    ]
+  },
+  {
+    "word": "pen",
+    "rhyming": "hen",
+    "nonRhyming": [
+      "box",
+      "tree",
+      "ball"
+    ]
+  },
+  {
+    "word": "box",
+    "rhyming": "fox",
+    "nonRhyming": [
+      "car",
+      "hat",
+      "run"
+    ]
+  },
+  {
+    "word": "tree",
+    "rhyming": "free",
+    "nonRhyming": [
+      "pen",
+      "log",
+      "cat"
+    ]
+  },
+  {
+    "word": "ball",
+    "rhyming": "fall",
+    "nonRhyming": [
+      "box",
+      "hen",
+      "fox"
+    ]
+  },
+  {
+    "word": "fish",
+    "rhyming": "dish",
+    "nonRhyming": [
+      "bird",
+      "tree",
+      "free"
+    ]
+  },
+  {
+    "word": "bird",
+    "rhyming": "word",
+    "nonRhyming": [
+      "fish",
+      "ball",
+      "fall"
+    ]
+  },
+  {
+    "word": "hat",
+    "rhyming": "cat",
+    "nonRhyming": [
+      "dog",
+      "sun",
+      "pen"
+    ]
+  },
+  {
+    "word": "log",
+    "rhyming": "dog",
+    "nonRhyming": [
+      "cat",
+      "fish",
+      "bird"
+    ]
+  },
+  {
+    "word": "run",
+    "rhyming": "sun",
+    "nonRhyming": [
+      "moon",
+      "star",
+      "cloud"
+    ]
+  },
+  {
+    "word": "spoon",
+    "rhyming": "moon",
+    "nonRhyming": [
+      "star",
+      "sun",
+      "cloud"
+    ]
+  },
+  {
+    "word": "car",
+    "rhyming": "star",
+    "nonRhyming": [
+      "moon",
+      "sun",
+      "cloud"
+    ]
+  },
+  {
+    "word": "hen",
+    "rhyming": "pen",
+    "nonRhyming": [
+      "box",
+      "tree",
+      "ball"
+    ]
+  },
+  {
+    "word": "fox",
+    "rhyming": "box",
+    "nonRhyming": [
+      "car",
+      "hat",
+      "run"
+    ]
+  },
+  {
+    "word": "free",
+    "rhyming": "tree",
+    "nonRhyming": [
+      "pen",
+      "log",
+      "cat"
+    ]
+  },
+  {
+    "word": "fall",
+    "rhyming": "ball",
+    "nonRhyming": [
+      "box",
+      "hen",
+      "fox"
+    ]
+  },
+  {
+    "word": "dish",
+    "rhyming": "fish",
+    "nonRhyming": [
+      "bird",
+      "tree",
+      "free"
+    ]
+  },
+  {
+    "word": "word",
+    "rhyming": "bird",
+    "nonRhyming": [
+      "fish",
+      "ball",
+      "fall"
+    ]
+  },
+  {
+    "word": "book",
+    "rhyming": "look",
+    "nonRhyming": [
+      "cake",
+      "bike",
+      "kite"
+    ]
+  },
+  {
+    "word": "look",
+    "rhyming": "book",
+    "nonRhyming": [
+      "cake",
+      "bike",
+      "kite"
+    ]
+  },
+  {
+    "word": "cake",
+    "rhyming": "make",
+    "nonRhyming": [
+      "book",
+      "look",
+      "bike"
+    ]
+  },
+  {
+    "word": "make",
+    "rhyming": "cake",
+    "nonRhyming": [
+      "book",
+      "look",
+      "bike"
+    ]
+  },
+  {
+    "word": "bike",
+    "rhyming": "like",
+    "nonRhyming": [
+      "cake",
+      "make",
+      "kite"
+    ]
+  },
+  {
+    "word": "like",
+    "rhyming": "bike",
+    "nonRhyming": [
+      "cake",
+      "make",
+      "kite"
+    ]
+  },
+  {
+    "word": "kite",
+    "rhyming": "light",
+    "nonRhyming": [
+      "book",
+      "look",
+      "cake"
+    ]
+  },
+  {
+    "word": "light",
+    "rhyming": "kite",
+    "nonRhyming": [
+      "book",
+      "look",
+      "cake"
+    ]
+  },
+  {
+    "word": "boat",
+    "rhyming": "coat",
+    "nonRhyming": [
+      "train",
+      "plane",
+      "truck"
+    ]
+  },
+  {
+    "word": "coat",
+    "rhyming": "boat",
+    "nonRhyming": [
+      "train",
+      "plane",
+      "truck"
+    ]
+  },
+  {
+    "word": "train",
+    "rhyming": "rain",
+    "nonRhyming": [
+      "boat",
+      "coat",
+      "plane"
+    ]
+  },
+  {
+    "word": "rain",
+    "rhyming": "train",
+    "nonRhyming": [
+      "boat",
+      "coat",
+      "plane"
+    ]
+  },
+  {
+    "word": "plane",
+    "rhyming": "chain",
+    "nonRhyming": [
+      "boat",
+      "coat",
+      "truck"
+    ]
+  },
+  {
+    "word": "chain",
+    "rhyming": "plane",
+    "nonRhyming": [
+      "boat",
+      "coat",
+      "truck"
+    ]
+  },
+  {
+    "word": "truck",
+    "rhyming": "duck",
+    "nonRhyming": [
+      "train",
+      "rain",
+      "chain"
+    ]
+  },
+  {
+    "word": "duck",
+    "rhyming": "truck",
+    "nonRhyming": [
+      "train",
+      "rain",
+      "chain"
+    ]
+  },
+  {
+    "word": "house",
+    "rhyming": "mouse",
+    "nonRhyming": [
+      "chair",
+      "table",
+      "door"
+    ]
+  },
+  {
+    "word": "mouse",
+    "rhyming": "house",
+    "nonRhyming": [
+      "chair",
+      "table",
+      "door"
+    ]
+  },
+  {
+    "word": "chair",
+    "rhyming": "hair",
+    "nonRhyming": [
+      "house",
+      "mouse",
+      "table"
+    ]
+  },
+  {
+    "word": "hair",
+    "rhyming": "chair",
+    "nonRhyming": [
+      "house",
+      "mouse",
+      "table"
+    ]
+  },
+  {
+    "word": "table",
+    "rhyming": "stable",
+    "nonRhyming": [
+      "house",
+      "mouse",
+      "door"
+    ]
+  },
+  {
+    "word": "stable",
+    "rhyming": "table",
+    "nonRhyming": [
+      "house",
+      "mouse",
+      "door"
+    ]
+  },
+  {
+    "word": "door",
+    "rhyming": "floor",
+    "nonRhyming": [
+      "chair",
+      "hair",
+      "stable"
+    ]
+  },
+  {
+    "word": "floor",
+    "rhyming": "door",
+    "nonRhyming": [
+      "chair",
+      "hair",
+      "stable"
+    ]
+  },
+  {
+    "word": "red",
+    "rhyming": "bed",
+    "nonRhyming": [
+      "blue",
+      "green",
+      "yellow"
+    ]
+  },
+  {
+    "word": "bed",
+    "rhyming": "red",
+    "nonRhyming": [
+      "blue",
+      "green",
+      "yellow"
+    ]
+  },
+  {
+    "word": "blue",
+    "rhyming": "TRUE",
+    "nonRhyming": [
+      "red",
+      "bed",
+      "green"
+    ]
+  },
+  {
+    "word": "TRUE",
+    "rhyming": "blue",
+    "nonRhyming": [
+      "red",
+      "bed",
+      "green"
+    ]
+  },
+  {
+    "word": "green",
+    "rhyming": "seen",
+    "nonRhyming": [
+      "red",
+      "bed",
+      "yellow"
+    ]
+  },
+  {
+    "word": "seen",
+    "rhyming": "green",
+    "nonRhyming": [
+      "red",
+      "bed",
+      "yellow"
+    ]
+  },
+  {
+    "word": "yellow",
+    "rhyming": "hello",
+    "nonRhyming": [
+      "blue",
+      "TRUE",
+      "seen"
+    ]
+  },
+  {
+    "word": "hello",
+    "rhyming": "yellow",
+    "nonRhyming": [
+      "blue",
+      "TRUE",
+      "seen"
+    ]
+  },
+  {
+    "word": "big",
+    "rhyming": "pig",
+    "nonRhyming": [
+      "small",
+      "tall",
+      "short"
+    ]
+  },
+  {
+    "word": "pig",
+    "rhyming": "big",
+    "nonRhyming": [
+      "small",
+      "tall",
+      "short"
+    ]
+  },
+  {
+    "word": "small",
+    "rhyming": "ball",
+    "nonRhyming": [
+      "big",
+      "pig",
+      "tall"
+    ]
+  },
+  {
+    "word": "tall",
+    "rhyming": "wall",
+    "nonRhyming": [
+      "big",
+      "pig",
+      "short"
+    ]
+  },
+  {
+    "word": "wall",
+    "rhyming": "tall",
+    "nonRhyming": [
+      "big",
+      "pig",
+      "short"
+    ]
+  },
+  {
+    "word": "short",
+    "rhyming": "sport",
+    "nonRhyming": [
+      "small",
+      "ball",
+      "wall"
+    ]
+  },
+  {
+    "word": "sport",
+    "rhyming": "short",
+    "nonRhyming": [
+      "small",
+      "ball",
+      "wall"
+    ]
+  },
+  {
+    "word": "happy",
+    "rhyming": "snappy",
+    "nonRhyming": [
+      "sad",
+      "mad",
+      "glad"
+    ]
+  },
+  {
+    "word": "snappy",
+    "rhyming": "happy",
+    "nonRhyming": [
+      "sad",
+      "mad",
+      "glad"
+    ]
+  },
+  {
+    "word": "sad",
+    "rhyming": "bad",
+    "nonRhyming": [
+      "happy",
+      "snappy",
+      "mad"
+    ]
+  },
+  {
+    "word": "bad",
+    "rhyming": "sad",
+    "nonRhyming": [
+      "happy",
+      "snappy",
+      "mad"
+    ]
+  },
+  {
+    "word": "mad",
+    "rhyming": "glad",
+    "nonRhyming": [
+      "happy",
+      "snappy",
+      "bad"
+    ]
+  },
+  {
+    "word": "glad",
+    "rhyming": "mad",
+    "nonRhyming": [
+      "happy",
+      "snappy",
+      "bad"
+    ]
+  },
+  {
+    "word": "good",
+    "rhyming": "food",
+    "nonRhyming": [
+      "bad",
+      "sad",
+      "mad"
+    ]
+  },
+  {
+    "word": "food",
+    "rhyming": "good",
+    "nonRhyming": [
+      "bad",
+      "sad",
+      "mad"
+    ]
+  }
+]

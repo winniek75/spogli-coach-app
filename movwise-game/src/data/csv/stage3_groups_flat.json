@@ -1,0 +1,163 @@
+[
+  {
+    "label": "plosives_p",
+    "ipa": "p",
+    "audioFile": "p.m4a",
+    "example_word": "pen",
+    "group": "Plosives"
+  },
+  {
+    "label": "plosives_b",
+    "ipa": "b",
+    "audioFile": "b.m4a",
+    "example_word": "bat",
+    "group": "Plosives"
+  },
+  {
+    "label": "plosives_t",
+    "ipa": "t",
+    "audioFile": "t.m4a",
+    "example_word": "top",
+    "group": "Plosives"
+  },
+  {
+    "label": "plosives_d",
+    "ipa": "d",
+    "audioFile": "d.m4a",
+    "example_word": "dog",
+    "group": "Plosives"
+  },
+  {
+    "label": "plosives_k",
+    "ipa": "k",
+    "audioFile": "k.m4a",
+    "example_word": "cat",
+    "group": "Plosives"
+  },
+  {
+    "label": "plosives_g",
+    "ipa": "g",
+    "audioFile": "g.m4a",
+    "example_word": "go",
+    "group": "Plosives"
+  },
+  {
+    "label": "fricatives_f",
+    "ipa": "f",
+    "audioFile": "f.m4a",
+    "example_word": "fan",
+    "group": "Fricatives"
+  },
+  {
+    "label": "fricatives_v",
+    "ipa": "v",
+    "audioFile": "v.m4a",
+    "example_word": "van",
+    "group": "Fricatives"
+  },
+  {
+    "label": "fricatives_s",
+    "ipa": "s",
+    "audioFile": "s.m4a",
+    "example_word": "sun",
+    "group": "Fricatives"
+  },
+  {
+    "label": "fricatives_z",
+    "ipa": "z",
+    "audioFile": "z.m4a",
+    "example_word": "zip",
+    "group": "Fricatives"
+  },
+  {
+    "label": "fricatives_sh",
+    "ipa": "ʃ",
+    "audioFile": "sh.m4a",
+    "example_word": "ship",
+    "group": "Fricatives"
+  },
+  {
+    "label": "fricatives_zh",
+    "ipa": "ʒ",
+    "audioFile": "zh.m4a",
+    "example_word": "vision",
+    "group": "Fricatives"
+  },
+  {
+    "label": "fricatives_th1",
+    "ipa": "θ",
+    "audioFile": "th1.m4a",
+    "example_word": "think",
+    "group": "Fricatives"
+  },
+  {
+    "label": "fricatives_th2",
+    "ipa": "ð",
+    "audioFile": "th2.m4a",
+    "example_word": "this",
+    "group": "Fricatives"
+  },
+  {
+    "label": "affricates_ch",
+    "ipa": "tʃ",
+    "audioFile": "ch.m4a",
+    "example_word": "chair",
+    "group": "Affricates"
+  },
+  {
+    "label": "affricates_j",
+    "ipa": "dʒ",
+    "audioFile": "j.m4a",
+    "example_word": "jam",
+    "group": "Affricates"
+  },
+  {
+    "label": "nasals_m",
+    "ipa": "m",
+    "audioFile": "m.m4a",
+    "example_word": "man",
+    "group": "Nasals"
+  },
+  {
+    "label": "nasals_n",
+    "ipa": "n",
+    "audioFile": "n.m4a",
+    "example_word": "net",
+    "group": "Nasals"
+  },
+  {
+    "label": "nasals_ng",
+    "ipa": "ŋ",
+    "audioFile": "ng.m4a",
+    "example_word": "sing",
+    "group": "Nasals"
+  },
+  {
+    "label": "liquids_l",
+    "ipa": "l",
+    "audioFile": "l.m4a",
+    "example_word": "leg",
+    "group": "Liquids"
+  },
+  {
+    "label": "liquids_r",
+    "ipa": "r",
+    "audioFile": "r.m4a",
+    "example_word": "red",
+    "group": "Liquids"
+  },
+  {
+    "label": "glides_w",
+    "ipa": "w",
+    "audioFile": "w.m4a",
+    "example_word": "win",
+    "group": "Glides"
+  },
+  {
+    "label": "glides_y",
+    "ipa": "j",
+    "audioFile": "y.m4a",
+    "example_word": "yes",
+    "group": "Glides"
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "keyword": "happiness",
+    "icon_name": "😊",
+    "background_color": "linear-gradient(135deg #fef3c7 #fbbf24)",
+    "animation": "bounce",
+    "description_ja": "幸せな気持ち",
+    "cssClass": "visual-happiness",
+    "": "",
+    "level": "advanced"
+  },
+  {
+    "keyword": "school",
+    "icon_name": "🏫",
+    "background_color": "linear-gradient(135deg #dbeafe #3b82f6)",
+    "animation": "fade",
+    "description_ja": "学校での学び",
+    "cssClass": "visual-school",
+    "": "",
+    "level": "advanced"
+  },
+  {
+    "keyword": "emotion",
+    "icon_name": "💭",
+    "background_color": "linear-gradient(135deg #f3e8ff #a855f7)",
+    "animation": "wave",
+    "description_ja": "感情の表現",
+    "cssClass": "visual-emotion",
+    "": "",
+    "level": "advanced"
+  },
+  {
+    "keyword": "friendship",
+    "icon_name": "🤝",
+    "background_color": "linear-gradient(135deg #ecfdf5 #059669)",
+    "animation": "glow",
+    "description_ja": "友情の絆",
+    "cssClass": "visual-friendship",
+    "": "",
+    "level": "advanced"
+  },
+  {
+    "keyword": "object",
+    "icon_name": "📦",
+    "background_color": "linear-gradient(135deg #f5f5f4 #78716c)",
+    "animation": "slide",
+    "description_ja": "物の世界",
+    "cssClass": "visual-object",
+    "": "",
+    "level": "advanced"
+  },
+  {
+    "keyword": "sports",
+    "icon_name": "⚽",
+    "background_color": "linear-gradient(135deg #d1fae5 #10b981)",
+    "animation": "bounce",
+    "description_ja": "スポーツの楽しさ",
+    "cssClass": "visual-sports",
+    "": "",
+    "level": "advanced"
+  },
+  {
+    "keyword": "music",
+    "icon_name": "🎵",
+    "background_color": "linear-gradient(135deg #ede9fe #8b5cf6)",
+    "animation": "pulse",
+    "description_ja": "音楽の世界",
+    "cssClass": "visual-music",
+    "": "",
+    "level": "advanced"
+  },
+  {
+    "keyword": "food",
+    "icon_name": "🍽️",
+    "background_color": "linear-gradient(135deg #fed7d7 #f56565)",
+    "animation": "rotate",
+    "description_ja": "美味しい食事",
+    "cssClass": "visual-food",
+    "": "",
+    "level": "advanced"
+  },
+  {
+    "keyword": "reading",
+    "icon_name": "📚",
+    "background_color": "linear-gradient(135deg #fef3c7 #f59e0b)",
+    "animation": "page-turn",
+    "description_ja": "読書の世界",
+    "cssClass": "visual-reading",
+    "": "",
+    "level": "advanced"
+  },
+  {
+    "keyword": "entertainment",
+    "icon_name": "📺",
+    "background_color": "linear-gradient(135deg #e0e7ff #6366f1)",
+    "animation": "flicker",
+    "description_ja": "エンターテイメント",
+    "cssClass": "visual-entertainment",
+    "": "",
+    "level": "advanced"
+  },
+  {
+    "keyword": "question",
+    "icon_name": "❓",
+    "background_color": "linear-gradient(135deg #fef3c7 #f59e0b)",
+    "animation": "shake",
+    "description_ja": "疑問と発見",
+    "cssClass": "visual-question",
+    "": "",
+    "level": "advanced"
+  },
+  {
+    "keyword": "location",
+    "icon_name": "📍",
+    "background_color": "linear-gradient(135deg #fce7f3 #ec4899)",
+    "animation": "pin",
+    "description_ja": "場所と位置",
+    "cssClass": "visual-location",
+    "": "",
+    "level": "advanced"
+  },
+  {
+    "keyword": "person",
+    "icon_name": "👤",
+    "background_color": "linear-gradient(135deg #f1f5f9 #475569)",
+    "animation": "fade",
+    "description_ja": "人物",
+    "cssClass": "visual-person",
+    "": "",
+    "level": "advanced"
+  },
+  {
+    "keyword": "negation",
+    "icon_name": "🚫",
+    "background_color": "linear-gradient(135deg #fee2e2 #dc2626)",
+    "animation": "flash",
+    "description_ja": "否定の表現",
+    "cssClass": "visual-negation",
+    "": "",
+    "level": "advanced"
+  },
+  {
+    "keyword": "time",
+    "icon_name": "⏰",
+    "background_color": "linear-gradient(135deg #f0f9ff #0ea5e9)",
+    "animation": "tick",
+    "description_ja": "時間の概念",
+    "cssClass": "visual-time",
+    "": "",
+    "level": "advanced"
+  },
+  {
+    "keyword": "language",
+    "icon_name": "🗣️",
+    "background_color": "linear-gradient(135deg #f0fdf4 #16a34a)",
+    "animation": "speak",
+    "description_ja": "言語とコミュニケーション",
+    "cssClass": "visual-language",
+    "": "",
+    "level": "advanced"
+  },
+  {
+    "keyword": "past_sports",
+    "icon_name": "⚽",
+    "background_color": "linear-gradient(135deg #e2e8f0 #64748b)",
+    "animation": "fadeIn",
+    "description_ja": "過去のスポーツ体験",
+    "cssClass": "visual-past-sports",
+    "": "",
+    "level": "advanced"
+  },
+  {
+    "keyword": "future_study",
+    "icon_name": "📖",
+    "background_color": "linear-gradient(135deg #f8fafc #3730a3)",
+    "animation": "glow",
+    "description_ja": "未来への学習",
+    "cssClass": "visual-future-study",
+    "": "",
+    "level": "advanced"
+  },
+  {
+    "keyword": "completion",
+    "icon_name": "✅",
+    "background_color": "linear-gradient(135deg #dcfce7 #166534)",
+    "animation": "checkmark",
+    "description_ja": "完了と達成",
+    "cssClass": "visual-completion",
+    "": "",
+    "level": "advanced"
+  },
+  {
+    "keyword": "creation",
+    "icon_name": "✍️",
+    "background_color": "linear-gradient(135deg #fef7cd #a16207)",
+    "animation": "write",
+    "description_ja": "創作と制作",
+    "cssClass": "visual-creation",
+    "": "",
+    "level": "advanced"
+  }
+]

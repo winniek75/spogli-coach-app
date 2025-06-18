@@ -1,0 +1,62 @@
+/* Tailwind CSS v3 対応版 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* カスタムプロパティ */
+:root {
+  --color-primary: #4a6bdf;
+  --color-secondary: #34d399;
+  --color-accent: #f97316;
+
+  --font-game: "Comic Sans MS", cursive;
+}
+
+/* ゲーム用コンポーネントスタイル */
+@layer components {
+  .game-button {
+    @apply bg-primary text-white px-6 py-3 rounded-xl font-bold text-lg transform transition-all duration-200 hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl cursor-pointer select-none;
+  }
+
+  .game-button:hover {
+    @apply bg-primary/90;
+  }
+
+  .game-button:disabled {
+    @apply bg-gray-400 cursor-not-allowed transform-none shadow-none;
+  }
+
+  .game-card {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px 0 rgba(30, 41, 59, 0.15);
+    @apply p-6 border border-gray-100 hover:border-primary transition-all duration-300 transform hover:-translate-y-1;
+  }
+
+  .game-card:hover {
+    border-color: var(--color-primary);
+  }
+
+  .score-display {
+    @apply text-3xl font-bold px-6 py-3 rounded-xl border-2 border-yellow-200 shadow-inner text-primary bg-yellow-50;
+  }
+
+  .phonics-option {
+    @apply bg-white border-2 font-bold text-2xl rounded-xl p-4 h-20 flex items-center justify-center transform transition-all duration-150 hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl cursor-pointer select-none border-primary text-primary;
+  }
+
+  .phonics-option:hover {
+    @apply text-white bg-primary;
+  }
+
+  .phonics-option.correct {
+    @apply bg-green-500 text-white border-green-500;
+    animation: bounce 1s ease-in-out 2;
+  }
+
+  .phonics-option.wrong {
+    @apply bg-red-500 text-white border-red-500;
+    animation: pulse 0.5s ease-in-out infinite;
+  }
+}

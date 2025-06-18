@@ -1,0 +1,41 @@
+label,ipa,audioFile,example_word,group
+s,s,s.m4a,sun,Consonant
+t,t,t.m4a,top,Consonant
+sh,ʃ,sh.m4a,ship,Fricative
+ch,tʃ,ch.m4a,chair,Affricate
+z,z,z.m4a,zip,Fricative
+zh,ʒ,zh.m4a,vision,Fricative
+d,d,d.m4a,dog,Consonant
+n,n,n.m4a,net,Consonant
+l,l,l.m4a,leg,Consonant
+r,r,r.m4a,red,Consonant
+b,b,b.m4a,bat,Consonant
+p,p,p.m4a,pen,Consonant
+v,v,v.m4a,van,Fricative
+f,f,f.m4a,fan,Fricative
+g,g,g.m4a,go,Consonant
+k,k,k.m4a,cat,Consonant
+h,h,h.m4a,hat,Consonant
+j,dʒ,j.m4a,jam,Affricate
+m,m,m.m4a,man,Consonant
+w,w,w.m4a,win,Consonant
+y,j,y.m4a,yes,Consonant
+th1,θ,th1.m4a,think,Fricative
+th2,ð,th2.m4a,this,Fricative
+a1,æ,a1.m4a,cat,Short Vowel
+a2,ɑː,a2.m4a,car,Long Vowel
+a3,eɪ,a3.m4a,cake,Diphthong
+a4,ə,a4.m4a,sofa,Schwa
+a5,ʌ,a5.m4a,cup,Short Vowel
+e1,e,e1.m4a,bed,Short Vowel
+e2,iː,e2.m4a,see,Long Vowel
+e3,eɪ,e3.m4a,day,Diphthong
+i1,ɪ,i1.m4a,sit,Short Vowel
+i2,aɪ,i2.m4a,fly,Diphthong
+o1,ɒ,o1.m4a,hot,Short Vowel
+o2,oʊ,o2.m4a,go,Long Vowel
+o3,ɔː,o3.m4a,law,Long Vowel
+o4,aʊ,o4.m4a,now,Diphthong
+u1,ʊ,u1.m4a,book,Short Vowel
+u2,uː,u2.m4a,moon,Long Vowel
+u3,juː,u3.m4a,unit,Long Vowel

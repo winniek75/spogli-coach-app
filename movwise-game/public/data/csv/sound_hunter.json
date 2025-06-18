@@ -1,0 +1,5799 @@
+[
+  {
+    "level": 1,
+    "word": "cat",
+    "sounds": [
+      "c",
+      "a",
+      "t"
+    ],
+    "correct_phoneme": "c",
+    "distractor1": "b",
+    "distractor2": "p",
+    "distractor3": "d",
+    "category": "animals",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "dog",
+    "sounds": [
+      "d",
+      "o",
+      "g"
+    ],
+    "correct_phoneme": "d",
+    "distractor1": "b",
+    "distractor2": "p",
+    "distractor3": "g",
+    "category": "animals",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "bat",
+    "sounds": [
+      "b",
+      "a",
+      "t"
+    ],
+    "correct_phoneme": "b",
+    "distractor1": "c",
+    "distractor2": "p",
+    "distractor3": "d",
+    "category": "animals",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "pig",
+    "sounds": [
+      "p",
+      "i",
+      "g"
+    ],
+    "correct_phoneme": "p",
+    "distractor1": "b",
+    "distractor2": "d",
+    "distractor3": "t",
+    "category": "animals",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "rat",
+    "sounds": [
+      "r",
+      "a",
+      "t"
+    ],
+    "correct_phoneme": "r",
+    "distractor1": "l",
+    "distractor2": "w",
+    "distractor3": "y",
+    "category": "animals",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "hen",
+    "sounds": [
+      "h",
+      "e",
+      "n"
+    ],
+    "correct_phoneme": "h",
+    "distractor1": "w",
+    "distractor2": "y",
+    "distractor3": "r",
+    "category": "animals",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "fox",
+    "sounds": [
+      "f",
+      "o",
+      "x"
+    ],
+    "correct_phoneme": "f",
+    "distractor1": "v",
+    "distractor2": "s",
+    "distractor3": "z",
+    "category": "animals",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "bug",
+    "sounds": [
+      "b",
+      "u",
+      "g"
+    ],
+    "correct_phoneme": "b",
+    "distractor1": "d",
+    "distractor2": "p",
+    "distractor3": "t",
+    "category": "animals",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "sun",
+    "sounds": [
+      "s",
+      "u",
+      "n"
+    ],
+    "correct_phoneme": "s",
+    "distractor1": "z",
+    "distractor2": "f",
+    "distractor3": "v",
+    "category": "nature",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "top",
+    "sounds": [
+      "t",
+      "o",
+      "p"
+    ],
+    "correct_phoneme": "t",
+    "distractor1": "d",
+    "distractor2": "k",
+    "distractor3": "g",
+    "category": "things",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "map",
+    "sounds": [
+      "m",
+      "a",
+      "p"
+    ],
+    "correct_phoneme": "m",
+    "distractor1": "n",
+    "distractor2": "w",
+    "distractor3": "r",
+    "category": "things",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "net",
+    "sounds": [
+      "n",
+      "e",
+      "t"
+    ],
+    "correct_phoneme": "n",
+    "distractor1": "m",
+    "distractor2": "r",
+    "distractor3": "l",
+    "category": "things",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "hat",
+    "sounds": [
+      "h",
+      "a",
+      "t"
+    ],
+    "correct_phoneme": "h",
+    "distractor1": "w",
+    "distractor2": "y",
+    "distractor3": "r",
+    "category": "clothes",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "leg",
+    "sounds": [
+      "l",
+      "e",
+      "g"
+    ],
+    "correct_phoneme": "l",
+    "distractor1": "r",
+    "distractor2": "w",
+    "distractor3": "y",
+    "category": "body",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "red",
+    "sounds": [
+      "r",
+      "e",
+      "d"
+    ],
+    "correct_phoneme": "r",
+    "distractor1": "l",
+    "distractor2": "w",
+    "distractor3": "y",
+    "category": "colors",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "wet",
+    "sounds": [
+      "w",
+      "e",
+      "t"
+    ],
+    "correct_phoneme": "w",
+    "distractor1": "r",
+    "distractor2": "l",
+    "distractor3": "y",
+    "category": "adjectives",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "big",
+    "sounds": [
+      "b",
+      "i",
+      "g"
+    ],
+    "correct_phoneme": "b",
+    "distractor1": "d",
+    "distractor2": "p",
+    "distractor3": "t",
+    "category": "adjectives",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "hot",
+    "sounds": [
+      "h",
+      "o",
+      "t"
+    ],
+    "correct_phoneme": "h",
+    "distractor1": "w",
+    "distractor2": "y",
+    "distractor3": "r",
+    "category": "adjectives",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "sit",
+    "sounds": [
+      "s",
+      "i",
+      "t"
+    ],
+    "correct_phoneme": "s",
+    "distractor1": "z",
+    "distractor2": "f",
+    "distractor3": "v",
+    "category": "actions",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "run",
+    "sounds": [
+      "r",
+      "u",
+      "n"
+    ],
+    "correct_phoneme": "r",
+    "distractor1": "l",
+    "distractor2": "w",
+    "distractor3": "y",
+    "category": "actions",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "get",
+    "sounds": [
+      "g",
+      "e",
+      "t"
+    ],
+    "correct_phoneme": "g",
+    "distractor1": "k",
+    "distractor2": "d",
+    "distractor3": "t",
+    "category": "actions",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "put",
+    "sounds": [
+      "p",
+      "u",
+      "t"
+    ],
+    "correct_phoneme": "p",
+    "distractor1": "b",
+    "distractor2": "d",
+    "distractor3": "t",
+    "category": "actions",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "win",
+    "sounds": [
+      "w",
+      "i",
+      "n"
+    ],
+    "correct_phoneme": "w",
+    "distractor1": "r",
+    "distractor2": "l",
+    "distractor3": "y",
+    "category": "actions",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "hit",
+    "sounds": [
+      "h",
+      "i",
+      "t"
+    ],
+    "correct_phoneme": "h",
+    "distractor1": "w",
+    "distractor2": "y",
+    "distractor3": "r",
+    "category": "actions",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "bag",
+    "sounds": [
+      "b",
+      "a",
+      "g"
+    ],
+    "correct_phoneme": "b",
+    "distractor1": "d",
+    "distractor2": "p",
+    "distractor3": "t",
+    "category": "things",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "cup",
+    "sounds": [
+      "c",
+      "u",
+      "p"
+    ],
+    "correct_phoneme": "c",
+    "distractor1": "k",
+    "distractor2": "g",
+    "distractor3": "q",
+    "category": "things",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "box",
+    "sounds": [
+      "b",
+      "o",
+      "x"
+    ],
+    "correct_phoneme": "b",
+    "distractor1": "d",
+    "distractor2": "p",
+    "distractor3": "t",
+    "category": "things",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "pen",
+    "sounds": [
+      "p",
+      "e",
+      "n"
+    ],
+    "correct_phoneme": "p",
+    "distractor1": "b",
+    "distractor2": "d",
+    "distractor3": "t",
+    "category": "things",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "fan",
+    "sounds": [
+      "f",
+      "a",
+      "n"
+    ],
+    "correct_phoneme": "f",
+    "distractor1": "v",
+    "distractor2": "s",
+    "distractor3": "z",
+    "category": "things",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "jug",
+    "sounds": [
+      "j",
+      "u",
+      "g"
+    ],
+    "correct_phoneme": "j",
+    "distractor1": "y",
+    "distractor2": "ch",
+    "distractor3": "sh",
+    "category": "things",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "van",
+    "sounds": [
+      "v",
+      "a",
+      "n"
+    ],
+    "correct_phoneme": "v",
+    "distractor1": "f",
+    "distractor2": "s",
+    "distractor3": "z",
+    "category": "vehicles",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "zip",
+    "sounds": [
+      "z",
+      "i",
+      "p"
+    ],
+    "correct_phoneme": "z",
+    "distractor1": "s",
+    "distractor2": "f",
+    "distractor3": "v",
+    "category": "clothes",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "yes",
+    "sounds": [
+      "y",
+      "e",
+      "s"
+    ],
+    "correct_phoneme": "y",
+    "distractor1": "w",
+    "distractor2": "r",
+    "distractor3": "l",
+    "category": "responses",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "six",
+    "sounds": [
+      "s",
+      "i",
+      "x"
+    ],
+    "correct_phoneme": "s",
+    "distractor1": "z",
+    "distractor2": "f",
+    "distractor3": "v",
+    "category": "numbers",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "ten",
+    "sounds": [
+      "t",
+      "e",
+      "n"
+    ],
+    "correct_phoneme": "t",
+    "distractor1": "d",
+    "distractor2": "k",
+    "distractor3": "g",
+    "category": "numbers",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "mom",
+    "sounds": [
+      "m",
+      "o",
+      "m"
+    ],
+    "correct_phoneme": "m",
+    "distractor1": "n",
+    "distractor2": "w",
+    "distractor3": "r",
+    "category": "people",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "dad",
+    "sounds": [
+      "d",
+      "a",
+      "d"
+    ],
+    "correct_phoneme": "d",
+    "distractor1": "b",
+    "distractor2": "p",
+    "distractor3": "t",
+    "category": "people",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "kid",
+    "sounds": [
+      "k",
+      "i",
+      "d"
+    ],
+    "correct_phoneme": "k",
+    "distractor1": "g",
+    "distractor2": "c",
+    "distractor3": "q",
+    "category": "people",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "man",
+    "sounds": [
+      "m",
+      "a",
+      "n"
+    ],
+    "correct_phoneme": "m",
+    "distractor1": "n",
+    "distractor2": "w",
+    "distractor3": "r",
+    "category": "people",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "fun",
+    "sounds": [
+      "f",
+      "u",
+      "n"
+    ],
+    "correct_phoneme": "f",
+    "distractor1": "v",
+    "distractor2": "s",
+    "distractor3": "z",
+    "category": "feelings",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "sad",
+    "sounds": [
+      "s",
+      "a",
+      "d"
+    ],
+    "correct_phoneme": "s",
+    "distractor1": "z",
+    "distractor2": "f",
+    "distractor3": "v",
+    "category": "feelings",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "mad",
+    "sounds": [
+      "m",
+      "a",
+      "d"
+    ],
+    "correct_phoneme": "m",
+    "distractor1": "n",
+    "distractor2": "w",
+    "distractor3": "r",
+    "category": "feelings",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "bad",
+    "sounds": [
+      "b",
+      "a",
+      "d"
+    ],
+    "correct_phoneme": "b",
+    "distractor1": "d",
+    "distractor2": "p",
+    "distractor3": "t",
+    "category": "adjectives",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "mud",
+    "sounds": [
+      "m",
+      "u",
+      "d"
+    ],
+    "correct_phoneme": "m",
+    "distractor1": "n",
+    "distractor2": "w",
+    "distractor3": "r",
+    "category": "nature",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "log",
+    "sounds": [
+      "l",
+      "o",
+      "g"
+    ],
+    "correct_phoneme": "l",
+    "distractor1": "r",
+    "distractor2": "w",
+    "distractor3": "y",
+    "category": "nature",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "jam",
+    "sounds": [
+      "j",
+      "a",
+      "m"
+    ],
+    "correct_phoneme": "j",
+    "distractor1": "y",
+    "distractor2": "ch",
+    "distractor3": "sh",
+    "category": "food",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "ham",
+    "sounds": [
+      "h",
+      "a",
+      "m"
+    ],
+    "correct_phoneme": "h",
+    "distractor1": "w",
+    "distractor2": "y",
+    "distractor3": "r",
+    "category": "food",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "nut",
+    "sounds": [
+      "n",
+      "u",
+      "t"
+    ],
+    "correct_phoneme": "n",
+    "distractor1": "m",
+    "distractor2": "r",
+    "distractor3": "l",
+    "category": "food",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "gum",
+    "sounds": [
+      "g",
+      "u",
+      "m"
+    ],
+    "correct_phoneme": "g",
+    "distractor1": "k",
+    "distractor2": "d",
+    "distractor3": "t",
+    "category": "food",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "bun",
+    "sounds": [
+      "b",
+      "u",
+      "n"
+    ],
+    "correct_phoneme": "b",
+    "distractor1": "d",
+    "distractor2": "p",
+    "distractor3": "t",
+    "category": "food",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "word": "arm",
+    "sounds": [
+      "a",
+      "r",
+      "m"
+    ],
+    "correct_phoneme": "a",
+    "distractor1": "e",
+    "distractor2": "i",
+    "distractor3": "o",
+    "category": "body",
+    "difficulty": "easy"
+  },
+  {
+    "level": 2,
+    "word": "ship",
+    "sounds": [
+      "sh",
+      "i",
+      "p"
+    ],
+    "correct_phoneme": "sh",
+    "distractor1": "ch",
+    "distractor2": "s",
+    "distractor3": "th",
+    "category": "transport",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "shop",
+    "sounds": [
+      "sh",
+      "o",
+      "p"
+    ],
+    "correct_phoneme": "sh",
+    "distractor1": "ch",
+    "distractor2": "s",
+    "distractor3": "th",
+    "category": "places",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "fish",
+    "sounds": [
+      "f",
+      "i",
+      "sh"
+    ],
+    "correct_phoneme": "sh",
+    "distractor1": "ch",
+    "distractor2": "s",
+    "distractor3": "th",
+    "category": "animals",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "dish",
+    "sounds": [
+      "d",
+      "i",
+      "sh"
+    ],
+    "correct_phoneme": "sh",
+    "distractor1": "ch",
+    "distractor2": "s",
+    "distractor3": "th",
+    "category": "things",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "wish",
+    "sounds": [
+      "w",
+      "i",
+      "sh"
+    ],
+    "correct_phoneme": "sh",
+    "distractor1": "ch",
+    "distractor2": "s",
+    "distractor3": "th",
+    "category": "actions",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "rush",
+    "sounds": [
+      "r",
+      "u",
+      "sh"
+    ],
+    "correct_phoneme": "sh",
+    "distractor1": "ch",
+    "distractor2": "s",
+    "distractor3": "th",
+    "category": "actions",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "chair",
+    "sounds": [
+      "ch",
+      "ai",
+      "r"
+    ],
+    "correct_phoneme": "ch",
+    "distractor1": "sh",
+    "distractor2": "j",
+    "distractor3": "th",
+    "category": "furniture",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "chip",
+    "sounds": [
+      "ch",
+      "i",
+      "p"
+    ],
+    "correct_phoneme": "ch",
+    "distractor1": "sh",
+    "distractor2": "j",
+    "distractor3": "th",
+    "category": "food",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "chat",
+    "sounds": [
+      "ch",
+      "a",
+      "t"
+    ],
+    "correct_phoneme": "ch",
+    "distractor1": "sh",
+    "distractor2": "j",
+    "distractor3": "th",
+    "category": "actions",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "chin",
+    "sounds": [
+      "ch",
+      "i",
+      "n"
+    ],
+    "correct_phoneme": "ch",
+    "distractor1": "sh",
+    "distractor2": "j",
+    "distractor3": "th",
+    "category": "body",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "chop",
+    "sounds": [
+      "ch",
+      "o",
+      "p"
+    ],
+    "correct_phoneme": "ch",
+    "distractor1": "sh",
+    "distractor2": "j",
+    "distractor3": "th",
+    "category": "actions",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "much",
+    "sounds": [
+      "m",
+      "u",
+      "ch"
+    ],
+    "correct_phoneme": "ch",
+    "distractor1": "sh",
+    "distractor2": "j",
+    "distractor3": "th",
+    "category": "quantifiers",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "thin",
+    "sounds": [
+      "th",
+      "i",
+      "n"
+    ],
+    "correct_phoneme": "th",
+    "distractor1": "f",
+    "distractor2": "s",
+    "distractor3": "sh",
+    "category": "adjectives",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "thick",
+    "sounds": [
+      "th",
+      "i",
+      "ck"
+    ],
+    "correct_phoneme": "th",
+    "distractor1": "f",
+    "distractor2": "s",
+    "distractor3": "sh",
+    "category": "adjectives",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "think",
+    "sounds": [
+      "th",
+      "i",
+      "nk"
+    ],
+    "correct_phoneme": "th",
+    "distractor1": "f",
+    "distractor2": "s",
+    "distractor3": "sh",
+    "category": "actions",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "thank",
+    "sounds": [
+      "th",
+      "a",
+      "nk"
+    ],
+    "correct_phoneme": "th",
+    "distractor1": "f",
+    "distractor2": "s",
+    "distractor3": "sh",
+    "category": "actions",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "bath",
+    "sounds": [
+      "b",
+      "a",
+      "th"
+    ],
+    "correct_phoneme": "th",
+    "distractor1": "f",
+    "distractor2": "s",
+    "distractor3": "sh",
+    "category": "places",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "path",
+    "sounds": [
+      "p",
+      "a",
+      "th"
+    ],
+    "correct_phoneme": "th",
+    "distractor1": "f",
+    "distractor2": "s",
+    "distractor3": "sh",
+    "category": "places",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "when",
+    "sounds": [
+      "wh",
+      "e",
+      "n"
+    ],
+    "correct_phoneme": "wh",
+    "distractor1": "w",
+    "distractor2": "h",
+    "distractor3": "sh",
+    "category": "questions",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "what",
+    "sounds": [
+      "wh",
+      "a",
+      "t"
+    ],
+    "correct_phoneme": "wh",
+    "distractor1": "w",
+    "distractor2": "h",
+    "distractor3": "sh",
+    "category": "questions",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "where",
+    "sounds": [
+      "wh",
+      "e",
+      "re"
+    ],
+    "correct_phoneme": "wh",
+    "distractor1": "w",
+    "distractor2": "h",
+    "distractor3": "sh",
+    "category": "questions",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "white",
+    "sounds": [
+      "wh",
+      "i",
+      "te"
+    ],
+    "correct_phoneme": "wh",
+    "distractor1": "w",
+    "distractor2": "h",
+    "distractor3": "sh",
+    "category": "colors",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "wheel",
+    "sounds": [
+      "wh",
+      "ee",
+      "l"
+    ],
+    "correct_phoneme": "wh",
+    "distractor1": "w",
+    "distractor2": "h",
+    "distractor3": "sh",
+    "category": "things",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "while",
+    "sounds": [
+      "wh",
+      "i",
+      "le"
+    ],
+    "correct_phoneme": "wh",
+    "distractor1": "w",
+    "distractor2": "h",
+    "distractor3": "sh",
+    "category": "time",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "ring",
+    "sounds": [
+      "r",
+      "i",
+      "ng"
+    ],
+    "correct_phoneme": "ng",
+    "distractor1": "n",
+    "distractor2": "m",
+    "distractor3": "nk",
+    "category": "things",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "sing",
+    "sounds": [
+      "s",
+      "i",
+      "ng"
+    ],
+    "correct_phoneme": "ng",
+    "distractor1": "n",
+    "distractor2": "m",
+    "distractor3": "nk",
+    "category": "actions",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "king",
+    "sounds": [
+      "k",
+      "i",
+      "ng"
+    ],
+    "correct_phoneme": "ng",
+    "distractor1": "n",
+    "distractor2": "m",
+    "distractor3": "nk",
+    "category": "people",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "long",
+    "sounds": [
+      "l",
+      "o",
+      "ng"
+    ],
+    "correct_phoneme": "ng",
+    "distractor1": "n",
+    "distractor2": "m",
+    "distractor3": "nk",
+    "category": "adjectives",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "song",
+    "sounds": [
+      "s",
+      "o",
+      "ng"
+    ],
+    "correct_phoneme": "ng",
+    "distractor1": "n",
+    "distractor2": "m",
+    "distractor3": "nk",
+    "category": "things",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "hang",
+    "sounds": [
+      "h",
+      "a",
+      "ng"
+    ],
+    "correct_phoneme": "ng",
+    "distractor1": "n",
+    "distractor2": "m",
+    "distractor3": "nk",
+    "category": "actions",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "back",
+    "sounds": [
+      "b",
+      "a",
+      "ck"
+    ],
+    "correct_phoneme": "ck",
+    "distractor1": "k",
+    "distractor2": "g",
+    "distractor3": "c",
+    "category": "body",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "pack",
+    "sounds": [
+      "p",
+      "a",
+      "ck"
+    ],
+    "correct_phoneme": "ck",
+    "distractor1": "k",
+    "distractor2": "g",
+    "distractor3": "c",
+    "category": "actions",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "pick",
+    "sounds": [
+      "p",
+      "i",
+      "ck"
+    ],
+    "correct_phoneme": "ck",
+    "distractor1": "k",
+    "distractor2": "g",
+    "distractor3": "c",
+    "category": "actions",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "rock",
+    "sounds": [
+      "r",
+      "o",
+      "ck"
+    ],
+    "correct_phoneme": "ck",
+    "distractor1": "k",
+    "distractor2": "g",
+    "distractor3": "c",
+    "category": "nature",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "duck",
+    "sounds": [
+      "d",
+      "u",
+      "ck"
+    ],
+    "correct_phoneme": "ck",
+    "distractor1": "k",
+    "distractor2": "g",
+    "distractor3": "c",
+    "category": "animals",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "luck",
+    "sounds": [
+      "l",
+      "u",
+      "ck"
+    ],
+    "correct_phoneme": "ck",
+    "distractor1": "k",
+    "distractor2": "g",
+    "distractor3": "c",
+    "category": "feelings",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "rain",
+    "sounds": [
+      "r",
+      "ai",
+      "n"
+    ],
+    "correct_phoneme": "ai",
+    "distractor1": "a",
+    "distractor2": "e",
+    "distractor3": "ay",
+    "category": "weather",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "train",
+    "sounds": [
+      "tr",
+      "ai",
+      "n"
+    ],
+    "correct_phoneme": "ai",
+    "distractor1": "a",
+    "distractor2": "e",
+    "distractor3": "ay",
+    "category": "vehicles",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "pain",
+    "sounds": [
+      "p",
+      "ai",
+      "n"
+    ],
+    "correct_phoneme": "ai",
+    "distractor1": "a",
+    "distractor2": "e",
+    "distractor3": "ay",
+    "category": "feelings",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "main",
+    "sounds": [
+      "m",
+      "ai",
+      "n"
+    ],
+    "correct_phoneme": "ai",
+    "distractor1": "a",
+    "distractor2": "e",
+    "distractor3": "ay",
+    "category": "adjectives",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "chain",
+    "sounds": [
+      "ch",
+      "ai",
+      "n"
+    ],
+    "correct_phoneme": "ai",
+    "distractor1": "a",
+    "distractor2": "e",
+    "distractor3": "ay",
+    "category": "things",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "brain",
+    "sounds": [
+      "br",
+      "ai",
+      "n"
+    ],
+    "correct_phoneme": "ai",
+    "distractor1": "a",
+    "distractor2": "e",
+    "distractor3": "ay",
+    "category": "body",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "play",
+    "sounds": [
+      "pl",
+      "ay"
+    ],
+    "correct_phoneme": "ay",
+    "distractor1": "ai",
+    "distractor2": "a",
+    "distractor3": "e",
+    "category": "actions",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "day",
+    "sounds": [
+      "d",
+      "ay"
+    ],
+    "correct_phoneme": "ay",
+    "distractor1": "ai",
+    "distractor2": "a",
+    "distractor3": "e",
+    "category": "time",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "way",
+    "sounds": [
+      "w",
+      "ay"
+    ],
+    "correct_phoneme": "ay",
+    "distractor1": "ai",
+    "distractor2": "a",
+    "distractor3": "e",
+    "category": "directions",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "say",
+    "sounds": [
+      "s",
+      "ay"
+    ],
+    "correct_phoneme": "ay",
+    "distractor1": "ai",
+    "distractor2": "a",
+    "distractor3": "e",
+    "category": "actions",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "may",
+    "sounds": [
+      "m",
+      "ay"
+    ],
+    "correct_phoneme": "ay",
+    "distractor1": "ai",
+    "distractor2": "a",
+    "distractor3": "e",
+    "category": "time",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "stay",
+    "sounds": [
+      "st",
+      "ay"
+    ],
+    "correct_phoneme": "ay",
+    "distractor1": "ai",
+    "distractor2": "a",
+    "distractor3": "e",
+    "category": "actions",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "tree",
+    "sounds": [
+      "tr",
+      "ee"
+    ],
+    "correct_phoneme": "ee",
+    "distractor1": "e",
+    "distractor2": "ea",
+    "distractor3": "ie",
+    "category": "nature",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "free",
+    "sounds": [
+      "fr",
+      "ee"
+    ],
+    "correct_phoneme": "ee",
+    "distractor1": "e",
+    "distractor2": "ea",
+    "distractor3": "ie",
+    "category": "adjectives",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "see",
+    "sounds": [
+      "s",
+      "ee"
+    ],
+    "correct_phoneme": "ee",
+    "distractor1": "e",
+    "distractor2": "ea",
+    "distractor3": "ie",
+    "category": "actions",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "bee",
+    "sounds": [
+      "b",
+      "ee"
+    ],
+    "correct_phoneme": "ee",
+    "distractor1": "e",
+    "distractor2": "ea",
+    "distractor3": "ie",
+    "category": "animals",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "three",
+    "sounds": [
+      "thr",
+      "ee"
+    ],
+    "correct_phoneme": "ee",
+    "distractor1": "e",
+    "distractor2": "ea",
+    "distractor3": "ie",
+    "category": "numbers",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "green",
+    "sounds": [
+      "gr",
+      "ee",
+      "n"
+    ],
+    "correct_phoneme": "ee",
+    "distractor1": "e",
+    "distractor2": "ea",
+    "distractor3": "ie",
+    "category": "colors",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "phone",
+    "sounds": [
+      "ph",
+      "o",
+      "ne"
+    ],
+    "correct_phoneme": "ph",
+    "distractor1": "f",
+    "distractor2": "th",
+    "distractor3": "sh",
+    "category": "technology",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "word": "photo",
+    "sounds": [
+      "ph",
+      "o",
+      "to"
+    ],
+    "correct_phoneme": "ph",
+    "distractor1": "f",
+    "distractor2": "th",
+    "distractor3": "sh",
+    "category": "things",
+    "difficulty": "medium"
+  },
+  {
+    "level": 3,
+    "word": "blue",
+    "sounds": [
+      "bl",
+      "ue"
+    ],
+    "correct_phoneme": "bl",
+    "distractor1": "cl",
+    "distractor2": "fl",
+    "distractor3": "gl",
+    "category": "colors",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "true",
+    "sounds": [
+      "tr",
+      "ue"
+    ],
+    "correct_phoneme": "tr",
+    "distractor1": "dr",
+    "distractor2": "pr",
+    "distractor3": "cr",
+    "category": "adjectives",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "glue",
+    "sounds": [
+      "gl",
+      "ue"
+    ],
+    "correct_phoneme": "gl",
+    "distractor1": "bl",
+    "distractor2": "cl",
+    "distractor3": "fl",
+    "category": "things",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "clue",
+    "sounds": [
+      "cl",
+      "ue"
+    ],
+    "correct_phoneme": "cl",
+    "distractor1": "bl",
+    "distractor2": "fl",
+    "distractor3": "gl",
+    "category": "things",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "value",
+    "sounds": [
+      "val",
+      "ue"
+    ],
+    "correct_phoneme": "v",
+    "distractor1": "f",
+    "distractor2": "b",
+    "distractor3": "p",
+    "category": "abstract",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "rescue",
+    "sounds": [
+      "resc",
+      "ue"
+    ],
+    "correct_phoneme": "r",
+    "distractor1": "l",
+    "distractor2": "w",
+    "distractor3": "y",
+    "category": "actions",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "new",
+    "sounds": [
+      "n",
+      "ew"
+    ],
+    "correct_phoneme": "ew",
+    "distractor1": "ue",
+    "distractor2": "u",
+    "distractor3": "oo",
+    "category": "adjectives",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "few",
+    "sounds": [
+      "f",
+      "ew"
+    ],
+    "correct_phoneme": "ew",
+    "distractor1": "ue",
+    "distractor2": "u",
+    "distractor3": "oo",
+    "category": "quantifiers",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "grew",
+    "sounds": [
+      "gr",
+      "ew"
+    ],
+    "correct_phoneme": "gr",
+    "distractor1": "tr",
+    "distractor2": "dr",
+    "distractor3": "pr",
+    "category": "actions",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "threw",
+    "sounds": [
+      "thr",
+      "ew"
+    ],
+    "correct_phoneme": "thr",
+    "distractor1": "shr",
+    "distractor2": "str",
+    "distractor3": "spl",
+    "category": "actions",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "knew",
+    "sounds": [
+      "kn",
+      "ew"
+    ],
+    "correct_phoneme": "kn",
+    "distractor1": "n",
+    "distractor2": "gn",
+    "distractor3": "wr",
+    "category": "actions",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "drew",
+    "sounds": [
+      "dr",
+      "ew"
+    ],
+    "correct_phoneme": "dr",
+    "distractor1": "tr",
+    "distractor2": "gr",
+    "distractor3": "pr",
+    "category": "actions",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "night",
+    "sounds": [
+      "n",
+      "igh",
+      "t"
+    ],
+    "correct_phoneme": "igh",
+    "distractor1": "i",
+    "distractor2": "y",
+    "distractor3": "ie",
+    "category": "time",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "light",
+    "sounds": [
+      "l",
+      "igh",
+      "t"
+    ],
+    "correct_phoneme": "igh",
+    "distractor1": "i",
+    "distractor2": "y",
+    "distractor3": "ie",
+    "category": "things",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "right",
+    "sounds": [
+      "r",
+      "igh",
+      "t"
+    ],
+    "correct_phoneme": "igh",
+    "distractor1": "i",
+    "distractor2": "y",
+    "distractor3": "ie",
+    "category": "directions",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "fight",
+    "sounds": [
+      "f",
+      "igh",
+      "t"
+    ],
+    "correct_phoneme": "igh",
+    "distractor1": "i",
+    "distractor2": "y",
+    "distractor3": "ie",
+    "category": "actions",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "bright",
+    "sounds": [
+      "br",
+      "igh",
+      "t"
+    ],
+    "correct_phoneme": "igh",
+    "distractor1": "i",
+    "distractor2": "y",
+    "distractor3": "ie",
+    "category": "adjectives",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "sight",
+    "sounds": [
+      "s",
+      "igh",
+      "t"
+    ],
+    "correct_phoneme": "igh",
+    "distractor1": "i",
+    "distractor2": "y",
+    "distractor3": "ie",
+    "category": "senses",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "boat",
+    "sounds": [
+      "b",
+      "oa",
+      "t"
+    ],
+    "correct_phoneme": "oa",
+    "distractor1": "o",
+    "distractor2": "ow",
+    "distractor3": "ou",
+    "category": "vehicles",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "coat",
+    "sounds": [
+      "c",
+      "oa",
+      "t"
+    ],
+    "correct_phoneme": "oa",
+    "distractor1": "o",
+    "distractor2": "ow",
+    "distractor3": "ou",
+    "category": "clothes",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "goat",
+    "sounds": [
+      "g",
+      "oa",
+      "t"
+    ],
+    "correct_phoneme": "oa",
+    "distractor1": "o",
+    "distractor2": "ow",
+    "distractor3": "ou",
+    "category": "animals",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "float",
+    "sounds": [
+      "fl",
+      "oa",
+      "t"
+    ],
+    "correct_phoneme": "fl",
+    "distractor1": "bl",
+    "distractor2": "cl",
+    "distractor3": "gl",
+    "category": "actions",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "throat",
+    "sounds": [
+      "thr",
+      "oa",
+      "t"
+    ],
+    "correct_phoneme": "thr",
+    "distractor1": "shr",
+    "distractor2": "str",
+    "distractor3": "spl",
+    "category": "body",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "road",
+    "sounds": [
+      "r",
+      "oa",
+      "d"
+    ],
+    "correct_phoneme": "oa",
+    "distractor1": "o",
+    "distractor2": "ow",
+    "distractor3": "ou",
+    "category": "places",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "snow",
+    "sounds": [
+      "sn",
+      "ow"
+    ],
+    "correct_phoneme": "sn",
+    "distractor1": "sm",
+    "distractor2": "sw",
+    "distractor3": "sp",
+    "category": "weather",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "grow",
+    "sounds": [
+      "gr",
+      "ow"
+    ],
+    "correct_phoneme": "gr",
+    "distractor1": "tr",
+    "distractor2": "dr",
+    "distractor3": "pr",
+    "category": "actions",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "show",
+    "sounds": [
+      "sh",
+      "ow"
+    ],
+    "correct_phoneme": "sh",
+    "distractor1": "ch",
+    "distractor2": "th",
+    "distractor3": "wh",
+    "category": "actions",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "slow",
+    "sounds": [
+      "sl",
+      "ow"
+    ],
+    "correct_phoneme": "sl",
+    "distractor1": "bl",
+    "distractor2": "cl",
+    "distractor3": "fl",
+    "category": "adjectives",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "blow",
+    "sounds": [
+      "bl",
+      "ow"
+    ],
+    "correct_phoneme": "bl",
+    "distractor1": "cl",
+    "distractor2": "fl",
+    "distractor3": "gl",
+    "category": "actions",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "throw",
+    "sounds": [
+      "thr",
+      "ow"
+    ],
+    "correct_phoneme": "thr",
+    "distractor1": "shr",
+    "distractor2": "str",
+    "distractor3": "spl",
+    "category": "actions",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "moon",
+    "sounds": [
+      "m",
+      "oo",
+      "n"
+    ],
+    "correct_phoneme": "oo",
+    "distractor1": "u",
+    "distractor2": "ue",
+    "distractor3": "ew",
+    "category": "nature",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "soon",
+    "sounds": [
+      "s",
+      "oo",
+      "n"
+    ],
+    "correct_phoneme": "oo",
+    "distractor1": "u",
+    "distractor2": "ue",
+    "distractor3": "ew",
+    "category": "time",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "spoon",
+    "sounds": [
+      "sp",
+      "oo",
+      "n"
+    ],
+    "correct_phoneme": "sp",
+    "distractor1": "st",
+    "distractor2": "sk",
+    "distractor3": "sm",
+    "category": "things",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "room",
+    "sounds": [
+      "r",
+      "oo",
+      "m"
+    ],
+    "correct_phoneme": "oo",
+    "distractor1": "u",
+    "distractor2": "ue",
+    "distractor3": "ew",
+    "category": "places",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "cool",
+    "sounds": [
+      "c",
+      "oo",
+      "l"
+    ],
+    "correct_phoneme": "oo",
+    "distractor1": "u",
+    "distractor2": "ue",
+    "distractor3": "ew",
+    "category": "adjectives",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "pool",
+    "sounds": [
+      "p",
+      "oo",
+      "l"
+    ],
+    "correct_phoneme": "oo",
+    "distractor1": "u",
+    "distractor2": "ue",
+    "distractor3": "ew",
+    "category": "places",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "book",
+    "sounds": [
+      "b",
+      "oo",
+      "k"
+    ],
+    "correct_phoneme": "oo",
+    "distractor1": "u",
+    "distractor2": "ue",
+    "distractor3": "ew",
+    "category": "things",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "look",
+    "sounds": [
+      "l",
+      "oo",
+      "k"
+    ],
+    "correct_phoneme": "oo",
+    "distractor1": "u",
+    "distractor2": "ue",
+    "distractor3": "ew",
+    "category": "actions",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "took",
+    "sounds": [
+      "t",
+      "oo",
+      "k"
+    ],
+    "correct_phoneme": "oo",
+    "distractor1": "u",
+    "distractor2": "ue",
+    "distractor3": "ew",
+    "category": "actions",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "good",
+    "sounds": [
+      "g",
+      "oo",
+      "d"
+    ],
+    "correct_phoneme": "oo",
+    "distractor1": "u",
+    "distractor2": "ue",
+    "distractor3": "ew",
+    "category": "adjectives",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "wood",
+    "sounds": [
+      "w",
+      "oo",
+      "d"
+    ],
+    "correct_phoneme": "oo",
+    "distractor1": "u",
+    "distractor2": "ue",
+    "distractor3": "ew",
+    "category": "materials",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "stood",
+    "sounds": [
+      "st",
+      "oo",
+      "d"
+    ],
+    "correct_phoneme": "st",
+    "distractor1": "sp",
+    "distractor2": "sk",
+    "distractor3": "sm",
+    "category": "actions",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "car",
+    "sounds": [
+      "c",
+      "ar"
+    ],
+    "correct_phoneme": "ar",
+    "distractor1": "or",
+    "distractor2": "er",
+    "distractor3": "ur",
+    "category": "vehicles",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "star",
+    "sounds": [
+      "st",
+      "ar"
+    ],
+    "correct_phoneme": "st",
+    "distractor1": "sp",
+    "distractor2": "sk",
+    "distractor3": "sm",
+    "category": "nature",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "far",
+    "sounds": [
+      "f",
+      "ar"
+    ],
+    "correct_phoneme": "ar",
+    "distractor1": "or",
+    "distractor2": "er",
+    "distractor3": "ur",
+    "category": "distances",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "arm",
+    "sounds": [
+      "ar",
+      "m"
+    ],
+    "correct_phoneme": "ar",
+    "distractor1": "or",
+    "distractor2": "er",
+    "distractor3": "ur",
+    "category": "body",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "park",
+    "sounds": [
+      "p",
+      "ar",
+      "k"
+    ],
+    "correct_phoneme": "ar",
+    "distractor1": "or",
+    "distractor2": "er",
+    "distractor3": "ur",
+    "category": "places",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "dark",
+    "sounds": [
+      "d",
+      "ar",
+      "k"
+    ],
+    "correct_phoneme": "ar",
+    "distractor1": "or",
+    "distractor2": "er",
+    "distractor3": "ur",
+    "category": "adjectives",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "for",
+    "sounds": [
+      "f",
+      "or"
+    ],
+    "correct_phoneme": "or",
+    "distractor1": "ar",
+    "distractor2": "er",
+    "distractor3": "ur",
+    "category": "prepositions",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "born",
+    "sounds": [
+      "b",
+      "or",
+      "n"
+    ],
+    "correct_phoneme": "or",
+    "distractor1": "ar",
+    "distractor2": "er",
+    "distractor3": "ur",
+    "category": "actions",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "corn",
+    "sounds": [
+      "c",
+      "or",
+      "n"
+    ],
+    "correct_phoneme": "or",
+    "distractor1": "ar",
+    "distractor2": "er",
+    "distractor3": "ur",
+    "category": "food",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "horn",
+    "sounds": [
+      "h",
+      "or",
+      "n"
+    ],
+    "correct_phoneme": "or",
+    "distractor1": "ar",
+    "distractor2": "er",
+    "distractor3": "ur",
+    "category": "things",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "storm",
+    "sounds": [
+      "st",
+      "or",
+      "m"
+    ],
+    "correct_phoneme": "st",
+    "distractor1": "sp",
+    "distractor2": "sk",
+    "distractor3": "sm",
+    "category": "weather",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "word": "short",
+    "sounds": [
+      "sh",
+      "or",
+      "t"
+    ],
+    "correct_phoneme": "sh",
+    "distractor1": "ch",
+    "distractor2": "th",
+    "distractor3": "wh",
+    "category": "adjectives",
+    "difficulty": "hard"
+  },
+  {
+    "level": 4,
+    "word": "school",
+    "sounds": [
+      "sch",
+      "oo",
+      "l"
+    ],
+    "correct_phoneme": "sch",
+    "distractor1": "sh",
+    "distractor2": "ch",
+    "distractor3": "sk",
+    "category": "education",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "schedule",
+    "sounds": [
+      "sch",
+      "ed",
+      "ule"
+    ],
+    "correct_phoneme": "sch",
+    "distractor1": "sh",
+    "distractor2": "ch",
+    "distractor3": "sk",
+    "category": "time",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "scheme",
+    "sounds": [
+      "sch",
+      "e",
+      "me"
+    ],
+    "correct_phoneme": "sch",
+    "distractor1": "sh",
+    "distractor2": "ch",
+    "distractor3": "sk",
+    "category": "planning",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "scholar",
+    "sounds": [
+      "sch",
+      "ol",
+      "ar"
+    ],
+    "correct_phoneme": "sch",
+    "distractor1": "sh",
+    "distractor2": "ch",
+    "distractor3": "sk",
+    "category": "education",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "scholarship",
+    "sounds": [
+      "sch",
+      "ol",
+      "ar",
+      "ship"
+    ],
+    "correct_phoneme": "sch",
+    "distractor1": "sh",
+    "distractor2": "ch",
+    "distractor3": "sk",
+    "category": "education",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "schism",
+    "sounds": [
+      "sch",
+      "i",
+      "sm"
+    ],
+    "correct_phoneme": "sch",
+    "distractor1": "sh",
+    "distractor2": "ch",
+    "distractor3": "sk",
+    "category": "abstract",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "know",
+    "sounds": [
+      "kn",
+      "ow"
+    ],
+    "correct_phoneme": "kn",
+    "distractor1": "n",
+    "distractor2": "gn",
+    "distractor3": "wr",
+    "category": "knowledge",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "knee",
+    "sounds": [
+      "kn",
+      "ee"
+    ],
+    "correct_phoneme": "kn",
+    "distractor1": "n",
+    "distractor2": "gn",
+    "distractor3": "wr",
+    "category": "body",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "knife",
+    "sounds": [
+      "kn",
+      "i",
+      "fe"
+    ],
+    "correct_phoneme": "kn",
+    "distractor1": "n",
+    "distractor2": "gn",
+    "distractor3": "wr",
+    "category": "tools",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "knock",
+    "sounds": [
+      "kn",
+      "o",
+      "ck"
+    ],
+    "correct_phoneme": "kn",
+    "distractor1": "n",
+    "distractor2": "gn",
+    "distractor3": "wr",
+    "category": "actions",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "knit",
+    "sounds": [
+      "kn",
+      "i",
+      "t"
+    ],
+    "correct_phoneme": "kn",
+    "distractor1": "n",
+    "distractor2": "gn",
+    "distractor3": "wr",
+    "category": "actions",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "knot",
+    "sounds": [
+      "kn",
+      "o",
+      "t"
+    ],
+    "correct_phoneme": "kn",
+    "distractor1": "n",
+    "distractor2": "gn",
+    "distractor3": "wr",
+    "category": "things",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "gnome",
+    "sounds": [
+      "gn",
+      "o",
+      "me"
+    ],
+    "correct_phoneme": "gn",
+    "distractor1": "n",
+    "distractor2": "kn",
+    "distractor3": "wr",
+    "category": "fantasy",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "gnaw",
+    "sounds": [
+      "gn",
+      "aw"
+    ],
+    "correct_phoneme": "gn",
+    "distractor1": "n",
+    "distractor2": "kn",
+    "distractor3": "wr",
+    "category": "actions",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "gnat",
+    "sounds": [
+      "gn",
+      "a",
+      "t"
+    ],
+    "correct_phoneme": "gn",
+    "distractor1": "n",
+    "distractor2": "kn",
+    "distractor3": "wr",
+    "category": "animals",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "gnu",
+    "sounds": [
+      "gn",
+      "u"
+    ],
+    "correct_phoneme": "gn",
+    "distractor1": "n",
+    "distractor2": "kn",
+    "distractor3": "wr",
+    "category": "animals",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "gnarl",
+    "sounds": [
+      "gn",
+      "ar",
+      "l"
+    ],
+    "correct_phoneme": "gn",
+    "distractor1": "n",
+    "distractor2": "kn",
+    "distractor3": "wr",
+    "category": "nature",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "design",
+    "sounds": [
+      "des",
+      "i",
+      "gn"
+    ],
+    "correct_phoneme": "gn",
+    "distractor1": "n",
+    "distractor2": "kn",
+    "distractor3": "wr",
+    "category": "actions",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "write",
+    "sounds": [
+      "wr",
+      "i",
+      "te"
+    ],
+    "correct_phoneme": "wr",
+    "distractor1": "r",
+    "distractor2": "kn",
+    "distractor3": "gn",
+    "category": "actions",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "wrong",
+    "sounds": [
+      "wr",
+      "o",
+      "ng"
+    ],
+    "correct_phoneme": "wr",
+    "distractor1": "r",
+    "distractor2": "kn",
+    "distractor3": "gn",
+    "category": "adjectives",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "wrap",
+    "sounds": [
+      "wr",
+      "a",
+      "p"
+    ],
+    "correct_phoneme": "wr",
+    "distractor1": "r",
+    "distractor2": "kn",
+    "distractor3": "gn",
+    "category": "actions",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "wrist",
+    "sounds": [
+      "wr",
+      "i",
+      "st"
+    ],
+    "correct_phoneme": "wr",
+    "distractor1": "r",
+    "distractor2": "kn",
+    "distractor3": "gn",
+    "category": "body",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "wreck",
+    "sounds": [
+      "wr",
+      "e",
+      "ck"
+    ],
+    "correct_phoneme": "wr",
+    "distractor1": "r",
+    "distractor2": "kn",
+    "distractor3": "gn",
+    "category": "actions",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "wrestle",
+    "sounds": [
+      "wr",
+      "e",
+      "st",
+      "le"
+    ],
+    "correct_phoneme": "wr",
+    "distractor1": "r",
+    "distractor2": "kn",
+    "distractor3": "gn",
+    "category": "sports",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "phone",
+    "sounds": [
+      "ph",
+      "o",
+      "ne"
+    ],
+    "correct_phoneme": "ph",
+    "distractor1": "f",
+    "distractor2": "th",
+    "distractor3": "gh",
+    "category": "technology",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "photo",
+    "sounds": [
+      "ph",
+      "o",
+      "to"
+    ],
+    "correct_phoneme": "ph",
+    "distractor1": "f",
+    "distractor2": "th",
+    "distractor3": "gh",
+    "category": "things",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "phrase",
+    "sounds": [
+      "ph",
+      "r",
+      "a",
+      "se"
+    ],
+    "correct_phoneme": "ph",
+    "distractor1": "f",
+    "distractor2": "th",
+    "distractor3": "gh",
+    "category": "language",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "physical",
+    "sounds": [
+      "ph",
+      "y",
+      "s",
+      "i",
+      "cal"
+    ],
+    "correct_phoneme": "ph",
+    "distractor1": "f",
+    "distractor2": "th",
+    "distractor3": "gh",
+    "category": "adjectives",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "philosophy",
+    "sounds": [
+      "ph",
+      "i",
+      "l",
+      "o",
+      "s",
+      "o",
+      "phy"
+    ],
+    "correct_phoneme": "ph",
+    "distractor1": "f",
+    "distractor2": "th",
+    "distractor3": "gh",
+    "category": "subjects",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "phantom",
+    "sounds": [
+      "ph",
+      "a",
+      "n",
+      "tom"
+    ],
+    "correct_phoneme": "ph",
+    "distractor1": "f",
+    "distractor2": "th",
+    "distractor3": "gh",
+    "category": "supernatural",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "psychology",
+    "sounds": [
+      "psy",
+      "ch",
+      "ol",
+      "o",
+      "gy"
+    ],
+    "correct_phoneme": "psy",
+    "distractor1": "sy",
+    "distractor2": "ps",
+    "distractor3": "sc",
+    "category": "science",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "psychiatry",
+    "sounds": [
+      "psy",
+      "ch",
+      "i",
+      "a",
+      "try"
+    ],
+    "correct_phoneme": "psy",
+    "distractor1": "sy",
+    "distractor2": "ps",
+    "distractor3": "sc",
+    "category": "medicine",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "psychic",
+    "sounds": [
+      "psy",
+      "ch",
+      "i",
+      "c"
+    ],
+    "correct_phoneme": "psy",
+    "distractor1": "sy",
+    "distractor2": "ps",
+    "distractor3": "sc",
+    "category": "supernatural",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "psyche",
+    "sounds": [
+      "psy",
+      "ch",
+      "e"
+    ],
+    "correct_phoneme": "psy",
+    "distractor1": "sy",
+    "distractor2": "ps",
+    "distractor3": "sc",
+    "category": "mind",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "psychotic",
+    "sounds": [
+      "psy",
+      "ch",
+      "o",
+      "t",
+      "ic"
+    ],
+    "correct_phoneme": "psy",
+    "distractor1": "sy",
+    "distractor2": "ps",
+    "distractor3": "sc",
+    "category": "medical",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "psychopath",
+    "sounds": [
+      "psy",
+      "ch",
+      "o",
+      "path"
+    ],
+    "correct_phoneme": "psy",
+    "distractor1": "sy",
+    "distractor2": "ps",
+    "distractor3": "sc",
+    "category": "medical",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "rhyme",
+    "sounds": [
+      "rh",
+      "y",
+      "me"
+    ],
+    "correct_phoneme": "rh",
+    "distractor1": "r",
+    "distractor2": "th",
+    "distractor3": "wh",
+    "category": "language",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "rhythm",
+    "sounds": [
+      "rh",
+      "y",
+      "th",
+      "m"
+    ],
+    "correct_phoneme": "rh",
+    "distractor1": "r",
+    "distractor2": "th",
+    "distractor3": "wh",
+    "category": "music",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "rhinoceros",
+    "sounds": [
+      "rh",
+      "i",
+      "n",
+      "o",
+      "c",
+      "er",
+      "os"
+    ],
+    "correct_phoneme": "rh",
+    "distractor1": "r",
+    "distractor2": "th",
+    "distractor3": "wh",
+    "category": "animals",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "rhubarb",
+    "sounds": [
+      "rh",
+      "u",
+      "b",
+      "ar",
+      "b"
+    ],
+    "correct_phoneme": "rh",
+    "distractor1": "r",
+    "distractor2": "th",
+    "distractor3": "wh",
+    "category": "food",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "rhetoric",
+    "sounds": [
+      "rh",
+      "e",
+      "t",
+      "or",
+      "ic"
+    ],
+    "correct_phoneme": "rh",
+    "distractor1": "r",
+    "distractor2": "th",
+    "distractor3": "wh",
+    "category": "language",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "rhapsody",
+    "sounds": [
+      "rh",
+      "a",
+      "p",
+      "s",
+      "o",
+      "dy"
+    ],
+    "correct_phoneme": "rh",
+    "distractor1": "r",
+    "distractor2": "th",
+    "distractor3": "wh",
+    "category": "music",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "watch",
+    "sounds": [
+      "w",
+      "a",
+      "tch"
+    ],
+    "correct_phoneme": "tch",
+    "distractor1": "ch",
+    "distractor2": "sh",
+    "distractor3": "th",
+    "category": "actions",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "catch",
+    "sounds": [
+      "c",
+      "a",
+      "tch"
+    ],
+    "correct_phoneme": "tch",
+    "distractor1": "ch",
+    "distractor2": "sh",
+    "distractor3": "th",
+    "category": "actions",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "match",
+    "sounds": [
+      "m",
+      "a",
+      "tch"
+    ],
+    "correct_phoneme": "tch",
+    "distractor1": "ch",
+    "distractor2": "sh",
+    "distractor3": "th",
+    "category": "actions",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "patch",
+    "sounds": [
+      "p",
+      "a",
+      "tch"
+    ],
+    "correct_phoneme": "tch",
+    "distractor1": "ch",
+    "distractor2": "sh",
+    "distractor3": "th",
+    "category": "actions",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "scratch",
+    "sounds": [
+      "scr",
+      "a",
+      "tch"
+    ],
+    "correct_phoneme": "scr",
+    "distractor1": "str",
+    "distractor2": "spl",
+    "distractor3": "spr",
+    "category": "actions",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "stretch",
+    "sounds": [
+      "str",
+      "e",
+      "tch"
+    ],
+    "correct_phoneme": "str",
+    "distractor1": "scr",
+    "distractor2": "spl",
+    "distractor3": "spr",
+    "category": "actions",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "bridge",
+    "sounds": [
+      "br",
+      "i",
+      "dge"
+    ],
+    "correct_phoneme": "dge",
+    "distractor1": "ge",
+    "distractor2": "j",
+    "distractor3": "g",
+    "category": "structures",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "judge",
+    "sounds": [
+      "j",
+      "u",
+      "dge"
+    ],
+    "correct_phoneme": "dge",
+    "distractor1": "ge",
+    "distractor2": "j",
+    "distractor3": "g",
+    "category": "people",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "fudge",
+    "sounds": [
+      "f",
+      "u",
+      "dge"
+    ],
+    "correct_phoneme": "dge",
+    "distractor1": "ge",
+    "distractor2": "j",
+    "distractor3": "g",
+    "category": "food",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "edge",
+    "sounds": [
+      "e",
+      "dge"
+    ],
+    "correct_phoneme": "dge",
+    "distractor1": "ge",
+    "distractor2": "j",
+    "distractor3": "g",
+    "category": "places",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "pledge",
+    "sounds": [
+      "pl",
+      "e",
+      "dge"
+    ],
+    "correct_phoneme": "pl",
+    "distractor1": "bl",
+    "distractor2": "cl",
+    "distractor3": "fl",
+    "category": "actions",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "wedge",
+    "sounds": [
+      "w",
+      "e",
+      "dge"
+    ],
+    "correct_phoneme": "dge",
+    "distractor1": "ge",
+    "distractor2": "j",
+    "distractor3": "g",
+    "category": "things",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "through",
+    "sounds": [
+      "thr",
+      "ough"
+    ],
+    "correct_phoneme": "thr",
+    "distractor1": "shr",
+    "distractor2": "str",
+    "distractor3": "spl",
+    "category": "prepositions",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "though",
+    "sounds": [
+      "th",
+      "ough"
+    ],
+    "correct_phoneme": "th",
+    "distractor1": "sh",
+    "distractor2": "ch",
+    "distractor3": "wh",
+    "category": "conjunctions",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "rough",
+    "sounds": [
+      "r",
+      "ough"
+    ],
+    "correct_phoneme": "ough",
+    "distractor1": "ow",
+    "distractor2": "ou",
+    "distractor3": "oo",
+    "category": "adjectives",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "tough",
+    "sounds": [
+      "t",
+      "ough"
+    ],
+    "correct_phoneme": "ough",
+    "distractor1": "ow",
+    "distractor2": "ou",
+    "distractor3": "oo",
+    "category": "adjectives",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "enough",
+    "sounds": [
+      "en",
+      "ough"
+    ],
+    "correct_phoneme": "ough",
+    "distractor1": "ow",
+    "distractor2": "ou",
+    "distractor3": "oo",
+    "category": "quantifiers",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "word": "cough",
+    "sounds": [
+      "c",
+      "ough"
+    ],
+    "correct_phoneme": "ough",
+    "distractor1": "ow",
+    "distractor2": "ou",
+    "distractor3": "oo",
+    "category": "actions",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 5,
+    "word": "action",
+    "sounds": [
+      "ac",
+      "tion"
+    ],
+    "correct_phoneme": "tion",
+    "distractor1": "sion",
+    "distractor2": "shun",
+    "distractor3": "shan",
+    "category": "actions",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "station",
+    "sounds": [
+      "sta",
+      "tion"
+    ],
+    "correct_phoneme": "tion",
+    "distractor1": "sion",
+    "distractor2": "shun",
+    "distractor3": "shan",
+    "category": "places",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "nation",
+    "sounds": [
+      "na",
+      "tion"
+    ],
+    "correct_phoneme": "tion",
+    "distractor1": "sion",
+    "distractor2": "shun",
+    "distractor3": "shan",
+    "category": "places",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "motion",
+    "sounds": [
+      "mo",
+      "tion"
+    ],
+    "correct_phoneme": "tion",
+    "distractor1": "sion",
+    "distractor2": "shun",
+    "distractor3": "shan",
+    "category": "actions",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "vacation",
+    "sounds": [
+      "vaca",
+      "tion"
+    ],
+    "correct_phoneme": "tion",
+    "distractor1": "sion",
+    "distractor2": "shun",
+    "distractor3": "shan",
+    "category": "activities",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "education",
+    "sounds": [
+      "educa",
+      "tion"
+    ],
+    "correct_phoneme": "tion",
+    "distractor1": "sion",
+    "distractor2": "shun",
+    "distractor3": "shan",
+    "category": "abstract",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "vision",
+    "sounds": [
+      "vi",
+      "sion"
+    ],
+    "correct_phoneme": "sion",
+    "distractor1": "tion",
+    "distractor2": "shun",
+    "distractor3": "shan",
+    "category": "senses",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "mission",
+    "sounds": [
+      "mi",
+      "ssion"
+    ],
+    "correct_phoneme": "sion",
+    "distractor1": "tion",
+    "distractor2": "shun",
+    "distractor3": "shan",
+    "category": "activities",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "decision",
+    "sounds": [
+      "deci",
+      "sion"
+    ],
+    "correct_phoneme": "sion",
+    "distractor1": "tion",
+    "distractor2": "shun",
+    "distractor3": "shan",
+    "category": "actions",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "division",
+    "sounds": [
+      "divi",
+      "sion"
+    ],
+    "correct_phoneme": "sion",
+    "distractor1": "tion",
+    "distractor2": "shun",
+    "distractor3": "shan",
+    "category": "math",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "confusion",
+    "sounds": [
+      "confu",
+      "sion"
+    ],
+    "correct_phoneme": "sion",
+    "distractor1": "tion",
+    "distractor2": "shun",
+    "distractor3": "shan",
+    "category": "feelings",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "television",
+    "sounds": [
+      "televi",
+      "sion"
+    ],
+    "correct_phoneme": "sion",
+    "distractor1": "tion",
+    "distractor2": "shun",
+    "distractor3": "shan",
+    "category": "technology",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "special",
+    "sounds": [
+      "spe",
+      "cial"
+    ],
+    "correct_phoneme": "cial",
+    "distractor1": "tial",
+    "distractor2": "shal",
+    "distractor3": "thal",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "social",
+    "sounds": [
+      "so",
+      "cial"
+    ],
+    "correct_phoneme": "cial",
+    "distractor1": "tial",
+    "distractor2": "shal",
+    "distractor3": "thal",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "commercial",
+    "sounds": [
+      "commer",
+      "cial"
+    ],
+    "correct_phoneme": "cial",
+    "distractor1": "tial",
+    "distractor2": "shal",
+    "distractor3": "thal",
+    "category": "business",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "financial",
+    "sounds": [
+      "finan",
+      "cial"
+    ],
+    "correct_phoneme": "cial",
+    "distractor1": "tial",
+    "distractor2": "shal",
+    "distractor3": "thal",
+    "category": "business",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "official",
+    "sounds": [
+      "offi",
+      "cial"
+    ],
+    "correct_phoneme": "cial",
+    "distractor1": "tial",
+    "distractor2": "shal",
+    "distractor3": "thal",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "crucial",
+    "sounds": [
+      "cru",
+      "cial"
+    ],
+    "correct_phoneme": "cial",
+    "distractor1": "tial",
+    "distractor2": "shal",
+    "distractor3": "thal",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "partial",
+    "sounds": [
+      "par",
+      "tial"
+    ],
+    "correct_phoneme": "tial",
+    "distractor1": "cial",
+    "distractor2": "shal",
+    "distractor3": "thal",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "essential",
+    "sounds": [
+      "essen",
+      "tial"
+    ],
+    "correct_phoneme": "tial",
+    "distractor1": "cial",
+    "distractor2": "shal",
+    "distractor3": "thal",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "potential",
+    "sounds": [
+      "poten",
+      "tial"
+    ],
+    "correct_phoneme": "tial",
+    "distractor1": "cial",
+    "distractor2": "shal",
+    "distractor3": "thal",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "initial",
+    "sounds": [
+      "ini",
+      "tial"
+    ],
+    "correct_phoneme": "tial",
+    "distractor1": "cial",
+    "distractor2": "shal",
+    "distractor3": "thal",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "spatial",
+    "sounds": [
+      "spa",
+      "tial"
+    ],
+    "correct_phoneme": "tial",
+    "distractor1": "cial",
+    "distractor2": "shal",
+    "distractor3": "thal",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "martial",
+    "sounds": [
+      "mar",
+      "tial"
+    ],
+    "correct_phoneme": "tial",
+    "distractor1": "cial",
+    "distractor2": "shal",
+    "distractor3": "thal",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "picture",
+    "sounds": [
+      "pic",
+      "ture"
+    ],
+    "correct_phoneme": "ture",
+    "distractor1": "sure",
+    "distractor2": "chur",
+    "distractor3": "shur",
+    "category": "things",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "nature",
+    "sounds": [
+      "na",
+      "ture"
+    ],
+    "correct_phoneme": "ture",
+    "distractor1": "sure",
+    "distractor2": "chur",
+    "distractor3": "shur",
+    "category": "abstract",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "future",
+    "sounds": [
+      "fu",
+      "ture"
+    ],
+    "correct_phoneme": "ture",
+    "distractor1": "sure",
+    "distractor2": "chur",
+    "distractor3": "shur",
+    "category": "time",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "culture",
+    "sounds": [
+      "cul",
+      "ture"
+    ],
+    "correct_phoneme": "ture",
+    "distractor1": "sure",
+    "distractor2": "chur",
+    "distractor3": "shur",
+    "category": "abstract",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "adventure",
+    "sounds": [
+      "adven",
+      "ture"
+    ],
+    "correct_phoneme": "ture",
+    "distractor1": "sure",
+    "distractor2": "chur",
+    "distractor3": "shur",
+    "category": "activities",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "literature",
+    "sounds": [
+      "litera",
+      "ture"
+    ],
+    "correct_phoneme": "ture",
+    "distractor1": "sure",
+    "distractor2": "chur",
+    "distractor3": "shur",
+    "category": "education",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "measure",
+    "sounds": [
+      "mea",
+      "sure"
+    ],
+    "correct_phoneme": "sure",
+    "distractor1": "ture",
+    "distractor2": "chur",
+    "distractor3": "shur",
+    "category": "actions",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "treasure",
+    "sounds": [
+      "trea",
+      "sure"
+    ],
+    "correct_phoneme": "sure",
+    "distractor1": "ture",
+    "distractor2": "chur",
+    "distractor3": "shur",
+    "category": "things",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "pleasure",
+    "sounds": [
+      "plea",
+      "sure"
+    ],
+    "correct_phoneme": "sure",
+    "distractor1": "ture",
+    "distractor2": "chur",
+    "distractor3": "shur",
+    "category": "feelings",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "pressure",
+    "sounds": [
+      "pres",
+      "sure"
+    ],
+    "correct_phoneme": "sure",
+    "distractor1": "ture",
+    "distractor2": "chur",
+    "distractor3": "shur",
+    "category": "abstract",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "leisure",
+    "sounds": [
+      "lei",
+      "sure"
+    ],
+    "correct_phoneme": "sure",
+    "distractor1": "ture",
+    "distractor2": "chur",
+    "distractor3": "shur",
+    "category": "activities",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "exposure",
+    "sounds": [
+      "expo",
+      "sure"
+    ],
+    "correct_phoneme": "sure",
+    "distractor1": "ture",
+    "distractor2": "chur",
+    "distractor3": "shur",
+    "category": "abstract",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "famous",
+    "sounds": [
+      "fam",
+      "ous"
+    ],
+    "correct_phoneme": "ous",
+    "distractor1": "us",
+    "distractor2": "ious",
+    "distractor3": "eous",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "dangerous",
+    "sounds": [
+      "danger",
+      "ous"
+    ],
+    "correct_phoneme": "ous",
+    "distractor1": "us",
+    "distractor2": "ious",
+    "distractor3": "eous",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "nervous",
+    "sounds": [
+      "nerv",
+      "ous"
+    ],
+    "correct_phoneme": "ous",
+    "distractor1": "us",
+    "distractor2": "ious",
+    "distractor3": "eous",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "serious",
+    "sounds": [
+      "seri",
+      "ous"
+    ],
+    "correct_phoneme": "ous",
+    "distractor1": "us",
+    "distractor2": "ious",
+    "distractor3": "eous",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "curious",
+    "sounds": [
+      "curi",
+      "ous"
+    ],
+    "correct_phoneme": "ous",
+    "distractor1": "us",
+    "distractor2": "ious",
+    "distractor3": "eous",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "generous",
+    "sounds": [
+      "gener",
+      "ous"
+    ],
+    "correct_phoneme": "ous",
+    "distractor1": "us",
+    "distractor2": "ious",
+    "distractor3": "eous",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "delicious",
+    "sounds": [
+      "deli",
+      "cious"
+    ],
+    "correct_phoneme": "cious",
+    "distractor1": "tious",
+    "distractor2": "shus",
+    "distractor3": "chus",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "precious",
+    "sounds": [
+      "pre",
+      "cious"
+    ],
+    "correct_phoneme": "cious",
+    "distractor1": "tious",
+    "distractor2": "shus",
+    "distractor3": "chus",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "suspicious",
+    "sounds": [
+      "suspi",
+      "cious"
+    ],
+    "correct_phoneme": "cious",
+    "distractor1": "tious",
+    "distractor2": "shus",
+    "distractor3": "chus",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "conscious",
+    "sounds": [
+      "con",
+      "scious"
+    ],
+    "correct_phoneme": "cious",
+    "distractor1": "tious",
+    "distractor2": "shus",
+    "distractor3": "chus",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "spacious",
+    "sounds": [
+      "spa",
+      "cious"
+    ],
+    "correct_phoneme": "cious",
+    "distractor1": "tious",
+    "distractor2": "shus",
+    "distractor3": "chus",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "gracious",
+    "sounds": [
+      "gra",
+      "cious"
+    ],
+    "correct_phoneme": "cious",
+    "distractor1": "tious",
+    "distractor2": "shus",
+    "distractor3": "chus",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "cautious",
+    "sounds": [
+      "cau",
+      "tious"
+    ],
+    "correct_phoneme": "tious",
+    "distractor1": "cious",
+    "distractor2": "shus",
+    "distractor3": "chus",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "ambitious",
+    "sounds": [
+      "ambi",
+      "tious"
+    ],
+    "correct_phoneme": "tious",
+    "distractor1": "cious",
+    "distractor2": "shus",
+    "distractor3": "chus",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "nutritious",
+    "sounds": [
+      "nutri",
+      "tious"
+    ],
+    "correct_phoneme": "tious",
+    "distractor1": "cious",
+    "distractor2": "shus",
+    "distractor3": "chus",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "infectious",
+    "sounds": [
+      "infec",
+      "tious"
+    ],
+    "correct_phoneme": "tious",
+    "distractor1": "cious",
+    "distractor2": "shus",
+    "distractor3": "chus",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "superstitious",
+    "sounds": [
+      "supersti",
+      "tious"
+    ],
+    "correct_phoneme": "tious",
+    "distractor1": "cious",
+    "distractor2": "shus",
+    "distractor3": "chus",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "conscientious",
+    "sounds": [
+      "conscien",
+      "tious"
+    ],
+    "correct_phoneme": "tious",
+    "distractor1": "cious",
+    "distractor2": "shus",
+    "distractor3": "chus",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "helpful",
+    "sounds": [
+      "help",
+      "ful"
+    ],
+    "correct_phoneme": "ful",
+    "distractor1": "less",
+    "distractor2": "ness",
+    "distractor3": "ment",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "beautiful",
+    "sounds": [
+      "beauti",
+      "ful"
+    ],
+    "correct_phoneme": "ful",
+    "distractor1": "less",
+    "distractor2": "ness",
+    "distractor3": "ment",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "wonderful",
+    "sounds": [
+      "wonder",
+      "ful"
+    ],
+    "correct_phoneme": "ful",
+    "distractor1": "less",
+    "distractor2": "ness",
+    "distractor3": "ment",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "powerful",
+    "sounds": [
+      "power",
+      "ful"
+    ],
+    "correct_phoneme": "ful",
+    "distractor1": "less",
+    "distractor2": "ness",
+    "distractor3": "ment",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "peaceful",
+    "sounds": [
+      "peace",
+      "ful"
+    ],
+    "correct_phoneme": "ful",
+    "distractor1": "less",
+    "distractor2": "ness",
+    "distractor3": "ment",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "successful",
+    "sounds": [
+      "success",
+      "ful"
+    ],
+    "correct_phoneme": "ful",
+    "distractor1": "less",
+    "distractor2": "ness",
+    "distractor3": "ment",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "careless",
+    "sounds": [
+      "care",
+      "less"
+    ],
+    "correct_phoneme": "less",
+    "distractor1": "ful",
+    "distractor2": "ness",
+    "distractor3": "ment",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "hopeless",
+    "sounds": [
+      "hope",
+      "less"
+    ],
+    "correct_phoneme": "less",
+    "distractor1": "ful",
+    "distractor2": "ness",
+    "distractor3": "ment",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "homeless",
+    "sounds": [
+      "home",
+      "less"
+    ],
+    "correct_phoneme": "less",
+    "distractor1": "ful",
+    "distractor2": "ness",
+    "distractor3": "ment",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "fearless",
+    "sounds": [
+      "fear",
+      "less"
+    ],
+    "correct_phoneme": "less",
+    "distractor1": "ful",
+    "distractor2": "ness",
+    "distractor3": "ment",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "endless",
+    "sounds": [
+      "end",
+      "less"
+    ],
+    "correct_phoneme": "less",
+    "distractor1": "ful",
+    "distractor2": "ness",
+    "distractor3": "ment",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "useless",
+    "sounds": [
+      "use",
+      "less"
+    ],
+    "correct_phoneme": "less",
+    "distractor1": "ful",
+    "distractor2": "ness",
+    "distractor3": "ment",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "kindness",
+    "sounds": [
+      "kind",
+      "ness"
+    ],
+    "correct_phoneme": "ness",
+    "distractor1": "ful",
+    "distractor2": "less",
+    "distractor3": "ment",
+    "category": "abstract",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "darkness",
+    "sounds": [
+      "dark",
+      "ness"
+    ],
+    "correct_phoneme": "ness",
+    "distractor1": "ful",
+    "distractor2": "less",
+    "distractor3": "ment",
+    "category": "abstract",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "happiness",
+    "sounds": [
+      "happi",
+      "ness"
+    ],
+    "correct_phoneme": "ness",
+    "distractor1": "ful",
+    "distractor2": "less",
+    "distractor3": "ment",
+    "category": "feelings",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "sadness",
+    "sounds": [
+      "sad",
+      "ness"
+    ],
+    "correct_phoneme": "ness",
+    "distractor1": "ful",
+    "distractor2": "less",
+    "distractor3": "ment",
+    "category": "feelings",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "weakness",
+    "sounds": [
+      "weak",
+      "ness"
+    ],
+    "correct_phoneme": "ness",
+    "distractor1": "ful",
+    "distractor2": "less",
+    "distractor3": "ment",
+    "category": "abstract",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "thickness",
+    "sounds": [
+      "thick",
+      "ness"
+    ],
+    "correct_phoneme": "ness",
+    "distractor1": "ful",
+    "distractor2": "less",
+    "distractor3": "ment",
+    "category": "abstract",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "payment",
+    "sounds": [
+      "pay",
+      "ment"
+    ],
+    "correct_phoneme": "ment",
+    "distractor1": "ful",
+    "distractor2": "less",
+    "distractor3": "ness",
+    "category": "finance",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "movement",
+    "sounds": [
+      "move",
+      "ment"
+    ],
+    "correct_phoneme": "ment",
+    "distractor1": "ful",
+    "distractor2": "less",
+    "distractor3": "ness",
+    "category": "actions",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "treatment",
+    "sounds": [
+      "treat",
+      "ment"
+    ],
+    "correct_phoneme": "ment",
+    "distractor1": "ful",
+    "distractor2": "less",
+    "distractor3": "ness",
+    "category": "medical",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "development",
+    "sounds": [
+      "develop",
+      "ment"
+    ],
+    "correct_phoneme": "ment",
+    "distractor1": "ful",
+    "distractor2": "less",
+    "distractor3": "ness",
+    "category": "abstract",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "agreement",
+    "sounds": [
+      "agree",
+      "ment"
+    ],
+    "correct_phoneme": "ment",
+    "distractor1": "ful",
+    "distractor2": "less",
+    "distractor3": "ness",
+    "category": "abstract",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "government",
+    "sounds": [
+      "govern",
+      "ment"
+    ],
+    "correct_phoneme": "ment",
+    "distractor1": "ful",
+    "distractor2": "less",
+    "distractor3": "ness",
+    "category": "politics",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "quickly",
+    "sounds": [
+      "quick",
+      "ly"
+    ],
+    "correct_phoneme": "ly",
+    "distractor1": "y",
+    "distractor2": "i",
+    "distractor3": "e",
+    "category": "adverbs",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "slowly",
+    "sounds": [
+      "slow",
+      "ly"
+    ],
+    "correct_phoneme": "ly",
+    "distractor1": "y",
+    "distractor2": "i",
+    "distractor3": "e",
+    "category": "adverbs",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "carefully",
+    "sounds": [
+      "care",
+      "ful",
+      "ly"
+    ],
+    "correct_phoneme": "ly",
+    "distractor1": "y",
+    "distractor2": "i",
+    "distractor3": "e",
+    "category": "adverbs",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "suddenly",
+    "sounds": [
+      "sudden",
+      "ly"
+    ],
+    "correct_phoneme": "ly",
+    "distractor1": "y",
+    "distractor2": "i",
+    "distractor3": "e",
+    "category": "adverbs",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "finally",
+    "sounds": [
+      "final",
+      "ly"
+    ],
+    "correct_phoneme": "ly",
+    "distractor1": "y",
+    "distractor2": "i",
+    "distractor3": "e",
+    "category": "adverbs",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "probably",
+    "sounds": [
+      "probab",
+      "ly"
+    ],
+    "correct_phoneme": "ly",
+    "distractor1": "y",
+    "distractor2": "i",
+    "distractor3": "e",
+    "category": "adverbs",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "walking",
+    "sounds": [
+      "walk",
+      "ing"
+    ],
+    "correct_phoneme": "ing",
+    "distractor1": "ed",
+    "distractor2": "s",
+    "distractor3": "es",
+    "category": "verbs",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "playing",
+    "sounds": [
+      "play",
+      "ing"
+    ],
+    "correct_phoneme": "ing",
+    "distractor1": "ed",
+    "distractor2": "s",
+    "distractor3": "es",
+    "category": "verbs",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "running",
+    "sounds": [
+      "runn",
+      "ing"
+    ],
+    "correct_phoneme": "ing",
+    "distractor1": "ed",
+    "distractor2": "s",
+    "distractor3": "es",
+    "category": "verbs",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "jumping",
+    "sounds": [
+      "jump",
+      "ing"
+    ],
+    "correct_phoneme": "ing",
+    "distractor1": "ed",
+    "distractor2": "s",
+    "distractor3": "es",
+    "category": "verbs",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "swimming",
+    "sounds": [
+      "swimm",
+      "ing"
+    ],
+    "correct_phoneme": "ing",
+    "distractor1": "ed",
+    "distractor2": "s",
+    "distractor3": "es",
+    "category": "verbs",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "singing",
+    "sounds": [
+      "sing",
+      "ing"
+    ],
+    "correct_phoneme": "ing",
+    "distractor1": "ed",
+    "distractor2": "s",
+    "distractor3": "es",
+    "category": "verbs",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "walked",
+    "sounds": [
+      "walk",
+      "ed"
+    ],
+    "correct_phoneme": "ed",
+    "distractor1": "ing",
+    "distractor2": "s",
+    "distractor3": "es",
+    "category": "verbs",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "played",
+    "sounds": [
+      "play",
+      "ed"
+    ],
+    "correct_phoneme": "ed",
+    "distractor1": "ing",
+    "distractor2": "s",
+    "distractor3": "es",
+    "category": "verbs",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "jumped",
+    "sounds": [
+      "jump",
+      "ed"
+    ],
+    "correct_phoneme": "ed",
+    "distractor1": "ing",
+    "distractor2": "s",
+    "distractor3": "es",
+    "category": "verbs",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "wanted",
+    "sounds": [
+      "want",
+      "ed"
+    ],
+    "correct_phoneme": "ed",
+    "distractor1": "ing",
+    "distractor2": "s",
+    "distractor3": "es",
+    "category": "verbs",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "needed",
+    "sounds": [
+      "need",
+      "ed"
+    ],
+    "correct_phoneme": "ed",
+    "distractor1": "ing",
+    "distractor2": "s",
+    "distractor3": "es",
+    "category": "verbs",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "started",
+    "sounds": [
+      "start",
+      "ed"
+    ],
+    "correct_phoneme": "ed",
+    "distractor1": "ing",
+    "distractor2": "s",
+    "distractor3": "es",
+    "category": "verbs",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "biggest",
+    "sounds": [
+      "bigg",
+      "est"
+    ],
+    "correct_phoneme": "est",
+    "distractor1": "er",
+    "distractor2": "ing",
+    "distractor3": "ed",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "smallest",
+    "sounds": [
+      "small",
+      "est"
+    ],
+    "correct_phoneme": "est",
+    "distractor1": "er",
+    "distractor2": "ing",
+    "distractor3": "ed",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "fastest",
+    "sounds": [
+      "fast",
+      "est"
+    ],
+    "correct_phoneme": "est",
+    "distractor1": "er",
+    "distractor2": "ing",
+    "distractor3": "ed",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "longest",
+    "sounds": [
+      "long",
+      "est"
+    ],
+    "correct_phoneme": "est",
+    "distractor1": "er",
+    "distractor2": "ing",
+    "distractor3": "ed",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "strongest",
+    "sounds": [
+      "strong",
+      "est"
+    ],
+    "correct_phoneme": "est",
+    "distractor1": "er",
+    "distractor2": "ing",
+    "distractor3": "ed",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "word": "brightest",
+    "sounds": [
+      "bright",
+      "est"
+    ],
+    "correct_phoneme": "est",
+    "distractor1": "er",
+    "distractor2": "ing",
+    "distractor3": "ed",
+    "category": "adjectives",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 6,
+    "word": "pneumonia",
+    "sounds": [
+      "pneu",
+      "mo",
+      "nia"
+    ],
+    "correct_phoneme": "pneu",
+    "distractor1": "new",
+    "distractor2": "nu",
+    "distractor3": "noo",
+    "category": "medical",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "pneumatic",
+    "sounds": [
+      "pneu",
+      "ma",
+      "tic"
+    ],
+    "correct_phoneme": "pneu",
+    "distractor1": "new",
+    "distractor2": "nu",
+    "distractor3": "noo",
+    "category": "technology",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "pneumatics",
+    "sounds": [
+      "pneu",
+      "ma",
+      "tics"
+    ],
+    "correct_phoneme": "pneu",
+    "distractor1": "new",
+    "distractor2": "nu",
+    "distractor3": "noo",
+    "category": "science",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "pneumatically",
+    "sounds": [
+      "pneu",
+      "ma",
+      "ti",
+      "cal",
+      "ly"
+    ],
+    "correct_phoneme": "pneu",
+    "distractor1": "new",
+    "distractor2": "nu",
+    "distractor3": "noo",
+    "category": "adverbs",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "mnemonic",
+    "sounds": [
+      "mne",
+      "mo",
+      "nic"
+    ],
+    "correct_phoneme": "mne",
+    "distractor1": "ne",
+    "distractor2": "me",
+    "distractor3": "noo",
+    "category": "memory",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "mnemonics",
+    "sounds": [
+      "mne",
+      "mo",
+      "nics"
+    ],
+    "correct_phoneme": "mne",
+    "distractor1": "ne",
+    "distractor2": "me",
+    "distractor3": "noo",
+    "category": "memory",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "pterodactyl",
+    "sounds": [
+      "pte",
+      "ro",
+      "dac",
+      "tyl"
+    ],
+    "correct_phoneme": "pte",
+    "distractor1": "te",
+    "distractor2": "pe",
+    "distractor3": "too",
+    "category": "animals",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "ptomaine",
+    "sounds": [
+      "pto",
+      "maine"
+    ],
+    "correct_phoneme": "pto",
+    "distractor1": "to",
+    "distractor2": "po",
+    "distractor3": "too",
+    "category": "chemistry",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "ptarmigan",
+    "sounds": [
+      "ptar",
+      "mi",
+      "gan"
+    ],
+    "correct_phoneme": "ptar",
+    "distractor1": "tar",
+    "distractor2": "pt",
+    "distractor3": "t",
+    "category": "animals",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "pteranodon",
+    "sounds": [
+      "pte",
+      "ra",
+      "no",
+      "don"
+    ],
+    "correct_phoneme": "pte",
+    "distractor1": "te",
+    "distractor2": "pe",
+    "distractor3": "pt",
+    "category": "animals",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "psychiatrist",
+    "sounds": [
+      "psy",
+      "chi",
+      "a",
+      "trist"
+    ],
+    "correct_phoneme": "psy",
+    "distractor1": "sy",
+    "distractor2": "ps",
+    "distractor3": "sc",
+    "category": "people",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "psychoanalysis",
+    "sounds": [
+      "psy",
+      "cho",
+      "a",
+      "nal",
+      "y",
+      "sis"
+    ],
+    "correct_phoneme": "psy",
+    "distractor1": "sy",
+    "distractor2": "ps",
+    "distractor3": "sc",
+    "category": "therapy",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "psychotherapy",
+    "sounds": [
+      "psy",
+      "cho",
+      "ther",
+      "a",
+      "py"
+    ],
+    "correct_phoneme": "psy",
+    "distractor1": "sy",
+    "distractor2": "ps",
+    "distractor3": "sc",
+    "category": "therapy",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "psychologist",
+    "sounds": [
+      "psy",
+      "chol",
+      "o",
+      "gist"
+    ],
+    "correct_phoneme": "psy",
+    "distractor1": "sy",
+    "distractor2": "ps",
+    "distractor3": "sc",
+    "category": "people",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "psychosomatic",
+    "sounds": [
+      "psy",
+      "cho",
+      "so",
+      "ma",
+      "tic"
+    ],
+    "correct_phoneme": "psy",
+    "distractor1": "sy",
+    "distractor2": "ps",
+    "distractor3": "sc",
+    "category": "medical",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "psychedelic",
+    "sounds": [
+      "psy",
+      "che",
+      "del",
+      "ic"
+    ],
+    "correct_phoneme": "psy",
+    "distractor1": "sy",
+    "distractor2": "ps",
+    "distractor3": "sc",
+    "category": "adjectives",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "synchronize",
+    "sounds": [
+      "syn",
+      "chro",
+      "nize"
+    ],
+    "correct_phoneme": "syn",
+    "distractor1": "sin",
+    "distractor2": "sn",
+    "distractor3": "shn",
+    "category": "actions",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "symphony",
+    "sounds": [
+      "sym",
+      "pho",
+      "ny"
+    ],
+    "correct_phoneme": "sym",
+    "distractor1": "sim",
+    "distractor2": "sm",
+    "distractor3": "shm",
+    "category": "music",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "synonym",
+    "sounds": [
+      "syn",
+      "o",
+      "nym"
+    ],
+    "correct_phoneme": "syn",
+    "distractor1": "sin",
+    "distractor2": "sn",
+    "distractor3": "shn",
+    "category": "language",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "synthesis",
+    "sounds": [
+      "syn",
+      "the",
+      "sis"
+    ],
+    "correct_phoneme": "syn",
+    "distractor1": "sin",
+    "distractor2": "sn",
+    "distractor3": "shn",
+    "category": "science",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "syndrome",
+    "sounds": [
+      "syn",
+      "drome"
+    ],
+    "correct_phoneme": "syn",
+    "distractor1": "sin",
+    "distractor2": "sn",
+    "distractor3": "shn",
+    "category": "medical",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "synagogue",
+    "sounds": [
+      "syn",
+      "a",
+      "gogue"
+    ],
+    "correct_phoneme": "syn",
+    "distractor1": "sin",
+    "distractor2": "sn",
+    "distractor3": "shn",
+    "category": "places",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "xylophone",
+    "sounds": [
+      "xy",
+      "lo",
+      "phone"
+    ],
+    "correct_phoneme": "xy",
+    "distractor1": "zi",
+    "distractor2": "x",
+    "distractor3": "zy",
+    "category": "music",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "xerography",
+    "sounds": [
+      "xe",
+      "rog",
+      "ra",
+      "phy"
+    ],
+    "correct_phoneme": "xe",
+    "distractor1": "ze",
+    "distractor2": "x",
+    "distractor3": "zy",
+    "category": "technology",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "xenophobia",
+    "sounds": [
+      "xe",
+      "no",
+      "pho",
+      "bia"
+    ],
+    "correct_phoneme": "xe",
+    "distractor1": "ze",
+    "distractor2": "x",
+    "distractor3": "zy",
+    "category": "psychology",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "xerophyte",
+    "sounds": [
+      "xe",
+      "ro",
+      "phyte"
+    ],
+    "correct_phoneme": "xe",
+    "distractor1": "ze",
+    "distractor2": "x",
+    "distractor3": "zy",
+    "category": "botany",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "xanthine",
+    "sounds": [
+      "xan",
+      "thine"
+    ],
+    "correct_phoneme": "xan",
+    "distractor1": "zan",
+    "distractor2": "x",
+    "distractor3": "zn",
+    "category": "chemistry",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "chrysanthemum",
+    "sounds": [
+      "chry",
+      "san",
+      "the",
+      "mum"
+    ],
+    "correct_phoneme": "chry",
+    "distractor1": "cry",
+    "distractor2": "chr",
+    "distractor3": "shr",
+    "category": "flowers",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "chromosome",
+    "sounds": [
+      "chro",
+      "mo",
+      "some"
+    ],
+    "correct_phoneme": "chro",
+    "distractor1": "cro",
+    "distractor2": "chr",
+    "distractor3": "shr",
+    "category": "science",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "chronology",
+    "sounds": [
+      "chro",
+      "nol",
+      "o",
+      "gy"
+    ],
+    "correct_phoneme": "chro",
+    "distractor1": "cro",
+    "distractor2": "chr",
+    "distractor3": "shr",
+    "category": "time",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "chronometer",
+    "sounds": [
+      "chro",
+      "nom",
+      "e",
+      "ter"
+    ],
+    "correct_phoneme": "chro",
+    "distractor1": "cro",
+    "distractor2": "chr",
+    "distractor3": "shr",
+    "category": "instruments",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "chronic",
+    "sounds": [
+      "chron",
+      "ic"
+    ],
+    "correct_phoneme": "chron",
+    "distractor1": "cron",
+    "distractor2": "chr",
+    "distractor3": "shr",
+    "category": "medical",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "chronicle",
+    "sounds": [
+      "chron",
+      "i",
+      "cle"
+    ],
+    "correct_phoneme": "chron",
+    "distractor1": "cron",
+    "distractor2": "chr",
+    "distractor3": "shr",
+    "category": "writing",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "phosphorous",
+    "sounds": [
+      "phos",
+      "pho",
+      "rous"
+    ],
+    "correct_phoneme": "phos",
+    "distractor1": "fos",
+    "distractor2": "ph",
+    "distractor3": "f",
+    "category": "chemistry",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "photograph",
+    "sounds": [
+      "pho",
+      "to",
+      "graph"
+    ],
+    "correct_phoneme": "pho",
+    "distractor1": "fo",
+    "distractor2": "ph",
+    "distractor3": "f",
+    "category": "things",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "phonics",
+    "sounds": [
+      "phon",
+      "ics"
+    ],
+    "correct_phoneme": "phon",
+    "distractor1": "fon",
+    "distractor2": "ph",
+    "distractor3": "f",
+    "category": "education",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "pharmacy",
+    "sounds": [
+      "phar",
+      "ma",
+      "cy"
+    ],
+    "correct_phoneme": "phar",
+    "distractor1": "far",
+    "distractor2": "ph",
+    "distractor3": "f",
+    "category": "medicine",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "phenomenon",
+    "sounds": [
+      "phe",
+      "nom",
+      "e",
+      "non"
+    ],
+    "correct_phoneme": "phe",
+    "distractor1": "fe",
+    "distractor2": "ph",
+    "distractor3": "f",
+    "category": "science",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "philosopher",
+    "sounds": [
+      "phi",
+      "los",
+      "o",
+      "pher"
+    ],
+    "correct_phoneme": "phi",
+    "distractor1": "fi",
+    "distractor2": "ph",
+    "distractor3": "f",
+    "category": "people",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "rhinoceros",
+    "sounds": [
+      "rhi",
+      "noc",
+      "er",
+      "os"
+    ],
+    "correct_phoneme": "rhi",
+    "distractor1": "ri",
+    "distractor2": "rh",
+    "distractor3": "r",
+    "category": "animals",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "rheumatism",
+    "sounds": [
+      "rheu",
+      "ma",
+      "tism"
+    ],
+    "correct_phoneme": "rheu",
+    "distractor1": "reu",
+    "distractor2": "rh",
+    "distractor3": "r",
+    "category": "medical",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "rhapsody",
+    "sounds": [
+      "rhap",
+      "so",
+      "dy"
+    ],
+    "correct_phoneme": "rhap",
+    "distractor1": "rap",
+    "distractor2": "rh",
+    "distractor3": "r",
+    "category": "music",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "rhetorical",
+    "sounds": [
+      "rhe",
+      "tor",
+      "i",
+      "cal"
+    ],
+    "correct_phoneme": "rhe",
+    "distractor1": "re",
+    "distractor2": "rh",
+    "distractor3": "r",
+    "category": "language",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "rhododendron",
+    "sounds": [
+      "rho",
+      "do",
+      "den",
+      "dron"
+    ],
+    "correct_phoneme": "rho",
+    "distractor1": "ro",
+    "distractor2": "rh",
+    "distractor3": "r",
+    "category": "flowers",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "rhythm",
+    "sounds": [
+      "rhyth",
+      "m"
+    ],
+    "correct_phoneme": "rhyth",
+    "distractor1": "rith",
+    "distractor2": "rh",
+    "distractor3": "r",
+    "category": "music",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "schizophrenia",
+    "sounds": [
+      "schi",
+      "zo",
+      "phre",
+      "nia"
+    ],
+    "correct_phoneme": "schi",
+    "distractor1": "ski",
+    "distractor2": "sch",
+    "distractor3": "sh",
+    "category": "medical",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "scholarship",
+    "sounds": [
+      "schol",
+      "ar",
+      "ship"
+    ],
+    "correct_phoneme": "schol",
+    "distractor1": "skol",
+    "distractor2": "sch",
+    "distractor3": "sh",
+    "category": "education",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "scholastic",
+    "sounds": [
+      "scho",
+      "las",
+      "tic"
+    ],
+    "correct_phoneme": "scho",
+    "distractor1": "sko",
+    "distractor2": "sch",
+    "distractor3": "sh",
+    "category": "education",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "schematic",
+    "sounds": [
+      "sche",
+      "ma",
+      "tic"
+    ],
+    "correct_phoneme": "sche",
+    "distractor1": "ske",
+    "distractor2": "sch",
+    "distractor3": "sh",
+    "category": "technical",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "schedule",
+    "sounds": [
+      "sched",
+      "ule"
+    ],
+    "correct_phoneme": "sched",
+    "distractor1": "sked",
+    "distractor2": "sch",
+    "distractor3": "sh",
+    "category": "time",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "scheme",
+    "sounds": [
+      "sche",
+      "me"
+    ],
+    "correct_phoneme": "sche",
+    "distractor1": "ske",
+    "distractor2": "sch",
+    "distractor3": "sh",
+    "category": "planning",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "knowledge",
+    "sounds": [
+      "know",
+      "ledge"
+    ],
+    "correct_phoneme": "know",
+    "distractor1": "no",
+    "distractor2": "kn",
+    "distractor3": "n",
+    "category": "abstract",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "knight",
+    "sounds": [
+      "knigh",
+      "t"
+    ],
+    "correct_phoneme": "knigh",
+    "distractor1": "nigh",
+    "distractor2": "kn",
+    "distractor3": "n",
+    "category": "people",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "knuckle",
+    "sounds": [
+      "knuck",
+      "le"
+    ],
+    "correct_phoneme": "knuck",
+    "distractor1": "nuck",
+    "distractor2": "kn",
+    "distractor3": "n",
+    "category": "body",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "knapsack",
+    "sounds": [
+      "knap",
+      "sack"
+    ],
+    "correct_phoneme": "knap",
+    "distractor1": "nap",
+    "distractor2": "kn",
+    "distractor3": "n",
+    "category": "things",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "knead",
+    "sounds": [
+      "knea",
+      "d"
+    ],
+    "correct_phoneme": "knea",
+    "distractor1": "nea",
+    "distractor2": "kn",
+    "distractor3": "n",
+    "category": "actions",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "knave",
+    "sounds": [
+      "kna",
+      "ve"
+    ],
+    "correct_phoneme": "kna",
+    "distractor1": "na",
+    "distractor2": "kn",
+    "distractor3": "n",
+    "category": "people",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "wreath",
+    "sounds": [
+      "wrea",
+      "th"
+    ],
+    "correct_phoneme": "wrea",
+    "distractor1": "rea",
+    "distractor2": "wr",
+    "distractor3": "r",
+    "category": "decorations",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "wrath",
+    "sounds": [
+      "wra",
+      "th"
+    ],
+    "correct_phoneme": "wra",
+    "distractor1": "ra",
+    "distractor2": "wr",
+    "distractor3": "r",
+    "category": "emotions",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "wrought",
+    "sounds": [
+      "wrough",
+      "t"
+    ],
+    "correct_phoneme": "wrough",
+    "distractor1": "rough",
+    "distractor2": "wr",
+    "distractor3": "r",
+    "category": "materials",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "wrestle",
+    "sounds": [
+      "wres",
+      "tle"
+    ],
+    "correct_phoneme": "wres",
+    "distractor1": "res",
+    "distractor2": "wr",
+    "distractor3": "r",
+    "category": "sports",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "wrinkle",
+    "sounds": [
+      "wrin",
+      "kle"
+    ],
+    "correct_phoneme": "wrin",
+    "distractor1": "rin",
+    "distractor2": "wr",
+    "distractor3": "r",
+    "category": "body",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "wring",
+    "sounds": [
+      "wrin",
+      "g"
+    ],
+    "correct_phoneme": "wrin",
+    "distractor1": "rin",
+    "distractor2": "wr",
+    "distractor3": "r",
+    "category": "actions",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "psalm",
+    "sounds": [
+      "psal",
+      "m"
+    ],
+    "correct_phoneme": "psal",
+    "distractor1": "sal",
+    "distractor2": "ps",
+    "distractor3": "s",
+    "category": "religion",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "pseudo",
+    "sounds": [
+      "pseu",
+      "do"
+    ],
+    "correct_phoneme": "pseu",
+    "distractor1": "seu",
+    "distractor2": "ps",
+    "distractor3": "s",
+    "category": "adjectives",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "psyche",
+    "sounds": [
+      "psy",
+      "che"
+    ],
+    "correct_phoneme": "psy",
+    "distractor1": "sy",
+    "distractor2": "ps",
+    "distractor3": "s",
+    "category": "mind",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "psoriasis",
+    "sounds": [
+      "pso",
+      "ri",
+      "a",
+      "sis"
+    ],
+    "correct_phoneme": "pso",
+    "distractor1": "so",
+    "distractor2": "ps",
+    "distractor3": "s",
+    "category": "medical",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "technique",
+    "sounds": [
+      "tech",
+      "nique"
+    ],
+    "correct_phoneme": "tech",
+    "distractor1": "tek",
+    "distractor2": "tch",
+    "distractor3": "ch",
+    "category": "methods",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "technology",
+    "sounds": [
+      "tech",
+      "nol",
+      "o",
+      "gy"
+    ],
+    "correct_phoneme": "tech",
+    "distractor1": "tek",
+    "distractor2": "tch",
+    "distractor3": "ch",
+    "category": "science",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "technical",
+    "sounds": [
+      "tech",
+      "ni",
+      "cal"
+    ],
+    "correct_phoneme": "tech",
+    "distractor1": "tek",
+    "distractor2": "tch",
+    "distractor3": "ch",
+    "category": "adjectives",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "word": "technician",
+    "sounds": [
+      "tech",
+      "ni",
+      "cian"
+    ],
+    "correct_phoneme": "tech",
+    "distractor1": "tek",
+    "distractor2": "tch",
+    "distractor3": "ch",
+    "category": "people",
+    "difficulty": "expert"
+  }
+]

@@ -1,0 +1,133 @@
+id,level,eiken_level,category,type,word,color,position,japanese,hint,difficulty_score
+1,beginner,5,be_verb,pronoun,I,blue,subject,私,最初に来る人称代名詞,1
+2,beginner,5,be_verb,pronoun,You,blue,subject,あなた,二人称代名詞,1
+3,beginner,5,be_verb,pronoun,He,blue,subject,彼,三人称単数男性,2
+4,beginner,5,be_verb,pronoun,She,blue,subject,彼女,三人称単数女性,2
+5,beginner,5,be_verb,pronoun,It,blue,subject,それ,三人称単数中性,2
+6,beginner,5,be_verb,pronoun,We,blue,subject,私たち,一人称複数,2
+7,beginner,5,be_verb,pronoun,They,blue,subject,彼ら,三人称複数,2
+8,beginner,5,be_verb,be-verb,am,blue,verb,です/である,Iと組み合わせる,1
+9,beginner,5,be_verb,be-verb,is,blue,verb,です/である,He/She/Itと組み合わせる,2
+10,beginner,5,be_verb,be-verb,are,blue,verb,です/である,You/We/Theyと組み合わせる,2
+11,beginner,5,be_verb,adjective,happy,blue,object,幸せな,気持ちを表す形容詞,1
+12,beginner,5,be_verb,adjective,sad,blue,object,悲しい,気持ちを表す形容詞,1
+13,beginner,5,be_verb,adjective,hungry,blue,object,お腹がすいた,状態を表す形容詞,2
+14,beginner,5,be_verb,adjective,tired,blue,object,疲れた,状態を表す形容詞,2
+15,beginner,5,be_verb,adjective,busy,blue,object,忙しい,状態を表す形容詞,3
+16,beginner,5,be_verb,adjective,hot,blue,object,暑い,温度を表す形容詞,2
+17,beginner,5,be_verb,adjective,cold,blue,object,寒い,温度を表す形容詞,2
+18,beginner,5,be_verb,adjective,big,blue,object,大きい,サイズを表す形容詞,1
+19,beginner,5,be_verb,adjective,small,blue,object,小さい,サイズを表す形容詞,1
+20,beginner,5,be_verb,adjective,good,blue,object,良い,評価を表す形容詞,1
+
+21,beginner,5,be_verb,noun,a student,blue,object,学生,職業を表す名詞,2
+22,beginner,5,be_verb,noun,a teacher,blue,object,先生,職業を表す名詞,2
+23,beginner,5,be_verb,noun,a doctor,blue,object,医者,職業を表す名詞,3
+24,beginner,5,be_verb,noun,a cat,blue,object,猫,動物を表す名詞,1
+25,beginner,5,be_verb,noun,a dog,blue,object,犬,動物を表す名詞,1
+
+26,beginner,5,be_verb,place,here,blue,object,ここに,場所を表す副詞,1
+27,beginner,5,be_verb,place,there,blue,object,そこに,場所を表す副詞,1
+28,beginner,5,be_verb,place,at home,blue,object,家に,場所の詳細,2
+29,beginner,5,be_verb,place,at school,blue,object,学校に,場所の詳細,2
+30,beginner,5,be_verb,place,in Japan,blue,object,日本に,具体的な場所,3
+
+31,beginner,5,general_verb,pronoun,I,red,subject,私,一般動詞文の主語,1
+32,beginner,5,general_verb,pronoun,You,red,subject,あなた,一般動詞文の主語,1
+33,beginner,5,general_verb,pronoun,He,red,subject,彼,三人称単数（s付く）,2
+34,beginner,5,general_verb,pronoun,She,red,subject,彼女,三人称単数（s付く）,2
+35,beginner,5,general_verb,pronoun,We,red,subject,私たち,複数形,2
+36,beginner,5,general_verb,pronoun,They,red,subject,彼ら,複数形,2
+
+37,beginner,5,general_verb,verb,like,red,verb,好き,感情を表す動詞,1
+38,beginner,5,general_verb,verb,likes,red,verb,好き,三人称単数形,2
+39,beginner,5,general_verb,verb,eat,red,verb,食べる,動作を表す動詞,1
+40,beginner,5,general_verb,verb,eats,red,verb,食べる,三人称単数形,2
+41,beginner,5,general_verb,verb,play,red,verb,遊ぶ,動作を表す動詞,1
+42,beginner,5,general_verb,verb,plays,red,verb,遊ぶ,三人称単数形,2
+43,beginner,5,general_verb,verb,study,red,verb,勉強する,動作を表す動詞,2
+44,beginner,5,general_verb,verb,studies,red,verb,勉強する,三人称単数形,3
+45,beginner,5,general_verb,verb,watch,red,verb,見る,動作を表す動詞,2
+46,beginner,5,general_verb,verb,watches,red,verb,見る,三人称単数形,3
+
+47,beginner,5,general_verb,noun,apples,red,object,りんご,数えられる名詞,1
+48,beginner,5,general_verb,noun,books,red,object,本,数えられる名詞,1
+49,beginner,5,general_verb,noun,cats,red,object,猫,数えられる名詞,1
+50,beginner,5,general_verb,noun,dogs,red,object,犬,数えられる名詞,1
+51,beginner,5,general_verb,noun,music,red,object,音楽,数えられない名詞,2
+52,beginner,5,general_verb,noun,soccer,red,object,サッカー,スポーツ名,2
+53,beginner,5,general_verb,noun,TV,red,object,テレビ,メディア,1
+54,beginner,5,general_verb,noun,homework,red,object,宿題,学校関連,2
+55,beginner,5,general_verb,noun,English,red,object,英語,言語名,2
+
+56,intermediate,4,question,question,What,yellow,subject,何,疑問詞,2
+57,intermediate,4,question,question,Where,yellow,subject,どこ,疑問詞,2
+58,intermediate,4,question,question,When,yellow,subject,いつ,疑問詞,3
+59,intermediate,4,question,question,Who,yellow,subject,誰,疑問詞,2
+60,intermediate,4,question,question,Why,yellow,subject,なぜ,疑問詞,3
+61,intermediate,4,question,question,How,yellow,subject,どのように,疑問詞,3
+
+62,intermediate,4,question,auxiliary,do,yellow,verb,する（助動詞）,疑問文用助動詞,2
+63,intermediate,4,question,auxiliary,does,yellow,verb,する（助動詞）,三人称単数用,3
+64,intermediate,4,question,auxiliary,did,yellow,verb,した（助動詞）,過去形用,4
+65,intermediate,4,question,auxiliary,don't,yellow,verb,しない,否定形,3
+66,intermediate,4,question,auxiliary,doesn't,yellow,verb,しない,三人称単数否定,4
+67,intermediate,4,question,auxiliary,didn't,yellow,verb,しなかった,過去否定,4
+
+68,intermediate,4,question,be-verb,am,yellow,verb,です,疑問文Be動詞,2
+69,intermediate,4,question,be-verb,is,yellow,verb,です,疑問文Be動詞,2
+70,intermediate,4,question,be-verb,are,yellow,verb,です,疑問文Be動詞,2
+
+71,intermediate,4,question,noun,your name,yellow,object,あなたの名前,疑問文の補語,3
+72,intermediate,4,question,noun,the time,yellow,object,時間,疑問文の補語,3
+73,intermediate,4,question,noun,this,yellow,object,これ,指示代名詞,2
+74,intermediate,4,question,noun,that,yellow,object,それ,指示代名詞,2
+
+75,intermediate,4,past_tense,pronoun,I,green,subject,私,過去形主語,2
+76,intermediate,4,past_tense,pronoun,You,green,subject,あなた,過去形主語,2
+77,intermediate,4,past_tense,pronoun,He,green,subject,彼,過去形主語,3
+78,intermediate,4,past_tense,pronoun,She,green,subject,彼女,過去形主語,3
+79,intermediate,4,past_tense,pronoun,We,green,subject,私たち,過去形主語,3
+80,intermediate,4,past_tense,pronoun,They,green,subject,彼ら,過去形主語,3
+
+81,intermediate,4,past_tense,be-verb,was,green,verb,だった,過去のBe動詞,3
+82,intermediate,4,past_tense,be-verb,were,green,verb,だった,過去のBe動詞複数,3
+
+83,intermediate,4,past_tense,verb,played,green,verb,遊んだ,規則動詞過去形,3
+84,intermediate,4,past_tense,verb,studied,green,verb,勉強した,規則動詞過去形,3
+85,intermediate,4,past_tense,verb,watched,green,verb,見た,規則動詞過去形,3
+86,intermediate,4,past_tense,verb,went,green,verb,行った,不規則動詞過去形,4
+87,intermediate,4,past_tense,verb,came,green,verb,来た,不規則動詞過去形,4
+88,intermediate,4,past_tense,verb,had,green,verb,持っていた,不規則動詞過去形,4
+
+89,intermediate,4,past_tense,time,yesterday,green,object,昨日,過去時制マーカー,2
+90,intermediate,4,past_tense,time,last week,green,object,先週,過去時制マーカー,3
+91,intermediate,4,past_tense,time,last month,green,object,先月,過去時制マーカー,3
+
+92,intermediate,4,past_tense,noun,breakfast,green,object,朝食,過去の動作対象,2
+93,intermediate,4,past_tense,noun,lunch,green,object,昼食,過去の動作対象,2
+94,intermediate,4,past_tense,noun,dinner,green,object,夕食,過去の動作対象,2
+95,intermediate,4,past_tense,place,at the park,green,object,公園で,過去の場所,3
+96,intermediate,4,past_tense,place,to school,green,object,学校へ,過去の場所,3
+
+97,advanced,3,modal,modal,can,purple,verb,できる,可能性を表す助動詞,4
+98,advanced,3,modal,modal,could,purple,verb,できた,過去の可能性,5
+99,advanced,3,modal,modal,will,purple,verb,でしょう,未来を表す助動詞,4
+100,advanced,3,modal,modal,would,purple,verb,でしょう,丁寧・仮定,5
+101,advanced,3,modal,modal,should,purple,verb,すべき,義務・推奨,5
+102,advanced,3,modal,modal,must,purple,verb,しなければならない,強い義務,5
+
+103,advanced,3,perfect,auxiliary,have,purple,verb,持つ,現在完了助動詞,5
+104,advanced,3,perfect,auxiliary,has,purple,verb,持つ,三人称単数現在完了,5
+105,advanced,3,perfect,auxiliary,had,purple,verb,持っていた,過去完了,6
+
+106,advanced,3,perfect,participle,been,purple,object,いた,Be動詞の過去分詞,5
+107,advanced,3,perfect,participle,gone,purple,object,行った,Go動詞の過去分詞,5
+108,advanced,3,perfect,participle,done,purple,object,した,Do動詞の過去分詞,5
+109,advanced,3,perfect,participle,seen,purple,object,見た,See動詞の過去分詞,5
+
+110,advanced,3,perfect,adverb,already,purple,object,すでに,完了副詞,4
+111,advanced,3,perfect,adverb,yet,purple,object,まだ,完了副詞,4
+112,advanced,3,perfect,adverb,just,purple,object,ちょうど,完了副詞,4
+113,advanced,3,perfect,adverb,never,purple,object,決して,頻度副詞,4
+114,advanced,3,perfect,adverb,always,purple,object,いつも,頻度副詞,3

@@ -1,0 +1,362 @@
+[
+  {
+    "set_id": 1,
+    "level": "beginner",
+    "eiken_level": "5",
+    "category": "be_verb",
+    "target_sentence": "I am happy",
+    "hint_ja": "私は幸せです",
+    "words_pool": [
+      {"word": "I", "position": "subject"},
+      {"word": "am", "position": "verb"},
+      {"word": "happy", "position": "object"}
+    ],
+    "visual_theme": "happiness",
+    "difficulty_score": 1
+  },
+  {
+    "set_id": 2,
+    "level": "beginner",
+    "eiken_level": "5",
+    "category": "be_verb",
+    "target_sentence": "You are sad",
+    "hint_ja": "あなたは悲しいです",
+    "words_pool": [
+      {"word": "You", "position": "subject"},
+      {"word": "are", "position": "verb"},
+      {"word": "sad", "position": "object"}
+    ],
+    "visual_theme": "emotion",
+    "difficulty_score": 1
+  },
+  {
+    "set_id": 3,
+    "level": "beginner",
+    "eiken_level": "5",
+    "category": "be_verb",
+    "target_sentence": "He is hungry",
+    "hint_ja": "彼はお腹がすいています",
+    "words_pool": [
+      {"word": "He", "position": "subject"},
+      {"word": "is", "position": "verb"},
+      {"word": "hungry", "position": "object"}
+    ],
+    "visual_theme": "food",
+    "difficulty_score": 2
+  },
+  {
+    "set_id": 4,
+    "level": "beginner",
+    "eiken_level": "5",
+    "category": "be_verb",
+    "target_sentence": "She is tired",
+    "hint_ja": "彼女は疲れています",
+    "words_pool": [
+      {"word": "She", "position": "subject"},
+      {"word": "is", "position": "verb"},
+      {"word": "tired", "position": "object"}
+    ],
+    "visual_theme": "rest",
+    "difficulty_score": 2
+  },
+  {
+    "set_id": 5,
+    "level": "beginner",
+    "eiken_level": "5",
+    "category": "be_verb",
+    "target_sentence": "It is hot",
+    "hint_ja": "それは暑いです",
+    "words_pool": [
+      {"word": "It", "position": "subject"},
+      {"word": "is", "position": "verb"},
+      {"word": "hot", "position": "object"}
+    ],
+    "visual_theme": "weather",
+    "difficulty_score": 2
+  },
+  {
+    "set_id": 6,
+    "level": "beginner",
+    "eiken_level": "5",
+    "category": "be_verb",
+    "target_sentence": "We are busy",
+    "hint_ja": "私たちは忙しいです",
+    "words_pool": [
+      {"word": "We", "position": "subject"},
+      {"word": "are", "position": "verb"},
+      {"word": "busy", "position": "object"}
+    ],
+    "visual_theme": "work",
+    "difficulty_score": 3
+  },
+  {
+    "set_id": 7,
+    "level": "beginner",
+    "eiken_level": "5",
+    "category": "be_verb",
+    "target_sentence": "They are cold",
+    "hint_ja": "彼らは寒いです",
+    "words_pool": [
+      {"word": "They", "position": "subject"},
+      {"word": "are", "position": "verb"},
+      {"word": "cold", "position": "object"}
+    ],
+    "visual_theme": "weather",
+    "difficulty_score": 2
+  },
+  {
+    "set_id": 8,
+    "level": "beginner",
+    "eiken_level": "5",
+    "category": "be_verb",
+    "target_sentence": "I am big",
+    "hint_ja": "私は大きいです",
+    "words_pool": [
+      {"word": "I", "position": "subject"},
+      {"word": "am", "position": "verb"},
+      {"word": "big", "position": "object"}
+    ],
+    "visual_theme": "size",
+    "difficulty_score": 1
+  },
+  {
+    "set_id": 9,
+    "level": "beginner",
+    "eiken_level": "5",
+    "category": "be_verb",
+    "target_sentence": "You are small",
+    "hint_ja": "あなたは小さいです",
+    "words_pool": [
+      {"word": "You", "position": "subject"},
+      {"word": "are", "position": "verb"},
+      {"word": "small", "position": "object"}
+    ],
+    "visual_theme": "size",
+    "difficulty_score": 1
+  },
+  {
+    "set_id": 10,
+    "level": "beginner",
+    "eiken_level": "5",
+    "category": "be_verb",
+    "target_sentence": "He is good",
+    "hint_ja": "彼は良いです",
+    "words_pool": [
+      {"word": "He", "position": "subject"},
+      {"word": "is", "position": "verb"},
+      {"word": "good", "position": "object"}
+    ],
+    "visual_theme": "quality",
+    "difficulty_score": 1
+  },
+  {
+    "set_id": 21,
+    "level": "beginner",
+    "eiken_level": "5",
+    "category": "general_verb",
+    "target_sentence": "I like apples",
+    "hint_ja": "私はりんごが好きです",
+    "words_pool": [
+      {"word": "I", "position": "subject"},
+      {"word": "like", "position": "verb"},
+      {"word": "apples", "position": "object"}
+    ],
+    "visual_theme": "fruit",
+    "difficulty_score": 1
+  },
+  {
+    "set_id": 22,
+    "level": "beginner",
+    "eiken_level": "5",
+    "category": "general_verb",
+    "target_sentence": "You eat apples",
+    "hint_ja": "あなたはりんごを食べます",
+    "words_pool": [
+      {"word": "You", "position": "subject"},
+      {"word": "eat", "position": "verb"},
+      {"word": "apples", "position": "object"}
+    ],
+    "visual_theme": "food",
+    "difficulty_score": 1
+  },
+  {
+    "set_id": 23,
+    "level": "beginner",
+    "eiken_level": "5",
+    "category": "general_verb",
+    "target_sentence": "He likes cats",
+    "hint_ja": "彼は猫が好きです",
+    "words_pool": [
+      {"word": "He", "position": "subject"},
+      {"word": "likes", "position": "verb"},
+      {"word": "cats", "position": "object"}
+    ],
+    "visual_theme": "pets",
+    "difficulty_score": 2
+  },
+  {
+    "set_id": 24,
+    "level": "beginner",
+    "eiken_level": "5",
+    "category": "general_verb",
+    "target_sentence": "She plays soccer",
+    "hint_ja": "彼女はサッカーをします",
+    "words_pool": [
+      {"word": "She", "position": "subject"},
+      {"word": "plays", "position": "verb"},
+      {"word": "soccer", "position": "object"}
+    ],
+    "visual_theme": "sports",
+    "difficulty_score": 2
+  },
+  {
+    "set_id": 25,
+    "level": "beginner",
+    "eiken_level": "5",
+    "category": "general_verb",
+    "target_sentence": "We watch TV",
+    "hint_ja": "私たちはテレビを見ます",
+    "words_pool": [
+      {"word": "We", "position": "subject"},
+      {"word": "watch", "position": "verb"},
+      {"word": "TV", "position": "object"}
+    ],
+    "visual_theme": "entertainment",
+    "difficulty_score": 2
+  },
+  {
+    "set_id": 26,
+    "level": "beginner",
+    "eiken_level": "5",
+    "category": "general_verb",
+    "target_sentence": "They study English",
+    "hint_ja": "彼らは英語を勉強します",
+    "words_pool": [
+      {"word": "They", "position": "subject"},
+      {"word": "study", "position": "verb"},
+      {"word": "English", "position": "object"}
+    ],
+    "visual_theme": "education",
+    "difficulty_score": 2
+  },
+  {
+    "set_id": 33,
+    "level": "intermediate",
+    "eiken_level": "4",
+    "category": "question",
+    "target_sentence": "What is this?",
+    "hint_ja": "これは何ですか？",
+    "words_pool": [
+      {"word": "What", "position": "subject"},
+      {"word": "is", "position": "verb"},
+      {"word": "this", "position": "object"}
+    ],
+    "visual_theme": "introduction",
+    "difficulty_score": 2
+  },
+  {
+    "set_id": 34,
+    "level": "intermediate",
+    "eiken_level": "4",
+    "category": "question",
+    "target_sentence": "Where are you?",
+    "hint_ja": "あなたはどこにいますか？",
+    "words_pool": [
+      {"word": "Where", "position": "subject"},
+      {"word": "are", "position": "verb"},
+      {"word": "you", "position": "object"}
+    ],
+    "visual_theme": "location",
+    "difficulty_score": 3
+  },
+  {
+    "set_id": 35,
+    "level": "intermediate",
+    "eiken_level": "4",
+    "category": "question",
+    "target_sentence": "Who is he?",
+    "hint_ja": "彼は誰ですか？",
+    "words_pool": [
+      {"word": "Who", "position": "subject"},
+      {"word": "is", "position": "verb"},
+      {"word": "he", "position": "object"}
+    ],
+    "visual_theme": "people",
+    "difficulty_score": 3
+  },
+  {
+    "set_id": 36,
+    "level": "intermediate",
+    "eiken_level": "4",
+    "category": "question",
+    "target_sentence": "How are you?",
+    "hint_ja": "元気ですか？",
+    "words_pool": [
+      {"word": "How", "position": "subject"},
+      {"word": "are", "position": "verb"},
+      {"word": "you", "position": "object"}
+    ],
+    "visual_theme": "greeting",
+    "difficulty_score": 2
+  },
+  {
+    "set_id": 41,
+    "level": "intermediate",
+    "eiken_level": "4",
+    "category": "past_tense",
+    "target_sentence": "I was happy yesterday",
+    "hint_ja": "昨日私は幸せでした",
+    "words_pool": [
+      {"word": "I", "position": "subject"},
+      {"word": "was", "position": "verb"},
+      {"word": "happy yesterday", "position": "object"}
+    ],
+    "visual_theme": "nostalgia",
+    "difficulty_score": 3
+  },
+  {
+    "set_id": 42,
+    "level": "intermediate",
+    "eiken_level": "4",
+    "category": "past_tense",
+    "target_sentence": "You were sad last week",
+    "hint_ja": "先週あなたは悲しかったです",
+    "words_pool": [
+      {"word": "You", "position": "subject"},
+      {"word": "were", "position": "verb"},
+      {"word": "sad last week", "position": "object"}
+    ],
+    "visual_theme": "memory",
+    "difficulty_score": 4
+  },
+  {
+    "set_id": 51,
+    "level": "advanced",
+    "eiken_level": "3",
+    "category": "modal",
+    "target_sentence": "I can swim",
+    "hint_ja": "私は泳ぐことができます",
+    "words_pool": [
+      {"word": "I", "position": "subject"},
+      {"word": "can", "position": "verb"},
+      {"word": "swim", "position": "object"}
+    ],
+    "visual_theme": "ability",
+    "difficulty_score": 3
+  },
+  {
+    "set_id": 52,
+    "level": "advanced",
+    "eiken_level": "3",
+    "category": "modal",
+    "target_sentence": "You will come tomorrow",
+    "hint_ja": "あなたは明日来るでしょう",
+    "words_pool": [
+      {"word": "You", "position": "subject"},
+      {"word": "will", "position": "verb"},
+      {"word": "come tomorrow", "position": "object"}
+    ],
+    "visual_theme": "future",
+    "difficulty_score": 3
+  }
+]

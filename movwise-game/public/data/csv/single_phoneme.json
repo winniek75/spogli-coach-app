@@ -1,0 +1,3744 @@
+[
+  {
+    "level": 1,
+    "phoneme": "s",
+    "symbol": "s",
+    "example_word": "sun",
+    "example_word_sounds": [
+      "s",
+      "u",
+      "n"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "a",
+    "symbol": "æ",
+    "example_word": "cat",
+    "example_word_sounds": [
+      "c",
+      "a",
+      "t"
+    ],
+    "category": "short_vowel",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "t",
+    "symbol": "t",
+    "example_word": "top",
+    "example_word_sounds": [
+      "t",
+      "o",
+      "p"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "i",
+    "symbol": "ɪ",
+    "example_word": "sit",
+    "example_word_sounds": [
+      "s",
+      "i",
+      "t"
+    ],
+    "category": "short_vowel",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "p",
+    "symbol": "p",
+    "example_word": "pen",
+    "example_word_sounds": [
+      "p",
+      "e",
+      "n"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "n",
+    "symbol": "n",
+    "example_word": "net",
+    "example_word_sounds": [
+      "n",
+      "e",
+      "t"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "c",
+    "symbol": "k",
+    "example_word": "cat",
+    "example_word_sounds": [
+      "c",
+      "a",
+      "t"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "k",
+    "symbol": "k",
+    "example_word": "kit",
+    "example_word_sounds": [
+      "k",
+      "i",
+      "t"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "e",
+    "symbol": "e",
+    "example_word": "bed",
+    "example_word_sounds": [
+      "b",
+      "e",
+      "d"
+    ],
+    "category": "short_vowel",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "h",
+    "symbol": "h",
+    "example_word": "hat",
+    "example_word_sounds": [
+      "h",
+      "a",
+      "t"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "r",
+    "symbol": "r",
+    "example_word": "red",
+    "example_word_sounds": [
+      "r",
+      "e",
+      "d"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "m",
+    "symbol": "m",
+    "example_word": "map",
+    "example_word_sounds": [
+      "m",
+      "a",
+      "p"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "d",
+    "symbol": "d",
+    "example_word": "dog",
+    "example_word_sounds": [
+      "d",
+      "o",
+      "g"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "g",
+    "symbol": "g",
+    "example_word": "gap",
+    "example_word_sounds": [
+      "g",
+      "a",
+      "p"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "o",
+    "symbol": "ɒ",
+    "example_word": "pot",
+    "example_word_sounds": [
+      "p",
+      "o",
+      "t"
+    ],
+    "category": "short_vowel",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "u",
+    "symbol": "ʌ",
+    "example_word": "cup",
+    "example_word_sounds": [
+      "c",
+      "u",
+      "p"
+    ],
+    "category": "short_vowel",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "l",
+    "symbol": "l",
+    "example_word": "leg",
+    "example_word_sounds": [
+      "l",
+      "e",
+      "g"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "f",
+    "symbol": "f",
+    "example_word": "fan",
+    "example_word_sounds": [
+      "f",
+      "a",
+      "n"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "b",
+    "symbol": "b",
+    "example_word": "bag",
+    "example_word_sounds": [
+      "b",
+      "a",
+      "g"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "j",
+    "symbol": "dʒ",
+    "example_word": "jug",
+    "example_word_sounds": [
+      "j",
+      "u",
+      "g"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "v",
+    "symbol": "v",
+    "example_word": "van",
+    "example_word_sounds": [
+      "v",
+      "a",
+      "n"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "w",
+    "symbol": "w",
+    "example_word": "web",
+    "example_word_sounds": [
+      "w",
+      "e",
+      "b"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "x",
+    "symbol": "ks",
+    "example_word": "box",
+    "example_word_sounds": [
+      "b",
+      "o",
+      "x"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "y",
+    "symbol": "j",
+    "example_word": "yes",
+    "example_word_sounds": [
+      "y",
+      "e",
+      "s"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "z",
+    "symbol": "z",
+    "example_word": "zip",
+    "example_word_sounds": [
+      "z",
+      "i",
+      "p"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "qu",
+    "symbol": "kw",
+    "example_word": "quiz",
+    "example_word_sounds": [
+      "qu",
+      "i",
+      "z"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "s",
+    "symbol": "s",
+    "example_word": "sad",
+    "example_word_sounds": [
+      "s",
+      "a",
+      "d"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "a",
+    "symbol": "æ",
+    "example_word": "bat",
+    "example_word_sounds": [
+      "b",
+      "a",
+      "t"
+    ],
+    "category": "short_vowel",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "t",
+    "symbol": "t",
+    "example_word": "tap",
+    "example_word_sounds": [
+      "t",
+      "a",
+      "p"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "i",
+    "symbol": "ɪ",
+    "example_word": "big",
+    "example_word_sounds": [
+      "b",
+      "i",
+      "g"
+    ],
+    "category": "short_vowel",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "p",
+    "symbol": "p",
+    "example_word": "pig",
+    "example_word_sounds": [
+      "p",
+      "i",
+      "g"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "n",
+    "symbol": "n",
+    "example_word": "nap",
+    "example_word_sounds": [
+      "n",
+      "a",
+      "p"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "c",
+    "symbol": "k",
+    "example_word": "cap",
+    "example_word_sounds": [
+      "c",
+      "a",
+      "p"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "k",
+    "symbol": "k",
+    "example_word": "kid",
+    "example_word_sounds": [
+      "k",
+      "i",
+      "d"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "e",
+    "symbol": "e",
+    "example_word": "get",
+    "example_word_sounds": [
+      "g",
+      "e",
+      "t"
+    ],
+    "category": "short_vowel",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "h",
+    "symbol": "h",
+    "example_word": "hop",
+    "example_word_sounds": [
+      "h",
+      "o",
+      "p"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "r",
+    "symbol": "r",
+    "example_word": "run",
+    "example_word_sounds": [
+      "r",
+      "u",
+      "n"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "m",
+    "symbol": "m",
+    "example_word": "mud",
+    "example_word_sounds": [
+      "m",
+      "u",
+      "d"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "d",
+    "symbol": "d",
+    "example_word": "dip",
+    "example_word_sounds": [
+      "d",
+      "i",
+      "p"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "g",
+    "symbol": "g",
+    "example_word": "gun",
+    "example_word_sounds": [
+      "g",
+      "u",
+      "n"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "o",
+    "symbol": "ɒ",
+    "example_word": "dog",
+    "example_word_sounds": [
+      "d",
+      "o",
+      "g"
+    ],
+    "category": "short_vowel",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "u",
+    "symbol": "ʌ",
+    "example_word": "bug",
+    "example_word_sounds": [
+      "b",
+      "u",
+      "g"
+    ],
+    "category": "short_vowel",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "l",
+    "symbol": "l",
+    "example_word": "lap",
+    "example_word_sounds": [
+      "l",
+      "a",
+      "p"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "f",
+    "symbol": "f",
+    "example_word": "fig",
+    "example_word_sounds": [
+      "f",
+      "i",
+      "g"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "b",
+    "symbol": "b",
+    "example_word": "bed",
+    "example_word_sounds": [
+      "b",
+      "e",
+      "d"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "j",
+    "symbol": "dʒ",
+    "example_word": "jam",
+    "example_word_sounds": [
+      "j",
+      "a",
+      "m"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "v",
+    "symbol": "v",
+    "example_word": "vet",
+    "example_word_sounds": [
+      "v",
+      "e",
+      "t"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "w",
+    "symbol": "w",
+    "example_word": "win",
+    "example_word_sounds": [
+      "w",
+      "i",
+      "n"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "x",
+    "symbol": "ks",
+    "example_word": "mix",
+    "example_word_sounds": [
+      "m",
+      "i",
+      "x"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "y",
+    "symbol": "j",
+    "example_word": "yam",
+    "example_word_sounds": [
+      "y",
+      "a",
+      "m"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 1,
+    "phoneme": "z",
+    "symbol": "z",
+    "example_word": "zap",
+    "example_word_sounds": [
+      "z",
+      "a",
+      "p"
+    ],
+    "category": "consonant",
+    "difficulty": "easy"
+  },
+  {
+    "level": 2,
+    "phoneme": "sh",
+    "symbol": "ʃ",
+    "example_word": "ship",
+    "example_word_sounds": [
+      "sh",
+      "i",
+      "p"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ch",
+    "symbol": "tʃ",
+    "example_word": "chip",
+    "example_word_sounds": [
+      "ch",
+      "i",
+      "p"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "th",
+    "symbol": "θ",
+    "example_word": "thin",
+    "example_word_sounds": [
+      "th",
+      "i",
+      "n"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "th",
+    "symbol": "ð",
+    "example_word": "this",
+    "example_word_sounds": [
+      "th",
+      "i",
+      "s"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ng",
+    "symbol": "ŋ",
+    "example_word": "ring",
+    "example_word_sounds": [
+      "r",
+      "i",
+      "ng"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "wh",
+    "symbol": "w",
+    "example_word": "when",
+    "example_word_sounds": [
+      "wh",
+      "e",
+      "n"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ph",
+    "symbol": "f",
+    "example_word": "phone",
+    "example_word_sounds": [
+      "ph",
+      "o",
+      "ne"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ck",
+    "symbol": "k",
+    "example_word": "back",
+    "example_word_sounds": [
+      "ba",
+      "ck"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ll",
+    "symbol": "l",
+    "example_word": "ball",
+    "example_word_sounds": [
+      "b",
+      "a",
+      "ll"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ss",
+    "symbol": "s",
+    "example_word": "glass",
+    "example_word_sounds": [
+      "gl",
+      "a",
+      "ss"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ff",
+    "symbol": "f",
+    "example_word": "off",
+    "example_word_sounds": [
+      "o",
+      "ff"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "zz",
+    "symbol": "z",
+    "example_word": "buzz",
+    "example_word_sounds": [
+      "b",
+      "u",
+      "zz"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ai",
+    "symbol": "eɪ",
+    "example_word": "rain",
+    "example_word_sounds": [
+      "r",
+      "ai",
+      "n"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ay",
+    "symbol": "eɪ",
+    "example_word": "play",
+    "example_word_sounds": [
+      "pl",
+      "ay"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ee",
+    "symbol": "iː",
+    "example_word": "tree",
+    "example_word_sounds": [
+      "tr",
+      "ee"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ea",
+    "symbol": "iː",
+    "example_word": "sea",
+    "example_word_sounds": [
+      "s",
+      "ea"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "igh",
+    "symbol": "aɪ",
+    "example_word": "night",
+    "example_word_sounds": [
+      "n",
+      "igh",
+      "t"
+    ],
+    "category": "vowel_trigraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ie",
+    "symbol": "iː",
+    "example_word": "field",
+    "example_word_sounds": [
+      "f",
+      "ie",
+      "ld"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ie",
+    "symbol": "aɪ",
+    "example_word": "pie",
+    "example_word_sounds": [
+      "p",
+      "ie"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "oa",
+    "symbol": "əʊ",
+    "example_word": "boat",
+    "example_word_sounds": [
+      "b",
+      "oa",
+      "t"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ow",
+    "symbol": "əʊ",
+    "example_word": "snow",
+    "example_word_sounds": [
+      "sn",
+      "ow"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ow",
+    "symbol": "aʊ",
+    "example_word": "cow",
+    "example_word_sounds": [
+      "c",
+      "ow"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "oo",
+    "symbol": "uː",
+    "example_word": "moon",
+    "example_word_sounds": [
+      "m",
+      "oo",
+      "n"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "oo",
+    "symbol": "ʊ",
+    "example_word": "book",
+    "example_word_sounds": [
+      "b",
+      "oo",
+      "k"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ar",
+    "symbol": "ɑː",
+    "example_word": "car",
+    "example_word_sounds": [
+      "c",
+      "ar"
+    ],
+    "category": "r_controlled_vowel",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "or",
+    "symbol": "ɔː",
+    "example_word": "for",
+    "example_word_sounds": [
+      "f",
+      "or"
+    ],
+    "category": "r_controlled_vowel",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ur",
+    "symbol": "ɜː",
+    "example_word": "fur",
+    "example_word_sounds": [
+      "f",
+      "ur"
+    ],
+    "category": "r_controlled_vowel",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "er",
+    "symbol": "ɜː",
+    "example_word": "her",
+    "example_word_sounds": [
+      "h",
+      "er"
+    ],
+    "category": "r_controlled_vowel",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ir",
+    "symbol": "ɜː",
+    "example_word": "bird",
+    "example_word_sounds": [
+      "b",
+      "ir",
+      "d"
+    ],
+    "category": "r_controlled_vowel",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "oi",
+    "symbol": "ɔɪ",
+    "example_word": "coin",
+    "example_word_sounds": [
+      "c",
+      "oi",
+      "n"
+    ],
+    "category": "diphthong",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "oy",
+    "symbol": "ɔɪ",
+    "example_word": "toy",
+    "example_word_sounds": [
+      "t",
+      "oy"
+    ],
+    "category": "diphthong",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ou",
+    "symbol": "aʊ",
+    "example_word": "house",
+    "example_word_sounds": [
+      "h",
+      "ou",
+      "se"
+    ],
+    "category": "diphthong",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ear",
+    "symbol": "ɪə",
+    "example_word": "hear",
+    "example_word_sounds": [
+      "h",
+      "ear"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "air",
+    "symbol": "eə",
+    "example_word": "hair",
+    "example_word_sounds": [
+      "h",
+      "air"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ure",
+    "symbol": "ʊə",
+    "example_word": "sure",
+    "example_word_sounds": [
+      "s",
+      "ure"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "x",
+    "symbol": "gz",
+    "example_word": "exam",
+    "example_word_sounds": [
+      "e",
+      "x",
+      "am"
+    ],
+    "category": "consonant",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "y",
+    "symbol": "aɪ",
+    "example_word": "my",
+    "example_word_sounds": [
+      "m",
+      "y"
+    ],
+    "category": "vowel",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "y",
+    "symbol": "ɪ",
+    "example_word": "happy",
+    "example_word_sounds": [
+      "happ",
+      "y"
+    ],
+    "category": "vowel",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "c",
+    "symbol": "s",
+    "example_word": "city",
+    "example_word_sounds": [
+      "c",
+      "i",
+      "ty"
+    ],
+    "category": "consonant",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "g",
+    "symbol": "dʒ",
+    "example_word": "gem",
+    "example_word_sounds": [
+      "g",
+      "e",
+      "m"
+    ],
+    "category": "consonant",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "le",
+    "symbol": "əl",
+    "example_word": "table",
+    "example_word_sounds": [
+      "tab",
+      "le"
+    ],
+    "category": "syllable_pattern",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "al",
+    "symbol": "əl",
+    "example_word": "metal",
+    "example_word_sounds": [
+      "met",
+      "al"
+    ],
+    "category": "syllable_pattern",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "il",
+    "symbol": "əl",
+    "example_word": "pencil",
+    "example_word_sounds": [
+      "penc",
+      "il"
+    ],
+    "category": "syllable_pattern",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "el",
+    "symbol": "əl",
+    "example_word": "travel",
+    "example_word_sounds": [
+      "trav",
+      "el"
+    ],
+    "category": "syllable_pattern",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ol",
+    "symbol": "əl",
+    "example_word": "symbol",
+    "example_word_sounds": [
+      "symb",
+      "ol"
+    ],
+    "category": "syllable_pattern",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ul",
+    "symbol": "əl",
+    "example_word": "careful",
+    "example_word_sounds": [
+      "care",
+      "ful"
+    ],
+    "category": "syllable_pattern",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "nk",
+    "symbol": "ŋk",
+    "example_word": "pink",
+    "example_word_sounds": [
+      "p",
+      "i",
+      "nk"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "sh",
+    "symbol": "ʃ",
+    "example_word": "shop",
+    "example_word_sounds": [
+      "sh",
+      "o",
+      "p"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ch",
+    "symbol": "tʃ",
+    "example_word": "chat",
+    "example_word_sounds": [
+      "ch",
+      "a",
+      "t"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "th",
+    "symbol": "θ",
+    "example_word": "thick",
+    "example_word_sounds": [
+      "th",
+      "i",
+      "ck"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "th",
+    "symbol": "ð",
+    "example_word": "that",
+    "example_word_sounds": [
+      "th",
+      "a",
+      "t"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 2,
+    "phoneme": "ng",
+    "symbol": "ŋ",
+    "example_word": "song",
+    "example_word_sounds": [
+      "s",
+      "o",
+      "ng"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "medium"
+  },
+  {
+    "level": 3,
+    "phoneme": "a_e",
+    "symbol": "eɪ",
+    "example_word": "cake",
+    "example_word_sounds": [
+      "c",
+      "a_e"
+    ],
+    "category": "long_vowel",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "e_e",
+    "symbol": "iː",
+    "example_word": "these",
+    "example_word_sounds": [
+      "th",
+      "e_e"
+    ],
+    "category": "long_vowel",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "i_e",
+    "symbol": "aɪ",
+    "example_word": "bike",
+    "example_word_sounds": [
+      "b",
+      "i_e"
+    ],
+    "category": "long_vowel",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "o_e",
+    "symbol": "əʊ",
+    "example_word": "home",
+    "example_word_sounds": [
+      "h",
+      "o_e"
+    ],
+    "category": "long_vowel",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "u_e",
+    "symbol": "juː",
+    "example_word": "flute",
+    "example_word_sounds": [
+      "fl",
+      "u_e"
+    ],
+    "category": "long_vowel",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "u_e",
+    "symbol": "uː",
+    "example_word": "rule",
+    "example_word_sounds": [
+      "r",
+      "u_e"
+    ],
+    "category": "long_vowel",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "bl",
+    "symbol": "bl",
+    "example_word": "blue",
+    "example_word_sounds": [
+      "bl",
+      "ue"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "cl",
+    "symbol": "kl",
+    "example_word": "cloud",
+    "example_word_sounds": [
+      "cl",
+      "ou",
+      "d"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "fl",
+    "symbol": "fl",
+    "example_word": "flag",
+    "example_word_sounds": [
+      "fl",
+      "a",
+      "g"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "gl",
+    "symbol": "gl",
+    "example_word": "glass",
+    "example_word_sounds": [
+      "gl",
+      "a",
+      "ss"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "pl",
+    "symbol": "pl",
+    "example_word": "play",
+    "example_word_sounds": [
+      "pl",
+      "ay"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "sl",
+    "symbol": "sl",
+    "example_word": "sleep",
+    "example_word_sounds": [
+      "sl",
+      "ee",
+      "p"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "br",
+    "symbol": "br",
+    "example_word": "brown",
+    "example_word_sounds": [
+      "br",
+      "ow",
+      "n"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "cr",
+    "symbol": "kr",
+    "example_word": "crab",
+    "example_word_sounds": [
+      "cr",
+      "a",
+      "b"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "dr",
+    "symbol": "dr",
+    "example_word": "drum",
+    "example_word_sounds": [
+      "dr",
+      "u",
+      "m"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "fr",
+    "symbol": "fr",
+    "example_word": "frog",
+    "example_word_sounds": [
+      "fr",
+      "o",
+      "g"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "gr",
+    "symbol": "gr",
+    "example_word": "green",
+    "example_word_sounds": [
+      "gr",
+      "ee",
+      "n"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "pr",
+    "symbol": "pr",
+    "example_word": "pray",
+    "example_word_sounds": [
+      "pr",
+      "ay"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "tr",
+    "symbol": "tr",
+    "example_word": "train",
+    "example_word_sounds": [
+      "tr",
+      "ai",
+      "n"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "sm",
+    "symbol": "sm",
+    "example_word": "small",
+    "example_word_sounds": [
+      "sm",
+      "a",
+      "ll"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "sn",
+    "symbol": "sn",
+    "example_word": "snow",
+    "example_word_sounds": [
+      "sn",
+      "ow"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "sw",
+    "symbol": "sw",
+    "example_word": "swim",
+    "example_word_sounds": [
+      "sw",
+      "i",
+      "m"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "sp",
+    "symbol": "sp",
+    "example_word": "spin",
+    "example_word_sounds": [
+      "sp",
+      "i",
+      "n"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "st",
+    "symbol": "st",
+    "example_word": "stop",
+    "example_word_sounds": [
+      "st",
+      "o",
+      "p"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "sk",
+    "symbol": "sk",
+    "example_word": "sky",
+    "example_word_sounds": [
+      "sk",
+      "y"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "nd",
+    "symbol": "nd",
+    "example_word": "hand",
+    "example_word_sounds": [
+      "ha",
+      "nd"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "nt",
+    "symbol": "nt",
+    "example_word": "tent",
+    "example_word_sounds": [
+      "te",
+      "nt"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "mp",
+    "symbol": "mp",
+    "example_word": "jump",
+    "example_word_sounds": [
+      "ju",
+      "mp"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "ft",
+    "symbol": "ft",
+    "example_word": "gift",
+    "example_word_sounds": [
+      "gi",
+      "ft"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "st",
+    "symbol": "st",
+    "example_word": "fast",
+    "example_word_sounds": [
+      "fa",
+      "st"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "sk",
+    "symbol": "sk",
+    "example_word": "desk",
+    "example_word_sounds": [
+      "de",
+      "sk"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "sp",
+    "symbol": "sp",
+    "example_word": "wisp",
+    "example_word_sounds": [
+      "wi",
+      "sp"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "ue",
+    "symbol": "uː",
+    "example_word": "blue",
+    "example_word_sounds": [
+      "bl",
+      "ue"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "ew",
+    "symbol": "uː",
+    "example_word": "new",
+    "example_word_sounds": [
+      "n",
+      "ew"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "ew",
+    "symbol": "juː",
+    "example_word": "few",
+    "example_word_sounds": [
+      "f",
+      "ew"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "au",
+    "symbol": "ɔː",
+    "example_word": "autumn",
+    "example_word_sounds": [
+      "au",
+      "tumn"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "aw",
+    "symbol": "ɔː",
+    "example_word": "saw",
+    "example_word_sounds": [
+      "s",
+      "aw"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "al",
+    "symbol": "ɔːl",
+    "example_word": "tall",
+    "example_word_sounds": [
+      "t",
+      "al",
+      "l"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "all",
+    "symbol": "ɔːl",
+    "example_word": "ball",
+    "example_word_sounds": [
+      "b",
+      "all"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "alk",
+    "symbol": "ɔːk",
+    "example_word": "walk",
+    "example_word_sounds": [
+      "w",
+      "alk"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "olt",
+    "symbol": "oʊlt",
+    "example_word": "bolt",
+    "example_word_sounds": [
+      "b",
+      "olt"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "old",
+    "symbol": "oʊld",
+    "example_word": "cold",
+    "example_word_sounds": [
+      "c",
+      "old"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "ea",
+    "symbol": "e",
+    "example_word": "bread",
+    "example_word_sounds": [
+      "br",
+      "ea",
+      "d"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "ea",
+    "symbol": "eɪ",
+    "example_word": "break",
+    "example_word_sounds": [
+      "br",
+      "ea",
+      "k"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "ey",
+    "symbol": "eɪ",
+    "example_word": "they",
+    "example_word_sounds": [
+      "th",
+      "ey"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "ey",
+    "symbol": "iː",
+    "example_word": "key",
+    "example_word_sounds": [
+      "k",
+      "ey"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "ei",
+    "symbol": "eɪ",
+    "example_word": "eight",
+    "example_word_sounds": [
+      "ei",
+      "gh",
+      "t"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "ei",
+    "symbol": "iː",
+    "example_word": "receive",
+    "example_word_sounds": [
+      "rec",
+      "ei",
+      "ve"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "ui",
+    "symbol": "uː",
+    "example_word": "fruit",
+    "example_word_sounds": [
+      "fr",
+      "ui",
+      "t"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "ou",
+    "symbol": "ʌ",
+    "example_word": "young",
+    "example_word_sounds": [
+      "y",
+      "ou",
+      "ng"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "ou",
+    "symbol": "uː",
+    "example_word": "soup",
+    "example_word_sounds": [
+      "s",
+      "ou",
+      "p"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "oe",
+    "symbol": "əʊ",
+    "example_word": "toe",
+    "example_word_sounds": [
+      "t",
+      "oe"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "hard"
+  },
+  {
+    "level": 3,
+    "phoneme": "oe",
+    "symbol": "uː",
+    "example_word": "shoe",
+    "example_word_sounds": [
+      "sh",
+      "oe"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "hard"
+  },
+  {
+    "level": 4,
+    "phoneme": "tch",
+    "symbol": "tʃ",
+    "example_word": "watch",
+    "example_word_sounds": [
+      "wa",
+      "tch"
+    ],
+    "category": "consonant_trigraph",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "dge",
+    "symbol": "dʒ",
+    "example_word": "bridge",
+    "example_word_sounds": [
+      "bri",
+      "dge"
+    ],
+    "category": "consonant_trigraph",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "scr",
+    "symbol": "skr",
+    "example_word": "scrub",
+    "example_word_sounds": [
+      "scr",
+      "ub"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "spl",
+    "symbol": "spl",
+    "example_word": "splash",
+    "example_word_sounds": [
+      "spl",
+      "ash"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "spr",
+    "symbol": "spr",
+    "example_word": "spring",
+    "example_word_sounds": [
+      "spr",
+      "ing"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "str",
+    "symbol": "str",
+    "example_word": "street",
+    "example_word_sounds": [
+      "str",
+      "eet"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "thr",
+    "symbol": "θr",
+    "example_word": "three",
+    "example_word_sounds": [
+      "thr",
+      "ee"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "shr",
+    "symbol": "ʃr",
+    "example_word": "shrimp",
+    "example_word_sounds": [
+      "shr",
+      "imp"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "squ",
+    "symbol": "skw",
+    "example_word": "square",
+    "example_word_sounds": [
+      "squ",
+      "are"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "tw",
+    "symbol": "tw",
+    "example_word": "twelve",
+    "example_word_sounds": [
+      "tw",
+      "elve"
+    ],
+    "category": "consonant_blend",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "kn",
+    "symbol": "n",
+    "example_word": "know",
+    "example_word_sounds": [
+      "kn",
+      "ow"
+    ],
+    "category": "silent_letter",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "gn",
+    "symbol": "n",
+    "example_word": "gnome",
+    "example_word_sounds": [
+      "gn",
+      "ome"
+    ],
+    "category": "silent_letter",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "wr",
+    "symbol": "r",
+    "example_word": "write",
+    "example_word_sounds": [
+      "wr",
+      "ite"
+    ],
+    "category": "silent_letter",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "mb",
+    "symbol": "",
+    "example_word": "thumb",
+    "example_word_sounds": [
+      "thu",
+      "mb"
+    ],
+    "category": "silent_letter",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "bt",
+    "symbol": "",
+    "example_word": "debt",
+    "example_word_sounds": [
+      "de",
+      "bt"
+    ],
+    "category": "silent_letter",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "gh",
+    "symbol": "f",
+    "example_word": "laugh",
+    "example_word_sounds": [
+      "lau",
+      "gh"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "gh",
+    "symbol": "g",
+    "example_word": "ghost",
+    "example_word_sounds": [
+      "gh",
+      "ost"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "gh",
+    "symbol": "",
+    "example_word": "light",
+    "example_word_sounds": [
+      "li",
+      "gh",
+      "t"
+    ],
+    "category": "silent_letter",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "wh",
+    "symbol": "h",
+    "example_word": "who",
+    "example_word_sounds": [
+      "wh",
+      "o"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "ch",
+    "symbol": "k",
+    "example_word": "school",
+    "example_word_sounds": [
+      "sch",
+      "ool"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "ch",
+    "symbol": "ʃ",
+    "example_word": "machine",
+    "example_word_sounds": [
+      "mach",
+      "ine"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "ough",
+    "symbol": "oʊ",
+    "example_word": "though",
+    "example_word_sounds": [
+      "th",
+      "ough"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "ough",
+    "symbol": "aʊ",
+    "example_word": "bough",
+    "example_word_sounds": [
+      "b",
+      "ough"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "ough",
+    "symbol": "ɔː",
+    "example_word": "bought",
+    "example_word_sounds": [
+      "b",
+      "ough",
+      "t"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "ough",
+    "symbol": "ʌf",
+    "example_word": "rough",
+    "example_word_sounds": [
+      "r",
+      "ough"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "ough",
+    "symbol": "uː",
+    "example_word": "through",
+    "example_word_sounds": [
+      "thr",
+      "ough"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "augh",
+    "symbol": "ɔː",
+    "example_word": "caught",
+    "example_word_sounds": [
+      "c",
+      "augh",
+      "t"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "augh",
+    "symbol": "æf",
+    "example_word": "laugh",
+    "example_word_sounds": [
+      "l",
+      "augh"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "eigh",
+    "symbol": "eɪ",
+    "example_word": "eight",
+    "example_word_sounds": [
+      "eigh",
+      "t"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "eigh",
+    "symbol": "aɪ",
+    "example_word": "height",
+    "example_word_sounds": [
+      "h",
+      "eigh",
+      "t"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "ire",
+    "symbol": "aɪər",
+    "example_word": "fire",
+    "example_word_sounds": [
+      "f",
+      "ire"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "are",
+    "symbol": "eər",
+    "example_word": "care",
+    "example_word_sounds": [
+      "c",
+      "are"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "ear",
+    "symbol": "ɪər",
+    "example_word": "near",
+    "example_word_sounds": [
+      "n",
+      "ear"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "ear",
+    "symbol": "eər",
+    "example_word": "bear",
+    "example_word_sounds": [
+      "b",
+      "ear"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "ear",
+    "symbol": "ɜː",
+    "example_word": "learn",
+    "example_word_sounds": [
+      "l",
+      "ear",
+      "n"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "wor",
+    "symbol": "wɜː",
+    "example_word": "word",
+    "example_word_sounds": [
+      "w",
+      "or",
+      "d"
+    ],
+    "category": "r_controlled_vowel",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "war",
+    "symbol": "wɔː",
+    "example_word": "warm",
+    "example_word_sounds": [
+      "w",
+      "ar",
+      "m"
+    ],
+    "category": "r_controlled_vowel",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "ould",
+    "symbol": "ʊd",
+    "example_word": "could",
+    "example_word_sounds": [
+      "c",
+      "ould"
+    ],
+    "category": "vowel_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "ti",
+    "symbol": "ʃ",
+    "example_word": "station",
+    "example_word_sounds": [
+      "sta",
+      "ti",
+      "on"
+    ],
+    "category": "suffix_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "ci",
+    "symbol": "ʃ",
+    "example_word": "special",
+    "example_word_sounds": [
+      "spe",
+      "ci",
+      "al"
+    ],
+    "category": "suffix_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "si",
+    "symbol": "ʃ",
+    "example_word": "mansion",
+    "example_word_sounds": [
+      "man",
+      "si",
+      "on"
+    ],
+    "category": "suffix_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "tu",
+    "symbol": "tʃ",
+    "example_word": "nature",
+    "example_word_sounds": [
+      "na",
+      "tu",
+      "re"
+    ],
+    "category": "suffix_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "du",
+    "symbol": "dʒ",
+    "example_word": "gradual",
+    "example_word_sounds": [
+      "grad",
+      "u",
+      "al"
+    ],
+    "category": "suffix_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "ge",
+    "symbol": "ʒ",
+    "example_word": "garage",
+    "example_word_sounds": [
+      "gar",
+      "a",
+      "ge"
+    ],
+    "category": "suffix_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "s",
+    "symbol": "ʒ",
+    "example_word": "measure",
+    "example_word_sounds": [
+      "mea",
+      "s",
+      "ure"
+    ],
+    "category": "suffix_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "x",
+    "symbol": "ʃ",
+    "example_word": "anxious",
+    "example_word_sounds": [
+      "an",
+      "x",
+      "ious"
+    ],
+    "category": "suffix_pattern",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "cc",
+    "symbol": "k",
+    "example_word": "account",
+    "example_word_sounds": [
+      "acc",
+      "ount"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 4,
+    "phoneme": "sc",
+    "symbol": "s",
+    "example_word": "scene",
+    "example_word_sounds": [
+      "sc",
+      "ene"
+    ],
+    "category": "consonant_digraph",
+    "difficulty": "veryhard"
+  },
+  {
+    "level": 5,
+    "phoneme": "tion",
+    "symbol": "ʃən",
+    "example_word": "action",
+    "example_word_sounds": [
+      "ac",
+      "tion"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "sion",
+    "symbol": "ʒən",
+    "example_word": "vision",
+    "example_word_sounds": [
+      "vi",
+      "sion"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "sion",
+    "symbol": "ʃən",
+    "example_word": "mission",
+    "example_word_sounds": [
+      "mi",
+      "ssion"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "cial",
+    "symbol": "ʃəl",
+    "example_word": "special",
+    "example_word_sounds": [
+      "spe",
+      "cial"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "tial",
+    "symbol": "ʃəl",
+    "example_word": "partial",
+    "example_word_sounds": [
+      "par",
+      "tial"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "cious",
+    "symbol": "ʃəs",
+    "example_word": "delicious",
+    "example_word_sounds": [
+      "deli",
+      "cious"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "tious",
+    "symbol": "ʃəs",
+    "example_word": "cautious",
+    "example_word_sounds": [
+      "cau",
+      "tious"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "ture",
+    "symbol": "tʃər",
+    "example_word": "picture",
+    "example_word_sounds": [
+      "pic",
+      "ture"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "sure",
+    "symbol": "ʒər",
+    "example_word": "measure",
+    "example_word_sounds": [
+      "mea",
+      "sure"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "ous",
+    "symbol": "əs",
+    "example_word": "famous",
+    "example_word_sounds": [
+      "fam",
+      "ous"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "ful",
+    "symbol": "fʊl",
+    "example_word": "helpful",
+    "example_word_sounds": [
+      "help",
+      "ful"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "less",
+    "symbol": "ləs",
+    "example_word": "careless",
+    "example_word_sounds": [
+      "care",
+      "less"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "ness",
+    "symbol": "nəs",
+    "example_word": "kindness",
+    "example_word_sounds": [
+      "kind",
+      "ness"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "ment",
+    "symbol": "mənt",
+    "example_word": "payment",
+    "example_word_sounds": [
+      "pay",
+      "ment"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "ly",
+    "symbol": "li",
+    "example_word": "quickly",
+    "example_word_sounds": [
+      "quick",
+      "ly"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "ed",
+    "symbol": "d",
+    "example_word": "played",
+    "example_word_sounds": [
+      "play",
+      "ed"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "ed",
+    "symbol": "t",
+    "example_word": "walked",
+    "example_word_sounds": [
+      "walk",
+      "ed"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "ed",
+    "symbol": "ɪd",
+    "example_word": "wanted",
+    "example_word_sounds": [
+      "want",
+      "ed"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "ing",
+    "symbol": "ɪŋ",
+    "example_word": "running",
+    "example_word_sounds": [
+      "runn",
+      "ing"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "s",
+    "symbol": "s",
+    "example_word": "cats",
+    "example_word_sounds": [
+      "cat",
+      "s"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "s",
+    "symbol": "z",
+    "example_word": "dogs",
+    "example_word_sounds": [
+      "dog",
+      "s"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "es",
+    "symbol": "ɪz",
+    "example_word": "boxes",
+    "example_word_sounds": [
+      "box",
+      "es"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "er",
+    "symbol": "ər",
+    "example_word": "teacher",
+    "example_word_sounds": [
+      "teach",
+      "er"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "est",
+    "symbol": "ɪst",
+    "example_word": "biggest",
+    "example_word_sounds": [
+      "bigg",
+      "est"
+    ],
+    "category": "suffix",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "schwa",
+    "symbol": "ə",
+    "example_word": "about",
+    "example_word_sounds": [
+      "a",
+      "bout"
+    ],
+    "category": "vowel",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "schwa",
+    "symbol": "ə",
+    "example_word": "taken",
+    "example_word_sounds": [
+      "tak",
+      "en"
+    ],
+    "category": "vowel",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "schwa",
+    "symbol": "ə",
+    "example_word": "pencil",
+    "example_word_sounds": [
+      "penc",
+      "il"
+    ],
+    "category": "vowel",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "schwa",
+    "symbol": "ə",
+    "example_word": "lemon",
+    "example_word_sounds": [
+      "lem",
+      "on"
+    ],
+    "category": "vowel",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "schwa",
+    "symbol": "ə",
+    "example_word": "circus",
+    "example_word_sounds": [
+      "circ",
+      "us"
+    ],
+    "category": "vowel",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "ps",
+    "symbol": "s",
+    "example_word": "psalm",
+    "example_word_sounds": [
+      "ps",
+      "alm"
+    ],
+    "category": "silent_letter",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "pt",
+    "symbol": "t",
+    "example_word": "pterodactyl",
+    "example_word_sounds": [
+      "pt",
+      "erodactyl"
+    ],
+    "category": "silent_letter",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "mn",
+    "symbol": "n",
+    "example_word": "hymn",
+    "example_word_sounds": [
+      "hy",
+      "mn"
+    ],
+    "category": "silent_letter",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "istle",
+    "symbol": "ɪsəl",
+    "example_word": "whistle",
+    "example_word_sounds": [
+      "wh",
+      "istle"
+    ],
+    "category": "silent_letter",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "sten",
+    "symbol": "sən",
+    "example_word": "listen",
+    "example_word_sounds": [
+      "li",
+      "sten"
+    ],
+    "category": "silent_letter",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "ar",
+    "symbol": "ər",
+    "example_word": "doctor",
+    "example_word_sounds": [
+      "doct",
+      "or"
+    ],
+    "category": "r_controlled_vowel",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "or",
+    "symbol": "ər",
+    "example_word": "sailor",
+    "example_word_sounds": [
+      "sail",
+      "or"
+    ],
+    "category": "r_controlled_vowel",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "er",
+    "symbol": "ər",
+    "example_word": "teacher",
+    "example_word_sounds": [
+      "teach",
+      "er"
+    ],
+    "category": "r_controlled_vowel",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "ur",
+    "symbol": "ər",
+    "example_word": "figure",
+    "example_word_sounds": [
+      "fig",
+      "ure"
+    ],
+    "category": "r_controlled_vowel",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "ir",
+    "symbol": "ər",
+    "example_word": "stir",
+    "example_word_sounds": [
+      "st",
+      "ir"
+    ],
+    "category": "r_controlled_vowel",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "ei",
+    "symbol": "aɪ",
+    "example_word": "height",
+    "example_word_sounds": [
+      "h",
+      "ei",
+      "gh",
+      "t"
+    ],
+    "category": "vowel_digraph",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "que",
+    "symbol": "k",
+    "example_word": "unique",
+    "example_word_sounds": [
+      "uni",
+      "que"
+    ],
+    "category": "suffix_pattern",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "gue",
+    "symbol": "g",
+    "example_word": "dialogue",
+    "example_word_sounds": [
+      "dial",
+      "ogue"
+    ],
+    "category": "suffix_pattern",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "ique",
+    "symbol": "iːk",
+    "example_word": "technique",
+    "example_word_sounds": [
+      "tech",
+      "nique"
+    ],
+    "category": "suffix_pattern",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "aque",
+    "symbol": "eɪk",
+    "example_word": "plaque",
+    "example_word_sounds": [
+      "pla",
+      "que"
+    ],
+    "category": "suffix_pattern",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 5,
+    "phoneme": "eque",
+    "symbol": "iːk",
+    "example_word": "boutique",
+    "example_word_sounds": [
+      "bou",
+      "tique"
+    ],
+    "category": "suffix_pattern",
+    "difficulty": "extreme"
+  },
+  {
+    "level": 6,
+    "phoneme": "psychology",
+    "symbol": "saɪkɒlədʒi",
+    "example_word": "psychology",
+    "example_word_sounds": [
+      "psy",
+      "chol",
+      "ogy"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "psychiatry",
+    "symbol": "saɪkaɪətri",
+    "example_word": "psychiatry",
+    "example_word_sounds": [
+      "psy",
+      "chi",
+      "atry"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "pneumonia",
+    "symbol": "njuːməʊniə",
+    "example_word": "pneumonia",
+    "example_word_sounds": [
+      "pneu",
+      "mo",
+      "nia"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "mnemonic",
+    "symbol": "nɪmɒnɪk",
+    "example_word": "mnemonic",
+    "example_word_sounds": [
+      "mne",
+      "mon",
+      "ic"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "pterodactyl",
+    "symbol": "terədæktɪl",
+    "example_word": "pterodactyl",
+    "example_word_sounds": [
+      "pter",
+      "o",
+      "dactyl"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "archaeology",
+    "symbol": "ɑːkiɒlədʒi",
+    "example_word": "archaeology",
+    "example_word_sounds": [
+      "arch",
+      "ae",
+      "ology"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "anaesthetic",
+    "symbol": "ænəsθetɪk",
+    "example_word": "anaesthetic",
+    "example_word_sounds": [
+      "an",
+      "aes",
+      "thetic"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "encyclopaedia",
+    "symbol": "ɪnsaɪkləpiːdiə",
+    "example_word": "encyclopaedia",
+    "example_word_sounds": [
+      "en",
+      "cy",
+      "clo",
+      "paedia"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "chauffeur",
+    "symbol": "ʃəʊfə",
+    "example_word": "chauffeur",
+    "example_word_sounds": [
+      "chauf",
+      "feur"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "entrepreneur",
+    "symbol": "ɒntrəprənə",
+    "example_word": "entrepreneur",
+    "example_word_sounds": [
+      "en",
+      "tre",
+      "preneur"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "connoisseur",
+    "symbol": "kɒnəsə",
+    "example_word": "connoisseur",
+    "example_word_sounds": [
+      "con",
+      "nois",
+      "seur"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "surveillance",
+    "symbol": "səveɪləns",
+    "example_word": "surveillance",
+    "example_word_sounds": [
+      "sur",
+      "veil",
+      "lance"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "renaissance",
+    "symbol": "rəneɪsəns",
+    "example_word": "renaissance",
+    "example_word_sounds": [
+      "ren",
+      "ais",
+      "sance"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "bourgeoisie",
+    "symbol": "bʊəʒwɑːziː",
+    "example_word": "bourgeoisie",
+    "example_word_sounds": [
+      "bour",
+      "geoi",
+      "sie"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "silhouette",
+    "symbol": "sɪluet",
+    "example_word": "silhouette",
+    "example_word_sounds": [
+      "sil",
+      "hou",
+      "ette"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "cigarette",
+    "symbol": "sɪgəret",
+    "example_word": "cigarette",
+    "example_word_sounds": [
+      "cig",
+      "a",
+      "rette"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "etiquette",
+    "symbol": "etɪket",
+    "example_word": "etiquette",
+    "example_word_sounds": [
+      "et",
+      "i",
+      "quette"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "marionette",
+    "symbol": "mæriənet",
+    "example_word": "marionette",
+    "example_word_sounds": [
+      "mar",
+      "io",
+      "nette"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "baguette",
+    "symbol": "bæget",
+    "example_word": "baguette",
+    "example_word_sounds": [
+      "ba",
+      "guette"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "brunette",
+    "symbol": "bruːnet",
+    "example_word": "brunette",
+    "example_word_sounds": [
+      "bru",
+      "nette"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "cassette",
+    "symbol": "kæset",
+    "example_word": "cassette",
+    "example_word_sounds": [
+      "cas",
+      "sette"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "palette",
+    "symbol": "pælet",
+    "example_word": "palette",
+    "example_word_sounds": [
+      "pal",
+      "ette"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "gazette",
+    "symbol": "gəzet",
+    "example_word": "gazette",
+    "example_word_sounds": [
+      "ga",
+      "zette"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "omelette",
+    "symbol": "ɒmlət",
+    "example_word": "omelette",
+    "example_word_sounds": [
+      "om",
+      "e",
+      "lette"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "roulette",
+    "symbol": "ruːlet",
+    "example_word": "roulette",
+    "example_word_sounds": [
+      "rou",
+      "lette"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "pirouette",
+    "symbol": "pɪruet",
+    "example_word": "pirouette",
+    "example_word_sounds": [
+      "pir",
+      "ou",
+      "ette"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "statuette",
+    "symbol": "stætʃuet",
+    "example_word": "statuette",
+    "example_word_sounds": [
+      "stat",
+      "u",
+      "ette"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "coquette",
+    "symbol": "kəket",
+    "example_word": "coquette",
+    "example_word_sounds": [
+      "co",
+      "quette"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "cadet",
+    "symbol": "kədet",
+    "example_word": "cadet",
+    "example_word_sounds": [
+      "ca",
+      "det"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "ballet",
+    "symbol": "bæleɪ",
+    "example_word": "ballet",
+    "example_word_sounds": [
+      "bal",
+      "let"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "buffet",
+    "symbol": "bʊfeɪ",
+    "example_word": "buffet",
+    "example_word_sounds": [
+      "buf",
+      "fet"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "bouquet",
+    "symbol": "bukeɪ",
+    "example_word": "bouquet",
+    "example_word_sounds": [
+      "bou",
+      "quet"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "croquet",
+    "symbol": "krəʊkeɪ",
+    "example_word": "croquet",
+    "example_word_sounds": [
+      "cro",
+      "quet"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "duvet",
+    "symbol": "duːveɪ",
+    "example_word": "duvet",
+    "example_word_sounds": [
+      "du",
+      "vet"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "filet",
+    "symbol": "fɪleɪ",
+    "example_word": "filet",
+    "example_word_sounds": [
+      "fi",
+      "let"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "gourmet",
+    "symbol": "gʊəmeɪ",
+    "example_word": "gourmet",
+    "example_word_sounds": [
+      "gour",
+      "met"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "parquet",
+    "symbol": "pɑːkeɪ",
+    "example_word": "parquet",
+    "example_word_sounds": [
+      "par",
+      "quet"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "ricochet",
+    "symbol": "rɪkəʃeɪ",
+    "example_word": "ricochet",
+    "example_word_sounds": [
+      "ric",
+      "o",
+      "chet"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "sorbet",
+    "symbol": "sɔːbeɪ",
+    "example_word": "sorbet",
+    "example_word_sounds": [
+      "sor",
+      "bet"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "tourniquet",
+    "symbol": "tʊənɪkeɪ",
+    "example_word": "tourniquet",
+    "example_word_sounds": [
+      "tour",
+      "ni",
+      "quet"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "valet",
+    "symbol": "væleɪ",
+    "example_word": "valet",
+    "example_word_sounds": [
+      "val",
+      "et"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "chalet",
+    "symbol": "ʃæleɪ",
+    "example_word": "chalet",
+    "example_word_sounds": [
+      "cha",
+      "let"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "cabaret",
+    "symbol": "kæbəreɪ",
+    "example_word": "cabaret",
+    "example_word_sounds": [
+      "cab",
+      "a",
+      "ret"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "beret",
+    "symbol": "bereɪ",
+    "example_word": "beret",
+    "example_word_sounds": [
+      "be",
+      "ret"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "fillet",
+    "symbol": "fɪlɪt",
+    "example_word": "fillet",
+    "example_word_sounds": [
+      "fil",
+      "let"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "wallet",
+    "symbol": "wɒlɪt",
+    "example_word": "wallet",
+    "example_word_sounds": [
+      "wal",
+      "let"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "bullet",
+    "symbol": "bʊlɪt",
+    "example_word": "bullet",
+    "example_word_sounds": [
+      "bul",
+      "let"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "mullet",
+    "symbol": "mʌlɪt",
+    "example_word": "mullet",
+    "example_word_sounds": [
+      "mul",
+      "let"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "inlet",
+    "symbol": "ɪnlet",
+    "example_word": "inlet",
+    "example_word_sounds": [
+      "in",
+      "let"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "outlet",
+    "symbol": "aʊtlet",
+    "example_word": "outlet",
+    "example_word_sounds": [
+      "out",
+      "let"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  },
+  {
+    "level": 6,
+    "phoneme": "tablet",
+    "symbol": "tæblɪt",
+    "example_word": "tablet",
+    "example_word_sounds": [
+      "tab",
+      "let"
+    ],
+    "category": "complex_word",
+    "difficulty": "expert"
+  }
+]

@@ -1,0 +1,585 @@
+[
+  {
+    "set_id": 1,
+    "level": "beginner",
+    "category": "beVerb",
+    "target_sentence": "I am happy",
+    "hint_ja": "私は幸せです",
+    "estimated_difficulty": 1,
+    "visual_theme": "happiness",
+    "words_pool": [
+      {
+        "word": "I",
+        "position": "subject"
+      },
+      {
+        "word": "am",
+        "position": "verb"
+      },
+      {
+        "word": "happy",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "SVO",
+    "": ""
+  },
+  {
+    "set_id": 2,
+    "level": "beginner",
+    "category": "beVerb",
+    "target_sentence": "You are a student",
+    "hint_ja": "あなたは学生です",
+    "estimated_difficulty": 1.2,
+    "visual_theme": "school",
+    "words_pool": [
+      {
+        "word": "You",
+        "position": "subject"
+      },
+      {
+        "word": "are",
+        "position": "verb"
+      },
+      {
+        "word": "a student",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "SVO",
+    "": ""
+  },
+  {
+    "set_id": 3,
+    "level": null,
+    "category": "beVerb",
+    "target_sentence": "She is tired",
+    "hint_ja": "彼女は疲れています",
+    "estimated_difficulty": 1.3,
+    "visual_theme": "emotion",
+    "words_pool": [
+      {
+        "word": "She",
+        "position": "subject"
+      },
+      {
+        "word": "is",
+        "position": "verb"
+      },
+      {
+        "word": "tired",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "SVO",
+    "": ""
+  },
+  {
+    "set_id": 4,
+    "level": null,
+    "category": "beVerb",
+    "target_sentence": "We are friends",
+    "hint_ja": "私たちは友達です",
+    "estimated_difficulty": 1.5,
+    "visual_theme": "friendship",
+    "words_pool": [
+      {
+        "word": "We",
+        "position": "subject"
+      },
+      {
+        "word": "are",
+        "position": "verb"
+      },
+      {
+        "word": "friends",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "SVO",
+    "": ""
+  },
+  {
+    "set_id": 5,
+    "level": null,
+    "category": "beVerb",
+    "target_sentence": "They are students",
+    "hint_ja": "彼らは学生です",
+    "estimated_difficulty": 1.6,
+    "visual_theme": "school",
+    "words_pool": [
+      {
+        "word": "They",
+        "position": "subject"
+      },
+      {
+        "word": "are",
+        "position": "verb"
+      },
+      {
+        "word": "students",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "SVO",
+    "": ""
+  },
+  {
+    "set_id": 6,
+    "level": null,
+    "category": "beVerb",
+    "target_sentence": "It is a book",
+    "hint_ja": "それは本です",
+    "estimated_difficulty": 1.1,
+    "visual_theme": "object",
+    "words_pool": [
+      {
+        "word": "It",
+        "position": "subject"
+      },
+      {
+        "word": "is",
+        "position": "verb"
+      },
+      {
+        "word": "a book",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "SVO",
+    "": ""
+  },
+  {
+    "set_id": 7,
+    "level": null,
+    "category": "beVerb",
+    "target_sentence": "I am not sad",
+    "hint_ja": "私は悲しくありません",
+    "estimated_difficulty": 2,
+    "visual_theme": "emotion",
+    "words_pool": [
+      {
+        "word": "I",
+        "position": "subject"
+      },
+      {
+        "word": "am not",
+        "position": "verb"
+      },
+      {
+        "word": "sad",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "SVnegO",
+    "": ""
+  },
+  {
+    "set_id": 8,
+    "level": null,
+    "category": "generalVerb",
+    "target_sentence": "I play soccer",
+    "hint_ja": "私はサッカーをします",
+    "estimated_difficulty": 2,
+    "visual_theme": "sports",
+    "words_pool": [
+      {
+        "word": "I",
+        "position": "subject"
+      },
+      {
+        "word": "play",
+        "position": "verb"
+      },
+      {
+        "word": "soccer",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "SVO",
+    "": ""
+  },
+  {
+    "set_id": 9,
+    "level": null,
+    "category": "generalVerb",
+    "target_sentence": "He likes music",
+    "hint_ja": "彼は音楽が好きです",
+    "estimated_difficulty": 2.1,
+    "visual_theme": "music",
+    "words_pool": [
+      {
+        "word": "He",
+        "position": "subject"
+      },
+      {
+        "word": "likes",
+        "position": "verb"
+      },
+      {
+        "word": "music",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "SVO",
+    "": ""
+  },
+  {
+    "set_id": 10,
+    "level": null,
+    "category": "generalVerb",
+    "target_sentence": "We eat lunch",
+    "hint_ja": "私たちは昼食を食べます",
+    "estimated_difficulty": 2.2,
+    "visual_theme": "food",
+    "words_pool": [
+      {
+        "word": "We",
+        "position": "subject"
+      },
+      {
+        "word": "eat",
+        "position": "verb"
+      },
+      {
+        "word": "lunch",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "SVO",
+    "": ""
+  },
+  {
+    "set_id": 11,
+    "level": null,
+    "category": "generalVerb",
+    "target_sentence": "She reads books",
+    "hint_ja": "彼女は本を読みます",
+    "estimated_difficulty": 2.3,
+    "visual_theme": "reading",
+    "words_pool": [
+      {
+        "word": "She",
+        "position": "subject"
+      },
+      {
+        "word": "reads",
+        "position": "verb"
+      },
+      {
+        "word": "books",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "SVO",
+    "": ""
+  },
+  {
+    "set_id": 12,
+    "level": null,
+    "category": "generalVerb",
+    "target_sentence": "They watch TV",
+    "hint_ja": "彼らはテレビを見ます",
+    "estimated_difficulty": 2.4,
+    "visual_theme": "entertainment",
+    "words_pool": [
+      {
+        "word": "They",
+        "position": "subject"
+      },
+      {
+        "word": "watch",
+        "position": "verb"
+      },
+      {
+        "word": "TV",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "SVO",
+    "": ""
+  },
+  {
+    "set_id": 13,
+    "level": null,
+    "category": "whQuestion",
+    "target_sentence": "What is this?",
+    "hint_ja": "これは何ですか？",
+    "estimated_difficulty": 2.5,
+    "visual_theme": "question",
+    "words_pool": [
+      {
+        "word": "What",
+        "position": "subject"
+      },
+      {
+        "word": "is",
+        "position": "verb"
+      },
+      {
+        "word": "this",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "WhSVO",
+    "": ""
+  },
+  {
+    "set_id": 14,
+    "level": null,
+    "category": "whQuestion",
+    "target_sentence": "Where are you?",
+    "hint_ja": "あなたはどこにいますか？",
+    "estimated_difficulty": 2.6,
+    "visual_theme": "location",
+    "words_pool": [
+      {
+        "word": "Where",
+        "position": "subject"
+      },
+      {
+        "word": "are",
+        "position": "verb"
+      },
+      {
+        "word": "you",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "WhSVO",
+    "": ""
+  },
+  {
+    "set_id": 15,
+    "level": null,
+    "category": "whQuestion",
+    "target_sentence": "Who is he?",
+    "hint_ja": "彼は誰ですか？",
+    "estimated_difficulty": 2.7,
+    "visual_theme": "person",
+    "words_pool": [
+      {
+        "word": "Who",
+        "position": "subject"
+      },
+      {
+        "word": "is",
+        "position": "verb"
+      },
+      {
+        "word": "he",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "WhSVO",
+    "": ""
+  },
+  {
+    "set_id": 16,
+    "level": null,
+    "category": "beVerb",
+    "target_sentence": "I am not tired",
+    "hint_ja": "私は疲れていません",
+    "estimated_difficulty": 3,
+    "visual_theme": "negation",
+    "words_pool": [
+      {
+        "word": "I",
+        "position": "subject"
+      },
+      {
+        "word": "am not",
+        "position": "verb"
+      },
+      {
+        "word": "tired",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "SVnegO",
+    "": ""
+  },
+  {
+    "set_id": 17,
+    "level": null,
+    "category": "beVerb",
+    "target_sentence": "You are not late",
+    "hint_ja": "あなたは遅刻していません",
+    "estimated_difficulty": 3.1,
+    "visual_theme": "time",
+    "words_pool": [
+      {
+        "word": "You",
+        "position": "subject"
+      },
+      {
+        "word": "are not",
+        "position": "verb"
+      },
+      {
+        "word": "late",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "SVnegO",
+    "": ""
+  },
+  {
+    "set_id": 18,
+    "level": null,
+    "category": "generalVerb",
+    "target_sentence": "Do you like pizza?",
+    "hint_ja": "あなたはピザが好きですか？",
+    "estimated_difficulty": 3.5,
+    "visual_theme": "question",
+    "words_pool": [
+      {
+        "word": "Do",
+        "position": "auxiliary"
+      },
+      {
+        "word": "you",
+        "position": "subject"
+      },
+      {
+        "word": "like",
+        "position": "verb"
+      },
+      {
+        "word": "pizza",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "AuxSVO",
+    "": ""
+  },
+  {
+    "set_id": 19,
+    "level": null,
+    "category": "generalVerb",
+    "target_sentence": "Does she speak English?",
+    "hint_ja": "彼女は英語を話しますか？",
+    "estimated_difficulty": 3.6,
+    "visual_theme": "language",
+    "words_pool": [
+      {
+        "word": "Does",
+        "position": "auxiliary"
+      },
+      {
+        "word": "she",
+        "position": "subject"
+      },
+      {
+        "word": "speak",
+        "position": "verb"
+      },
+      {
+        "word": "English",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "AuxSVO",
+    "": ""
+  },
+  {
+    "set_id": 20,
+    "level": null,
+    "category": "pastTense",
+    "target_sentence": "I played soccer yesterday",
+    "hint_ja": "私は昨日サッカーをしました",
+    "estimated_difficulty": 4,
+    "visual_theme": "past_sports",
+    "words_pool": [
+      {
+        "word": "I",
+        "position": "subject"
+      },
+      {
+        "word": "played",
+        "position": "verb"
+      },
+      {
+        "word": "soccer",
+        "position": "object"
+      },
+      {
+        "word": "yesterday",
+        "position": "modifier"
+      }
+    ],
+    "grammar_pattern": "SVOM",
+    "": ""
+  },
+  {
+    "set_id": 21,
+    "level": null,
+    "category": "futureTense",
+    "target_sentence": "I will study English",
+    "hint_ja": "私は英語を勉強するでしょう",
+    "estimated_difficulty": 4.2,
+    "visual_theme": "future_study",
+    "words_pool": [
+      {
+        "word": "I",
+        "position": "subject"
+      },
+      {
+        "word": "will study",
+        "position": "verb"
+      },
+      {
+        "word": "English",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "AuxSVO",
+    "": ""
+  },
+  {
+    "set_id": 22,
+    "level": null,
+    "category": "presentPerfect",
+    "target_sentence": "I have finished homework",
+    "hint_ja": "私は宿題を終えました",
+    "estimated_difficulty": 5,
+    "visual_theme": "completion",
+    "words_pool": [
+      {
+        "word": "I",
+        "position": "subject"
+      },
+      {
+        "word": "have finished",
+        "position": "verb"
+      },
+      {
+        "word": "homework",
+        "position": "object"
+      }
+    ],
+    "grammar_pattern": "AuxVPO",
+    "": ""
+  },
+  {
+    "set_id": 23,
+    "level": null,
+    "category": "passiveVoice",
+    "target_sentence": "The book was written",
+    "hint_ja": "その本は書かれました",
+    "estimated_difficulty": 5.5,
+    "visual_theme": "creation",
+    "words_pool": [
+      {
+        "word": "The book",
+        "position": "subject"
+      },
+      {
+        "word": "was written",
+        "position": "verb"
+      }
+    ],
+    "grammar_pattern": "PassiveSV",
+    "": ""
+  }
+]

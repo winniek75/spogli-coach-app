@@ -1,0 +1,2330 @@
+[
+  {
+    "level": 1,
+    "word": "the",
+    "example_sentence": "The cat is on the mat",
+    "image_url": "cat_on_mat.png",
+    "difficulty": "easy",
+    "category": "articles"
+  },
+  {
+    "level": 1,
+    "word": "and",
+    "example_sentence": "The dog and cat are friends",
+    "image_url": "dog_cat_friends.png",
+    "difficulty": "easy",
+    "category": "conjunctions"
+  },
+  {
+    "level": 1,
+    "word": "to",
+    "example_sentence": "I go to school every day",
+    "image_url": "go_to_school.png",
+    "difficulty": "easy",
+    "category": "prepositions"
+  },
+  {
+    "level": 1,
+    "word": "a",
+    "example_sentence": "I see a red apple",
+    "image_url": "red_apple.png",
+    "difficulty": "easy",
+    "category": "articles"
+  },
+  {
+    "level": 1,
+    "word": "I",
+    "example_sentence": "I am a happy child",
+    "image_url": "happy_child.png",
+    "difficulty": "easy",
+    "category": "pronouns"
+  },
+  {
+    "level": 1,
+    "word": "it",
+    "example_sentence": "It is a sunny day",
+    "image_url": "sunny_day.png",
+    "difficulty": "easy",
+    "category": "pronouns"
+  },
+  {
+    "level": 1,
+    "word": "in",
+    "example_sentence": "The ball is in the box",
+    "image_url": "ball_in_box.png",
+    "difficulty": "easy",
+    "category": "prepositions"
+  },
+  {
+    "level": 1,
+    "word": "is",
+    "example_sentence": "The sun is bright",
+    "image_url": "bright_sun.png",
+    "difficulty": "easy",
+    "category": "verbs"
+  },
+  {
+    "level": 1,
+    "word": "you",
+    "example_sentence": "You are my best friend",
+    "image_url": "best_friends.png",
+    "difficulty": "easy",
+    "category": "pronouns"
+  },
+  {
+    "level": 1,
+    "word": "that",
+    "example_sentence": "That is a big tree",
+    "image_url": "big_tree.png",
+    "difficulty": "easy",
+    "category": "demonstratives"
+  },
+  {
+    "level": 1,
+    "word": "he",
+    "example_sentence": "He plays with his toys",
+    "image_url": "boy_with_toys.png",
+    "difficulty": "easy",
+    "category": "pronouns"
+  },
+  {
+    "level": 1,
+    "word": "was",
+    "example_sentence": "The cat was sleeping",
+    "image_url": "sleeping_cat.png",
+    "difficulty": "easy",
+    "category": "verbs"
+  },
+  {
+    "level": 1,
+    "word": "for",
+    "example_sentence": "This gift is for you",
+    "image_url": "gift_giving.png",
+    "difficulty": "easy",
+    "category": "prepositions"
+  },
+  {
+    "level": 1,
+    "word": "on",
+    "example_sentence": "The book is on the table",
+    "image_url": "book_on_table.png",
+    "difficulty": "easy",
+    "category": "prepositions"
+  },
+  {
+    "level": 1,
+    "word": "are",
+    "example_sentence": "We are good friends",
+    "image_url": "group_of_friends.png",
+    "difficulty": "easy",
+    "category": "verbs"
+  },
+  {
+    "level": 1,
+    "word": "as",
+    "example_sentence": "She runs as fast as wind",
+    "image_url": "running_fast.png",
+    "difficulty": "easy",
+    "category": "comparisons"
+  },
+  {
+    "level": 1,
+    "word": "with",
+    "example_sentence": "I play with my brother",
+    "image_url": "siblings_playing.png",
+    "difficulty": "easy",
+    "category": "prepositions"
+  },
+  {
+    "level": 1,
+    "word": "his",
+    "example_sentence": "His bag is very heavy",
+    "image_url": "heavy_bag.png",
+    "difficulty": "easy",
+    "category": "possessives"
+  },
+  {
+    "level": 1,
+    "word": "they",
+    "example_sentence": "They love to play outside",
+    "image_url": "children_playing_outside.png",
+    "difficulty": "easy",
+    "category": "pronouns"
+  },
+  {
+    "level": 1,
+    "word": "be",
+    "example_sentence": "I want to be a teacher",
+    "image_url": "teacher_classroom.png",
+    "difficulty": "easy",
+    "category": "verbs"
+  },
+  {
+    "level": 1,
+    "word": "at",
+    "example_sentence": "Meet me at the park",
+    "image_url": "meeting_at_park.png",
+    "difficulty": "easy",
+    "category": "prepositions"
+  },
+  {
+    "level": 1,
+    "word": "one",
+    "example_sentence": "I have one pet dog",
+    "image_url": "one_pet_dog.png",
+    "difficulty": "easy",
+    "category": "numbers"
+  },
+  {
+    "level": 1,
+    "word": "have",
+    "example_sentence": "I have a new bicycle",
+    "image_url": "new_bicycle.png",
+    "difficulty": "easy",
+    "category": "verbs"
+  },
+  {
+    "level": 1,
+    "word": "this",
+    "example_sentence": "This flower smells sweet",
+    "image_url": "sweet_flower.png",
+    "difficulty": "easy",
+    "category": "demonstratives"
+  },
+  {
+    "level": 1,
+    "word": "from",
+    "example_sentence": "The letter is from grandma",
+    "image_url": "letter_from_grandma.png",
+    "difficulty": "easy",
+    "category": "prepositions"
+  },
+  {
+    "level": 1,
+    "word": "or",
+    "example_sentence": "Do you want cake or ice cream",
+    "image_url": "cake_or_icecream.png",
+    "difficulty": "easy",
+    "category": "conjunctions"
+  },
+  {
+    "level": 1,
+    "word": "had",
+    "example_sentence": "She had a wonderful dream",
+    "image_url": "wonderful_dream.png",
+    "difficulty": "easy",
+    "category": "verbs"
+  },
+  {
+    "level": 1,
+    "word": "by",
+    "example_sentence": "The river flows by the house",
+    "image_url": "river_by_house.png",
+    "difficulty": "easy",
+    "category": "prepositions"
+  },
+  {
+    "level": 1,
+    "word": "but",
+    "example_sentence": "I like apples but not oranges",
+    "image_url": "apples_not_oranges.png",
+    "difficulty": "easy",
+    "category": "conjunctions"
+  },
+  {
+    "level": 1,
+    "word": "not",
+    "example_sentence": "The door is not open",
+    "image_url": "closed_door.png",
+    "difficulty": "easy",
+    "category": "negatives"
+  },
+  {
+    "level": 1,
+    "word": "what",
+    "example_sentence": "What color is the sky",
+    "image_url": "blue_sky.png",
+    "difficulty": "easy",
+    "category": "questions"
+  },
+  {
+    "level": 1,
+    "word": "all",
+    "example_sentence": "All the birds are singing",
+    "image_url": "birds_singing.png",
+    "difficulty": "easy",
+    "category": "quantifiers"
+  },
+  {
+    "level": 1,
+    "word": "were",
+    "example_sentence": "The children were very happy",
+    "image_url": "happy_children.png",
+    "difficulty": "easy",
+    "category": "verbs"
+  },
+  {
+    "level": 1,
+    "word": "we",
+    "example_sentence": "We go swimming together",
+    "image_url": "swimming_together.png",
+    "difficulty": "easy",
+    "category": "pronouns"
+  },
+  {
+    "level": 1,
+    "word": "when",
+    "example_sentence": "When will you come home",
+    "image_url": "coming_home.png",
+    "difficulty": "easy",
+    "category": "questions"
+  },
+  {
+    "level": 1,
+    "word": "your",
+    "example_sentence": "Your smile is beautiful",
+    "image_url": "beautiful_smile.png",
+    "difficulty": "easy",
+    "category": "possessives"
+  },
+  {
+    "level": 1,
+    "word": "can",
+    "example_sentence": "I can ride a bicycle",
+    "image_url": "riding_bicycle.png",
+    "difficulty": "easy",
+    "category": "modals"
+  },
+  {
+    "level": 1,
+    "word": "said",
+    "example_sentence": "Mom said dinner is ready",
+    "image_url": "dinner_ready.png",
+    "difficulty": "easy",
+    "category": "verbs"
+  },
+  {
+    "level": 1,
+    "word": "there",
+    "example_sentence": "There is a rainbow outside",
+    "image_url": "rainbow_outside.png",
+    "difficulty": "easy",
+    "category": "adverbs"
+  },
+  {
+    "level": 1,
+    "word": "each",
+    "example_sentence": "Each student has a book",
+    "image_url": "students_with_books.png",
+    "difficulty": "easy",
+    "category": "quantifiers"
+  },
+  {
+    "level": 1,
+    "word": "which",
+    "example_sentence": "Which toy do you like",
+    "image_url": "choosing_toys.png",
+    "difficulty": "easy",
+    "category": "questions"
+  },
+  {
+    "level": 1,
+    "word": "she",
+    "example_sentence": "She loves to read books",
+    "image_url": "girl_reading_books.png",
+    "difficulty": "easy",
+    "category": "pronouns"
+  },
+  {
+    "level": 1,
+    "word": "do",
+    "example_sentence": "Do you like chocolate cake",
+    "image_url": "chocolate_cake.png",
+    "difficulty": "easy",
+    "category": "verbs"
+  },
+  {
+    "level": 1,
+    "word": "how",
+    "example_sentence": "How do you make cookies",
+    "image_url": "making_cookies.png",
+    "difficulty": "easy",
+    "category": "questions"
+  },
+  {
+    "level": 1,
+    "word": "their",
+    "example_sentence": "Their house is very big",
+    "image_url": "big_house.png",
+    "difficulty": "easy",
+    "category": "possessives"
+  },
+  {
+    "level": 1,
+    "word": "if",
+    "example_sentence": "If it rains we stay inside",
+    "image_url": "staying_inside_rain.png",
+    "difficulty": "easy",
+    "category": "conditionals"
+  },
+  {
+    "level": 1,
+    "word": "will",
+    "example_sentence": "We will visit the zoo tomorrow",
+    "image_url": "visiting_zoo.png",
+    "difficulty": "easy",
+    "category": "modals"
+  },
+  {
+    "level": 1,
+    "word": "up",
+    "example_sentence": "The balloon goes up high",
+    "image_url": "balloon_going_up.png",
+    "difficulty": "easy",
+    "category": "directions"
+  },
+  {
+    "level": 1,
+    "word": "other",
+    "example_sentence": "The other book is red",
+    "image_url": "red_book.png",
+    "difficulty": "easy",
+    "category": "adjectives"
+  },
+  {
+    "level": 1,
+    "word": "about",
+    "example_sentence": "Tell me about your day",
+    "image_url": "telling_about_day.png",
+    "difficulty": "easy",
+    "category": "prepositions"
+  },
+  {
+    "level": 1,
+    "word": "out",
+    "example_sentence": "The cat went out to play",
+    "image_url": "cat_going_out.png",
+    "difficulty": "easy",
+    "category": "directions"
+  },
+  {
+    "level": 2,
+    "word": "who",
+    "example_sentence": "Who is your favorite teacher",
+    "image_url": "favorite_teacher.png",
+    "difficulty": "medium",
+    "category": "questions"
+  },
+  {
+    "level": 2,
+    "word": "oil",
+    "example_sentence": "The car needs fresh oil",
+    "image_url": "car_oil_change.png",
+    "difficulty": "medium",
+    "category": "things"
+  },
+  {
+    "level": 2,
+    "word": "its",
+    "example_sentence": "The dog wagged its tail",
+    "image_url": "dog_wagging_tail.png",
+    "difficulty": "medium",
+    "category": "possessives"
+  },
+  {
+    "level": 2,
+    "word": "now",
+    "example_sentence": "We must leave right now",
+    "image_url": "leaving_right_now.png",
+    "difficulty": "medium",
+    "category": "time"
+  },
+  {
+    "level": 2,
+    "word": "find",
+    "example_sentence": "Can you find the hidden treasure",
+    "image_url": "hidden_treasure.png",
+    "difficulty": "medium",
+    "category": "verbs"
+  },
+  {
+    "level": 2,
+    "word": "long",
+    "example_sentence": "The snake is very long",
+    "image_url": "very_long_snake.png",
+    "difficulty": "medium",
+    "category": "adjectives"
+  },
+  {
+    "level": 2,
+    "word": "down",
+    "example_sentence": "The ball rolled down the hill",
+    "image_url": "ball_down_hill.png",
+    "difficulty": "medium",
+    "category": "directions"
+  },
+  {
+    "level": 2,
+    "word": "day",
+    "example_sentence": "Today is a beautiful day",
+    "image_url": "beautiful_day.png",
+    "difficulty": "medium",
+    "category": "time"
+  },
+  {
+    "level": 2,
+    "word": "did",
+    "example_sentence": "Did you finish your homework",
+    "image_url": "finished_homework.png",
+    "difficulty": "medium",
+    "category": "verbs"
+  },
+  {
+    "level": 2,
+    "word": "get",
+    "example_sentence": "Please get the milk from fridge",
+    "image_url": "milk_from_fridge.png",
+    "difficulty": "medium",
+    "category": "verbs"
+  },
+  {
+    "level": 2,
+    "word": "has",
+    "example_sentence": "She has a pet rabbit",
+    "image_url": "pet_rabbit.png",
+    "difficulty": "medium",
+    "category": "verbs"
+  },
+  {
+    "level": 2,
+    "word": "him",
+    "example_sentence": "Give the book to him",
+    "image_url": "giving_book.png",
+    "difficulty": "medium",
+    "category": "pronouns"
+  },
+  {
+    "level": 2,
+    "word": "old",
+    "example_sentence": "My grandfather is very old",
+    "image_url": "old_grandfather.png",
+    "difficulty": "medium",
+    "category": "adjectives"
+  },
+  {
+    "level": 2,
+    "word": "see",
+    "example_sentence": "I can see the mountains",
+    "image_url": "seeing_mountains.png",
+    "difficulty": "medium",
+    "category": "verbs"
+  },
+  {
+    "level": 2,
+    "word": "two",
+    "example_sentence": "I have two best friends",
+    "image_url": "two_best_friends.png",
+    "difficulty": "medium",
+    "category": "numbers"
+  },
+  {
+    "level": 2,
+    "word": "way",
+    "example_sentence": "This is the way home",
+    "image_url": "way_home.png",
+    "difficulty": "medium",
+    "category": "directions"
+  },
+  {
+    "level": 2,
+    "word": "may",
+    "example_sentence": "May I have some water",
+    "image_url": "asking_for_water.png",
+    "difficulty": "medium",
+    "category": "modals"
+  },
+  {
+    "level": 2,
+    "word": "say",
+    "example_sentence": "What did you say to her",
+    "image_url": "talking_to_friend.png",
+    "difficulty": "medium",
+    "category": "verbs"
+  },
+  {
+    "level": 2,
+    "word": "new",
+    "example_sentence": "I got a new backpack",
+    "image_url": "new_backpack.png",
+    "difficulty": "medium",
+    "category": "adjectives"
+  },
+  {
+    "level": 2,
+    "word": "take",
+    "example_sentence": "Take an umbrella with you",
+    "image_url": "taking_umbrella.png",
+    "difficulty": "medium",
+    "category": "verbs"
+  },
+  {
+    "level": 2,
+    "word": "only",
+    "example_sentence": "Only one cookie is left",
+    "image_url": "one_cookie_left.png",
+    "difficulty": "medium",
+    "category": "quantifiers"
+  },
+  {
+    "level": 2,
+    "word": "little",
+    "example_sentence": "The little mouse is cute",
+    "image_url": "cute_little_mouse.png",
+    "difficulty": "medium",
+    "category": "adjectives"
+  },
+  {
+    "level": 2,
+    "word": "work",
+    "example_sentence": "Dad goes to work early",
+    "image_url": "going_to_work.png",
+    "difficulty": "medium",
+    "category": "verbs"
+  },
+  {
+    "level": 2,
+    "word": "know",
+    "example_sentence": "I know how to swim",
+    "image_url": "knowing_how_to_swim.png",
+    "difficulty": "medium",
+    "category": "verbs"
+  },
+  {
+    "level": 2,
+    "word": "place",
+    "example_sentence": "This is my favorite place",
+    "image_url": "favorite_place.png",
+    "difficulty": "medium",
+    "category": "places"
+  },
+  {
+    "level": 2,
+    "word": "year",
+    "example_sentence": "Last year we moved here",
+    "image_url": "moved_last_year.png",
+    "difficulty": "medium",
+    "category": "time"
+  },
+  {
+    "level": 2,
+    "word": "live",
+    "example_sentence": "Fish live in the water",
+    "image_url": "fish_in_water.png",
+    "difficulty": "medium",
+    "category": "verbs"
+  },
+  {
+    "level": 2,
+    "word": "me",
+    "example_sentence": "Please come with me",
+    "image_url": "come_with_me.png",
+    "difficulty": "medium",
+    "category": "pronouns"
+  },
+  {
+    "level": 2,
+    "word": "back",
+    "example_sentence": "Come back before dinner",
+    "image_url": "come_back_dinner.png",
+    "difficulty": "medium",
+    "category": "directions"
+  },
+  {
+    "level": 2,
+    "word": "give",
+    "example_sentence": "Give me a big hug",
+    "image_url": "giving_big_hug.png",
+    "difficulty": "medium",
+    "category": "verbs"
+  },
+  {
+    "level": 2,
+    "word": "most",
+    "example_sentence": "Most birds can fly high",
+    "image_url": "birds_flying_high.png",
+    "difficulty": "medium",
+    "category": "quantifiers"
+  },
+  {
+    "level": 2,
+    "word": "very",
+    "example_sentence": "The flower is very pretty",
+    "image_url": "very_pretty_flower.png",
+    "difficulty": "medium",
+    "category": "adverbs"
+  },
+  {
+    "level": 2,
+    "word": "after",
+    "example_sentence": "We play after school",
+    "image_url": "playing_after_school.png",
+    "difficulty": "medium",
+    "category": "time"
+  },
+  {
+    "level": 2,
+    "word": "thing",
+    "example_sentence": "That is a strange thing",
+    "image_url": "strange_thing.png",
+    "difficulty": "medium",
+    "category": "things"
+  },
+  {
+    "level": 2,
+    "word": "our",
+    "example_sentence": "Our family loves picnics",
+    "image_url": "family_picnic.png",
+    "difficulty": "medium",
+    "category": "possessives"
+  },
+  {
+    "level": 2,
+    "word": "just",
+    "example_sentence": "I just finished my lunch",
+    "image_url": "finished_lunch.png",
+    "difficulty": "medium",
+    "category": "adverbs"
+  },
+  {
+    "level": 2,
+    "word": "name",
+    "example_sentence": "What is your pet's name",
+    "image_url": "pet_name.png",
+    "difficulty": "medium",
+    "category": "things"
+  },
+  {
+    "level": 2,
+    "word": "good",
+    "example_sentence": "This soup tastes very good",
+    "image_url": "good_tasting_soup.png",
+    "difficulty": "medium",
+    "category": "adjectives"
+  },
+  {
+    "level": 2,
+    "word": "sentence",
+    "example_sentence": "Write a complete sentence",
+    "image_url": "writing_sentence.png",
+    "difficulty": "medium",
+    "category": "language"
+  },
+  {
+    "level": 2,
+    "word": "man",
+    "example_sentence": "The old man feeds birds",
+    "image_url": "old_man_feeding_birds.png",
+    "difficulty": "medium",
+    "category": "people"
+  },
+  {
+    "level": 2,
+    "word": "think",
+    "example_sentence": "I think it will rain",
+    "image_url": "thinking_about_rain.png",
+    "difficulty": "medium",
+    "category": "verbs"
+  },
+  {
+    "level": 2,
+    "word": "before",
+    "example_sentence": "Wash hands before eating",
+    "image_url": "washing_hands_before_eating.png",
+    "difficulty": "medium",
+    "category": "time"
+  },
+  {
+    "level": 2,
+    "word": "move",
+    "example_sentence": "The turtle moves very slowly",
+    "image_url": "turtle_moving_slowly.png",
+    "difficulty": "medium",
+    "category": "verbs"
+  },
+  {
+    "level": 2,
+    "word": "right",
+    "example_sentence": "Turn right at the corner",
+    "image_url": "turning_right_corner.png",
+    "difficulty": "medium",
+    "category": "directions"
+  },
+  {
+    "level": 2,
+    "word": "boy",
+    "example_sentence": "The little boy is laughing",
+    "image_url": "little_boy_laughing.png",
+    "difficulty": "medium",
+    "category": "people"
+  },
+  {
+    "level": 2,
+    "word": "show",
+    "example_sentence": "Show me your drawing",
+    "image_url": "showing_drawing.png",
+    "difficulty": "medium",
+    "category": "verbs"
+  },
+  {
+    "level": 2,
+    "word": "too",
+    "example_sentence": "This bag is too heavy",
+    "image_url": "too_heavy_bag.png",
+    "difficulty": "medium",
+    "category": "adverbs"
+  },
+  {
+    "level": 2,
+    "word": "any",
+    "example_sentence": "Do you have any questions",
+    "image_url": "asking_questions.png",
+    "difficulty": "medium",
+    "category": "quantifiers"
+  },
+  {
+    "level": 2,
+    "word": "same",
+    "example_sentence": "We wear the same uniform",
+    "image_url": "same_uniform.png",
+    "difficulty": "medium",
+    "category": "adjectives"
+  },
+  {
+    "level": 2,
+    "word": "tell",
+    "example_sentence": "Tell me a funny story",
+    "image_url": "telling_funny_story.png",
+    "difficulty": "medium",
+    "category": "verbs"
+  },
+  {
+    "level": 2,
+    "word": "does",
+    "example_sentence": "Does your dog like treats",
+    "image_url": "dog_likes_treats.png",
+    "difficulty": "medium",
+    "category": "verbs"
+  },
+  {
+    "level": 2,
+    "word": "set",
+    "example_sentence": "Please set the table",
+    "image_url": "setting_table.png",
+    "difficulty": "medium",
+    "category": "verbs"
+  },
+  {
+    "level": 2,
+    "word": "three",
+    "example_sentence": "I see three colorful balloons",
+    "image_url": "three_colorful_balloons.png",
+    "difficulty": "medium",
+    "category": "numbers"
+  },
+  {
+    "level": 2,
+    "word": "want",
+    "example_sentence": "I want to learn guitar",
+    "image_url": "learning_guitar.png",
+    "difficulty": "medium",
+    "category": "verbs"
+  },
+  {
+    "level": 2,
+    "word": "air",
+    "example_sentence": "The air smells like flowers",
+    "image_url": "air_smells_flowers.png",
+    "difficulty": "medium",
+    "category": "nature"
+  },
+  {
+    "level": 3,
+    "word": "well",
+    "example_sentence": "She sings very well",
+    "image_url": "singing_very_well.png",
+    "difficulty": "hard",
+    "category": "adverbs"
+  },
+  {
+    "level": 3,
+    "word": "also",
+    "example_sentence": "I also like chocolate",
+    "image_url": "also_like_chocolate.png",
+    "difficulty": "hard",
+    "category": "adverbs"
+  },
+  {
+    "level": 3,
+    "word": "play",
+    "example_sentence": "Children love to play games",
+    "image_url": "children_playing_games.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "small",
+    "example_sentence": "The ant is very small",
+    "image_url": "very_small_ant.png",
+    "difficulty": "hard",
+    "category": "adjectives"
+  },
+  {
+    "level": 3,
+    "word": "end",
+    "example_sentence": "This is the end of story",
+    "image_url": "end_of_story.png",
+    "difficulty": "hard",
+    "category": "things"
+  },
+  {
+    "level": 3,
+    "word": "put",
+    "example_sentence": "Put the toys in the box",
+    "image_url": "putting_toys_in_box.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "home",
+    "example_sentence": "I feel happy at home",
+    "image_url": "happy_at_home.png",
+    "difficulty": "hard",
+    "category": "places"
+  },
+  {
+    "level": 3,
+    "word": "read",
+    "example_sentence": "I love to read adventure books",
+    "image_url": "reading_adventure_books.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "hand",
+    "example_sentence": "Raise your hand to answer",
+    "image_url": "raising_hand_answer.png",
+    "difficulty": "hard",
+    "category": "body"
+  },
+  {
+    "level": 3,
+    "word": "large",
+    "example_sentence": "The elephant is very large",
+    "image_url": "very_large_elephant.png",
+    "difficulty": "hard",
+    "category": "adjectives"
+  },
+  {
+    "level": 3,
+    "word": "spell",
+    "example_sentence": "Can you spell your name",
+    "image_url": "spelling_name.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "add",
+    "example_sentence": "Add sugar to the tea",
+    "image_url": "adding_sugar_tea.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "even",
+    "example_sentence": "Even babies can learn music",
+    "image_url": "babies_learning_music.png",
+    "difficulty": "hard",
+    "category": "adverbs"
+  },
+  {
+    "level": 3,
+    "word": "land",
+    "example_sentence": "The plane will land soon",
+    "image_url": "plane_landing_soon.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "here",
+    "example_sentence": "Come here and sit down",
+    "image_url": "come_sit_here.png",
+    "difficulty": "hard",
+    "category": "adverbs"
+  },
+  {
+    "level": 3,
+    "word": "must",
+    "example_sentence": "We must brush our teeth",
+    "image_url": "brushing_teeth.png",
+    "difficulty": "hard",
+    "category": "modals"
+  },
+  {
+    "level": 3,
+    "word": "big",
+    "example_sentence": "The whale is very big",
+    "image_url": "very_big_whale.png",
+    "difficulty": "hard",
+    "category": "adjectives"
+  },
+  {
+    "level": 3,
+    "word": "high",
+    "example_sentence": "The mountain is very high",
+    "image_url": "very_high_mountain.png",
+    "difficulty": "hard",
+    "category": "adjectives"
+  },
+  {
+    "level": 3,
+    "word": "such",
+    "example_sentence": "Such beautiful music makes me happy",
+    "image_url": "beautiful_music_happy.png",
+    "difficulty": "hard",
+    "category": "adjectives"
+  },
+  {
+    "level": 3,
+    "word": "follow",
+    "example_sentence": "Follow the yellow brick road",
+    "image_url": "following_yellow_road.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "act",
+    "example_sentence": "The actors act on stage",
+    "image_url": "actors_on_stage.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "why",
+    "example_sentence": "Why do flowers need water",
+    "image_url": "flowers_need_water.png",
+    "difficulty": "hard",
+    "category": "questions"
+  },
+  {
+    "level": 3,
+    "word": "ask",
+    "example_sentence": "Ask the teacher for help",
+    "image_url": "asking_teacher_help.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "men",
+    "example_sentence": "The men are building a house",
+    "image_url": "men_building_house.png",
+    "difficulty": "hard",
+    "category": "people"
+  },
+  {
+    "level": 3,
+    "word": "change",
+    "example_sentence": "Caterpillars change into butterflies",
+    "image_url": "caterpillar_to_butterfly.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "went",
+    "example_sentence": "We went to the beach yesterday",
+    "image_url": "went_to_beach.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "light",
+    "example_sentence": "The light helps us see",
+    "image_url": "light_helps_see.png",
+    "difficulty": "hard",
+    "category": "things"
+  },
+  {
+    "level": 3,
+    "word": "kind",
+    "example_sentence": "She is a very kind person",
+    "image_url": "very_kind_person.png",
+    "difficulty": "hard",
+    "category": "adjectives"
+  },
+  {
+    "level": 3,
+    "word": "off",
+    "example_sentence": "Turn off the lights",
+    "image_url": "turning_off_lights.png",
+    "difficulty": "hard",
+    "category": "directions"
+  },
+  {
+    "level": 3,
+    "word": "need",
+    "example_sentence": "Plants need water to grow",
+    "image_url": "plants_need_water.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "house",
+    "example_sentence": "Our house has a red roof",
+    "image_url": "house_red_roof.png",
+    "difficulty": "hard",
+    "category": "places"
+  },
+  {
+    "level": 3,
+    "word": "picture",
+    "example_sentence": "This picture shows my family",
+    "image_url": "picture_shows_family.png",
+    "difficulty": "hard",
+    "category": "things"
+  },
+  {
+    "level": 3,
+    "word": "try",
+    "example_sentence": "Try to solve this puzzle",
+    "image_url": "solving_puzzle.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "us",
+    "example_sentence": "Come and play with us",
+    "image_url": "come_play_with_us.png",
+    "difficulty": "hard",
+    "category": "pronouns"
+  },
+  {
+    "level": 3,
+    "word": "again",
+    "example_sentence": "Please read the story again",
+    "image_url": "reading_story_again.png",
+    "difficulty": "hard",
+    "category": "adverbs"
+  },
+  {
+    "level": 3,
+    "word": "animal",
+    "example_sentence": "My favorite animal is elephant",
+    "image_url": "favorite_animal_elephant.png",
+    "difficulty": "hard",
+    "category": "animals"
+  },
+  {
+    "level": 3,
+    "word": "point",
+    "example_sentence": "Point to the correct answer",
+    "image_url": "pointing_correct_answer.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "mother",
+    "example_sentence": "My mother makes delicious cookies",
+    "image_url": "mother_making_cookies.png",
+    "difficulty": "hard",
+    "category": "people"
+  },
+  {
+    "level": 3,
+    "word": "world",
+    "example_sentence": "The world is full of wonders",
+    "image_url": "world_full_wonders.png",
+    "difficulty": "hard",
+    "category": "places"
+  },
+  {
+    "level": 3,
+    "word": "near",
+    "example_sentence": "The library is near school",
+    "image_url": "library_near_school.png",
+    "difficulty": "hard",
+    "category": "prepositions"
+  },
+  {
+    "level": 3,
+    "word": "build",
+    "example_sentence": "Let's build a sandcastle",
+    "image_url": "building_sandcastle.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "self",
+    "example_sentence": "Believe in yourself always",
+    "image_url": "believe_in_yourself.png",
+    "difficulty": "hard",
+    "category": "pronouns"
+  },
+  {
+    "level": 3,
+    "word": "earth",
+    "example_sentence": "Earth is our beautiful planet",
+    "image_url": "earth_beautiful_planet.png",
+    "difficulty": "hard",
+    "category": "places"
+  },
+  {
+    "level": 3,
+    "word": "father",
+    "example_sentence": "My father teaches me guitar",
+    "image_url": "father_teaching_guitar.png",
+    "difficulty": "hard",
+    "category": "people"
+  },
+  {
+    "level": 3,
+    "word": "head",
+    "example_sentence": "Wear a helmet on your head",
+    "image_url": "helmet_on_head.png",
+    "difficulty": "hard",
+    "category": "body"
+  },
+  {
+    "level": 3,
+    "word": "page",
+    "example_sentence": "Turn to the next page",
+    "image_url": "turning_next_page.png",
+    "difficulty": "hard",
+    "category": "things"
+  },
+  {
+    "level": 3,
+    "word": "country",
+    "example_sentence": "Japan is a beautiful country",
+    "image_url": "japan_beautiful_country.png",
+    "difficulty": "hard",
+    "category": "places"
+  },
+  {
+    "level": 3,
+    "word": "found",
+    "example_sentence": "I found a shiny seashell",
+    "image_url": "found_shiny_seashell.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "answer",
+    "example_sentence": "Raise your hand to answer",
+    "image_url": "raising_hand_to_answer.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "school",
+    "example_sentence": "I love going to school",
+    "image_url": "love_going_school.png",
+    "difficulty": "hard",
+    "category": "places"
+  },
+  {
+    "level": 3,
+    "word": "grow",
+    "example_sentence": "Watch the flowers grow tall",
+    "image_url": "flowers_growing_tall.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "study",
+    "example_sentence": "I study hard for tests",
+    "image_url": "studying_hard_tests.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "still",
+    "example_sentence": "The lake is very still",
+    "image_url": "very_still_lake.png",
+    "difficulty": "hard",
+    "category": "adjectives"
+  },
+  {
+    "level": 3,
+    "word": "learn",
+    "example_sentence": "We learn something new daily",
+    "image_url": "learning_something_new.png",
+    "difficulty": "hard",
+    "category": "verbs"
+  },
+  {
+    "level": 3,
+    "word": "should",
+    "example_sentence": "You should eat healthy food",
+    "image_url": "eating_healthy_food.png",
+    "difficulty": "hard",
+    "category": "modals"
+  },
+  {
+    "level": 4,
+    "word": "America",
+    "example_sentence": "America is a large country",
+    "image_url": "america_large_country.png",
+    "difficulty": "veryhard",
+    "category": "places"
+  },
+  {
+    "level": 4,
+    "word": "around",
+    "example_sentence": "The Earth goes around the sun",
+    "image_url": "earth_around_sun.png",
+    "difficulty": "veryhard",
+    "category": "prepositions"
+  },
+  {
+    "level": 4,
+    "word": "another",
+    "example_sentence": "Give me another chance please",
+    "image_url": "another_chance_please.png",
+    "difficulty": "veryhard",
+    "category": "adjectives"
+  },
+  {
+    "level": 4,
+    "word": "came",
+    "example_sentence": "The mailman came this morning",
+    "image_url": "mailman_came_morning.png",
+    "difficulty": "veryhard",
+    "category": "verbs"
+  },
+  {
+    "level": 4,
+    "word": "come",
+    "example_sentence": "Come to my birthday party",
+    "image_url": "come_birthday_party.png",
+    "difficulty": "veryhard",
+    "category": "verbs"
+  },
+  {
+    "level": 4,
+    "word": "work",
+    "example_sentence": "Hard work brings success",
+    "image_url": "hard_work_success.png",
+    "difficulty": "veryhard",
+    "category": "verbs"
+  },
+  {
+    "level": 4,
+    "word": "word",
+    "example_sentence": "Choose the correct word",
+    "image_url": "choosing_correct_word.png",
+    "difficulty": "veryhard",
+    "category": "language"
+  },
+  {
+    "level": 4,
+    "word": "where",
+    "example_sentence": "Where did you hide the treasure",
+    "image_url": "hiding_treasure.png",
+    "difficulty": "veryhard",
+    "category": "questions"
+  },
+  {
+    "level": 4,
+    "word": "much",
+    "example_sentence": "How much does this cost",
+    "image_url": "asking_cost.png",
+    "difficulty": "veryhard",
+    "category": "quantifiers"
+  },
+  {
+    "level": 4,
+    "word": "through",
+    "example_sentence": "The train goes through tunnel",
+    "image_url": "train_through_tunnel.png",
+    "difficulty": "veryhard",
+    "category": "prepositions"
+  },
+  {
+    "level": 4,
+    "word": "them",
+    "example_sentence": "Give them some fresh water",
+    "image_url": "giving_fresh_water.png",
+    "difficulty": "veryhard",
+    "category": "pronouns"
+  },
+  {
+    "level": 4,
+    "word": "these",
+    "example_sentence": "These apples taste very sweet",
+    "image_url": "sweet_tasting_apples.png",
+    "difficulty": "veryhard",
+    "category": "demonstratives"
+  },
+  {
+    "level": 4,
+    "word": "many",
+    "example_sentence": "Many stars shine at night",
+    "image_url": "stars_shine_night.png",
+    "difficulty": "veryhard",
+    "category": "quantifiers"
+  },
+  {
+    "level": 4,
+    "word": "some",
+    "example_sentence": "Some birds migrate in winter",
+    "image_url": "birds_migrate_winter.png",
+    "difficulty": "veryhard",
+    "category": "quantifiers"
+  },
+  {
+    "level": 4,
+    "word": "time",
+    "example_sentence": "Time passes quickly when having fun",
+    "image_url": "time_passes_having_fun.png",
+    "difficulty": "veryhard",
+    "category": "time"
+  },
+  {
+    "level": 4,
+    "word": "look",
+    "example_sentence": "Look at the beautiful sunset",
+    "image_url": "beautiful_sunset.png",
+    "difficulty": "veryhard",
+    "category": "verbs"
+  },
+  {
+    "level": 4,
+    "word": "more",
+    "example_sentence": "I want more ice cream",
+    "image_url": "wanting_more_icecream.png",
+    "difficulty": "veryhard",
+    "category": "quantifiers"
+  },
+  {
+    "level": 4,
+    "word": "write",
+    "example_sentence": "I write letters to grandpa",
+    "image_url": "writing_letters_grandpa.png",
+    "difficulty": "veryhard",
+    "category": "verbs"
+  },
+  {
+    "level": 4,
+    "word": "go",
+    "example_sentence": "Let's go explore the forest",
+    "image_url": "exploring_forest.png",
+    "difficulty": "veryhard",
+    "category": "verbs"
+  },
+  {
+    "level": 4,
+    "word": "number",
+    "example_sentence": "What number comes after ten",
+    "image_url": "number_after_ten.png",
+    "difficulty": "veryhard",
+    "category": "numbers"
+  },
+  {
+    "level": 4,
+    "word": "no",
+    "example_sentence": "No entry beyond this point",
+    "image_url": "no_entry_point.png",
+    "difficulty": "veryhard",
+    "category": "negatives"
+  },
+  {
+    "level": 4,
+    "word": "people",
+    "example_sentence": "Many people enjoy gardening",
+    "image_url": "people_enjoy_gardening.png",
+    "difficulty": "veryhard",
+    "category": "people"
+  },
+  {
+    "level": 4,
+    "word": "my",
+    "example_sentence": "My grandmother tells great stories",
+    "image_url": "grandmother_tells_stories.png",
+    "difficulty": "veryhard",
+    "category": "possessives"
+  },
+  {
+    "level": 4,
+    "word": "over",
+    "example_sentence": "The bridge goes over river",
+    "image_url": "bridge_over_river.png",
+    "difficulty": "veryhard",
+    "category": "prepositions"
+  },
+  {
+    "level": 4,
+    "word": "water",
+    "example_sentence": "Clean water is precious",
+    "image_url": "clean_water_precious.png",
+    "difficulty": "veryhard",
+    "category": "nature"
+  },
+  {
+    "level": 4,
+    "word": "than",
+    "example_sentence": "Elephants are bigger than mice",
+    "image_url": "elephants_bigger_mice.png",
+    "difficulty": "veryhard",
+    "category": "comparisons"
+  },
+  {
+    "level": 4,
+    "word": "call",
+    "example_sentence": "Call me when you arrive",
+    "image_url": "calling_when_arrive.png",
+    "difficulty": "veryhard",
+    "category": "verbs"
+  },
+  {
+    "level": 4,
+    "word": "first",
+    "example_sentence": "She finished first in race",
+    "image_url": "finished_first_race.png",
+    "difficulty": "veryhard",
+    "category": "ordinals"
+  },
+  {
+    "level": 4,
+    "word": "down",
+    "example_sentence": "The leaves fall down gently",
+    "image_url": "leaves_fall_gently.png",
+    "difficulty": "veryhard",
+    "category": "directions"
+  },
+  {
+    "level": 4,
+    "word": "been",
+    "example_sentence": "I have been to many countries",
+    "image_url": "traveled_many_countries.png",
+    "difficulty": "veryhard",
+    "category": "verbs"
+  },
+  {
+    "level": 4,
+    "word": "into",
+    "example_sentence": "Put the ball into the box",
+    "image_url": "ball_into_box.png",
+    "difficulty": "veryhard",
+    "category": "prepositions"
+  },
+  {
+    "level": 4,
+    "word": "could",
+    "example_sentence": "Could you help me please",
+    "image_url": "asking_for_help.png",
+    "difficulty": "veryhard",
+    "category": "modals"
+  },
+  {
+    "level": 4,
+    "word": "made",
+    "example_sentence": "She made a beautiful painting",
+    "image_url": "beautiful_painting.png",
+    "difficulty": "veryhard",
+    "category": "verbs"
+  },
+  {
+    "level": 4,
+    "word": "oil",
+    "example_sentence": "We use oil for cooking",
+    "image_url": "cooking_oil.png",
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "part",
+    "example_sentence": "This is part of the game",
+    "image_url": "part_of_game.png",
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "sound",
+    "example_sentence": "Listen to the beautiful sound",
+    "image_url": "beautiful_sound.png",
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "only",
+    "example_sentence": "Only you can make this choice",
+    "image_url": "making_choice.png",
+    "difficulty": "veryhard",
+    "category": "adverbs"
+  },
+  {
+    "level": 4,
+    "word": "little",
+    "example_sentence": "A little help goes far",
+    "image_url": "helping_others.png",
+    "difficulty": "veryhard",
+    "category": "adjectives"
+  },
+  {
+    "level": 4,
+    "word": "years",
+    "example_sentence": "Many years have passed",
+    "image_url": "years_passing.png",
+    "difficulty": "veryhard",
+    "category": "time"
+  },
+  {
+    "level": 4,
+    "word": "great",
+    "example_sentence": "That was a great movie",
+    "image_url": "great_movie.png",
+    "difficulty": "veryhard",
+    "category": "adjectives"
+  },
+  {
+    "level": 4,
+    "word": "help",
+    "example_sentence": "Please help your friend",
+    "image_url": "helping_friend.png",
+    "difficulty": "veryhard",
+    "category": "verbs"
+  },
+  {
+    "level": 4,
+    "word": "line",
+    "example_sentence": "Draw a straight line",
+    "image_url": "drawing_line.png",
+    "difficulty": "veryhard",
+    "category": "things"
+  },
+  {
+    "level": 4,
+    "word": "turn",
+    "example_sentence": "Turn the page carefully",
+    "image_url": "turning_page.png",
+    "difficulty": "veryhard",
+    "category": "verbs"
+  },
+  {
+    "level": 4,
+    "word": "cause",
+    "example_sentence": "What is the cause of rain",
+    "image_url": "cause_of_rain.png",
+    "difficulty": "veryhard",
+    "category": "abstract"
+  },
+  {
+    "level": 4,
+    "word": "mean",
+    "example_sentence": "What does this word mean",
+    "image_url": "word_meaning.png",
+    "difficulty": "veryhard",
+    "category": "verbs"
+  },
+  {
+    "level": 4,
+    "word": "move",
+    "example_sentence": "Let's move to the garden",
+    "image_url": "moving_to_garden.png",
+    "difficulty": "veryhard",
+    "category": "verbs"
+  },
+  {
+    "level": 4,
+    "word": "right",
+    "example_sentence": "You made the right choice",
+    "image_url": "right_choice.png",
+    "difficulty": "veryhard",
+    "category": "adjectives"
+  },
+  {
+    "level": 4,
+    "word": "boy",
+    "example_sentence": "The boy loves adventure stories",
+    "image_url": "boy_adventure_stories.png",
+    "difficulty": "veryhard",
+    "category": "people"
+  },
+  {
+    "level": 4,
+    "word": "old",
+    "example_sentence": "The old tree tells stories",
+    "image_url": "old_tree_stories.png",
+    "difficulty": "veryhard",
+    "category": "adjectives"
+  },
+  {
+    "level": 4,
+    "word": "too",
+    "example_sentence": "This puzzle is too difficult",
+    "image_url": "difficult_puzzle.png",
+    "difficulty": "veryhard",
+    "category": "adverbs"
+  },
+  {
+    "level": 4,
+    "word": "does",
+    "example_sentence": "What does your father do",
+    "image_url": "father_job.png",
+    "difficulty": "veryhard",
+    "category": "verbs"
+  },
+  {
+    "level": 4,
+    "word": "different",
+    "example_sentence": "Everyone has different talents",
+    "image_url": "different_talents.png",
+    "difficulty": "veryhard",
+    "category": "adjectives"
+  },
+  {
+    "level": 5,
+    "word": "because",
+    "example_sentence": "We stayed inside because of rain",
+    "image_url": "stayed_inside_rain.png",
+    "difficulty": "extreme",
+    "category": "conjunctions"
+  },
+  {
+    "level": 5,
+    "word": "before",
+    "example_sentence": "Stretch before exercising always",
+    "image_url": "stretching_before_exercise.png",
+    "difficulty": "extreme",
+    "category": "time"
+  },
+  {
+    "level": 5,
+    "word": "between",
+    "example_sentence": "The secret lies between two mountains",
+    "image_url": "secret_between_mountains.png",
+    "difficulty": "extreme",
+    "category": "prepositions"
+  },
+  {
+    "level": 5,
+    "word": "important",
+    "example_sentence": "Education is very important",
+    "image_url": "education_very_important.png",
+    "difficulty": "extreme",
+    "category": "adjectives"
+  },
+  {
+    "level": 5,
+    "word": "often",
+    "example_sentence": "We often visit the museum",
+    "image_url": "often_visit_museum.png",
+    "difficulty": "extreme",
+    "category": "adverbs"
+  },
+  {
+    "level": 5,
+    "word": "until",
+    "example_sentence": "Wait until the flowers bloom",
+    "image_url": "wait_flowers_bloom.png",
+    "difficulty": "extreme",
+    "category": "time"
+  },
+  {
+    "level": 5,
+    "word": "children",
+    "example_sentence": "Children love discovering new things",
+    "image_url": "children_discovering_things.png",
+    "difficulty": "extreme",
+    "category": "people"
+  },
+  {
+    "level": 5,
+    "word": "side",
+    "example_sentence": "The other side has treasures",
+    "image_url": "other_side_treasures.png",
+    "difficulty": "extreme",
+    "category": "places"
+  },
+  {
+    "level": 5,
+    "word": "feet",
+    "example_sentence": "My feet love walking on sand",
+    "image_url": "feet_walking_sand.png",
+    "difficulty": "extreme",
+    "category": "body"
+  },
+  {
+    "level": 5,
+    "word": "car",
+    "example_sentence": "The electric car is quiet",
+    "image_url": "electric_car_quiet.png",
+    "difficulty": "extreme",
+    "category": "vehicles"
+  },
+  {
+    "level": 5,
+    "word": "mile",
+    "example_sentence": "We walked one mile today",
+    "image_url": "walked_one_mile.png",
+    "difficulty": "extreme",
+    "category": "measurements"
+  },
+  {
+    "level": 5,
+    "word": "night",
+    "example_sentence": "The stars shine bright at night",
+    "image_url": "stars_bright_night.png",
+    "difficulty": "extreme",
+    "category": "time"
+  },
+  {
+    "level": 5,
+    "word": "walk",
+    "example_sentence": "Let's walk through the garden",
+    "image_url": "walking_through_garden.png",
+    "difficulty": "extreme",
+    "category": "verbs"
+  },
+  {
+    "level": 5,
+    "word": "white",
+    "example_sentence": "The white snow covers mountains",
+    "image_url": "white_snow_mountains.png",
+    "difficulty": "extreme",
+    "category": "colors"
+  },
+  {
+    "level": 5,
+    "word": "sea",
+    "example_sentence": "The deep sea holds mysteries",
+    "image_url": "deep_sea_mysteries.png",
+    "difficulty": "extreme",
+    "category": "nature"
+  },
+  {
+    "level": 5,
+    "word": "began",
+    "example_sentence": "The adventure began at dawn",
+    "image_url": "adventure_began_dawn.png",
+    "difficulty": "extreme",
+    "category": "verbs"
+  },
+  {
+    "level": 5,
+    "word": "grow",
+    "example_sentence": "Ideas grow in curious minds",
+    "image_url": "ideas_grow_minds.png",
+    "difficulty": "extreme",
+    "category": "verbs"
+  },
+  {
+    "level": 5,
+    "word": "took",
+    "example_sentence": "She took the path less traveled",
+    "image_url": "path_less_traveled.png",
+    "difficulty": "extreme",
+    "category": "verbs"
+  },
+  {
+    "level": 5,
+    "word": "river",
+    "example_sentence": "The river flows to ocean",
+    "image_url": "river_flows_ocean.png",
+    "difficulty": "extreme",
+    "category": "nature"
+  },
+  {
+    "level": 5,
+    "word": "four",
+    "example_sentence": "Four seasons bring different beauty",
+    "image_url": "four_seasons_beauty.png",
+    "difficulty": "extreme",
+    "category": "numbers"
+  },
+  {
+    "level": 5,
+    "word": "carry",
+    "example_sentence": "Ants carry food to home",
+    "image_url": "ants_carry_food.png",
+    "difficulty": "extreme",
+    "category": "verbs"
+  },
+  {
+    "level": 5,
+    "word": "state",
+    "example_sentence": "Each state has unique culture",
+    "image_url": "state_unique_culture.png",
+    "difficulty": "extreme",
+    "category": "places"
+  },
+  {
+    "level": 5,
+    "word": "once",
+    "example_sentence": "Once upon a time magic existed",
+    "image_url": "once_magic_existed.png",
+    "difficulty": "extreme",
+    "category": "time"
+  },
+  {
+    "level": 5,
+    "word": "book",
+    "example_sentence": "Every book opens new worlds",
+    "image_url": "book_opens_worlds.png",
+    "difficulty": "extreme",
+    "category": "things"
+  },
+  {
+    "level": 5,
+    "word": "hear",
+    "example_sentence": "I can hear ocean waves",
+    "image_url": "hearing_ocean_waves.png",
+    "difficulty": "extreme",
+    "category": "verbs"
+  },
+  {
+    "level": 5,
+    "word": "stop",
+    "example_sentence": "Stop and smell the roses",
+    "image_url": "stop_smell_roses.png",
+    "difficulty": "extreme",
+    "category": "verbs"
+  },
+  {
+    "level": 5,
+    "word": "without",
+    "example_sentence": "Without rain flowers cannot bloom",
+    "image_url": "without_rain_flowers.png",
+    "difficulty": "extreme",
+    "category": "prepositions"
+  },
+  {
+    "level": 5,
+    "word": "second",
+    "example_sentence": "Every second is precious",
+    "image_url": "every_second_precious.png",
+    "difficulty": "extreme",
+    "category": "time"
+  },
+  {
+    "level": 5,
+    "word": "later",
+    "example_sentence": "We'll explore the cave later",
+    "image_url": "explore_cave_later.png",
+    "difficulty": "extreme",
+    "category": "time"
+  },
+  {
+    "level": 5,
+    "word": "miss",
+    "example_sentence": "I miss my old friends",
+    "image_url": "missing_old_friends.png",
+    "difficulty": "extreme",
+    "category": "verbs"
+  },
+  {
+    "level": 5,
+    "word": "idea",
+    "example_sentence": "That's a brilliant idea",
+    "image_url": "brilliant_idea.png",
+    "difficulty": "extreme",
+    "category": "things"
+  },
+  {
+    "level": 5,
+    "word": "enough",
+    "example_sentence": "We have enough supplies",
+    "image_url": "enough_supplies.png",
+    "difficulty": "extreme",
+    "category": "quantifiers"
+  },
+  {
+    "level": 5,
+    "word": "eat",
+    "example_sentence": "Healthy food helps us grow",
+    "image_url": "healthy_food_grow.png",
+    "difficulty": "extreme",
+    "category": "verbs"
+  },
+  {
+    "level": 5,
+    "word": "face",
+    "example_sentence": "Her face shows pure joy",
+    "image_url": "face_shows_joy.png",
+    "difficulty": "extreme",
+    "category": "body"
+  },
+  {
+    "level": 5,
+    "word": "watch",
+    "example_sentence": "Watch the sunrise paint sky",
+    "image_url": "watching_sunrise_sky.png",
+    "difficulty": "extreme",
+    "category": "verbs"
+  },
+  {
+    "level": 5,
+    "word": "far",
+    "example_sentence": "The stars are very far",
+    "image_url": "stars_very_far.png",
+    "difficulty": "extreme",
+    "category": "adjectives"
+  },
+  {
+    "level": 5,
+    "word": "really",
+    "example_sentence": "Dreams can really come true",
+    "image_url": "dreams_come_true.png",
+    "difficulty": "extreme",
+    "category": "adverbs"
+  },
+  {
+    "level": 5,
+    "word": "almost",
+    "example_sentence": "We almost reached the summit",
+    "image_url": "almost_reached_summit.png",
+    "difficulty": "extreme",
+    "category": "adverbs"
+  },
+  {
+    "level": 5,
+    "word": "let",
+    "example_sentence": "Let your imagination soar high",
+    "image_url": "imagination_soar_high.png",
+    "difficulty": "extreme",
+    "category": "verbs"
+  },
+  {
+    "level": 5,
+    "word": "above",
+    "example_sentence": "Eagles soar high above clouds",
+    "image_url": "eagles_above_clouds.png",
+    "difficulty": "extreme",
+    "category": "prepositions"
+  },
+  {
+    "level": 5,
+    "word": "girl",
+    "example_sentence": "The curious girl asks questions",
+    "image_url": "curious_girl_questions.png",
+    "difficulty": "extreme",
+    "category": "people"
+  },
+  {
+    "level": 5,
+    "word": "sometimes",
+    "example_sentence": "Sometimes miracles happen unexpectedly",
+    "image_url": "miracles_happen_unexpectedly.png",
+    "difficulty": "extreme",
+    "category": "adverbs"
+  },
+  {
+    "level": 5,
+    "word": "mountain",
+    "example_sentence": "The mountain touches the sky",
+    "image_url": "mountain_touches_sky.png",
+    "difficulty": "extreme",
+    "category": "nature"
+  },
+  {
+    "level": 5,
+    "word": "cut",
+    "example_sentence": "Cut the paper carefully",
+    "image_url": "cutting_paper_carefully.png",
+    "difficulty": "extreme",
+    "category": "verbs"
+  },
+  {
+    "level": 5,
+    "word": "young",
+    "example_sentence": "Young minds are full of wonder",
+    "image_url": "young_minds_wonder.png",
+    "difficulty": "extreme",
+    "category": "adjectives"
+  },
+  {
+    "level": 5,
+    "word": "talk",
+    "example_sentence": "Let's talk about our dreams",
+    "image_url": "talking_about_dreams.png",
+    "difficulty": "extreme",
+    "category": "verbs"
+  },
+  {
+    "level": 5,
+    "word": "soon",
+    "example_sentence": "Spring will come soon",
+    "image_url": "spring_coming_soon.png",
+    "difficulty": "extreme",
+    "category": "time"
+  },
+  {
+    "level": 5,
+    "word": "list",
+    "example_sentence": "Make a list of goals",
+    "image_url": "making_list_goals.png",
+    "difficulty": "extreme",
+    "category": "things"
+  },
+  {
+    "level": 5,
+    "word": "song",
+    "example_sentence": "The bird's song is beautiful",
+    "image_url": "bird_song_beautiful.png",
+    "difficulty": "extreme",
+    "category": "things"
+  },
+  {
+    "level": 5,
+    "word": "leave",
+    "example_sentence": "Leaves leave trees in autumn",
+    "image_url": "leaves_leave_autumn.png",
+    "difficulty": "extreme",
+    "category": "verbs"
+  },
+  {
+    "level": 5,
+    "word": "family",
+    "example_sentence": "Family bonds are strongest",
+    "image_url": "family_bonds_strongest.png",
+    "difficulty": "extreme",
+    "category": "people"
+  },
+  {
+    "level": 5,
+    "word": "body",
+    "example_sentence": "Take care of your body",
+    "image_url": "taking_care_body.png",
+    "difficulty": "extreme",
+    "category": "body"
+  },
+  {
+    "level": 5,
+    "word": "music",
+    "example_sentence": "Music brings people together",
+    "image_url": "music_brings_together.png",
+    "difficulty": "extreme",
+    "category": "art"
+  },
+  {
+    "level": 5,
+    "word": "color",
+    "example_sentence": "What color makes you happy",
+    "image_url": "color_makes_happy.png",
+    "difficulty": "extreme",
+    "category": "colors"
+  },
+  {
+    "level": 5,
+    "word": "stand",
+    "example_sentence": "Stand up for what's right",
+    "image_url": "standing_for_right.png",
+    "difficulty": "extreme",
+    "category": "verbs"
+  },
+  {
+    "level": 5,
+    "word": "questions",
+    "example_sentence": "Good questions lead to answers",
+    "image_url": "questions_lead_answers.png",
+    "difficulty": "extreme",
+    "category": "language"
+  },
+  {
+    "level": 5,
+    "word": "fish",
+    "example_sentence": "Fish swim in clear water",
+    "image_url": "fish_clear_water.png",
+    "difficulty": "extreme",
+    "category": "animals"
+  },
+  {
+    "level": 5,
+    "word": "area",
+    "example_sentence": "This area needs protection",
+    "image_url": "area_needs_protection.png",
+    "difficulty": "extreme",
+    "category": "places"
+  },
+  {
+    "level": 6,
+    "word": "example",
+    "example_sentence": "This painting is perfect example",
+    "image_url": "painting_perfect_example.png",
+    "difficulty": "expert",
+    "category": "things"
+  },
+  {
+    "level": 6,
+    "word": "beginning",
+    "example_sentence": "Every beginning holds promise",
+    "image_url": "beginning_holds_promise.png",
+    "difficulty": "expert",
+    "category": "time"
+  },
+  {
+    "level": 6,
+    "word": "thought",
+    "example_sentence": "Deep thought leads to wisdom",
+    "image_url": "deep_thought_wisdom.png",
+    "difficulty": "expert",
+    "category": "abstract"
+  },
+  {
+    "level": 6,
+    "word": "open",
+    "example_sentence": "Open minds discover new possibilities",
+    "image_url": "open_minds_possibilities.png",
+    "difficulty": "expert",
+    "category": "verbs"
+  },
+  {
+    "level": 6,
+    "word": "public",
+    "example_sentence": "Public libraries serve communities",
+    "image_url": "libraries_serve_communities.png",
+    "difficulty": "expert",
+    "category": "adjectives"
+  },
+  {
+    "level": 6,
+    "word": "follow",
+    "example_sentence": "Follow your passion always",
+    "image_url": "following_passion_always.png",
+    "difficulty": "expert",
+    "category": "verbs"
+  },
+  {
+    "level": 6,
+    "word": "during",
+    "example_sentence": "During winter animals hibernate",
+    "image_url": "winter_animals_hibernate.png",
+    "difficulty": "expert",
+    "category": "prepositions"
+  },
+  {
+    "level": 6,
+    "word": "present",
+    "example_sentence": "Live in the present moment",
+    "image_url": "living_present_moment.png",
+    "difficulty": "expert",
+    "category": "time"
+  },
+  {
+    "level": 6,
+    "word": "government",
+    "example_sentence": "Good government serves people",
+    "image_url": "government_serves_people.png",
+    "difficulty": "expert",
+    "category": "politics"
+  },
+  {
+    "level": 6,
+    "word": "second",
+    "example_sentence": "Second chances are precious",
+    "image_url": "second_chances_precious.png",
+    "difficulty": "expert",
+    "category": "ordinals"
+  },
+  {
+    "level": 6,
+    "word": "group",
+    "example_sentence": "Our study group meets weekly",
+    "image_url": "study_group_meets.png",
+    "difficulty": "expert",
+    "category": "people"
+  },
+  {
+    "level": 6,
+    "word": "problem",
+    "example_sentence": "Every problem has solution",
+    "image_url": "problem_has_solution.png",
+    "difficulty": "expert",
+    "category": "abstract"
+  },
+  {
+    "level": 6,
+    "word": "fact",
+    "example_sentence": "Science reveals fascinating facts",
+    "image_url": "science_reveals_facts.png",
+    "difficulty": "expert",
+    "category": "abstract"
+  },
+  {
+    "level": 6,
+    "word": "money",
+    "example_sentence": "Money cannot buy happiness",
+    "image_url": "money_cannot_buy_happiness.png",
+    "difficulty": "expert",
+    "category": "things"
+  },
+  {
+    "level": 6,
+    "word": "point",
+    "example_sentence": "Make your point clearly",
+    "image_url": "making_point_clearly.png",
+    "difficulty": "expert",
+    "category": "abstract"
+  },
+  {
+    "level": 6,
+    "word": "member",
+    "example_sentence": "Each team member contributes",
+    "image_url": "team_member_contributes.png",
+    "difficulty": "expert",
+    "category": "people"
+  },
+  {
+    "level": 6,
+    "word": "power",
+    "example_sentence": "Knowledge gives true power",
+    "image_url": "knowledge_gives_power.png",
+    "difficulty": "expert",
+    "category": "abstract"
+  },
+  {
+    "level": 6,
+    "word": "while",
+    "example_sentence": "While studying remember to rest",
+    "image_url": "studying_remember_rest.png",
+    "difficulty": "expert",
+    "category": "time"
+  },
+  {
+    "level": 6,
+    "word": "right",
+    "example_sentence": "Everyone has right to education",
+    "image_url": "right_to_education.png",
+    "difficulty": "expert",
+    "category": "abstract"
+  },
+  {
+    "level": 6,
+    "word": "question",
+    "example_sentence": "Good questions lead to discovery",
+    "image_url": "questions_lead_discovery.png",
+    "difficulty": "expert",
+    "category": "language"
+  }
+]

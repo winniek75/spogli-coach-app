@@ -1,0 +1,208 @@
+{
+  "grammar_content": [
+    {
+      "id": "1",
+      "level": "beginner",
+      "category": "be_verb",
+      "type": "pronoun",
+      "word": "I",
+      "color": "blue",
+      "position": "subject",
+      "japanese": "私",
+      "hint": "一人称代名詞"
+    },
+    {
+      "id": "2",
+      "level": "beginner",
+      "category": "be_verb",
+      "type": "pronoun",
+      "word": "You",
+      "color": "blue",
+      "position": "subject",
+      "japanese": "あなた",
+      "hint": "二人称代名詞"
+    },
+    {
+      "id": "3",
+      "level": "beginner",
+      "category": "be_verb",
+      "type": "pronoun",
+      "word": "He",
+      "color": "blue",
+      "position": "subject",
+      "japanese": "彼",
+      "hint": "三人称単数男性"
+    },
+    {
+      "id": "8",
+      "level": "beginner",
+      "category": "be_verb",
+      "type": "be-verb",
+      "word": "am",
+      "color": "blue",
+      "position": "verb",
+      "japanese": "です/である",
+      "hint": "Iと組み合わせる"
+    },
+    {
+      "id": "9",
+      "level": "beginner",
+      "category": "be_verb",
+      "type": "be-verb",
+      "word": "is",
+      "color": "blue",
+      "position": "verb",
+      "japanese": "です/である",
+      "hint": "He/She/Itと組み合わせる"
+    },
+    {
+      "id": "10",
+      "level": "beginner",
+      "category": "be_verb",
+      "type": "be-verb",
+      "word": "are",
+      "color": "blue",
+      "position": "verb",
+      "japanese": "です/である",
+      "hint": "You/We/Theyと組み合わせる"
+    },
+    {
+      "id": "11",
+      "level": "beginner",
+      "category": "be_verb",
+      "type": "adjective",
+      "word": "happy",
+      "color": "blue",
+      "position": "complement",
+      "japanese": "幸せな",
+      "hint": "気持ちを表す形容詞"
+    },
+    {
+      "id": "18",
+      "level": "beginner",
+      "category": "be_verb",
+      "type": "noun",
+      "word": "a student",
+      "color": "blue",
+      "position": "complement",
+      "japanese": "学生",
+      "hint": "職業を表す名詞"
+    },
+    {
+      "id": "26",
+      "level": "beginner",
+      "category": "general_verb",
+      "type": "pronoun",
+      "word": "I",
+      "color": "red",
+      "position": "subject",
+      "japanese": "私",
+      "hint": "一般動詞文の主語"
+    },
+    {
+      "id": "32",
+      "level": "beginner",
+      "category": "general_verb",
+      "type": "general",
+      "word": "like",
+      "color": "red",
+      "position": "verb",
+      "japanese": "好き",
+      "hint": "感情を表す動詞"
+    },
+    {
+      "id": "42",
+      "level": "beginner",
+      "category": "general_verb",
+      "type": "countable",
+      "word": "apples",
+      "color": "red",
+      "position": "object",
+      "japanese": "りんご",
+      "hint": "数えられる名詞"
+    }
+  ],
+  "problem_sets": [
+    {
+      "set_id": "1",
+      "level": "beginner",
+      "category": "be_verb",
+      "target_sentence": "I am happy",
+      "hint_ja": "私は幸せです",
+      "subject_id": "1",
+      "verb_id": "8",
+      "complement_id": "11",
+      "visual_theme": "happiness",
+      "difficulty_score": 1
+    },
+    {
+      "set_id": "2",
+      "level": "beginner",
+      "category": "be_verb",
+      "target_sentence": "You are a student",
+      "hint_ja": "あなたは学生です",
+      "subject_id": "2",
+      "verb_id": "10",
+      "complement_id": "18",
+      "visual_theme": "education",
+      "difficulty_score": 2
+    },
+    {
+      "set_id": "16",
+      "level": "beginner",
+      "category": "general_verb",
+      "target_sentence": "I like apples",
+      "hint_ja": "私はりんごが好きです",
+      "subject_id": "26",
+      "verb_id": "32",
+      "complement_id": "42",
+      "visual_theme": "fruit",
+      "difficulty_score": 1
+    }
+  ],
+  "visual_elements": [
+    {
+      "keyword": "happiness",
+      "icon_name": "smile",
+      "background_color": "linear-gradient(135deg, #fef3c7, #fbbf24)",
+      "animation": "bounce",
+      "description_ja": "幸せな気持ちを表現"
+    },
+    {
+      "keyword": "education",
+      "icon_name": "book-open",
+      "background_color": "linear-gradient(135deg, #dbeafe, #3b82f6)",
+      "animation": "flip",
+      "description_ja": "教育を表現"
+    },
+    {
+      "keyword": "fruit",
+      "icon_name": "apple",
+      "background_color": "linear-gradient(135deg, #fef3c7, #fbbf24)",
+      "animation": "bounce",
+      "description_ja": "果物を表現"
+    },
+    {
+      "keyword": "default",
+      "icon_name": "circle",
+      "background_color": "linear-gradient(135deg, #f3f4f6, #9ca3af)",
+      "animation": "fade",
+      "description_ja": "デフォルト表現"
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "created_at": "2025-06-03T12:00:00Z",
+    "description": "GrammarColorCodeGame用フォールバックデータ",
+    "total_content": 11,
+    "total_problem_sets": 3,
+    "total_visual_elements": 4,
+    "levels_supported": ["beginner"],
+    "categories_supported": ["be_verb", "general_verb"],
+    "usage_notes": [
+      "CSVファイル読み込み失敗時に使用",
+      "開発環境でのテスト用途",
+      "最小限の学習コンテンツを提供"
+    ]
+  }
+}

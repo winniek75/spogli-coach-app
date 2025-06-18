@@ -1,0 +1,4 @@
+phoneme,symbol,example_word,example_audio,audio_file
+/s/,s,sun,sun.mp3,s.mp3
+/z/,z,zoo,zoo.mp3,z.mp3
+/ʃ/,sh,ship,ship.mp3,sh.mp3 

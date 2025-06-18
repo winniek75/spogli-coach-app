@@ -1,0 +1,269 @@
+/* 宇宙テーマ統一スタイル */
+:root {
+  --cosmos-deep-space: #0a0a0f;
+  --cosmos-nebula-purple: #6366f1;
+  --cosmos-star-gold: #fbbf24;
+  --cosmos-planet-blue: #3b82f6;
+  --cosmos-energy-green: #10b981;
+  
+  --glow-star: 0 0 20px var(--cosmos-star-gold);
+  --glow-planet: 0 0 30px var(--cosmos-planet-blue);
+  --glow-energy: 0 0 25px var(--cosmos-energy-green);
+}
+
+.cosmic-glow { 
+  filter: drop-shadow(var(--glow-star)); 
+}
+
+.planet-glow { 
+  box-shadow: var(--glow-planet); 
+}
+
+.energy-glow { 
+  box-shadow: var(--glow-energy); 
+}
+
+.spaceship-status-card {
+  @apply flex items-center gap-3 bg-white/10 px-6 py-4 rounded-full backdrop-blur-sm;
+  box-shadow: var(--glow-energy);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  transition: all 0.3s ease;
+}
+
+.spaceship-status-card:hover {
+  box-shadow: 0 0 30px var(--cosmos-energy-green);
+  transform: scale(1.02);
+}
+
+.cosmic-button {
+  background: linear-gradient(135deg, var(--cosmos-nebula-purple), var(--cosmos-planet-blue));
+  box-shadow: var(--glow-planet);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+.cosmic-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.5);
+}
+
+.star-particle {
+  position: absolute;
+  background: var(--cosmos-star-gold);
+  border-radius: 50%;
+  animation: twinkle 2s infinite ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes twinkle {
+  0%, 100% { 
+    opacity: 0.3; 
+    transform: scale(0.8); 
+    box-shadow: 0 0 5px var(--cosmos-star-gold);
+  }
+  50% { 
+    opacity: 1; 
+    transform: scale(1.2); 
+    box-shadow: 0 0 15px var(--cosmos-star-gold);
+  }
+}
+
+.comet-trail {
+  animation: comet-flight 4s linear infinite;
+}
+
+@keyframes comet-flight {
+  0% { 
+    transform: translateX(-100px) translateY(-100px); 
+    opacity: 0; 
+  }
+  10% { 
+    opacity: 1; 
+  }
+  90% { 
+    opacity: 1; 
+  }
+  100% { 
+    transform: translateX(100vw) translateY(100vh); 
+    opacity: 0; 
+  }
+}
+
+/* 宇宙背景の強化 */
+.cosmic-background {
+  background: radial-gradient(ellipse at center, var(--cosmos-deep-space) 0%, #000000 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.cosmic-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, var(--cosmos-star-gold), transparent),
+    radial-gradient(2px 2px at 40px 70px, rgba(251, 191, 36, 0.8), transparent),
+    radial-gradient(1px 1px at 90px 40px, #fff, transparent),
+    radial-gradient(1px 1px at 130px 80px, var(--cosmos-planet-blue), transparent),
+    radial-gradient(2px 2px at 160px 30px, rgba(99, 102, 241, 0.6), transparent);
+  background-repeat: repeat;
+  background-size: 200px 100px;
+  animation: cosmic-drift 30s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes cosmic-drift {
+  from { transform: translateX(0px); }
+  to { transform: translateX(-200px); }
+}
+
+/* 惑星カードの強化 */
+.planet-card {
+  background: rgba(15, 23, 42, 0.95);
+  border: 2px solid rgba(99, 102, 241, 0.3);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.planet-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(99, 102, 241, 0.1), transparent);
+  transform: rotate(45deg);
+  transition: transform 0.6s;
+  opacity: 0;
+}
+
+.planet-card:hover::before {
+  transform: rotate(45deg) translate(100%, 100%);
+  opacity: 1;
+}
+
+.planet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 20px 40px rgba(99, 102, 241, 0.3),
+    0 0 30px var(--cosmos-planet-blue);
+  border-color: rgba(99, 102, 241, 0.6);
+}
+
+/* エネルギーゲージの強化 */
+.energy-gauge {
+  background: linear-gradient(90deg, var(--cosmos-energy-green), var(--cosmos-star-gold));
+  border-radius: 10px;
+  height: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.energy-gauge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  animation: energy-flow 2s ease-in-out infinite;
+}
+
+@keyframes energy-flow {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* 宇宙船ナビゲーションの強化 */
+.spaceship-nav {
+  background: rgba(10, 10, 15, 0.95);
+  border: 1px solid rgba(99, 102, 241, 0.4);
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.2);
+}
+
+.nav-button {
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-button:hover {
+  background: rgba(99, 102, 241, 0.2);
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+}
+
+.nav-button.active {
+  background: linear-gradient(135deg, var(--cosmos-nebula-purple), var(--cosmos-planet-blue));
+  box-shadow: var(--glow-planet);
+}
+
+/* 宇宙テキストエフェクト */
+.cosmic-title {
+  background: linear-gradient(45deg, var(--cosmos-star-gold), var(--cosmos-planet-blue), var(--cosmos-star-gold));
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: cosmic-shimmer 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(251, 191, 36, 0.5));
+}
+
+@keyframes cosmic-shimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .spaceship-status-card {
+    @apply px-4 py-3 text-sm;
+  }
+  
+  .cosmic-background::before {
+    background-size: 100px 50px;
+  }
+  
+  .planet-card {
+    border-width: 1px;
+  }
+}
+
+/* アクセシビリティ対応 */
+@media (prefers-reduced-motion: reduce) {
+  .star-particle,
+  .comet-trail,
+  .cosmic-background::before,
+  .energy-gauge::before,
+  .cosmic-title {
+    animation: none;
+  }
+  
+  .cosmic-button:hover,
+  .planet-card:hover {
+    transform: none;
+  }
+}
+
+/* ハイコントラスト対応 */
+@media (prefers-contrast: high) {
+  .planet-card {
+    border-width: 3px;
+    border-color: #ffffff;
+  }
+  
+  .spaceship-status-card {
+    border-width: 2px;
+    border-color: #ffffff;
+  }
+}
