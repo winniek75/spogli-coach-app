@@ -32,6 +32,23 @@
             <div class="text-sm text-galaxy-moon-silver">
               {{ currentStageInfo.description }}
             </div>
+            
+            <!-- Learning Stage切り替えボタン -->
+            <div class="flex gap-2 mt-3 justify-center">
+              <button 
+                v-for="stage in [1, 2]" 
+                :key="stage"
+                @click="switchLearningStage(stage)"
+                :class="[
+                  'px-3 py-1 text-xs rounded-lg transition-all duration-200',
+                  currentLearningStage === stage 
+                    ? 'galaxy-button-primary text-white' 
+                    : 'galaxy-button-secondary text-galaxy-moon-silver hover:text-white'
+                ]"
+              >
+                Level {{ stage }}
+              </button>
+            </div>
           </div>
 
           <button 
@@ -154,9 +171,9 @@
               <div class="galaxy-card p-4 rounded-2xl border-l-4 border-purple-400">
                 <div class="flex items-center gap-3 mb-2">
                   <Target class="w-6 h-6 text-purple-400 cosmic-glow" />
-                  <span class="font-bold text-purple-400">Stage 2: サウンド→シンボル・マッピング</span>
+                  <span class="font-bold text-purple-400">Level 2: 音素探索ミッション</span>
                 </div>
-                <p class="text-galaxy-moon-silver">音と文字記号を結び付けよう！</p>
+                <p class="text-galaxy-moon-silver">英単語の中からターゲット音素を見つけよう！</p>
               </div>
               
               <div class="galaxy-card p-4 rounded-2xl border-l-4 border-pink-400">
@@ -236,25 +253,78 @@
           </transition>
         </div>
 
-        <!-- Stage 2: Sound to Symbol Mapping -->
-        <div v-else-if="gameState === 'playing' && currentLearningStage === 2" class="sound-to-symbol-stage flex flex-col items-center justify-center min-h-[60vh]">
-          <div class="text-2xl font-bold text-blue-700 mb-4">🎯 Listen carefully...</div>
-          <button @click="playCurrentPhoneme" class="w-24 h-24 bg-purple-500 hover:bg-purple-600 text-white text-4xl rounded-full flex items-center justify-center shadow-2xl mb-8 transition-all duration-200 animate-pulse">
-            🔊
-          </button>
-          <div class="flex gap-8 mb-8">
-            <button v-for="choice in currentChoices" :key="choice.symbol" @click="handlePhonemeAnswer(choice)"
-              class="w-32 h-32 bg-pink-200 hover:bg-pink-300 text-3xl font-bold rounded-2xl shadow-xl flex flex-col items-center justify-center transition-all duration-200 border-4 border-pink-400">
-              <div>{{ choice.symbol }}</div>
-              <div class="text-lg text-gray-700 mt-2">{{ choice.example_word }}</div>
-            </button>
-          </div>
-          <transition name="bounce">
-            <div v-if="gameState === 'feedback'" class="text-center mt-4">
-              <div v-if="feedbackType === 'correct'" class="text-3xl font-bold text-green-500 animate-bounce">🎉 Perfect! That's the {{ currentQuestion?.target?.symbol || '' }} sound!</div>
-              <div v-else class="text-3xl font-bold text-red-500 animate-shake">😢 Not quite, try again!</div>
+        <!-- Level 2: 音素探索ミッション -->
+        <div v-else-if="gameState === 'playing' && currentLearningStage === 2" class="word-phoneme-detection-stage flex flex-col items-center justify-center min-h-[60vh]">
+          <!-- ターゲット音素表示 -->
+          <div class="galaxy-card p-6 mb-8 max-w-md">
+            <div class="text-center">
+              <div class="text-lg galaxy-text-primary font-bold mb-2">🎯 Target Phoneme</div>
+              <div class="text-5xl font-bold galaxy-text-primary cosmic-glow mb-2">
+                {{ currentQuestion?.target?.symbol || '' }}
+              </div>
+              <div class="text-sm text-galaxy-moon-silver mb-4">
+                Find words containing this sound!
+              </div>
+              <button 
+                @click="playPhonemeSound(currentQuestion?.target)" 
+                :disabled="isPlaying"
+                class="galaxy-button galaxy-button-primary px-4 py-2 text-white rounded-xl"
+              >
+                🔊 Hear Phoneme
+              </button>
             </div>
-          </transition>
+          </div>
+
+          <!-- 単語選択肢 -->
+          <div class="mb-6">
+            <div class="text-lg galaxy-text-primary font-bold text-center mb-4">
+              Listen to each word and select those containing the target sound:
+            </div>
+            <div class="grid grid-cols-1 gap-4 max-w-md">
+              <button
+                v-for="(wordData, index) in currentQuestion?.words || []"
+                :key="index"
+                @click="selectWord(wordData.word, index)"
+                :class="[
+                  'galaxy-card p-4 rounded-xl transition-all duration-200 border-2',
+                  selectedWords.includes(wordData.word) 
+                    ? 'border-purple-400 bg-purple-400/20 shadow-lg scale-105' 
+                    : 'border-transparent hover:border-blue-400 hover:bg-blue-400/10',
+                  playingWordIndex === index ? 'animate-pulse border-yellow-400' : ''
+                ]"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="text-2xl font-bold galaxy-text-primary">
+                    {{ wordData.word }}
+                  </div>
+                  <button
+                    @click.stop="playWordSound(wordData.word, index)"
+                    :disabled="isWordPlaying"
+                    class="galaxy-button galaxy-button-secondary px-3 py-2 text-sm"
+                  >
+                    🔊
+                  </button>
+                </div>
+                <div v-if="selectedWords.includes(wordData.word)" class="text-right mt-2">
+                  <span class="text-purple-400 font-bold">✓ Selected</span>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- 決定ボタン -->
+          <button 
+            @click="checkLevel2Answer" 
+            :disabled="selectedWords.length === 0"
+            class="galaxy-button galaxy-button-primary px-8 py-3 text-white text-xl font-bold rounded-2xl disabled:opacity-50"
+          >
+            Check Answer ({{ selectedWords.length }} selected)
+          </button>
+
+          <!-- Instructions -->
+          <div class="mt-6 text-center text-sm text-galaxy-moon-silver max-w-md">
+            💡 You can select multiple words. Click to select/deselect, then check your answer.
+          </div>
         </div>
 
         <!-- Stage 3: Pattern Recognition -->
@@ -405,6 +475,8 @@ import {
 
 // 新しいインポート - Native English pronunciation database
 import { NATIVE_PHONEME_PROGRESSION, NATIVE_AUDIO_MAPPING, JAPANESE_LEARNER_TIPS, PHONEME_GROUPS } from '@/data/native-phoneme-database.js'
+import { generateLevel2Question, LEVEL2_INSTRUCTIONS } from '@/data/level2-word-database.js'
+import { useGameAudio } from '@/composables/useGameAudio.js'
 import { usePhonemeProgress } from '@/composables/usePhonemeProgress.js'
 import { adaptiveLearningEngine } from '@/services/adaptiveLearning.js'
 
@@ -415,6 +487,9 @@ import stage3Groups   from '@/data/csv/stage3_groups_flat.json'
 
 // ルーター
 const router = useRouter()
+
+// 音声再生の使用
+const { playSound, isPlaying: isWordPlaying } = useGameAudio()
 
 // 進捗管理の使用
 const {
@@ -441,10 +516,10 @@ const LEARNING_STAGES = {
     method: 'AUDIO_ONLY'
   },
   2: { 
-    name: 'Sound→Symbol Mapping', 
+    name: '音素探索ミッション', 
     icon: '🎯', 
-    description: '音を聞いて対応する文字を選択',
-    method: 'AUDIO_TO_SYMBOL'
+    description: '英単語の中からターゲット音素を見つけよう',
+    method: 'WORD_PHONEME_DETECTION'
   },
   3: { 
     name: 'Phoneme Pattern Lab', 
@@ -474,6 +549,12 @@ const showSettings = ref(false)
 const difficultyLevel = ref('normal')
 const attempts = ref([])
 const questionStartTime = ref(0)
+
+// Level 2 専用状態
+const selectedWords = ref([])
+const currentTargetPhoneme = ref(null)
+const wordChoices = ref([])
+const playingWordIndex = ref(null)
 
 // 背景パーティクル
 const particles = ref(Array.from({ length: 30 }, (_, i) => ({
@@ -505,8 +586,18 @@ const isAutoPlaying = ref(false)
 const baseSymbol = (p) => (p && (p.label || p.ipa) ? (p.label || p.ipa).replace(/[\\/]/g, '') : '')
 
 const loadNextQuestion = () => {
+  // Learning Stage に応じて異なる問題を生成
+  if (currentLearningStage.value === 2) {
+    loadLevel2Question()
+  } else {
+    loadLevel1Question()
+  }
+}
+
+// Level 1 (従来の音素選択問題)
+const loadLevel1Question = () => {
   // デバッグ: 出題直前のcurrentPhonemesを確認
-  console.log('loadNextQuestion: currentPhonemes', currentPhonemes.value)
+  console.log('loadLevel1Question: currentPhonemes', currentPhonemes.value)
   // symbolが存在するものだけに限定
   const availablePhonemes = currentPhonemes.value.filter(p => p && (p.label || p.ipa))
   // デバッグ: フィルタ後のavailablePhonemesを確認
@@ -568,10 +659,152 @@ const loadNextQuestion = () => {
   selectedIdx.value = null
   playingIdx.value = null
 
-  // 自動で問題音を再生（Stage 1のみ）
+  // 自動で問題音を再生（Level 1のみ）
   if (currentLearningStage.value === 1) {
     setTimeout(() => playCurrentPhoneme(), 500)
   }
+}
+
+// Level 2 (英単語の中の音素を探す問題)
+const loadLevel2Question = () => {
+  // 現在の学習ステージに対応する音素を取得
+  const availablePhonemes = currentPhonemes.value.filter(p => p && p.symbol)
+  if (!availablePhonemes || availablePhonemes.length === 0) {
+    gameState.value = 'complete'
+    return
+  }
+
+  // ランダムに音素を選択
+  const randomIndex = Math.floor(Math.random() * availablePhonemes.length)
+  const targetPhoneme = availablePhonemes[randomIndex]
+  const phonemeSymbol = targetPhoneme.symbol
+
+  console.log('Level 2 - Selected phoneme:', phonemeSymbol)
+
+  // Level 2の問題を生成
+  const questionData = generateLevel2Question(phonemeSymbol)
+  
+  if (!questionData || !questionData.words || questionData.words.length === 0) {
+    console.warn('Could not generate Level 2 question for phoneme:', phonemeSymbol)
+    // フォールバックとしてLevel 1の問題を生成
+    loadLevel1Question()
+    return
+  }
+
+  // Level 2用の状態を設定
+  currentTargetPhoneme.value = targetPhoneme
+  wordChoices.value = questionData.words
+  selectedWords.value = []
+  
+  // 問題を設定
+  currentQuestion.value = {
+    type: 'word_phoneme_detection',
+    target: targetPhoneme,
+    words: questionData.words,
+    correctAnswers: questionData.correctAnswers,
+    settings: {
+      audioSettings: {
+        repeatAllowed: 5  // 単語なので再生回数を増やす
+      },
+      visualSettings: {
+        feedbackDelay: 3000
+      }
+    }
+  }
+
+  // 状態をリセット
+  playCount.value = 0
+  maxPlays.value = currentQuestion.value.settings.audioSettings.repeatAllowed
+  feedback.value = ''
+  feedbackType.value = ''
+  questionStartTime.value = Date.now()
+  selectedIdx.value = null
+  playingIdx.value = null
+  playingWordIndex.value = null
+
+  console.log('Level 2 question generated:', currentQuestion.value)
+}
+
+// Level 2: 英単語の音声再生
+const playWordSound = async (word, index = null) => {
+  if (!word || isWordPlaying.value) return
+  
+  playingWordIndex.value = index
+  console.log('Playing word:', word)
+  
+  try {
+    await playSound('word', { word })
+  } catch (error) {
+    console.error('Error playing word:', error)
+  } finally {
+    playingWordIndex.value = null
+  }
+}
+
+// Level 2: 単語選択処理
+const selectWord = (word, index) => {
+  if (!currentQuestion.value || currentQuestion.value.type !== 'word_phoneme_detection') {
+    return
+  }
+  
+  if (selectedWords.value.includes(word)) {
+    // 既に選択されている場合は選択解除
+    selectedWords.value = selectedWords.value.filter(w => w !== word)
+  } else {
+    // 新しく選択
+    selectedWords.value.push(word)
+  }
+  
+  console.log('Selected words:', selectedWords.value)
+}
+
+// Level 2: 答え合わせ
+const checkLevel2Answer = () => {
+  if (!currentQuestion.value || currentQuestion.value.type !== 'word_phoneme_detection') {
+    return
+  }
+  
+  const correctAnswers = currentQuestion.value.correctAnswers || []
+  const selectedAnswers = selectedWords.value
+  
+  // 正解判定: 選択した単語が正解と一致するか
+  const isCorrect = correctAnswers.length === selectedAnswers.length && 
+                   correctAnswers.every(answer => selectedAnswers.includes(answer))
+  
+  gameState.value = 'feedback'
+  
+  const reactionTime = Date.now() - questionStartTime.value
+  
+  // 進捗記録
+  recordAttempt(currentQuestion.value.target, isCorrect, reactionTime)
+  
+  if (isCorrect) {
+    score.value += 150 + (currentLearningStage.value * 25) // Level 2はボーナスポイント
+    feedback.value = `Perfect! You found all words with the ${currentQuestion.value.target.symbol} sound!`
+    feedbackType.value = 'correct'
+  } else {
+    lives.value--
+    const correctWordsText = correctAnswers.join(', ')
+    feedback.value = `Not quite. The correct words were: "${correctWordsText}".`
+    feedbackType.value = 'incorrect'
+  }
+  
+  setTimeout(() => {
+    if (lives.value <= 0 && !isCorrect) {
+      gameState.value = 'complete'
+    } else {
+      gameState.value = 'playing'
+      loadNextQuestion()
+    }
+  }, currentQuestion.value?.settings.visualSettings.feedbackDelay || 3000)
+}
+
+// Learning Stage切り替え
+const switchLearningStage = (stage) => {
+  if (currentLearningStage.value === stage) return
+  
+  currentLearningStage.value = stage
+  resetGame()
 }
 
 const playPhonemeSound = async (phoneme, idx = null) => {
