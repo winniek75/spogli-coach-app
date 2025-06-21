@@ -558,17 +558,39 @@ const timeProgress = computed(() => {
 })
 
 const canValidate = computed(() => {
-  // Check if all visible zones have elements
-  const visibleZones = dropZones.value.filter(zone => {
-    // Show auxiliary zone only if needed for current problem
-    if (zone.id === 'auxiliary') {
-      return zone.isVisible && currentProblem.value?.words_pool?.some(w => w.position === 'auxiliary')
-    }
-    return true
+  if (!currentProblem.value?.words_pool) {
+    console.log('🔍 [canValidate] No problem or words_pool')
+    return false
+  }
+  
+  const expectedWords = currentProblem.value.words_pool
+  const hasAuxiliary = expectedWords.some(w => w.position === 'auxiliary')
+  const hasObject = expectedWords.some(w => w.position === 'object')
+  
+  // 必須ゾーンのチェック
+  const subjectZone = dropZones.value.find(z => z.id === 'subject')
+  const verbZone = dropZones.value.find(z => z.id === 'verb')
+  const objectZone = dropZones.value.find(z => z.id === 'object')
+  const auxiliaryZone = dropZones.value.find(z => z.id === 'auxiliary')
+  
+  const requiredZones = [subjectZone, verbZone]
+  if (hasObject) requiredZones.push(objectZone)
+  if (hasAuxiliary && auxiliaryZone?.isVisible) requiredZones.push(auxiliaryZone)
+  
+  const canValidateResult = requiredZones.every(zone => zone && zone.element !== null)
+  
+  console.log('🔍 [canValidate] Check result:', {
+    hasAuxiliary,
+    hasObject,
+    auxiliaryVisible: auxiliaryZone?.isVisible,
+    subject: !!subjectZone?.element,
+    verb: !!verbZone?.element,
+    object: hasObject ? !!objectZone?.element : 'not required',
+    auxiliary: hasAuxiliary ? !!auxiliaryZone?.element : 'not required',
+    canValidate: canValidateResult
   })
   
-  console.log('🔍 [canValidate] Checking zones:', visibleZones.map(z => ({ id: z.id, hasElement: !!z.element })))
-  return visibleZones.every(zone => zone.element !== null)
+  return canValidateResult
 })
 
 // Data loading methods
@@ -1012,8 +1034,9 @@ const validateSentence = async () => {
   }
   
   // ドロップゾーンの内容をログ出力
-  dropZones.value.forEach((zone, index) => {
-    console.log(`🔍 [validateSentence] Zone ${index} (${zone.id}):`, zone.element?.word || 'empty')
+  dropZones.value.forEach((zone) => {
+    if (zone.id === 'auxiliary' && !zone.isVisible) return
+    console.log(`🔍 [validateSentence] Zone (${zone.id}):`, zone.element?.word || 'empty')
   })
   
   const isCorrect = checkAnswer()
@@ -1058,22 +1081,46 @@ const checkAnswer = () => {
   
   console.log('🔍 [checkAnswer] currentProblem:', currentProblem.value)
   
-  const subject = dropZones.value[0].element
-  const verb = dropZones.value[1].element
-  const object = dropZones.value[2].element
+  // IDで正しいゾーンを取得
+  const auxiliaryZone = dropZones.value.find(z => z.id === 'auxiliary')
+  const subjectZone = dropZones.value.find(z => z.id === 'subject')
+  const verbZone = dropZones.value.find(z => z.id === 'verb')
+  const objectZone = dropZones.value.find(z => z.id === 'object')
+  
+  const auxiliary = auxiliaryZone?.element
+  const subject = subjectZone?.element
+  const verb = verbZone?.element
+  const object = objectZone?.element
   
   console.log('🔍 [checkAnswer] 配置された要素:')
+  console.log('  - Auxiliary:', auxiliary?.word || 'empty')
   console.log('  - Subject:', subject?.word || 'empty')
   console.log('  - Verb:', verb?.word || 'empty')
   console.log('  - Object:', object?.word || 'empty')
   
-  if (!subject || !verb || !object) {
-    console.warn('❌ [checkAnswer] 一部の要素が空です')
+  // 必要な要素がすべて配置されているかチェック
+  const expectedWords = currentProblem.value.words_pool || []
+  const hasAuxiliary = expectedWords.some(w => w.position === 'auxiliary')
+  const hasObject = expectedWords.some(w => w.position === 'object')
+  
+  // 必須要素のチェック
+  if (!subject || !verb) {
+    console.warn('❌ [checkAnswer] 主語または動詞が空です')
     return false
   }
   
-  // Check against expected words in problem
-  const expectedWords = currentProblem.value.words_pool || []
+  // 助動詞が必要な問題で助動詞が空の場合
+  if (hasAuxiliary && !auxiliary) {
+    console.warn('❌ [checkAnswer] 助動詞が必要ですが空です')
+    return false
+  }
+  
+  // 目的語が必要な問題で目的語が空の場合
+  if (hasObject && !object) {
+    console.warn('❌ [checkAnswer] 目的語が必要ですが空です')
+    return false
+  }
+  
   console.log('🔍 [checkAnswer] 期待される単語:', expectedWords)
   
   if (expectedWords.length === 0) {
@@ -1095,7 +1142,6 @@ const checkAnswer = () => {
   
   // パターン1: 助動詞付き4要素文 (Do you like cats?)
   if (expectedAuxiliary && expectedSubject && expectedVerb && expectedObject) {
-    const auxiliary = dropZones.value.find(z => z.id === 'auxiliary')?.element
     if (auxiliary) {
       const isCorrect = (
         auxiliary.word === expectedAuxiliary.word &&
