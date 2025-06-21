@@ -47,7 +47,7 @@
               </li>
               <li class="mission-item">
                 <span class="mission-icon">⚡</span>
-                <span>制限時間120秒以内にクリア</span>
+                <span>制限時間180秒以内にクリア</span>
               </li>
               <li class="mission-item">
                 <span class="mission-icon">🎯</span>
@@ -345,7 +345,7 @@ console.log('🎮 Pattern Hunter game:', store.planetsData?.beVerb?.games?.find(
 // ゲーム状態
 const gameState = ref('ready') // 'ready', 'playing', 'paused', 'finished'
 const score = ref(0)
-const timeLeft = ref(120) // 120秒制限
+const timeLeft = ref(180) // 180秒制限
 const gameGrid = ref([])
 const selectedElements = ref([])
 const selectedCells = ref([])
@@ -419,7 +419,7 @@ const gameStats = computed(() => ({
   'Patterns Found': foundPatterns.value.length,
   'Total Patterns': targetPatterns.value.length,
   'Accuracy': Math.round((foundPatterns.value.length / targetPatterns.value.length) * 100) + '%',
-  'Time Used': `${60 - timeLeft.value}s`,
+  'Time Used': `${180 - timeLeft.value}s`,
   'Consecutive Correct': consecutiveCorrect.value || 0
 }))
 
@@ -431,7 +431,7 @@ const accuracy = computed(() => {
 
 // 使用時間計算
 const timeTaken = computed(() => {
-  return 60 - timeLeft.value
+  return 180 - timeLeft.value
 })
 
 // 最高連続正解計算
@@ -454,7 +454,7 @@ const timeClass = computed(() => ({
 // スター評価
 const stars = computed(() => {
   const completion = foundPatterns.value.length / targetPatterns.value.length
-  const timeBonus = timeLeft.value / 60
+  const timeBonus = timeLeft.value / 180
   
   if (completion >= 0.8 && timeBonus >= 0.3) return 3
   if (completion >= 0.6 && timeBonus >= 0.1) return 2
@@ -542,7 +542,7 @@ const initializeGame = () => {
     // ゲーム状態のリセット
     gameState.value = 'ready'
     score.value = 0
-    timeLeft.value = 120
+    timeLeft.value = 180
     foundPatterns.value = []
     selectedElements.value = []
     selectedCells.value = []
@@ -639,12 +639,15 @@ const initializeGrid = () => {
 const startGameTimer = () => {
   if (gameTimer) {
     clearInterval(gameTimer)
+    gameTimer = null
   }
   
   gameTimer = setInterval(() => {
-    if (timeLeft.value > 0) {
+    if (timeLeft.value > 0 && gameState.value === 'playing') {
       timeLeft.value--
-    } else {
+    }
+    
+    if (timeLeft.value <= 0) {
       endGame()
     }
   }, 1000)
@@ -699,10 +702,17 @@ const startGame = () => {
 
 // タイマー開始
 const startTimer = () => {
+  if (gameTimer) {
+    clearInterval(gameTimer)
+    gameTimer = null
+  }
+  
   gameTimer = setInterval(() => {
-    if (timeLeft.value > 0) {
+    if (timeLeft.value > 0 && gameState.value === 'playing') {
       timeLeft.value--
-    } else {
+    }
+    
+    if (timeLeft.value <= 0) {
       endGame()
     }
   }, 1000)
@@ -733,14 +743,27 @@ const setNextTarget = () => {
 
 // セル選択
 const selectCell = (index) => {
-  if (gameState.value !== 'playing') return
-  if (!gameGrid.value[index] || !gameGrid.value[index].element) return
-  if (gameGrid.value[index].isFound) return
+  console.log(`[selectCell] Attempting to select cell ${index}`)
+  
+  if (gameState.value !== 'playing') {
+    console.warn('[selectCell] Game not in playing state')
+    return
+  }
+  
+  if (!gameGrid.value[index] || !gameGrid.value[index].element) {
+    console.warn('[selectCell] Cell is empty or invalid')
+    return
+  }
+  
+  // isFoundチェックを削除 - 同じ単語を複数回使う可能性があるため
+  // if (gameGrid.value[index].isFound) return
   
   const cell = gameGrid.value[index]
+  console.log(`[selectCell] Cell element:`, cell.element)
   
   if (cell.isSelected) {
     // 選択解除
+    console.log(`[selectCell] Deselecting cell`)
     cell.isSelected = false
     const elementIndex = selectedElements.value.findIndex(el => el.text === cell.element.text)
     if (elementIndex !== -1) {
@@ -752,10 +775,16 @@ const selectCell = (index) => {
     }
   } else {
     // 選択
+    console.log(`[selectCell] Selecting cell`)
     cell.isSelected = true
     selectedElements.value.push(cell.element)
     selectedCells.value.push(index)
   }
+  
+  console.log(`[selectCell] Selected elements:`, selectedElements.value.map(e => e.text))
+  
+  // 自動的にパターンをチェック
+  checkPattern()
 }
 
 // パターンチェック
@@ -763,20 +792,29 @@ const checkPattern = () => {
   if (selectedElements.value.length < 2) return
   
   const selectedTexts = selectedElements.value.map(el => el.text)
+  console.log(`[checkPattern] Selected texts:`, selectedTexts)
   
   // 現在のターゲットパターンとマッチするかチェック
   if (currentTarget.value) {
     const targetElements = currentTarget.value.elements
+    console.log(`[checkPattern] Target elements:`, targetElements)
+    console.log(`[checkPattern] Target pattern:`, currentTarget.value.pattern)
+    
     // 語順も重要なので、sorted比較ではなく順序を保った比較を行う
     const isMatch = arraysEqual(selectedTexts, targetElements)
+    console.log(`[checkPattern] Arrays match:`, isMatch)
     
     if (isMatch) {
       // 正解！
+      console.log(`[checkPattern] ✅ Correct pattern found!`)
       handleCorrectPattern()
     } else {
       // 不正解
+      console.log(`[checkPattern] ❌ Incorrect pattern`)
       handleIncorrectPattern()
     }
+  } else {
+    console.warn('[checkPattern] No current target')
   }
 }
 
@@ -788,6 +826,8 @@ const arraysEqual = (a, b) => {
 
 // 正解処理
 const handleCorrectPattern = () => {
+  console.log(`[handleCorrectPattern] Processing correct pattern`)
+  
   // 連続正解カウント更新
   consecutiveCorrect.value++
   maxConsecutiveCorrect.value = Math.max(maxConsecutiveCorrect.value, consecutiveCorrect.value)
@@ -800,18 +840,20 @@ const handleCorrectPattern = () => {
   const totalScore = baseScore + timeBonus + patternBonus + comboBonus
   
   score.value += totalScore
+  console.log(`[handleCorrectPattern] Score added: ${totalScore}`)
   
   // パターンを発見済みとしてマーク
   const targetIndex = targetPatterns.value.findIndex(p => p.id === currentTarget.value.id)
   if (targetIndex !== -1) {
     targetPatterns.value[targetIndex].isFound = true
     foundPatterns.value.push(currentTarget.value)
+    console.log(`[handleCorrectPattern] Pattern marked as found: ${currentTarget.value.pattern}`)
   }
   
-  // 選択されたセルを緑色にマーク
+  // 選択されたセルを緑色にマークするが、isFoundはfalseのまま（再利用可能）
   selectedCells.value.forEach(cellIndex => {
-    gameGrid.value[cellIndex].isFound = true
     gameGrid.value[cellIndex].isCorrect = true
+    // gameGrid.value[cellIndex].isFound = true // これを削除して要素を再利用可能に
   })
   
   // パーティクルエフェクト
@@ -824,6 +866,8 @@ const handleCorrectPattern = () => {
   
   // 次のターゲットを設定
   setNextTarget()
+  
+  console.log(`[handleCorrectPattern] Patterns found: ${foundPatterns.value.length}/${targetPatterns.value.length}`)
 }
 
 // 不正解処理
@@ -879,7 +923,7 @@ const endGame = () => {
   
   // ゲーム結果の計算
   const accuracy = Math.round((foundPatterns.value.length / targetPatterns.value.length) * 100)
-  const timeUsed = 60 - timeLeft.value
+  const timeUsed = 180 - timeLeft.value
   const isNewRecord = score.value > (store.planetsData?.beVerb?.games?.find(g => g.id === 'patternHunter')?.bestScore || 0)
   
   // スターの計算
