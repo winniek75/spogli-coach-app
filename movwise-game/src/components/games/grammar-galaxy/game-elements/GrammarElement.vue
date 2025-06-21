@@ -410,7 +410,6 @@ defineExpose({
 .remove-button:active {
   transform: scale(0.95);
 }
-}
 
 /* Used state */
 .used {
