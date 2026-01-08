@@ -127,7 +127,7 @@ export class AITestingSuite {
       this.services.recommendation = useLearningRecommendationEngine()
       this.services.difficulty = useAdaptiveDifficultySystem()
       this.services.behavior = useBehaviorAnalysisStore()
-      this.services.prediction = useAIPredictionEngine()
+      this.services.prediction = useAIPrediction()
 
       await Promise.all([
         this.services.recommendation.initialize(),

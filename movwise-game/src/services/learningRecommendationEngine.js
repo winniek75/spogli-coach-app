@@ -55,7 +55,7 @@ export class LearningRecommendationEngine {
 
   async initialize() {
     try {
-      this.aiEngine = useAIPredictionEngine()
+      this.aiEngine = useAIPrediction()
       this.streakStore = useStreakStore()
       this.questStore = useQuestStore()
       this.behaviorStore = useBehaviorAnalysisStore()

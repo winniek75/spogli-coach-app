@@ -108,7 +108,7 @@ export class AdaptiveDifficultySystem {
   async initialize() {
     try {
       this.recommendationEngine = useLearningRecommendationEngine()
-      this.aiEngine = useAIPredictionEngine()
+      this.aiEngine = useAIPrediction()
       this.behaviorStore = useBehaviorAnalysisStore()
 
       await this.recommendationEngine.initialize()
