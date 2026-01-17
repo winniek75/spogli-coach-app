@@ -37,6 +37,7 @@ import {
   Star,
   AlertTriangle,
   Copy,
+  Printer,
 } from 'lucide-react'
 import { LessonMenuWithDetails, ACTIVITY_TYPES } from '@/types/lesson-menu'
 
@@ -107,6 +108,98 @@ export default function LessonMenusPage() {
 
     localStorage.setItem('copyMenuData', menuData)
     window.location.href = '/lessons/menus/new?copy=true'
+  }
+
+  const handlePrintMenu = (menu: LessonMenuWithDetails) => {
+    // 印刷処理
+    const printWindow = window.open('', '_blank')
+    if (printWindow) {
+      const html = generatePrintableMenuHtml(menu)
+      printWindow.document.write(html)
+      printWindow.document.close()
+      printWindow.print()
+    }
+  }
+
+  const generatePrintableMenuHtml = (menu: LessonMenuWithDetails) => {
+    return `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <title>${menu.title} - レッスンメニュー</title>
+        <style>
+          @page { size: A4; margin: 15mm; }
+          body { font-family: Arial, sans-serif; font-size: 12pt; line-height: 1.4; }
+          .header { border-bottom: 2px solid #000; margin-bottom: 20pt; padding-bottom: 10pt; }
+          .section { margin-bottom: 15pt; page-break-inside: avoid; }
+          .activity { border: 1px solid #ddd; padding: 10pt; margin-bottom: 10pt; }
+          .badge { border: 1px solid #333; padding: 2pt 5pt; margin-right: 5pt; font-size: 10pt; }
+          @media print { .no-print { display: none; } }
+        </style>
+      </head>
+      <body>
+        <div class="header">
+          <h1>${menu.title}</h1>
+          <p>スポーツ: ${menu.sport} | レベル: Lv${menu.level} | 時間: ${menu.duration_minutes}分 | 参加者数: ${menu.max_participants}名</p>
+          ${menu.description ? `<p>説明: ${menu.description}</p>` : ''}
+        </div>
+
+        ${menu.objectives && menu.objectives.length > 0 ? `
+        <div class="section">
+          <h3>目標・ねらい</h3>
+          <ul>
+            ${menu.objectives.map(obj => `<li>${obj}</li>`).join('')}
+          </ul>
+        </div>
+        ` : ''}
+
+        ${menu.activities && menu.activities.length > 0 ? `
+        <div class="section">
+          <h3>練習内容</h3>
+          ${menu.activities.map((activity, index) => `
+          <div class="activity">
+            <h4>${index + 1}. ${activity.title}</h4>
+            <p><strong>時間:</strong> ${activity.duration_minutes}分 | <strong>種類:</strong> ${activity.activity_type}</p>
+            ${activity.description ? `<p>${activity.description}</p>` : ''}
+            ${activity.instructions ? `<p><strong>実施方法:</strong> ${activity.instructions}</p>` : ''}
+            ${activity.coaching_points && activity.coaching_points.length > 0 ? `
+              <p><strong>コーチングポイント:</strong></p>
+              <ul>${activity.coaching_points.map(point => `<li>${point}</li>`).join('')}</ul>
+            ` : ''}
+          </div>
+          `).join('')}
+        </div>
+        ` : ''}
+
+        ${menu.equipment_needed && menu.equipment_needed.length > 0 ? `
+        <div class="section">
+          <h3>必要な器具・設備</h3>
+          <p>${menu.equipment_needed.join(', ')}</p>
+        </div>
+        ` : ''}
+
+        ${menu.notes ? `
+        <div class="section">
+          <h3>注意事項・備考</h3>
+          <p>${menu.notes}</p>
+        </div>
+        ` : ''}
+
+        <div class="section">
+          <h3>実施記録</h3>
+          <p>実施日: ________________　参加者数: ______名　天候: ___________</p>
+          <h4>実施後の振り返り</h4>
+          <div style="border-bottom: 1px solid #ccc; height: 20pt; margin-bottom: 5pt;"></div>
+          <div style="border-bottom: 1px solid #ccc; height: 20pt; margin-bottom: 5pt;"></div>
+          <div style="border-bottom: 1px solid #ccc; height: 20pt; margin-bottom: 5pt;"></div>
+        </div>
+
+        <div style="margin-top: 30pt; font-size: 10pt; color: #666; text-align: center;">
+          印刷日時: ${new Date().toLocaleString('ja-JP')} | Spogli Coach App
+        </div>
+      </body>
+      </html>
+    `
   }
 
   const getSportBadgeColor = (sport: string) => {
@@ -264,6 +357,10 @@ export default function LessonMenusPage() {
                             <DropdownMenuItem onClick={() => handleCopyMenu(menu)}>
                               <Copy className="h-4 w-4 mr-2" />
                               コピー
+                            </DropdownMenuItem>
+                            <DropdownMenuItem onClick={() => handlePrintMenu(menu)}>
+                              <Printer className="h-4 w-4 mr-2" />
+                              印刷
                             </DropdownMenuItem>
                             <DropdownMenuItem asChild>
                               <Link href={`/lessons/menus/${menu.id}/share`}>

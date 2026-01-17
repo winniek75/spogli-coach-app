@@ -97,7 +97,7 @@ function generateShareToken(): string {
          Math.random().toString(36).substring(2, 15)
 }
 
-// メール送信（デモ実装）
+// メール送信
 async function sendLessonMenuEmail({
   to,
   lessonMenu,
@@ -111,33 +111,24 @@ async function sendLessonMenuEmail({
   message?: string
   sharedBy: string
 }) {
-  // 実際の実装では SendGrid、Resend などのメールサービスを使用
-  console.log('Sending lesson menu email:', {
-    to,
-    subject: `【Spogli Coach App】レッスンメニュー「${lessonMenu.title}」が共有されました`,
-    body: `
-こんにちは,
+  try {
+    const { sendLessonMenuEmail: sendEmail } = await import('@/lib/email')
 
-${sharedBy}さんからレッスンメニューが共有されました。
+    await sendEmail({
+      to,
+      lessonMenu,
+      shareUrl,
+      message,
+      sharedBy,
+    })
 
-【レッスンメニュー詳細】
-タイトル: ${lessonMenu.title}
-スポーツ: ${lessonMenu.sport}
-レベル: Lv${lessonMenu.level}
-時間: ${lessonMenu.duration_minutes}分
-参加者数: ${lessonMenu.max_participants}名
-
-${message ? `\nメッセージ:\n${message}` : ''}
-
-以下のURLからレッスンメニューを確認できます:
-${shareUrl}
-
-※このリンクは一定期間で無効になります。
-
-Spogli Coach App
-    `.trim()
-  })
-
-  // デモでは成功として処理
-  return Promise.resolve()
+    console.log('Lesson menu email sent:', {
+      to,
+      lessonMenu: lessonMenu.title,
+      sharedBy,
+    })
+  } catch (error) {
+    console.error('Failed to send lesson menu email:', error)
+    throw error
+  }
 }
