@@ -217,4 +217,4 @@ spogli-coach-app/
 
 ---
 
-**Spogli Coach Management App** - スポーツコーチングをデジタルツールでサポート 🏆
+**Spogli Coach Management App** - スポーツコーチングをデジタルツールでサポート 🏆# Deploy trigger #午後
