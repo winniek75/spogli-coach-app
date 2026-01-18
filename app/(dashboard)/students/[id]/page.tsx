@@ -116,7 +116,7 @@ export default function StudentDetailPage() {
 
   const calculateAverageRating = () => {
     if (!student.evaluations || student.evaluations.length === 0) return 0
-    const total = student.evaluations.reduce((sum, eval) => sum + eval.rating, 0)
+    const total = student.evaluations.reduce((sum, evaluation) => sum + evaluation.rating, 0)
     return (total / student.evaluations.length).toFixed(1)
   }
 
@@ -125,16 +125,16 @@ export default function StudentDetailPage() {
 
     const stats: { [sport: string]: { count: number; avgRating: number } } = {}
 
-    student.evaluations.forEach(eval => {
-      if (!stats[eval.sport]) {
-        stats[eval.sport] = { count: 0, avgRating: 0 }
+    student.evaluations.forEach(evaluation => {
+      if (!stats[evaluation.sport]) {
+        stats[evaluation.sport] = { count: 0, avgRating: 0 }
       }
-      stats[eval.sport].count++
+      stats[evaluation.sport].count++
     })
 
     Object.keys(stats).forEach(sport => {
       const sportEvals = student.evaluations!.filter(e => e.sport === sport)
-      const total = sportEvals.reduce((sum, eval) => sum + eval.rating, 0)
+      const total = sportEvals.reduce((sum, evaluation) => sum + evaluation.rating, 0)
       stats[sport].avgRating = parseFloat((total / sportEvals.length).toFixed(1))
     })
 
