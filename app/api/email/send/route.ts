@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import {
   sendEmail,
+export const dynamic = 'force-dynamic'
   sendNotificationEmail,
   sendBadgeEarnedEmail,
   sendCertificationExpiringEmail,

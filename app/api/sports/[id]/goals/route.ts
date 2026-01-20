@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
 import { CreateSportGoalRequest } from '@/types/sport'
+export const dynamic = 'force-dynamic'
 
 interface RouteParams {
   params: { id: string }
