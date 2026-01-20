@@ -51,9 +51,9 @@ export default function StudentsPage() {
       student.name_kana?.toLowerCase().includes(searchTerm.toLowerCase()) ||
       student.parent_name.toLowerCase().includes(searchTerm.toLowerCase())
 
-    const matchesSchool = !schoolFilter || student.school === schoolFilter
-    const matchesClass = !classFilter || student.class_type === classFilter
-    const matchesStatus = !statusFilter || student.status === statusFilter
+    const matchesSchool = !schoolFilter || schoolFilter === 'all' || student.school === schoolFilter
+    const matchesClass = !classFilter || classFilter === 'all' || student.class_type === classFilter
+    const matchesStatus = !statusFilter || statusFilter === 'all' || student.status === statusFilter
 
     return matchesSearch && matchesSchool && matchesClass && matchesStatus
   })
@@ -65,9 +65,10 @@ export default function StudentsPage() {
       status: statusFilter,
     }
 
-    if (type === 'school') filters.school = value
-    else if (type === 'class_type') filters.class_type = value
-    else if (type === 'status') filters.status = value
+    // "all"の場合は空文字列に変換してAPIに送信
+    if (type === 'school') filters.school = value === 'all' ? '' : value
+    else if (type === 'class_type') filters.class_type = value === 'all' ? '' : value
+    else if (type === 'status') filters.status = value === 'all' ? '' : value
 
     // APIを再呼び出し
     fetchStudents(filters)
@@ -187,7 +188,7 @@ export default function StudentsPage() {
                 <SelectValue placeholder="校舎で絞り込み" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">全校舎</SelectItem>
+                <SelectItem value="all">全校舎</SelectItem>
                 <SelectItem value="ageo">上尾校</SelectItem>
                 <SelectItem value="okegawa">桶川校</SelectItem>
               </SelectContent>
@@ -198,7 +199,7 @@ export default function StudentsPage() {
                 <SelectValue placeholder="クラスで絞り込み" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">全クラス</SelectItem>
+                <SelectItem value="all">全クラス</SelectItem>
                 <SelectItem value="preschool">未就学児</SelectItem>
                 <SelectItem value="elementary">小学生</SelectItem>
               </SelectContent>
@@ -209,7 +210,7 @@ export default function StudentsPage() {
                 <SelectValue placeholder="ステータスで絞り込み" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">全ステータス</SelectItem>
+                <SelectItem value="all">全ステータス</SelectItem>
                 <SelectItem value="active">在籍中</SelectItem>
                 <SelectItem value="inactive">休会</SelectItem>
                 <SelectItem value="withdrawn">退会</SelectItem>
