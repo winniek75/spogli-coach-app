@@ -1,11 +1,126 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
-import { CreateCoachRequest } from '@/types/coach'
+import { CreateCoachRequest, CoachWithCertifications } from '@/types/coach'
 
 export const dynamic = 'force-dynamic'
 
+// デモデータ
+const demoCoaches: CoachWithCertifications[] = [
+  {
+    id: '1',
+    name: 'Risa',
+    name_en: 'Risa Tanaka',
+    email: 'risa@spogli.com',
+    phone: '090-1111-2222',
+    line_id: 'risa_coach',
+    nationality: 'Japan',
+    languages: ['Japanese', 'English'],
+    profile_image_url: null,
+    role: 'senior_coach',
+    schools: ['ageo', 'okegawa'],
+    hire_date: '2023-04-01',
+    status: 'active',
+    notes: 'バスケットボール専門コーチ',
+    certifications: [
+      {
+        id: '1',
+        coach_id: '1',
+        name: 'JBA公認C級コーチライセンス',
+        issued_date: '2023-06-01',
+        expiry_date: '2026-05-31',
+        certificate_url: null,
+        status: 'valid',
+        reminder_sent: false,
+        notes: null,
+        created_at: '2023-06-01',
+        updated_at: '2023-06-01'
+      }
+    ],
+    created_at: '2023-04-01',
+    updated_at: '2024-01-20'
+  },
+  {
+    id: '2',
+    name: 'Aung',
+    name_en: 'Aung Than',
+    email: 'aung@spogli.com',
+    phone: '090-3333-4444',
+    nationality: 'Myanmar',
+    languages: ['Burmese', 'English', 'Japanese'],
+    profile_image_url: null,
+    role: 'coach',
+    schools: ['ageo'],
+    hire_date: '2023-08-01',
+    status: 'active',
+    notes: 'サッカー専門コーチ',
+    certifications: [
+      {
+        id: '2',
+        coach_id: '2',
+        name: 'JFA公認D級コーチライセンス',
+        issued_date: '2023-10-01',
+        expiry_date: '2025-09-30',
+        certificate_url: null,
+        status: 'valid',
+        reminder_sent: false,
+        notes: null,
+        created_at: '2023-10-01',
+        updated_at: '2023-10-01'
+      }
+    ],
+    created_at: '2023-08-01',
+    updated_at: '2024-01-15'
+  },
+  {
+    id: '3',
+    name: 'Gecko',
+    name_en: 'Gecko Smith',
+    email: 'gecko@spogli.com',
+    phone: '090-5555-6666',
+    nationality: 'USA',
+    languages: ['English', 'Japanese'],
+    profile_image_url: null,
+    role: 'coach',
+    schools: ['okegawa'],
+    hire_date: '2024-01-10',
+    status: 'active',
+    notes: 'バレーボール専門コーチ',
+    certifications: [],
+    created_at: '2024-01-10',
+    updated_at: '2024-01-20'
+  },
+  {
+    id: '4',
+    name: '田中太郎',
+    name_en: 'Taro Tanaka',
+    email: 'tanaka@spogli.com',
+    phone: '090-7777-8888',
+    line_id: 'tanaka_manager',
+    nationality: 'Japan',
+    languages: ['Japanese'],
+    profile_image_url: null,
+    role: 'manager',
+    schools: ['ageo', 'okegawa'],
+    hire_date: '2022-04-01',
+    status: 'active',
+    notes: 'スクールマネージャー',
+    certifications: [],
+    created_at: '2022-04-01',
+    updated_at: '2024-01-10'
+  }
+]
+
 export async function GET() {
   try {
+    // デモモード: Supabaseが設定されていない場合はデモデータを返す
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+    const isDemo = !supabaseUrl || supabaseUrl.includes('placeholder')
+
+    if (isDemo) {
+      return NextResponse.json({ coaches: demoCoaches })
+    }
+
+    // 本番モード: Supabaseからデータを取得
     const supabase = await createClient()
 
     const { data: coaches, error } = await supabase
