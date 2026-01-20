@@ -2,7 +2,7 @@ import { Resend } from 'resend'
 import { NotificationWithDetails } from '@/types/notification'
 
 // Resend設定
-const resend = new Resend(process.env.RESEND_API_KEY)
+const resend = new Resend(process.env.RESEND_API_KEY || 'dummy_key_for_build')
 
 // メール送信インターフェース
 interface EmailOptions {
