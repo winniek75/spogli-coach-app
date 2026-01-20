@@ -21,6 +21,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
 import {
   Plus,
   Search,
@@ -38,15 +39,31 @@ import {
   AlertTriangle,
   Copy,
   Printer,
+  Calendar,
+  Video,
+  ChevronDown,
+  ChevronRight,
 } from 'lucide-react'
-import { LessonMenuWithDetails, ACTIVITY_TYPES } from '@/types/lesson-menu'
+import { LessonMenuWithDetails } from '@/types/lesson-menu'
 
 export default function LessonMenusPage() {
   const { lessonMenus, loading, error, fetchLessonMenus, deleteLessonMenu, shareLessonMenu } = useLessonMenus()
   const [searchTerm, setSearchTerm] = useState('')
   const [sportFilter, setSportFilter] = useState<string>('')
   const [levelFilter, setLevelFilter] = useState<string>('')
+  const [typeFilter, setTypeFilter] = useState<string>('')
   const [activeTab, setActiveTab] = useState('all')
+  const [expandedMenus, setExpandedMenus] = useState<Set<string>>(new Set())
+
+  const toggleMenuExpansion = (menuId: string) => {
+    const newExpanded = new Set(expandedMenus)
+    if (newExpanded.has(menuId)) {
+      newExpanded.delete(menuId)
+    } else {
+      newExpanded.add(menuId)
+    }
+    setExpandedMenus(newExpanded)
+  }
 
   const handleSearch = () => {
     const filters: any = {
@@ -81,131 +98,19 @@ export default function LessonMenusPage() {
     fetchLessonMenus(filters)
   }
 
-  const handleDelete = async (id: string) => {
-    if (confirm('このレッスンメニューを削除しますか？')) {
-      try {
-        await deleteLessonMenu(id)
-      } catch (err) {
-        console.error('Delete failed:', err)
-      }
-    }
-  }
+  const filteredMenus = lessonMenus.filter(menu => {
+    const matchesType = !typeFilter ||
+      (typeFilter === 'monthly' && menu.monthly_type === 'monthly') ||
+      (typeFilter === 'single' && menu.monthly_type === 'single')
 
-  const handleCopyMenu = (menu: LessonMenuWithDetails) => {
-    // コピー処理（新規作成画面に遷移）
-    const menuData = JSON.stringify({
-      title: `${menu.title} (コピー)`,
-      description: menu.description,
-      sport: menu.sport,
-      level: menu.level,
-      duration_minutes: menu.duration_minutes,
-      max_participants: menu.max_participants,
-      equipment_needed: menu.equipment_needed,
-      objectives: menu.objectives,
-      activities: menu.activities,
-      notes: menu.notes,
-    })
-
-    localStorage.setItem('copyMenuData', menuData)
-    window.location.href = '/lessons/menus/new?copy=true'
-  }
-
-  const handlePrintMenu = (menu: LessonMenuWithDetails) => {
-    // 印刷処理
-    const printWindow = window.open('', '_blank')
-    if (printWindow) {
-      const html = generatePrintableMenuHtml(menu)
-      printWindow.document.write(html)
-      printWindow.document.close()
-      printWindow.print()
-    }
-  }
-
-  const generatePrintableMenuHtml = (menu: LessonMenuWithDetails) => {
-    return `
-      <!DOCTYPE html>
-      <html>
-      <head>
-        <title>${menu.title} - レッスンメニュー</title>
-        <style>
-          @page { size: A4; margin: 15mm; }
-          body { font-family: Arial, sans-serif; font-size: 12pt; line-height: 1.4; }
-          .header { border-bottom: 2px solid #000; margin-bottom: 20pt; padding-bottom: 10pt; }
-          .section { margin-bottom: 15pt; page-break-inside: avoid; }
-          .activity { border: 1px solid #ddd; padding: 10pt; margin-bottom: 10pt; }
-          .badge { border: 1px solid #333; padding: 2pt 5pt; margin-right: 5pt; font-size: 10pt; }
-          @media print { .no-print { display: none; } }
-        </style>
-      </head>
-      <body>
-        <div class="header">
-          <h1>${menu.title}</h1>
-          <p>スポーツ: ${menu.sport} | レベル: Lv${menu.level} | 時間: ${menu.duration_minutes}分 | 参加者数: ${menu.max_participants}名</p>
-          ${menu.description ? `<p>説明: ${menu.description}</p>` : ''}
-        </div>
-
-        ${menu.objectives && menu.objectives.length > 0 ? `
-        <div class="section">
-          <h3>目標・ねらい</h3>
-          <ul>
-            ${menu.objectives.map(obj => `<li>${obj}</li>`).join('')}
-          </ul>
-        </div>
-        ` : ''}
-
-        ${menu.activities && menu.activities.length > 0 ? `
-        <div class="section">
-          <h3>練習内容</h3>
-          ${menu.activities.map((activity, index) => `
-          <div class="activity">
-            <h4>${index + 1}. ${activity.title}</h4>
-            <p><strong>時間:</strong> ${activity.duration_minutes}分 | <strong>種類:</strong> ${activity.activity_type}</p>
-            ${activity.description ? `<p>${activity.description}</p>` : ''}
-            ${activity.instructions ? `<p><strong>実施方法:</strong> ${activity.instructions}</p>` : ''}
-            ${activity.coaching_points && activity.coaching_points.length > 0 ? `
-              <p><strong>コーチングポイント:</strong></p>
-              <ul>${activity.coaching_points.map(point => `<li>${point}</li>`).join('')}</ul>
-            ` : ''}
-          </div>
-          `).join('')}
-        </div>
-        ` : ''}
-
-        ${menu.equipment_needed && menu.equipment_needed.length > 0 ? `
-        <div class="section">
-          <h3>必要な器具・設備</h3>
-          <p>${menu.equipment_needed.join(', ')}</p>
-        </div>
-        ` : ''}
-
-        ${menu.notes ? `
-        <div class="section">
-          <h3>注意事項・備考</h3>
-          <p>${menu.notes}</p>
-        </div>
-        ` : ''}
-
-        <div class="section">
-          <h3>実施記録</h3>
-          <p>実施日: ________________　参加者数: ______名　天候: ___________</p>
-          <h4>実施後の振り返り</h4>
-          <div style="border-bottom: 1px solid #ccc; height: 20pt; margin-bottom: 5pt;"></div>
-          <div style="border-bottom: 1px solid #ccc; height: 20pt; margin-bottom: 5pt;"></div>
-          <div style="border-bottom: 1px solid #ccc; height: 20pt; margin-bottom: 5pt;"></div>
-        </div>
-
-        <div style="margin-top: 30pt; font-size: 10pt; color: #666; text-align: center;">
-          印刷日時: ${new Date().toLocaleString('ja-JP')} | Spogli Coach App
-        </div>
-      </body>
-      </html>
-    `
-  }
+    return matchesType
+  })
 
   const getSportBadgeColor = (sport: string) => {
     const colors = {
       soccer: 'bg-green-100 text-green-800',
       basketball: 'bg-orange-100 text-orange-800',
+      volleyball: 'bg-purple-100 text-purple-800',
       baseball: 'bg-blue-100 text-blue-800',
     }
     return colors[sport as keyof typeof colors] || 'bg-gray-100 text-gray-800'
@@ -224,6 +129,112 @@ export default function LessonMenusPage() {
       return `${hours}時間${mins > 0 ? mins + '分' : ''}`
     }
     return `${mins}分`
+  }
+
+  const getSportName = (sport: string) => {
+    const names = {
+      soccer: 'サッカー',
+      basketball: 'バスケットボール',
+      volleyball: 'バレーボール',
+      baseball: '野球'
+    }
+    return names[sport as keyof typeof names] || sport
+  }
+
+  const renderWeeklyProgram = (menu: LessonMenuWithDetails) => {
+    if (!menu.weeks || menu.weeks.length === 0) return null
+
+    return (
+      <div className="mt-4 space-y-4">
+        {menu.weeks.map((week) => (
+          <Card key={week.week} className="border-l-4 border-l-blue-500">
+            <CardHeader className="pb-3">
+              <div className="flex items-center justify-between">
+                <div>
+                  <CardTitle className="text-lg flex items-center gap-2">
+                    <Calendar className="h-4 w-4" />
+                    {week.title}
+                  </CardTitle>
+                  <CardDescription>{week.description}</CardDescription>
+                </div>
+                {week.video_content && (
+                  <div className="flex items-center gap-2 text-sm text-blue-600">
+                    <Video className="h-4 w-4" />
+                    <span>{week.video_content.title}</span>
+                    <Badge variant="outline" className="text-xs">
+                      {formatDuration(week.video_content.duration_minutes)}
+                    </Badge>
+                  </div>
+                )}
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-3">
+                {week.activities.map((activity, index) => (
+                  <div
+                    key={activity.id}
+                    className="flex items-center justify-between p-3 bg-gray-50 rounded-lg"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-6 h-6 bg-blue-100 text-blue-800 rounded-full flex items-center justify-center text-sm font-medium">
+                        {index + 1}
+                      </div>
+                      <div>
+                        <h4 className="font-medium">{activity.name}</h4>
+                        <p className="text-sm text-gray-600">{activity.description}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      {activity.video_reference && (
+                        <Video className="h-4 w-4 text-blue-500" />
+                      )}
+                      <Badge variant="outline" className="text-xs">
+                        {formatDuration(activity.duration_minutes)}
+                      </Badge>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    )
+  }
+
+  const renderSingleLessonActivities = (menu: LessonMenuWithDetails) => {
+    if (!menu.activities || menu.activities.length === 0) return null
+
+    return (
+      <div className="mt-4">
+        <div className="space-y-3">
+          {menu.activities.map((activity, index) => (
+            <div
+              key={activity.id}
+              className="flex items-center justify-between p-3 bg-gray-50 rounded-lg"
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-6 h-6 bg-green-100 text-green-800 rounded-full flex items-center justify-center text-sm font-medium">
+                  {index + 1}
+                </div>
+                <div>
+                  <h4 className="font-medium">{activity.name}</h4>
+                  <p className="text-sm text-gray-600">{activity.description}</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                {activity.video_reference && (
+                  <Video className="h-4 w-4 text-blue-500" />
+                )}
+                <Badge variant="outline" className="text-xs">
+                  {formatDuration(activity.duration_minutes)}
+                </Badge>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    )
   }
 
   if (loading) {
@@ -256,7 +267,7 @@ export default function LessonMenusPage() {
         <div>
           <h1 className="text-3xl font-bold tracking-tight">レッスンメニュー</h1>
           <p className="text-muted-foreground mt-2">
-            練習メニューの作成・管理・共有
+            月次プログラムと単発レッスンの管理・共有
           </p>
         </div>
         <Link href="/lessons/menus/new">
@@ -270,7 +281,7 @@ export default function LessonMenusPage() {
       {/* 検索・フィルター */}
       <Card>
         <CardContent className="pt-6">
-          <div className="grid gap-4 md:grid-cols-4">
+          <div className="grid gap-4 md:grid-cols-5">
             <div className="relative md:col-span-2">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
               <Input
@@ -282,6 +293,17 @@ export default function LessonMenusPage() {
               />
             </div>
 
+            <Select value={typeFilter} onValueChange={setTypeFilter}>
+              <SelectTrigger>
+                <SelectValue placeholder="メニュー種別" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="">全メニュー</SelectItem>
+                <SelectItem value="monthly">月次プログラム</SelectItem>
+                <SelectItem value="single">単発レッスン</SelectItem>
+              </SelectContent>
+            </Select>
+
             <Select value={sportFilter} onValueChange={setSportFilter}>
               <SelectTrigger>
                 <SelectValue placeholder="スポーツで絞り込み" />
@@ -290,6 +312,7 @@ export default function LessonMenusPage() {
                 <SelectItem value="">全スポーツ</SelectItem>
                 <SelectItem value="soccer">サッカー</SelectItem>
                 <SelectItem value="basketball">バスケットボール</SelectItem>
+                <SelectItem value="volleyball">バレーボール</SelectItem>
                 <SelectItem value="baseball">野球</SelectItem>
               </SelectContent>
             </Select>
@@ -300,201 +323,171 @@ export default function LessonMenusPage() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="">全レベル</SelectItem>
-                <SelectItem value="1">Lv1: Rookie</SelectItem>
-                <SelectItem value="2">Lv2: Challenger</SelectItem>
-                <SelectItem value="3">Lv3: Adventurer</SelectItem>
-                <SelectItem value="4">Lv4: Explorer</SelectItem>
-                <SelectItem value="5">Lv5: Champion</SelectItem>
-                <SelectItem value="6">Lv6: Master</SelectItem>
+                <SelectItem value="1">初級 (1)</SelectItem>
+                <SelectItem value="2">初級 (2)</SelectItem>
+                <SelectItem value="3">中級 (3)</SelectItem>
+                <SelectItem value="4">中級 (4)</SelectItem>
+                <SelectItem value="5">上級 (5)</SelectItem>
               </SelectContent>
             </Select>
-          </div>
-
-          <div className="flex justify-end mt-4">
-            <Button onClick={handleSearch}>検索</Button>
           </div>
         </CardContent>
       </Card>
 
-      {/* タブ */}
-      <Tabs value={activeTab} onValueChange={handleTabChange}>
-        <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="all">すべて</TabsTrigger>
-          <TabsTrigger value="public">公開メニュー</TabsTrigger>
-          <TabsTrigger value="templates">テンプレート</TabsTrigger>
-        </TabsList>
-
-        <TabsContent value={activeTab} className="mt-6">
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {lessonMenus.map((menu) => (
-              <Card key={menu.id} className="hover:shadow-md transition-shadow">
-                <CardHeader className="pb-3">
-                  <div className="flex justify-between items-start">
-                    <div className="flex-1">
-                      <div className="flex items-start justify-between mb-2">
-                        <CardTitle className="text-lg leading-tight line-clamp-2">
-                          {menu.title}
-                        </CardTitle>
-                        <DropdownMenu>
-                          <DropdownMenuTrigger asChild>
-                            <Button variant="ghost" size="sm">
-                              <MoreHorizontal className="h-4 w-4" />
-                            </Button>
-                          </DropdownMenuTrigger>
-                          <DropdownMenuContent align="end">
-                            <DropdownMenuItem asChild>
-                              <Link href={`/lessons/menus/${menu.id}`}>
-                                <Eye className="h-4 w-4 mr-2" />
-                                詳細表示
-                              </Link>
-                            </DropdownMenuItem>
-                            <DropdownMenuItem asChild>
-                              <Link href={`/lessons/menus/${menu.id}/edit`}>
-                                <Edit className="h-4 w-4 mr-2" />
-                                編集
-                              </Link>
-                            </DropdownMenuItem>
-                            <DropdownMenuItem onClick={() => handleCopyMenu(menu)}>
-                              <Copy className="h-4 w-4 mr-2" />
-                              コピー
-                            </DropdownMenuItem>
-                            <DropdownMenuItem onClick={() => handlePrintMenu(menu)}>
-                              <Printer className="h-4 w-4 mr-2" />
-                              印刷
-                            </DropdownMenuItem>
-                            <DropdownMenuItem asChild>
-                              <Link href={`/lessons/menus/${menu.id}/share`}>
-                                <Share2 className="h-4 w-4 mr-2" />
-                                共有
-                              </Link>
-                            </DropdownMenuItem>
-                            <DropdownMenuItem
-                              onClick={() => handleDelete(menu.id)}
-                              className="text-red-600"
-                            >
-                              <Trash2 className="h-4 w-4 mr-2" />
-                              削除
-                            </DropdownMenuItem>
-                          </DropdownMenuContent>
-                        </DropdownMenu>
+      {/* レッスンメニュー一覧 */}
+      <div className="space-y-4">
+        {filteredMenus.map((menu) => (
+          <Collapsible key={menu.id}>
+            <Card className="overflow-hidden">
+              <CollapsibleTrigger
+                className="w-full text-left"
+                onClick={() => toggleMenuExpansion(menu.id)}
+              >
+                <CardHeader className="hover:bg-gray-50">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-4">
+                      <div className="flex items-center gap-2">
+                        {expandedMenus.has(menu.id) ? (
+                          <ChevronDown className="h-4 w-4" />
+                        ) : (
+                          <ChevronRight className="h-4 w-4" />
+                        )}
+                        <div>
+                          <CardTitle className="text-xl">{menu.title}</CardTitle>
+                          <CardDescription className="mt-1">
+                            {menu.description}
+                          </CardDescription>
+                        </div>
                       </div>
+                    </div>
 
-                      {menu.description && (
-                        <CardDescription className="line-clamp-2 mb-3">
-                          {menu.description}
-                        </CardDescription>
-                      )}
-
-                      <div className="flex flex-wrap gap-2">
+                    <div className="flex items-center gap-3">
+                      {/* バッジ群 */}
+                      <div className="flex items-center gap-2">
+                        {menu.monthly_type === 'monthly' && (
+                          <Badge className="bg-blue-100 text-blue-800">
+                            <Calendar className="h-3 w-3 mr-1" />
+                            月次プログラム
+                          </Badge>
+                        )}
                         <Badge className={getSportBadgeColor(menu.sport)}>
-                          {menu.sport}
+                          {getSportName(menu.sport)}
                         </Badge>
                         <Badge className={getLevelBadgeColor(menu.level)}>
-                          Lv{menu.level}
+                          Lv.{menu.level}
                         </Badge>
-                        {menu.is_public && (
-                          <Badge variant="outline">公開</Badge>
-                        )}
-                        {menu.is_template && (
-                          <Badge variant="secondary">テンプレート</Badge>
-                        )}
+                        <Badge variant="outline">
+                          <Clock className="h-3 w-3 mr-1" />
+                          {formatDuration(menu.duration_minutes)}
+                        </Badge>
                       </div>
+
+                      {/* アクションメニュー */}
+                      <DropdownMenu>
+                        <DropdownMenuTrigger asChild onClick={(e) => e.stopPropagation()}>
+                          <Button variant="ghost" size="sm">
+                            <MoreHorizontal className="h-4 w-4" />
+                          </Button>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent align="end">
+                          <DropdownMenuItem asChild>
+                            <Link href={`/lessons/menus/${menu.id}`}>
+                              <Eye className="h-4 w-4 mr-2" />
+                              詳細表示
+                            </Link>
+                          </DropdownMenuItem>
+                          <DropdownMenuItem asChild>
+                            <Link href={`/lessons/menus/${menu.id}/edit`}>
+                              <Edit className="h-4 w-4 mr-2" />
+                              編集
+                            </Link>
+                          </DropdownMenuItem>
+                          <DropdownMenuItem>
+                            <Copy className="h-4 w-4 mr-2" />
+                            コピー
+                          </DropdownMenuItem>
+                          <DropdownMenuItem>
+                            <Share2 className="h-4 w-4 mr-2" />
+                            共有
+                          </DropdownMenuItem>
+                          <DropdownMenuItem>
+                            <Printer className="h-4 w-4 mr-2" />
+                            印刷
+                          </DropdownMenuItem>
+                          <DropdownMenuItem className="text-red-600">
+                            <Trash2 className="h-4 w-4 mr-2" />
+                            削除
+                          </DropdownMenuItem>
+                        </DropdownMenuContent>
+                      </DropdownMenu>
+                    </div>
+                  </div>
+
+                  {/* メタ情報 */}
+                  <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                    <div className="flex items-center gap-1">
+                      <Target className="h-3 w-3" />
+                      <span>目標: {menu.objectives?.slice(0, 2).join(', ')}</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Star className="h-3 w-3" />
+                      <span>利用回数: {menu.usage_count || 0}回</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Users className="h-3 w-3" />
+                      <span>作成者: {menu.created_by_name}</span>
                     </div>
                   </div>
                 </CardHeader>
+              </CollapsibleTrigger>
 
-                <CardContent className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div className="flex items-center gap-1">
-                      <Clock className="h-3 w-3 text-muted-foreground" />
-                      <span>{formatDuration(menu.duration_minutes)}</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Users className="h-3 w-3 text-muted-foreground" />
-                      <span>{menu.max_participants}名</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Play className="h-3 w-3 text-muted-foreground" />
-                      <span>{menu.activities?.length || 0}項目</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <BookOpen className="h-3 w-3 text-muted-foreground" />
-                      <span>{menu.usage_count || 0}回利用</span>
-                    </div>
-                  </div>
-
-                  {menu.objectives && menu.objectives.length > 0 && (
+              <CollapsibleContent>
+                <CardContent className="pt-0">
+                  {menu.monthly_type === 'monthly' ? (
                     <div>
-                      <div className="flex items-center gap-1 mb-2">
-                        <Target className="h-3 w-3 text-muted-foreground" />
-                        <span className="text-sm font-medium">目標</span>
+                      <div className="mb-4 p-3 bg-blue-50 rounded-lg">
+                        <h3 className="font-semibold text-blue-900 mb-2">
+                          📅 {menu.weeks?.length || 0}週間の総合プログラム
+                        </h3>
+                        <p className="text-sm text-blue-700">
+                          各週で動画学習と実技練習を組み合わせた体系的なカリキュラムです
+                        </p>
                       </div>
-                      <div className="text-sm text-muted-foreground">
-                        {menu.objectives.slice(0, 2).join(', ')}
-                        {menu.objectives.length > 2 && '...'}
+                      {renderWeeklyProgram(menu)}
+                    </div>
+                  ) : (
+                    <div>
+                      <div className="mb-4 p-3 bg-green-50 rounded-lg">
+                        <h3 className="font-semibold text-green-900 mb-2">
+                          🎯 単発レッスンメニュー
+                        </h3>
+                        <p className="text-sm text-green-700">
+                          1回完結型のレッスン構成です
+                        </p>
                       </div>
+                      {renderSingleLessonActivities(menu)}
                     </div>
                   )}
-
-                  {menu.activities && menu.activities.length > 0 && (
-                    <div>
-                      <div className="text-sm font-medium mb-2">主なアクティビティ</div>
-                      <div className="flex flex-wrap gap-1">
-                        {Array.from(new Set(menu.activities.map(a => a.activity_type))).slice(0, 3).map(type => (
-                          <Badge key={type} variant="outline" className="text-xs">
-                            {ACTIVITY_TYPES[type as keyof typeof ACTIVITY_TYPES] || type}
-                          </Badge>
-                        ))}
-                        {Array.from(new Set(menu.activities.map(a => a.activity_type))).length > 3 && (
-                          <Badge variant="outline" className="text-xs">
-                            +{Array.from(new Set(menu.activities.map(a => a.activity_type))).length - 3}
-                          </Badge>
-                        )}
-                      </div>
-                    </div>
-                  )}
-
-                  <div className="text-xs text-muted-foreground">
-                    作成者: {menu.created_by_name || 'Unknown'} • {new Date(menu.created_at).toLocaleDateString('ja-JP')}
-                    {menu.last_used_date && (
-                      <span> • 最終利用: {new Date(menu.last_used_date).toLocaleDateString('ja-JP')}</span>
-                    )}
-                  </div>
-
-                  <div className="flex gap-2 pt-2">
-                    <Button asChild size="sm" variant="outline" className="flex-1">
-                      <Link href={`/lessons/menus/${menu.id}`}>
-                        <Eye className="h-3 w-3 mr-1" />
-                        詳細
-                      </Link>
-                    </Button>
-                    <Button asChild size="sm" className="flex-1">
-                      <Link href={`/lessons/menus/${menu.id}/share`}>
-                        <Share2 className="h-3 w-3 mr-1" />
-                        共有
-                      </Link>
-                    </Button>
-                  </div>
                 </CardContent>
-              </Card>
-            ))}
-          </div>
-        </TabsContent>
-      </Tabs>
+              </CollapsibleContent>
+            </Card>
+          </Collapsible>
+        ))}
+      </div>
 
-      {lessonMenus.length === 0 && (
+      {filteredMenus.length === 0 && (
         <div className="text-center py-12">
           <BookOpen className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
           <p className="text-lg font-medium text-muted-foreground mb-2">
             レッスンメニューが見つかりません
           </p>
           <p className="text-muted-foreground mb-4">
-            検索条件を変更するか、新しいレッスンメニューを作成してください
+            検索条件を変更するか、新しいメニューを作成してください
           </p>
           <Link href="/lessons/menus/new">
             <Button>
               <Plus className="h-4 w-4 mr-2" />
-              新規メニュー作成
+              メニューを作成
             </Button>
           </Link>
         </div>

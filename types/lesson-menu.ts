@@ -5,13 +5,16 @@ export interface LessonMenu {
   sport: string
   level: number
   duration_minutes: number
-  max_participants: number
-  equipment_needed?: string[]
+  max_participants?: number
+  equipment?: string[]
   objectives: string[]
   activities: LessonActivity[]
+  tags?: string[]
   notes?: string
   is_public: boolean
   is_template: boolean
+  monthly_type?: 'monthly' | 'single' // 月次プログラムか単発レッスンか
+  weeks?: WeeklyProgram[] // 月次プログラムの週構造
   created_by: string
   created_at: string
   updated_at: string
@@ -19,16 +22,42 @@ export interface LessonMenu {
 
 export interface LessonActivity {
   id: string
-  lesson_menu_id: string
-  title: string
+  lesson_menu_id?: string
+  name: string
   description?: string
   duration_minutes: number
-  activity_type: string
+  activity_type?: string
   instructions?: string[]
   equipment?: string[]
   safety_notes?: string
   variations?: string[]
   order_index: number
+  video_reference?: string // 動画コンテンツへの参照
+}
+
+export interface WeeklyProgram {
+  week: number
+  title: string
+  description: string
+  video_content?: {
+    id: string
+    title: string
+    duration_minutes: number
+  }
+  activities: LessonActivity[]
+}
+
+export interface VideoContent {
+  id: string
+  title: string
+  description?: string
+  sport: string
+  level: number
+  duration_minutes: number
+  thumbnail_url?: string
+  video_url?: string
+  category: string
+  tags: string[]
 }
 
 export interface LessonMenuWithDetails extends LessonMenu {
