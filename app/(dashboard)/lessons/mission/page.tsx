@@ -42,7 +42,7 @@ import {
   Users,
   Trophy,
   ClipboardList,
-  Print,
+  Printer,
   Save,
   Eye,
   Edit,
@@ -172,7 +172,7 @@ export default function MissionPage() {
         </div>
         <div className="flex gap-2">
           <Button variant="outline">
-            <Print className="h-4 w-4 mr-2" />
+            <Printer className="h-4 w-4 mr-2" />
             印刷
           </Button>
           <Button>
@@ -402,7 +402,7 @@ export default function MissionPage() {
                             <Edit className="h-3 w-3" />
                           </Button>
                           <Button variant="ghost" size="sm">
-                            <Print className="h-3 w-3" />
+                            <Printer className="h-3 w-3" />
                           </Button>
                         </div>
                       </TableCell>

@@ -2,13 +2,23 @@ import { Client } from '@line/bot-sdk'
 import { NotificationWithDetails } from '@/types/notification'
 
 // LINE Bot設定
-const config = {
+const getConfig = () => ({
   channelAccessToken: process.env.LINE_CHANNEL_ACCESS_TOKEN || '',
   channelSecret: process.env.LINE_CHANNEL_SECRET || '',
-}
+})
 
-// LINE Botクライアント
-const client = new Client(config)
+// LINE Botクライアントを遅延初期化
+let client: Client | null = null
+
+const getClient = (): Client | null => {
+  if (!client) {
+    const config = getConfig()
+    if (config.channelAccessToken && config.channelSecret) {
+      client = new Client(config)
+    }
+  }
+  return client
+}
 
 // メッセージ送信インターフェース
 interface LineMessageOptions {
@@ -34,11 +44,16 @@ interface LineAction {
 // メッセージ送信
 export async function sendLineNotification({ userId, notification, customMessage }: LineMessageOptions) {
   try {
+    const lineClient = getClient()
+    if (!lineClient) {
+      throw new Error('LINE Bot is not configured')
+    }
+
     // メッセージ内容を生成
     const message = customMessage || formatNotificationMessage(notification)
 
     // テキストメッセージ送信
-    await client.pushMessage(userId, {
+    await lineClient.pushMessage(userId, {
       type: 'text',
       text: message,
     })
@@ -54,9 +69,14 @@ export async function sendLineNotification({ userId, notification, customMessage
 // リッチメッセージ送信（フレックスメッセージ）
 export async function sendLineRichNotification({ userId, notification }: LineMessageOptions) {
   try {
+    const lineClient = getClient()
+    if (!lineClient) {
+      throw new Error('LINE Bot is not configured')
+    }
+
     const flexMessage = createFlexMessage(notification)
 
-    await client.pushMessage(userId, {
+    await lineClient.pushMessage(userId, {
       type: 'flex',
       altText: notification.title,
       contents: flexMessage,
@@ -322,11 +342,16 @@ export async function handleLineWebhook(events: any[]) {
 
 // テキストメッセージ処理（今後の拡張用）
 async function handleTextMessage(event: any) {
+  const lineClient = getClient()
+  if (!lineClient) {
+    throw new Error('LINE Bot is not configured')
+  }
+
   const { replyToken, message, source } = event
   const userId = source.userId
 
   // 簡単な応答例
-  await client.replyMessage(replyToken, {
+  await lineClient.replyMessage(replyToken, {
     type: 'text',
     text: `メッセージを受信しました: ${message.text}`,
   })
@@ -338,7 +363,12 @@ async function handleTextMessage(event: any) {
 // ユーザー情報取得
 export async function getLineUserProfile(userId: string) {
   try {
-    const profile = await client.getProfile(userId)
+    const lineClient = getClient()
+    if (!lineClient) {
+      throw new Error('LINE Bot is not configured')
+    }
+
+    const profile = await lineClient.getProfile(userId)
     return {
       displayName: profile.displayName,
       pictureUrl: profile.pictureUrl,

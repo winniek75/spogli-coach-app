@@ -36,7 +36,7 @@ import {
   Users,
   Edit,
   Trash2,
-  Print,
+  Printer,
   ChevronLeft,
   ChevronRight,
 } from 'lucide-react'
@@ -168,7 +168,7 @@ export default function ShiftsPage() {
         </div>
         <div className="flex gap-2">
           <Button variant="outline">
-            <Print className="h-4 w-4 mr-2" />
+            <Printer className="h-4 w-4 mr-2" />
             印刷
           </Button>
           <Dialog open={isAddDialogOpen} onOpenChange={setIsAddDialogOpen}>
