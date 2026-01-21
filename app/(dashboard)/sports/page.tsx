@@ -35,7 +35,6 @@ import {
   Plus,
   Search,
   Trophy,
-  Users,
   Target,
   Activity,
   MoreHorizontal,
@@ -43,7 +42,6 @@ import {
   Trash2,
   Eye,
   TrendingUp,
-  Award,
   AlertTriangle,
   Filter,
 } from 'lucide-react'
@@ -57,8 +55,14 @@ export default function SportsPage() {
   const [showCreateDialog, setShowCreateDialog] = useState(false)
 
   const handleSearch = () => {
-    const filters: any = {
-      search: searchTerm,
+    const filters: {
+      search?: string
+      category?: string
+      is_active?: boolean
+    } = {}
+
+    if (searchTerm) {
+      filters.search = searchTerm
     }
 
     if (categoryFilter) {
@@ -82,18 +86,7 @@ export default function SportsPage() {
     }
   }
 
-  const getSportIcon = (sport: Sport) => {
-    const icons: { [key: string]: JSX.Element } = {
-      soccer: <Activity className="h-5 w-5" />,
-      basketball: <Trophy className="h-5 w-5" />,
-      baseball: <Award className="h-5 w-5" />,
-      swimming: <Activity className="h-5 w-5" />,
-      tennis: <Trophy className="h-5 w-5" />,
-    }
-    return icons[sport.code] || <Activity className="h-5 w-5" />
-  }
-
-  const getCategoryColor = (categoryId: string) => {
+  const getCategoryColor = (categoryId?: string) => {
     const colors: { [key: string]: string } = {
       ball: 'bg-blue-100 text-blue-800',
       track: 'bg-green-100 text-green-800',
@@ -103,7 +96,7 @@ export default function SportsPage() {
       winter: 'bg-gray-100 text-gray-800',
       other: 'bg-yellow-100 text-yellow-800',
     }
-    return colors[categoryId] || 'bg-gray-100 text-gray-800'
+    return colors[categoryId || 'other'] || 'bg-gray-100 text-gray-800'
   }
 
   if (loading) {
@@ -215,10 +208,10 @@ export default function SportsPage() {
               <div className="flex justify-between items-start">
                 <div className="flex items-start gap-3">
                   <div
-                    className="p-2 rounded-lg"
+                    className="p-3 rounded-lg text-2xl"
                     style={{ backgroundColor: sport.color ? `${sport.color}20` : '#f0f0f0' }}
                   >
-                    {getSportIcon(sport)}
+                    {sport.icon || '🏃'}
                   </div>
                   <div>
                     <CardTitle className="text-lg">{sport.name}</CardTitle>
@@ -284,25 +277,25 @@ export default function SportsPage() {
               </div>
 
               <div className="grid grid-cols-2 gap-4 text-sm">
-                {sport.objectives && (
+                {sport.objectives && sport.objectives.length > 0 && (
                   <div className="flex items-center gap-1">
                     <Target className="h-3 w-3 text-muted-foreground" />
                     <span>{sport.objectives.length}個の目標</span>
                   </div>
                 )}
-                {sport.skills && (
+                {sport.skills && sport.skills.length > 0 && (
                   <div className="flex items-center gap-1">
                     <Trophy className="h-3 w-3 text-muted-foreground" />
                     <span>{sport.skills.length}個のスキル</span>
                   </div>
                 )}
-                {sport.levels && (
+                {sport.levels && sport.levels.length > 0 && (
                   <div className="flex items-center gap-1">
                     <TrendingUp className="h-3 w-3 text-muted-foreground" />
                     <span>{sport.levels.length}レベル</span>
                   </div>
                 )}
-                {sport.equipment && (
+                {sport.equipment && sport.equipment.length > 0 && (
                   <div className="flex items-center gap-1">
                     <Activity className="h-3 w-3 text-muted-foreground" />
                     <span>{sport.equipment.length}個の器具</span>
