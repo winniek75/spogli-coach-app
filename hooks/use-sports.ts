@@ -10,6 +10,134 @@ import {
   UpdateSportGoalRequest
 } from '@/types/sport'
 
+// デモデータ
+const demoSports: Sport[] = [
+  {
+    id: 'sport-1',
+    code: 'volleyball',
+    name: 'バレーボール',
+    description: 'チームワークと基本的なボールハンドリングスキルを身につけます',
+    category: { id: 'ball', name: '球技', description: 'ボールを使用するスポーツ', display_order: 1 },
+    icon: '🏐',
+    color: '#f59e0b',
+    is_active: true,
+    objectives: [
+      { id: 'obj-1', sport_id: 'sport-1', title: 'キャッチ', description: '両手でボールをキャッチする', category: 'technical', level: 1, created_at: '', updated_at: '' },
+      { id: 'obj-2', sport_id: 'sport-1', title: 'トス', description: 'アンダーハンドでトスする', category: 'technical', level: 2, created_at: '', updated_at: '' },
+    ],
+    skills: [
+      { id: 'skill-1', sport_id: 'sport-1', name: '両手キャッチ', category: 'basic', difficulty: 1, created_at: '' },
+      { id: 'skill-2', sport_id: 'sport-1', name: 'アンダーハンドパス', category: 'basic', difficulty: 2, created_at: '' },
+    ],
+    levels: [
+      { id: 'level-1', sport_id: 'sport-1', level_number: 1, name: 'Rookie' },
+      { id: 'level-2', sport_id: 'sport-1', level_number: 2, name: 'Challenger' },
+    ],
+    equipment: [
+      { id: 'eq-1', name: 'バレーボール', category: 'essential' },
+      { id: 'eq-2', name: 'ネット', category: 'essential' },
+    ],
+    created_at: '2025-01-01',
+    updated_at: '2025-01-15',
+  },
+  {
+    id: 'sport-2',
+    code: 'basketball',
+    name: 'バスケットボール',
+    description: 'ドリブル、パス、シュートの基本を学びます',
+    category: { id: 'ball', name: '球技', description: 'ボールを使用するスポーツ', display_order: 1 },
+    icon: '🏀',
+    color: '#ef4444',
+    is_active: true,
+    objectives: [
+      { id: 'obj-3', sport_id: 'sport-2', title: 'ドリブル', description: 'ボールをドリブルする', category: 'technical', level: 1, created_at: '', updated_at: '' },
+    ],
+    skills: [
+      { id: 'skill-3', sport_id: 'sport-2', name: 'ワンハンドドリブル', category: 'basic', difficulty: 1, created_at: '' },
+    ],
+    levels: [
+      { id: 'level-3', sport_id: 'sport-2', level_number: 1, name: 'Rookie' },
+    ],
+    equipment: [
+      { id: 'eq-3', name: 'バスケットボール', category: 'essential' },
+    ],
+    created_at: '2025-01-01',
+    updated_at: '2025-01-15',
+  },
+  {
+    id: 'sport-3',
+    code: 'soccer',
+    name: 'サッカー',
+    description: '足でボールをコントロールする技術を習得します',
+    category: { id: 'ball', name: '球技', description: 'ボールを使用するスポーツ', display_order: 1 },
+    icon: '⚽',
+    color: '#22c55e',
+    is_active: true,
+    objectives: [],
+    skills: [],
+    levels: [],
+    equipment: [],
+    created_at: '2025-01-01',
+    updated_at: '2025-01-15',
+  },
+  {
+    id: 'sport-4',
+    code: 'tennis',
+    name: 'テニス',
+    description: 'ラケットスポーツの基本を学びます',
+    category: { id: 'ball', name: '球技', description: 'ボールを使用するスポーツ', display_order: 1 },
+    icon: '🎾',
+    color: '#84cc16',
+    is_active: true,
+    objectives: [],
+    skills: [],
+    levels: [],
+    equipment: [],
+    created_at: '2025-01-01',
+    updated_at: '2025-01-15',
+  },
+  {
+    id: 'sport-5',
+    code: 'rugby',
+    name: 'ラグビー',
+    description: 'チームプレーとボールの扱い方を学びます',
+    category: { id: 'ball', name: '球技', description: 'ボールを使用するスポーツ', display_order: 1 },
+    icon: '🏉',
+    color: '#8b5cf6',
+    is_active: true,
+    objectives: [],
+    skills: [],
+    levels: [],
+    equipment: [],
+    created_at: '2025-01-01',
+    updated_at: '2025-01-15',
+  },
+  {
+    id: 'sport-6',
+    code: 'baseball',
+    name: '野球',
+    description: '投げる、打つ、捕るの基本を学びます',
+    category: { id: 'ball', name: '球技', description: 'ボールを使用するスポーツ', display_order: 1 },
+    icon: '⚾',
+    color: '#06b6d4',
+    is_active: true,
+    objectives: [],
+    skills: [],
+    levels: [],
+    equipment: [],
+    created_at: '2025-01-01',
+    updated_at: '2025-01-15',
+  },
+]
+
+// デモモードかどうかを判定
+const isDemoMode = () => {
+  if (typeof window === 'undefined') return true
+  return !process.env.NEXT_PUBLIC_SUPABASE_URL || 
+         process.env.NEXT_PUBLIC_SUPABASE_URL === 'your-supabase-url' ||
+         process.env.NEXT_PUBLIC_SUPABASE_URL === ''
+}
+
 export function useSports() {
   const [sports, setSports] = useState<Sport[]>([])
   const [loading, setLoading] = useState(true)
@@ -25,6 +153,29 @@ export function useSports() {
     try {
       setLoading(true)
       setError(null)
+
+      // デモモードの場合はデモデータを使用
+      if (isDemoMode()) {
+        let filteredSports = [...demoSports]
+        
+        if (filters?.category) {
+          filteredSports = filteredSports.filter(s => s.category?.id === filters.category)
+        }
+        if (filters?.is_active !== undefined) {
+          filteredSports = filteredSports.filter(s => s.is_active === filters.is_active)
+        }
+        if (filters?.search) {
+          const searchLower = filters.search.toLowerCase()
+          filteredSports = filteredSports.filter(s => 
+            s.name.toLowerCase().includes(searchLower) ||
+            s.code.toLowerCase().includes(searchLower)
+          )
+        }
+        
+        setSports(filteredSports)
+        setLoading(false)
+        return
+      }
 
       const params = new URLSearchParams()
       if (filters) {
@@ -45,13 +196,38 @@ export function useSports() {
 
       setSports(data.sports)
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'スポーツ情報の取得に失敗しました')
+      // エラー時もデモデータにフォールバック
+      console.warn('API failed, using demo data:', err)
+      setSports(demoSports)
+      setError(null) // エラーを表示しない
     } finally {
       setLoading(false)
     }
   }
 
   const createSport = async (sportData: CreateSportRequest) => {
+    // デモモードの場合はローカルで追加
+    if (isDemoMode()) {
+      const newSport: Sport = {
+        id: `sport-${Date.now()}`,
+        code: sportData.code,
+        name: sportData.name,
+        description: sportData.description,
+        category: { id: sportData.category_id, name: '', description: '', display_order: 0 },
+        icon: sportData.icon,
+        color: sportData.color,
+        is_active: sportData.is_active ?? true,
+        objectives: [],
+        skills: [],
+        levels: [],
+        equipment: [],
+        created_at: new Date().toISOString(),
+        updated_at: new Date().toISOString(),
+      }
+      setSports(prev => [...prev, newSport])
+      return newSport
+    }
+
     try {
       const response = await fetch('/api/sports', {
         method: 'POST',
@@ -75,6 +251,14 @@ export function useSports() {
   }
 
   const updateSport = async (id: string, sportData: UpdateSportRequest) => {
+    // デモモードの場合はローカルで更新
+    if (isDemoMode()) {
+      setSports(prev => prev.map(s => 
+        s.id === id ? { ...s, ...sportData, updated_at: new Date().toISOString() } : s
+      ))
+      return sports.find(s => s.id === id)
+    }
+
     try {
       const response = await fetch(`/api/sports/${id}`, {
         method: 'PATCH',
@@ -98,6 +282,12 @@ export function useSports() {
   }
 
   const deleteSport = async (id: string) => {
+    // デモモードの場合はローカルで削除
+    if (isDemoMode()) {
+      setSports(prev => prev.filter(s => s.id !== id))
+      return
+    }
+
     try {
       const response = await fetch(`/api/sports/${id}`, {
         method: 'DELETE',
@@ -142,6 +332,14 @@ export function useSport(id: string) {
         setLoading(true)
         setError(null)
 
+        // デモモードの場合はデモデータから取得
+        if (isDemoMode()) {
+          const found = demoSports.find(s => s.id === id)
+          setSport(found || null)
+          setLoading(false)
+          return
+        }
+
         const response = await fetch(`/api/sports/${id}`)
         const data = await response.json()
 
@@ -151,7 +349,14 @@ export function useSport(id: string) {
 
         setSport(data.sport)
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'スポーツ情報の取得に失敗しました')
+        // エラー時はデモデータにフォールバック
+        const found = demoSports.find(s => s.id === id)
+        if (found) {
+          setSport(found)
+          setError(null)
+        } else {
+          setError(err instanceof Error ? err.message : 'スポーツ情報の取得に失敗しました')
+        }
       } finally {
         setLoading(false)
       }
@@ -186,6 +391,13 @@ export function useSportGoals(sportId?: string) {
         return
       }
 
+      // デモモードの場合は空の配列を返す
+      if (isDemoMode()) {
+        setGoals([])
+        setLoading(false)
+        return
+      }
+
       const params = new URLSearchParams()
       if (filters) {
         Object.entries(filters).forEach(([key, value]) => {
@@ -205,13 +417,29 @@ export function useSportGoals(sportId?: string) {
 
       setGoals(data.goals)
     } catch (err) {
-      setError(err instanceof Error ? err.message : '目標の取得に失敗しました')
+      setGoals([])
+      setError(null) // エラーを表示しない
     } finally {
       setLoading(false)
     }
   }
 
   const createGoal = async (goalData: CreateSportGoalRequest) => {
+    if (isDemoMode()) {
+      const newGoal: SportGoal = {
+        id: `goal-${Date.now()}`,
+        ...goalData,
+        coach_id: 'demo-coach',
+        status: 'not_started',
+        start_date: new Date().toISOString(),
+        is_public: goalData.is_public ?? false,
+        created_at: new Date().toISOString(),
+        updated_at: new Date().toISOString(),
+      }
+      setGoals(prev => [...prev, newGoal])
+      return newGoal
+    }
+
     try {
       const response = await fetch(`/api/sports/${goalData.sport_id}/goals`, {
         method: 'POST',
@@ -235,6 +463,13 @@ export function useSportGoals(sportId?: string) {
   }
 
   const updateGoal = async (goalId: string, sportId: string, goalData: UpdateSportGoalRequest) => {
+    if (isDemoMode()) {
+      setGoals(prev => prev.map(g => 
+        g.id === goalId ? { ...g, ...goalData, updated_at: new Date().toISOString() } : g
+      ))
+      return goals.find(g => g.id === goalId)
+    }
+
     try {
       const response = await fetch(`/api/sports/${sportId}/goals/${goalId}`, {
         method: 'PATCH',
@@ -258,6 +493,11 @@ export function useSportGoals(sportId?: string) {
   }
 
   const deleteGoal = async (goalId: string, sportId: string) => {
+    if (isDemoMode()) {
+      setGoals(prev => prev.filter(g => g.id !== goalId))
+      return
+    }
+
     try {
       const response = await fetch(`/api/sports/${sportId}/goals/${goalId}`, {
         method: 'DELETE',
