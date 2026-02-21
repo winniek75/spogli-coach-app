@@ -272,7 +272,7 @@ export default function CalendarPage() {
                               >
                                 <div
                                   className="w-2 h-2 rounded-full"
-                                  style={{ backgroundColor: coach?.color || '#666' }}
+                                  style={{ backgroundColor: '#666' }}
                                 />
                                 <span>{coachName}</span>
                               </div>
