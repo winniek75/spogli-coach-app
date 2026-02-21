@@ -18,8 +18,8 @@ export async function POST(request: NextRequest) {
     const supabase = await createClient()
 
     // 通知データを取得
-    const { data: notification, error: notificationError } = await supabase
-      .from('notifications')
+    const { data: notification, error: notificationError } = await (supabase
+      .from('notifications') as any)
       .select('*')
       .eq('id', body.notification_id)
       .single()
@@ -32,8 +32,8 @@ export async function POST(request: NextRequest) {
     }
 
     // ユーザーのLINE設定を取得
-    const { data: settings, error: settingsError } = await supabase
-      .from('notification_settings')
+    const { data: settings, error: settingsError } = await (supabase
+      .from('notification_settings') as any)
       .select('line_user_id')
       .eq('user_id', body.user_id)
       .single()
@@ -66,8 +66,8 @@ export async function POST(request: NextRequest) {
     }
 
     // 送信ログを記録
-    await supabase
-      .from('notification_logs')
+    await (supabase
+      .from('notification_logs') as any)
       .insert({
         notification_id: body.notification_id,
         channel: 'line',
@@ -88,8 +88,8 @@ export async function POST(request: NextRequest) {
     const supabase = await createClient()
     if (request.body) {
       const body = await request.json()
-      await supabase
-        .from('notification_logs')
+      await (supabase
+        .from('notification_logs') as any)
         .insert({
           notification_id: body.notification_id,
           channel: 'line',

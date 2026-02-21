@@ -15,7 +15,7 @@ const demoCoaches: CoachWithCertifications[] = [
     line_id: 'risa_coach',
     nationality: 'Japan',
     languages: ['Japanese', 'English'],
-    profile_image_url: null,
+    profile_image_url: undefined,
     role: 'senior_coach',
     schools: ['ageo', 'okegawa'],
     hire_date: '2023-04-01',
@@ -28,10 +28,10 @@ const demoCoaches: CoachWithCertifications[] = [
         name: 'JBA公認C級コーチライセンス',
         issued_date: '2023-06-01',
         expiry_date: '2026-05-31',
-        certificate_url: null,
+        certificate_url: undefined,
         status: 'valid',
         reminder_sent: false,
-        notes: null,
+        notes: undefined,
         created_at: '2023-06-01',
         updated_at: '2023-06-01'
       }
@@ -47,7 +47,7 @@ const demoCoaches: CoachWithCertifications[] = [
     phone: '090-3333-4444',
     nationality: 'Myanmar',
     languages: ['Burmese', 'English', 'Japanese'],
-    profile_image_url: null,
+    profile_image_url: undefined,
     role: 'coach',
     schools: ['ageo'],
     hire_date: '2023-08-01',
@@ -60,10 +60,10 @@ const demoCoaches: CoachWithCertifications[] = [
         name: 'JFA公認D級コーチライセンス',
         issued_date: '2023-10-01',
         expiry_date: '2025-09-30',
-        certificate_url: null,
+        certificate_url: undefined,
         status: 'valid',
         reminder_sent: false,
-        notes: null,
+        notes: undefined,
         created_at: '2023-10-01',
         updated_at: '2023-10-01'
       }
@@ -79,7 +79,7 @@ const demoCoaches: CoachWithCertifications[] = [
     phone: '090-5555-6666',
     nationality: 'USA',
     languages: ['English', 'Japanese'],
-    profile_image_url: null,
+    profile_image_url: undefined,
     role: 'coach',
     schools: ['okegawa'],
     hire_date: '2024-01-10',
@@ -98,7 +98,7 @@ const demoCoaches: CoachWithCertifications[] = [
     line_id: 'tanaka_manager',
     nationality: 'Japan',
     languages: ['Japanese'],
-    profile_image_url: null,
+    profile_image_url: undefined,
     role: 'manager',
     schools: ['ageo', 'okegawa'],
     hire_date: '2022-04-01',
@@ -123,8 +123,8 @@ export async function GET() {
     // 本番モード: Supabaseからデータを取得
     const supabase = await createClient()
 
-    const { data: coaches, error } = await supabase
-      .from('coaches')
+    const { data: coaches, error } = await (supabase
+      .from('coaches') as any)
       .select(`
         *,
         certifications (*)
@@ -159,8 +159,8 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    const { data: coach, error } = await supabase
-      .from('coaches')
+    const { data: coach, error } = await (supabase
+      .from('coaches') as any)
       .insert({
         name: body.name,
         name_en: body.name_en,

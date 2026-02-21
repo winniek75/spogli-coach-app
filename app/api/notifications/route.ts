@@ -16,8 +16,8 @@ export async function GET(request: NextRequest) {
     const limit = searchParams.get('limit')
     const offset = searchParams.get('offset')
 
-    let query = supabase
-      .from('notifications')
+    let query = (supabase
+      .from('notifications') as any)
       .select(`
         *,
         recipient_name:coaches!notifications_recipient_id_fkey(name),
@@ -62,7 +62,7 @@ export async function GET(request: NextRequest) {
     }
 
     // データ整形
-    const notificationsWithDetails = notifications?.map(notification => ({
+    const notificationsWithDetails = notifications?.map((notification: any) => ({
       ...notification,
       recipient_name: notification.recipient_name?.[0]?.name,
       related_student: notification.related_student?.[0],
@@ -96,8 +96,8 @@ export async function POST(request: NextRequest) {
     }
 
     // 通知を作成
-    const { data: notification, error } = await supabase
-      .from('notifications')
+    const { data: notification, error } = await (supabase
+      .from('notifications') as any)
       .insert({
         type: body.type,
         title: body.title,
@@ -142,8 +142,8 @@ async function sendNotification(notification: any) {
     const supabase = await createClient()
 
     // 受信者の通知設定を取得
-    const { data: settings } = await supabase
-      .from('notification_settings')
+    const { data: settings } = await (supabase
+      .from('notification_settings') as any)
       .select('*')
       .eq('user_id', notification.recipient_id)
       .eq('user_type', notification.recipient_type)
@@ -191,8 +191,8 @@ async function sendNotification(notification: any) {
     const results = await Promise.all(sendPromises)
 
     // 送信状態を更新
-    await supabase
-      .from('notifications')
+    await (supabase
+      .from('notifications') as any)
       .update({
         is_sent: true,
         sent_at: new Date().toISOString(),
@@ -200,8 +200,8 @@ async function sendNotification(notification: any) {
       .eq('id', notification.id)
 
     // 送信ログを記録
-    await supabase
-      .from('notification_logs')
+    await (supabase
+      .from('notification_logs') as any)
       .insert({
         notification_id: notification.id,
         results,

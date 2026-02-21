@@ -11,8 +11,8 @@ export async function GET(request: NextRequest, { params }: RouteParams) {
   try {
     const supabase = await createClient()
 
-    const { data: sport, error } = await supabase
-      .from('sports')
+    const { data: sport, error } = await (supabase
+      .from('sports') as any)
       .select(`
         *,
         category:sport_categories!sports_category_id_fkey(*),
@@ -50,8 +50,8 @@ export async function PATCH(request: NextRequest, { params }: RouteParams) {
     const body: UpdateSportRequest = await request.json()
 
     // 既存のスポーツを確認
-    const { data: existing } = await supabase
-      .from('sports')
+    const { data: existing } = await (supabase
+      .from('sports') as any)
       .select('id')
       .eq('id', params.id)
       .single()
@@ -64,8 +64,8 @@ export async function PATCH(request: NextRequest, { params }: RouteParams) {
     }
 
     // 更新
-    const { data: sport, error } = await supabase
-      .from('sports')
+    const { data: sport, error } = await (supabase
+      .from('sports') as any)
       .update({
         ...body,
         updated_at: new Date().toISOString(),
@@ -97,8 +97,8 @@ export async function DELETE(request: NextRequest, { params }: RouteParams) {
     const supabase = await createClient()
 
     // 関連データの確認
-    const { data: students } = await supabase
-      .from('students')
+    const { data: students } = await (supabase
+      .from('students') as any)
       .select('id')
       .eq('sport', params.id)
       .limit(1)
@@ -111,8 +111,8 @@ export async function DELETE(request: NextRequest, { params }: RouteParams) {
     }
 
     // 削除
-    const { error } = await supabase
-      .from('sports')
+    const { error } = await (supabase
+      .from('sports') as any)
       .delete()
       .eq('id', params.id)
 

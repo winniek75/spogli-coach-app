@@ -16,7 +16,7 @@ export default function TestLocalStoragePage() {
       videos,
       videosInitialized,
       allKeys,
-      videosCount: videos ? videos.length : 0
+      videosCount: videos ? (videos as any[]).length : 0
     })
   }
 
@@ -47,7 +47,7 @@ export default function TestLocalStoragePage() {
       created_by_name: { name: 'テストユーザー' }
     }
 
-    LocalStorageService.set('videos', [...currentVideos, newVideo])
+    LocalStorageService.set('videos', [...(currentVideos as any[] || []), newVideo])
     checkStorage()
   }
 

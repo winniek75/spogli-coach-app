@@ -22,8 +22,8 @@ export async function GET(request: NextRequest, { params }: RouteParams) {
     // }
 
     // Supabaseから生徒データを取得
-    const { data: student, error } = await supabase
-      .from('students')
+    const { data: student, error } = await (supabase
+      .from('students') as any)
       .select(`
         *,
         badges:student_badges (*),
@@ -96,8 +96,8 @@ export async function PATCH(request: NextRequest, { params }: RouteParams) {
     const body: UpdateStudentRequest = await request.json()
 
     // Supabaseで生徒データを更新
-    const { data: updatedStudent, error } = await supabase
-      .from('students')
+    const { data: updatedStudent, error } = await (supabase
+      .from('students') as any)
       .update({
         ...body,
         updated_at: new Date().toISOString()
@@ -154,8 +154,8 @@ export async function DELETE(request: NextRequest, { params }: RouteParams) {
     // }
 
     // ステータスを'withdrawn'に更新（論理削除）
-    const { data, error } = await supabase
-      .from('students')
+    const { data, error } = await (supabase
+      .from('students') as any)
       .update({
         status: 'withdrawn',
         updated_at: new Date().toISOString()

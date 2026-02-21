@@ -11,8 +11,8 @@ export async function POST(request: NextRequest, { params }: RouteParams) {
     const supabase = await createClient()
 
     // PDF教材情報を取得
-    const { data: pdfMaterial, error: materialError } = await supabase
-      .from('pdf_materials')
+    const { data: pdfMaterial, error: materialError } = await (supabase
+      .from('pdf_materials') as any)
       .select(`
         *,
         pdf_stats!left(download_count)
@@ -30,8 +30,8 @@ export async function POST(request: NextRequest, { params }: RouteParams) {
     }
 
     // ダウンロード数をカウントアップ
-    await supabase
-      .from('pdf_stats')
+    await (supabase
+      .from('pdf_stats') as any)
       .upsert({
         pdf_material_id: params.id,
         view_count: pdfMaterial.pdf_stats?.[0]?.view_count || 0,
@@ -41,8 +41,8 @@ export async function POST(request: NextRequest, { params }: RouteParams) {
     // ダウンロードログを記録
     const { data: { user } } = await supabase.auth.getUser()
     if (user) {
-      await supabase
-        .from('download_logs')
+      await (supabase
+        .from('download_logs') as any)
         .insert({
           content_type: 'pdf',
           content_id: params.id,

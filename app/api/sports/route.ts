@@ -130,18 +130,18 @@ export async function GET(request: NextRequest) {
       let filteredSports = [...demoSports]
 
       if (category) {
-        filteredSports = filteredSports.filter(s => s.category_id === category)
+        filteredSports = filteredSports.filter((s: any) => s.category_id === category)
       }
 
       if (is_active === 'true') {
-        filteredSports = filteredSports.filter(s => s.is_active === true)
+        filteredSports = filteredSports.filter((s: any) => s.is_active === true)
       } else if (is_active === 'false') {
-        filteredSports = filteredSports.filter(s => s.is_active === false)
+        filteredSports = filteredSports.filter((s: any) => s.is_active === false)
       }
 
       if (search) {
         const searchLower = search.toLowerCase()
-        filteredSports = filteredSports.filter(s =>
+        filteredSports = filteredSports.filter((s: any) =>
           s.name.toLowerCase().includes(searchLower) ||
           s.description?.toLowerCase().includes(searchLower)
         )
@@ -163,8 +163,8 @@ export async function GET(request: NextRequest) {
     const limit = searchParams.get('limit')
     const offset = searchParams.get('offset')
 
-    let query = supabase
-      .from('sports')
+    let query = (supabase
+      .from('sports') as any)
       .select(`
         *,
         category:sport_categories!sports_category_id_fkey(*),
@@ -230,8 +230,8 @@ export async function POST(request: NextRequest) {
     }
 
     // 重複チェック
-    const { data: existing } = await supabase
-      .from('sports')
+    const { data: existing } = await (supabase
+      .from('sports') as any)
       .select('id')
       .eq('code', body.code)
       .single()
@@ -244,8 +244,8 @@ export async function POST(request: NextRequest) {
     }
 
     // スポーツを作成
-    const { data: sport, error } = await supabase
-      .from('sports')
+    const { data: sport, error } = await (supabase
+      .from('sports') as any)
       .insert({
         code: body.code,
         name: body.name,

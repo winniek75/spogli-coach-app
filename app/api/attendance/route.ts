@@ -14,8 +14,8 @@ export async function GET(request: NextRequest) {
     const startDate = searchParams.get('start_date')
     const endDate = searchParams.get('end_date')
 
-    let query = supabase
-      .from('attendance')
+    let query = (supabase
+      .from('attendance') as any)
       .select(`
         *,
         student:students!attendance_student_id_fkey (
@@ -90,8 +90,8 @@ export async function POST(request: NextRequest) {
     }
 
     // 重複チェック
-    const { data: existingRecord } = await supabase
-      .from('attendance')
+    const { data: existingRecord } = await (supabase
+      .from('attendance') as any)
       .select('*')
       .eq('student_id', body.student_id)
       .eq('lesson_date', body.lesson_date)
@@ -99,15 +99,15 @@ export async function POST(request: NextRequest) {
 
     if (existingRecord) {
       // 既存レコードを更新
-      const { data: attendance, error } = await supabase
-        .from('attendance')
+      const { data: attendance, error } = await (supabase
+        .from('attendance') as any)
         .update({
           status: body.status,
           notes: body.notes,
           school: body.school,
           updated_at: new Date().toISOString(),
         })
-        .eq('id', existingRecord.id)
+        .eq('id', (existingRecord as any).id)
         .select()
         .single()
 
@@ -119,8 +119,8 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ attendance })
     } else {
       // 新規作成
-      const { data: attendance, error } = await supabase
-        .from('attendance')
+      const { data: attendance, error } = await (supabase
+        .from('attendance') as any)
         .insert({
           student_id: body.student_id,
           lesson_date: body.lesson_date,
@@ -168,8 +168,8 @@ export async function PATCH(request: NextRequest) {
       }
 
       // 重複チェック
-      const { data: existingRecord } = await supabase
-        .from('attendance')
+      const { data: existingRecord } = await (supabase
+        .from('attendance') as any)
         .select('*')
         .eq('student_id', record.student_id)
         .eq('lesson_date', record.lesson_date)
@@ -177,15 +177,15 @@ export async function PATCH(request: NextRequest) {
 
       if (existingRecord) {
         // 更新
-        const { data: attendance, error } = await supabase
-          .from('attendance')
+        const { data: attendance, error } = await (supabase
+          .from('attendance') as any)
           .update({
             status: record.status,
             notes: record.notes,
             school: record.school || 'ageo',
             updated_at: new Date().toISOString(),
           })
-          .eq('id', existingRecord.id)
+          .eq('id', (existingRecord as any).id)
           .select()
           .single()
 
@@ -194,8 +194,8 @@ export async function PATCH(request: NextRequest) {
         }
       } else {
         // 新規作成
-        const { data: attendance, error } = await supabase
-          .from('attendance')
+        const { data: attendance, error } = await (supabase
+          .from('attendance') as any)
           .insert({
             student_id: record.student_id,
             lesson_date: record.lesson_date,

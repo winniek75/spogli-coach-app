@@ -12,8 +12,8 @@ const demoVideos = [
     sport: 'basketball',
     level: 1,
     duration_minutes: 15,
-    thumbnail_url: null,
-    video_url: null,
+    thumbnail_url: undefined,
+    video_url: undefined,
     category: 'skill_training',
     tags: ['ドリブル', '基礎']
   },
@@ -24,8 +24,8 @@ const demoVideos = [
     sport: 'basketball',
     level: 1,
     duration_minutes: 12,
-    thumbnail_url: null,
-    video_url: null,
+    thumbnail_url: undefined,
+    video_url: undefined,
     category: 'skill_training',
     tags: ['シュート', '基礎']
   },
@@ -36,8 +36,8 @@ const demoVideos = [
     sport: 'soccer',
     level: 2,
     duration_minutes: 18,
-    thumbnail_url: null,
-    video_url: null,
+    thumbnail_url: undefined,
+    video_url: undefined,
     category: 'skill_training',
     tags: ['ボールコントロール', 'テクニック']
   },
@@ -48,8 +48,8 @@ const demoVideos = [
     sport: 'volleyball',
     level: 1,
     duration_minutes: 14,
-    thumbnail_url: null,
-    video_url: null,
+    thumbnail_url: undefined,
+    video_url: undefined,
     category: 'skill_training',
     tags: ['レシーブ', '基礎']
   }
@@ -62,6 +62,9 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
     title: '2024年2月 バスケットボール基礎コース',
     description: '1ヶ月でバスケットボールの基礎を習得する総合プログラム',
     sport: 'basketball',
+    class_type: 'elementary',
+    week_type: 'week1',
+    month: '2024-02',
     level: 1,
     duration_minutes: 240, // 4週間分
     objectives: ['ドリブル技術の習得', 'シュートフォームの確立', 'ゲーム理解の向上'],
@@ -71,7 +74,7 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
     is_template: true,
     created_by: 'coach-1',
     created_by_name: 'Risa',
-    monthly_type: 'monthly',
+    /* monthly_type: 'monthly',
     weeks: [
       {
         week: 1,
@@ -89,7 +92,7 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
             description: 'ジョギングとストレッチ',
             duration_minutes: 10,
             order_index: 1,
-            video_reference: null
+            video_reference: undefined
           },
           {
             id: 'w1-2',
@@ -105,7 +108,7 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
             description: '右手、左手それぞれでのドリブル練習',
             duration_minutes: 20,
             order_index: 3,
-            video_reference: null
+            video_reference: undefined
           },
           {
             id: 'w1-4',
@@ -113,7 +116,7 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
             description: 'ストレッチとまとめ',
             duration_minutes: 15,
             order_index: 4,
-            video_reference: null
+            video_reference: undefined
           }
         ]
       },
@@ -133,7 +136,7 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
             description: 'ドリブル復習とストレッチ',
             duration_minutes: 10,
             order_index: 1,
-            video_reference: null
+            video_reference: undefined
           },
           {
             id: 'w2-2',
@@ -149,7 +152,7 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
             description: '近距離でのシュート練習',
             duration_minutes: 25,
             order_index: 3,
-            video_reference: null
+            video_reference: undefined
           },
           {
             id: 'w2-4',
@@ -157,7 +160,7 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
             description: 'ストレッチとまとめ',
             duration_minutes: 13,
             order_index: 4,
-            video_reference: null
+            video_reference: undefined
           }
         ]
       },
@@ -173,7 +176,7 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
             description: '基本技術の復習',
             duration_minutes: 15,
             order_index: 1,
-            video_reference: null
+            video_reference: undefined
           },
           {
             id: 'w3-2',
@@ -181,7 +184,7 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
             description: 'ドリブルからレイアップシュート',
             duration_minutes: 30,
             order_index: 2,
-            video_reference: null
+            video_reference: undefined
           },
           {
             id: 'w3-3',
@@ -189,7 +192,7 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
             description: '2対2の簡単なゲーム',
             duration_minutes: 20,
             order_index: 3,
-            video_reference: null
+            video_reference: undefined
           },
           {
             id: 'w3-4',
@@ -197,7 +200,7 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
             description: 'ストレッチとまとめ',
             duration_minutes: 15,
             order_index: 4,
-            video_reference: null
+            video_reference: undefined
           }
         ]
       },
@@ -213,7 +216,7 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
             description: '総復習',
             duration_minutes: 15,
             order_index: 1,
-            video_reference: null
+            video_reference: undefined
           },
           {
             id: 'w4-2',
@@ -221,7 +224,7 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
             description: 'ドリブルとシュートの技術評価',
             duration_minutes: 20,
             order_index: 2,
-            video_reference: null
+            video_reference: undefined
           },
           {
             id: 'w4-3',
@@ -229,7 +232,7 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
             description: '学んだ技術を活かしたゲーム',
             duration_minutes: 30,
             order_index: 3,
-            video_reference: null
+            video_reference: undefined
           },
           {
             id: 'w4-4',
@@ -237,11 +240,11 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
             description: '1ヶ月の成長を確認',
             duration_minutes: 15,
             order_index: 4,
-            video_reference: null
+            video_reference: undefined
           }
         ]
       }
-    ],
+    ], */
     activities: [], // 月次メニューでは週単位で管理
     usage_count: 25,
     favorite_count: 15,
@@ -254,6 +257,9 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
     title: '2024年3月 サッカー技術向上コース',
     description: 'サッカーのテクニック向上を目指す1ヶ月プログラム',
     sport: 'soccer',
+    class_type: 'elementary',
+    week_type: 'week2',
+    month: '2024-03',
     level: 2,
     duration_minutes: 320, // 4週間分
     objectives: ['ボールコントロールの向上', 'パス精度の向上', '戦術理解の深化'],
@@ -263,7 +269,7 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
     is_template: true,
     created_by: 'coach-2',
     created_by_name: 'Aung',
-    monthly_type: 'monthly',
+    /* monthly_type: 'monthly',
     weeks: [
       {
         week: 1,
@@ -281,7 +287,7 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
             description: 'ジョギングとボールタッチ',
             duration_minutes: 15,
             order_index: 1,
-            video_reference: null
+            video_reference: undefined
           },
           {
             id: 's1-2',
@@ -297,7 +303,7 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
             description: '様々な部位でのボールタッチ練習',
             duration_minutes: 35,
             order_index: 3,
-            video_reference: null
+            video_reference: undefined
           },
           {
             id: 's1-4',
@@ -305,12 +311,12 @@ const demoMonthlyMenus: LessonMenuWithDetails[] = [
             description: 'ストレッチとまとめ',
             duration_minutes: 12,
             order_index: 4,
-            video_reference: null
+            video_reference: undefined
           }
         ]
       }
       // 他の週も同様の構造で定義...
-    ],
+    ], */
     activities: [],
     usage_count: 18,
     favorite_count: 10,
@@ -327,6 +333,9 @@ const demoSingleMenus: LessonMenuWithDetails[] = [
     title: 'バレーボール体験レッスン',
     description: 'バレーボール初心者向けの体験レッスン',
     sport: 'volleyball',
+    class_type: 'elementary',
+    week_type: 'week1',
+    month: '2024-01',
     level: 1,
     duration_minutes: 60,
     objectives: ['バレーボールの楽しさを知る', '基本ルールを覚える'],
@@ -336,7 +345,6 @@ const demoSingleMenus: LessonMenuWithDetails[] = [
     is_template: false,
     created_by: 'coach-3',
     created_by_name: 'Gecko',
-    monthly_type: 'single',
     activities: [
       {
         id: 'single1-1',
@@ -345,7 +353,7 @@ const demoSingleMenus: LessonMenuWithDetails[] = [
         description: 'ボールを使った楽しいゲーム',
         duration_minutes: 15,
         order_index: 1,
-        video_reference: null
+        video_reference: undefined
       },
       {
         id: 'single1-2',
@@ -363,7 +371,7 @@ const demoSingleMenus: LessonMenuWithDetails[] = [
         description: 'パス、レシーブの基本体験',
         duration_minutes: 25,
         order_index: 3,
-        video_reference: null
+        video_reference: undefined
       },
       {
         id: 'single1-4',
@@ -372,7 +380,7 @@ const demoSingleMenus: LessonMenuWithDetails[] = [
         description: '楽しいミニゲーム体験',
         duration_minutes: 6,
         order_index: 4,
-        video_reference: null
+        video_reference: undefined
       }
     ],
     usage_count: 12,
@@ -404,16 +412,16 @@ export async function GET(request: NextRequest) {
       let filteredMenus = [...demoLessonMenus]
 
       if (sport) {
-        filteredMenus = filteredMenus.filter(m => m.sport === sport)
+        filteredMenus = filteredMenus.filter((m: any) => m.sport === sport)
       }
 
       if (level) {
-        filteredMenus = filteredMenus.filter(m => m.level === parseInt(level))
+        filteredMenus = filteredMenus.filter((m: any) => m.level === parseInt(level))
       }
 
       if (search) {
         const searchLower = search.toLowerCase()
-        filteredMenus = filteredMenus.filter(m =>
+        filteredMenus = filteredMenus.filter((m: any) =>
           m.title.toLowerCase().includes(searchLower) ||
           m.description?.toLowerCase().includes(searchLower)
         )
@@ -437,8 +445,8 @@ export async function GET(request: NextRequest) {
     const limit = searchParams.get('limit')
     const offset = searchParams.get('offset')
 
-    let query = supabase
-      .from('lesson_menus')
+    let query = (supabase
+      .from('lesson_menus') as any)
       .select(`
         *,
         created_by_name:coaches!lesson_menus_created_by_fkey(name),
@@ -487,7 +495,7 @@ export async function GET(request: NextRequest) {
     }
 
     // データ整形
-    const menusWithDetails = lessonMenus?.map(menu => ({
+    const menusWithDetails = lessonMenus?.map((menu: any) => ({
       ...menu,
       created_by_name: menu.created_by_name?.[0]?.name,
       activities: menu.activities?.sort((a: any, b: any) => a.order_index - b.order_index),
@@ -529,8 +537,8 @@ export async function POST(request: NextRequest) {
     }
 
     // レッスンメニューを作成
-    const { data: lessonMenu, error: menuError } = await supabase
-      .from('lesson_menus')
+    const { data: lessonMenu, error: menuError } = await (supabase
+      .from('lesson_menus') as any)
       .insert({
         title: body.title,
         description: body.description,
@@ -538,7 +546,7 @@ export async function POST(request: NextRequest) {
         level: body.level,
         duration_minutes: body.duration_minutes,
         max_participants: body.max_participants,
-        equipment_needed: body.equipment_needed,
+        equipment: body.equipment,
         objectives: body.objectives,
         notes: body.notes,
         is_public: body.is_public,
@@ -554,7 +562,7 @@ export async function POST(request: NextRequest) {
     }
 
     // アクティビティを作成
-    const activities = body.activities.map(activity => ({
+    const activities = body.activities.map((activity: any) => ({
       lesson_menu_id: lessonMenu.id,
       title: activity.title,
       description: activity.description,
@@ -567,20 +575,20 @@ export async function POST(request: NextRequest) {
       order_index: activity.order_index,
     }))
 
-    const { error: activitiesError } = await supabase
-      .from('lesson_activities')
+    const { error: activitiesError } = await (supabase
+      .from('lesson_activities') as any)
       .insert(activities)
 
     if (activitiesError) {
       console.error('Error creating lesson activities:', activitiesError)
       // レッスンメニューを削除してロールバック
-      await supabase.from('lesson_menus').delete().eq('id', lessonMenu.id)
+      await (supabase.from('lesson_menus') as any).delete().eq('id', lessonMenu.id)
       return NextResponse.json({ error: activitiesError.message }, { status: 500 })
     }
 
     // 統計レコードを初期化
-    await supabase
-      .from('lesson_menu_usage_stats')
+    await (supabase
+      .from('lesson_menu_usage_stats') as any)
       .insert({
         lesson_menu_id: lessonMenu.id,
         usage_count: 0,

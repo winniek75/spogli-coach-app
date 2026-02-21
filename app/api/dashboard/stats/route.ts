@@ -25,7 +25,7 @@ export async function GET(request: NextRequest) {
             inactive: 0,
             withdrawn: 0,
           },
-          byLevel: Array.from({length: 6}, (_, i) => ({
+          byLevel: Array.from({length: 6}, (_: any, i: any) => ({
             level: i + 1,
             count: 0
           })),
@@ -102,49 +102,49 @@ export async function GET(request: NextRequest) {
       missionsResult
     ] = await Promise.all([
       // 生徒統計
-      supabase
-        .from('students')
+      (supabase
+        .from('students') as any)
         .select('id, status, level, school, class_type, enrollment_date')
-        .then(result => result.error ? { data: [], error: result.error } : result),
+        .then((result: any) => result.error ? { data: [], error: result.error } : result),
 
       // コーチ統計
-      supabase
-        .from('coaches')
+      (supabase
+        .from('coaches') as any)
         .select('id, status, certifications!inner(id, name, expiry_date)')
-        .then(result => result.error ? { data: [], error: result.error } : result),
+        .then((result: any) => result.error ? { data: [], error: result.error } : result),
 
       // 評価統計
-      supabase
-        .from('evaluations')
+      (supabase
+        .from('evaluations') as any)
         .select('id, rating, lesson_date, sport, category, student_id')
         .gte('lesson_date', startDate || new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0])
         .lte('lesson_date', endDate || new Date().toISOString().split('T')[0])
-        .then(result => result.error ? { data: [], error: result.error } : result),
+        .then((result: any) => result.error ? { data: [], error: result.error } : result),
 
       // バッジ統計
-      supabase
-        .from('badges')
+      (supabase
+        .from('badges') as any)
         .select('id, badge_type, sport, category, earned_date, awarded_date, student_id')
-        .then(result => result.error ? { data: [], error: result.error } : result),
+        .then((result: any) => result.error ? { data: [], error: result.error } : result),
 
       // 出席統計
-      supabase
-        .from('attendance')
+      (supabase
+        .from('attendance') as any)
         .select('id, status, lesson_date, student_id')
         .gte('lesson_date', startDate || new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0])
         .lte('lesson_date', endDate || new Date().toISOString().split('T')[0])
-        .then(result => result.error ? { data: [], error: result.error } : result),
+        .then((result: any) => result.error ? { data: [], error: result.error } : result),
 
       // ミッション統計
-      supabase
-        .from('mission_sheets')
+      (supabase
+        .from('mission_sheets') as any)
         .select(`
           id, status, lesson_date, sport, student_id,
           mission_items!inner(id, completed_at)
         `)
         .gte('lesson_date', startDate || new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0])
         .lte('lesson_date', endDate || new Date().toISOString().split('T')[0])
-        .then(result => result.error ? { data: [], error: result.error } : result),
+        .then((result: any) => result.error ? { data: [], error: result.error } : result),
     ])
 
     // エラーハンドリング
@@ -169,15 +169,15 @@ export async function GET(request: NextRequest) {
     const missions = missionsResult.data || []
 
     // 校舎フィルタリング
-    const filteredStudents = school ? students.filter(s => s.school === school) : students
+    const filteredStudents = school ? students.filter((s: any) => s.school === school) : students
 
     // 統計計算
     const stats = {
       // 基本統計
       overview: {
         totalStudents: filteredStudents.length,
-        activeStudents: filteredStudents.filter(s => s.status === 'active').length,
-        totalCoaches: coaches.filter(c => c.status === 'active').length,
+        activeStudents: filteredStudents.filter((s: any) => s.status === 'active').length,
+        totalCoaches: coaches.filter((c: any) => c.status === 'active').length,
         totalEvaluations: evaluations.length,
         totalBadges: badges.length,
       },
@@ -185,23 +185,23 @@ export async function GET(request: NextRequest) {
       // 生徒統計
       students: {
         byStatus: {
-          active: filteredStudents.filter(s => s.status === 'active').length,
-          inactive: filteredStudents.filter(s => s.status === 'inactive').length,
-          withdrawn: filteredStudents.filter(s => s.status === 'withdrawn').length,
+          active: filteredStudents.filter((s: any) => s.status === 'active').length,
+          inactive: filteredStudents.filter((s: any) => s.status === 'inactive').length,
+          withdrawn: filteredStudents.filter((s: any) => s.status === 'withdrawn').length,
         },
         byLevel: Array.from({length: 6}, (_, i) => ({
           level: i + 1,
-          count: filteredStudents.filter(s => s.level === i + 1).length
+          count: filteredStudents.filter((s: any) => s.level === i + 1).length
         })),
         byClassType: {
-          preschool: filteredStudents.filter(s => s.class_type === 'preschool').length,
-          elementary: filteredStudents.filter(s => s.class_type === 'elementary').length,
+          preschool: filteredStudents.filter((s: any) => s.class_type === 'preschool').length,
+          elementary: filteredStudents.filter((s: any) => s.class_type === 'elementary').length,
         },
         bySchool: {
-          ageo: students.filter(s => s.school === 'ageo').length,
-          okegawa: students.filter(s => s.school === 'okegawa').length,
+          ageo: students.filter((s: any) => s.school === 'ageo').length,
+          okegawa: students.filter((s: any) => s.school === 'okegawa').length,
         },
-        newEnrollments: filteredStudents.filter(s => {
+        newEnrollments: filteredStudents.filter((s: any) => {
           const enrollmentDate = new Date(s.enrollment_date)
           const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000)
           return enrollmentDate >= thirtyDaysAgo
@@ -212,17 +212,17 @@ export async function GET(request: NextRequest) {
       evaluations: {
         total: evaluations.length,
         byRating: {
-          rating1: evaluations.filter(e => e.rating === 1).length,
-          rating2: evaluations.filter(e => e.rating === 2).length,
-          rating3: evaluations.filter(e => e.rating === 3).length,
+          rating1: evaluations.filter((e: any) => e.rating === 1).length,
+          rating2: evaluations.filter((e: any) => e.rating === 2).length,
+          rating3: evaluations.filter((e: any) => e.rating === 3).length,
         },
         averageRating: evaluations.length > 0 ?
-          (evaluations.reduce((sum, e) => sum + e.rating, 0) / evaluations.length).toFixed(2) : 0,
-        bySport: evaluations.reduce((acc: any, e) => {
+          (evaluations.reduce((sum: any, e: any) => sum + e.rating, 0) / evaluations.length).toFixed(2) : 0,
+        bySport: evaluations.reduce((acc: any, e: any) => {
           acc[e.sport] = (acc[e.sport] || 0) + 1
           return acc
         }, {}),
-        byCategory: evaluations.reduce((acc: any, e) => {
+        byCategory: evaluations.reduce((acc: any, e: any) => {
           acc[e.category] = (acc[e.category] || 0) + 1
           return acc
         }, {}),
@@ -233,38 +233,38 @@ export async function GET(request: NextRequest) {
       badges: {
         total: badges.length,
         byType: {
-          star: badges.filter(b => b.badge_type === 'star').length,
-          shield: badges.filter(b => b.badge_type === 'shield').length,
-          crown: badges.filter(b => b.badge_type === 'crown').length,
+          star: badges.filter((b: any) => b.badge_type === 'star').length,
+          shield: badges.filter((b: any) => b.badge_type === 'shield').length,
+          crown: badges.filter((b: any) => b.badge_type === 'crown').length,
         },
-        bySport: badges.reduce((acc: any, b) => {
+        bySport: badges.reduce((acc: any, b: any) => {
           acc[b.sport] = (acc[b.sport] || 0) + 1
           return acc
         }, {}),
-        awarded: badges.filter(b => b.awarded_date).length,
-        pending: badges.filter(b => !b.awarded_date).length,
-        uniqueRecipients: new Set(badges.map(b => b.student_id)).size,
+        awarded: badges.filter((b: any) => b.awarded_date).length,
+        pending: badges.filter((b: any) => !b.awarded_date).length,
+        uniqueRecipients: new Set(badges.map((b: any) => b.student_id)).size,
       },
 
       // 出席統計
       attendance: {
         total: attendance.length,
-        present: attendance.filter(a => a.status === 'present').length,
-        absent: attendance.filter(a => a.status === 'absent').length,
-        late: attendance.filter(a => a.status === 'late').length,
+        present: attendance.filter((a: any) => a.status === 'present').length,
+        absent: attendance.filter((a: any) => a.status === 'absent').length,
+        late: attendance.filter((a: any) => a.status === 'late').length,
         rate: attendance.length > 0 ?
-          Math.round((attendance.filter(a => a.status === 'present').length / attendance.length) * 100) : 0,
+          Math.round((attendance.filter((a: any) => a.status === 'present').length / attendance.length) * 100) : 0,
         weeklyTrend: calculateAttendanceWeeklyTrend(attendance),
       },
 
       // ミッション統計
       missions: {
         total: missions.length,
-        completed: missions.filter(m => m.status === 'completed').length,
-        inProgress: missions.filter(m => m.status === 'in_progress').length,
-        draft: missions.filter(m => m.status === 'draft').length,
+        completed: missions.filter((m: any) => m.status === 'completed').length,
+        inProgress: missions.filter((m: any) => m.status === 'in_progress').length,
+        draft: missions.filter((m: any) => m.status === 'draft').length,
         averageCompletion: missions.length > 0 ?
-          Math.round(missions.reduce((sum, m) => {
+          Math.round(missions.reduce((sum: any, m: any) => {
             const totalItems = m.mission_items?.length || 0
             const completedItems = m.mission_items?.filter((item: any) => item.completed_at).length || 0
             return sum + (totalItems > 0 ? (completedItems / totalItems) * 100 : 0)
@@ -287,13 +287,13 @@ export async function GET(request: NextRequest) {
 
 // 週次トレンド計算
 function calculateWeeklyTrend(evaluations: any[]) {
-  const weeks = Array.from({length: 4}, (_, i) => {
+  const weeks = Array.from({length: 4}, (_: any, i: any) => {
     const weekStart = new Date(Date.now() - (i + 1) * 7 * 24 * 60 * 60 * 1000)
     const weekEnd = new Date(Date.now() - i * 7 * 24 * 60 * 60 * 1000)
 
     return {
       week: `${weekStart.getMonth() + 1}/${weekStart.getDate()}`,
-      count: evaluations.filter(e => {
+      count: evaluations.filter((e: any) => {
         const evalDate = new Date(e.lesson_date)
         return evalDate >= weekStart && evalDate <= weekEnd
       }).length
@@ -304,11 +304,11 @@ function calculateWeeklyTrend(evaluations: any[]) {
 }
 
 function calculateAttendanceWeeklyTrend(attendance: any[]) {
-  const weeks = Array.from({length: 4}, (_, i) => {
+  const weeks = Array.from({length: 4}, (_: any, i: any) => {
     const weekStart = new Date(Date.now() - (i + 1) * 7 * 24 * 60 * 60 * 1000)
     const weekEnd = new Date(Date.now() - i * 7 * 24 * 60 * 60 * 1000)
 
-    const weekAttendance = attendance.filter(a => {
+    const weekAttendance = attendance.filter((a: any) => {
       const attendanceDate = new Date(a.lesson_date)
       return attendanceDate >= weekStart && attendanceDate <= weekEnd
     })
@@ -316,7 +316,7 @@ function calculateAttendanceWeeklyTrend(attendance: any[]) {
     return {
       week: `${weekStart.getMonth() + 1}/${weekStart.getDate()}`,
       rate: weekAttendance.length > 0 ?
-        Math.round((weekAttendance.filter(a => a.status === 'present').length / weekAttendance.length) * 100) : 0
+        Math.round((weekAttendance.filter((a: any) => a.status === 'present').length / weekAttendance.length) * 100) : 0
     }
   }).reverse()
 
@@ -328,7 +328,7 @@ function generateAlerts(coaches: any[], badges: any[], students: any[]) {
   const alerts = []
 
   // 資格有効期限アラート
-  const expiringSoon = coaches.filter(coach => {
+  const expiringSoon = coaches.filter((coach: any) => {
     return coach.certifications?.some((cert: any) => {
       if (!cert.expiry_date) return false
       const expiryDate = new Date(cert.expiry_date)
@@ -347,7 +347,7 @@ function generateAlerts(coaches: any[], badges: any[], students: any[]) {
   }
 
   // 授与待ちバッジ
-  const pendingBadges = badges.filter(b => !b.awarded_date).length
+  const pendingBadges = badges.filter((b: any) => !b.awarded_date).length
   if (pendingBadges > 0) {
     alerts.push({
       type: 'info',
@@ -358,7 +358,7 @@ function generateAlerts(coaches: any[], badges: any[], students: any[]) {
   }
 
   // 新入会者
-  const newStudents = students.filter(s => {
+  const newStudents = students.filter((s: any) => {
     const enrollmentDate = new Date(s.enrollment_date)
     const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000)
     return enrollmentDate >= sevenDaysAgo

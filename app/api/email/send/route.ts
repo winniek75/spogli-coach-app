@@ -61,8 +61,8 @@ async function handleNotificationEmail(body: any, supabase: any) {
   }
 
   // 通知データを取得
-  const { data: notification, error } = await supabase
-    .from('notifications')
+  const { data: notification, error } = await (supabase
+    .from('notifications') as any)
     .select('*')
     .eq('id', notification_id)
     .single()
@@ -83,8 +83,8 @@ async function handleNotificationEmail(body: any, supabase: any) {
   })
 
   // 送信ログを記録
-  await supabase
-    .from('notification_logs')
+  await (supabase
+    .from('notification_logs') as any)
     .insert({
       notification_id,
       channel: 'email',

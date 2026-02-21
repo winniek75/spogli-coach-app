@@ -11,8 +11,8 @@ export async function GET(request: NextRequest, { params }: RouteParams) {
   try {
     const supabase = await createClient()
 
-    const { data: video, error } = await supabase
-      .from('videos')
+    const { data: video, error } = await (supabase
+      .from('videos') as any)
       .select(`
         *,
         created_by_name:coaches!videos_created_by_fkey(name),
@@ -34,8 +34,8 @@ export async function GET(request: NextRequest, { params }: RouteParams) {
     }
 
     // 視聴数をカウントアップ
-    await supabase
-      .from('video_stats')
+    await (supabase
+      .from('video_stats') as any)
       .upsert({
         video_id: params.id,
         view_count: (video.video_stats?.[0]?.view_count || 0) + 1,
@@ -64,8 +64,8 @@ export async function PATCH(request: NextRequest, { params }: RouteParams) {
     const supabase = await createClient()
     const body: UpdateVideoRequest = await request.json()
 
-    const { data: video, error } = await supabase
-      .from('videos')
+    const { data: video, error } = await (supabase
+      .from('videos') as any)
       .update({
         ...body,
         updated_at: new Date().toISOString(),
@@ -98,13 +98,13 @@ export async function DELETE(request: NextRequest, { params }: RouteParams) {
     const supabase = await createClient()
 
     // 統計データも削除
-    await supabase
-      .from('video_stats')
+    await (supabase
+      .from('video_stats') as any)
       .delete()
       .eq('video_id', params.id)
 
-    const { error } = await supabase
-      .from('videos')
+    const { error } = await (supabase
+      .from('videos') as any)
       .delete()
       .eq('id', params.id)
 

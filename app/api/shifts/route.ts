@@ -12,8 +12,8 @@ export async function GET(request: NextRequest) {
     const date = searchParams.get('date')
     const school = searchParams.get('school')
 
-    let query = supabase
-      .from('coach_shifts')
+    let query = (supabase
+      .from('coach_shifts') as any)
       .select(`
         *,
         coach:coaches!coach_shifts_coach_id_fkey (
@@ -75,8 +75,8 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    const { data: shift, error } = await supabase
-      .from('coach_shifts')
+    const { data: shift, error } = await (supabase
+      .from('coach_shifts') as any)
       .insert({
         coach_id: body.coach_id,
         shift_date: body.shift_date,

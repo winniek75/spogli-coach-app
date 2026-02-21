@@ -20,8 +20,8 @@ export async function POST(request: NextRequest, { params }: RouteParams) {
     }
 
     // レッスンメニューの詳細を取得
-    const { data: lessonMenu, error: menuError } = await supabase
-      .from('lesson_menus')
+    const { data: lessonMenu, error: menuError } = await (supabase
+      .from('lesson_menus') as any)
       .select(`
         *,
         created_by_name:coaches!lesson_menus_created_by_fkey(name),
@@ -46,8 +46,8 @@ export async function POST(request: NextRequest, { params }: RouteParams) {
     const shareUrl = `${process.env.NEXT_PUBLIC_APP_URL}/shared/lesson-menus/${params.id}?token=${shareToken}`
 
     // 共有記録を保存
-    await supabase
-      .from('lesson_menu_shares')
+    await (supabase
+      .from('lesson_menu_shares') as any)
       .insert({
         lesson_menu_id: params.id,
         shared_by: user?.id,

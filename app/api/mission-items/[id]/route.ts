@@ -24,8 +24,8 @@ export async function PATCH(request: NextRequest, { params }: RouteParams) {
       updateData.completed_at = null
     }
 
-    const { data: missionItem, error } = await supabase
-      .from('mission_items')
+    const { data: missionItem, error } = await (supabase
+      .from('mission_items') as any)
       .update(updateData)
       .eq('id', params.id)
       .select()
@@ -41,14 +41,14 @@ export async function PATCH(request: NextRequest, { params }: RouteParams) {
     }
 
     // ミッションシートの完了状態をチェック
-    const { data: allItems } = await supabase
-      .from('mission_items')
+    const { data: allItems } = await (supabase
+      .from('mission_items') as any)
       .select('completed_at')
       .eq('mission_sheet_id', missionItem.mission_sheet_id)
 
     if (allItems) {
-      const allCompleted = allItems.every(item => item.completed_at !== null)
-      const someCompleted = allItems.some(item => item.completed_at !== null)
+      const allCompleted = allItems.every((item: any) => item.completed_at !== null)
+      const someCompleted = allItems.some((item: any) => item.completed_at !== null)
 
       let sheetStatus = 'draft'
       if (allCompleted) {
@@ -58,8 +58,8 @@ export async function PATCH(request: NextRequest, { params }: RouteParams) {
       }
 
       // ミッションシートのステータスを更新
-      await supabase
-        .from('mission_sheets')
+      await (supabase
+        .from('mission_sheets') as any)
         .update({
           status: sheetStatus,
           ...(allCompleted && { completed_at: new Date().toISOString() }),

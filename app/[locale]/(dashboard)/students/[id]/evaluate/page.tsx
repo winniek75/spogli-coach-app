@@ -40,7 +40,7 @@ export default function EvaluateStudentPage() {
     lesson_date: new Date().toISOString().split('T')[0],
     coach_id: '',
     school: 'ageo',
-    training_type: 'regular',
+    training_type: 'vision',
     sport: 'soccer',
     category: 'technical',
     skill_item_id: '',
@@ -254,7 +254,7 @@ export default function EvaluateStudentPage() {
                   <Label htmlFor="training_type">レッスン種別</Label>
                   <Select
                     value={formData.training_type}
-                    onValueChange={(value: 'regular' | 'special' | 'private') =>
+                    onValueChange={(value: 'vision' | 'rhythm' | 'coordination') =>
                       setFormData(prev => ({ ...prev, training_type: value }))
                     }
                   >
@@ -262,9 +262,9 @@ export default function EvaluateStudentPage() {
                       <SelectValue placeholder="レッスン種別を選択" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="regular">通常レッスン</SelectItem>
-                      <SelectItem value="special">特別レッスン</SelectItem>
-                      <SelectItem value="private">プライベートレッスン</SelectItem>
+                      <SelectItem value="vision">ビジョントレーニング</SelectItem>
+                      <SelectItem value="rhythm">リズムトレーニング</SelectItem>
+                      <SelectItem value="coordination">コーディネーション</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -352,7 +352,7 @@ export default function EvaluateStudentPage() {
                           ? 'border-blue-500 bg-blue-50'
                           : 'border-gray-200 hover:border-gray-300'
                       }`}
-                      onClick={() => setFormData(prev => ({ ...prev, rating }))}
+                      onClick={() => setFormData(prev => ({ ...prev, rating: rating as 1 | 2 | 3 }))}
                     >
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">

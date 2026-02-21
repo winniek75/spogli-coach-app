@@ -132,22 +132,22 @@ export async function GET(request: NextRequest) {
     let filteredBadges = [...demoBadges]
 
     if (studentId) {
-      filteredBadges = filteredBadges.filter(b => b.student_id === studentId)
+      filteredBadges = filteredBadges.filter((b: any) => b.student_id === studentId)
     }
 
     if (sport) {
-      filteredBadges = filteredBadges.filter(b => b.sport === sport)
+      filteredBadges = filteredBadges.filter((b: any) => b.sport === sport)
     }
 
     if (badgeType) {
-      filteredBadges = filteredBadges.filter(b => b.badge_type === badgeType)
+      filteredBadges = filteredBadges.filter((b: any) => b.badge_type === badgeType)
     }
 
     if (awardedStatus !== null) {
       if (awardedStatus === 'true') {
-        filteredBadges = filteredBadges.filter(b => b.awarded_date !== null)
+        filteredBadges = filteredBadges.filter((b: any) => b.awarded_date !== null)
       } else if (awardedStatus === 'false') {
-        filteredBadges = filteredBadges.filter(b => b.awarded_date === null)
+        filteredBadges = filteredBadges.filter((b: any) => b.awarded_date === null)
       }
     }
 

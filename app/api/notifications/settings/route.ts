@@ -18,8 +18,8 @@ export async function GET(request: NextRequest) {
       )
     }
 
-    const { data: settings, error } = await supabase
-      .from('notification_settings')
+    const { data: settings, error } = await (supabase
+      .from('notification_settings') as any)
       .select('*')
       .eq('user_id', userId)
       .eq('user_type', userType)
@@ -82,8 +82,8 @@ export async function POST(request: NextRequest) {
     }
 
     // 既存設定をチェック
-    const { data: existing } = await supabase
-      .from('notification_settings')
+    const { data: existing } = await (supabase
+      .from('notification_settings') as any)
       .select('id')
       .eq('user_id', body.user_id)
       .eq('user_type', body.user_type)
@@ -92,8 +92,8 @@ export async function POST(request: NextRequest) {
     let result
     if (existing) {
       // 更新
-      const { data, error } = await supabase
-        .from('notification_settings')
+      const { data, error } = await (supabase
+        .from('notification_settings') as any)
         .update({
           channels: body.channels,
           categories: body.categories,
@@ -115,8 +115,8 @@ export async function POST(request: NextRequest) {
       result = data
     } else {
       // 新規作成
-      const { data, error } = await supabase
-        .from('notification_settings')
+      const { data, error } = await (supabase
+        .from('notification_settings') as any)
         .insert({
           user_id: body.user_id,
           user_type: body.user_type,

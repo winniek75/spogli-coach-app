@@ -14,8 +14,8 @@ export async function GET(request: NextRequest) {
     const sport = searchParams.get('sport')
     const coachId = searchParams.get('coach_id')
 
-    let query = supabase
-      .from('evaluations')
+    let query = (supabase
+      .from('evaluations') as any)
       .select(`
         *,
         student:students!evaluations_student_id_fkey (
@@ -86,8 +86,8 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    const { data: evaluation, error } = await supabase
-      .from('evaluations')
+    const { data: evaluation, error } = await (supabase
+      .from('evaluations') as any)
       .insert({
         student_id: body.student_id,
         lesson_id: body.lesson_id,
@@ -126,8 +126,8 @@ export async function POST(request: NextRequest) {
 async function checkBadgeEligibility(supabase: any, studentId: string, sport: string, category: string) {
   try {
     // 該当カテゴリで⭐⭐⭐(rating=3)の評価を取得
-    const { data: highRatings, error } = await supabase
-      .from('evaluations')
+    const { data: highRatings, error } = await (supabase
+      .from('evaluations') as any)
       .select('*')
       .eq('student_id', studentId)
       .eq('sport', sport)
@@ -142,8 +142,8 @@ async function checkBadgeEligibility(supabase: any, studentId: string, sport: st
     // 3回以上⭐⭐⭐を取得している場合
     if (highRatings && highRatings.length >= 3) {
       // 既にバッジを獲得しているかチェック
-      const { data: existingBadge } = await supabase
-        .from('badges')
+      const { data: existingBadge } = await (supabase
+        .from('badges') as any)
         .select('*')
         .eq('student_id', studentId)
         .eq('sport', sport)
@@ -153,8 +153,8 @@ async function checkBadgeEligibility(supabase: any, studentId: string, sport: st
       // バッジが存在しない場合は新規作成
       if (!existingBadge) {
         // レベルに応じたバッジタイプを決定
-        const { data: student } = await supabase
-          .from('students')
+        const { data: student } = await (supabase
+          .from('students') as any)
           .select('level')
           .eq('id', studentId)
           .single()
@@ -163,8 +163,8 @@ async function checkBadgeEligibility(supabase: any, studentId: string, sport: st
         if (student?.level >= 5) badgeType = 'crown'
         else if (student?.level >= 3) badgeType = 'shield'
 
-        await supabase
-          .from('badges')
+        await (supabase
+          .from('badges') as any)
           .insert({
             student_id: studentId,
             sport: sport,

@@ -11,8 +11,8 @@ export async function POST(request: NextRequest, { params }: RouteParams) {
     const supabase = await createClient()
 
     // 動画情報を取得
-    const { data: video, error: videoError } = await supabase
-      .from('videos')
+    const { data: video, error: videoError } = await (supabase
+      .from('videos') as any)
       .select(`
         *,
         video_stats!left(download_count)
@@ -30,8 +30,8 @@ export async function POST(request: NextRequest, { params }: RouteParams) {
     }
 
     // ダウンロード数をカウントアップ
-    await supabase
-      .from('video_stats')
+    await (supabase
+      .from('video_stats') as any)
       .upsert({
         video_id: params.id,
         view_count: video.video_stats?.[0]?.view_count || 0,
@@ -41,8 +41,8 @@ export async function POST(request: NextRequest, { params }: RouteParams) {
     // ダウンロードログを記録
     const { data: { user } } = await supabase.auth.getUser()
     if (user) {
-      await supabase
-        .from('download_logs')
+      await (supabase
+        .from('download_logs') as any)
         .insert({
           content_type: 'video',
           content_id: params.id,

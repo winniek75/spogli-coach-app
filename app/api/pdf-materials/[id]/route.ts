@@ -11,8 +11,8 @@ export async function GET(request: NextRequest, { params }: RouteParams) {
   try {
     const supabase = await createClient()
 
-    const { data: pdfMaterial, error } = await supabase
-      .from('pdf_materials')
+    const { data: pdfMaterial, error } = await (supabase
+      .from('pdf_materials') as any)
       .select(`
         *,
         created_by_name:coaches!pdf_materials_created_by_fkey(name),
@@ -34,8 +34,8 @@ export async function GET(request: NextRequest, { params }: RouteParams) {
     }
 
     // 閲覧数をカウントアップ
-    await supabase
-      .from('pdf_stats')
+    await (supabase
+      .from('pdf_stats') as any)
       .upsert({
         pdf_material_id: params.id,
         view_count: (pdfMaterial.pdf_stats?.[0]?.view_count || 0) + 1,
@@ -64,8 +64,8 @@ export async function PATCH(request: NextRequest, { params }: RouteParams) {
     const supabase = await createClient()
     const body: UpdatePDFMaterialRequest = await request.json()
 
-    const { data: pdfMaterial, error } = await supabase
-      .from('pdf_materials')
+    const { data: pdfMaterial, error } = await (supabase
+      .from('pdf_materials') as any)
       .update({
         ...body,
         updated_at: new Date().toISOString(),
@@ -98,13 +98,13 @@ export async function DELETE(request: NextRequest, { params }: RouteParams) {
     const supabase = await createClient()
 
     // 統計データも削除
-    await supabase
-      .from('pdf_stats')
+    await (supabase
+      .from('pdf_stats') as any)
       .delete()
       .eq('pdf_material_id', params.id)
 
-    const { error } = await supabase
-      .from('pdf_materials')
+    const { error } = await (supabase
+      .from('pdf_materials') as any)
       .delete()
       .eq('id', params.id)
 

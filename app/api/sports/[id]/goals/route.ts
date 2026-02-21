@@ -17,8 +17,8 @@ export async function GET(request: NextRequest, { params }: RouteParams) {
     const status = searchParams.get('status')
     const category = searchParams.get('category')
 
-    let query = supabase
-      .from('sport_goals')
+    let query = (supabase
+      .from('sport_goals') as any)
       .select(`
         *,
         sport:sports!sport_goals_sport_id_fkey(id, name, icon),
@@ -74,8 +74,8 @@ export async function POST(request: NextRequest, { params }: RouteParams) {
     }
 
     // コーチ情報を取得
-    const { data: coach } = await supabase
-      .from('coaches')
+    const { data: coach } = await (supabase
+      .from('coaches') as any)
       .select('id')
       .eq('user_id', user.id)
       .single()
@@ -85,8 +85,8 @@ export async function POST(request: NextRequest, { params }: RouteParams) {
     }
 
     // 目標を作成
-    const { data: goal, error: goalError } = await supabase
-      .from('sport_goals')
+    const { data: goal, error: goalError } = await (supabase
+      .from('sport_goals') as any)
       .insert({
         sport_id: params.id,
         student_id: body.student_id,
@@ -110,7 +110,7 @@ export async function POST(request: NextRequest, { params }: RouteParams) {
 
     // マイルストーンを作成
     if (body.milestones && body.milestones.length > 0) {
-      const milestones = body.milestones.map(milestone => ({
+      const milestones = body.milestones.map((milestone: any) => ({
         goal_id: goal.id,
         title: milestone.title,
         description: milestone.description,
@@ -118,21 +118,21 @@ export async function POST(request: NextRequest, { params }: RouteParams) {
         status: 'pending',
       }))
 
-      const { error: milestoneError } = await supabase
-        .from('goal_milestones')
+      const { error: milestoneError } = await (supabase
+        .from('goal_milestones') as any)
         .insert(milestones)
 
       if (milestoneError) {
         console.error('Error creating milestones:', milestoneError)
         // マイルストーン作成に失敗した場合、目標も削除
-        await supabase.from('sport_goals').delete().eq('id', goal.id)
+        await (supabase.from('sport_goals') as any).delete().eq('id', goal.id)
         return NextResponse.json({ error: 'マイルストーンの作成に失敗しました' }, { status: 500 })
       }
     }
 
     // 完全な目標データを取得
-    const { data: completeGoal } = await supabase
-      .from('sport_goals')
+    const { data: completeGoal } = await (supabase
+      .from('sport_goals') as any)
       .select(`
         *,
         sport:sports!sport_goals_sport_id_fkey(id, name, icon),

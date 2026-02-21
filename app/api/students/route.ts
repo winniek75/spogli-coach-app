@@ -24,8 +24,8 @@ export async function GET(request: NextRequest) {
     const level = searchParams.get('level')
 
     // Supabaseから生徒データを取得
-    let query = supabase
-      .from('students')
+    let query = (supabase
+      .from('students') as any)
       .select(`
         *,
         badges:student_badges (*),
@@ -68,7 +68,7 @@ export async function GET(request: NextRequest) {
     }
 
     // データの整形
-    const formattedStudents: StudentWithDetails[] = (students || []).map(student => {
+    const formattedStudents: StudentWithDetails[] = (students || []).map((student: any) => {
       const birthDate = new Date(student.birth_date)
       const today = new Date()
       const age = Math.floor((today.getTime() - birthDate.getTime()) / (365.25 * 24 * 60 * 60 * 1000))
@@ -143,8 +143,8 @@ export async function POST(request: NextRequest) {
     else if (age >= 7) defaultLevel = 5
 
     // Supabaseに生徒データを保存
-    const { data: newStudent, error } = await supabase
-      .from('students')
+    const { data: newStudent, error } = await (supabase
+      .from('students') as any)
       .insert([
         {
           name: body.name,
@@ -152,7 +152,7 @@ export async function POST(request: NextRequest) {
           name_en: body.name_en || '',
           birth_date: body.birth_date,
           gender: body.gender || 'other',
-          photo_url: body.photo_url || null,
+          photo_url: (body as any).photo_url || undefined,
           level: body.level || defaultLevel,
           enrollment_date: body.enrollment_date,
           school: body.school,

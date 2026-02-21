@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { useStudent, useStudents } from '@/hooks/use-students'
 import { Button } from '@/components/ui/button'
@@ -52,7 +52,7 @@ export default function EditStudentPage() {
   })
 
   // フォームデータを学生データで初期化
-  useState(() => {
+  useEffect(() => {
     if (student && Object.keys(formData).every(key => !formData[key as keyof UpdateStudentRequest])) {
       setFormData({
         name: student.name || '',
@@ -74,7 +74,7 @@ export default function EditStudentPage() {
         photo_url: student.photo_url || '',
       })
     }
-  }, [student])
+  }, [student, formData])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -102,7 +102,7 @@ export default function EditStudentPage() {
     return Math.floor((today.getTime() - birth.getTime()) / (365.25 * 24 * 60 * 60 * 1000))
   }
 
-  const age = calculateAge(formData.birth_date)
+  const age = formData.birth_date ? calculateAge(formData.birth_date) : null
 
   if (fetchLoading) {
     return (

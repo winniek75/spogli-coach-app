@@ -35,9 +35,9 @@ export default function PrintableComponent({
   const componentRef = useRef<HTMLDivElement>(null)
 
   const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
+    contentRef: componentRef,
     documentTitle: filename,
-    onBeforeGetContent: onBeforePrint,
+    onBeforePrint: onBeforePrint ? async () => onBeforePrint() : undefined,
     onAfterPrint: onAfterPrint,
     pageStyle: `
       @page {

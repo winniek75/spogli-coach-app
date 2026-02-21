@@ -191,20 +191,20 @@ export async function GET(request: NextRequest) {
 
     // フィルタリング
     if (category && category !== 'all') {
-      filteredMaterials = filteredMaterials.filter(material => material.category === category)
+      filteredMaterials = filteredMaterials.filter((material: any) => material.category === category)
     }
 
     if (sport && sport !== 'all') {
-      filteredMaterials = filteredMaterials.filter(material => material.sport === sport || material.sport === 'general')
+      filteredMaterials = filteredMaterials.filter((material: any) => material.sport === sport || material.sport === 'general')
     }
 
     if (level && level !== 'all') {
-      filteredMaterials = filteredMaterials.filter(material => material.level === parseInt(level))
+      filteredMaterials = filteredMaterials.filter((material: any) => material.level === parseInt(level))
     }
 
     if (search && search !== 'all') {
       const searchLower = search.toLowerCase()
-      filteredMaterials = filteredMaterials.filter(material =>
+      filteredMaterials = filteredMaterials.filter((material: any) =>
         material.title.toLowerCase().includes(searchLower) ||
         material.description.toLowerCase().includes(searchLower)
       )

@@ -10,8 +10,8 @@ export async function GET(request: NextRequest, { params }: RouteParams) {
   try {
     const supabase = await createClient()
 
-    const { data: missionSheet, error } = await supabase
-      .from('mission_sheets')
+    const { data: missionSheet, error } = await (supabase
+      .from('mission_sheets') as any)
       .select(`
         *,
         student:students!mission_sheets_student_id_fkey (
@@ -67,8 +67,8 @@ export async function PATCH(request: NextRequest, { params }: RouteParams) {
     const supabase = await createClient()
     const body = await request.json()
 
-    const { data: missionSheet, error } = await supabase
-      .from('mission_sheets')
+    const { data: missionSheet, error } = await (supabase
+      .from('mission_sheets') as any)
       .update({
         ...body,
         updated_at: new Date().toISOString(),
@@ -101,14 +101,14 @@ export async function DELETE(request: NextRequest, { params }: RouteParams) {
     const supabase = await createClient()
 
     // 関連するミッション項目も削除
-    await supabase
-      .from('mission_items')
+    await (supabase
+      .from('mission_items') as any)
       .delete()
       .eq('mission_sheet_id', params.id)
 
     // ミッションシートを削除
-    const { error } = await supabase
-      .from('mission_sheets')
+    const { error } = await (supabase
+      .from('mission_sheets') as any)
       .delete()
       .eq('id', params.id)
 

@@ -157,20 +157,20 @@ export async function GET(request: NextRequest) {
 
     // フィルタリング
     if (category && category !== 'all') {
-      filteredVideos = filteredVideos.filter(video => video.category === category)
+      filteredVideos = filteredVideos.filter((video: any) => video.category === category)
     }
 
     if (sport && sport !== 'all') {
-      filteredVideos = filteredVideos.filter(video => video.sport === sport || video.sport === 'general')
+      filteredVideos = filteredVideos.filter((video: any) => video.sport === sport || video.sport === 'general')
     }
 
     if (level && level !== 'all') {
-      filteredVideos = filteredVideos.filter(video => video.level === parseInt(level))
+      filteredVideos = filteredVideos.filter((video: any) => video.level === parseInt(level))
     }
 
     if (search && search !== 'all') {
       const searchLower = search.toLowerCase()
-      filteredVideos = filteredVideos.filter(video =>
+      filteredVideos = filteredVideos.filter((video: any) =>
         video.title.toLowerCase().includes(searchLower) ||
         video.description.toLowerCase().includes(searchLower)
       )

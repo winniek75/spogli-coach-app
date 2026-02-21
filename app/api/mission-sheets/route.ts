@@ -11,8 +11,8 @@ export async function GET(request: NextRequest) {
     const status = searchParams.get('status')
     const lessonDate = searchParams.get('lesson_date')
 
-    let query = supabase
-      .from('mission_sheets')
+    let query = (supabase
+      .from('mission_sheets') as any)
       .select(`
         *,
         student:students!mission_sheets_student_id_fkey (
@@ -79,8 +79,8 @@ export async function POST(request: NextRequest) {
     }
 
     // ミッションシートを作成
-    const { data: missionSheet, error: sheetError } = await supabase
-      .from('mission_sheets')
+    const { data: missionSheet, error: sheetError } = await (supabase
+      .from('mission_sheets') as any)
       .insert({
         student_id: body.student_id,
         coach_id: body.coach_id,
@@ -109,14 +109,14 @@ export async function POST(request: NextRequest) {
       order_index: item.order_index || 0,
     }))
 
-    const { error: itemsError } = await supabase
-      .from('mission_items')
+    const { error: itemsError } = await (supabase
+      .from('mission_items') as any)
       .insert(missionItems)
 
     if (itemsError) {
       console.error('Error creating mission items:', itemsError)
       // ミッションシートを削除してロールバック
-      await supabase.from('mission_sheets').delete().eq('id', missionSheet.id)
+      await (supabase.from('mission_sheets') as any).delete().eq('id', missionSheet.id)
       return NextResponse.json({ error: itemsError.message }, { status: 500 })
     }
 

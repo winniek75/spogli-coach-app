@@ -30,8 +30,8 @@ export async function POST(request: NextRequest) {
       }
     }
 
-    const { data: certification, error } = await supabase
-      .from('certifications')
+    const { data: certification, error } = await (supabase
+      .from('certifications') as any)
       .insert({
         coach_id: body.coach_id,
         name: body.name,
