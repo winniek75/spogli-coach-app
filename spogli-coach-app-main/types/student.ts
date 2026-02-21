@@ -47,6 +47,7 @@ export interface UpdateStudentRequest extends Partial<CreateStudentRequest> {
   status?: 'active' | 'inactive' | 'withdrawn'
   withdrawal_date?: string
   withdrawal_reason?: string
+  photo_url?: string
 }
 
 export interface Evaluation {

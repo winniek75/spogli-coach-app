@@ -320,7 +320,7 @@ export default function MaterialsPage() {
               )}
 
               <div className="text-xs text-muted-foreground">
-                作成者: {material.created_by_name?.name || 'Unknown'} • {new Date(material.created_at).toLocaleDateString('ja-JP')}
+                作成者: {material.created_by_name || 'Unknown'} • {new Date(material.created_at).toLocaleDateString('ja-JP')}
               </div>
 
               <div className="flex gap-2">

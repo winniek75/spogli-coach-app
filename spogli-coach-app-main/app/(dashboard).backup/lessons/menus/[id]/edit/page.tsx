@@ -40,8 +40,8 @@ const demoMenus = [
     duration: 50,
     description: '両手キャッチとアンダーハンドパスの基本を学ぶ',
     warmup: [
-      { name: 'ジョギング', duration: 3, description: '体育館を2周' },
-      { name: 'ストレッチ', duration: 5, description: '全身のストレッチ' },
+      { name: 'ジョギング', duration: 3, description: '体育館を2周', equipment: [] },
+      { name: 'ストレッチ', duration: 5, description: '全身のストレッチ', equipment: [] },
     ],
     activities: [
       { name: 'ボールキャッチ練習', duration: 10, description: '両手でボールをキャッチする練習', equipment: ['バレーボール'] },
@@ -59,7 +59,7 @@ const demoMenus = [
       { name: 'ミニゲーム', duration: 12, description: '4対4のミニゲーム', equipment: ['バレーボール', 'ネット'] },
     ],
     cooldown: [
-      { name: 'クールダウン', duration: 5, description: 'ストレッチと振り返り' },
+      { name: 'クールダウン', duration: 5, description: 'ストレッチと振り返り', equipment: [] },
     ],
     englishPhrases: ['Catch!', 'Ready!', 'Good job!', 'Nice try!'],
     notes: 'ボールの扱いに慣れていない子供には、最初は風船を使った練習から始めることも検討',
@@ -76,8 +76,8 @@ const demoMenus = [
     duration: 50,
     description: 'ドリブルスキルの向上を目指す',
     warmup: [
-      { name: 'ランニング', duration: 3, description: 'コートを走る' },
-      { name: 'ダイナミックストレッチ', duration: 5, description: '動的ストレッチ' },
+      { name: 'ランニング', duration: 3, description: 'コートを走る', equipment: [] },
+      { name: 'ダイナミックストレッチ', duration: 5, description: '動的ストレッチ', equipment: [] },
     ],
     activities: [
       { name: 'ドリブル基礎', duration: 10, description: '右手・左手でのドリブル練習', equipment: ['バスケットボール'] },
@@ -86,7 +86,7 @@ const demoMenus = [
       { name: 'ミニゲーム', duration: 7, description: '3対3のミニゲーム', equipment: ['バスケットボール'] },
     ],
     cooldown: [
-      { name: 'クールダウン', duration: 5, description: 'ストレッチと振り返り' },
+      { name: 'クールダウン', duration: 5, description: 'ストレッチと振り返り', equipment: [] },
     ],
     englishPhrases: ['Dribble!', 'Shoot!', 'Pass!', 'Great shot!'],
     notes: 'ドリブルが苦手な子供には個別指導の時間を設ける',
@@ -103,8 +103,8 @@ const demoMenus = [
     duration: 50,
     description: 'インサイドキックの基本を学ぶ',
     warmup: [
-      { name: '鬼ごっこ', duration: 5, description: 'ウォームアップを兼ねた鬼ごっこ' },
-      { name: 'ストレッチ', duration: 3, description: '足のストレッチ' },
+      { name: '鬼ごっこ', duration: 5, description: 'ウォームアップを兼ねた鬼ごっこ', equipment: [] },
+      { name: 'ストレッチ', duration: 3, description: '足のストレッチ', equipment: [] },
     ],
     activities: [
       { name: 'ボールタッチ', duration: 8, description: '足でボールを触る練習', equipment: ['サッカーボール'] },
@@ -113,7 +113,7 @@ const demoMenus = [
       { name: 'ミニゲーム', duration: 7, description: 'ミニゲーム', equipment: ['サッカーボール', 'ゴール'] },
     ],
     cooldown: [
-      { name: 'クールダウン', duration: 5, description: 'ストレッチと振り返り' },
+      { name: 'クールダウン', duration: 5, description: 'ストレッチと振り返り', equipment: [] },
     ],
     englishPhrases: ['Kick!', 'Pass!', 'Goal!', 'Well done!'],
     notes: '',

@@ -110,22 +110,22 @@ export default function StudentDetailPage() {
   }
 
   const getRecentEvaluations = () => {
-    if (!student.evaluations || student.evaluations.length === 0) return []
-    return student.evaluations.slice(0, 5)
+    if (!student.latest_evaluations || student.latest_evaluations.length === 0) return []
+    return student.latest_evaluations.slice(0, 5)
   }
 
   const calculateAverageRating = () => {
-    if (!student.evaluations || student.evaluations.length === 0) return 0
-    const total = student.evaluations.reduce((sum, evaluation) => sum + evaluation.rating, 0)
-    return (total / student.evaluations.length).toFixed(1)
+    if (!student.latest_evaluations || student.latest_evaluations.length === 0) return 0
+    const total = student.latest_evaluations.reduce((sum, evaluation) => sum + evaluation.rating, 0)
+    return (total / student.latest_evaluations.length).toFixed(1)
   }
 
   const getSportStats = () => {
-    if (!student.evaluations || student.evaluations.length === 0) return {}
+    if (!student.latest_evaluations || student.latest_evaluations.length === 0) return {}
 
     const stats: { [sport: string]: { count: number; avgRating: number } } = {}
 
-    student.evaluations.forEach(evaluation => {
+    student.latest_evaluations.forEach(evaluation => {
       if (!stats[evaluation.sport]) {
         stats[evaluation.sport] = { count: 0, avgRating: 0 }
       }
@@ -133,7 +133,7 @@ export default function StudentDetailPage() {
     })
 
     Object.keys(stats).forEach(sport => {
-      const sportEvals = student.evaluations!.filter(e => e.sport === sport)
+      const sportEvals = student.latest_evaluations!.filter(e => e.sport === sport)
       const total = sportEvals.reduce((sum, evaluation) => sum + evaluation.rating, 0)
       stats[sport].avgRating = parseFloat((total / sportEvals.length).toFixed(1))
     })
@@ -345,7 +345,7 @@ export default function StudentDetailPage() {
               <Card>
                 <CardContent className="pt-6">
                   <div className="text-center">
-                    <p className="text-2xl font-bold">{student.evaluations?.length || 0}</p>
+                    <p className="text-2xl font-bold">{student.latest_evaluations?.length || 0}</p>
                     <p className="text-sm text-muted-foreground">総評価数</p>
                   </div>
                 </CardContent>
@@ -418,7 +418,6 @@ export default function StudentDetailPage() {
                             <p className="font-medium">{evaluation.sport} - {evaluation.category}</p>
                             <p className="text-sm text-muted-foreground">
                               {new Date(evaluation.lesson_date).toLocaleDateString('ja-JP')}
-                              {evaluation.coaches?.name && ` | ${evaluation.coaches.name}`}
                             </p>
                           </div>
                           <div className="flex">
@@ -508,30 +507,10 @@ export default function StudentDetailPage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              {student.attendance && student.attendance.length > 0 ? (
-                <div className="space-y-2 max-h-96 overflow-y-auto">
-                  {student.attendance
-                    .sort((a, b) => new Date(b.lesson_date).getTime() - new Date(a.lesson_date).getTime())
-                    .map((record) => (
-                      <div key={record.id} className="flex justify-between items-center py-2 border-b">
-                        <p className="text-sm">
-                          {new Date(record.lesson_date).toLocaleDateString('ja-JP')}
-                        </p>
-                        <Badge
-                          variant={record.status === 'present' ? 'default' : 'secondary'}
-                          className={record.status === 'present' ? 'bg-green-600' : 'bg-gray-600'}
-                        >
-                          {record.status === 'present' ? '出席' : '欠席'}
-                        </Badge>
-                      </div>
-                    ))}
-                </div>
-              ) : (
-                <div className="text-center py-8">
-                  <Calendar className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-                  <p className="text-muted-foreground">出席記録がありません</p>
-                </div>
-              )}
+              <div className="text-center py-8">
+                <Calendar className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+                <p className="text-muted-foreground">出席記録データは現在利用できません</p>
+              </div>
             </CardContent>
           </Card>
         </TabsContent>

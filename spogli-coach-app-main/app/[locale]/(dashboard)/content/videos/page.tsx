@@ -349,7 +349,7 @@ export default function VideosPage() {
               )}
 
               <div className="text-xs text-muted-foreground mt-3">
-                作成者: {video.created_by_name?.name || 'Unknown'} • {new Date(video.created_at).toLocaleDateString('ja-JP')}
+                作成者: {video.created_by_name || 'Unknown'} • {new Date(video.created_at).toLocaleDateString('ja-JP')}
               </div>
             </CardContent>
           </Card>
