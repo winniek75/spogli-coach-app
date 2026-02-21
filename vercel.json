@@ -1,6 +1,4 @@
 {
-  "buildCommand": "cd spogli-coach-app-main && npm install && npm run build",
-  "outputDirectory": "spogli-coach-app-main/.next",
-  "installCommand": "cd spogli-coach-app-main && npm install",
+  "rootDirectory": "spogli-coach-app-main",
   "framework": "nextjs"
 }
