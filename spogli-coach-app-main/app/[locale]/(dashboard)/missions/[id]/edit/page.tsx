@@ -363,7 +363,7 @@ export default function MissionEditPage() {
                               <SelectContent>
                                 <SelectItem value="custom">カスタム項目</SelectItem>
                                 {getSkillOptions().map((categoryGroup) => (
-                                  categoryGroup.category === SKILL_CATEGORIES[item.category] && (
+                                  categoryGroup.category === SKILL_CATEGORIES[item.category as keyof typeof SKILL_CATEGORIES] && (
                                     categoryGroup.skills.map((skill, skillIndex) => (
                                       <SelectItem key={skillIndex} value={`${formData.sport}-${skill.toLowerCase().replace(/・/g, '-').replace(/\s/g, '-')}`}>
                                         {skill}

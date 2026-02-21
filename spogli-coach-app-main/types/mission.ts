@@ -65,6 +65,7 @@ export interface UpdateMissionSheetRequest {
   title?: string
   description?: string
   status?: 'draft' | 'in_progress' | 'completed' | 'cancelled'
+  mission_items?: any[]
 }
 
 export interface UpdateMissionItemRequest {
