@@ -1,6 +1,6 @@
 {
-  "framework": "vite",
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "installCommand": "npm install"
+  "buildCommand": "cd spogli-coach-app-main && npm install && npm run build",
+  "outputDirectory": "spogli-coach-app-main/.next",
+  "installCommand": "cd spogli-coach-app-main && npm install",
+  "framework": "nextjs"
 }
