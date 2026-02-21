@@ -5,128 +5,83 @@ export const dynamic = 'force-dynamic'
 
 export async function GET(request: NextRequest) {
   try {
-    // デモモード: Supabaseが設定されていない場合はデモ統計データを返す
+    // Supabase設定チェック
     const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-    const isDemo = !supabaseUrl || supabaseUrl.includes('placeholder')
+    const isConfigured = supabaseUrl && !supabaseUrl.includes('your-project')
 
-    if (isDemo) {
-      // デモ統計データ
-      const demoStats = {
+    if (!isConfigured) {
+      // Supabaseが設定されていない場合は空のデータを返す
+      const emptyStats = {
         overview: {
-          totalStudents: 48,
-          activeStudents: 42,
-          totalCoaches: 4,
-          totalEvaluations: 156,
-          totalBadges: 89,
+          totalStudents: 0,
+          activeStudents: 0,
+          totalCoaches: 0,
+          totalEvaluations: 0,
+          totalBadges: 0,
         },
         students: {
           byStatus: {
-            active: 42,
-            inactive: 4,
-            withdrawn: 2,
+            active: 0,
+            inactive: 0,
+            withdrawn: 0,
           },
-          byLevel: [
-            { level: 1, count: 8 },
-            { level: 2, count: 12 },
-            { level: 3, count: 14 },
-            { level: 4, count: 8 },
-            { level: 5, count: 4 },
-            { level: 6, count: 2 }
-          ],
+          byLevel: Array.from({length: 6}, (_, i) => ({
+            level: i + 1,
+            count: 0
+          })),
           byClassType: {
-            preschool: 18,
-            elementary: 30,
+            preschool: 0,
+            elementary: 0,
           },
           bySchool: {
-            ageo: 28,
-            okegawa: 20,
+            ageo: 0,
+            okegawa: 0,
           },
-          newEnrollments: 5,
+          newEnrollments: 0,
         },
         evaluations: {
-          total: 156,
+          total: 0,
           byRating: {
-            rating1: 42,
-            rating2: 89,
-            rating3: 25,
+            rating1: 0,
+            rating2: 0,
+            rating3: 0,
           },
-          averageRating: "2.2",
-          bySport: {
-            basketball: 68,
-            soccer: 52,
-            volleyball: 36,
-          },
-          byCategory: {
-            technical: 78,
-            tactical: 45,
-            physical: 33,
-          },
-          recentTrend: [
-            { week: "1/14", count: 12 },
-            { week: "1/21", count: 15 },
-            { week: "1/28", count: 18 },
-            { week: "2/4", count: 14 }
-          ],
+          averageRating: "0",
+          bySport: {},
+          byCategory: {},
+          recentTrend: [],
         },
         badges: {
-          total: 89,
+          total: 0,
           byType: {
-            star: 45,
-            shield: 32,
-            crown: 12,
+            star: 0,
+            shield: 0,
+            crown: 0,
           },
-          bySport: {
-            basketball: 38,
-            soccer: 34,
-            volleyball: 17,
-          },
-          awarded: 78,
-          pending: 11,
-          uniqueRecipients: 34,
+          bySport: {},
+          awarded: 0,
+          pending: 0,
+          uniqueRecipients: 0,
         },
         attendance: {
-          total: 312,
-          present: 285,
-          absent: 18,
-          late: 9,
-          rate: 91,
-          weeklyTrend: [
-            { week: "1/14", rate: 88 },
-            { week: "1/21", rate: 92 },
-            { week: "1/28", rate: 94 },
-            { week: "2/4", rate: 89 }
-          ],
+          total: 0,
+          present: 0,
+          absent: 0,
+          late: 0,
+          rate: 0,
+          weeklyTrend: [],
         },
         missions: {
-          total: 67,
-          completed: 45,
-          inProgress: 18,
-          draft: 4,
-          averageCompletion: 78,
+          total: 0,
+          completed: 0,
+          inProgress: 0,
+          draft: 0,
+          averageCompletion: 0,
         },
-        alerts: [
-          {
-            type: 'warning',
-            title: '資格更新が必要',
-            message: '1名のコーチの資格が30日以内に期限切れになります',
-            count: 1
-          },
-          {
-            type: 'info',
-            title: 'バッジ授与待ち',
-            message: '11個のバッジが授与待ちです',
-            count: 11
-          },
-          {
-            type: 'success',
-            title: '新入会者',
-            message: '今週5名の新しい生徒が入会しました',
-            count: 5
-          }
-        ],
+        alerts: [],
       }
 
-      return NextResponse.json({ stats: demoStats })
+      return NextResponse.json({ stats: emptyStats, message: 'Supabaseが設定されていません。.env.localファイルを確認してください。' })
     }
 
     // 本番モード: Supabaseからデータを取得

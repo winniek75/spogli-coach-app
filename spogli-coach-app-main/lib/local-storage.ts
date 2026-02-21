@@ -143,7 +143,8 @@ export function initializeData<T extends { id: string }>(
 export function isLocalStorageMode(): boolean {
   if (typeof window === 'undefined') return true
 
-  return !process.env.NEXT_PUBLIC_SUPABASE_URL ||
-         process.env.NEXT_PUBLIC_SUPABASE_URL === 'your-supabase-url' ||
-         process.env.NEXT_PUBLIC_SUPABASE_URL === ''
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+  return !supabaseUrl ||
+         supabaseUrl.includes('your-project') ||
+         supabaseUrl === ''
 }
