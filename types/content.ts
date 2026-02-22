@@ -20,6 +20,7 @@ export interface VideoWithDetails extends Video {
   created_by_name?: string
   view_count?: number
   download_count?: number
+  duration_minutes?: number
 }
 
 export interface CreateVideoRequest {
