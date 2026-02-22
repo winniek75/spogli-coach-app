@@ -1,7 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createClient } from '@/lib/supabase/server'
+import { createClient } from '@supabase/supabase-js'
 import { UpdateVideoRequest } from '@/types/content'
+
 export const dynamic = 'force-dynamic'
+
+// Supabase client
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+)
 
 interface RouteParams {
   params: { id: string }
@@ -9,47 +16,33 @@ interface RouteParams {
 
 export async function GET(request: NextRequest, { params }: RouteParams) {
   try {
-    const supabase = await createClient()
-
-    const { data: video, error } = await (supabase
-      .from('videos') as any)
-      .select(`
-        *,
-        created_by_name:coaches!videos_created_by_fkey(name),
-        video_stats!left(
-          view_count,
-          download_count
-        )
-      `)
+    // まずSupabaseから取得を試行
+    const { data: video, error } = await supabase
+      .from('videos')
+      .select('*')
       .eq('id', params.id)
       .single()
 
-    if (error) {
-      console.error('Error fetching video:', error)
-      return NextResponse.json({ error: error.message }, { status: 500 })
-    }
+    if (!error && video) {
+      // 視聴数を増やす
+      await supabase
+        .from('videos')
+        .update({ view_count: (video.view_count || 0) + 1 })
+        .eq('id', params.id)
 
-    if (!video) {
-      return NextResponse.json({ error: '動画が見つかりません' }, { status: 404 })
-    }
-
-    // 視聴数をカウントアップ
-    await (supabase
-      .from('video_stats') as any)
-      .upsert({
-        video_id: params.id,
-        view_count: (video.video_stats?.[0]?.view_count || 0) + 1,
-        download_count: video.video_stats?.[0]?.download_count || 0,
+      return NextResponse.json({
+        video: {
+          ...video,
+          view_count: (video.view_count || 0) + 1
+        }
       })
-
-    const videoWithDetails = {
-      ...video,
-      created_by_name: video.created_by_name?.[0]?.name,
-      view_count: (video.video_stats?.[0]?.view_count || 0) + 1,
-      download_count: video.video_stats?.[0]?.download_count || 0,
     }
 
-    return NextResponse.json({ video: videoWithDetails })
+    // Supabaseで見つからない場合は404
+    return NextResponse.json(
+      { error: 'Video not found' },
+      { status: 404 }
+    )
   } catch (error) {
     console.error('Unexpected error:', error)
     return NextResponse.json(
@@ -61,11 +54,10 @@ export async function GET(request: NextRequest, { params }: RouteParams) {
 
 export async function PATCH(request: NextRequest, { params }: RouteParams) {
   try {
-    const supabase = await createClient()
     const body: UpdateVideoRequest = await request.json()
 
-    const { data: video, error } = await (supabase
-      .from('videos') as any)
+    const { data: video, error } = await supabase
+      .from('videos')
       .update({
         ...body,
         updated_at: new Date().toISOString(),
@@ -95,16 +87,8 @@ export async function PATCH(request: NextRequest, { params }: RouteParams) {
 
 export async function DELETE(request: NextRequest, { params }: RouteParams) {
   try {
-    const supabase = await createClient()
-
-    // 統計データも削除
-    await (supabase
-      .from('video_stats') as any)
-      .delete()
-      .eq('video_id', params.id)
-
-    const { error } = await (supabase
-      .from('videos') as any)
+    const { error } = await supabase
+      .from('videos')
       .delete()
       .eq('id', params.id)
 
