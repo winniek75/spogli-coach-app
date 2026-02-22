@@ -20,12 +20,18 @@
 3. 以下のSQLファイルの内容を実行：
 
 #### 完全スキーマ作成（推奨）
+
+**エラーが発生した場合:**
+1. まず `supabase/migrations/005_fix_views_and_tables.sql` を実行
+2. 次に `supabase/migrations/004_fixed_create_all_tables.sql` を実行
+
+**初回セットアップの場合:**
 `supabase/migrations/004_fixed_create_all_tables.sql` の内容を全てコピー＆ペーストして実行
 
-このファイルは：
-- 依存関係を考慮した正しい順序でテーブルを作成
-- `IF NOT EXISTS` を使用して安全に実行可能
-- 開発環境用のRLSポリシーも含む
+**005番のファイルの特徴:**
+- 既存のビューとテーブルの競合を解決
+- `student_badges` ビューをテーブルに変換
+- テーブルのみにトリガーとRLSを適用
 
 **注意**: 本番環境では適切なRLSポリシーを設定してください。
 
