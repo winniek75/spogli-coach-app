@@ -233,9 +233,9 @@ async function generateMonthlyReportData(data: {
     }, {} as Record<string, number[]>)
 
     skillEvaluation.training_averages = {
-      vision: trainingGroups.vision ? Math.round(trainingGroups.vision.reduce((sum, r) => sum + r, 0) / trainingGroups.vision.length) : 0,
-      rhythm: trainingGroups.rhythm ? Math.round(trainingGroups.rhythm.reduce((sum, r) => sum + r, 0) / trainingGroups.rhythm.length) : 0,
-      coordination: trainingGroups.coordination ? Math.round(trainingGroups.coordination.reduce((sum, r) => sum + r, 0) / trainingGroups.coordination.length) : 0
+      vision: trainingGroups.vision ? Math.round(trainingGroups.vision.reduce((sum: number, r: number) => sum + r, 0) / trainingGroups.vision.length) : 0,
+      rhythm: trainingGroups.rhythm ? Math.round(trainingGroups.rhythm.reduce((sum: number, r: number) => sum + r, 0) / trainingGroups.rhythm.length) : 0,
+      coordination: trainingGroups.coordination ? Math.round(trainingGroups.coordination.reduce((sum: number, r: number) => sum + r, 0) / trainingGroups.coordination.length) : 0
     }
   }
 
