@@ -26,6 +26,9 @@ export interface MonthlyReport {
     badge_type: 'star' | 'shield' | 'crown'
     next_level_months: number
     next_certification_date: string
+    is_on_track: boolean
+    expected_level: number
+    months_since_enrollment: number
   }
 
   // 今月のスキル評価
@@ -45,6 +48,7 @@ export interface MonthlyReport {
   badges: {
     earned: EarnedBadge[]
     in_progress: InProgressBadge[]
+    potential: InProgressBadge[]
   }
 
   // 成長まとめ・チャレンジ
@@ -82,6 +86,7 @@ export interface InProgressBadge {
   required_count: number
   progress_percentage: number
   icon: string
+  is_potential?: boolean
 }
 
 export interface CreateMonthlyReportRequest {

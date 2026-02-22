@@ -157,13 +157,28 @@ async function generateMonthlyReportData(data: {
   const totalLessons = attendance.length
   const attendanceRate = totalLessons > 0 ? Math.round((attendanceCount / totalLessons) * 100) : 0
 
-  // レベル情報
+  // レベル情報と認定スケジュール
   const currentLevelInfo = LEVELS[student.level as keyof typeof LEVELS]
   const enrollmentDate = new Date(student.enrollment_date)
-  const monthsSinceEnrollment = Math.floor((Date.now() - enrollmentDate.getTime()) / (30.44 * 24 * 60 * 60 * 1000))
-  const nextLevelMonths = Math.max(1, 6 - (monthsSinceEnrollment % 6)) // 6ヶ月サイクル想定
-  const nextCertificationDate = new Date()
-  nextCertificationDate.setMonth(nextCertificationDate.getMonth() + nextLevelMonths)
+  const currentDate = new Date()
+
+  // 入会からの経過月数を正確に計算
+  const monthsSinceEnrollment = Math.floor(
+    (currentDate.getTime() - enrollmentDate.getTime()) / (30.44 * 24 * 60 * 60 * 1000)
+  )
+
+  // 次のレベルアップまでの月数を計算（6ヶ月サイクル）
+  const levelsCompleted = Math.floor(monthsSinceEnrollment / 6)
+  const expectedLevel = Math.min(levelsCompleted + 1, 6) // レベル1〜6
+  const monthsInCurrentLevel = monthsSinceEnrollment % 6
+  const nextLevelMonths = 6 - monthsInCurrentLevel
+
+  // 次回認定予定日を計算
+  const nextCertificationDate = new Date(enrollmentDate)
+  nextCertificationDate.setMonth(nextCertificationDate.getMonth() + (levelsCompleted + 1) * 6)
+
+  // レベル進行の判定
+  const isLevelProgressOnTrack = student.level >= expectedLevel
 
   // スキル評価の集計
   let skillEvaluation = {
@@ -233,15 +248,75 @@ async function generateMonthlyReportData(data: {
     icon: BADGE_TYPE_ICONS[badge.badge_type as keyof typeof BADGE_TYPE_ICONS]
   }))
 
-  const inProgressBadges = badges.filter(b => !b.ceremony_completed).map(badge => ({
-    sport: badge.sport,
-    category: badge.category,
-    badge_type: badge.badge_type,
-    current_count: 2, // TODO: 実際の進捗を計算
-    required_count: 3,
-    progress_percentage: 66,
-    icon: BADGE_TYPE_ICONS[badge.badge_type as keyof typeof BADGE_TYPE_ICONS]
-  }))
+  // 進行中バッジの実際の進捗計算
+  const badgeProgressMap = new Map()
+
+  // evaluationsから各スポーツ・カテゴリーの★★★の数を計算
+  evaluations.forEach(eval_ => {
+    if (eval_.rating === 3) { // ★★★のみカウント
+      const key = `${eval_.sport}-${eval_.skill_items?.category || eval_.category || 'general'}`
+      badgeProgressMap.set(key, (badgeProgressMap.get(key) || 0) + 1)
+    }
+  })
+
+  const inProgressBadges = badges.filter(b => !b.ceremony_completed).map(badge => {
+    const key = `${badge.sport}-${badge.category}`
+    const currentCount = badgeProgressMap.get(key) || 0
+    const requiredCount = 3 // バッジ獲得には★★★を3回
+    const progressPercentage = Math.min(Math.round((currentCount / requiredCount) * 100), 100)
+
+    return {
+      sport: badge.sport,
+      category: badge.category,
+      badge_type: badge.badge_type,
+      current_count: currentCount,
+      required_count: requiredCount,
+      progress_percentage: progressPercentage,
+      icon: BADGE_TYPE_ICONS[badge.badge_type as keyof typeof BADGE_TYPE_ICONS]
+    }
+  })
+
+  // 将来のバッジ候補を生成（evaluationsから推測）
+  const potentialBadges = []
+  const existingBadgeKeys = new Set(badges.map(b => `${b.sport}-${b.category}`))
+
+  // evaluationsから新しいバッジ候補を発見
+  const sportCategoryMap = new Map()
+  evaluations.forEach(eval_ => {
+    const sport = eval_.sport
+    const category = eval_.skill_items?.category || eval_.category || 'general'
+    const key = `${sport}-${category}`
+
+    if (!existingBadgeKeys.has(key)) {
+      if (!sportCategoryMap.has(key)) {
+        sportCategoryMap.set(key, {
+          sport,
+          category,
+          evaluationCount: 0,
+          starCount: 0
+        })
+      }
+      const info = sportCategoryMap.get(key)
+      info.evaluationCount++
+      if (eval_.rating === 3) info.starCount++
+    }
+  })
+
+  // 複数回評価があるスポーツ・カテゴリーを候補として追加
+  sportCategoryMap.forEach((info, key) => {
+    if (info.evaluationCount >= 2) { // 最低2回評価があれば候補とする
+      potentialBadges.push({
+        sport: info.sport,
+        category: info.category,
+        badge_type: 'star' as const, // 新規バッジはstarから開始
+        current_count: info.starCount,
+        required_count: 3,
+        progress_percentage: Math.min(Math.round((info.starCount / 3) * 100), 100),
+        icon: BADGE_TYPE_ICONS.star,
+        is_potential: true // 候補であることを示すフラグ
+      })
+    }
+  })
 
   // レポート生成
   const report: MonthlyReport = {
@@ -268,14 +343,18 @@ async function generateMonthlyReportData(data: {
       description: currentLevelInfo?.description || '',
       badge_type: currentLevelInfo?.badge || 'star',
       next_level_months: nextLevelMonths,
-      next_certification_date: nextCertificationDate.toISOString().split('T')[0]
+      next_certification_date: nextCertificationDate.toISOString().split('T')[0],
+      is_on_track: isLevelProgressOnTrack,
+      expected_level: expectedLevel,
+      months_since_enrollment: monthsSinceEnrollment
     },
 
     skill_evaluation: skillEvaluation,
 
     badges: {
       earned: earnedBadges,
-      in_progress: inProgressBadges
+      in_progress: inProgressBadges,
+      potential: potentialBadges
     },
 
     growth_summary: {

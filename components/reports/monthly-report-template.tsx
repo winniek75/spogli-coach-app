@@ -136,9 +136,16 @@ export function MonthlyReportTemplate({ report, isPrintMode = false }: MonthlyRe
           現在のレベル
         </h3>
         <div className="bg-yellow-50 p-4 rounded-lg">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between mb-3">
             <div>
-              <div className="text-xl font-bold">Level {report.current_level.level}</div>
+              <div className="text-xl font-bold flex items-center gap-2">
+                Level {report.current_level.level}
+                {report.current_level.is_on_track ? (
+                  <span className="text-green-500 text-sm">✓ 順調</span>
+                ) : (
+                  <span className="text-orange-500 text-sm">⚠ 要サポート</span>
+                )}
+              </div>
               <div className="text-lg text-yellow-700">{report.current_level.title}</div>
               <div className="text-sm text-gray-600 mt-2">{report.current_level.description}</div>
             </div>
@@ -147,6 +154,20 @@ export function MonthlyReportTemplate({ report, isPrintMode = false }: MonthlyRe
               <div className="text-lg font-bold">{report.current_level.next_level_months}ヶ月</div>
               <div className="text-xs text-gray-500">
                 ({formatDate(report.current_level.next_certification_date)})
+              </div>
+            </div>
+          </div>
+
+          {/* 進捗詳細 */}
+          <div className="border-t pt-3 mt-3">
+            <div className="grid grid-cols-2 gap-4 text-sm">
+              <div>
+                <span className="text-gray-600">入会からの経過:</span>
+                <span className="ml-2 font-medium">{report.current_level.months_since_enrollment}ヶ月</span>
+              </div>
+              <div>
+                <span className="text-gray-600">予定レベル:</span>
+                <span className="ml-2 font-medium">Level {report.current_level.expected_level}</span>
               </div>
             </div>
           </div>
@@ -234,7 +255,7 @@ export function MonthlyReportTemplate({ report, isPrintMode = false }: MonthlyRe
 
         {/* 進行中バッジ */}
         {report.badges.in_progress.length > 0 && (
-          <div>
+          <div className="mb-6">
             <h4 className="font-semibold mb-3 text-blue-600">チャレンジ中</h4>
             <div className="space-y-3">
               {report.badges.in_progress.map((badge, index) => (
@@ -244,7 +265,7 @@ export function MonthlyReportTemplate({ report, isPrintMode = false }: MonthlyRe
                     <div className="flex-grow">
                       <div className="font-medium">{badge.category}</div>
                       <div className="text-sm text-gray-600">
-                        {badge.current_count} / {badge.required_count}
+                        {badge.current_count} / {badge.required_count} ★★★
                       </div>
                     </div>
                     <div className="text-lg font-bold text-blue-600">
@@ -256,6 +277,32 @@ export function MonthlyReportTemplate({ report, isPrintMode = false }: MonthlyRe
                       className="bg-blue-500 h-2 rounded-full transition-all"
                       style={{ width: `${badge.progress_percentage}%` }}
                     ></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* 将来のバッジ候補 */}
+        {report.badges.potential && report.badges.potential.length > 0 && (
+          <div>
+            <h4 className="font-semibold mb-3 text-purple-600">新たなバッジ候補</h4>
+            <div className="space-y-2">
+              {report.badges.potential.map((badge, index) => (
+                <div key={index} className="p-3 bg-purple-50 rounded-lg border-2 border-dashed border-purple-200">
+                  <div className="flex items-center gap-3">
+                    <span className="text-lg opacity-60">{badge.icon}</span>
+                    <div className="flex-grow">
+                      <div className="font-medium text-purple-700">{badge.sport} - {badge.category}</div>
+                      <div className="text-sm text-purple-600">
+                        現在: {badge.current_count} / {badge.required_count} ★★★
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-sm font-bold text-purple-600">{badge.progress_percentage}%</div>
+                      <div className="text-xs text-purple-500">候補</div>
+                    </div>
                   </div>
                 </div>
               ))}
