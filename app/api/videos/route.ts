@@ -260,11 +260,19 @@ export async function POST(request: NextRequest) {
     const body = await request.json()
 
     // 動画データを作成
+    // blob URLやプレースホルダーの場合は、サンプルURLを設定
+    let videoUrl = body.url || body.file_url
+    if (!videoUrl || videoUrl.startsWith('blob:') || videoUrl === 'placeholder') {
+      // 実際のファイルアップロード機能が実装されるまでの仮URL
+      // 外部の動画URLを使用するか、プレースホルダーを設定
+      videoUrl = 'https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+    }
+
     const videoData = {
       title: body.title,
       description: body.description || null,
-      url: body.url || body.file_url,
-      thumbnail_url: body.thumbnail_url || null,
+      url: videoUrl,
+      thumbnail_url: body.thumbnail_url || 'https://via.placeholder.com/640x360?text=Video+Thumbnail',
       sport: body.sport,
       category: body.category,
       level: body.level,

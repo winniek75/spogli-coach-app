@@ -132,12 +132,18 @@ export default function VideoPlayPage() {
           <Card>
             <CardContent className="p-0">
               <div className="relative aspect-video bg-black rounded-t-lg overflow-hidden">
-                {videoError ? (
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center text-white">
-                      <AlertTriangle className="h-12 w-12 mx-auto mb-4" />
-                      <p className="text-lg">{videoError}</p>
-                      <p className="text-sm mt-2">動画ファイルのパスを確認してください</p>
+                {videoError || !video.url || video.url === 'placeholder' ? (
+                  <div className="absolute inset-0 flex items-center justify-center bg-gray-900">
+                    <div className="text-center text-white p-8">
+                      <Film className="h-16 w-16 mx-auto mb-4 text-gray-400" />
+                      <p className="text-xl font-semibold mb-2">動画ファイルが準備中です</p>
+                      <p className="text-sm text-gray-300">
+                        この動画はまだアップロードされていないか、処理中です。
+                      </p>
+                      <div className="mt-6 p-4 bg-gray-800 rounded-lg text-left">
+                        <p className="text-xs text-gray-400 mb-1">動画URL:</p>
+                        <p className="text-xs text-gray-300 break-all">{video.url || '未設定'}</p>
+                      </div>
                     </div>
                   </div>
                 ) : (
