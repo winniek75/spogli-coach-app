@@ -25,6 +25,7 @@ export function Sidebar({ isOpen, onClose, currentLocale = 'ja' }: SidebarProps)
     badges: tNav('badges'),
     notifications: tNav('notifications'),
     print: tNav('print'),
+    reports: tNav('reports'),
     settings: tNav('settings'),
     shifts: tSidebar('shifts'),
     lessonsSchedule: tSidebar('lessonsSchedule'),

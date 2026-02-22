@@ -15,6 +15,7 @@ import {
   UserCheck,
   Printer,
   Trophy,
+  FileText,
 } from 'lucide-react'
 
 interface SidebarProps {
@@ -31,6 +32,7 @@ interface SidebarProps {
     badges: string
     notifications: string
     print: string
+    reports: string
     settings: string
     shifts: string
     lessonsSchedule: string
@@ -109,6 +111,14 @@ export function SidebarClient({ isOpen, onClose, translations }: SidebarProps) {
       title: translations.notifications,
       icon: Bell,
       href: '/notifications',
+    },
+    {
+      title: translations.reports,
+      icon: FileText,
+      href: '/reports',
+      submenu: [
+        { title: '月次レポート', href: '/reports/monthly' },
+      ],
     },
     {
       title: translations.print,

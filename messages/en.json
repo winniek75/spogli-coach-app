@@ -109,7 +109,8 @@
     "schedule": "Schedule",
     "sports": "Sports",
     "notifications": "Notifications",
-    "print": "Print"
+    "print": "Print",
+    "reports": "Reports"
   },
   "sidebar": {
     "shifts": "Shift Management",
