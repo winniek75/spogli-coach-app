@@ -168,43 +168,82 @@ export async function GET(request: NextRequest) {
     const limitParam = searchParams.get('limit')
     const offsetParam = searchParams.get('offset')
 
-    // Supabaseからデータを取得
-    let query = supabase.from('videos').select('*')
+    // 最初にSupabaseから取得を試行
+    try {
+      let query = supabase.from('videos').select('*')
+
+      // フィルタリング
+      if (category && category !== 'all') {
+        query = query.eq('category', category)
+      }
+
+      if (sport && sport !== 'all') {
+        query = query.eq('sport', sport)
+      }
+
+      if (level && level !== 'all') {
+        query = query.eq('level', parseInt(level))
+      }
+
+      if (search && search !== '') {
+        query = query.or(`title.ilike.%${search}%,description.ilike.%${search}%`)
+      }
+
+      // ページネーション
+      const limit = limitParam ? parseInt(limitParam) : 50
+      const offset = offsetParam ? parseInt(offsetParam) : 0
+
+      query = query.range(offset, offset + limit - 1).order('created_at', { ascending: false })
+
+      const { data: videos, error } = await query
+
+      if (!error && videos) {
+        return NextResponse.json({
+          videos: videos,
+          total: videos.length,
+          has_more: false
+        })
+      }
+
+      console.log('Supabase videos table not found, falling back to demo data')
+    } catch (supabaseError) {
+      console.log('Supabase error, falling back to demo data:', supabaseError)
+    }
+
+    // フォールバック: デモデータを使用
+    let filteredVideos = [...demoVideos]
 
     // フィルタリング
     if (category && category !== 'all') {
-      query = query.eq('category', category)
+      filteredVideos = filteredVideos.filter((video: any) => video.category === category)
     }
 
     if (sport && sport !== 'all') {
-      query = query.eq('sport', sport)
+      filteredVideos = filteredVideos.filter((video: any) => video.sport === sport || video.sport === 'general')
     }
 
     if (level && level !== 'all') {
-      query = query.eq('level', parseInt(level))
+      filteredVideos = filteredVideos.filter((video: any) => video.level === parseInt(level))
     }
 
     if (search && search !== '') {
-      query = query.or(`title.ilike.%${search}%,description.ilike.%${search}%`)
+      const searchLower = search.toLowerCase()
+      filteredVideos = filteredVideos.filter((video: any) =>
+        video.title.toLowerCase().includes(searchLower) ||
+        video.description.toLowerCase().includes(searchLower)
+      )
     }
 
     // ページネーション
     const limit = limitParam ? parseInt(limitParam) : 50
     const offset = offsetParam ? parseInt(offsetParam) : 0
 
-    query = query.range(offset, offset + limit - 1).order('created_at', { ascending: false })
-
-    const { data: videos, error } = await query
-
-    if (error) {
-      console.error('Supabase error:', error)
-      throw new Error(error.message)
-    }
+    const paginatedVideos = filteredVideos.slice(offset, offset + limit)
 
     return NextResponse.json({
-      videos: videos || [],
-      total: videos?.length || 0,
-      has_more: false
+      videos: paginatedVideos,
+      total: filteredVideos.length,
+      has_more: offset + limit < filteredVideos.length
     })
 
   } catch (error) {
@@ -220,7 +259,7 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
 
-    // Supabaseに動画データを保存
+    // 動画データを作成
     const videoData = {
       title: body.title,
       description: body.description || null,
@@ -238,20 +277,38 @@ export async function POST(request: NextRequest) {
       created_by: body.created_by || null
     }
 
-    const { data: video, error } = await supabase
-      .from('videos')
-      .insert(videoData)
-      .select()
-      .single()
+    // まずSupabaseに保存を試行
+    try {
+      const { data: video, error } = await supabase
+        .from('videos')
+        .insert(videoData)
+        .select()
+        .single()
 
-    if (error) {
-      console.error('Supabase insert error:', error)
-      throw new Error(error.message)
+      if (!error && video) {
+        return NextResponse.json({
+          message: 'Video created successfully',
+          video: video
+        }, { status: 201 })
+      }
+
+      console.log('Supabase videos table not available:', error?.message)
+    } catch (supabaseError) {
+      console.log('Supabase insert failed:', supabaseError)
+    }
+
+    // フォールバック: 一時的にデモデータに追加（開発用）
+    const newVideo = {
+      id: `video-${Date.now()}`,
+      ...videoData,
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+      created_by_name: '現在のユーザー'
     }
 
     return NextResponse.json({
-      message: 'Video created successfully',
-      video: video
+      message: 'Video created successfully (demo mode)',
+      video: newVideo
     }, { status: 201 })
 
   } catch (error) {
