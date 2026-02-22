@@ -329,8 +329,8 @@ async function generateMonthlyReportData(data: {
 
   // レポート生成
   const report: MonthlyReport = {
-    id: existingReport?.id || `report-${studentId}-${year}-${month}`,
-    student_id: studentId,
+    id: existingReport?.id || `report-${student.id}-${year}-${month}`,
+    student_id: student.id,
     year,
     month,
     coach_note: existingReport?.coach_note || '',
