@@ -32,37 +32,7 @@ export function useVideos() {
       setLoading(true)
       setError(null)
 
-      // ローカルストレージモードの場合（常にtrue）
-      if (isLocalStorageMode()) {
-        // ローカルストレージから直接データを取得
-        const currentData = LocalStorageService.get<VideoWithDetails[]>(STORAGE_KEY) || []
-        let filteredData = [...currentData]
-
-        // フィルタリング
-        if (filters) {
-          if (filters.category && filters.category !== 'all') {
-            filteredData = filteredData.filter(video => video.category === filters.category)
-          }
-          if (filters.sport && filters.sport !== 'all') {
-            filteredData = filteredData.filter(video => video.sport === filters.sport)
-          }
-          if (filters.level) {
-            filteredData = filteredData.filter(video => video.level === filters.level)
-          }
-          if (filters.search && filters.search !== '') {
-            const searchTerm = filters.search.toLowerCase()
-            filteredData = filteredData.filter(video =>
-              video.title.toLowerCase().includes(searchTerm) ||
-              video.description?.toLowerCase().includes(searchTerm)
-            )
-          }
-        }
-
-        setVideos(filteredData)
-        setTotal(filteredData.length)
-        setLoading(false)
-        return
-      }
+      // Supabaseモードでは常にAPIエンドポイントを使用
 
       const params = new URLSearchParams()
       if (filters) {
@@ -83,13 +53,6 @@ export function useVideos() {
 
       setVideos(data.videos)
       setTotal(data.total)
-    } catch (err) {
-      // エラー時もローカルストレージから読み込み
-      console.warn('Error loading videos:', err)
-      const storedData = LocalStorageService.get<VideoWithDetails[]>(STORAGE_KEY) || []
-      setVideos(storedData)
-      setTotal(storedData.length)
-      setError(null)
     } finally {
       setLoading(false)
     }

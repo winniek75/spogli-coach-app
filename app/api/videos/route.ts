@@ -18,8 +18,9 @@ const demoVideos = [
     created_at: '2025-01-15T10:00:00Z',
     updated_at: '2025-01-15T10:00:00Z',
     created_by: 'coach-1',
-    created_by_name: { name: '山田太郎' },
-    video_stats: { view_count: 45, download_count: 12 }
+    created_by_name: '山田太郎',
+    view_count: 45,
+    download_count: 12
   },
   {
     id: 'video-2',
@@ -35,8 +36,9 @@ const demoVideos = [
     created_at: '2025-01-14T14:30:00Z',
     updated_at: '2025-01-14T14:30:00Z',
     created_by: 'coach-2',
-    created_by_name: { name: '佐藤花子' },
-    video_stats: { view_count: 32, download_count: 8 }
+    created_by_name: '佐藤花子',
+    view_count: 32,
+    download_count: 8
   },
   {
     id: 'video-3',
@@ -52,8 +54,9 @@ const demoVideos = [
     created_at: '2025-01-13T09:15:00Z',
     updated_at: '2025-01-13T09:15:00Z',
     created_by: 'coach-1',
-    created_by_name: { name: '山田太郎' },
-    video_stats: { view_count: 67, download_count: 18 }
+    created_by_name: '山田太郎',
+    view_count: 67,
+    download_count: 18
   },
   {
     id: 'video-4',
@@ -69,8 +72,9 @@ const demoVideos = [
     created_at: '2025-01-12T16:45:00Z',
     updated_at: '2025-01-12T16:45:00Z',
     created_by: 'coach-3',
-    created_by_name: { name: '田中一郎' },
-    video_stats: { view_count: 28, download_count: 5 }
+    created_by_name: '田中一郎',
+    view_count: 28,
+    download_count: 5
   },
   {
     id: 'video-5',
@@ -86,8 +90,9 @@ const demoVideos = [
     created_at: '2025-01-11T11:20:00Z',
     updated_at: '2025-01-11T11:20:00Z',
     created_by: 'coach-2',
-    created_by_name: { name: '佐藤花子' },
-    video_stats: { view_count: 53, download_count: 15 }
+    created_by_name: '佐藤花子',
+    view_count: 53,
+    download_count: 15
   },
   {
     id: 'video-6',
@@ -103,8 +108,9 @@ const demoVideos = [
     created_at: '2025-01-10T13:00:00Z',
     updated_at: '2025-01-10T13:00:00Z',
     created_by: 'coach-1',
-    created_by_name: { name: '山田太郎' },
-    video_stats: { view_count: 41, download_count: 11 }
+    created_by_name: '山田太郎',
+    view_count: 41,
+    download_count: 11
   },
   {
     id: 'video-7',
@@ -120,8 +126,9 @@ const demoVideos = [
     created_at: '2025-01-09T08:30:00Z',
     updated_at: '2025-01-09T08:30:00Z',
     created_by: 'coach-3',
-    created_by_name: { name: '田中一郎' },
-    video_stats: { view_count: 89, download_count: 25 }
+    created_by_name: '田中一郎',
+    view_count: 89,
+    download_count: 25
   },
   {
     id: 'video-8',
@@ -137,8 +144,9 @@ const demoVideos = [
     created_at: '2025-01-08T15:45:00Z',
     updated_at: '2025-01-08T15:45:00Z',
     created_by: 'coach-2',
-    created_by_name: { name: '佐藤花子' },
-    video_stats: { view_count: 76, download_count: 20 }
+    created_by_name: '佐藤花子',
+    view_count: 76,
+    download_count: 20
   }
 ]
 
@@ -208,8 +216,9 @@ export async function POST(request: NextRequest) {
       created_at: new Date().toISOString(),
       updated_at: new Date().toISOString(),
       created_by: 'current-user',
-      created_by_name: { name: '現在のユーザー' },
-      video_stats: { view_count: 0, download_count: 0 }
+      created_by_name: '現在のユーザー',
+      view_count: 0,
+      download_count: 0
     }
 
     return NextResponse.json({
