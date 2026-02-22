@@ -8,6 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter }
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import {
   Select,
   SelectContent,
@@ -16,7 +17,7 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import { Alert, AlertDescription } from '@/components/ui/alert'
-import { ArrowLeft, Upload, Film, Info } from 'lucide-react'
+import { ArrowLeft, Upload, Film, Info, Link as LinkIcon, HardDrive } from 'lucide-react'
 import Link from 'next/link'
 import { CONTENT_CATEGORIES } from '@/types/content'
 
@@ -29,6 +30,7 @@ export default function NewVideoPage() {
   const [isUploading, setIsUploading] = useState(false)
   const [uploadError, setUploadError] = useState<string | null>(null)
   const [uploadProgress, setUploadProgress] = useState(0)
+  const [uploadType, setUploadType] = useState<'file' | 'googledrive'>('googledrive')
 
   const [formData, setFormData] = useState({
     title: '',
@@ -40,7 +42,19 @@ export default function NewVideoPage() {
     file: null as File | null,
     thumbnail: null as File | null,
     tags: '',
+    googleDriveUrl: '',
   })
+
+  // Google Drive URLを埋め込み用に変換
+  const convertGoogleDriveUrl = (url: string): string => {
+    // https://drive.google.com/file/d/FILE_ID/view -> https://drive.google.com/file/d/FILE_ID/preview
+    const match = url.match(/\/d\/([a-zA-Z0-9-_]+)/)
+    if (match) {
+      const fileId = match[1]
+      return `https://drive.google.com/file/d/${fileId}/preview`
+    }
+    return url
+  }
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>, type: 'file' | 'thumbnail') => {
     const file = e.target.files?.[0]
@@ -53,8 +67,13 @@ export default function NewVideoPage() {
     e.preventDefault()
 
     // バリデーション
-    if (!formData.file) {
+    if (uploadType === 'file' && !formData.file) {
       setUploadError('動画ファイルを選択してください')
+      return
+    }
+
+    if (uploadType === 'googledrive' && !formData.googleDriveUrl) {
+      setUploadError('Google DriveのURLを入力してください')
       return
     }
 
@@ -80,16 +99,23 @@ export default function NewVideoPage() {
     try {
       // プログレスバーのシミュレーション
       const progressInterval = setInterval(() => {
-        setUploadProgress(prev => {
-          if (prev >= 90) {
-            clearInterval(progressInterval)
-            return 90
-          }
-          return prev + 10
-        })
-      }, 200)
+        setUploadProgress(prev => Math.min(prev + 10, 90))
+      }, 500)
 
-      // 実際のアップロード処理（デモモードではローカルストレージに保存）
+      // 動画URLを決定
+      let videoUrl = ''
+      let fileSize = 0
+
+      if (uploadType === 'googledrive') {
+        videoUrl = convertGoogleDriveUrl(formData.googleDriveUrl)
+        fileSize = 0 // Google Driveの場合はサイズ不明
+      } else if (formData.file) {
+        // 通常のファイルアップロード（現在は仮URL）
+        videoUrl = URL.createObjectURL(formData.file)
+        fileSize = formData.file.size
+      }
+
+      // API呼び出し
       await uploadVideo({
         title: formData.title,
         description: formData.description,
@@ -97,8 +123,8 @@ export default function NewVideoPage() {
         category: formData.category,
         level: parseInt(formData.level),
         duration_minutes: parseInt(formData.duration_minutes) || 0,
-        file_size: formData.file.size,
-        file_url: URL.createObjectURL(formData.file),
+        file_size: fileSize,
+        file_url: videoUrl,
         thumbnail_url: formData.thumbnail ? URL.createObjectURL(formData.thumbnail) : undefined,
         tags: formData.tags.split(',').map(tag => tag.trim()).filter(Boolean),
       })
@@ -130,21 +156,15 @@ export default function NewVideoPage() {
           </Button>
         </Link>
         <div>
-          <h1 className="text-3xl font-bold tracking-tight">動画をアップロード</h1>
+          <h1 className="text-3xl font-bold tracking-tight">動画を追加</h1>
           <p className="text-muted-foreground mt-2">
-            新しい指導動画をライブラリに追加します
+            レッスン動画をアップロードまたはGoogle Driveから連携
           </p>
         </div>
       </div>
 
-      {uploadError && (
-        <Alert variant="destructive">
-          <AlertDescription>{uploadError}</AlertDescription>
-        </Alert>
-      )}
-
       <form onSubmit={handleSubmit}>
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 lg:grid-cols-2">
           {/* 基本情報 */}
           <Card>
             <CardHeader>
@@ -204,9 +224,9 @@ export default function NewVideoPage() {
                       <SelectValue placeholder="選択" />
                     </SelectTrigger>
                     <SelectContent>
-                      {Object.entries(CONTENT_CATEGORIES).map(([key, label]) => (
+                      {Object.entries(CONTENT_CATEGORIES).map(([key, value]) => (
                         <SelectItem key={key} value={key}>
-                          {label}
+                          {value}
                         </SelectItem>
                       ))}
                     </SelectContent>
@@ -225,11 +245,12 @@ export default function NewVideoPage() {
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="1">レベル 1</SelectItem>
-                      <SelectItem value="2">レベル 2</SelectItem>
-                      <SelectItem value="3">レベル 3</SelectItem>
-                      <SelectItem value="4">レベル 4</SelectItem>
-                      <SelectItem value="5">レベル 5</SelectItem>
+                      <SelectItem value="1">Lv1: Rookie</SelectItem>
+                      <SelectItem value="2">Lv2: Challenger</SelectItem>
+                      <SelectItem value="3">Lv3: Adventurer</SelectItem>
+                      <SelectItem value="4">Lv4: Explorer</SelectItem>
+                      <SelectItem value="5">Lv5: Champion</SelectItem>
+                      <SelectItem value="6">Lv6: Master</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -242,7 +263,6 @@ export default function NewVideoPage() {
                     value={formData.duration_minutes}
                     onChange={(e) => setFormData(prev => ({ ...prev, duration_minutes: e.target.value }))}
                     placeholder="例: 15"
-                    min="1"
                   />
                 </div>
               </div>
@@ -259,124 +279,144 @@ export default function NewVideoPage() {
             </CardContent>
           </Card>
 
-          {/* ファイルアップロード */}
+          {/* 動画ソース選択 */}
           <Card>
             <CardHeader>
-              <CardTitle>ファイル</CardTitle>
-              <CardDescription>動画ファイルとサムネイル画像をアップロード</CardDescription>
+              <CardTitle>動画ソース</CardTitle>
+              <CardDescription>動画のアップロード方法を選択してください</CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="space-y-2">
-                <Label htmlFor="video-file">動画ファイル *</Label>
-                <div className="border-2 border-dashed rounded-lg p-6 text-center hover:border-primary/50 transition-colors">
-                  <Film className="h-10 w-10 mx-auto mb-2 text-muted-foreground" />
-                  <input
-                    id="video-file"
-                    type="file"
-                    accept="video/*"
-                    onChange={(e) => handleFileChange(e, 'file')}
-                    className="hidden"
-                  />
-                  <Label
-                    htmlFor="video-file"
-                    className="cursor-pointer text-sm text-muted-foreground hover:text-foreground"
-                  >
-                    {formData.file ? (
-                      <div>
-                        <p className="font-medium text-foreground">{formData.file.name}</p>
-                        <p className="text-xs mt-1">
-                          {(formData.file.size / 1024 / 1024).toFixed(2)} MB
-                        </p>
-                      </div>
-                    ) : (
-                      <>
-                        クリックして動画を選択
-                        <br />
-                        <span className="text-xs">MP4, MOV, AVI (最大 500MB)</span>
-                      </>
-                    )}
-                  </Label>
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="thumbnail">サムネイル画像</Label>
-                <div className="border-2 border-dashed rounded-lg p-6 text-center hover:border-primary/50 transition-colors">
-                  <Upload className="h-10 w-10 mx-auto mb-2 text-muted-foreground" />
-                  <input
-                    id="thumbnail"
-                    type="file"
-                    accept="image/*"
-                    onChange={(e) => handleFileChange(e, 'thumbnail')}
-                    className="hidden"
-                  />
-                  <Label
-                    htmlFor="thumbnail"
-                    className="cursor-pointer text-sm text-muted-foreground hover:text-foreground"
-                  >
-                    {formData.thumbnail ? (
-                      <div>
-                        <p className="font-medium text-foreground">{formData.thumbnail.name}</p>
-                        <p className="text-xs mt-1">
-                          {(formData.thumbnail.size / 1024).toFixed(0)} KB
-                        </p>
-                      </div>
-                    ) : (
-                      <>
-                        クリックして画像を選択
-                        <br />
-                        <span className="text-xs">JPG, PNG (推奨: 1280x720)</span>
-                      </>
-                    )}
-                  </Label>
-                </div>
-              </div>
-
-              {isUploading && (
-                <div className="space-y-2">
-                  <div className="flex justify-between text-sm">
-                    <span>アップロード中...</span>
-                    <span>{uploadProgress}%</span>
-                  </div>
-                  <div className="h-2 bg-muted rounded-full overflow-hidden">
-                    <div
-                      className="h-full bg-primary transition-all duration-300"
-                      style={{ width: `${uploadProgress}%` }}
-                    />
-                  </div>
-                </div>
-              )}
-
-              <Alert>
-                <Info className="h-4 w-4" />
-                <AlertDescription>
-                  動画は圧縮され、最適化された形式で保存されます。
-                  大きなファイルの場合、アップロードに時間がかかることがあります。
-                </AlertDescription>
-              </Alert>
-            </CardContent>
-
-            <CardFooter className="flex justify-end gap-4">
-              <Link href={`/${locale}/content/videos`}>
-                <Button variant="outline" type="button">
-                  キャンセル
-                </Button>
-              </Link>
-              <Button type="submit" disabled={isUploading}>
-                {isUploading ? (
-                  <>
-                    <Upload className="h-4 w-4 mr-2 animate-pulse" />
-                    アップロード中...
-                  </>
-                ) : (
-                  <>
+            <CardContent>
+              <Tabs value={uploadType} onValueChange={(v) => setUploadType(v as 'file' | 'googledrive')}>
+                <TabsList className="grid w-full grid-cols-2">
+                  <TabsTrigger value="googledrive">
+                    <HardDrive className="h-4 w-4 mr-2" />
+                    Google Drive
+                  </TabsTrigger>
+                  <TabsTrigger value="file">
                     <Upload className="h-4 w-4 mr-2" />
-                    アップロード
-                  </>
-                )}
-              </Button>
-            </CardFooter>
+                    ファイルアップロード
+                  </TabsTrigger>
+                </TabsList>
+
+                <TabsContent value="googledrive" className="space-y-4">
+                  <Alert>
+                    <Info className="h-4 w-4" />
+                    <AlertDescription>
+                      Google Driveの動画を使用する場合：
+                      <ol className="list-decimal list-inside mt-2 space-y-1">
+                        <li>Google Driveで動画を右クリック → 「共有」</li>
+                        <li>「リンクを取得」→「制限付き」を「リンクを知っている全員」に変更</li>
+                        <li>リンクをコピーして下記に貼り付け</li>
+                      </ol>
+                    </AlertDescription>
+                  </Alert>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="googleDriveUrl">Google Drive URL *</Label>
+                    <div className="flex gap-2">
+                      <LinkIcon className="h-4 w-4 mt-3 text-muted-foreground" />
+                      <Input
+                        id="googleDriveUrl"
+                        type="url"
+                        value={formData.googleDriveUrl}
+                        onChange={(e) => setFormData(prev => ({ ...prev, googleDriveUrl: e.target.value }))}
+                        placeholder="https://drive.google.com/file/d/.../view"
+                        className="flex-1"
+                      />
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      共有リンクを貼り付けてください。自動的に埋め込み用に変換されます。
+                    </p>
+                  </div>
+                </TabsContent>
+
+                <TabsContent value="file" className="space-y-4">
+                  <Alert>
+                    <Info className="h-4 w-4" />
+                    <AlertDescription>
+                      現在、ファイルアップロードは開発中です。Google Driveをご利用ください。
+                    </AlertDescription>
+                  </Alert>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="video-file">動画ファイル *</Label>
+                    <Input
+                      id="video-file"
+                      type="file"
+                      accept="video/mp4,video/quicktime,video/webm"
+                      onChange={(e) => handleFileChange(e, 'file')}
+                      disabled
+                    />
+                    <p className="text-sm text-muted-foreground">
+                      MP4, MOV, WebM形式に対応（最大500MB）
+                    </p>
+                  </div>
+                </TabsContent>
+              </Tabs>
+
+              <div className="mt-4 space-y-2">
+                <Label htmlFor="thumbnail">サムネイル（オプション）</Label>
+                <Input
+                  id="thumbnail"
+                  type="file"
+                  accept="image/jpeg,image/png,image/webp"
+                  onChange={(e) => handleFileChange(e, 'thumbnail')}
+                />
+                <p className="text-sm text-muted-foreground">
+                  JPEG, PNG, WebP形式に対応
+                </p>
+              </div>
+            </CardContent>
           </Card>
+        </div>
+
+        {/* エラー表示 */}
+        {uploadError && (
+          <Alert variant="destructive" className="mt-4">
+            <AlertDescription>{uploadError}</AlertDescription>
+          </Alert>
+        )}
+
+        {/* アップロードプログレス */}
+        {isUploading && (
+          <Card className="mt-4">
+            <CardContent className="pt-6">
+              <div className="space-y-2">
+                <div className="flex justify-between text-sm">
+                  <span>アップロード中...</span>
+                  <span>{uploadProgress}%</span>
+                </div>
+                <div className="w-full bg-secondary rounded-full h-2">
+                  <div
+                    className="bg-primary h-2 rounded-full transition-all duration-500"
+                    style={{ width: `${uploadProgress}%` }}
+                  />
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        )}
+
+        {/* 送信ボタン */}
+        <div className="flex justify-end gap-4 mt-6">
+          <Link href={`/${locale}/content/videos`}>
+            <Button type="button" variant="outline">
+              キャンセル
+            </Button>
+          </Link>
+          <Button type="submit" disabled={isUploading}>
+            {isUploading ? (
+              <>
+                <Film className="h-4 w-4 mr-2 animate-spin" />
+                アップロード中...
+              </>
+            ) : (
+              <>
+                <Upload className="h-4 w-4 mr-2" />
+                動画を追加
+              </>
+            )}
+          </Button>
         </div>
       </form>
     </div>

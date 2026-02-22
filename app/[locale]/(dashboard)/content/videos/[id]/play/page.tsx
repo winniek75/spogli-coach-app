@@ -146,7 +146,17 @@ export default function VideoPlayPage() {
                       </div>
                     </div>
                   </div>
+                ) : video.url.includes('drive.google.com') ? (
+                  // Google Drive埋め込み
+                  <iframe
+                    src={video.url}
+                    className="w-full h-full"
+                    frameBorder="0"
+                    allowFullScreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  />
                 ) : (
+                  // 通常の動画プレーヤー
                   <video
                     src={video.url}
                     poster={video.thumbnail_url}
