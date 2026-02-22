@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
+import { useParams } from 'next/navigation'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
@@ -63,6 +64,7 @@ const WEEK_COLORS: Record<WeekType, string> = {
 
 export default function LessonMenusPage() {
   const t = useTranslations('schedule.lessonMenus')
+  const params = useParams()
   const { groupedMenus, loading, error, fetchLessonMenus } = useLessonMenus()
 
   // フィルター状態
@@ -173,7 +175,7 @@ export default function LessonMenusPage() {
             {t('subtitle')}
           </p>
         </div>
-        <Link href="/lessons/menus/create">
+        <Link href={`/${params?.locale || 'ja'}/lessons/menus/new`}>
           <Button>
             <Plus className="mr-2 h-4 w-4" />
             {t('createNewMenu')}
@@ -242,7 +244,7 @@ export default function LessonMenusPage() {
             <p className="text-muted-foreground text-center mb-6">
               {t('changeConditionsOrCreate')}
             </p>
-            <Link href="/lessons/menus/create">
+            <Link href={`/${params?.locale || 'ja'}/lessons/menus/new`}>
               <Button>
                 <Plus className="mr-2 h-4 w-4" />
                 {t('createNewMenu')}
