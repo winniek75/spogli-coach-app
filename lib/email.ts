@@ -50,7 +50,7 @@ export async function sendEmail({
     })
 
     console.log('Email sent successfully:', data)
-    return { success: true, messageId: data.id }
+    return { success: true, messageId: (data as any)?.id || 'email-sent' }
   } catch (error) {
     console.error('Failed to send email:', error)
     throw new Error(error instanceof Error ? error.message : 'メール送信に失敗しました')

@@ -80,7 +80,7 @@ export async function sendLineRichNotification({ userId, notification }: LineMes
       type: 'flex',
       altText: notification.title,
       contents: flexMessage,
-    })
+    } as any)
 
     console.log(`LINE flex notification sent to ${userId}`)
     return { success: true }

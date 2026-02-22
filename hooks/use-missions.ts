@@ -125,8 +125,8 @@ export function useMissions() {
           target_description: item.target_description,
           success_criteria: item.success_criteria,
           order_index: item.order_index || index,
-          completed_at: null,
-          completion_notes: null,
+          completed_at: undefined,
+          completion_notes: undefined,
           created_at: new Date().toISOString(),
           updated_at: new Date().toISOString()
         })) || []

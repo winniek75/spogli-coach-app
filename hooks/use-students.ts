@@ -67,7 +67,7 @@ export function useStudents() {
             filteredData = filteredData.filter(student => student.status === filters.status)
           }
           if (filters.level) {
-            filteredData = filteredData.filter(student => student.level === parseInt(filters.level))
+            filteredData = filteredData.filter(student => student.level === parseInt(filters.level!))
           }
         }
 
@@ -113,10 +113,12 @@ export function useStudents() {
         const newStudent: StudentWithDetails = {
           ...studentData,
           id: `student-${Date.now()}`,
+          level: studentData.level || 1,
+          status: 'active',
           created_at: new Date().toISOString(),
           updated_at: new Date().toISOString(),
           age: calculateAge(studentData.birth_date),
-          level_title: getLevelTitle(studentData.level),
+          level_title: getLevelTitle(studentData.level || 1),
           latest_evaluations: [],
           badges: [],
           attendance_rate: 0

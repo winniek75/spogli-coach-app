@@ -104,7 +104,6 @@ export function useVideos() {
         const newVideo: VideoWithDetails = {
           ...videoData,
           id: `video-${Date.now()}`,
-          file_url: '',
           file_size: 0,
           is_downloadable: true,
           view_count: 0,
@@ -112,7 +111,7 @@ export function useVideos() {
           created_by: 'user',
           created_at: new Date().toISOString(),
           updated_at: new Date().toISOString(),
-          created_by_name: { name: 'ユーザー' }
+          created_by_name: 'ユーザー'
         }
 
         const updatedData = [...storedData, newVideo]
@@ -230,13 +229,14 @@ export function useVideos() {
       const newVideo: VideoWithDetails = {
         ...videoData,
         id: `video-${Date.now()}`,
+        url: videoData.file_url || '',
         is_downloadable: true,
         view_count: 0,
         download_count: 0,
         created_by: 'user',
         created_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
-        created_by_name: { name: 'ユーザー' }
+        created_by_name: 'ユーザー'
       }
 
       const updatedData = [...storedData, newVideo]

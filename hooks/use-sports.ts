@@ -318,13 +318,19 @@ export function useSportGoals(sportId?: string) {
 
   const createGoal = async (goalData: CreateSportGoalRequest) => {
     if (isLocalStorageMode()) {
+      const goalId = `goal-${Date.now()}`
       const newGoal: SportGoal = {
-        id: `goal-${Date.now()}`,
+        id: goalId,
         ...goalData,
         coach_id: 'coach-1',
         status: 'not_started',
         start_date: new Date().toISOString(),
         is_public: goalData.is_public ?? false,
+        milestones: goalData.milestones?.map((milestone, index) => ({
+          id: `milestone-${Date.now()}-${index}`,
+          goal_id: goalId,
+          ...milestone,
+        })),
         created_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
       }
@@ -357,7 +363,16 @@ export function useSportGoals(sportId?: string) {
   const updateGoal = async (goalId: string, sportId: string, goalData: UpdateSportGoalRequest) => {
     if (isLocalStorageMode()) {
       setGoals(prev => prev.map(g =>
-        g.id === goalId ? { ...g, ...goalData, updated_at: new Date().toISOString() } : g
+        g.id === goalId ? {
+          ...g,
+          ...goalData,
+          milestones: goalData.milestones?.map((milestone, index) => ({
+            id: `milestone-${Date.now()}-${index}`,
+            goal_id: goalId,
+            ...milestone,
+          })) || g.milestones,
+          updated_at: new Date().toISOString()
+        } : g
       ))
       return goals.find(g => g.id === goalId)
     }

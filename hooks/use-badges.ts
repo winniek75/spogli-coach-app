@@ -88,8 +88,8 @@ export function useBadges() {
       const newBadge: BadgeWithStudent = {
         id: `badge-${Date.now()}`,
         ...badgeData,
-        awarded_date: null,
-        awarded_by: null,
+        earned_date: badgeData.earned_date || new Date().toISOString(),
+        awarded_date: undefined,
         ceremony_completed: false,
         created_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
@@ -132,7 +132,6 @@ export function useBadges() {
           ? {
               ...badge,
               awarded_date: awardData.awarded_date,
-              awarded_by: awardData.awarded_by || 'コーチ',
               ceremony_completed: awardData.ceremony_completed || false,
               updated_at: new Date().toISOString(),
             }

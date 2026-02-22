@@ -206,14 +206,14 @@ export function usePDFMaterials() {
       const newMaterial: PDFMaterialWithDetails = {
         ...materialData,
         id: `pdf-${Date.now()}`,
-        page_count: 0, // PDFの場合、実際のページ数を取得する必要がある
+        url: materialData.file_url || '',
         is_downloadable: true,
         view_count: 0,
         download_count: 0,
         created_by: 'user',
         created_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
-        created_by_name: { name: 'ユーザー' }
+        created_by_name: 'ユーザー'
       }
 
       const updatedData = [...storedData, newMaterial]

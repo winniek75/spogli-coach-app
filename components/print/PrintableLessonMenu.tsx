@@ -117,7 +117,7 @@ export default function PrintableLessonMenu({
                 <div key={activity.id} className="lesson-menu-activity">
                   <div className="flex items-start justify-between mb-2">
                     <h4 className="font-semibold">
-                      {index + 1}. {activity.title}
+                      {index + 1}. {activity.name}
                     </h4>
                     <div className="flex items-center gap-4 text-sm text-gray-600">
                       <span>{activity.duration_minutes}分</span>
@@ -129,19 +129,12 @@ export default function PrintableLessonMenu({
                     <p className="text-gray-700 mb-2">{activity.description}</p>
                   )}
 
-                  {activity.instructions && (
+                  {activity.instructions && activity.instructions.length > 0 && (
                     <div className="mb-2">
                       <h5 className="font-medium text-sm mb-1">実施方法:</h5>
-                      <p className="text-sm text-gray-600">{activity.instructions}</p>
-                    </div>
-                  )}
-
-                  {activity.coaching_points && activity.coaching_points.length > 0 && (
-                    <div className="mb-2">
-                      <h5 className="font-medium text-sm mb-1">コーチングポイント:</h5>
                       <ul className="text-sm text-gray-600 list-disc list-inside">
-                        {activity.coaching_points.map((point, idx) => (
-                          <li key={idx}>{point}</li>
+                        {activity.instructions.map((instruction, idx) => (
+                          <li key={idx}>{instruction}</li>
                         ))}
                       </ul>
                     </div>
@@ -171,11 +164,11 @@ export default function PrintableLessonMenu({
         )}
 
         {/* 必要な器具 */}
-        {showEquipment && lessonMenu.equipment_needed && lessonMenu.equipment_needed.length > 0 && (
+        {showEquipment && lessonMenu.equipment && lessonMenu.equipment.length > 0 && (
           <div className="lesson-menu-section">
             <h3 className="text-lg font-semibold mb-3">必要な器具・設備</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-              {lessonMenu.equipment_needed.map((equipment, index) => (
+              {lessonMenu.equipment.map((equipment, index) => (
                 <div key={index} className="flex items-center gap-2 text-sm">
                   <span className="w-2 h-2 bg-gray-400 rounded-full"></span>
                   {equipment}

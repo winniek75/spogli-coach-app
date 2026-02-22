@@ -14,8 +14,8 @@ export async function createAutoNotification(
     }
 
     // テンプレートの変数を置換
-    let title = template.title
-    let message = template.message
+    let title: any = template.title
+    let message: any = template.message
 
     Object.entries(data).forEach(([key, value]) => {
       const placeholder = `{${key}}`
