@@ -60,29 +60,6 @@ export function useVideos() {
 
   const createVideo = async (videoData: CreateVideoRequest) => {
     try {
-      // ローカルストレージモードの場合
-      if (isLocalStorageMode()) {
-        const storedData = LocalStorageService.get<VideoWithDetails[]>(STORAGE_KEY) || []
-
-        const newVideo: VideoWithDetails = {
-          ...videoData,
-          id: `video-${Date.now()}`,
-          file_size: 0,
-          is_downloadable: true,
-          view_count: 0,
-          download_count: 0,
-          created_by: 'user',
-          created_at: new Date().toISOString(),
-          updated_at: new Date().toISOString(),
-          created_by_name: 'ユーザー'
-        }
-
-        const updatedData = [...storedData, newVideo]
-        LocalStorageService.set(STORAGE_KEY, updatedData)
-        await fetchVideos() // リフレッシュ
-        return newVideo
-      }
-
       const response = await fetch('/api/videos', {
         method: 'POST',
         headers: {
@@ -184,38 +161,19 @@ export function useVideos() {
     thumbnail_url?: string
     tags?: string[]
   }) => {
-    try {
-      // 常にローカルストレージモードを使用（Supabase未設定のため）
-      const storedData = LocalStorageService.get<VideoWithDetails[]>(STORAGE_KEY) || []
-      console.log('Current videos in storage:', storedData.length)
-
-      const newVideo: VideoWithDetails = {
-        ...videoData,
-        id: `video-${Date.now()}`,
-        url: videoData.file_url || '',
-        is_downloadable: true,
-        view_count: 0,
-        download_count: 0,
-        created_by: 'user',
-        created_at: new Date().toISOString(),
-        updated_at: new Date().toISOString(),
-        created_by_name: 'ユーザー'
-      }
-
-      const updatedData = [...storedData, newVideo]
-      LocalStorageService.set(STORAGE_KEY, updatedData)
-      console.log('Videos after upload:', updatedData.length)
-
-      // 確認のため、保存されたデータを読み込み
-      const savedData = LocalStorageService.get<VideoWithDetails[]>(STORAGE_KEY)
-      console.log('Verified saved videos:', savedData?.length)
-
-      await fetchVideos() // リフレッシュ
-      return newVideo
-    } catch (err) {
-      console.error('Upload error:', err)
-      throw new Error(err instanceof Error ? err.message : '動画のアップロードに失敗しました')
-    }
+    return createVideo({
+      title: videoData.title,
+      description: videoData.description,
+      url: videoData.file_url,
+      thumbnail_url: videoData.thumbnail_url,
+      duration: videoData.duration_minutes * 60, // 分から秒に変換
+      file_size: videoData.file_size,
+      category: videoData.category,
+      tags: videoData.tags,
+      level: videoData.level,
+      sport: videoData.sport,
+      is_downloadable: true
+    })
   }
 
   useEffect(() => {

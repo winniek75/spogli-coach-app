@@ -1,8 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { createClient } from '@supabase/supabase-js'
 
 export const dynamic = 'force-dynamic'
 
-// デモ動画データ
+// Supabase client
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+)
+
+// デモ動画データ（開発用フォールバック）
 const demoVideos = [
   {
     id: 'video-1',
@@ -161,39 +168,43 @@ export async function GET(request: NextRequest) {
     const limitParam = searchParams.get('limit')
     const offsetParam = searchParams.get('offset')
 
-    let filteredVideos = [...demoVideos]
+    // Supabaseからデータを取得
+    let query = supabase.from('videos').select('*')
 
     // フィルタリング
     if (category && category !== 'all') {
-      filteredVideos = filteredVideos.filter((video: any) => video.category === category)
+      query = query.eq('category', category)
     }
 
     if (sport && sport !== 'all') {
-      filteredVideos = filteredVideos.filter((video: any) => video.sport === sport || video.sport === 'general')
+      query = query.eq('sport', sport)
     }
 
     if (level && level !== 'all') {
-      filteredVideos = filteredVideos.filter((video: any) => video.level === parseInt(level))
+      query = query.eq('level', parseInt(level))
     }
 
-    if (search && search !== 'all') {
-      const searchLower = search.toLowerCase()
-      filteredVideos = filteredVideos.filter((video: any) =>
-        video.title.toLowerCase().includes(searchLower) ||
-        video.description.toLowerCase().includes(searchLower)
-      )
+    if (search && search !== '') {
+      query = query.or(`title.ilike.%${search}%,description.ilike.%${search}%`)
     }
 
     // ページネーション
     const limit = limitParam ? parseInt(limitParam) : 50
     const offset = offsetParam ? parseInt(offsetParam) : 0
 
-    const paginatedVideos = filteredVideos.slice(offset, offset + limit)
+    query = query.range(offset, offset + limit - 1).order('created_at', { ascending: false })
+
+    const { data: videos, error } = await query
+
+    if (error) {
+      console.error('Supabase error:', error)
+      throw new Error(error.message)
+    }
 
     return NextResponse.json({
-      videos: paginatedVideos,
-      total: filteredVideos.length,
-      has_more: offset + limit < filteredVideos.length
+      videos: videos || [],
+      total: videos?.length || 0,
+      has_more: false
     })
 
   } catch (error) {
@@ -209,22 +220,39 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
 
-    // 新しい動画データを作成（実際の実装ではSupabaseに保存）
-    const newVideo = {
-      id: `video-${Date.now()}`,
-      ...body,
-      created_at: new Date().toISOString(),
-      updated_at: new Date().toISOString(),
-      created_by: 'current-user',
-      created_by_name: '現在のユーザー',
+    // Supabaseに動画データを保存
+    const videoData = {
+      title: body.title,
+      description: body.description || null,
+      url: body.url || body.file_url,
+      thumbnail_url: body.thumbnail_url || null,
+      sport: body.sport,
+      category: body.category,
+      level: body.level,
+      duration_minutes: body.duration_minutes || null,
+      file_size: body.file_size || null,
+      tags: body.tags || null,
+      is_downloadable: body.is_downloadable !== false,
       view_count: 0,
-      download_count: 0
+      download_count: 0,
+      created_by: body.created_by || null
+    }
+
+    const { data: video, error } = await supabase
+      .from('videos')
+      .insert(videoData)
+      .select()
+      .single()
+
+    if (error) {
+      console.error('Supabase insert error:', error)
+      throw new Error(error.message)
     }
 
     return NextResponse.json({
       message: 'Video created successfully',
-      video: newVideo
-    })
+      video: video
+    }, { status: 201 })
 
   } catch (error) {
     console.error('Error creating video:', error)
