@@ -41,6 +41,7 @@ export interface CreateStudentRequest {
   emergency_contact?: string
   medical_notes?: string
   notes?: string
+  photo_url?: string
 }
 
 export interface UpdateStudentRequest extends Partial<CreateStudentRequest> {
