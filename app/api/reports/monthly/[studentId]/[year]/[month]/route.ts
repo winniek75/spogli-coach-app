@@ -277,7 +277,16 @@ async function generateMonthlyReportData(data: {
   })
 
   // 将来のバッジ候補を生成（evaluationsから推測）
-  const potentialBadges = []
+  const potentialBadges: Array<{
+    sport: string
+    category: string
+    badge_type: 'star' | 'shield' | 'crown'
+    current_count: number
+    required_count: number
+    progress_percentage: number
+    icon: string
+    is_potential?: boolean
+  }> = []
   const existingBadgeKeys = new Set(badges.map(b => `${b.sport}-${b.category}`))
 
   // evaluationsから新しいバッジ候補を発見
