@@ -17,9 +17,10 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import { Alert, AlertDescription } from '@/components/ui/alert'
-import { ArrowLeft, Upload, Film, Info, Link as LinkIcon, HardDrive } from 'lucide-react'
+import { ArrowLeft, Upload, Film, Info, Link as LinkIcon, HardDrive, Image } from 'lucide-react'
 import Link from 'next/link'
 import { CONTENT_CATEGORIES } from '@/types/content'
+import { convertGoogleDriveVideoUrl, convertGoogleDriveImageUrl, isGoogleDriveUrl } from '@/lib/google-drive-utils'
 
 export default function NewVideoPage() {
   const router = useRouter()
@@ -43,18 +44,10 @@ export default function NewVideoPage() {
     thumbnail: null as File | null,
     tags: '',
     googleDriveUrl: '',
+    thumbnailGoogleDriveUrl: '', // Google DriveサムネイルURL
   })
 
-  // Google Drive URLを埋め込み用に変換
-  const convertGoogleDriveUrl = (url: string): string => {
-    // https://drive.google.com/file/d/FILE_ID/view -> https://drive.google.com/file/d/FILE_ID/preview
-    const match = url.match(/\/d\/([a-zA-Z0-9-_]+)/)
-    if (match) {
-      const fileId = match[1]
-      return `https://drive.google.com/file/d/${fileId}/preview`
-    }
-    return url
-  }
+  // 削除：ユーティリティ関数を使用
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>, type: 'file' | 'thumbnail') => {
     const file = e.target.files?.[0]
@@ -107,12 +100,20 @@ export default function NewVideoPage() {
       let fileSize = 0
 
       if (uploadType === 'googledrive') {
-        videoUrl = convertGoogleDriveUrl(formData.googleDriveUrl)
+        videoUrl = convertGoogleDriveVideoUrl(formData.googleDriveUrl)
         fileSize = 0 // Google Driveの場合はサイズ不明
       } else if (formData.file) {
         // 通常のファイルアップロード（現在は仮URL）
         videoUrl = URL.createObjectURL(formData.file)
         fileSize = formData.file.size
+      }
+
+      // サムネイルURLを決定
+      let thumbnailUrl = ''
+      if (formData.thumbnailGoogleDriveUrl) {
+        thumbnailUrl = convertGoogleDriveImageUrl(formData.thumbnailGoogleDriveUrl, 'm')
+      } else if (formData.thumbnail) {
+        thumbnailUrl = URL.createObjectURL(formData.thumbnail)
       }
 
       // API呼び出し
@@ -125,7 +126,7 @@ export default function NewVideoPage() {
         duration_minutes: parseInt(formData.duration_minutes) || 0,
         file_size: fileSize,
         file_url: videoUrl,
-        thumbnail_url: formData.thumbnail ? URL.createObjectURL(formData.thumbnail) : undefined,
+        thumbnail_url: thumbnailUrl || undefined,
         tags: formData.tags.split(',').map(tag => tag.trim()).filter(Boolean),
       })
 
@@ -354,17 +355,49 @@ export default function NewVideoPage() {
                 </TabsContent>
               </Tabs>
 
-              <div className="mt-4 space-y-2">
-                <Label htmlFor="thumbnail">サムネイル（オプション）</Label>
-                <Input
-                  id="thumbnail"
-                  type="file"
-                  accept="image/jpeg,image/png,image/webp"
-                  onChange={(e) => handleFileChange(e, 'thumbnail')}
-                />
-                <p className="text-sm text-muted-foreground">
-                  JPEG, PNG, WebP形式に対応
-                </p>
+              {/* サムネイル設定 */}
+              <div className="mt-4 space-y-4">
+                <Label>サムネイル（オプション）</Label>
+                <Tabs defaultValue="googledrive" className="w-full">
+                  <TabsList className="grid w-full grid-cols-2">
+                    <TabsTrigger value="googledrive">
+                      <Image className="h-4 w-4 mr-2" />
+                      Google Drive
+                    </TabsTrigger>
+                    <TabsTrigger value="file">
+                      <Upload className="h-4 w-4 mr-2" />
+                      ファイル
+                    </TabsTrigger>
+                  </TabsList>
+
+                  <TabsContent value="googledrive" className="space-y-2">
+                    <div className="flex gap-2">
+                      <LinkIcon className="h-4 w-4 mt-3 text-muted-foreground" />
+                      <Input
+                        type="url"
+                        value={formData.thumbnailGoogleDriveUrl}
+                        onChange={(e) => setFormData(prev => ({ ...prev, thumbnailGoogleDriveUrl: e.target.value }))}
+                        placeholder="Google Driveの画像URL"
+                        className="flex-1"
+                      />
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      Google Driveの画像共有リンクを貼り付けてください
+                    </p>
+                  </TabsContent>
+
+                  <TabsContent value="file" className="space-y-2">
+                    <Input
+                      type="file"
+                      accept="image/jpeg,image/png,image/webp"
+                      onChange={(e) => handleFileChange(e, 'thumbnail')}
+                      disabled
+                    />
+                    <p className="text-sm text-muted-foreground">
+                      現在はGoogle Driveをご利用ください
+                    </p>
+                  </TabsContent>
+                </Tabs>
               </div>
             </CardContent>
           </Card>

@@ -256,13 +256,36 @@ export default function EditStudentPage() {
                   </Select>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="photo_url">プロフィール画像URL</Label>
-                  <Input
-                    id="photo_url"
-                    value={formData.photo_url}
-                    onChange={(e) => setFormData(prev => ({ ...prev, photo_url: e.target.value }))}
-                    placeholder="https://example.com/photo.jpg"
-                  />
+                  <Label>プロフィール画像</Label>
+                  <div className="space-y-3">
+                    <Input
+                      value={formData.photo_url}
+                      onChange={(e) => setFormData(prev => ({ ...prev, photo_url: e.target.value }))}
+                      placeholder="Google Driveの画像共有URLまたは直接URL"
+                    />
+                    <div className="text-xs text-muted-foreground space-y-1">
+                      <p>📌 <strong>Google Drive使用方法：</strong></p>
+                      <p>1. Google Driveで画像を右クリック → 「共有」</p>
+                      <p>2. 「リンクを知っている全員」に設定してリンクをコピー</p>
+                      <p>3. 上記フィールドに貼り付け（自動変換されます）</p>
+                    </div>
+                    {formData.photo_url && (
+                      <div className="mt-2">
+                        <p className="text-sm font-medium mb-1">プレビュー:</p>
+                        <img
+                          src={formData.photo_url.includes('drive.google.com')
+                            ? formData.photo_url.replace('/file/d/', '/uc?export=view&id=').replace('/view', '')
+                            : formData.photo_url
+                          }
+                          alt="プロフィール画像プレビュー"
+                          className="w-20 h-20 object-cover rounded-lg border"
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).style.display = 'none'
+                          }}
+                        />
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             </CardContent>
