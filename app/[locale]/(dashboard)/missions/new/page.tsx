@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import { useMissions } from '@/hooks/use-missions'
@@ -24,10 +24,11 @@ import Link from 'next/link'
 import {
   CreateMissionSheetRequest,
   CreateMissionItemRequest,
-  SKILL_CATEGORIES,
-  SPORT_SKILLS,
+  SPORT_CATEGORIES,
+  SPORT_LABELS,
   SUCCESS_CRITERIA_TEMPLATES
 } from '@/types/mission'
+import { SPORT_SKILLS } from '@/data/skill-items'
 
 export default function NewMissionPage() {
   const router = useRouter()
@@ -126,13 +127,14 @@ export default function NewMissionPage() {
     setMissionItems(updated)
   }
 
-  const getSkillsForSport = (sport: string) => {
-    return SPORT_SKILLS[sport as keyof typeof SPORT_SKILLS] || SPORT_SKILLS.soccer
+  const getSkillItemsForCategory = (sport: string, category: string) => {
+    const sportSkills = SPORT_SKILLS[sport as keyof typeof SPORT_SKILLS]
+    if (!sportSkills) return []
+    return sportSkills[category] ?? []
   }
 
-  const getSkillItemsForCategory = (sport: string, category: string) => {
-    const sportSkills = getSkillsForSport(sport)
-    return sportSkills[category as keyof typeof sportSkills] || []
+  const getCategoriesForSport = (sport: string) => {
+    return SPORT_CATEGORIES[sport] ?? {}
   }
 
   const activeStudents = students.filter(s => s.status === 'active')
@@ -252,9 +254,9 @@ export default function NewMissionPage() {
                       <SelectValue placeholder={tMissions('selectSport')} />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="soccer">{tMissions('soccer')}</SelectItem>
-                      <SelectItem value="basketball">{tMissions('basketball')}</SelectItem>
-                      <SelectItem value="baseball">{tMissions('baseball')}</SelectItem>
+                      {Object.entries(SPORT_LABELS).map(([key, label]) => (
+                        <SelectItem key={key} value={key}>{label}</SelectItem>
+                      ))}
                     </SelectContent>
                   </Select>
                 </div>
@@ -330,7 +332,7 @@ export default function NewMissionPage() {
                           <SelectValue placeholder={tMissions('selectCategory')} />
                         </SelectTrigger>
                         <SelectContent>
-                          {Object.entries(SKILL_CATEGORIES).map(([key, label]) => (
+                          {Object.entries(getCategoriesForSport(formData.sport)).map(([key, label]) => (
                             <SelectItem key={key} value={key}>
                               {label}
                             </SelectItem>
@@ -345,9 +347,11 @@ export default function NewMissionPage() {
                         value={item.skill_item_id || ''}
                         onValueChange={(value) => {
                           updateMissionItem(index, 'skill_item_id', value)
-                          // スキル項目が選択されたら、目標説明も自動設定
-                          if (value && !item.target_description) {
-                            updateMissionItem(index, 'target_description', `${value}${tMissions('improveSkillSuffix')}`)
+                          // スキルが選択されたら目標説明を自動入力
+                          const skill = getSkillItemsForCategory(formData.sport, item.category)
+                            .find(s => s.id === value)
+                          if (skill && !item.target_description) {
+                            updateMissionItem(index, 'target_description', skill.descriptionJa)
                           }
                         }}
                       >
@@ -356,13 +360,16 @@ export default function NewMissionPage() {
                         </SelectTrigger>
                         <SelectContent>
                           <SelectItem value="custom">{tMissions('customItem')}</SelectItem>
-                          {getSkillItemsForCategory(formData.sport, item.category)
-                            .filter(skill => skill && skill.trim() !== '')
-                            .map((skill) => (
-                              <SelectItem key={skill} value={skill}>
-                                {skill}
-                              </SelectItem>
-                            ))}
+                          {getSkillItemsForCategory(formData.sport, item.category).map((skill) => (
+                            <SelectItem key={skill.id} value={skill.id}>
+                              {skill.descriptionJa}
+                              {skill.englishPhrase && (
+                                <span className="ml-2 text-xs text-muted-foreground">
+                                  {skill.englishPhrase}
+                                </span>
+                              )}
+                            </SelectItem>
+                          ))}
                         </SelectContent>
                       </Select>
                     </div>

@@ -35,7 +35,8 @@ import {
   DialogTitle,
   DialogFooter,
 } from '@/components/ui/dialog'
-import { SPORT_SKILLS, SKILL_CATEGORIES, SUCCESS_CRITERIA_TEMPLATES } from '@/types/mission'
+import { SPORT_CATEGORIES, SPORT_LABELS, SUCCESS_CRITERIA_TEMPLATES } from '@/types/mission'
+import { SPORT_SKILLS } from '@/data/skill-items'
 
 // デモ生徒データ
 const demoStudents = [
@@ -83,19 +84,14 @@ export default function MissionEditPage() {
 
   const selectedStudent = demoStudents.find(s => s.id === formData.student_id)
 
-  const getSkillOptions = () => {
-    if (!formData.sport || !(formData.sport in SPORT_SKILLS)) return []
-    const sportSkills = SPORT_SKILLS[formData.sport as keyof typeof SPORT_SKILLS]
-    const options: { category: string, skills: string[] }[] = []
+  const getSkillItemsForCategory = (sport: string, category: string) => {
+    const sportSkills = SPORT_SKILLS[sport as keyof typeof SPORT_SKILLS]
+    if (!sportSkills) return []
+    return sportSkills[category] ?? []
+  }
 
-    Object.entries(sportSkills).forEach(([category, skills]) => {
-      options.push({
-        category: SKILL_CATEGORIES[category as keyof typeof SKILL_CATEGORIES] || category,
-        skills: skills as string[]
-      })
-    })
-
-    return options
+  const getCategoriesForSport = (sport: string) => {
+    return SPORT_CATEGORIES[sport] ?? {}
   }
 
   useEffect(() => {
@@ -291,12 +287,9 @@ export default function MissionEditPage() {
                           <SelectValue placeholder={tMissions('selectSport')} />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="soccer">サッカー</SelectItem>
-                          <SelectItem value="basketball">バスケットボール</SelectItem>
-                          <SelectItem value="volleyball">バレーボール</SelectItem>
-                          <SelectItem value="tennis">テニス</SelectItem>
-                          <SelectItem value="baseball">野球</SelectItem>
-                          <SelectItem value="badminton">バドミントン</SelectItem>
+                          {Object.entries(SPORT_LABELS).map(([key, label]) => (
+                            <SelectItem key={key} value={key}>{label}</SelectItem>
+                          ))}
                         </SelectContent>
                       </Select>
                     </div>
@@ -343,7 +336,7 @@ export default function MissionEditPage() {
                               <SelectValue />
                             </SelectTrigger>
                             <SelectContent>
-                              {Object.entries(SKILL_CATEGORIES).map(([key, label]) => (
+                              {Object.entries(getCategoriesForSport(formData.sport)).map(([key, label]) => (
                                 <SelectItem key={key} value={key}>{label}</SelectItem>
                               ))}
                             </SelectContent>
@@ -355,21 +348,29 @@ export default function MissionEditPage() {
                             <Label>スキル項目</Label>
                             <Select
                               value={item.skill_item_id || ''}
-                              onValueChange={(value) => updateMissionItem(index, 'skill_item_id', value)}
+                              onValueChange={(value) => {
+                                updateMissionItem(index, 'skill_item_id', value)
+                                const skill = getSkillItemsForCategory(formData.sport, item.category)
+                                  .find(s => s.id === value)
+                                if (skill && !item.target_description) {
+                                  updateMissionItem(index, 'target_description', skill.descriptionJa)
+                                }
+                              }}
                             >
                               <SelectTrigger>
                                 <SelectValue placeholder="スキルを選択" />
                               </SelectTrigger>
                               <SelectContent>
                                 <SelectItem value="custom">カスタム項目</SelectItem>
-                                {getSkillOptions().map((categoryGroup) => (
-                                  categoryGroup.category === SKILL_CATEGORIES[item.category as keyof typeof SKILL_CATEGORIES] && (
-                                    categoryGroup.skills.map((skill, skillIndex) => (
-                                      <SelectItem key={skillIndex} value={`${formData.sport}-${skill.toLowerCase().replace(/・/g, '-').replace(/\s/g, '-')}`}>
-                                        {skill}
-                                      </SelectItem>
-                                    ))
-                                  )
+                                {getSkillItemsForCategory(formData.sport, item.category).map((skill) => (
+                                  <SelectItem key={skill.id} value={skill.id}>
+                                    {skill.descriptionJa}
+                                    {skill.englishPhrase && (
+                                      <span className="ml-2 text-xs text-muted-foreground">
+                                        {skill.englishPhrase}
+                                      </span>
+                                    )}
+                                  </SelectItem>
                                 ))}
                               </SelectContent>
                             </Select>

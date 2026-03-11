@@ -76,135 +76,61 @@ export interface UpdateMissionItemRequest {
   order_index?: number
 }
 
-// スキルカテゴリの定義
-export const SKILL_CATEGORIES = {
-  technical: '技術',
-  physical: '体力・運動能力',
-  mental: 'メンタル',
-  teamwork: 'チームワーク',
-  communication: 'コミュニケーション',
-  strategy: '戦略・戦術',
-  safety: '安全性',
-} as const
-
-// スポーツ別のスキル項目定義
-export const SPORT_SKILLS = {
+// スポーツ別カテゴリ表示名（data/skill-items/ のカテゴリキーと対応）
+export const SPORT_CATEGORIES: Record<string, Record<string, string>> = {
   soccer: {
-    technical: [
-      'ボールキック',
-      'ドリブル',
-      'パス',
-      'トラップ',
-      'シュート',
-      'ヘディング',
-    ],
-    physical: [
-      'スプリント',
-      '持久力',
-      'アジリティ',
-      'バランス',
-      'ジャンプ',
-    ],
-    mental: [
-      '集中力',
-      '判断力',
-      '積極性',
-      '忍耐力',
-    ],
-    teamwork: [
-      '協力',
-      'ポジション理解',
-      'サポート',
-    ],
-    communication: [
-      '声かけ',
-      '英語でのコミュニケーション',
-    ],
-    strategy: [
-      '戦術理解',
-      '状況判断',
-    ],
-    safety: [
-      'ルール理解',
-      '安全な接触',
-    ],
+    kick:     'キック',
+    dribble:  'ドリブル',
+    pass:     'パス',
+    trap:     'トラップ',
+    shoot:    'シュート',
   },
   basketball: {
-    technical: [
-      'シューティング',
-      'ドリブル',
-      'パス',
-      'レイアップ',
-      'リバウンド',
-      'ディフェンス',
-    ],
-    physical: [
-      'ジャンプ力',
-      'スピード',
-      '持久力',
-      'アジリティ',
-    ],
-    mental: [
-      '集中力',
-      '判断力',
-      '積極性',
-    ],
-    teamwork: [
-      'チームプレー',
-      'スクリーン',
-      'ポジション',
-    ],
-    communication: [
-      '声かけ',
-      '英語でのコミュニケーション',
-    ],
-    strategy: [
-      'オフェンス戦術',
-      'ディフェンス戦術',
-    ],
-    safety: [
-      'ルール理解',
-      'コンタクト',
-    ],
+    dribble:  'ドリブル',
+    pass:     'パス',
+    catch:    'キャッチ',
+    shoot:    'シュート',
+    defense:  'ディフェンス',
   },
   baseball: {
-    technical: [
-      'バッティング',
-      'ピッチング',
-      'キャッチング',
-      'スローイング',
-      'フィールディング',
-    ],
-    physical: [
-      '反応速度',
-      '筋力',
-      '柔軟性',
-      '持久力',
-    ],
-    mental: [
-      '集中力',
-      '状況判断',
-      '積極性',
-    ],
-    teamwork: [
-      'チームプレー',
-      'バックアップ',
-      'サイン',
-    ],
-    communication: [
-      '声かけ',
-      '英語でのコミュニケーション',
-    ],
-    strategy: [
-      '作戦理解',
-      'ポジション戦略',
-    ],
-    safety: [
-      'ルール理解',
-      '危険回避',
-    ],
+    throw:       'スロー',
+    catch:       'キャッチ',
+    hit:         'バッティング',
+    baseRunning: '走塁',
+    defense:     'ディフェンス',
   },
-} as const
+  volleyball: {
+    catch:     'キャッチ',
+    toss:      'トス',
+    underhand: 'アンダーハンド',
+    serve:     'サーブ',
+    teamPlay:  'チームプレー',
+  },
+  tennis: {
+    grip:     'グリップ・構え',
+    forehand: 'フォアハンド',
+    backhand: 'バックハンド',
+    serve:    'サーブ',
+    rally:    'ラリー',
+  },
+  rugby: {
+    running:    'ランニング',
+    pass:       'パス',
+    catch:      'キャッチ',
+    tagDefense: 'タグディフェンス',
+    tryScoring: 'トライ',
+  },
+}
+
+// スポーツ表示名
+export const SPORT_LABELS: Record<string, string> = {
+  soccer:     'サッカー',
+  basketball: 'バスケットボール',
+  baseball:   '野球',
+  volleyball: 'バレーボール',
+  tennis:     'テニス',
+  rugby:      'タグラグビー',
+}
 
 // 成功基準のテンプレート
 export const SUCCESS_CRITERIA_TEMPLATES = [
