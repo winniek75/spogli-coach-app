@@ -1,7 +1,6 @@
 'use client'
 
-import { useState, useEffect, useMemo } from 'react'
-import { useRouter } from 'next/navigation'
+import { useState, useMemo } from 'react'
 import { useStudents } from '@/hooks/use-students'
 import { useCoaches } from '@/hooks/use-coaches'
 import { useEvaluations } from '@/hooks/use-evaluations'
@@ -9,7 +8,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { Checkbox } from '@/components/ui/checkbox'
+// Checkbox removed - using star-tap only
 import { Badge } from '@/components/ui/badge'
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { Progress } from '@/components/ui/progress'
@@ -57,7 +56,6 @@ interface CheckedSkill {
 }
 
 export default function MissionChecklistPage() {
-  const router = useRouter()
   const { students, loading: studentsLoading } = useStudents()
   const { coaches, loading: coachesLoading } = useCoaches()
   const { createEvaluation } = useEvaluations()
@@ -90,25 +88,18 @@ export default function MissionChecklistPage() {
   const checkedCount = Object.keys(checkedSkills).length
   const progressPercent = totalSkills > 0 ? Math.round((checkedCount / totalSkills) * 100) : 0
 
-  // Toggle skill check
-  const toggleSkill = (skillId: string) => {
+  // Tap a star: set rating (or remove if tapping same star again)
+  const handleStarTap = (skillId: string, rating: 1 | 2 | 3) => {
     setCheckedSkills(prev => {
       const next = { ...prev }
-      if (next[skillId]) {
+      if (next[skillId]?.rating === rating) {
+        // Same star tapped again → remove evaluation
         delete next[skillId]
       } else {
-        next[skillId] = { skillId, rating: 2 }
+        next[skillId] = { skillId, rating }
       }
       return next
     })
-  }
-
-  // Set rating for a checked skill
-  const setSkillRating = (skillId: string, rating: 1 | 2 | 3) => {
-    setCheckedSkills(prev => ({
-      ...prev,
-      [skillId]: { skillId, rating },
-    }))
   }
 
   // Save all checked skills as evaluations
@@ -122,7 +113,7 @@ export default function MissionChecklistPage() {
       return
     }
     if (checkedCount === 0) {
-      setError('少なくとも1つのスキルにチェックを入れてください')
+      setError('少なくとも1つのスキルに星をつけてください')
       return
     }
 
@@ -202,7 +193,7 @@ export default function MissionChecklistPage() {
             ミッションシート チェックリスト
           </h1>
           <p className="text-muted-foreground text-sm">
-            生徒を選んでスキルにチェックをつけるだけ
+            生徒を選んで、スキルの星をタップするだけ
           </p>
         </div>
       </div>
@@ -344,7 +335,7 @@ export default function MissionChecklistPage() {
           <CardContent className="py-4">
             <div className="flex items-center justify-between mb-2">
               <span className="text-sm font-medium">
-                チェック済み: {checkedCount} / {totalSkills}
+                評価済み: {checkedCount} / {totalSkills}
               </span>
               <span className="text-sm text-muted-foreground">{progressPercent}%</span>
             </div>
@@ -403,7 +394,7 @@ export default function MissionChecklistPage() {
                     {skills.map((skill) => {
                       const isChecked = !!checkedSkills[skill.id]
                       const badgeType = getBadgeLabel(skill)
-                      const currentRating = checkedSkills[skill.id]?.rating ?? 2
+                      const currentRating = checkedSkills[skill.id]?.rating ?? 0
 
                       // Determine dot color
                       let dotClass = 'bg-teal-600/40'
@@ -419,18 +410,30 @@ export default function MissionChecklistPage() {
                       return (
                         <div
                           key={skill.id}
-                          className={`flex items-start gap-2.5 px-3 py-2.5 hover:bg-muted/50 transition-colors cursor-pointer ${
+                          className={`flex items-center gap-2.5 px-3 py-2 transition-colors ${
                             isChecked ? 'bg-green-50 dark:bg-green-950/20' : ''
                           } ${dimmed ? 'opacity-40' : ''}`}
-                          onClick={() => toggleSkill(skill.id)}
                         >
-                          <Checkbox
-                            checked={isChecked}
-                            onCheckedChange={() => toggleSkill(skill.id)}
-                            className="mt-0.5"
-                            onClick={(e) => e.stopPropagation()}
-                          />
-                          <div className={`w-2 h-2 rounded-full mt-1.5 shrink-0 ${dotClass}`} />
+                          {/* Stars - always visible, tap to rate */}
+                          <div className="flex gap-0.5 shrink-0">
+                            {[1, 2, 3].map((r) => (
+                              <button
+                                key={r}
+                                type="button"
+                                onClick={() => handleStarTap(skill.id, r as 1 | 2 | 3)}
+                                className="p-0.5 rounded hover:bg-yellow-50 dark:hover:bg-yellow-950/30 transition-colors touch-manipulation"
+                              >
+                                <Star
+                                  className={`h-5 w-5 transition-colors ${
+                                    r <= currentRating
+                                      ? 'text-yellow-500 fill-yellow-500'
+                                      : 'text-gray-300 dark:text-gray-600'
+                                  }`}
+                                />
+                              </button>
+                            ))}
+                          </div>
+                          <div className={`w-2 h-2 rounded-full shrink-0 ${dotClass}`} />
                           <div className="flex-1 min-w-0">
                             <div className="flex items-start gap-1.5">
                               <span className={`text-sm leading-tight ${isChecked ? 'text-green-700 dark:text-green-400 font-medium' : ''}`}>
@@ -464,35 +467,6 @@ export default function MissionChecklistPage() {
                             <div className="text-[11px] text-muted-foreground mt-0.5">
                               {skill.descriptionEn}
                             </div>
-                            {/* Star rating (only shown when checked) */}
-                            {isChecked && (
-                              <div className="flex items-center gap-1 mt-1.5" onClick={(e) => e.stopPropagation()}>
-                                {[1, 2, 3].map((r) => (
-                                  <button
-                                    key={r}
-                                    type="button"
-                                    onClick={(e) => {
-                                      e.stopPropagation()
-                                      setSkillRating(skill.id, r as 1 | 2 | 3)
-                                    }}
-                                    className="p-0"
-                                  >
-                                    <Star
-                                      className={`h-4 w-4 transition-colors ${
-                                        r <= currentRating
-                                          ? 'text-yellow-500 fill-yellow-500'
-                                          : 'text-gray-300'
-                                      }`}
-                                    />
-                                  </button>
-                                ))}
-                                <span className="text-[10px] text-muted-foreground ml-1">
-                                  {currentRating === 1 && '基本的な動作'}
-                                  {currentRating === 2 && '安定してできる'}
-                                  {currentRating === 3 && '非常に上手'}
-                                </span>
-                              </div>
-                            )}
                           </div>
                         </div>
                       )
@@ -513,7 +487,7 @@ export default function MissionChecklistPage() {
               <div className="flex items-center gap-3">
                 <Trophy className="h-5 w-5 text-amber-500" />
                 <span className="font-medium">
-                  {checkedCount}件のスキルをチェック済み
+                  {checkedCount}件のスキルを評価済み
                 </span>
               </div>
               <Button
