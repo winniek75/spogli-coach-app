@@ -36,6 +36,7 @@ import {
   CheckCircle,
   Clock,
   FileText,
+  ClipboardCheck,
 } from 'lucide-react'
 import { MissionSheetWithDetails } from '@/types/mission'
 
@@ -152,12 +153,20 @@ export default function MissionsPage() {
             {tMissions('subtitle')}
           </p>
         </div>
-        <Link href="/missions/new">
-          <Button>
-            <Plus className="h-4 w-4 mr-2" />
-            {tMissions('newMission')}
-          </Button>
-        </Link>
+        <div className="flex gap-2">
+          <Link href="/missions/checklist">
+            <Button variant="default">
+              <ClipboardCheck className="h-4 w-4 mr-2" />
+              スキルチェック
+            </Button>
+          </Link>
+          <Link href="/missions/new">
+            <Button variant="outline">
+              <Plus className="h-4 w-4 mr-2" />
+              {tMissions('newMission')}
+            </Button>
+          </Link>
+        </div>
       </div>
 
       {/* 検索・フィルター */}

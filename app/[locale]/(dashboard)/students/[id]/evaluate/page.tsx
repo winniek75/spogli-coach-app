@@ -23,6 +23,7 @@ import { ArrowLeft, Loader2, Star, Trophy, Info, CheckCircle } from 'lucide-reac
 import Link from 'next/link'
 import { CreateEvaluationRequest } from '@/types/student'
 import { SPORT_SKILLS } from '@/data/skill-items'
+import { SPORT_CATEGORIES, SPORT_LABELS } from '@/types/mission'
 
 export default function EvaluateStudentPage() {
   const params = useParams()
@@ -42,7 +43,7 @@ export default function EvaluateStudentPage() {
     school: 'ageo',
     training_type: 'vision',
     sport: 'soccer',
-    category: 'technical',
+    category: 'kick',
     skill_item_id: '',
     rating: 2,
     notes: '',
@@ -274,15 +275,15 @@ export default function EvaluateStudentPage() {
                   <Label htmlFor="sport">スポーツ *</Label>
                   <Select
                     value={formData.sport}
-                    onValueChange={(value) => setFormData(prev => ({ ...prev, sport: value, skill_item_id: '' }))}
+                    onValueChange={(value) => setFormData(prev => ({ ...prev, sport: value, category: '', skill_item_id: '' }))}
                   >
                     <SelectTrigger>
                       <SelectValue placeholder="スポーツを選択" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="soccer">サッカー</SelectItem>
-                      <SelectItem value="basketball">バスケットボール</SelectItem>
-                      <SelectItem value="baseball">野球</SelectItem>
+                      {Object.entries(SPORT_LABELS).map(([key, label]) => (
+                        <SelectItem key={key} value={key}>{label}</SelectItem>
+                      ))}
                     </SelectContent>
                   </Select>
                 </div>
@@ -310,13 +311,9 @@ export default function EvaluateStudentPage() {
                       <SelectValue placeholder="カテゴリを選択" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="technical">技術</SelectItem>
-                      <SelectItem value="physical">体力・運動能力</SelectItem>
-                      <SelectItem value="mental">メンタル</SelectItem>
-                      <SelectItem value="teamwork">チームワーク</SelectItem>
-                      <SelectItem value="communication">コミュニケーション</SelectItem>
-                      <SelectItem value="strategy">戦略・戦術</SelectItem>
-                      <SelectItem value="safety">安全性</SelectItem>
+                      {Object.entries(SPORT_CATEGORIES[formData.sport] ?? {}).map(([key, label]) => (
+                        <SelectItem key={key} value={key}>{label}</SelectItem>
+                      ))}
                     </SelectContent>
                   </Select>
                 </div>
@@ -332,8 +329,8 @@ export default function EvaluateStudentPage() {
                     </SelectTrigger>
                     <SelectContent>
                       {getSkillsForCategory(formData.sport, formData.category).map((skill) => (
-                        <SelectItem key={skill} value={skill}>
-                          {skill}
+                        <SelectItem key={skill.id} value={skill.id}>
+                          {skill.descriptionJa} ({skill.descriptionEn})
                         </SelectItem>
                       ))}
                     </SelectContent>
