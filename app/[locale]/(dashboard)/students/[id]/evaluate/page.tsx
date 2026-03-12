@@ -22,7 +22,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { ArrowLeft, Loader2, Star, Trophy, Info, CheckCircle } from 'lucide-react'
 import Link from 'next/link'
 import { CreateEvaluationRequest } from '@/types/student'
-import { SPORT_SKILLS } from '@/types/mission'
+import { SPORT_SKILLS } from '@/data/skill-items'
 
 export default function EvaluateStudentPage() {
   const params = useParams()
@@ -85,8 +85,9 @@ export default function EvaluateStudentPage() {
   }
 
   const getSkillsForCategory = (sport: string, category: string) => {
-    const sportSkills = SPORT_SKILLS[sport as keyof typeof SPORT_SKILLS] || SPORT_SKILLS.soccer
-    return sportSkills[category as keyof typeof sportSkills] || []
+    const sportSkills = SPORT_SKILLS[sport as keyof typeof SPORT_SKILLS]
+    if (!sportSkills) return []
+    return sportSkills[category] ?? []
   }
 
   const getRatingDescription = (rating: number) => {

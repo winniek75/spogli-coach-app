@@ -36,7 +36,8 @@ import {
   CheckCircle,
   Clock,
 } from 'lucide-react'
-import { BadgeWithStudent, BADGE_TYPES, BADGE_NAMES } from '@/types/badge'
+import { SportBadgeWithStudent, BADGE_TYPES } from '@/types/badge'
+import { SPORT_LABELS } from '@/types/mission'
 
 export default function BadgesPage() {
   const { badges, loading, error, fetchBadges, awardBadge } = useBadges()
@@ -45,15 +46,14 @@ export default function BadgesPage() {
   const [typeFilter, setTypeFilter] = useState<string>('all')
   const [statusFilter, setStatusFilter] = useState<string>('all')
 
-  const getBadgeName = (sport: string, category: string) => {
-    const sportBadges = BADGE_NAMES[sport as keyof typeof BADGE_NAMES] || BADGE_NAMES.soccer
-    return sportBadges[category as keyof typeof sportBadges] || `${sport} ${category}`
+  const getBadgeName = (sport: string) => {
+    return SPORT_LABELS[sport] || sport
   }
 
   const filteredBadges = badges.filter((badge) => {
     const matchesSearch =
       badge.student?.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      getBadgeName(badge.sport, badge.category).toLowerCase().includes(searchTerm.toLowerCase())
+      getBadgeName(badge.sport).toLowerCase().includes(searchTerm.toLowerCase())
 
     const matchesSport = sportFilter === 'all' || badge.sport === sportFilter
     const matchesType = typeFilter === 'all' || badge.badge_type === typeFilter
@@ -241,7 +241,7 @@ export default function BadgesPage() {
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {filteredBadges.map((badge) => {
           const badgeInfo = getBadgeTypeInfo(badge.badge_type)
-          const badgeName = getBadgeName(badge.sport, badge.category)
+          const badgeName = getBadgeName(badge.sport)
 
           return (
             <Card key={badge.id} className={`relative ${!badge.awarded_date ? 'border-orange-200 bg-orange-50' : ''}`}>
