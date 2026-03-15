@@ -32,28 +32,28 @@ export default function EditStudentPage() {
   const [success, setSuccess] = useState(false)
 
   const [formData, setFormData] = useState<UpdateStudentRequest>({
-    name: student?.name || '',
-    name_kana: student?.name_kana || '',
-    name_en: student?.name_en || '',
-    birth_date: student?.birth_date || '',
-    gender: student?.gender || 'male',
-    school: student?.school || 'ageo',
-    class_type: student?.class_type || 'preschool',
-    level: student?.level || 1,
-    status: student?.status || 'active',
-    parent_name: student?.parent_name || '',
-    parent_email: student?.parent_email || '',
-    parent_phone: student?.parent_phone || '',
-    line_id: student?.line_id || '',
-    emergency_contact: student?.emergency_contact || '',
-    medical_notes: student?.medical_notes || '',
-    notes: student?.notes || '',
-    photo_url: student?.photo_url || '',
+    name: '',
+    name_kana: '',
+    name_en: '',
+    birth_date: '',
+    gender: 'male',
+    school: 'ageo',
+    class_type: 'preschool',
+    level: 1,
+    status: 'active',
+    parent_name: '',
+    parent_email: '',
+    parent_phone: '',
+    line_id: '',
+    emergency_contact: '',
+    medical_notes: '',
+    notes: '',
+    photo_url: '',
   })
 
   // フォームデータを学生データで初期化
   useEffect(() => {
-    if (student && Object.keys(formData).every(key => !formData[key as keyof UpdateStudentRequest])) {
+    if (student) {
       setFormData({
         name: student.name || '',
         name_kana: student.name_kana || '',
@@ -74,7 +74,7 @@ export default function EditStudentPage() {
         photo_url: student.photo_url || '',
       })
     }
-  }, [student, formData])
+  }, [student])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
