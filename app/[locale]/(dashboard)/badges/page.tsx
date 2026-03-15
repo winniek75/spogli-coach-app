@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import { useBadges } from '@/hooks/use-badges'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
@@ -45,6 +46,8 @@ export default function BadgesPage() {
   const [sportFilter, setSportFilter] = useState<string>('all')
   const [typeFilter, setTypeFilter] = useState<string>('all')
   const [statusFilter, setStatusFilter] = useState<string>('all')
+  const t = useTranslations('badges')
+  const tc = useTranslations('common')
 
   const getBadgeName = (sport: string) => {
     return SPORT_LABELS[sport] || sport
@@ -97,7 +100,7 @@ export default function BadgesPage() {
       <div className="flex items-center justify-center h-64">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-muted-foreground">バッジデータを読み込んでいます...</p>
+          <p className="text-muted-foreground">{tc('loading')}</p>
         </div>
       </div>
     )
@@ -109,7 +112,7 @@ export default function BadgesPage() {
         <div className="text-center">
           <AlertTriangle className="h-12 w-12 text-red-500 mx-auto mb-4" />
           <p className="text-red-600 mb-4">{error}</p>
-          <Button onClick={() => window.location.reload()}>再試行</Button>
+          <Button onClick={() => window.location.reload()}>{tc('retry')}</Button>
         </div>
       </div>
     )
@@ -120,16 +123,16 @@ export default function BadgesPage() {
       {/* ヘッダー */}
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight">バッジ管理</h1>
+          <h1 className="text-3xl font-bold tracking-tight">{t('title')}</h1>
           <p className="text-muted-foreground mt-2">
-            生徒のバッジ獲得状況と授与式管理
+            {t('subtitle')}
           </p>
         </div>
         <div className="flex gap-2">
           <Button variant="outline" asChild>
             <Link href="/badges/ceremony">
               <Gift className="h-4 w-4 mr-2" />
-              授与式準備
+              {t('ceremonyPrep')}
             </Link>
           </Button>
         </div>
@@ -143,7 +146,7 @@ export default function BadgesPage() {
               <Trophy className="h-8 w-8 text-yellow-500" />
               <div>
                 <p className="text-2xl font-bold">{badges.length}</p>
-                <p className="text-sm text-muted-foreground">総バッジ数</p>
+                <p className="text-sm text-muted-foreground">{t('statistics.totalBadges')}</p>
               </div>
             </div>
           </CardContent>
@@ -154,7 +157,7 @@ export default function BadgesPage() {
               <Clock className="h-8 w-8 text-orange-500" />
               <div>
                 <p className="text-2xl font-bold">{pendingBadges.length}</p>
-                <p className="text-sm text-muted-foreground">授与待ち</p>
+                <p className="text-sm text-muted-foreground">{t('statistics.pending')}</p>
               </div>
             </div>
           </CardContent>
@@ -165,7 +168,7 @@ export default function BadgesPage() {
               <CheckCircle className="h-8 w-8 text-green-500" />
               <div>
                 <p className="text-2xl font-bold">{awardedBadges.length}</p>
-                <p className="text-sm text-muted-foreground">授与済み</p>
+                <p className="text-sm text-muted-foreground">{t('statistics.awarded')}</p>
               </div>
             </div>
           </CardContent>
@@ -178,7 +181,7 @@ export default function BadgesPage() {
                 <p className="text-2xl font-bold">
                   {new Set(badges.map(b => b.student_id)).size}
                 </p>
-                <p className="text-sm text-muted-foreground">獲得者数</p>
+                <p className="text-sm text-muted-foreground">{t('statistics.earners')}</p>
               </div>
             </div>
           </CardContent>
@@ -192,7 +195,7 @@ export default function BadgesPage() {
             <div className="relative md:col-span-2">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
               <Input
-                placeholder="生徒名、バッジ名で検索..."
+                placeholder={t('filters.searchPlaceholder')}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="pl-10"
@@ -201,36 +204,36 @@ export default function BadgesPage() {
 
             <Select value={sportFilter} onValueChange={(value) => handleFilterChange('sport', value)}>
               <SelectTrigger>
-                <SelectValue placeholder="スポーツで絞り込み" />
+                <SelectValue placeholder={t('filters.sportPlaceholder')} />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all">全スポーツ</SelectItem>
-                <SelectItem value="soccer">サッカー</SelectItem>
-                <SelectItem value="basketball">バスケットボール</SelectItem>
-                <SelectItem value="baseball">野球</SelectItem>
+                <SelectItem value="all">{t('filters.all')}</SelectItem>
+                <SelectItem value="soccer">{t('filters.soccer')}</SelectItem>
+                <SelectItem value="basketball">{t('filters.basketball')}</SelectItem>
+                <SelectItem value="baseball">{t('filters.baseball')}</SelectItem>
               </SelectContent>
             </Select>
 
             <Select value={typeFilter} onValueChange={(value) => handleFilterChange('badge_type', value)}>
               <SelectTrigger>
-                <SelectValue placeholder="バッジタイプで絞り込み" />
+                <SelectValue placeholder={t('filters.typePlaceholder')} />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all">全タイプ</SelectItem>
-                <SelectItem value="star">⭐ スター</SelectItem>
-                <SelectItem value="shield">🛡️ シールド</SelectItem>
-                <SelectItem value="crown">👑 クラウン</SelectItem>
+                <SelectItem value="all">{t('filters.allTypes')}</SelectItem>
+                <SelectItem value="star">{t('filters.star')}</SelectItem>
+                <SelectItem value="shield">{t('filters.shield')}</SelectItem>
+                <SelectItem value="crown">{t('filters.crown')}</SelectItem>
               </SelectContent>
             </Select>
 
             <Select value={statusFilter} onValueChange={(value) => handleFilterChange('status', value)}>
               <SelectTrigger>
-                <SelectValue placeholder="ステータスで絞り込み" />
+                <SelectValue placeholder={t('filters.statusPlaceholder')} />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all">全ステータス</SelectItem>
-                <SelectItem value="pending">授与待ち</SelectItem>
-                <SelectItem value="awarded">授与済み</SelectItem>
+                <SelectItem value="all">{t('filters.allStatuses')}</SelectItem>
+                <SelectItem value="pending">{t('statistics.pending')}</SelectItem>
+                <SelectItem value="awarded">{t('statistics.awarded')}</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -256,7 +259,7 @@ export default function BadgesPage() {
                   </div>
                   {!badge.awarded_date && (
                     <Badge variant="outline" className="bg-orange-100 text-orange-800">
-                      授与待ち
+                      {t('statistics.pending')}
                     </Badge>
                   )}
                 </div>
@@ -273,7 +276,7 @@ export default function BadgesPage() {
                   <div>
                     <p className="font-medium">{badge.student?.name}</p>
                     <p className="text-sm text-muted-foreground">
-                      Lv{badge.student?.level} | {badge.student?.school === 'ageo' ? '上尾校' : '桶川校'}
+                      Lv{badge.student?.level} | {badge.student?.school === 'ageo' ? t('schools.ageo') : t('schools.okegawa')}
                     </p>
                   </div>
                 </div>
@@ -281,22 +284,22 @@ export default function BadgesPage() {
                 {/* バッジ詳細 */}
                 <div className="space-y-2">
                   <div className="flex justify-between items-center text-sm">
-                    <span className="text-muted-foreground">バッジタイプ:</span>
+                    <span className="text-muted-foreground">{t('badgeCard.badgeType')}</span>
                     <Badge className={badgeInfo.color}>
                       {badgeInfo.title}
                     </Badge>
                   </div>
                   <div className="flex justify-between items-center text-sm">
-                    <span className="text-muted-foreground">スポーツ:</span>
+                    <span className="text-muted-foreground">{t('badgeCard.sport')}</span>
                     <Badge variant="outline">{badge.sport}</Badge>
                   </div>
                   <div className="flex justify-between items-center text-sm">
-                    <span className="text-muted-foreground">獲得日:</span>
+                    <span className="text-muted-foreground">{t('badgeCard.earnedDate')}</span>
                     <span>{new Date(badge.earned_date).toLocaleDateString('ja-JP')}</span>
                   </div>
                   {badge.awarded_date && (
                     <div className="flex justify-between items-center text-sm">
-                      <span className="text-muted-foreground">授与日:</span>
+                      <span className="text-muted-foreground">{t('badgeCard.awardedDate')}</span>
                       <span className="text-green-600 font-medium">
                         {new Date(badge.awarded_date).toLocaleDateString('ja-JP')}
                       </span>
@@ -313,12 +316,12 @@ export default function BadgesPage() {
                       className="bg-orange-600 hover:bg-orange-700"
                     >
                       <Gift className="h-4 w-4 mr-2" />
-                      授与する
+                      {t('badgeCard.award')}
                     </Button>
                   ) : (
                     <div className="flex items-center gap-2 text-green-600">
                       <CheckCircle className="h-4 w-4" />
-                      <span className="text-sm font-medium">授与済み</span>
+                      <span className="text-sm font-medium">{t('badgeCard.alreadyAwarded')}</span>
                     </div>
                   )}
 
@@ -332,7 +335,7 @@ export default function BadgesPage() {
                       <DropdownMenuItem asChild>
                         <Link href={`/students/${badge.student_id}`}>
                           <Users className="h-4 w-4 mr-2" />
-                          生徒詳細
+                          {t('badgeCard.viewStudent')}
                         </Link>
                       </DropdownMenuItem>
                     </DropdownMenuContent>
@@ -354,10 +357,10 @@ export default function BadgesPage() {
         <div className="text-center py-12">
           <Trophy className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
           <p className="text-lg font-medium text-muted-foreground mb-2">
-            バッジが見つかりません
+            {t('noResults')}
           </p>
           <p className="text-muted-foreground mb-4">
-            検索条件を変更してください
+            {t('noResultsDesc')}
           </p>
         </div>
       )}

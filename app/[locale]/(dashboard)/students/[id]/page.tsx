@@ -1,6 +1,7 @@
 'use client'
 
 import { useParams, useRouter } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 import { useStudent } from '@/hooks/use-students'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
@@ -33,13 +34,14 @@ export default function StudentDetailPage() {
   const router = useRouter()
   const studentId = params.id as string
   const { student, loading, error } = useStudent(studentId)
+  const t = useTranslations('studentDetail')
 
   if (loading) {
     return (
       <div className="flex items-center justify-center h-64">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-muted-foreground">生徒データを読み込んでいます...</p>
+          <p className="text-muted-foreground">{t('loading')}</p>
         </div>
       </div>
     )
@@ -51,7 +53,7 @@ export default function StudentDetailPage() {
         <div className="text-center">
           <AlertTriangle className="h-12 w-12 text-red-500 mx-auto mb-4" />
           <p className="text-red-600 mb-4">{error}</p>
-          <Button onClick={() => window.location.reload()}>再試行</Button>
+          <Button onClick={() => window.location.reload()}>{t('retry')}</Button>
         </div>
       </div>
     )
@@ -63,13 +65,13 @@ export default function StudentDetailPage() {
         <div className="text-center">
           <User className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
           <p className="text-lg font-medium text-muted-foreground mb-2">
-            生徒が見つかりません
+            {t('notFound')}
           </p>
           <p className="text-muted-foreground mb-4">
-            指定された生徒は存在しないか、削除された可能性があります
+            {t('notFoundDesc')}
           </p>
           <Link href="/students">
-            <Button>生徒一覧に戻る</Button>
+            <Button>{t('backToList')}</Button>
           </Link>
         </div>
       </div>
@@ -78,7 +80,7 @@ export default function StudentDetailPage() {
 
   const getLevelBadge = (level: number) => {
     const levelData = LEVELS[level as keyof typeof LEVELS]
-    if (!levelData) return <Badge variant="secondary">不明</Badge>
+    if (!levelData) return <Badge variant="secondary">{t('unknown')}</Badge>
 
     const badgeColors = {
       star: 'bg-yellow-100 text-yellow-800',
@@ -95,9 +97,9 @@ export default function StudentDetailPage() {
 
   const getStatusBadge = (status: string) => {
     const statusConfig = {
-      active: { label: '在籍中', color: 'bg-green-600' },
-      inactive: { label: '休会', color: 'bg-gray-600' },
-      withdrawn: { label: '退会', color: 'bg-red-600' },
+      active: { label: t('status.active'), color: 'bg-green-600' },
+      inactive: { label: t('status.inactive'), color: 'bg-gray-600' },
+      withdrawn: { label: t('status.withdrawn'), color: 'bg-red-600' },
     }
 
     const config = statusConfig[status as keyof typeof statusConfig] || statusConfig.active
@@ -157,20 +159,20 @@ export default function StudentDetailPage() {
         <div className="flex-1">
           <h1 className="text-3xl font-bold tracking-tight">{student.name}</h1>
           <p className="text-muted-foreground mt-2">
-            生徒詳細・評価・進捗管理
+            {t('subtitle')}
           </p>
         </div>
         <div className="flex gap-2">
           <Link href={`/students/${student.id}/edit`}>
             <Button variant="outline">
               <Edit className="h-4 w-4 mr-2" />
-              編集
+              {t('edit')}
             </Button>
           </Link>
           <Link href={`/students/${student.id}/evaluate`}>
             <Button>
               <Star className="h-4 w-4 mr-2" />
-              評価入力
+              {t('evaluate')}
             </Button>
           </Link>
         </div>
@@ -192,34 +194,34 @@ export default function StudentDetailPage() {
                 {getLevelBadge(student.level)}
                 {getStatusBadge(student.status)}
                 <Badge variant="outline">
-                  {student.school === 'ageo' ? '上尾校' : '桶川校'}
+                  {student.school === 'ageo' ? t('school.ageo') : t('school.okegawa')}
                 </Badge>
                 <Badge variant="secondary">
-                  {student.class_type === 'preschool' ? '未就学児' : '小学生'}
+                  {student.class_type === 'preschool' ? t('classType.preschool') : t('classType.elementary')}
                 </Badge>
               </div>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="space-y-1">
-                  <p className="text-sm font-medium text-muted-foreground">年齢</p>
-                  <p className="text-lg font-semibold">{student.age}歳</p>
+                  <p className="text-sm font-medium text-muted-foreground">{t('age')}</p>
+                  <p className="text-lg font-semibold">{t('ageValue', { age: student.age })}</p>
                 </div>
                 <div className="space-y-1">
-                  <p className="text-sm font-medium text-muted-foreground">平均評価</p>
+                  <p className="text-sm font-medium text-muted-foreground">{t('averageRating')}</p>
                   <div className="flex items-center gap-1">
                     <Star className="h-4 w-4 text-yellow-500" />
                     <span className="text-lg font-semibold">{averageRating}</span>
                   </div>
                 </div>
                 <div className="space-y-1">
-                  <p className="text-sm font-medium text-muted-foreground">バッジ数</p>
+                  <p className="text-sm font-medium text-muted-foreground">{t('badgeCount')}</p>
                   <div className="flex items-center gap-1">
                     <Award className="h-4 w-4 text-blue-500" />
                     <span className="text-lg font-semibold">{student.badges?.length || 0}</span>
                   </div>
                 </div>
                 <div className="space-y-1">
-                  <p className="text-sm font-medium text-muted-foreground">出席率</p>
+                  <p className="text-sm font-medium text-muted-foreground">{t('attendanceRate')}</p>
                   <div className="flex items-center gap-1">
                     <TrendingUp className="h-4 w-4 text-green-500" />
                     <span className="text-lg font-semibold">{student.attendance_rate}%</span>
@@ -234,12 +236,12 @@ export default function StudentDetailPage() {
       {/* タブセクション */}
       <Tabs defaultValue="info" className="w-full">
         <TabsList className="grid w-full grid-cols-6">
-          <TabsTrigger value="info">基本情報</TabsTrigger>
-          <TabsTrigger value="evaluations">評価履歴</TabsTrigger>
-          <TabsTrigger value="badges">バッジ</TabsTrigger>
-          <TabsTrigger value="attendance">出席記録</TabsTrigger>
-          <TabsTrigger value="progress">進捗</TabsTrigger>
-          <TabsTrigger value="notes">メモ</TabsTrigger>
+          <TabsTrigger value="info">{t('tabs.info')}</TabsTrigger>
+          <TabsTrigger value="evaluations">{t('tabs.evaluations')}</TabsTrigger>
+          <TabsTrigger value="badges">{t('tabs.badges')}</TabsTrigger>
+          <TabsTrigger value="attendance">{t('tabs.attendance')}</TabsTrigger>
+          <TabsTrigger value="progress">{t('tabs.progress')}</TabsTrigger>
+          <TabsTrigger value="notes">{t('tabs.notes')}</TabsTrigger>
         </TabsList>
 
         {/* 基本情報 */}
@@ -247,42 +249,42 @@ export default function StudentDetailPage() {
           <div className="grid gap-6 md:grid-cols-2">
             <Card>
               <CardHeader>
-                <CardTitle>個人情報</CardTitle>
+                <CardTitle>{t('personalInfo')}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="grid gap-2">
-                  <label className="text-sm font-medium text-muted-foreground">氏名</label>
+                  <label className="text-sm font-medium text-muted-foreground">{t('name')}</label>
                   <p className="text-sm">{student.name}</p>
                 </div>
                 {student.name_kana && (
                   <div className="grid gap-2">
-                    <label className="text-sm font-medium text-muted-foreground">ふりがな</label>
+                    <label className="text-sm font-medium text-muted-foreground">{t('nameKana')}</label>
                     <p className="text-sm">{student.name_kana}</p>
                   </div>
                 )}
                 {student.name_en && (
                   <div className="grid gap-2">
-                    <label className="text-sm font-medium text-muted-foreground">英語名</label>
+                    <label className="text-sm font-medium text-muted-foreground">{t('nameEn')}</label>
                     <p className="text-sm">{student.name_en}</p>
                   </div>
                 )}
                 <div className="grid gap-2">
-                  <label className="text-sm font-medium text-muted-foreground">生年月日</label>
+                  <label className="text-sm font-medium text-muted-foreground">{t('birthDate')}</label>
                   <div className="flex items-center gap-2">
                     <Calendar className="h-4 w-4 text-muted-foreground" />
                     <p className="text-sm">
-                      {new Date(student.birth_date).toLocaleDateString('ja-JP')} ({student.age}歳)
+                      {new Date(student.birth_date).toLocaleDateString('ja-JP')} ({t('ageValue', { age: student.age })})
                     </p>
                   </div>
                 </div>
                 <div className="grid gap-2">
-                  <label className="text-sm font-medium text-muted-foreground">性別</label>
+                  <label className="text-sm font-medium text-muted-foreground">{t('gender')}</label>
                   <p className="text-sm">
-                    {student.gender === 'male' ? '男性' : student.gender === 'female' ? '女性' : 'その他'}
+                    {student.gender === 'male' ? t('genderMale') : student.gender === 'female' ? t('genderFemale') : t('genderOther')}
                   </p>
                 </div>
                 <div className="grid gap-2">
-                  <label className="text-sm font-medium text-muted-foreground">入会日</label>
+                  <label className="text-sm font-medium text-muted-foreground">{t('enrollmentDate')}</label>
                   <p className="text-sm">
                     {new Date(student.enrollment_date).toLocaleDateString('ja-JP')}
                   </p>
@@ -292,16 +294,16 @@ export default function StudentDetailPage() {
 
             <Card>
               <CardHeader>
-                <CardTitle>保護者情報</CardTitle>
+                <CardTitle>{t('parentInfo')}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="grid gap-2">
-                  <label className="text-sm font-medium text-muted-foreground">保護者氏名</label>
+                  <label className="text-sm font-medium text-muted-foreground">{t('parentName')}</label>
                   <p className="text-sm">{student.parent_name}</p>
                 </div>
                 {student.parent_email && (
                   <div className="grid gap-2">
-                    <label className="text-sm font-medium text-muted-foreground">メールアドレス</label>
+                    <label className="text-sm font-medium text-muted-foreground">{t('email')}</label>
                     <div className="flex items-center gap-2">
                       <Mail className="h-4 w-4 text-muted-foreground" />
                       <p className="text-sm">{student.parent_email}</p>
@@ -310,7 +312,7 @@ export default function StudentDetailPage() {
                 )}
                 {student.parent_phone && (
                   <div className="grid gap-2">
-                    <label className="text-sm font-medium text-muted-foreground">電話番号</label>
+                    <label className="text-sm font-medium text-muted-foreground">{t('phone')}</label>
                     <div className="flex items-center gap-2">
                       <Phone className="h-4 w-4 text-muted-foreground" />
                       <p className="text-sm">{student.parent_phone}</p>
@@ -319,13 +321,13 @@ export default function StudentDetailPage() {
                 )}
                 {student.line_id && (
                   <div className="grid gap-2">
-                    <label className="text-sm font-medium text-muted-foreground">LINE ID</label>
+                    <label className="text-sm font-medium text-muted-foreground">{t('lineId')}</label>
                     <p className="text-sm">{student.line_id}</p>
                   </div>
                 )}
                 {student.emergency_contact && (
                   <div className="grid gap-2">
-                    <label className="text-sm font-medium text-muted-foreground">緊急連絡先</label>
+                    <label className="text-sm font-medium text-muted-foreground">{t('emergencyContact')}</label>
                     <div className="flex items-center gap-2">
                       <AlertTriangle className="h-4 w-4 text-amber-500" />
                       <p className="text-sm">{student.emergency_contact}</p>
@@ -346,7 +348,7 @@ export default function StudentDetailPage() {
                 <CardContent className="pt-6">
                   <div className="text-center">
                     <p className="text-2xl font-bold">{student.latest_evaluations?.length || 0}</p>
-                    <p className="text-sm text-muted-foreground">総評価数</p>
+                    <p className="text-sm text-muted-foreground">{t('totalEvaluations')}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -357,7 +359,7 @@ export default function StudentDetailPage() {
                       <Star className="h-5 w-5 text-yellow-500" />
                       <p className="text-2xl font-bold">{averageRating}</p>
                     </div>
-                    <p className="text-sm text-muted-foreground">平均評価</p>
+                    <p className="text-sm text-muted-foreground">{t('averageRating')}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -365,7 +367,7 @@ export default function StudentDetailPage() {
                 <CardContent className="pt-6">
                   <div className="text-center">
                     <p className="text-2xl font-bold">{Object.keys(sportStats).length}</p>
-                    <p className="text-sm text-muted-foreground">種目数</p>
+                    <p className="text-sm text-muted-foreground">{t('sportCount')}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -375,7 +377,7 @@ export default function StudentDetailPage() {
             {Object.keys(sportStats).length > 0 && (
               <Card>
                 <CardHeader>
-                  <CardTitle>種目別統計</CardTitle>
+                  <CardTitle>{t('sportStatistics')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -384,11 +386,11 @@ export default function StudentDetailPage() {
                         <h4 className="font-medium mb-2">{sport}</h4>
                         <div className="space-y-1 text-sm">
                           <div className="flex justify-between">
-                            <span>評価数:</span>
-                            <span>{stats.count}回</span>
+                            <span>{t('evaluationCount')}:</span>
+                            <span>{t('timesCount', { count: stats.count })}</span>
                           </div>
                           <div className="flex justify-between">
-                            <span>平均評価:</span>
+                            <span>{t('averageRating')}:</span>
                             <div className="flex items-center gap-1">
                               <Star className="h-3 w-3 text-yellow-500" />
                               <span>{stats.avgRating}</span>
@@ -405,8 +407,8 @@ export default function StudentDetailPage() {
             {/* 最新の評価履歴 */}
             <Card>
               <CardHeader>
-                <CardTitle>最新の評価履歴</CardTitle>
-                <CardDescription>直近5件の評価を表示しています</CardDescription>
+                <CardTitle>{t('recentEvaluations')}</CardTitle>
+                <CardDescription>{t('recentEvaluationsDesc')}</CardDescription>
               </CardHeader>
               <CardContent>
                 {recentEvaluations.length > 0 ? (
@@ -442,7 +444,7 @@ export default function StudentDetailPage() {
                 ) : (
                   <div className="text-center py-8">
                     <FileText className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-                    <p className="text-muted-foreground">まだ評価がありません</p>
+                    <p className="text-muted-foreground">{t('noEvaluations')}</p>
                   </div>
                 )}
               </CardContent>
@@ -454,9 +456,9 @@ export default function StudentDetailPage() {
         <TabsContent value="badges">
           <Card>
             <CardHeader>
-              <CardTitle>獲得バッジ</CardTitle>
+              <CardTitle>{t('earnedBadges')}</CardTitle>
               <CardDescription>
-                各種目でレベル3の評価を3回獲得するとバッジが授与されます
+                {t('earnedBadgesDesc')}
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -482,7 +484,7 @@ export default function StudentDetailPage() {
                         </div>
                       </div>
                       <p className="text-xs text-muted-foreground">
-                        獲得日: {new Date(badge.earned_date).toLocaleDateString('ja-JP')}
+                        {t('earnedDate')}: {new Date(badge.earned_date).toLocaleDateString('ja-JP')}
                       </p>
                     </div>
                   ))}
@@ -490,7 +492,7 @@ export default function StudentDetailPage() {
               ) : (
                 <div className="text-center py-8">
                   <Award className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-                  <p className="text-muted-foreground">まだバッジを獲得していません</p>
+                  <p className="text-muted-foreground">{t('noBadges')}</p>
                 </div>
               )}
             </CardContent>
@@ -501,16 +503,16 @@ export default function StudentDetailPage() {
         <TabsContent value="attendance">
           <Card>
             <CardHeader>
-              <CardTitle>出席記録</CardTitle>
+              <CardTitle>{t('attendanceRecord')}</CardTitle>
               <CardDescription>
-                出席率: {student.attendance_rate}%
+                {t('attendanceRate')}: {student.attendance_rate}%
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="text-center py-8">
                 <Calendar className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
                 <p className="text-2xl font-bold">{student.attendance_rate}%</p>
-                <p className="text-muted-foreground mt-2">現在の出席率</p>
+                <p className="text-muted-foreground mt-2">{t('currentAttendanceRate')}</p>
               </div>
             </CardContent>
           </Card>
@@ -520,17 +522,17 @@ export default function StudentDetailPage() {
         <TabsContent value="progress">
           <Card>
             <CardHeader>
-              <CardTitle>学習進捗</CardTitle>
+              <CardTitle>{t('learningProgress')}</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-6">
                 <div>
-                  <p className="text-sm font-medium mb-2">現在のレベル</p>
+                  <p className="text-sm font-medium mb-2">{t('currentLevel')}</p>
                   {getLevelBadge(student.level)}
                 </div>
 
                 <div>
-                  <p className="text-sm font-medium mb-2">レベル進捗目安</p>
+                  <p className="text-sm font-medium mb-2">{t('levelProgress')}</p>
                   <div className="space-y-2">
                     {Object.entries(LEVELS).map(([level, data]) => (
                       <div
@@ -562,7 +564,7 @@ export default function StudentDetailPage() {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Heart className="h-5 w-5 text-red-500" />
-                    医療情報・アレルギー等
+                    {t('medicalNotes')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -576,7 +578,7 @@ export default function StudentDetailPage() {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <MessageSquare className="h-5 w-5" />
-                    その他メモ
+                    {t('otherNotes')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -590,7 +592,7 @@ export default function StudentDetailPage() {
                 <CardContent className="pt-6">
                   <div className="text-center py-8">
                     <MessageSquare className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-                    <p className="text-muted-foreground">メモがありません</p>
+                    <p className="text-muted-foreground">{t('noNotes')}</p>
                   </div>
                 </CardContent>
               </Card>

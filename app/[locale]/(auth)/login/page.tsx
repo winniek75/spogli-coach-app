@@ -8,6 +8,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Alert, AlertDescription } from '@/components/ui/alert'
+import { useTranslations } from 'next-intl'
 
 export default function LoginPage() {
   const [email, setEmail] = useState('')
@@ -16,6 +17,7 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false)
   const router = useRouter()
   const supabase = createClient()
+  const t = useTranslations('login')
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -44,10 +46,10 @@ export default function LoginPage() {
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl font-bold text-center">
-            スポぐり Coach
+            {t('title')}
           </CardTitle>
           <CardDescription className="text-center">
-            講師向け管理システムへログイン
+            {t('subtitle')}
           </CardDescription>
         </CardHeader>
         <form onSubmit={handleLogin}>
@@ -58,7 +60,7 @@ export default function LoginPage() {
               </Alert>
             )}
             <div className="space-y-2">
-              <Label htmlFor="email">メールアドレス</Label>
+              <Label htmlFor="email">{t('email')}</Label>
               <Input
                 id="email"
                 type="email"
@@ -70,7 +72,7 @@ export default function LoginPage() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="password">パスワード</Label>
+              <Label htmlFor="password">{t('password')}</Label>
               <Input
                 id="password"
                 type="password"
@@ -83,7 +85,7 @@ export default function LoginPage() {
           </CardContent>
           <CardFooter className="flex flex-col space-y-2">
             <Button type="submit" className="w-full" disabled={loading}>
-              {loading ? 'ログイン中...' : 'ログイン'}
+              {loading ? t('loggingIn') : t('login')}
             </Button>
             <Button
               type="button"
@@ -91,7 +93,7 @@ export default function LoginPage() {
               className="text-sm text-muted-foreground"
               onClick={() => {/* パスワードリセット実装 */}}
             >
-              パスワードを忘れた場合
+              {t('forgotPassword')}
             </Button>
           </CardFooter>
         </form>

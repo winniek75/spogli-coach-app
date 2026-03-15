@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { useParams } from 'next/navigation'
+
 import { useTranslations } from 'next-intl'
 import { useCoaches } from '@/hooks/use-coaches'
 import { Button } from '@/components/ui/button'
@@ -32,10 +32,10 @@ import { CoachWithCertifications } from '@/types/coach'
 
 export default function CoachesPage() {
   const t = useTranslations('coaches')
+  const tc = useTranslations('common')
   const { coaches, loading, error } = useCoaches()
   const [searchTerm, setSearchTerm] = useState('')
-  const params = useParams()
-  const isEnglish = params.locale === 'en'
+
 
   const filteredCoaches = coaches.filter((coach) =>
     coach.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -50,16 +50,16 @@ export default function CoachesPage() {
   const getSchoolBadges = (schools: string[]) => {
     return schools.map(school => (
       <Badge key={school} variant="secondary" className="text-xs">
-        {school === 'ageo' ? '上尾校' : '桶川校'}
+        {school === 'ageo' ? t('detail.ageoSchool') : t('detail.okegawaSchool')}
       </Badge>
     ))
   }
 
   const getRoleBadge = (role: string) => {
     const roleLabels = {
-      coach: '講師',
-      senior_coach: 'シニア講師',
-      manager: 'マネージャー',
+      coach: t('detail.roleCoach'),
+      senior_coach: t('detail.roleSeniorCoach'),
+      manager: t('detail.roleManager'),
     }
 
     const roleColors = {
@@ -80,7 +80,7 @@ export default function CoachesPage() {
       <div className="flex items-center justify-center h-64">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-muted-foreground">講師データを読み込んでいます...</p>
+          <p className="text-muted-foreground">{t('detail.loadingCoach')}</p>
         </div>
       </div>
     )
@@ -92,7 +92,7 @@ export default function CoachesPage() {
         <div className="text-center">
           <AlertTriangle className="h-12 w-12 text-red-500 mx-auto mb-4" />
           <p className="text-red-600 mb-4">{error}</p>
-          <Button onClick={() => window.location.reload()}>再試行</Button>
+          <Button onClick={() => window.location.reload()}>{tc('retry')}</Button>
         </div>
       </div>
     )
@@ -173,13 +173,13 @@ export default function CoachesPage() {
                       <DropdownMenuItem asChild>
                         <Link href={`/coaches/${coach.id}`}>
                           <Eye className="h-4 w-4 mr-2" />
-                          詳細表示
+                          {t('detail.pageTitle')}
                         </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem asChild>
                         <Link href={`/coaches/${coach.id}/edit`}>
                           <Edit className="h-4 w-4 mr-2" />
-                          編集
+                          {t('detail.edit')}
                         </Link>
                       </DropdownMenuItem>
                     </DropdownMenuContent>
@@ -229,13 +229,13 @@ export default function CoachesPage() {
                     <div className="flex items-center gap-2">
                       <AlertTriangle className="h-4 w-4 text-amber-600" />
                       <span className="text-sm font-medium text-amber-800">
-                        資格期限注意
+                        {t('detail.certExpiringSoon')}
                       </span>
                     </div>
                     <div className="mt-1">
                       {expiringCerts.map((cert) => (
                         <p key={cert.id} className="text-xs text-amber-700">
-                          {cert.name} - {cert.status === 'expired' ? '期限切れ' : '期限間近'}
+                          {cert.name} - {cert.status === 'expired' ? t('detail.certExpired') : t('detail.certExpiringSoon')}
                         </p>
                       ))}
                     </div>
@@ -248,11 +248,11 @@ export default function CoachesPage() {
                     variant={coach.status === 'active' ? 'default' : 'secondary'}
                     className={coach.status === 'active' ? 'bg-green-600' : ''}
                   >
-                    {coach.status === 'active' ? '在職中' : '退職'}
+                    {coach.status === 'active' ? t('detail.statusActive') : t('detail.statusInactive')}
                   </Badge>
                   {coach.hire_date && (
                     <span className="text-xs text-muted-foreground">
-                      入社: {new Date(coach.hire_date).toLocaleDateString('ja-JP')}
+                      {t('card.joinDate')}: {new Date(coach.hire_date).toLocaleDateString('ja-JP')}
                     </span>
                   )}
                 </div>
@@ -266,15 +266,15 @@ export default function CoachesPage() {
         <div className="text-center py-12">
           <Users className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
           <p className="text-lg font-medium text-muted-foreground mb-2">
-            講師が見つかりません
+            {t('detail.coachNotFound')}
           </p>
           <p className="text-muted-foreground mb-4">
-            検索条件を変更するか、新しい講師を登録してください
+            {t('detail.backToList')}
           </p>
           <Link href="/coaches/new">
             <Button>
               <Plus className="h-4 w-4 mr-2" />
-              講師を登録
+              {t('addNew')}
             </Button>
           </Link>
         </div>

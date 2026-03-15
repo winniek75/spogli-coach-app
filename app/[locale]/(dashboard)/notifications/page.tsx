@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { useTranslations } from 'next-intl'
 import { useNotifications, useNotificationSettings } from '@/hooks/use-notifications'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
@@ -55,6 +56,8 @@ import {
 import { NotificationWithDetails, CreateNotificationRequest } from '@/types/notification'
 
 export default function NotificationsPage() {
+  const t = useTranslations('notifications')
+
   const {
     notifications,
     loading,
@@ -141,7 +144,7 @@ export default function NotificationsPage() {
       <div className="flex items-center justify-center h-64">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-muted-foreground">通知を読み込んでいます...</p>
+          <p className="text-muted-foreground">{t('loading')}</p>
         </div>
       </div>
     )
@@ -155,13 +158,13 @@ export default function NotificationsPage() {
           <div>
             <h1 className="text-3xl font-bold tracking-tight flex items-center gap-2">
               <Bell className="h-8 w-8" />
-              通知管理
+              {t('title')}
             </h1>
             <p className="text-muted-foreground mt-2">
-              システム通知の確認・管理
+              {t('subtitle')}
               {unreadCount > 0 && (
                 <span className="ml-2 px-2 py-1 bg-red-100 text-red-800 rounded-full text-xs">
-                  {unreadCount}件の未読
+                  {t('unreadCount', { count: unreadCount })}
                 </span>
               )}
             </p>
@@ -175,7 +178,7 @@ export default function NotificationsPage() {
               onClick={() => markAllAsRead('test-user-id')}
             >
               <CheckCheck className="h-4 w-4 mr-2" />
-              すべて既読
+              {t('markAllRead')}
             </Button>
           )}
 
@@ -183,7 +186,7 @@ export default function NotificationsPage() {
             <DialogTrigger asChild>
               <Button>
                 <Plus className="h-4 w-4 mr-2" />
-                通知作成
+                {t('create')}
               </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[600px]">
@@ -201,7 +204,7 @@ export default function NotificationsPage() {
             <DialogTrigger asChild>
               <Button variant="outline">
                 <Settings className="h-4 w-4 mr-2" />
-                設定
+                {t('settings')}
               </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[500px]">
@@ -225,45 +228,45 @@ export default function NotificationsPage() {
           <div className="grid gap-4 md:grid-cols-4">
             <Select value={categoryFilter} onValueChange={setCategoryFilter}>
               <SelectTrigger>
-                <SelectValue placeholder="カテゴリで絞り込み" />
+                <SelectValue placeholder={t('filterByCategory')} />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all">すべて</SelectItem>
-                <SelectItem value="achievement">実績</SelectItem>
-                <SelectItem value="reminder">リマインダー</SelectItem>
-                <SelectItem value="alert">アラート</SelectItem>
-                <SelectItem value="update">更新</SelectItem>
-                <SelectItem value="system">システム</SelectItem>
+                <SelectItem value="all">{t('all')}</SelectItem>
+                <SelectItem value="achievement">{t('achievement')}</SelectItem>
+                <SelectItem value="reminder">{t('reminder')}</SelectItem>
+                <SelectItem value="alert">{t('alert')}</SelectItem>
+                <SelectItem value="update">{t('update')}</SelectItem>
+                <SelectItem value="system">{t('system')}</SelectItem>
               </SelectContent>
             </Select>
 
             <Select value={priorityFilter} onValueChange={setPriorityFilter}>
               <SelectTrigger>
-                <SelectValue placeholder="優先度で絞り込み" />
+                <SelectValue placeholder={t('filterByPriority')} />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all">すべて</SelectItem>
-                <SelectItem value="urgent">緊急</SelectItem>
-                <SelectItem value="high">高</SelectItem>
-                <SelectItem value="medium">中</SelectItem>
-                <SelectItem value="low">低</SelectItem>
+                <SelectItem value="all">{t('all')}</SelectItem>
+                <SelectItem value="urgent">{t('urgent')}</SelectItem>
+                <SelectItem value="high">{t('high')}</SelectItem>
+                <SelectItem value="medium">{t('medium')}</SelectItem>
+                <SelectItem value="low">{t('low')}</SelectItem>
               </SelectContent>
             </Select>
 
             <Select value={readFilter} onValueChange={setReadFilter}>
               <SelectTrigger>
-                <SelectValue placeholder="既読状態で絞り込み" />
+                <SelectValue placeholder={t('filterByReadStatus')} />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all">すべて</SelectItem>
-                <SelectItem value="unread">未読</SelectItem>
-                <SelectItem value="read">既読</SelectItem>
+                <SelectItem value="all">{t('all')}</SelectItem>
+                <SelectItem value="unread">{t('unread')}</SelectItem>
+                <SelectItem value="read">{t('read')}</SelectItem>
               </SelectContent>
             </Select>
 
             <Button onClick={handleFilterChange}>
               <Filter className="h-4 w-4 mr-2" />
-              絞り込み
+              {t('filter')}
             </Button>
           </div>
         </CardContent>
@@ -285,10 +288,10 @@ export default function NotificationsPage() {
         <div className="text-center py-12">
           <Bell className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
           <p className="text-lg font-medium text-muted-foreground mb-2">
-            通知がありません
+            {t('noNotifications')}
           </p>
           <p className="text-muted-foreground">
-            フィルター条件を変更するか、新しい通知を作成してください
+            {t('noNotificationsDesc')}
           </p>
         </div>
       )}
@@ -305,6 +308,8 @@ function NotificationCard({
   onMarkAsRead: (id: string) => Promise<void>
   onDelete: (id: string) => Promise<void>
 }) {
+  const t = useTranslations('notifications')
+
   const getPriorityIcon = (priority: string) => {
     switch (priority) {
       case 'urgent':
@@ -357,7 +362,7 @@ function NotificationCard({
               </Badge>
               {!notification.is_read && (
                 <Badge variant="default" className="bg-blue-100 text-blue-800">
-                  未読
+                  {t('unread')}
                 </Badge>
               )}
             </div>
@@ -366,10 +371,10 @@ function NotificationCard({
 
             <div className="flex items-center gap-4 text-sm text-muted-foreground">
               <span>{new Date(notification.created_at).toLocaleString('ja-JP')}</span>
-              <span>カテゴリ: {notification.category}</span>
+              <span>{t('category')}: {notification.category}</span>
               {notification.channels && (
                 <div className="flex items-center gap-1">
-                  <span>送信先:</span>
+                  <span>{t('sentTo')}:</span>
                   {notification.channels.includes('app') && <Bell className="h-3 w-3" />}
                   {notification.channels.includes('email') && <Mail className="h-3 w-3" />}
                   {notification.channels.includes('line') && <MessageSquare className="h-3 w-3" />}
@@ -389,7 +394,7 @@ function NotificationCard({
               {!notification.is_read && (
                 <DropdownMenuItem onClick={() => onMarkAsRead(notification.id)}>
                   <Check className="h-4 w-4 mr-2" />
-                  既読にする
+                  {t('markAsRead')}
                 </DropdownMenuItem>
               )}
               <DropdownMenuItem
@@ -397,7 +402,7 @@ function NotificationCard({
                 className="text-red-600"
               >
                 <Trash2 className="h-4 w-4 mr-2" />
-                削除
+                {t('delete')}
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -414,6 +419,8 @@ function CreateNotificationForm({
   onSubmit: (data: CreateNotificationRequest) => Promise<void>
   onCancel: () => void
 }) {
+  const t = useTranslations('notifications')
+
   const [formData, setFormData] = useState<CreateNotificationRequest>({
     type: 'custom',
     title: '',
@@ -434,38 +441,38 @@ function CreateNotificationForm({
   return (
     <>
       <DialogHeader>
-        <DialogTitle>新しい通知を作成</DialogTitle>
+        <DialogTitle>{t('createNew')}</DialogTitle>
         <DialogDescription>
-          通知の詳細を入力してください
+          {t('createNewDesc')}
         </DialogDescription>
       </DialogHeader>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <Label htmlFor="title">タイトル</Label>
+          <Label htmlFor="title">{t('formTitle')}</Label>
           <Input
             id="title"
             value={formData.title}
             onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-            placeholder="通知のタイトル"
+            placeholder={t('formTitlePlaceholder')}
             required
           />
         </div>
 
         <div>
-          <Label htmlFor="message">メッセージ</Label>
+          <Label htmlFor="message">{t('formMessage')}</Label>
           <Textarea
             id="message"
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            placeholder="通知の内容"
+            placeholder={t('formMessagePlaceholder')}
             required
           />
         </div>
 
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <Label htmlFor="priority">優先度</Label>
+            <Label htmlFor="priority">{t('priority')}</Label>
             <Select
               value={formData.priority}
               onValueChange={(value) => setFormData({ ...formData, priority: value as any })}
@@ -474,16 +481,16 @@ function CreateNotificationForm({
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="low">低</SelectItem>
-                <SelectItem value="medium">中</SelectItem>
-                <SelectItem value="high">高</SelectItem>
-                <SelectItem value="urgent">緊急</SelectItem>
+                <SelectItem value="low">{t('low')}</SelectItem>
+                <SelectItem value="medium">{t('medium')}</SelectItem>
+                <SelectItem value="high">{t('high')}</SelectItem>
+                <SelectItem value="urgent">{t('urgent')}</SelectItem>
               </SelectContent>
             </Select>
           </div>
 
           <div>
-            <Label htmlFor="category">カテゴリ</Label>
+            <Label htmlFor="category">{t('categoryLabel')}</Label>
             <Select
               value={formData.category}
               onValueChange={(value) => setFormData({ ...formData, category: value as any })}
@@ -492,11 +499,11 @@ function CreateNotificationForm({
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="achievement">実績</SelectItem>
-                <SelectItem value="reminder">リマインダー</SelectItem>
-                <SelectItem value="alert">アラート</SelectItem>
-                <SelectItem value="update">更新</SelectItem>
-                <SelectItem value="system">システム</SelectItem>
+                <SelectItem value="achievement">{t('achievement')}</SelectItem>
+                <SelectItem value="reminder">{t('reminder')}</SelectItem>
+                <SelectItem value="alert">{t('alert')}</SelectItem>
+                <SelectItem value="update">{t('update')}</SelectItem>
+                <SelectItem value="system">{t('system')}</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -504,9 +511,9 @@ function CreateNotificationForm({
 
         <DialogFooter>
           <Button type="button" variant="outline" onClick={onCancel}>
-            キャンセル
+            {t('cancel')}
           </Button>
-          <Button type="submit">作成</Button>
+          <Button type="submit">{t('createButton')}</Button>
         </DialogFooter>
       </form>
     </>
@@ -524,6 +531,8 @@ function NotificationSettingsForm({
   onSubmit: (data: any) => Promise<void>
   onCancel: () => void
 }) {
+  const t = useTranslations('notifications')
+
   const [formData, setFormData] = useState(settings || {
     channels: { app: true, email: false, line: false, sms: false },
     categories: { achievement: true, reminder: true, alert: true, update: false, system: true },
@@ -546,21 +555,21 @@ function NotificationSettingsForm({
   }
 
   if (loading) {
-    return <div>設定を読み込んでいます...</div>
+    return <div>{t('settingsLoading')}</div>
   }
 
   return (
     <>
       <DialogHeader>
-        <DialogTitle>通知設定</DialogTitle>
+        <DialogTitle>{t('settingsTitle')}</DialogTitle>
         <DialogDescription>
-          通知の受信方法や頻度を設定できます
+          {t('settingsDesc')}
         </DialogDescription>
       </DialogHeader>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <Label className="text-base font-medium">通知チャンネル</Label>
+          <Label className="text-base font-medium">{t('channels')}</Label>
           <div className="space-y-3 mt-3">
             {Object.entries(formData.channels || {}).map(([channel, enabled]) => (
               <div key={channel} className="flex items-center justify-between">
@@ -569,9 +578,9 @@ function NotificationSettingsForm({
                   {channel === 'email' && <Mail className="h-4 w-4" />}
                   {channel === 'line' && <MessageSquare className="h-4 w-4" />}
                   {channel === 'sms' && <Smartphone className="h-4 w-4" />}
-                  {channel === 'app' ? 'アプリ内通知' :
-                   channel === 'email' ? 'メール' :
-                   channel === 'line' ? 'LINE' : 'SMS'}
+                  {channel === 'app' ? t('channelApp') :
+                   channel === 'email' ? t('channelEmail') :
+                   channel === 'line' ? t('channelLine') : t('channelSms')}
                 </Label>
                 <Switch
                   id={channel}
@@ -589,15 +598,15 @@ function NotificationSettingsForm({
         </div>
 
         <div>
-          <Label className="text-base font-medium">通知カテゴリ</Label>
+          <Label className="text-base font-medium">{t('categorySettings')}</Label>
           <div className="space-y-3 mt-3">
             {Object.entries(formData.categories || {}).map(([category, enabled]) => (
               <div key={category} className="flex items-center justify-between">
                 <Label htmlFor={`cat-${category}`}>
-                  {category === 'achievement' ? '実績・バッジ' :
-                   category === 'reminder' ? 'リマインダー' :
-                   category === 'alert' ? 'アラート' :
-                   category === 'update' ? '更新情報' : 'システム'}
+                  {category === 'achievement' ? t('categoryAchievement') :
+                   category === 'reminder' ? t('reminder') :
+                   category === 'alert' ? t('alert') :
+                   category === 'update' ? t('categoryUpdate') : t('system')}
                 </Label>
                 <Switch
                   id={`cat-${category}`}
@@ -616,9 +625,9 @@ function NotificationSettingsForm({
 
         <DialogFooter>
           <Button type="button" variant="outline" onClick={onCancel}>
-            キャンセル
+            {t('cancel')}
           </Button>
-          <Button type="submit">保存</Button>
+          <Button type="submit">{t('save')}</Button>
         </DialogFooter>
       </form>
     </>

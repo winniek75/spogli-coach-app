@@ -224,7 +224,6 @@ export default function DashboardPage() {
   }
 
   const currentMonth = new Date().toLocaleDateString('ja-JP', { month: 'long' })
-  const currentSport = 'バレーボール'
 
   return (
     <div className="space-y-6">
@@ -233,7 +232,7 @@ export default function DashboardPage() {
         <div>
           <h1 className="text-3xl font-bold tracking-tight">{t('dashboard.title')}</h1>
           <p className="text-muted-foreground mt-2">
-            {currentMonth}のスポーツ: 🏐 {currentSport}
+            {currentMonth}{t('dashboard.sportOfMonth')}: 🏐 {t('schedule.volleyball')}
           </p>
         </div>
 
@@ -245,7 +244,7 @@ export default function DashboardPage() {
             <SelectItem value="today">{t('lessons.today')}</SelectItem>
             <SelectItem value="week">{t('lessons.thisWeek')}</SelectItem>
             <SelectItem value="month">{t('lessons.thisMonth')}</SelectItem>
-            <SelectItem value="year">今年</SelectItem>
+            <SelectItem value="year">{t('dashboard.thisYear')}</SelectItem>
           </SelectContent>
         </Select>
       </div>
@@ -260,7 +259,7 @@ export default function DashboardPage() {
           <CardContent>
             <div className="text-2xl font-bold">{stats.totalCoaches}</div>
             <p className="text-xs text-muted-foreground">
-              {stats.activeCoaches} 名が稼働中
+              {stats.activeCoaches} {t('dashboard.time.coachUnit')}
             </p>
             <Progress value={(stats.activeCoaches / stats.totalCoaches) * 100} className="mt-2" />
           </CardContent>
@@ -278,7 +277,7 @@ export default function DashboardPage() {
                 <ArrowUp className="h-3 w-3 mr-1" />
                 +12%
               </span>
-              {' '}前月比
+              {' '}{t('dashboard.comparedToLastMonth')}
             </p>
             <Progress value={(stats.activeStudents / stats.totalStudents) * 100} className="mt-2" />
           </CardContent>
@@ -286,13 +285,13 @@ export default function DashboardPage() {
 
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">レッスン実施数</CardTitle>
+            <CardTitle className="text-sm font-medium">{t('dashboard.lessonCount')}</CardTitle>
             <Calendar className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">{stats.totalLessons}</div>
             <p className="text-xs text-muted-foreground">
-              {stats.upcomingLessons} 件の予定
+              {stats.upcomingLessons} {t('dashboard.time.upcomingUnit')}
             </p>
             <Progress value={(stats.completedLessons / stats.totalLessons) * 100} className="mt-2" />
           </CardContent>
@@ -300,7 +299,7 @@ export default function DashboardPage() {
 
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">平均評価</CardTitle>
+            <CardTitle className="text-sm font-medium">{t('dashboard.averageRating')}</CardTitle>
             <Star className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
@@ -317,7 +316,7 @@ export default function DashboardPage() {
                 />
               ))}
               <span className="text-xs text-muted-foreground ml-2">
-                ({stats.totalEvaluations} 件)
+                ({stats.totalEvaluations} {t('dashboard.time.items')})
               </span>
             </div>
           </CardContent>
@@ -329,7 +328,7 @@ export default function DashboardPage() {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <CalendarDays className="h-5 w-5" />
-            今日のレッスン
+            {t('dashboard.todayLessons')}
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-2">
@@ -344,7 +343,7 @@ export default function DashboardPage() {
                 <span className="text-muted-foreground">{lesson.classType}</span>
               </div>
               <div className="text-sm text-muted-foreground">
-                担当: {lesson.coaches.join(', ')}
+                {t('dashboard.assignedCoach')}: {lesson.coaches.join(', ')}
               </div>
             </div>
           ))}
@@ -355,7 +354,7 @@ export default function DashboardPage() {
       <div className="grid gap-4 md:grid-cols-3">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">目標達成率</CardTitle>
+            <CardTitle className="text-sm font-medium">{t('dashboard.goalAchievement')}</CardTitle>
             <Target className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
@@ -366,23 +365,23 @@ export default function DashboardPage() {
 
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">バッジ獲得数</CardTitle>
+            <CardTitle className="text-sm font-medium">{t('dashboard.badgesEarned')}</CardTitle>
             <Award className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">{stats.badgesEarned}</div>
-            <p className="text-xs text-muted-foreground">今月の獲得数</p>
+            <p className="text-xs text-muted-foreground">{t('dashboard.monthlyBadges')}</p>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">要対応</CardTitle>
+            <CardTitle className="text-sm font-medium">{t('dashboard.requiresAction')}</CardTitle>
             <AlertCircle className="h-4 w-4 text-orange-500" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">{stats.certificationsExpiring}</div>
-            <p className="text-xs text-orange-600">資格更新期限間近</p>
+            <p className="text-xs text-orange-600">{t('dashboard.certificateExpiring')}</p>
           </CardContent>
         </Card>
       </div>
@@ -390,18 +389,18 @@ export default function DashboardPage() {
       {/* タブコンテンツ */}
       <Tabs defaultValue="activities" className="space-y-4">
         <TabsList>
-          <TabsTrigger value="activities">最近のアクティビティ</TabsTrigger>
-          <TabsTrigger value="progress">週間進捗</TabsTrigger>
-          <TabsTrigger value="sports">スポーツ別統計</TabsTrigger>
-          <TabsTrigger value="alerts">アラート</TabsTrigger>
+          <TabsTrigger value="activities">{t('dashboard.recentActivities')}</TabsTrigger>
+          <TabsTrigger value="progress">{t('dashboard.weeklyProgress')}</TabsTrigger>
+          <TabsTrigger value="sports">{t('dashboard.sportStatistics')}</TabsTrigger>
+          <TabsTrigger value="alerts">{t('dashboard.alerts')}</TabsTrigger>
         </TabsList>
 
         <TabsContent value="activities" className="space-y-4">
           <Card>
             <CardHeader>
-              <CardTitle>最近のアクティビティ</CardTitle>
+              <CardTitle>{t('dashboard.recentActivities')}</CardTitle>
               <CardDescription>
-                システム内の最新の活動状況
+                {t('dashboard.recentActivitiesDesc')}
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -428,9 +427,9 @@ export default function DashboardPage() {
         <TabsContent value="progress" className="space-y-4">
           <Card>
             <CardHeader>
-              <CardTitle>週間進捗</CardTitle>
+              <CardTitle>{t('dashboard.weeklyProgress')}</CardTitle>
               <CardDescription>
-                今週の活動推移
+                {t('dashboard.weeklyProgressDesc')}
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -442,15 +441,15 @@ export default function DashboardPage() {
                       <div className="flex-1 grid grid-cols-3 gap-4 ml-4">
                         <div className="flex items-center gap-2">
                           <Calendar className="h-3 w-3 text-muted-foreground" />
-                          <span className="text-xs">{day.lessons} レッスン</span>
+                          <span className="text-xs">{day.lessons} {t('dashboard.unitLesson')}</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <FileText className="h-3 w-3 text-muted-foreground" />
-                          <span className="text-xs">{day.evaluations} 評価</span>
+                          <span className="text-xs">{day.evaluations} {t('dashboard.unitEvaluation')}</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <Users className="h-3 w-3 text-muted-foreground" />
-                          <span className="text-xs">{day.students} 生徒</span>
+                          <span className="text-xs">{day.students} {t('dashboard.unitStudent')}</span>
                         </div>
                       </div>
                     </div>
@@ -465,9 +464,9 @@ export default function DashboardPage() {
         <TabsContent value="sports" className="space-y-4">
           <Card>
             <CardHeader>
-              <CardTitle>スポーツ別統計</CardTitle>
+              <CardTitle>{t('dashboard.sportStatistics')}</CardTitle>
               <CardDescription>
-                各スポーツの生徒数とレッスン実施状況
+                {t('dashboard.sportStatisticsDesc')}
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -483,8 +482,8 @@ export default function DashboardPage() {
                         <span className="text-sm font-medium">{sport.sport}</span>
                       </div>
                       <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                        <span>{sport.studentCount} 生徒</span>
-                        <span>{sport.lessonCount} レッスン</span>
+                        <span>{sport.studentCount} {t('dashboard.unitStudent')}</span>
+                        <span>{sport.lessonCount} {t('dashboard.unitLesson')}</span>
                       </div>
                     </div>
                     <Progress
@@ -508,7 +507,7 @@ export default function DashboardPage() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Award className="h-5 w-5" />
-                  バッジ付与予定
+                  {t('dashboard.badgeAlerts')}
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-2">
@@ -533,9 +532,9 @@ export default function DashboardPage() {
             {/* 通知 */}
             <Card>
               <CardHeader>
-                <CardTitle>最近の通知</CardTitle>
+                <CardTitle>{t('dashboard.recentNotifications')}</CardTitle>
                 <CardDescription>
-                  重要な通知と更新情報
+                  {t('dashboard.recentNotificationsDesc')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -569,7 +568,7 @@ export default function DashboardPage() {
                 <div className="mt-4 pt-4 border-t">
                   <Button asChild variant="outline" className="w-full">
                     <Link href="/notifications">
-                      すべての通知を見る
+                      {t('dashboard.viewAllNotifications')}
                     </Link>
                   </Button>
                 </div>
@@ -584,25 +583,25 @@ export default function DashboardPage() {
         <Link href="/lessons/menus/new">
           <Button variant="outline" className="w-full h-24 flex-col gap-2">
             <ClipboardList className="h-6 w-6" />
-            <span>レッスン作成</span>
+            <span>{t('dashboard.quickActions.createLesson')}</span>
           </Button>
         </Link>
         <Link href="/students">
           <Button variant="outline" className="w-full h-24 flex-col gap-2">
             <Users className="h-6 w-6" />
-            <span>生徒管理</span>
+            <span>{t('dashboard.quickActions.manageStudents')}</span>
           </Button>
         </Link>
         <Link href="/content/videos">
           <Button variant="outline" className="w-full h-24 flex-col gap-2">
             <Video className="h-6 w-6" />
-            <span>コンテンツ</span>
+            <span>{t('dashboard.quickActions.content')}</span>
           </Button>
         </Link>
         <Link href="/sports">
           <Button variant="outline" className="w-full h-24 flex-col gap-2">
             <Trophy className="h-6 w-6" />
-            <span>スポーツ管理</span>
+            <span>{t('dashboard.quickActions.manageSports')}</span>
           </Button>
         </Link>
       </div>

@@ -45,9 +45,9 @@ export default function SchedulePage() {
         id: lesson.id,
         date: lesson.date,
         time: `${lesson.startTime} - ${lesson.endTime}`,
-        school: lesson.school === 'ageo' ? '上尾校' : '桶川校',
-        classType: lesson.classType === 'preschool' ? '未就学児' : '小学生',
-        sport: lesson.sport === 'volleyball' ? 'バレーボール' : lesson.sport,
+        school: lesson.school === 'ageo' ? tSchedule('ageoSchool') : tSchedule('okegawaSchool'),
+        classType: lesson.classType === 'preschool' ? tSchedule('preschool') : tSchedule('elementary'),
+        sport: lesson.sport === 'volleyball' ? tSchedule('volleyball') : lesson.sport,
         coaches: lesson.assignedCoaches || [],
         enrolled: lesson.enrolledCount || 0,
         max: lesson.maxStudents,
@@ -62,7 +62,7 @@ export default function SchedulePage() {
           id: `${lesson.id}-${index}`,
           date: lesson.date,
           time: `${lesson.startTime} - ${lesson.endTime}`,
-          school: lesson.school === 'ageo' ? '上尾校' : '桶川校',
+          school: lesson.school === 'ageo' ? tSchedule('ageoSchool') : tSchedule('okegawaSchool'),
           coach: coach,
           status: lesson.status === 'scheduled' ? 'scheduled' : 'confirmed',
         }))
@@ -139,7 +139,7 @@ export default function SchedulePage() {
           <CardContent>
             <div className="text-2xl font-bold">{todayStats.coachesCount}{tSchedule('coaches')}</div>
             <p className="text-xs text-muted-foreground">
-              {coaches.filter(c => c.status === 'active').length}名中
+              {coaches.filter(c => c.status === 'active').length}{tSchedule('coaches')}
             </p>
           </CardContent>
         </Card>
@@ -150,9 +150,9 @@ export default function SchedulePage() {
             <BookOpen className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{todayStats.lessonsCount}回</div>
+            <div className="text-2xl font-bold">{todayStats.lessonsCount}{tSchedule('lessons')}</div>
             <p className="text-xs text-muted-foreground">
-              予定済み
+              {tSchedule('scheduled')}
             </p>
           </CardContent>
         </Card>
@@ -163,9 +163,9 @@ export default function SchedulePage() {
             <Users className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{todayStats.studentsCount}名</div>
+            <div className="text-2xl font-bold">{todayStats.studentsCount}{tSchedule('students')}</div>
             <p className="text-xs text-muted-foreground">
-              定員: {todayStats.maxStudents}名
+              {tSchedule('capacity')}: {todayStats.maxStudents}{tSchedule('students')}
             </p>
           </CardContent>
         </Card>
@@ -178,7 +178,7 @@ export default function SchedulePage() {
           <CardContent>
             <div className="text-2xl font-bold">{todayStats.utilization}%</div>
             <p className="text-xs text-muted-foreground">
-              今日の稼働率
+              {tSchedule('weeklyAverage')}
             </p>
           </CardContent>
         </Card>
@@ -191,15 +191,15 @@ export default function SchedulePage() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Clock className="h-5 w-5" />
-                シフト管理
+                {tSchedule('shiftManagement')}
               </CardTitle>
               <CardDescription>
-                講師のシフト登録・編集・確認
+                {tSchedule('shiftManagementDesc')}
               </CardDescription>
             </CardHeader>
             <CardContent>
               <Button variant="secondary" className="w-full">
-                シフト表を見る
+                {tSchedule('viewShifts')}
               </Button>
             </CardContent>
           </Card>
@@ -210,15 +210,15 @@ export default function SchedulePage() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <CalendarDays className="h-5 w-5" />
-                レッスン日程
+                {tSchedule('lessonSchedule')}
               </CardTitle>
               <CardDescription>
-                レッスンスケジュールの作成・管理
+                {tSchedule('lessonScheduleDesc')}
               </CardDescription>
             </CardHeader>
             <CardContent>
               <Button variant="secondary" className="w-full">
-                日程を確認
+                {tSchedule('confirmSchedule')}
               </Button>
             </CardContent>
           </Card>
@@ -229,15 +229,15 @@ export default function SchedulePage() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Calendar className="h-5 w-5" />
-                カレンダー
+                {tSchedule('calendar')}
               </CardTitle>
               <CardDescription>
-                月間カレンダーでスケジュール確認
+                {tSchedule('calendarDesc')}
               </CardDescription>
             </CardHeader>
             <CardContent>
               <Button variant="secondary" className="w-full">
-                カレンダー表示
+                {tSchedule('viewCalendar')}
               </Button>
             </CardContent>
           </Card>
@@ -251,11 +251,11 @@ export default function SchedulePage() {
             <div className="flex items-center justify-between">
               <CardTitle className="flex items-center gap-2">
                 <Clock className="h-5 w-5" />
-                今後のシフト
+                {tSchedule('upcomingShifts')}
               </CardTitle>
               <Link href="/schedule/shifts">
                 <Button size="sm" variant="outline">
-                  すべて見る
+                  {tSchedule('viewAll')}
                 </Button>
               </Link>
             </div>
@@ -264,10 +264,10 @@ export default function SchedulePage() {
             {upcomingShifts.length === 0 ? (
               <div className="text-center py-8 text-muted-foreground">
                 <Clock className="h-8 w-8 mx-auto mb-2 opacity-50" />
-                <p>シフトが登録されていません</p>
+                <p>{tSchedule('shifts.addShift')}</p>
                 <Link href="/schedule/shifts/new">
                   <Button size="sm" variant="outline" className="mt-2">
-                    シフトを登録
+                    {tSchedule('shifts.addShift')}
                   </Button>
                 </Link>
               </div>
@@ -297,11 +297,11 @@ export default function SchedulePage() {
             <div className="flex items-center justify-between">
               <CardTitle className="flex items-center gap-2">
                 <BookOpen className="h-5 w-5" />
-                今後のレッスン
+                {tSchedule('upcomingLessons')}
               </CardTitle>
               <Link href="/schedule/lessons">
                 <Button size="sm" variant="outline">
-                  すべて見る
+                  {tSchedule('viewAll')}
                 </Button>
               </Link>
             </div>
@@ -310,10 +310,10 @@ export default function SchedulePage() {
             {upcomingLessons.length === 0 ? (
               <div className="text-center py-8 text-muted-foreground">
                 <BookOpen className="h-8 w-8 mx-auto mb-2 opacity-50" />
-                <p>レッスンが登録されていません</p>
+                <p>{tSchedule('lessons.createLesson')}</p>
                 <Link href="/schedule/lessons/new">
                   <Button size="sm" variant="outline" className="mt-2">
-                    レッスンを登録
+                    {tSchedule('lessons.createLesson')}
                   </Button>
                 </Link>
               </div>
@@ -330,11 +330,11 @@ export default function SchedulePage() {
                   <div className="flex items-center justify-between text-sm">
                     <div className="space-y-1">
                       <p className="text-muted-foreground">{lesson.time} / {lesson.classType}</p>
-                      <p className="text-muted-foreground">講師: {lesson.coaches.length > 0 ? lesson.coaches.join(', ') : '未定'}</p>
+                      <p className="text-muted-foreground">{tSchedule('coach')}: {lesson.coaches.length > 0 ? lesson.coaches.join(', ') : tSchedule('lessons.notSet')}</p>
                     </div>
                     <div className="text-right">
                       <p className="font-medium">{lesson.enrolled}/{lesson.max}名</p>
-                      <p className="text-xs text-muted-foreground">受講予定</p>
+                      <p className="text-xs text-muted-foreground">{tSchedule('enrolledPlan')}</p>
                     </div>
                   </div>
                 </div>
@@ -347,26 +347,26 @@ export default function SchedulePage() {
       {/* 開発中の機能 */}
       <Card>
         <CardHeader>
-          <CardTitle>開発状況</CardTitle>
-          <CardDescription>Phase 2: 講師・スケジュール管理の進捗</CardDescription>
+          <CardTitle>{tSchedule('developmentStatus')}</CardTitle>
+          <CardDescription>{tSchedule('phase2Progress')}</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
             <div className="flex items-center gap-2">
               <div className="h-3 w-3 bg-green-600 rounded-full"></div>
-              <span className="text-sm">講師CRUD機能</span>
+              <span className="text-sm">{tSchedule('coachCrud')}</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="h-3 w-3 bg-amber-600 rounded-full"></div>
-              <span className="text-sm">シフト管理 (開発中)</span>
+              <span className="text-sm">{tSchedule('shiftManagementDev')}</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="h-3 w-3 bg-gray-400 rounded-full"></div>
-              <span className="text-sm">資格管理 (予定)</span>
+              <span className="text-sm">{tSchedule('qualificationManagement')}</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="h-3 w-3 bg-gray-400 rounded-full"></div>
-              <span className="text-sm">自動アサイン (予定)</span>
+              <span className="text-sm">{tSchedule('autoAssignment')}</span>
             </div>
           </div>
         </CardContent>

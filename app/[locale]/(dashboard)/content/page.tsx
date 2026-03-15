@@ -2,14 +2,17 @@
 
 import Link from 'next/link'
 import { Video, FileText } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
 export default function ContentPage() {
+  const t = useTranslations('contentTop')
+
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-3xl font-bold">コンテンツ管理</h1>
+        <h1 className="text-3xl font-bold">{t('title')}</h1>
         <p className="text-muted-foreground mt-2">
-          動画や教材などのコンテンツを管理します
+          {t('subtitle')}
         </p>
       </div>
 
@@ -23,9 +26,9 @@ export default function ContentPage() {
               <Video className="h-8 w-8" />
             </div>
             <div>
-              <h2 className="text-xl font-semibold">動画一覧</h2>
+              <h2 className="text-xl font-semibold">{t('videoList')}</h2>
               <p className="text-muted-foreground mt-1">
-                レッスン動画を管理
+                {t('videoListDesc')}
               </p>
             </div>
           </div>
@@ -40,9 +43,9 @@ export default function ContentPage() {
               <FileText className="h-8 w-8" />
             </div>
             <div>
-              <h2 className="text-xl font-semibold">教材一覧</h2>
+              <h2 className="text-xl font-semibold">{t('materialList')}</h2>
               <p className="text-muted-foreground mt-1">
-                PDF教材を管理
+                {t('materialListDesc')}
               </p>
             </div>
           </div>
@@ -50,19 +53,19 @@ export default function ContentPage() {
       </div>
 
       <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-6">
-        <h2 className="text-xl font-semibold mb-4">コンテンツ統計</h2>
+        <h2 className="text-xl font-semibold mb-4">{t('statistics')}</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <div className="text-center">
             <div className="text-2xl font-bold text-blue-600">0</div>
-            <div className="text-sm text-muted-foreground">動画数</div>
+            <div className="text-sm text-muted-foreground">{t('videoCount')}</div>
           </div>
           <div className="text-center">
             <div className="text-2xl font-bold text-green-600">0</div>
-            <div className="text-sm text-muted-foreground">教材数</div>
+            <div className="text-sm text-muted-foreground">{t('materialCount')}</div>
           </div>
           <div className="text-center">
             <div className="text-2xl font-bold text-orange-600">0</div>
-            <div className="text-sm text-muted-foreground">総サイズ</div>
+            <div className="text-sm text-muted-foreground">{t('totalSize')}</div>
           </div>
         </div>
       </div>
