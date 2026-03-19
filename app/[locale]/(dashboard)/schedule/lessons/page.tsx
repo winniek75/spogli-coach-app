@@ -67,7 +67,7 @@ const getSportIcon = (sport: string) => {
     basketball: '🏀',
     soccer: '⚽',
     tennis: '🎾',
-    rugby: '🏉',
+    tag_rugby: '🏉',
     baseball: '⚾',
   }
   return icons[sport] || '🏃'
@@ -103,7 +103,7 @@ export default function ScheduleLessonsPage() {
     school: 'ageo',
     classType: 'preschool',
     sport: 'volleyball',
-    trainingType: 'coordination',
+    trainingType: '',
     maxStudents: 12,
     notes: '',
   })
@@ -112,26 +112,21 @@ export default function ScheduleLessonsPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const getTrainingTypeBadge = (type: string) => {
-    const config = {
-      vision: { label: tLessons('vision'), color: 'bg-blue-100 text-blue-800' },
-      rhythm: { label: tLessons('rhythm'), color: 'bg-green-100 text-green-800' },
-      coordination: { label: tLessons('coordination'), color: 'bg-purple-100 text-purple-800' },
-    }
-    const typeConfig = config[type as keyof typeof config] || config.coordination
+    if (!type) return <Badge variant="secondary">未設定</Badge>
     return (
-      <Badge className={typeConfig.color}>
-        {typeConfig.label}
+      <Badge className="bg-purple-100 text-purple-800">
+        {type}
       </Badge>
     )
   }
 
   // レッスン作成処理
-  const handleCreateLesson = async () => {
+  const handleCreateLesson = () => {
     if (isSubmitting) return
 
     setIsSubmitting(true)
     try {
-      await addLesson({
+      addLesson({
         date: formData.date,
         startTime: formData.startTime,
         endTime: formData.endTime,
@@ -147,6 +142,9 @@ export default function ScheduleLessonsPage() {
         notes: formData.notes,
       })
 
+      // ダイアログを先に閉じる
+      setIsAddDialogOpen(false)
+
       // フォームをリセット
       setFormData({
         date: selectedDate,
@@ -155,12 +153,11 @@ export default function ScheduleLessonsPage() {
         school: 'ageo',
         classType: 'preschool',
         sport: 'volleyball',
-        trainingType: 'coordination',
+        trainingType: '',
         maxStudents: 12,
         notes: '',
       })
       setSelectedCoaches([])
-      setIsAddDialogOpen(false)
     } catch (error) {
       console.error('レッスンの作成に失敗しました:', error)
     } finally {
@@ -347,7 +344,7 @@ export default function ScheduleLessonsPage() {
                       <SelectItem value="basketball">{tLessons('basketball')}</SelectItem>
                       <SelectItem value="soccer">{tLessons('soccer')}</SelectItem>
                       <SelectItem value="tennis">{tLessons('tennis')}</SelectItem>
-                      <SelectItem value="rugby">{tLessons('rugby')}</SelectItem>
+                      <SelectItem value="tag_rugby">タグラグビー</SelectItem>
                       <SelectItem value="baseball">{tLessons('baseball')}</SelectItem>
                       <SelectItem value="badminton">バドミントン</SelectItem>
                       <SelectItem value="dance">ダンス</SelectItem>
@@ -360,21 +357,12 @@ export default function ScheduleLessonsPage() {
               <div className="grid gap-4 md:grid-cols-2">
                 <div>
                   <Label htmlFor="trainingType">{tLessons('training')}</Label>
-                  <Select
+                  <Input
+                    id="trainingType"
                     value={formData.trainingType}
-                    onValueChange={(value) => setFormData(prev => ({ ...prev, trainingType: value }))}
-                  >
-                    <SelectTrigger>
-                      <SelectValue />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="coordination">{tLessons('coordination')}</SelectItem>
-                      <SelectItem value="vision">{tLessons('vision')}</SelectItem>
-                      <SelectItem value="rhythm">{tLessons('rhythm')}</SelectItem>
-                      <SelectItem value="agility">アジリティ</SelectItem>
-                      <SelectItem value="power">パワー</SelectItem>
-                    </SelectContent>
-                  </Select>
+                    onChange={(e) => setFormData(prev => ({ ...prev, trainingType: e.target.value }))}
+                    placeholder="例: コーディネーション、ビジョン、リズム等"
+                  />
                 </div>
 
                 <div>
@@ -553,7 +541,7 @@ export default function ScheduleLessonsPage() {
                   <SelectItem value="basketball">{tLessons('basketball')}</SelectItem>
                   <SelectItem value="soccer">{tLessons('soccer')}</SelectItem>
                   <SelectItem value="tennis">{tLessons('tennis')}</SelectItem>
-                  <SelectItem value="rugby">{tLessons('rugby')}</SelectItem>
+                  <SelectItem value="tag_rugby">タグラグビー</SelectItem>
                   <SelectItem value="baseball">{tLessons('baseball')}</SelectItem>
                 </SelectContent>
               </Select>
