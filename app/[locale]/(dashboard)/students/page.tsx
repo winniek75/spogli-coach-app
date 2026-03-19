@@ -10,6 +10,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { convertGoogleDriveImageUrl, isGoogleDriveUrl } from '@/lib/google-drive-utils'
 import {
   Select,
   SelectContent,
@@ -256,7 +257,7 @@ export default function StudentsPage() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <Avatar className="h-12 w-12">
-                    <AvatarImage src={student.photo_url} alt={student.name} />
+                    <AvatarImage src={student.photo_url && isGoogleDriveUrl(student.photo_url) ? convertGoogleDriveImageUrl(student.photo_url, 'm') : student.photo_url} alt={student.name} />
                     <AvatarFallback>
                       {student.name.charAt(0)}
                     </AvatarFallback>

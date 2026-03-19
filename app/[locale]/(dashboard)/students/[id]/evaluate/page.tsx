@@ -19,6 +19,7 @@ import {
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { Badge } from '@/components/ui/badge'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { convertGoogleDriveImageUrl, isGoogleDriveUrl } from '@/lib/google-drive-utils'
 import { ArrowLeft, Loader2, Star, Trophy, Info, CheckCircle } from 'lucide-react'
 import Link from 'next/link'
 import { CreateEvaluationRequest } from '@/types/student'
@@ -152,7 +153,7 @@ export default function EvaluateStudentPage() {
         <CardContent className="pt-6">
           <div className="flex items-center gap-4">
             <Avatar className="h-16 w-16">
-              <AvatarImage src={student.photo_url} alt={student.name} />
+              <AvatarImage src={student.photo_url && isGoogleDriveUrl(student.photo_url) ? convertGoogleDriveImageUrl(student.photo_url, 'm') : student.photo_url} alt={student.name} />
               <AvatarFallback className="text-xl">
                 {student.name.charAt(0)}
               </AvatarFallback>

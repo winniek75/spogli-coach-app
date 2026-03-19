@@ -8,6 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { convertGoogleDriveImageUrl, isGoogleDriveUrl } from '@/lib/google-drive-utils'
 import {
   AlertTriangle,
   ArrowLeft,
@@ -183,7 +184,7 @@ export default function StudentDetailPage() {
         <CardContent className="pt-6">
           <div className="flex items-start gap-6">
             <Avatar className="h-24 w-24">
-              <AvatarImage src={student.photo_url} alt={student.name} />
+              <AvatarImage src={student.photo_url && isGoogleDriveUrl(student.photo_url) ? convertGoogleDriveImageUrl(student.photo_url, 'l') : student.photo_url} alt={student.name} />
               <AvatarFallback className="text-2xl">
                 {student.name.charAt(0)}
               </AvatarFallback>
