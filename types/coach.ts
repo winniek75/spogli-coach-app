@@ -44,6 +44,7 @@ export interface CreateCoachRequest {
   line_id?: string
   nationality?: string
   languages: string[]
+  profile_image_url?: string
   role?: 'coach' | 'senior_coach' | 'manager'
   schools: ('ageo' | 'okegawa')[]
   hire_date?: string

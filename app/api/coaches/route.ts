@@ -169,6 +169,7 @@ export async function POST(request: NextRequest) {
         line_id: body.line_id,
         nationality: body.nationality,
         languages: body.languages || [],
+        profile_image_url: body.profile_image_url,
         role: body.role || 'coach',
         schools: body.schools,
         hire_date: body.hire_date,

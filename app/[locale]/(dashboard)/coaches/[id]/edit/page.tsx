@@ -20,6 +20,7 @@ import { Alert, AlertDescription } from '@/components/ui/alert'
 import { ArrowLeft, Loader2, Save, AlertTriangle } from 'lucide-react'
 import Link from 'next/link'
 import { UpdateCoachRequest } from '@/types/coach'
+import { GoogleDrivePicker } from '@/components/ui/google-drive-picker'
 
 export default function EditCoachPage() {
   const params = useParams()
@@ -38,6 +39,7 @@ export default function EditCoachPage() {
     line_id: '',
     nationality: '',
     languages: [],
+    profile_image_url: '',
     role: 'coach',
     schools: [],
     hire_date: '',
@@ -56,6 +58,7 @@ export default function EditCoachPage() {
         line_id: coach.line_id || '',
         nationality: coach.nationality || '',
         languages: coach.languages || [],
+        profile_image_url: coach.profile_image_url || '',
         role: coach.role || 'coach',
         schools: coach.schools || [],
         hire_date: coach.hire_date ? coach.hire_date.split('T')[0] : '',
@@ -221,6 +224,15 @@ export default function EditCoachPage() {
                   value={formData.nationality}
                   onChange={(e) => setFormData(prev => ({ ...prev, nationality: e.target.value }))}
                   placeholder="日本"
+                />
+              </div>
+
+              {/* プロフィール画像 */}
+              <div className="space-y-2">
+                <Label>プロフィール画像</Label>
+                <GoogleDrivePicker
+                  value={formData.profile_image_url}
+                  onChange={(url) => setFormData(prev => ({ ...prev, profile_image_url: url }))}
                 />
               </div>
             </CardContent>
