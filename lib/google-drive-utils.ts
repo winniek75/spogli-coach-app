@@ -67,7 +67,7 @@ export const convertGoogleDriveImageUrl = (url: string, size?: 's' | 'm' | 'l' |
     }
   }
 
-  return `https://drive.google.com/uc?export=view&id=${fileId}${sizeParam}`
+  return `https://lh3.googleusercontent.com/d/${fileId}${sizeParam}`
 }
 
 /**

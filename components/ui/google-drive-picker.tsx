@@ -7,7 +7,7 @@ import { convertGoogleDriveImageUrl } from '@/lib/google-drive-utils'
 
 const API_KEY = process.env.NEXT_PUBLIC_GOOGLE_API_KEY
 const CLIENT_ID = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID
-const SCOPE = 'https://www.googleapis.com/auth/drive.readonly'
+const SCOPE = 'https://www.googleapis.com/auth/drive'
 
 interface GoogleDrivePickerProps {
   value?: string
@@ -19,6 +19,28 @@ let pickerApiLoaded = false
 let gisLoaded = false
 let tokenClient: google.accounts.oauth2.TokenClient | null = null
 let accessToken: string | null = null
+
+async function makeFilePublic(fileId: string) {
+  if (!accessToken) return
+  try {
+    await fetch(
+      `https://www.googleapis.com/drive/v3/files/${fileId}/permissions`,
+      {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${accessToken}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          role: 'reader',
+          type: 'anyone',
+        }),
+      }
+    )
+  } catch (e) {
+    console.warn('Failed to set file permissions:', e)
+  }
+}
 
 export function GoogleDrivePicker({ value, onChange, label = 'Google Driveから選択' }: GoogleDrivePickerProps) {
   const [loading, setLoading] = useState(false)
@@ -84,10 +106,12 @@ export function GoogleDrivePicker({ value, onChange, label = 'Google Driveから
       .addView(view)
       .setOAuthToken(accessToken)
       .setDeveloperKey(API_KEY!)
-      .setCallback((data: google.picker.ResponseObject) => {
+      .setCallback(async (data: google.picker.ResponseObject) => {
         if (data.action === google.picker.Action.PICKED) {
           const doc = data.docs[0]
           const fileId = doc.id
+          // ファイルを「リンクを知っている全員」に自動共有
+          await makeFilePublic(fileId)
           // Google Drive の共有URLを生成
           const driveUrl = `https://drive.google.com/file/d/${fileId}/view`
           onChange(driveUrl)
