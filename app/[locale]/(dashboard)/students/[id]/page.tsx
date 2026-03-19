@@ -1,8 +1,9 @@
 'use client'
 
+import { useState } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { useTranslations } from 'next-intl'
-import { useStudent } from '@/hooks/use-students'
+import { useStudent, useStudents } from '@/hooks/use-students'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -26,6 +27,8 @@ import {
   Trophy,
   Target,
   Heart,
+  Trash2,
+  Loader2,
 } from 'lucide-react'
 import Link from 'next/link'
 import { StudentWithDetails, LEVELS } from '@/types/student'
@@ -35,7 +38,10 @@ export default function StudentDetailPage() {
   const router = useRouter()
   const studentId = params.id as string
   const { student, loading, error } = useStudent(studentId)
+  const { withdrawStudent } = useStudents()
   const t = useTranslations('studentDetail')
+  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false)
+  const [deleting, setDeleting] = useState(false)
 
   if (loading) {
     return (
@@ -164,6 +170,13 @@ export default function StudentDetailPage() {
           </p>
         </div>
         <div className="flex gap-2">
+          <Button
+            variant="destructive"
+            size="icon"
+            onClick={() => setShowDeleteConfirm(true)}
+          >
+            <Trash2 className="h-4 w-4" />
+          </Button>
           <Link href={`/students/${student.id}/edit`}>
             <Button variant="outline">
               <Edit className="h-4 w-4 mr-2" />
@@ -178,6 +191,54 @@ export default function StudentDetailPage() {
           </Link>
         </div>
       </div>
+
+      {/* 削除確認ダイアログ */}
+      {showDeleteConfirm && (
+        <Card className="border-red-200 bg-red-50">
+          <CardContent className="pt-6">
+            <div className="flex items-center gap-4">
+              <AlertTriangle className="h-8 w-8 text-red-500 flex-shrink-0" />
+              <div className="flex-1">
+                <p className="font-medium text-red-800">
+                  {student.name}さんを退会処理しますか？
+                </p>
+                <p className="text-sm text-red-600 mt-1">
+                  この操作はステータスを「退会」に変更します。データは保持されます。
+                </p>
+              </div>
+              <div className="flex gap-2">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowDeleteConfirm(false)}
+                  disabled={deleting}
+                >
+                  キャンセル
+                </Button>
+                <Button
+                  variant="destructive"
+                  size="sm"
+                  disabled={deleting}
+                  onClick={async () => {
+                    setDeleting(true)
+                    try {
+                      await withdrawStudent(studentId)
+                      router.push('/students')
+                    } catch (err) {
+                      console.error(err)
+                      setDeleting(false)
+                      setShowDeleteConfirm(false)
+                    }
+                  }}
+                >
+                  {deleting && <Loader2 className="h-4 w-4 mr-2 animate-spin" />}
+                  {deleting ? '処理中...' : '退会処理する'}
+                </Button>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      )}
 
       {/* プロフィール概要 */}
       <Card>

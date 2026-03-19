@@ -1,9 +1,10 @@
 'use client'
 
-import { useParams } from 'next/navigation'
+import { useState } from 'react'
+import { useParams, useRouter } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
-import { useCoach } from '@/hooks/use-coaches'
+import { useCoach, useCoaches } from '@/hooks/use-coaches'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -21,13 +22,19 @@ import {
   Clock,
   Users,
   Award,
+  Trash2,
+  Loader2,
 } from 'lucide-react'
 
 export default function CoachDetailPage() {
   const params = useParams()
+  const router = useRouter()
   const t = useTranslations('coaches.detail')
   const coachId = params.id as string
   const { coach, loading, error } = useCoach(coachId)
+  const { deleteCoach } = useCoaches()
+  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false)
+  const [deleting, setDeleting] = useState(false)
 
   if (loading) {
     return (
@@ -126,6 +133,13 @@ export default function CoachDetailPage() {
           </div>
         </div>
         <div className="flex gap-2">
+          <Button
+            variant="destructive"
+            size="icon"
+            onClick={() => setShowDeleteConfirm(true)}
+          >
+            <Trash2 className="h-4 w-4" />
+          </Button>
           <Link href={`/coaches/${coach.id}/edit`}>
             <Button>
               <Edit className="h-4 w-4 mr-2" />
@@ -134,6 +148,54 @@ export default function CoachDetailPage() {
           </Link>
         </div>
       </div>
+
+      {/* 削除確認ダイアログ */}
+      {showDeleteConfirm && (
+        <Card className="border-red-200 bg-red-50">
+          <CardContent className="pt-6">
+            <div className="flex items-center gap-4">
+              <AlertTriangle className="h-8 w-8 text-red-500 flex-shrink-0" />
+              <div className="flex-1">
+                <p className="font-medium text-red-800">
+                  {coach.name}を無効化しますか？
+                </p>
+                <p className="text-sm text-red-600 mt-1">
+                  この操作はステータスを「退職」に変更します。データは保持されます。
+                </p>
+              </div>
+              <div className="flex gap-2">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowDeleteConfirm(false)}
+                  disabled={deleting}
+                >
+                  キャンセル
+                </Button>
+                <Button
+                  variant="destructive"
+                  size="sm"
+                  disabled={deleting}
+                  onClick={async () => {
+                    setDeleting(true)
+                    try {
+                      await deleteCoach(coachId)
+                      router.push('/coaches')
+                    } catch (err) {
+                      console.error(err)
+                      setDeleting(false)
+                      setShowDeleteConfirm(false)
+                    }
+                  }}
+                >
+                  {deleting && <Loader2 className="h-4 w-4 mr-2 animate-spin" />}
+                  {deleting ? '処理中...' : '無効化する'}
+                </Button>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      )}
 
       <div className="grid gap-6 lg:grid-cols-3">
         {/* 左カラム：基本情報 */}
