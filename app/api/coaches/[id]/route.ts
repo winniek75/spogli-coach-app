@@ -220,6 +220,9 @@ export async function PATCH(request: NextRequest, { params }: RouteParams) {
 
 export async function DELETE(request: NextRequest, { params }: RouteParams) {
   try {
+    const { searchParams } = new URL(request.url)
+    const permanent = searchParams.get('permanent') === 'true'
+
     // デモモード: 削除をシミュレート
     const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
     const isDemo = !supabaseUrl || supabaseUrl.includes('placeholder')
@@ -231,23 +234,39 @@ export async function DELETE(request: NextRequest, { params }: RouteParams) {
         return NextResponse.json({ error: '講師が見つかりません' }, { status: 404 })
       }
 
-      return NextResponse.json({ message: '講師を無効化しました' })
+      return NextResponse.json({ message: permanent ? '講師を完全に削除しました' : '講師を無効化しました' })
     }
 
-    // 本番モード: Supabaseでデータを更新
+    // 本番モード
     const supabase = await createClient()
 
-    const { error } = await (supabase
-      .from('coaches') as any)
-      .update({ status: 'inactive' })
-      .eq('id', params.id)
+    if (permanent) {
+      // 完全削除
+      const { error } = await (supabase
+        .from('coaches') as any)
+        .delete()
+        .eq('id', params.id)
 
-    if (error) {
-      console.error('Error deleting coach:', error)
-      return NextResponse.json({ error: error.message }, { status: 500 })
+      if (error) {
+        console.error('Error deleting coach:', error)
+        return NextResponse.json({ error: error.message }, { status: 500 })
+      }
+
+      return NextResponse.json({ message: '講師を完全に削除しました' })
+    } else {
+      // 論理削除（無効化）
+      const { error } = await (supabase
+        .from('coaches') as any)
+        .update({ status: 'inactive' })
+        .eq('id', params.id)
+
+      if (error) {
+        console.error('Error deactivating coach:', error)
+        return NextResponse.json({ error: error.message }, { status: 500 })
+      }
+
+      return NextResponse.json({ message: '講師を無効化しました' })
     }
-
-    return NextResponse.json({ message: '講師を無効化しました' })
   } catch (error) {
     console.error('Unexpected error:', error)
     return NextResponse.json(

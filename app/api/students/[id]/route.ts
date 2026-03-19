@@ -153,23 +153,41 @@ export async function DELETE(request: NextRequest, { params }: RouteParams) {
     //   )
     // }
 
-    // ステータスを'withdrawn'に更新（論理削除）
-    const { data, error } = await (supabase
-      .from('students') as any)
-      .update({
-        status: 'withdrawn',
-        updated_at: new Date().toISOString()
-      })
-      .eq('id', params.id)
-      .select()
-      .single()
+    const { searchParams } = new URL(request.url)
+    const permanent = searchParams.get('permanent') === 'true'
 
-    if (error || !data) {
-      console.error('Database error:', error)
-      return NextResponse.json({ error: '生徒が見つかりません' }, { status: 404 })
+    if (permanent) {
+      // 完全削除
+      const { error } = await (supabase
+        .from('students') as any)
+        .delete()
+        .eq('id', params.id)
+
+      if (error) {
+        console.error('Database error:', error)
+        return NextResponse.json({ error: '生徒の削除に失敗しました' }, { status: 500 })
+      }
+
+      return NextResponse.json({ message: '生徒を完全に削除しました' })
+    } else {
+      // ステータスを'withdrawn'に更新（論理削除）
+      const { data, error } = await (supabase
+        .from('students') as any)
+        .update({
+          status: 'withdrawn',
+          updated_at: new Date().toISOString()
+        })
+        .eq('id', params.id)
+        .select()
+        .single()
+
+      if (error || !data) {
+        console.error('Database error:', error)
+        return NextResponse.json({ error: '生徒が見つかりません' }, { status: 404 })
+      }
+
+      return NextResponse.json({ message: '生徒を退会処理しました' })
     }
-
-    return NextResponse.json({ message: '生徒を退会処理しました' })
   } catch (error) {
     console.error('Unexpected error:', error)
     return NextResponse.json(

@@ -32,8 +32,9 @@ export default function CoachDetailPage() {
   const t = useTranslations('coaches.detail')
   const coachId = params.id as string
   const { coach, loading, error } = useCoach(coachId)
-  const { deleteCoach } = useCoaches()
+  const { deactivateCoach, deleteCoach } = useCoaches()
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false)
+  const [deleteMode, setDeleteMode] = useState<'deactivate' | 'permanent'>('deactivate')
   const [deleting, setDeleting] = useState(false)
 
   if (loading) {
@@ -134,11 +135,21 @@ export default function CoachDetailPage() {
         </div>
         <div className="flex gap-2">
           <Button
-            variant="destructive"
-            size="icon"
-            onClick={() => setShowDeleteConfirm(true)}
+            variant="outline"
+            size="sm"
+            className="text-red-600 border-red-200 hover:bg-red-50"
+            onClick={() => { setDeleteMode('permanent'); setShowDeleteConfirm(true) }}
           >
-            <Trash2 className="h-4 w-4" />
+            <Trash2 className="h-4 w-4 mr-1" />
+            削除
+          </Button>
+          <Button
+            variant="outline"
+            size="sm"
+            className="text-amber-600 border-amber-200 hover:bg-amber-50"
+            onClick={() => { setDeleteMode('deactivate'); setShowDeleteConfirm(true) }}
+          >
+            無効化
           </Button>
           <Link href={`/coaches/${coach.id}/edit`}>
             <Button>
@@ -149,27 +160,65 @@ export default function CoachDetailPage() {
         </div>
       </div>
 
-      {/* 削除確認ダイアログ */}
-      {showDeleteConfirm && (
-        <Card className="border-red-200 bg-red-50">
+      {/* 無効化確認 */}
+      {showDeleteConfirm && deleteMode === 'deactivate' && (
+        <Card className="border-amber-200 bg-amber-50">
           <CardContent className="pt-6">
             <div className="flex items-center gap-4">
-              <AlertTriangle className="h-8 w-8 text-red-500 flex-shrink-0" />
+              <AlertTriangle className="h-8 w-8 text-amber-500 flex-shrink-0" />
               <div className="flex-1">
-                <p className="font-medium text-red-800">
+                <p className="font-medium text-amber-800">
                   {coach.name}を無効化しますか？
                 </p>
-                <p className="text-sm text-red-600 mt-1">
-                  この操作はステータスを「退職」に変更します。データは保持されます。
+                <p className="text-sm text-amber-600 mt-1">
+                  ステータスを「退職」に変更します。データは保持されます。
                 </p>
               </div>
               <div className="flex gap-2">
+                <Button variant="outline" size="sm" onClick={() => setShowDeleteConfirm(false)} disabled={deleting}>
+                  キャンセル
+                </Button>
                 <Button
-                  variant="outline"
+                  variant="destructive"
                   size="sm"
-                  onClick={() => setShowDeleteConfirm(false)}
                   disabled={deleting}
+                  onClick={async () => {
+                    setDeleting(true)
+                    try {
+                      await deactivateCoach(coachId)
+                      router.push('/coaches')
+                    } catch (err) {
+                      console.error(err)
+                      setDeleting(false)
+                      setShowDeleteConfirm(false)
+                    }
+                  }}
                 >
+                  {deleting && <Loader2 className="h-4 w-4 mr-2 animate-spin" />}
+                  {deleting ? '処理中...' : '無効化する'}
+                </Button>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      )}
+
+      {/* 完全削除確認 */}
+      {showDeleteConfirm && deleteMode === 'permanent' && (
+        <Card className="border-red-300 bg-red-50">
+          <CardContent className="pt-6">
+            <div className="flex items-center gap-4">
+              <Trash2 className="h-8 w-8 text-red-600 flex-shrink-0" />
+              <div className="flex-1">
+                <p className="font-medium text-red-800">
+                  {coach.name}のデータを完全に削除しますか？
+                </p>
+                <p className="text-sm text-red-600 mt-1">
+                  この操作は取り消せません。全てのデータが永久に削除されます。
+                </p>
+              </div>
+              <div className="flex gap-2">
+                <Button variant="outline" size="sm" onClick={() => setShowDeleteConfirm(false)} disabled={deleting}>
                   キャンセル
                 </Button>
                 <Button
@@ -189,7 +238,7 @@ export default function CoachDetailPage() {
                   }}
                 >
                   {deleting && <Loader2 className="h-4 w-4 mr-2 animate-spin" />}
-                  {deleting ? '処理中...' : '無効化する'}
+                  {deleting ? '削除中...' : '完全に削除する'}
                 </Button>
               </div>
             </div>

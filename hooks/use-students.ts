@@ -236,6 +236,33 @@ export function useStudents() {
     }
   }
 
+  const deleteStudent = async (id: string) => {
+    try {
+      if (isLocalStorageMode()) {
+        const storedData = LocalStorageService.get<StudentWithDetails[]>(STORAGE_KEY) || []
+        const updatedData = storedData.filter(student => student.id !== id)
+        LocalStorageService.set(STORAGE_KEY, updatedData)
+        await fetchStudents()
+        return { success: true }
+      }
+
+      const response = await fetch(`/api/students/${id}?permanent=true`, {
+        method: 'DELETE',
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to delete student')
+      }
+
+      await fetchStudents()
+      return data
+    } catch (err) {
+      throw new Error(err instanceof Error ? err.message : '生徒の削除に失敗しました')
+    }
+  }
+
   useEffect(() => {
     fetchStudents()
   }, [])
@@ -248,6 +275,7 @@ export function useStudents() {
     createStudent,
     updateStudent,
     withdrawStudent,
+    deleteStudent,
   }
 }
 

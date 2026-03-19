@@ -38,9 +38,10 @@ export default function StudentDetailPage() {
   const router = useRouter()
   const studentId = params.id as string
   const { student, loading, error } = useStudent(studentId)
-  const { withdrawStudent } = useStudents()
+  const { withdrawStudent, deleteStudent } = useStudents()
   const t = useTranslations('studentDetail')
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false)
+  const [deleteMode, setDeleteMode] = useState<'withdraw' | 'permanent'>('withdraw')
   const [deleting, setDeleting] = useState(false)
 
   if (loading) {
@@ -171,11 +172,21 @@ export default function StudentDetailPage() {
         </div>
         <div className="flex gap-2">
           <Button
-            variant="destructive"
-            size="icon"
-            onClick={() => setShowDeleteConfirm(true)}
+            variant="outline"
+            size="sm"
+            className="text-red-600 border-red-200 hover:bg-red-50"
+            onClick={() => { setDeleteMode('permanent'); setShowDeleteConfirm(true) }}
           >
-            <Trash2 className="h-4 w-4" />
+            <Trash2 className="h-4 w-4 mr-1" />
+            削除
+          </Button>
+          <Button
+            variant="outline"
+            size="sm"
+            className="text-amber-600 border-amber-200 hover:bg-amber-50"
+            onClick={() => { setDeleteMode('withdraw'); setShowDeleteConfirm(true) }}
+          >
+            退会
           </Button>
           <Link href={`/students/${student.id}/edit`}>
             <Button variant="outline">
@@ -192,27 +203,22 @@ export default function StudentDetailPage() {
         </div>
       </div>
 
-      {/* 削除確認ダイアログ */}
-      {showDeleteConfirm && (
-        <Card className="border-red-200 bg-red-50">
+      {/* 削除メニュー */}
+      {showDeleteConfirm && deleteMode === 'withdraw' && (
+        <Card className="border-amber-200 bg-amber-50">
           <CardContent className="pt-6">
             <div className="flex items-center gap-4">
-              <AlertTriangle className="h-8 w-8 text-red-500 flex-shrink-0" />
+              <AlertTriangle className="h-8 w-8 text-amber-500 flex-shrink-0" />
               <div className="flex-1">
-                <p className="font-medium text-red-800">
+                <p className="font-medium text-amber-800">
                   {student.name}さんを退会処理しますか？
                 </p>
-                <p className="text-sm text-red-600 mt-1">
-                  この操作はステータスを「退会」に変更します。データは保持されます。
+                <p className="text-sm text-amber-600 mt-1">
+                  ステータスを「退会」に変更します。データは保持されます。
                 </p>
               </div>
               <div className="flex gap-2">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => setShowDeleteConfirm(false)}
-                  disabled={deleting}
-                >
+                <Button variant="outline" size="sm" onClick={() => setShowDeleteConfirm(false)} disabled={deleting}>
                   キャンセル
                 </Button>
                 <Button
@@ -233,6 +239,48 @@ export default function StudentDetailPage() {
                 >
                   {deleting && <Loader2 className="h-4 w-4 mr-2 animate-spin" />}
                   {deleting ? '処理中...' : '退会処理する'}
+                </Button>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      )}
+
+      {showDeleteConfirm && deleteMode === 'permanent' && (
+        <Card className="border-red-300 bg-red-50">
+          <CardContent className="pt-6">
+            <div className="flex items-center gap-4">
+              <Trash2 className="h-8 w-8 text-red-600 flex-shrink-0" />
+              <div className="flex-1">
+                <p className="font-medium text-red-800">
+                  {student.name}さんのデータを完全に削除しますか？
+                </p>
+                <p className="text-sm text-red-600 mt-1">
+                  この操作は取り消せません。全てのデータが永久に削除されます。
+                </p>
+              </div>
+              <div className="flex gap-2">
+                <Button variant="outline" size="sm" onClick={() => setShowDeleteConfirm(false)} disabled={deleting}>
+                  キャンセル
+                </Button>
+                <Button
+                  variant="destructive"
+                  size="sm"
+                  disabled={deleting}
+                  onClick={async () => {
+                    setDeleting(true)
+                    try {
+                      await deleteStudent(studentId)
+                      router.push('/students')
+                    } catch (err) {
+                      console.error(err)
+                      setDeleting(false)
+                      setShowDeleteConfirm(false)
+                    }
+                  }}
+                >
+                  {deleting && <Loader2 className="h-4 w-4 mr-2 animate-spin" />}
+                  {deleting ? '削除中...' : '完全に削除する'}
                 </Button>
               </div>
             </div>

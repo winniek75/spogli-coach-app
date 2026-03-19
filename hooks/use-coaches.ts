@@ -132,18 +132,48 @@ export function useCoaches() {
     }
   }
 
+  const deactivateCoach = async (id: string) => {
+    // ローカルストレージモードの場合
+    if (isLocalStorageMode()) {
+      const storedData = LocalStorageService.get<CoachWithCertifications[]>(STORAGE_KEY) || []
+      const updatedData = storedData.map(c =>
+        c.id === id ? { ...c, status: 'inactive' as const, updated_at: new Date().toISOString() } : c
+      )
+      LocalStorageService.set(STORAGE_KEY, updatedData)
+      await fetchCoaches()
+      return { success: true }
+    }
+
+    try {
+      const response = await fetch(`/api/coaches/${id}`, {
+        method: 'DELETE',
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to deactivate coach')
+      }
+
+      await fetchCoaches()
+      return data
+    } catch (err) {
+      throw new Error(err instanceof Error ? err.message : '講師の無効化に失敗しました')
+    }
+  }
+
   const deleteCoach = async (id: string) => {
     // ローカルストレージモードの場合
     if (isLocalStorageMode()) {
       const storedData = LocalStorageService.get<CoachWithCertifications[]>(STORAGE_KEY) || []
       const updatedData = storedData.filter(c => c.id !== id)
       LocalStorageService.set(STORAGE_KEY, updatedData)
-      await fetchCoaches() // リフレッシュ
+      await fetchCoaches()
       return { success: true }
     }
 
     try {
-      const response = await fetch(`/api/coaches/${id}`, {
+      const response = await fetch(`/api/coaches/${id}?permanent=true`, {
         method: 'DELETE',
       })
 
@@ -171,6 +201,7 @@ export function useCoaches() {
     fetchCoaches,
     createCoach,
     updateCoach,
+    deactivateCoach,
     deleteCoach,
   }
 }
