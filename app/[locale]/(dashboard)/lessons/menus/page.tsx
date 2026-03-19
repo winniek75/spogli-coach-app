@@ -65,7 +65,7 @@ const WEEK_COLORS: Record<WeekType, string> = {
 export default function LessonMenusPage() {
   const t = useTranslations('schedule.lessonMenus')
   const params = useParams()
-  const { groupedMenus, loading, error, fetchLessonMenus } = useLessonMenus()
+  const { groupedMenus, loading, error, fetchLessonMenus, deleteLessonMenu } = useLessonMenus()
 
   // フィルター状態
   const [selectedSport, setSelectedSport] = useState<string>('all')
@@ -127,9 +127,11 @@ export default function LessonMenusPage() {
         console.log('Copy menu:', menuId)
         break
       case 'delete':
-        // 削除処理
         if (confirm(t('confirmDelete'))) {
-          console.log('Delete menu:', menuId)
+          if (menuId) {
+            deleteLessonMenu(menuId)
+            fetchLessonMenus({ month: selectedMonth })
+          }
         }
         break
       case 'create':
@@ -211,7 +213,7 @@ export default function LessonMenusPage() {
               <SelectItem value="basketball">{t('basketball')}</SelectItem>
               <SelectItem value="soccer">{t('soccer')}</SelectItem>
               <SelectItem value="tennis">{t('tennis')}</SelectItem>
-              <SelectItem value="rugby">{t('rugby')}</SelectItem>
+              <SelectItem value="tag_rugby">タグラグビー</SelectItem>
               <SelectItem value="baseball">{t('baseball')}</SelectItem>
             </SelectContent>
           </Select>
