@@ -118,35 +118,15 @@ export function useLessonSchedule() {
     }
   }
 
-  // レッスンを読み込む
+  // レッスンを読み込む（localStorage使用）
   const loadLessonsFromDatabase = async () => {
     setLoading(true)
     try {
-      if (isLocalStorageMode()) {
-        const storedLessons = LocalStorageService.get<LessonSchedule[]>(STORAGE_KEY) || []
-        setLessons(storedLessons)
-        setLoading(false)
-        return
-      }
-
-      const response = await fetch('/api/lesson-schedules')
-      const data = await response.json()
-
-      if (!response.ok) {
-        console.error('レッスンデータの取得に失敗:', data.error)
-        const storedLessons = LocalStorageService.get<LessonSchedule[]>(STORAGE_KEY) || []
-        setLessons(storedLessons)
-        return
-      }
-
-      const convertedLessons = data.lessons.map((dbLesson: DatabaseLesson) =>
-        convertDatabaseToUI(dbLesson, coachNames)
-      )
-      setLessons(convertedLessons)
-    } catch (error) {
-      console.error('レッスンデータの取得エラー:', error)
       const storedLessons = LocalStorageService.get<LessonSchedule[]>(STORAGE_KEY) || []
       setLessons(storedLessons)
+    } catch (error) {
+      console.error('レッスンデータの取得エラー:', error)
+      setLessons([])
     } finally {
       setLoading(false)
     }
@@ -168,108 +148,38 @@ export function useLessonSchedule() {
 
 
   // レッスンを追加
-  const addLesson = async (lesson: Omit<LessonSchedule, 'id'>) => {
-    try {
-      if (isLocalStorageMode()) {
-        const storedLessons = LocalStorageService.get<LessonSchedule[]>(STORAGE_KEY) || []
-        const newLesson: LessonSchedule = {
-          ...lesson,
-          id: `lesson-${Date.now()}`,
-        }
-        const updatedLessons = [...storedLessons, newLesson].sort((a, b) => {
-          const dateCompare = a.date.localeCompare(b.date)
-          if (dateCompare !== 0) return dateCompare
-          return a.startTime.localeCompare(b.startTime)
-        })
-        LocalStorageService.set(STORAGE_KEY, updatedLessons)
-        setLessons(updatedLessons)
-        return newLesson
-      }
-
-      const dbLesson = convertUIToDatabase(lesson, coachIds)
-      const response = await fetch('/api/lesson-schedules', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(dbLesson),
-      })
-      const data = await response.json()
-      if (!response.ok) throw new Error(data.error)
-
-      const newLesson = convertDatabaseToUI(data.lesson, coachNames)
-      setLessons(prev => [...prev, newLesson].sort((a, b) => {
-        const dateCompare = a.date.localeCompare(b.date)
-        if (dateCompare !== 0) return dateCompare
-        return a.startTime.localeCompare(b.startTime)
-      }))
-
-      return newLesson
-    } catch (error) {
-      console.error('レッスンの追加に失敗しました:', error)
-      throw error
+  const addLesson = (lesson: Omit<LessonSchedule, 'id'>) => {
+    const storedLessons = LocalStorageService.get<LessonSchedule[]>(STORAGE_KEY) || []
+    const newLesson: LessonSchedule = {
+      ...lesson,
+      id: `lesson-${Date.now()}`,
     }
+    const updatedLessons = [...storedLessons, newLesson].sort((a, b) => {
+      const dateCompare = a.date.localeCompare(b.date)
+      if (dateCompare !== 0) return dateCompare
+      return a.startTime.localeCompare(b.startTime)
+    })
+    LocalStorageService.set(STORAGE_KEY, updatedLessons)
+    setLessons(updatedLessons)
+    return newLesson
   }
 
   // レッスンを更新
-  const updateLesson = async (id: string, updates: Partial<LessonSchedule>) => {
-    try {
-      const currentLesson = lessons.find(l => l.id === id)
-      if (!currentLesson) {
-        throw new Error('レッスンが見つかりません')
-      }
-
-      if (isLocalStorageMode()) {
-        const storedLessons = LocalStorageService.get<LessonSchedule[]>(STORAGE_KEY) || []
-        const updatedLessons = storedLessons.map(lesson =>
-          lesson.id === id ? { ...lesson, ...updates } : lesson
-        )
-        LocalStorageService.set(STORAGE_KEY, updatedLessons)
-        setLessons(updatedLessons)
-        return
-      }
-
-      const updatedLesson = { ...currentLesson, ...updates }
-      const dbUpdates = convertUIToDatabase(updatedLesson, coachIds)
-
-      const response = await fetch(`/api/lesson-schedules/${id}`, {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(dbUpdates),
-      })
-      const data = await response.json()
-      if (!response.ok) throw new Error(data.error)
-
-      const convertedLesson = convertDatabaseToUI(data.lesson, coachNames)
-      setLessons(prev => prev.map(lesson =>
-        lesson.id === id ? convertedLesson : lesson
-      ))
-    } catch (error) {
-      console.error('レッスンの更新に失敗しました:', error)
-      throw error
-    }
+  const updateLesson = (id: string, updates: Partial<LessonSchedule>) => {
+    const storedLessons = LocalStorageService.get<LessonSchedule[]>(STORAGE_KEY) || []
+    const updatedLessons = storedLessons.map(lesson =>
+      lesson.id === id ? { ...lesson, ...updates } : lesson
+    )
+    LocalStorageService.set(STORAGE_KEY, updatedLessons)
+    setLessons(updatedLessons)
   }
 
   // レッスンを削除
-  const deleteLesson = async (id: string) => {
-    try {
-      if (isLocalStorageMode()) {
-        const storedLessons = LocalStorageService.get<LessonSchedule[]>(STORAGE_KEY) || []
-        const updatedLessons = storedLessons.filter(lesson => lesson.id !== id)
-        LocalStorageService.set(STORAGE_KEY, updatedLessons)
-        setLessons(updatedLessons)
-        return
-      }
-
-      const response = await fetch(`/api/lesson-schedules/${id}`, {
-        method: 'DELETE',
-      })
-      const data = await response.json()
-      if (!response.ok) throw new Error(data.error)
-
-      setLessons(prev => prev.filter(lesson => lesson.id !== id))
-    } catch (error) {
-      console.error('レッスンの削除に失敗しました:', error)
-      throw error
-    }
+  const deleteLesson = (id: string) => {
+    const storedLessons = LocalStorageService.get<LessonSchedule[]>(STORAGE_KEY) || []
+    const updatedLessons = storedLessons.filter(lesson => lesson.id !== id)
+    LocalStorageService.set(STORAGE_KEY, updatedLessons)
+    setLessons(updatedLessons)
   }
 
   // 特定の日付のレッスンを取得
