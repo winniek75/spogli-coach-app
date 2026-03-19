@@ -44,6 +44,9 @@ import {
   Edit,
   Trash2,
   CalendarDays,
+  Settings,
+  Save,
+  X,
 } from 'lucide-react'
 
 // 型定義
@@ -90,6 +93,8 @@ export default function ImprovedShiftTablePage() {
   const [selectedSchool, setSelectedSchool] = useState<string>('all')
   const [showShiftDialog, setShowShiftDialog] = useState(false)
   const [editingShift, setEditingShift] = useState<Shift | null>(null)
+  const [showTimeSlotEditor, setShowTimeSlotEditor] = useState(false)
+  const [editableTimeSlots, setEditableTimeSlots] = useState<TimeSlot[]>([])
   const [selectedCell, setSelectedCell] = useState<{date: string, timeSlot: string, school: string} | null>(null)
   const [newShift, setNewShift] = useState<{
     coachId: string
@@ -126,41 +131,64 @@ export default function ImprovedShiftTablePage() {
     }))
   }, [realCoaches])
 
-  // レッスンスケジュールから動的に時間割を生成
-  const timeSlots: TimeSlot[] = useMemo(() => {
-    if (!lessons || lessons.length === 0) {
-      // デフォルトの時間割（レッスンデータがない場合）
-      return [
-        { start: '09:00', end: '09:50', label: '9:00-9:50', classType: '幼児クラス' },
-        { start: '10:00', end: '10:50', label: '10:00-10:50' },
-        { start: '11:00', end: '11:50', label: '11:00-11:50', classType: '幼児クラス' },
-        { start: '13:00', end: '13:50', label: '13:00-13:50', classType: '小学生クラス' },
-        { start: '14:00', end: '14:50', label: '14:00-14:50' },
-        { start: '15:00', end: '15:50', label: '15:00-15:50' },
-      ]
+  // デフォルトの時間割（1時間区切り）
+  const defaultTimeSlots: TimeSlot[] = [
+    { start: '09:00', end: '10:00', label: '9:00-10:00', classType: '幼児クラス' },
+    { start: '10:00', end: '11:00', label: '10:00-11:00', classType: '幼児クラス' },
+    { start: '11:00', end: '12:00', label: '11:00-12:00', classType: '幼児クラス' },
+    { start: '13:00', end: '14:00', label: '13:00-14:00', classType: '小学生クラス' },
+    { start: '14:00', end: '15:00', label: '14:00-15:00', classType: '小学生クラス' },
+    { start: '15:00', end: '16:00', label: '15:00-16:00', classType: '小学生クラス' },
+  ]
+
+  // localStorage から時間割を読み込み
+  const [timeSlots, setTimeSlots] = useState<TimeSlot[]>(defaultTimeSlots)
+
+  useEffect(() => {
+    const saved = localStorage.getItem('shiftTimeSlots')
+    if (saved) {
+      setTimeSlots(JSON.parse(saved))
     }
+  }, [])
 
-    // レッスンスケジュールから一意の時間帯を抽出
-    const uniqueTimeSlots = new Map<string, TimeSlot>()
+  // 時間割を保存
+  const saveTimeSlots = (slots: TimeSlot[]) => {
+    const sorted = [...slots].sort((a, b) => a.start.localeCompare(b.start))
+    setTimeSlots(sorted)
+    localStorage.setItem('shiftTimeSlots', JSON.stringify(sorted))
+    setShowTimeSlotEditor(false)
+  }
 
-    lessons.forEach(lesson => {
-      const key = `${lesson.startTime}-${lesson.endTime}`
-      if (!uniqueTimeSlots.has(key)) {
-        const classTypeLabel = lesson.classType === 'preschool' ? '幼児クラス' :
-                              lesson.classType === 'elementary' ? '小学生クラス' : ''
+  // 時間割編集の開始
+  const startEditTimeSlots = () => {
+    setEditableTimeSlots([...timeSlots])
+    setShowTimeSlotEditor(true)
+  }
 
-        uniqueTimeSlots.set(key, {
-          start: lesson.startTime,
-          end: lesson.endTime,
-          label: `${lesson.startTime}-${lesson.endTime}`,
-          classType: classTypeLabel
-        })
+  // 編集中の時間割を更新
+  const updateEditableSlot = (index: number, field: keyof TimeSlot, value: string) => {
+    setEditableTimeSlots(prev => {
+      const updated = [...prev]
+      updated[index] = { ...updated[index], [field]: value }
+      if (field === 'start' || field === 'end') {
+        updated[index].label = `${updated[index].start}-${updated[index].end}`
       }
+      return updated
     })
+  }
 
-    // 開始時間でソートして配列として返す
-    return Array.from(uniqueTimeSlots.values()).sort((a, b) => a.start.localeCompare(b.start))
-  }, [lessons])
+  // 時間割を追加
+  const addEditableSlot = () => {
+    setEditableTimeSlots(prev => [
+      ...prev,
+      { start: '16:00', end: '17:00', label: '16:00-17:00', classType: '' }
+    ])
+  }
+
+  // 時間割を削除
+  const removeEditableSlot = (index: number) => {
+    setEditableTimeSlots(prev => prev.filter((_, i) => i !== index))
+  }
 
   // 特定の日時・時間帯・校舎にレッスンがあるかチェック
   const hasLesson = useCallback((date: string, timeSlot: TimeSlot, school: string) => {
@@ -471,7 +499,7 @@ export default function ImprovedShiftTablePage() {
         <div>
           <h1 className="text-3xl font-bold tracking-tight">シフト管理</h1>
           <p className="text-muted-foreground">
-            講師のシフトスケジュールを管理します。レッスン日程と連動して時間帯が自動設定されます。
+            講師のシフトスケジュールを管理します。
           </p>
           <div className="flex items-center gap-4 mt-2 text-sm">
             <div className="flex items-center gap-1">
@@ -484,6 +512,10 @@ export default function ImprovedShiftTablePage() {
             </div>
           </div>
         </div>
+        <Button variant="outline" onClick={startEditTimeSlots}>
+          <Settings className="h-4 w-4 mr-2" />
+          時間割設定
+        </Button>
       </div>
 
       {/* コントロールパネル */}
@@ -629,11 +661,23 @@ export default function ImprovedShiftTablePage() {
                       <TableCell className="font-medium bg-muted/20">
                         <div className="text-sm">
                           <div>{timeSlot.label}</div>
-                          {timeSlot.classType && (
-                            <div className="text-xs text-muted-foreground mt-1">
-                              {timeSlot.classType}
-                            </div>
-                          )}
+                          <select
+                            className="text-xs text-muted-foreground mt-1 bg-transparent border-none cursor-pointer hover:text-foreground focus:outline-none w-full"
+                            value={timeSlot.classType || ''}
+                            onChange={(e) => {
+                              const updated = timeSlots.map((ts, i) =>
+                                i === timeIndex ? { ...ts, classType: e.target.value } : ts
+                              )
+                              setTimeSlots(updated)
+                              localStorage.setItem('shiftTimeSlots', JSON.stringify(updated))
+                            }}
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <option value="">クラス未設定</option>
+                            <option value="幼児クラス">幼児クラス</option>
+                            <option value="小学生クラス">小学生クラス</option>
+                            <option value="合同クラス">合同クラス</option>
+                          </select>
                         </div>
                       </TableCell>
                       {weekends.map((date, dateIndex) => {
@@ -851,6 +895,75 @@ export default function ImprovedShiftTablePage() {
             </Button>
             <Button onClick={createShift}>
               作成
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* 時間割設定ダイアログ */}
+      <Dialog open={showTimeSlotEditor} onOpenChange={setShowTimeSlotEditor}>
+        <DialogContent className="max-w-lg">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2">
+              <Settings className="h-5 w-5" />
+              時間割設定
+            </DialogTitle>
+            <DialogDescription>
+              シフト表の時間帯とクラスを編集できます。
+            </DialogDescription>
+          </DialogHeader>
+
+          <div className="space-y-3 max-h-96 overflow-y-auto">
+            {editableTimeSlots.map((slot, index) => (
+              <div key={index} className="flex items-center gap-2 p-2 border rounded-lg">
+                <div className="flex items-center gap-1 flex-1">
+                  <Input
+                    type="time"
+                    value={slot.start}
+                    onChange={(e) => updateEditableSlot(index, 'start', e.target.value)}
+                    className="w-28 text-sm"
+                  />
+                  <span className="text-muted-foreground">-</span>
+                  <Input
+                    type="time"
+                    value={slot.end}
+                    onChange={(e) => updateEditableSlot(index, 'end', e.target.value)}
+                    className="w-28 text-sm"
+                  />
+                </div>
+                <select
+                  value={slot.classType || ''}
+                  onChange={(e) => updateEditableSlot(index, 'classType', e.target.value)}
+                  className="text-sm border rounded px-2 py-1.5 bg-background"
+                >
+                  <option value="">未設定</option>
+                  <option value="幼児クラス">幼児クラス</option>
+                  <option value="小学生クラス">小学生クラス</option>
+                  <option value="合同クラス">合同クラス</option>
+                </select>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="h-8 w-8 text-red-500 hover:text-red-700"
+                  onClick={() => removeEditableSlot(index)}
+                >
+                  <X className="h-4 w-4" />
+                </Button>
+              </div>
+            ))}
+          </div>
+
+          <Button variant="outline" className="w-full" onClick={addEditableSlot}>
+            + 時間帯を追加
+          </Button>
+
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setShowTimeSlotEditor(false)}>
+              キャンセル
+            </Button>
+            <Button onClick={() => saveTimeSlots(editableTimeSlots)}>
+              <Save className="h-4 w-4 mr-2" />
+              保存
             </Button>
           </DialogFooter>
         </DialogContent>
