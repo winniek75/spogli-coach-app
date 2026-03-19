@@ -91,6 +91,8 @@ export default function ScheduleLessonsPage() {
   const [selectedSport, setSelectedSport] = useState('all')
   const [searchTerm, setSearchTerm] = useState('')
   const [isAddDialogOpen, setIsAddDialogOpen] = useState(false)
+  const [filterByDate, setFilterByDate] = useState(false)
+  const [editingLessonId, setEditingLessonId] = useState<string | null>(null)
 
   // レッスンスケジュール、講師、生徒データを取得
   const { lessons, addLesson, updateLesson, deleteLesson } = useLessonSchedule()
@@ -187,17 +189,87 @@ export default function ScheduleLessonsPage() {
     )
   }
 
-  const filteredLessons = lessons.filter(lesson => {
-    const matchesDate = lesson.date === selectedDate
-    const matchesSchool = selectedSchool === 'all' || lesson.school === selectedSchool
-    const matchesSport = selectedSport === 'all' || lesson.sport === selectedSport
-    const matchesSearch =
-      lesson.sport.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      lesson.assignedCoaches.some(coach => coach.toLowerCase().includes(searchTerm.toLowerCase())) ||
-      lesson.lessonMenu?.toLowerCase().includes(searchTerm.toLowerCase())
+  // 編集用フォームデータ
+  const editingLesson = lessons.find(l => l.id === editingLessonId)
+  const [editFormData, setEditFormData] = useState<LessonFormData | null>(null)
+  const [editCoaches, setEditCoaches] = useState<string[]>([])
 
-    return matchesDate && matchesSchool && matchesSport && matchesSearch
-  })
+  const startEditLesson = (lessonId: string) => {
+    const lesson = lessons.find(l => l.id === lessonId)
+    if (!lesson) return
+    setEditFormData({
+      date: lesson.date,
+      startTime: lesson.startTime,
+      endTime: lesson.endTime,
+      school: lesson.school,
+      classType: lesson.classType,
+      sport: lesson.sport,
+      trainingType: lesson.trainingType,
+      maxStudents: lesson.maxStudents,
+      notes: lesson.notes || '',
+    })
+    setEditCoaches([...lesson.assignedCoaches])
+    setEditingLessonId(lessonId)
+  }
+
+  const handleUpdateLesson = () => {
+    if (!editingLessonId || !editFormData) return
+    updateLesson(editingLessonId, {
+      date: editFormData.date,
+      startTime: editFormData.startTime,
+      endTime: editFormData.endTime,
+      school: editFormData.school,
+      classType: editFormData.classType,
+      sport: editFormData.sport,
+      trainingType: editFormData.trainingType,
+      maxStudents: editFormData.maxStudents,
+      assignedCoaches: editCoaches,
+      notes: editFormData.notes,
+    })
+    setEditingLessonId(null)
+    setEditFormData(null)
+  }
+
+  const toggleEditCoach = (coachName: string) => {
+    setEditCoaches(prev =>
+      prev.includes(coachName)
+        ? prev.filter(c => c !== coachName)
+        : [...prev, coachName]
+    )
+  }
+
+  const today = getLocalDateString()
+
+  const filteredLessons = (() => {
+    // まず校舎・スポーツ・検索でフィルタ
+    let filtered = lessons.filter(lesson => {
+      const matchesSchool = selectedSchool === 'all' || lesson.school === selectedSchool
+      const matchesSport = selectedSport === 'all' || lesson.sport === selectedSport
+      const matchesSearch =
+        !searchTerm ||
+        lesson.sport.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        lesson.assignedCoaches.some(coach => coach.toLowerCase().includes(searchTerm.toLowerCase())) ||
+        lesson.lessonMenu?.toLowerCase().includes(searchTerm.toLowerCase())
+      return matchesSchool && matchesSport && matchesSearch
+    })
+
+    if (filterByDate) {
+      // 日付フィルタON: 選択した日付のみ
+      filtered = filtered.filter(lesson => lesson.date === selectedDate)
+    } else {
+      // 日付フィルタOFF: 今日以降の直近8件を表示
+      filtered = filtered
+        .filter(lesson => lesson.date >= today)
+        .sort((a, b) => {
+          const dateCompare = a.date.localeCompare(b.date)
+          if (dateCompare !== 0) return dateCompare
+          return a.startTime.localeCompare(b.startTime)
+        })
+        .slice(0, 8)
+    }
+
+    return filtered
+  })()
 
   const getSchoolBadge = (school: string) => (
     <Badge variant="outline" className="text-xs">
@@ -502,11 +574,19 @@ export default function ScheduleLessonsPage() {
         <CardContent className="pt-6">
           <div className="grid gap-4 md:grid-cols-5">
             <div>
-              <label className="text-sm font-medium mb-2 block">{tLessons('date')}</label>
+              <div className="flex items-center justify-between mb-2">
+                <label className="text-sm font-medium">{tLessons('date')}</label>
+                <button
+                  className={`text-xs px-2 py-0.5 rounded ${filterByDate ? 'bg-blue-100 text-blue-700' : 'bg-muted text-muted-foreground'}`}
+                  onClick={() => setFilterByDate(!filterByDate)}
+                >
+                  {filterByDate ? '日付フィルタON' : '直近8件表示'}
+                </button>
+              </div>
               <Input
                 type="date"
                 value={selectedDate}
-                onChange={(e) => setSelectedDate(e.target.value)}
+                onChange={(e) => { setSelectedDate(e.target.value); setFilterByDate(true) }}
               />
             </div>
 
@@ -568,7 +648,12 @@ export default function ScheduleLessonsPage() {
       {/* レッスン一覧 */}
       <Card>
         <CardHeader>
-          <CardTitle>{tLessons('lessonList')} - {new Date(selectedDate).toLocaleDateString()}</CardTitle>
+          <CardTitle>
+            {filterByDate
+              ? `${tLessons('lessonList')} - ${new Date(selectedDate).toLocaleDateString()}`
+              : `${tLessons('lessonList')}（直近${filteredLessons.length}件）`
+            }
+          </CardTitle>
         </CardHeader>
         <CardContent>
           <Table>
@@ -592,9 +677,16 @@ export default function ScheduleLessonsPage() {
                 return (
                   <TableRow key={lesson.id}>
                     <TableCell>
-                      <div className="flex items-center gap-1">
-                        <Clock className="h-3 w-3 text-muted-foreground" />
-                        {lesson.startTime} - {lesson.endTime}
+                      <div>
+                        {!filterByDate && (
+                          <div className="text-xs text-muted-foreground">
+                            {new Date(lesson.date + 'T00:00:00').toLocaleDateString('ja-JP', { month: 'short', day: 'numeric', weekday: 'short' })}
+                          </div>
+                        )}
+                        <div className="flex items-center gap-1">
+                          <Clock className="h-3 w-3 text-muted-foreground" />
+                          {lesson.startTime} - {lesson.endTime}
+                        </div>
                       </div>
                     </TableCell>
                     <TableCell>
@@ -652,10 +744,7 @@ export default function ScheduleLessonsPage() {
                     </TableCell>
                     <TableCell>
                       <div className="flex gap-1">
-                        <Button variant="ghost" size="sm">
-                          <Eye className="h-3 w-3" />
-                        </Button>
-                        <Button variant="ghost" size="sm">
+                        <Button variant="ghost" size="sm" onClick={() => startEditLesson(lesson.id)}>
                           <Edit className="h-3 w-3" />
                         </Button>
                         <Button
@@ -682,6 +771,106 @@ export default function ScheduleLessonsPage() {
           )}
         </CardContent>
       </Card>
+
+      {/* レッスン編集ダイアログ */}
+      <Dialog open={!!editingLessonId} onOpenChange={(open) => { if (!open) { setEditingLessonId(null); setEditFormData(null) } }}>
+        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle>レッスン編集</DialogTitle>
+          </DialogHeader>
+          {editFormData && (
+            <div className="space-y-4">
+              <div className="grid gap-4 md:grid-cols-2">
+                <div>
+                  <Label>{tLessons('date')}</Label>
+                  <Input
+                    type="date"
+                    value={editFormData.date}
+                    onChange={(e) => setEditFormData(prev => prev ? { ...prev, date: e.target.value } : prev)}
+                  />
+                </div>
+                <div>
+                  <Label>{tLessons('school')}</Label>
+                  <Select value={editFormData.school} onValueChange={(v: 'ageo' | 'okegawa') => setEditFormData(prev => prev ? { ...prev, school: v } : prev)}>
+                    <SelectTrigger><SelectValue /></SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="ageo">{tLessons('ageoSchool')}</SelectItem>
+                      <SelectItem value="okegawa">{tLessons('okegawaSchool')}</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+              </div>
+              <div className="grid gap-4 md:grid-cols-2">
+                <div>
+                  <Label>{tLessons('startTime')}</Label>
+                  <Input type="time" value={editFormData.startTime} onChange={(e) => setEditFormData(prev => prev ? { ...prev, startTime: e.target.value } : prev)} />
+                </div>
+                <div>
+                  <Label>{tLessons('endTime')}</Label>
+                  <Input type="time" value={editFormData.endTime} onChange={(e) => setEditFormData(prev => prev ? { ...prev, endTime: e.target.value } : prev)} />
+                </div>
+              </div>
+              <div className="grid gap-4 md:grid-cols-2">
+                <div>
+                  <Label>{tLessons('classType')}</Label>
+                  <Select value={editFormData.classType} onValueChange={(v: 'preschool' | 'elementary') => setEditFormData(prev => prev ? { ...prev, classType: v } : prev)}>
+                    <SelectTrigger><SelectValue /></SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="preschool">{tLessons('preschool')}</SelectItem>
+                      <SelectItem value="elementary">{tLessons('elementary')}</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div>
+                  <Label>{tLessons('sport')}</Label>
+                  <Select value={editFormData.sport} onValueChange={(v) => setEditFormData(prev => prev ? { ...prev, sport: v } : prev)}>
+                    <SelectTrigger><SelectValue /></SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="volleyball">{tLessons('volleyball')}</SelectItem>
+                      <SelectItem value="basketball">{tLessons('basketball')}</SelectItem>
+                      <SelectItem value="soccer">{tLessons('soccer')}</SelectItem>
+                      <SelectItem value="tennis">{tLessons('tennis')}</SelectItem>
+                      <SelectItem value="tag_rugby">タグラグビー</SelectItem>
+                      <SelectItem value="baseball">{tLessons('baseball')}</SelectItem>
+                      <SelectItem value="badminton">バドミントン</SelectItem>
+                      <SelectItem value="dance">ダンス</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+              </div>
+              <div className="grid gap-4 md:grid-cols-2">
+                <div>
+                  <Label>{tLessons('training')}</Label>
+                  <Input value={editFormData.trainingType} onChange={(e) => setEditFormData(prev => prev ? { ...prev, trainingType: e.target.value } : prev)} placeholder="例: コーディネーション等" />
+                </div>
+                <div>
+                  <Label>{tLessons('maxStudents')}</Label>
+                  <Input type="number" min="1" max="30" value={editFormData.maxStudents} onChange={(e) => setEditFormData(prev => prev ? { ...prev, maxStudents: parseInt(e.target.value) || 1 } : prev)} />
+                </div>
+              </div>
+              <div>
+                <Label>{tLessons('assignedCoach')}</Label>
+                <div className="border rounded-md p-3 max-h-32 overflow-y-auto space-y-2">
+                  {coaches.map(coach => (
+                    <div key={coach.id} className="flex items-center space-x-2">
+                      <Checkbox checked={editCoaches.includes(coach.name)} onCheckedChange={() => toggleEditCoach(coach.name)} />
+                      <Label className="text-sm">{coach.name}</Label>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <Label>{tLessons('notes')}</Label>
+                <Textarea value={editFormData.notes || ''} onChange={(e) => setEditFormData(prev => prev ? { ...prev, notes: e.target.value } : prev)} rows={2} />
+              </div>
+            </div>
+          )}
+          <DialogFooter>
+            <Button variant="outline" onClick={() => { setEditingLessonId(null); setEditFormData(null) }}>キャンセル</Button>
+            <Button onClick={handleUpdateLesson}>更新</Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
 
       {/* 参加生徒選択ダイアログ */}
       <Dialog open={!!studentDialogLessonId} onOpenChange={(open) => { if (!open) setStudentDialogLessonId(null) }}>
