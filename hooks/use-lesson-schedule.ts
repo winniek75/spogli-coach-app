@@ -34,6 +34,7 @@ export interface LessonSchedule {
   trainingType: string
   assignedCoaches: string[]
   enrolledStudents?: string[]
+  trialParticipants?: { name: string; age?: string; notes?: string }[]
   maxStudents: number
   enrolledCount: number
   status: 'scheduled' | 'confirmed' | 'in_progress' | 'completed' | 'cancelled'

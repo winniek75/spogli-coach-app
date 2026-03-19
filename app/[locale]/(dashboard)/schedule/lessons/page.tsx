@@ -102,6 +102,9 @@ export default function ScheduleLessonsPage() {
   // 参加生徒選択ダイアログ
   const [studentDialogLessonId, setStudentDialogLessonId] = useState<string | null>(null)
   const [studentSearchTerm, setStudentSearchTerm] = useState('')
+  const [trialName, setTrialName] = useState('')
+  const [trialAge, setTrialAge] = useState('')
+  const [trialNotes, setTrialNotes] = useState('')
 
   // レッスンフォームの状態
   const [formData, setFormData] = useState<LessonFormData>({
@@ -716,18 +719,18 @@ export default function ScheduleLessonsPage() {
                     </TableCell>
                     <TableCell>
                       <button
-                        className="flex items-center gap-1 hover:bg-muted/50 rounded px-1 py-0.5 transition-colors w-full text-left"
-                        onClick={() => { setStudentDialogLessonId(lesson.id); setStudentSearchTerm('') }}
+                        className="flex flex-col items-start hover:bg-muted/50 rounded px-1 py-0.5 transition-colors w-full text-left"
+                        onClick={() => { setStudentDialogLessonId(lesson.id); setStudentSearchTerm(''); setTrialName(''); setTrialAge(''); setTrialNotes('') }}
                       >
-                        <span className={enrollmentStatus.color}>{enrollmentStatus.icon}</span>
-                        <span className="font-medium">
-                          {(lesson.enrolledStudents?.length || 0)}/{lesson.maxStudents}
-                        </span>
-                        {lesson.enrolledStudents && lesson.enrolledStudents.length > 0 ? (
-                          <span className="text-xs text-blue-600 ml-1">編集</span>
-                        ) : (
-                          <span className="text-xs text-muted-foreground ml-1">+生徒</span>
-                        )}
+                        <div className="flex items-center gap-1">
+                          <span className={enrollmentStatus.color}>{enrollmentStatus.icon}</span>
+                          <span className="font-medium">
+                            {(lesson.enrolledStudents?.length || 0)}{lesson.trialParticipants?.length ? `+${lesson.trialParticipants.length}体験` : ''}/{lesson.maxStudents}
+                          </span>
+                          <span className="text-xs text-blue-600 ml-1">
+                            {(lesson.enrolledStudents?.length || 0) > 0 || (lesson.trialParticipants?.length || 0) > 0 ? '編集' : '+生徒'}
+                          </span>
+                        </div>
                       </button>
                     </TableCell>
                     <TableCell>
@@ -874,14 +877,15 @@ export default function ScheduleLessonsPage() {
 
       {/* 参加生徒選択ダイアログ */}
       <Dialog open={!!studentDialogLessonId} onOpenChange={(open) => { if (!open) setStudentDialogLessonId(null) }}>
-        <DialogContent className="max-w-md">
+        <DialogContent className="max-w-lg max-h-[90vh] overflow-y-auto">
           <DialogHeader>
-            <DialogTitle>参加生徒を選択</DialogTitle>
+            <DialogTitle>参加者管理</DialogTitle>
           </DialogHeader>
           {(() => {
             const lesson = lessons.find(l => l.id === studentDialogLessonId)
             if (!lesson) return null
             const enrolled = lesson.enrolledStudents || []
+            const trials = lesson.trialParticipants || []
 
             // 校舎・クラスでフィルタした生徒リスト
             const availableStudents = students
@@ -894,71 +898,161 @@ export default function ScheduleLessonsPage() {
                 (s.name_kana && s.name_kana.includes(studentSearchTerm))
               )
 
+            const addTrialParticipant = () => {
+              if (!trialName.trim()) return
+              const newTrials = [...trials, { name: trialName.trim(), age: trialAge.trim(), notes: trialNotes.trim() }]
+              updateLesson(lesson.id, { trialParticipants: newTrials })
+              setTrialName('')
+              setTrialAge('')
+              setTrialNotes('')
+            }
+
+            const removeTrialParticipant = (index: number) => {
+              const newTrials = trials.filter((_, i) => i !== index)
+              updateLesson(lesson.id, { trialParticipants: newTrials })
+            }
+
             return (
-              <div className="space-y-3">
-                <Input
-                  placeholder="名前で検索..."
-                  value={studentSearchTerm}
-                  onChange={(e) => setStudentSearchTerm(e.target.value)}
-                />
-                <div className="text-xs text-muted-foreground">
-                  {lesson.school === 'ageo' ? '上尾校' : '桶川校'} / {lesson.classType === 'preschool' ? '幼児クラス' : '小学生クラス'} の生徒を表示
-                </div>
-                <div className="border rounded-md max-h-60 overflow-y-auto">
-                  {availableStudents.length > 0 ? (
-                    availableStudents.map(student => (
-                      <label
-                        key={student.id}
-                        className="flex items-center gap-3 px-3 py-2 hover:bg-muted/50 cursor-pointer border-b last:border-b-0"
-                      >
-                        <Checkbox
-                          checked={enrolled.includes(student.name)}
-                          onCheckedChange={(checked) => {
-                            const newEnrolled = checked
-                              ? [...enrolled, student.name]
-                              : enrolled.filter(n => n !== student.name)
-                            updateLesson(lesson.id, {
-                              enrolledStudents: newEnrolled,
-                              enrolledCount: newEnrolled.length,
-                            })
-                          }}
-                        />
-                        <div className="flex-1">
-                          <div className="text-sm font-medium">{student.name}</div>
-                          {student.name_kana && (
-                            <div className="text-xs text-muted-foreground">{student.name_kana}</div>
+              <div className="space-y-4">
+                {/* 在籍生徒セクション */}
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <Label className="text-sm font-semibold">在籍生徒</Label>
+                    <span className="text-xs text-muted-foreground">
+                      {lesson.school === 'ageo' ? '上尾校' : '桶川校'} / {lesson.classType === 'preschool' ? '幼児' : '小学生'}
+                    </span>
+                  </div>
+                  <Input
+                    placeholder="名前で検索..."
+                    value={studentSearchTerm}
+                    onChange={(e) => setStudentSearchTerm(e.target.value)}
+                    className="mb-2"
+                  />
+                  <div className="border rounded-md max-h-48 overflow-y-auto">
+                    {availableStudents.length > 0 ? (
+                      availableStudents.map(student => (
+                        <label
+                          key={student.id}
+                          className="flex items-center gap-3 px-3 py-2 hover:bg-muted/50 cursor-pointer border-b last:border-b-0"
+                        >
+                          <Checkbox
+                            checked={enrolled.includes(student.name)}
+                            onCheckedChange={(checked) => {
+                              const newEnrolled = checked
+                                ? [...enrolled, student.name]
+                                : enrolled.filter(n => n !== student.name)
+                              updateLesson(lesson.id, {
+                                enrolledStudents: newEnrolled,
+                                enrolledCount: newEnrolled.length + trials.length,
+                              })
+                            }}
+                          />
+                          <div className="flex-1">
+                            <div className="text-sm font-medium">{student.name}</div>
+                            {student.name_kana && (
+                              <div className="text-xs text-muted-foreground">{student.name_kana}</div>
+                            )}
+                          </div>
+                          {enrolled.includes(student.name) && (
+                            <Badge variant="secondary" className="text-xs">参加</Badge>
                           )}
+                        </label>
+                      ))
+                    ) : (
+                      <div className="text-center py-3 text-sm text-muted-foreground">
+                        該当する生徒がいません
+                      </div>
+                    )}
+                  </div>
+                  <div className="flex justify-between items-center text-xs mt-1">
+                    <span className="text-muted-foreground">{enrolled.length}名 選択中</span>
+                    {enrolled.length > 0 && (
+                      <button
+                        className="text-red-500 hover:text-red-700"
+                        onClick={() => updateLesson(lesson.id, { enrolledStudents: [], enrolledCount: trials.length })}
+                      >
+                        全解除
+                      </button>
+                    )}
+                  </div>
+                </div>
+
+                {/* 体験参加セクション */}
+                <div>
+                  <Label className="text-sm font-semibold">体験参加</Label>
+
+                  {/* 登録済み体験参加者 */}
+                  {trials.length > 0 && (
+                    <div className="space-y-2 mt-2 mb-3">
+                      {trials.map((trial, index) => (
+                        <div key={index} className="flex items-center gap-2 bg-orange-50 border border-orange-200 rounded-md px-3 py-2">
+                          <Badge className="bg-orange-100 text-orange-800 text-xs">体験</Badge>
+                          <div className="flex-1">
+                            <div className="text-sm font-medium">{trial.name}</div>
+                            <div className="text-xs text-muted-foreground">
+                              {trial.age && `${trial.age}歳`}
+                              {trial.age && trial.notes && ' / '}
+                              {trial.notes}
+                            </div>
+                          </div>
+                          <button
+                            className="text-red-400 hover:text-red-600 text-sm"
+                            onClick={() => removeTrialParticipant(index)}
+                          >
+                            ×
+                          </button>
                         </div>
-                        {enrolled.includes(student.name) && (
-                          <Badge variant="secondary" className="text-xs">参加</Badge>
-                        )}
-                      </label>
-                    ))
-                  ) : (
-                    <div className="text-center py-4 text-sm text-muted-foreground">
-                      該当する生徒がいません
+                      ))}
                     </div>
                   )}
-                </div>
-                <div className="flex justify-between items-center text-sm">
-                  <span className="text-muted-foreground">
-                    {enrolled.length}/{lesson.maxStudents}名 選択中
-                  </span>
-                  {enrolled.length > 0 && (
+
+                  {/* 体験参加者追加フォーム */}
+                  <div className="border rounded-md p-3 space-y-2 bg-muted/30">
+                    <div className="grid grid-cols-2 gap-2">
+                      <div>
+                        <Label className="text-xs">名前 *</Label>
+                        <Input
+                          value={trialName}
+                          onChange={(e) => setTrialName(e.target.value)}
+                          placeholder="体験者の名前"
+                          className="h-8 text-sm"
+                        />
+                      </div>
+                      <div>
+                        <Label className="text-xs">年齢</Label>
+                        <Input
+                          value={trialAge}
+                          onChange={(e) => setTrialAge(e.target.value)}
+                          placeholder="例: 5"
+                          className="h-8 text-sm"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <Label className="text-xs">備考（連絡先・アレルギー等）</Label>
+                      <Input
+                        value={trialNotes}
+                        onChange={(e) => setTrialNotes(e.target.value)}
+                        placeholder="例: 保護者 090-xxxx-xxxx / 卵アレルギー"
+                        className="h-8 text-sm"
+                      />
+                    </div>
                     <Button
-                      variant="ghost"
                       size="sm"
-                      className="text-red-500"
-                      onClick={() => {
-                        updateLesson(lesson.id, {
-                          enrolledStudents: [],
-                          enrolledCount: 0,
-                        })
-                      }}
+                      variant="outline"
+                      className="w-full"
+                      onClick={addTrialParticipant}
+                      disabled={!trialName.trim()}
                     >
-                      全解除
+                      + 体験参加者を追加
                     </Button>
-                  )}
+                  </div>
+                </div>
+
+                {/* 合計 */}
+                <div className="text-sm text-center text-muted-foreground border-t pt-3">
+                  合計: <span className="font-semibold text-foreground">{enrolled.length + trials.length}</span>名 / {lesson.maxStudents}名
+                  {trials.length > 0 && <span className="ml-1">（うち体験{trials.length}名）</span>}
                 </div>
               </div>
             )
