@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { useLessonSchedule } from '@/hooks/use-lesson-schedule'
 import { useCoaches } from '@/hooks/use-coaches'
+import { useStudents } from '@/hooks/use-students'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -91,9 +92,14 @@ export default function ScheduleLessonsPage() {
   const [searchTerm, setSearchTerm] = useState('')
   const [isAddDialogOpen, setIsAddDialogOpen] = useState(false)
 
-  // レッスンスケジュールと講師データを取得
+  // レッスンスケジュール、講師、生徒データを取得
   const { lessons, addLesson, updateLesson, deleteLesson } = useLessonSchedule()
   const { coaches } = useCoaches()
+  const { students } = useStudents()
+
+  // 参加生徒選択ダイアログ
+  const [studentDialogLessonId, setStudentDialogLessonId] = useState<string | null>(null)
+  const [studentSearchTerm, setStudentSearchTerm] = useState('')
 
   // レッスンフォームの状態
   const [formData, setFormData] = useState<LessonFormData>({
@@ -617,15 +623,20 @@ export default function ScheduleLessonsPage() {
                       </div>
                     </TableCell>
                     <TableCell>
-                      <div className="flex items-center gap-1">
+                      <button
+                        className="flex items-center gap-1 hover:bg-muted/50 rounded px-1 py-0.5 transition-colors w-full text-left"
+                        onClick={() => { setStudentDialogLessonId(lesson.id); setStudentSearchTerm('') }}
+                      >
                         <span className={enrollmentStatus.color}>{enrollmentStatus.icon}</span>
                         <span className="font-medium">
-                          {lesson.enrolledCount}/{lesson.maxStudents}
+                          {(lesson.enrolledStudents?.length || 0)}/{lesson.maxStudents}
                         </span>
-                        <span className={`text-xs ${enrollmentStatus.color}`}>
-                          {enrollmentStatus.text}
-                        </span>
-                      </div>
+                        {lesson.enrolledStudents && lesson.enrolledStudents.length > 0 ? (
+                          <span className="text-xs text-blue-600 ml-1">編集</span>
+                        ) : (
+                          <span className="text-xs text-muted-foreground ml-1">+生徒</span>
+                        )}
+                      </button>
                     </TableCell>
                     <TableCell>
                       {getStatusBadge(lesson.status)}
@@ -671,6 +682,105 @@ export default function ScheduleLessonsPage() {
           )}
         </CardContent>
       </Card>
+
+      {/* 参加生徒選択ダイアログ */}
+      <Dialog open={!!studentDialogLessonId} onOpenChange={(open) => { if (!open) setStudentDialogLessonId(null) }}>
+        <DialogContent className="max-w-md">
+          <DialogHeader>
+            <DialogTitle>参加生徒を選択</DialogTitle>
+          </DialogHeader>
+          {(() => {
+            const lesson = lessons.find(l => l.id === studentDialogLessonId)
+            if (!lesson) return null
+            const enrolled = lesson.enrolledStudents || []
+
+            // 校舎・クラスでフィルタした生徒リスト
+            const availableStudents = students
+              .filter(s => s.status === 'active')
+              .filter(s => !lesson.school || s.school === lesson.school)
+              .filter(s => !lesson.classType || s.class_type === lesson.classType)
+              .filter(s =>
+                !studentSearchTerm ||
+                s.name.includes(studentSearchTerm) ||
+                (s.name_kana && s.name_kana.includes(studentSearchTerm))
+              )
+
+            return (
+              <div className="space-y-3">
+                <Input
+                  placeholder="名前で検索..."
+                  value={studentSearchTerm}
+                  onChange={(e) => setStudentSearchTerm(e.target.value)}
+                />
+                <div className="text-xs text-muted-foreground">
+                  {lesson.school === 'ageo' ? '上尾校' : '桶川校'} / {lesson.classType === 'preschool' ? '幼児クラス' : '小学生クラス'} の生徒を表示
+                </div>
+                <div className="border rounded-md max-h-60 overflow-y-auto">
+                  {availableStudents.length > 0 ? (
+                    availableStudents.map(student => (
+                      <label
+                        key={student.id}
+                        className="flex items-center gap-3 px-3 py-2 hover:bg-muted/50 cursor-pointer border-b last:border-b-0"
+                      >
+                        <Checkbox
+                          checked={enrolled.includes(student.name)}
+                          onCheckedChange={(checked) => {
+                            const newEnrolled = checked
+                              ? [...enrolled, student.name]
+                              : enrolled.filter(n => n !== student.name)
+                            updateLesson(lesson.id, {
+                              enrolledStudents: newEnrolled,
+                              enrolledCount: newEnrolled.length,
+                            })
+                          }}
+                        />
+                        <div className="flex-1">
+                          <div className="text-sm font-medium">{student.name}</div>
+                          {student.name_kana && (
+                            <div className="text-xs text-muted-foreground">{student.name_kana}</div>
+                          )}
+                        </div>
+                        {enrolled.includes(student.name) && (
+                          <Badge variant="secondary" className="text-xs">参加</Badge>
+                        )}
+                      </label>
+                    ))
+                  ) : (
+                    <div className="text-center py-4 text-sm text-muted-foreground">
+                      該当する生徒がいません
+                    </div>
+                  )}
+                </div>
+                <div className="flex justify-between items-center text-sm">
+                  <span className="text-muted-foreground">
+                    {enrolled.length}/{lesson.maxStudents}名 選択中
+                  </span>
+                  {enrolled.length > 0 && (
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="text-red-500"
+                      onClick={() => {
+                        updateLesson(lesson.id, {
+                          enrolledStudents: [],
+                          enrolledCount: 0,
+                        })
+                      }}
+                    >
+                      全解除
+                    </Button>
+                  )}
+                </div>
+              </div>
+            )
+          })()}
+          <DialogFooter>
+            <Button onClick={() => setStudentDialogLessonId(null)}>
+              閉じる
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   )
 }

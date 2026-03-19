@@ -33,6 +33,7 @@ export interface LessonSchedule {
   sport: string
   trainingType: string
   assignedCoaches: string[]
+  enrolledStudents?: string[]
   maxStudents: number
   enrolledCount: number
   status: 'scheduled' | 'confirmed' | 'in_progress' | 'completed' | 'cancelled'
