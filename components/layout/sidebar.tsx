@@ -34,7 +34,8 @@ export function Sidebar({ isOpen, onClose, currentLocale = 'ja' }: SidebarProps)
     evaluationHistory: tSidebar('evaluationHistory'),
     lessonMenus: tSidebar('lessonMenus'),
     videoList: tSidebar('videoList'),
-    materialList: tSidebar('materialList')
+    materialList: tSidebar('materialList'),
+    sportsGuide: tSidebar('sportsGuide')
   }
 
   return (

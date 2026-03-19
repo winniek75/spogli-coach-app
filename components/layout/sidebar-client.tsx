@@ -42,6 +42,7 @@ interface SidebarProps {
     lessonMenus: string
     videoList: string
     materialList: string
+    sportsGuide: string
   }
 }
 
@@ -100,6 +101,7 @@ export function SidebarClient({ isOpen, onClose, translations }: SidebarProps) {
       submenu: [
         { title: translations.videoList, href: '/content/videos' },
         { title: translations.materialList, href: '/content/materials' },
+        { title: translations.sportsGuide, href: '/content/sports-guide' },
       ],
     },
     {
