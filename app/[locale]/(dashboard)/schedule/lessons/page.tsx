@@ -887,11 +887,9 @@ export default function ScheduleLessonsPage() {
             const enrolled = lesson.enrolledStudents || []
             const trials = lesson.trialParticipants || []
 
-            // 校舎・クラスでフィルタした生徒リスト
+            // 在籍生徒リスト（全生徒から選択可能）
             const availableStudents = students
               .filter(s => s.status === 'active')
-              .filter(s => !lesson.school || s.school === lesson.school)
-              .filter(s => !lesson.classType || s.class_type === lesson.classType)
               .filter(s =>
                 !studentSearchTerm ||
                 s.name.includes(studentSearchTerm) ||
