@@ -15,7 +15,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
-import { Switch } from '@/components/ui/switch'
 import { Badge } from '@/components/ui/badge'
 import {
   ArrowLeft,
@@ -23,287 +22,203 @@ import {
   Trash2,
   Clock,
   X,
-  Video,
-  PlayCircle,
 } from 'lucide-react'
-import { VideoSelectorModal } from '@/components/video-selector-modal'
+import { useLessonMenus } from '@/hooks/use-lesson-menus'
+import { WeekType } from '@/types/lesson-menu'
 
 interface Activity {
   name: string
   duration: number
   description: string
-  equipment: string[]
-  videoInfo?: {
-    id: string
-    title: string
-    thumbnailUrl?: string
-    duration: number
-  }
+}
+
+const SPORT_LABELS: Record<string, string> = {
+  volleyball: 'バレーボール',
+  basketball: 'バスケットボール',
+  soccer: 'サッカー',
+  tennis: 'テニス',
+  tag_rugby: 'タグラグビー',
+  baseball: '野球',
+  badminton: 'バドミントン',
+  dance: 'ダンス',
+}
+
+const WEEK_LABELS: Record<string, string> = {
+  week1: '第1週',
+  week2: '第2週',
+  week3: '第3週',
+  week4: '第4週',
+  backup: '振替用',
 }
 
 export default function NewMenuPage() {
   const router = useRouter()
-  const [title, setTitle] = useState('')
-  const [description, setDescription] = useState('')
+  const { createLessonMenu } = useLessonMenus()
+
+  // 基本情報
   const [sport, setSport] = useState('')
   const [classType, setClassType] = useState('')
-  const [isTemplate, setIsTemplate] = useState(false)
-  const [notes, setNotes] = useState('')
+  const [month, setMonth] = useState(new Date().toISOString().slice(0, 7))
+  const [weekType, setWeekType] = useState<string>('')
 
-  // ウォームアップ
-  const [warmup, setWarmup] = useState<Activity[]>([
-    { name: '', duration: 5, description: '', equipment: [] }
-  ])
+  // ウォームアップ（時間と内容だけ）
+  const [warmupDuration, setWarmupDuration] = useState(5)
+  const [warmupNotes, setWarmupNotes] = useState('')
 
   // メインアクティビティ
   const [activities, setActivities] = useState<Activity[]>([
-    { name: '', duration: 10, description: '', equipment: [] }
+    { name: '', duration: 10, description: '' }
   ])
 
   // クールダウン
-  const [cooldown, setCooldown] = useState<Activity[]>([
-    { name: '', duration: 5, description: '', equipment: [] }
-  ])
+  const [cooldownDuration, setCooldownDuration] = useState(5)
+  const [cooldownNotes, setCooldownNotes] = useState('')
 
   // 英語フレーズ
-  const [englishPhrases, setEnglishPhrases] = useState<string[]>([''])
+  const [englishPhrases, setEnglishPhrases] = useState<string[]>([])
   const [newPhrase, setNewPhrase] = useState('')
 
-  // ビデオ選択
-  const [showVideoModal, setShowVideoModal] = useState(false)
-  const [currentActivityIndex, setCurrentActivityIndex] = useState<number>(-1)
-  const [currentActivityType, setCurrentActivityType] = useState<'warmup' | 'activities' | 'cooldown'>('activities')
+  // 備考
+  const [notes, setNotes] = useState('')
 
   const getTotalDuration = () => {
-    const warmupTime = warmup.reduce((sum, item) => sum + item.duration, 0)
     const activityTime = activities.reduce((sum, item) => sum + item.duration, 0)
-    const cooldownTime = cooldown.reduce((sum, item) => sum + item.duration, 0)
-    return warmupTime + activityTime + cooldownTime
+    return warmupDuration + activityTime + cooldownDuration
   }
 
-  const addActivity = (type: 'warmup' | 'activities' | 'cooldown') => {
-    const newActivity: Activity = { name: '', duration: 10, description: '', equipment: [] }
-    if (type === 'warmup') {
-      setWarmup([...warmup, newActivity])
-    } else if (type === 'activities') {
-      setActivities([...activities, newActivity])
-    } else {
-      setCooldown([...cooldown, newActivity])
-    }
+  // タイトル自動生成
+  const getAutoTitle = () => {
+    const sportName = SPORT_LABELS[sport] || sport
+    const weekName = WEEK_LABELS[weekType] || weekType
+    const className = classType === 'preschool' ? '幼児' : classType === 'elementary' ? '小学生' : ''
+    if (!sport || !weekType || !month) return ''
+    const m = month.split('-')[1]
+    return `${sportName} ${className} ${parseInt(m)}月${weekName}`
   }
 
-  const removeActivity = (type: 'warmup' | 'activities' | 'cooldown', index: number) => {
-    if (type === 'warmup' && warmup.length > 1) {
-      setWarmup(warmup.filter((_, i) => i !== index))
-    } else if (type === 'activities' && activities.length > 1) {
+  const addActivity = () => {
+    setActivities([...activities, { name: '', duration: 10, description: '' }])
+  }
+
+  const removeActivity = (index: number) => {
+    if (activities.length > 1) {
       setActivities(activities.filter((_, i) => i !== index))
-    } else if (type === 'cooldown' && cooldown.length > 1) {
-      setCooldown(cooldown.filter((_, i) => i !== index))
     }
   }
 
-  const updateActivity = (
-    type: 'warmup' | 'activities' | 'cooldown',
-    index: number,
-    field: keyof Activity,
-    value: any
-  ) => {
-    const updateList = (list: Activity[]) => {
-      const updated = [...list]
-      updated[index] = { ...updated[index], [field]: value }
-      return updated
-    }
-
-    if (type === 'warmup') {
-      setWarmup(updateList(warmup))
-    } else if (type === 'activities') {
-      setActivities(updateList(activities))
-    } else {
-      setCooldown(updateList(cooldown))
-    }
+  const updateActivity = (index: number, field: keyof Activity, value: any) => {
+    const updated = [...activities]
+    updated[index] = { ...updated[index], [field]: value }
+    setActivities(updated)
   }
 
   const addEnglishPhrase = () => {
     if (newPhrase.trim()) {
-      setEnglishPhrases([...englishPhrases.filter(p => p), newPhrase])
+      setEnglishPhrases([...englishPhrases, newPhrase.trim()])
       setNewPhrase('')
-    }
-  }
-
-  const removePhrase = (index: number) => {
-    setEnglishPhrases(englishPhrases.filter((_, i) => i !== index))
-  }
-
-  const openVideoSelector = (type: 'warmup' | 'activities' | 'cooldown', index: number) => {
-    setCurrentActivityType(type)
-    setCurrentActivityIndex(index)
-    setShowVideoModal(true)
-  }
-
-  const handleVideoSelect = (video: any) => {
-    if (currentActivityIndex >= 0) {
-      const videoInfo = {
-        id: video.id,
-        title: video.title,
-        thumbnailUrl: video.thumbnailUrl,
-        duration: video.duration,
-      }
-
-      if (currentActivityType === 'warmup') {
-        const updated = [...warmup]
-        updated[currentActivityIndex] = { ...updated[currentActivityIndex], videoInfo }
-        setWarmup(updated)
-      } else if (currentActivityType === 'activities') {
-        const updated = [...activities]
-        updated[currentActivityIndex] = { ...updated[currentActivityIndex], videoInfo }
-        setActivities(updated)
-      } else {
-        const updated = [...cooldown]
-        updated[currentActivityIndex] = { ...updated[currentActivityIndex], videoInfo }
-        setCooldown(updated)
-      }
-    }
-  }
-
-  const removeVideo = (type: 'warmup' | 'activities' | 'cooldown', index: number) => {
-    if (type === 'warmup') {
-      const updated = [...warmup]
-      delete updated[index].videoInfo
-      setWarmup(updated)
-    } else if (type === 'activities') {
-      const updated = [...activities]
-      delete updated[index].videoInfo
-      setActivities(updated)
-    } else {
-      const updated = [...cooldown]
-      delete updated[index].videoInfo
-      setCooldown(updated)
     }
   }
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
 
-    // バリデーション
-    if (!title || !sport || !classType) {
-      alert('必須項目を入力してください')
+    if (!sport || !classType || !month || !weekType) {
+      alert('スポーツ、クラス、月、週を選択してください')
       return
     }
 
-    // 実際のアプリではAPI経由で保存
-    const newMenu = {
-      id: `menu-${Date.now()}`,
-      title,
-      description,
-      sport,
-      classType,
-      duration: getTotalDuration(),
-      warmup: warmup.filter(w => w.name),
-      activities: activities.filter(a => a.name),
-      cooldown: cooldown.filter(c => c.name),
-      englishPhrases: englishPhrases.filter(p => p),
-      notes,
-      isTemplate,
-      createdAt: new Date().toISOString().split('T')[0],
-      updatedAt: new Date().toISOString().split('T')[0],
-    }
+    const allActivities = [
+      ...(warmupNotes || warmupDuration ? [{ title: warmupNotes || 'ウォームアップ', duration_minutes: warmupDuration, activity_type: 'warmup', order_index: 0 }] : []),
+      ...activities.filter(a => a.name).map((a, i) => ({ title: a.name, description: a.description, duration_minutes: a.duration, activity_type: 'technical_drill', order_index: i + 1 })),
+      ...(cooldownNotes || cooldownDuration ? [{ title: cooldownNotes || 'クールダウン', duration_minutes: cooldownDuration, activity_type: 'cooldown', order_index: activities.length + 1 }] : []),
+    ]
 
-    console.log('新規メニュー:', newMenu)
+    createLessonMenu({
+      title: getAutoTitle(),
+      description: notes || '',
+      sport,
+      class_type: classType as 'preschool' | 'elementary',
+      week_type: weekType as WeekType,
+      month,
+      level: 1,
+      duration_minutes: getTotalDuration(),
+      max_participants: 20,
+      equipment: [],
+      objectives: [],
+      activities: allActivities,
+      english_phrases: englishPhrases,
+    })
+
     router.push('/lessons/menus')
   }
 
   return (
-    <div className="max-w-4xl mx-auto space-y-6">
+    <div className="max-w-3xl mx-auto space-y-6">
       {/* ヘッダー */}
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <Button variant="ghost" size="sm" asChild>
-            <Link href="/lessons/menus">
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              戻る
-            </Link>
-          </Button>
-          <div>
-            <h1 className="text-3xl font-bold tracking-tight">新規レッスンメニュー作成</h1>
-            <p className="text-muted-foreground mt-1">レッスンメニューの詳細を設定してください</p>
-          </div>
+      <div className="flex items-center gap-4">
+        <Button variant="ghost" size="sm" asChild>
+          <Link href="/lessons/menus">
+            <ArrowLeft className="h-4 w-4 mr-2" />
+            戻る
+          </Link>
+        </Button>
+        <div>
+          <h1 className="text-3xl font-bold tracking-tight">新規レッスンメニュー作成</h1>
+          {getAutoTitle() && (
+            <p className="text-muted-foreground mt-1">{getAutoTitle()}</p>
+          )}
         </div>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-6">
-        {/* 基本情報 */}
+        {/* 基本情報: スポーツ・クラス・月・週 */}
         <Card>
           <CardHeader>
             <CardTitle>基本情報</CardTitle>
+            <CardDescription>スポーツ、クラス、対象の月と週を選択してください</CardDescription>
           </CardHeader>
-          <CardContent className="space-y-4">
-            <div>
-              <Label htmlFor="title">メニュー名 *</Label>
-              <Input
-                id="title"
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
-                placeholder="例: バレーボール基礎練習"
-                required
-              />
-            </div>
-
-            <div>
-              <Label htmlFor="description">説明</Label>
-              <Textarea
-                id="description"
-                value={description}
-                onChange={(e) => setDescription(e.target.value)}
-                placeholder="このメニューの概要を入力"
-                rows={2}
-              />
-            </div>
-
+          <CardContent>
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <Label htmlFor="sport">スポーツ *</Label>
-                <Select value={sport} onValueChange={setSport} required>
-                  <SelectTrigger>
-                    <SelectValue placeholder="選択してください" />
-                  </SelectTrigger>
+                <Label>スポーツ *</Label>
+                <Select value={sport} onValueChange={setSport}>
+                  <SelectTrigger><SelectValue placeholder="選択" /></SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="volleyball">バレーボール</SelectItem>
-                    <SelectItem value="basketball">バスケットボール</SelectItem>
-                    <SelectItem value="soccer">サッカー</SelectItem>
-                    <SelectItem value="tennis">テニス</SelectItem>
-                    <SelectItem value="rugby">ラグビー</SelectItem>
-                    <SelectItem value="baseball">野球</SelectItem>
+                    {Object.entries(SPORT_LABELS).map(([key, label]) => (
+                      <SelectItem key={key} value={key}>{label}</SelectItem>
+                    ))}
                   </SelectContent>
                 </Select>
               </div>
-
               <div>
-                <Label htmlFor="classType">対象クラス *</Label>
-                <Select value={classType} onValueChange={setClassType} required>
-                  <SelectTrigger>
-                    <SelectValue placeholder="選択してください" />
-                  </SelectTrigger>
+                <Label>対象クラス *</Label>
+                <Select value={classType} onValueChange={setClassType}>
+                  <SelectTrigger><SelectValue placeholder="選択" /></SelectTrigger>
                   <SelectContent>
                     <SelectItem value="preschool">幼児</SelectItem>
                     <SelectItem value="elementary">小学生</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
+              <div>
+                <Label>月 *</Label>
+                <Input type="month" value={month} onChange={(e) => setMonth(e.target.value)} />
+              </div>
+              <div>
+                <Label>週 *</Label>
+                <Select value={weekType} onValueChange={setWeekType}>
+                  <SelectTrigger><SelectValue placeholder="選択" /></SelectTrigger>
+                  <SelectContent>
+                    {Object.entries(WEEK_LABELS).map(([key, label]) => (
+                      <SelectItem key={key} value={key}>{label}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
             </div>
-
-            <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-2">
-                <Switch
-                  id="template"
-                  checked={isTemplate}
-                  onCheckedChange={setIsTemplate}
-                />
-                <Label htmlFor="template">テンプレートとして保存</Label>
-              </div>
-              <div className="flex items-center gap-2">
-                <Clock className="h-4 w-4 text-muted-foreground" />
-                <span className="text-sm font-medium">合計時間: {getTotalDuration()}分</span>
-              </div>
+            <div className="flex items-center gap-2 mt-4 text-sm text-muted-foreground">
+              <Clock className="h-4 w-4" />
+              合計時間: {getTotalDuration()}分
             </div>
           </CardContent>
         </Card>
@@ -315,54 +230,26 @@ export default function NewMenuPage() {
               <div className="w-3 h-3 bg-yellow-400 rounded-full" />
               ウォームアップ
             </CardTitle>
-            <CardDescription>準備運動の内容を設定</CardDescription>
           </CardHeader>
-          <CardContent className="space-y-4">
-            {warmup.map((item, index) => (
-              <div key={index} className="space-y-3 p-4 border rounded-lg">
-                <div className="flex items-center justify-between">
-                  <Label>活動 {index + 1}</Label>
-                  {warmup.length > 1 && (
-                    <Button
-                      type="button"
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => removeActivity('warmup', index)}
-                    >
-                      <Trash2 className="h-4 w-4" />
-                    </Button>
-                  )}
-                </div>
-                <div className="grid grid-cols-[1fr,100px] gap-3">
-                  <Input
-                    placeholder="活動名"
-                    value={item.name}
-                    onChange={(e) => updateActivity('warmup', index, 'name', e.target.value)}
-                  />
-                  <Input
-                    type="number"
-                    placeholder="分"
-                    value={item.duration}
-                    onChange={(e) => updateActivity('warmup', index, 'duration', parseInt(e.target.value) || 0)}
-                  />
-                </div>
-                <Textarea
-                  placeholder="詳細説明（任意）"
-                  value={item.description}
-                  onChange={(e) => updateActivity('warmup', index, 'description', e.target.value)}
-                  rows={2}
+          <CardContent className="space-y-3">
+            <div className="grid grid-cols-[1fr,80px] gap-3 items-end">
+              <div>
+                <Label>内容（任意）</Label>
+                <Input
+                  value={warmupNotes}
+                  onChange={(e) => setWarmupNotes(e.target.value)}
+                  placeholder="例: ジョギング、ストレッチ、鬼ごっこ"
                 />
               </div>
-            ))}
-            <Button
-              type="button"
-              variant="outline"
-              size="sm"
-              onClick={() => addActivity('warmup')}
-            >
-              <Plus className="h-4 w-4 mr-2" />
-              活動を追加
-            </Button>
+              <div>
+                <Label>分</Label>
+                <Input
+                  type="number"
+                  value={warmupDuration}
+                  onChange={(e) => setWarmupDuration(parseInt(e.target.value) || 0)}
+                />
+              </div>
+            </div>
           </CardContent>
         </Card>
 
@@ -373,89 +260,39 @@ export default function NewMenuPage() {
               <div className="w-3 h-3 bg-blue-400 rounded-full" />
               メインアクティビティ
             </CardTitle>
-            <CardDescription>主要な練習内容を設定</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             {activities.map((item, index) => (
-              <div key={index} className="space-y-3 p-4 border rounded-lg">
+              <div key={index} className="space-y-2 p-3 border rounded-lg">
                 <div className="flex items-center justify-between">
-                  <Label>活動 {index + 1}</Label>
+                  <Label className="text-sm font-medium">活動 {index + 1}</Label>
                   {activities.length > 1 && (
-                    <Button
-                      type="button"
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => removeActivity('activities', index)}
-                    >
+                    <Button type="button" variant="ghost" size="sm" onClick={() => removeActivity(index)}>
                       <Trash2 className="h-4 w-4" />
                     </Button>
                   )}
                 </div>
-                <div className="grid grid-cols-[1fr,100px] gap-3">
+                <div className="grid grid-cols-[1fr,80px] gap-3">
                   <Input
                     placeholder="活動名"
                     value={item.name}
-                    onChange={(e) => updateActivity('activities', index, 'name', e.target.value)}
+                    onChange={(e) => updateActivity(index, 'name', e.target.value)}
                   />
                   <Input
                     type="number"
                     placeholder="分"
                     value={item.duration}
-                    onChange={(e) => updateActivity('activities', index, 'duration', parseInt(e.target.value) || 0)}
+                    onChange={(e) => updateActivity(index, 'duration', parseInt(e.target.value) || 0)}
                   />
                 </div>
-                <Textarea
-                  placeholder="詳細説明（任意）"
+                <Input
+                  placeholder="詳細・ポイント（任意）"
                   value={item.description}
-                  onChange={(e) => updateActivity('activities', index, 'description', e.target.value)}
-                  rows={2}
+                  onChange={(e) => updateActivity(index, 'description', e.target.value)}
                 />
-
-                {/* 動画選択 */}
-                <div className="space-y-2">
-                  <Label className="text-sm">指導動画（任意）</Label>
-                  {item.videoInfo ? (
-                    <div className="flex items-center gap-3 p-3 bg-blue-50 border border-blue-200 rounded-lg">
-                      <div className="flex items-center gap-2 flex-1 min-w-0">
-                        <PlayCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                        <div className="min-w-0">
-                          <p className="font-medium text-sm text-blue-900 truncate">{item.videoInfo.title}</p>
-                          <p className="text-xs text-blue-700">
-                            {Math.floor(item.videoInfo.duration / 60)}:{(item.videoInfo.duration % 60).toString().padStart(2, '0')}
-                          </p>
-                        </div>
-                      </div>
-                      <Button
-                        type="button"
-                        variant="ghost"
-                        size="sm"
-                        onClick={() => removeVideo('activities', index)}
-                        className="text-red-600 hover:text-red-700 hover:bg-red-50"
-                      >
-                        <X className="h-4 w-4" />
-                      </Button>
-                    </div>
-                  ) : (
-                    <Button
-                      type="button"
-                      variant="outline"
-                      size="sm"
-                      onClick={() => openVideoSelector('activities', index)}
-                      className="w-full justify-start"
-                    >
-                      <Video className="h-4 w-4 mr-2" />
-                      動画を選択
-                    </Button>
-                  )}
-                </div>
               </div>
             ))}
-            <Button
-              type="button"
-              variant="outline"
-              size="sm"
-              onClick={() => addActivity('activities')}
-            >
+            <Button type="button" variant="outline" size="sm" onClick={addActivity}>
               <Plus className="h-4 w-4 mr-2" />
               活動を追加
             </Button>
@@ -469,54 +306,26 @@ export default function NewMenuPage() {
               <div className="w-3 h-3 bg-green-400 rounded-full" />
               クールダウン
             </CardTitle>
-            <CardDescription>整理運動の内容を設定</CardDescription>
           </CardHeader>
-          <CardContent className="space-y-4">
-            {cooldown.map((item, index) => (
-              <div key={index} className="space-y-3 p-4 border rounded-lg">
-                <div className="flex items-center justify-between">
-                  <Label>活動 {index + 1}</Label>
-                  {cooldown.length > 1 && (
-                    <Button
-                      type="button"
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => removeActivity('cooldown', index)}
-                    >
-                      <Trash2 className="h-4 w-4" />
-                    </Button>
-                  )}
-                </div>
-                <div className="grid grid-cols-[1fr,100px] gap-3">
-                  <Input
-                    placeholder="活動名"
-                    value={item.name}
-                    onChange={(e) => updateActivity('cooldown', index, 'name', e.target.value)}
-                  />
-                  <Input
-                    type="number"
-                    placeholder="分"
-                    value={item.duration}
-                    onChange={(e) => updateActivity('cooldown', index, 'duration', parseInt(e.target.value) || 0)}
-                  />
-                </div>
-                <Textarea
-                  placeholder="詳細説明（任意）"
-                  value={item.description}
-                  onChange={(e) => updateActivity('cooldown', index, 'description', e.target.value)}
-                  rows={2}
+          <CardContent className="space-y-3">
+            <div className="grid grid-cols-[1fr,80px] gap-3 items-end">
+              <div>
+                <Label>内容（任意）</Label>
+                <Input
+                  value={cooldownNotes}
+                  onChange={(e) => setCooldownNotes(e.target.value)}
+                  placeholder="例: ストレッチ、振り返り"
                 />
               </div>
-            ))}
-            <Button
-              type="button"
-              variant="outline"
-              size="sm"
-              onClick={() => addActivity('cooldown')}
-            >
-              <Plus className="h-4 w-4 mr-2" />
-              活動を追加
-            </Button>
+              <div>
+                <Label>分</Label>
+                <Input
+                  type="number"
+                  value={cooldownDuration}
+                  onChange={(e) => setCooldownDuration(parseInt(e.target.value) || 0)}
+                />
+              </div>
+            </div>
           </CardContent>
         </Card>
 
@@ -524,43 +333,27 @@ export default function NewMenuPage() {
         <Card>
           <CardHeader>
             <CardTitle>英語フレーズ（任意）</CardTitle>
-            <CardDescription>レッスンで使える英語表現</CardDescription>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="space-y-3">
             <div className="flex gap-2">
               <Input
                 placeholder="例: Good job!"
                 value={newPhrase}
                 onChange={(e) => setNewPhrase(e.target.value)}
-                onKeyPress={(e) => {
-                  if (e.key === 'Enter') {
-                    e.preventDefault()
-                    addEnglishPhrase()
-                  }
-                }}
+                onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); addEnglishPhrase() } }}
               />
-              <Button
-                type="button"
-                variant="outline"
-                onClick={addEnglishPhrase}
-              >
+              <Button type="button" variant="outline" onClick={addEnglishPhrase} disabled={!newPhrase.trim()}>
                 <Plus className="h-4 w-4" />
               </Button>
             </div>
-            {englishPhrases.filter(p => p).length > 0 && (
+            {englishPhrases.length > 0 && (
               <div className="flex flex-wrap gap-2">
-                {englishPhrases.filter(p => p).map((phrase, index) => (
-                  <Badge key={index} variant="secondary" className="pl-3 pr-1">
+                {englishPhrases.map((phrase, index) => (
+                  <Badge key={index} variant="secondary">
                     {phrase}
-                    <Button
-                      type="button"
-                      variant="ghost"
-                      size="sm"
-                      className="h-4 w-4 p-0 ml-2"
-                      onClick={() => removePhrase(index)}
-                    >
+                    <button type="button" className="ml-1.5 hover:text-red-600" onClick={() => setEnglishPhrases(prev => prev.filter((_, i) => i !== index))}>
                       <X className="h-3 w-3" />
-                    </Button>
+                    </button>
                   </Badge>
                 ))}
               </div>
@@ -574,12 +367,7 @@ export default function NewMenuPage() {
             <CardTitle>備考（任意）</CardTitle>
           </CardHeader>
           <CardContent>
-            <Textarea
-              value={notes}
-              onChange={(e) => setNotes(e.target.value)}
-              placeholder="指導上の注意点など"
-              rows={3}
-            />
+            <Textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="指導上の注意点など" rows={2} />
           </CardContent>
         </Card>
 
@@ -588,19 +376,9 @@ export default function NewMenuPage() {
           <Button type="button" variant="outline" asChild>
             <Link href="/lessons/menus">キャンセル</Link>
           </Button>
-          <Button type="submit">
-            メニューを作成
-          </Button>
+          <Button type="submit">メニューを作成</Button>
         </div>
       </form>
-
-      {/* 動画選択モーダル */}
-      <VideoSelectorModal
-        open={showVideoModal}
-        onOpenChange={setShowVideoModal}
-        onSelect={handleVideoSelect}
-        sportFilter={sport}
-      />
     </div>
   )
 }

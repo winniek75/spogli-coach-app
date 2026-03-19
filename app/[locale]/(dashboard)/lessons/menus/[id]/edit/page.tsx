@@ -395,7 +395,7 @@ export default function EditMenuPage() {
                     <SelectItem value="basketball">バスケットボール</SelectItem>
                     <SelectItem value="soccer">サッカー</SelectItem>
                     <SelectItem value="tennis">テニス</SelectItem>
-                    <SelectItem value="rugby">ラグビー</SelectItem>
+                    <SelectItem value="rugby">タグラグビー</SelectItem>
                     <SelectItem value="baseball">野球</SelectItem>
                   </SelectContent>
                 </Select>
