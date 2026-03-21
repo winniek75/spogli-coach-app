@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { useStudent } from '@/hooks/use-students'
 import { useCoaches } from '@/hooks/use-coaches'
+import { getStudentDisplayName } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
@@ -30,6 +31,7 @@ export default function EvaluateStudentPage() {
   const params = useParams()
   const router = useRouter()
   const studentId = params.id as string
+  const isEnglish = params.locale === 'en'
   const { student, loading: studentLoading, error: studentError } = useStudent(studentId)
   const { coaches, loading: coachesLoading } = useCoaches()
 
@@ -143,7 +145,7 @@ export default function EvaluateStudentPage() {
         <div>
           <h1 className="text-3xl font-bold tracking-tight">スキル評価入力</h1>
           <p className="text-muted-foreground">
-            {student.name}さんのスキル評価を入力
+            {getStudentDisplayName(student, isEnglish)}さんのスキル評価を入力
           </p>
         </div>
       </div>
@@ -153,13 +155,13 @@ export default function EvaluateStudentPage() {
         <CardContent className="pt-6">
           <div className="flex items-center gap-4">
             <Avatar className="h-16 w-16">
-              <AvatarImage src={student.photo_url && isGoogleDriveUrl(student.photo_url) ? convertGoogleDriveImageUrl(student.photo_url, 'm') : student.photo_url} alt={student.name} />
+              <AvatarImage src={student.photo_url && isGoogleDriveUrl(student.photo_url) ? convertGoogleDriveImageUrl(student.photo_url, 'm') : student.photo_url} alt={getStudentDisplayName(student, isEnglish)} />
               <AvatarFallback className="text-xl">
-                {student.name.charAt(0)}
+                {getStudentDisplayName(student, isEnglish).charAt(0)}
               </AvatarFallback>
             </Avatar>
             <div className="space-y-2">
-              <h2 className="text-xl font-semibold">{student.name}</h2>
+              <h2 className="text-xl font-semibold">{getStudentDisplayName(student, isEnglish)}</h2>
               <div className="flex gap-2">
                 <Badge className="bg-blue-100 text-blue-800">
                   Lv{student.level}: {student.level_title}

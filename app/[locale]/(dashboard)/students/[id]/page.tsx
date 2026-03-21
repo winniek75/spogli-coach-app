@@ -10,6 +10,7 @@ import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { convertGoogleDriveImageUrl, isGoogleDriveUrl } from '@/lib/google-drive-utils'
+import { getStudentDisplayName } from '@/lib/utils'
 import {
   AlertTriangle,
   ArrowLeft,
@@ -37,6 +38,7 @@ export default function StudentDetailPage() {
   const params = useParams()
   const router = useRouter()
   const studentId = params.id as string
+  const isEnglish = params.locale === 'en'
   const { student, loading, error } = useStudent(studentId)
   const { withdrawStudent, deleteStudent } = useStudents()
   const t = useTranslations('studentDetail')
@@ -165,7 +167,7 @@ export default function StudentDetailPage() {
           </Button>
         </Link>
         <div className="flex-1">
-          <h1 className="text-3xl font-bold tracking-tight">{student.name}</h1>
+          <h1 className="text-3xl font-bold tracking-tight">{getStudentDisplayName(student, isEnglish)}</h1>
           <p className="text-muted-foreground mt-2">
             {t('subtitle')}
           </p>
@@ -211,7 +213,7 @@ export default function StudentDetailPage() {
               <AlertTriangle className="h-8 w-8 text-amber-500 flex-shrink-0" />
               <div className="flex-1">
                 <p className="font-medium text-amber-800">
-                  {student.name}さんを退会処理しますか？
+                  {getStudentDisplayName(student, isEnglish)}さんを退会処理しますか？
                 </p>
                 <p className="text-sm text-amber-600 mt-1">
                   ステータスを「退会」に変更します。データは保持されます。
@@ -253,7 +255,7 @@ export default function StudentDetailPage() {
               <Trash2 className="h-8 w-8 text-red-600 flex-shrink-0" />
               <div className="flex-1">
                 <p className="font-medium text-red-800">
-                  {student.name}さんのデータを完全に削除しますか？
+                  {getStudentDisplayName(student, isEnglish)}さんのデータを完全に削除しますか？
                 </p>
                 <p className="text-sm text-red-600 mt-1">
                   この操作は取り消せません。全てのデータが永久に削除されます。
@@ -293,9 +295,9 @@ export default function StudentDetailPage() {
         <CardContent className="pt-6">
           <div className="flex items-start gap-6">
             <Avatar className="h-24 w-24">
-              <AvatarImage src={student.photo_url && isGoogleDriveUrl(student.photo_url) ? convertGoogleDriveImageUrl(student.photo_url, 'l') : student.photo_url} alt={student.name} />
+              <AvatarImage src={student.photo_url && isGoogleDriveUrl(student.photo_url) ? convertGoogleDriveImageUrl(student.photo_url, 'l') : student.photo_url} alt={getStudentDisplayName(student, isEnglish)} />
               <AvatarFallback className="text-2xl">
-                {student.name.charAt(0)}
+                {getStudentDisplayName(student, isEnglish).charAt(0)}
               </AvatarFallback>
             </Avatar>
 

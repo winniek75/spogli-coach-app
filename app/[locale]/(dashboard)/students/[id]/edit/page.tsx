@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { useStudent, useStudents } from '@/hooks/use-students'
+import { getStudentDisplayName } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
@@ -25,6 +26,7 @@ export default function EditStudentPage() {
   const params = useParams()
   const router = useRouter()
   const studentId = params.id as string
+  const isEnglish = params.locale === 'en'
   const { student, loading: fetchLoading, error: fetchError } = useStudent(studentId)
   const { updateStudent } = useStudents()
 
@@ -158,7 +160,7 @@ export default function EditStudentPage() {
         <div>
           <h1 className="text-3xl font-bold tracking-tight">生徒情報編集</h1>
           <p className="text-muted-foreground">
-            {student.name}さんの情報を編集
+            {getStudentDisplayName(student, isEnglish)}さんの情報を編集
           </p>
         </div>
       </div>

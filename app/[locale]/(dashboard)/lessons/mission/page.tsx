@@ -1,7 +1,9 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { useParams } from 'next/navigation'
 import { useTranslations } from 'next-intl'
+import { getStudentDisplayName } from '@/lib/utils'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -74,6 +76,8 @@ const getSkillItems = (t: any) => ({
 })
 
 export default function MissionPage() {
+  const params = useParams()
+  const isEnglish = params.locale === 'en'
   const t = useTranslations('schedule.lessonMission')
   const { students, loading: studentsLoading } = useStudents()
   const { missionSheets, loading: missionsLoading, createMissionSheet, updateMissionItem } = useMissions()
@@ -281,7 +285,7 @@ export default function MissionPage() {
                             <TableRow key={student.id}>
                               <TableCell className="font-medium">
                                 <div>
-                                  {student.name}
+                                  {getStudentDisplayName(student, isEnglish)}
                                   <div className="text-xs text-muted-foreground">
                                     Lv{student.level}
                                   </div>

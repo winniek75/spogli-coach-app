@@ -1,7 +1,9 @@
 'use client'
 
 import { useState } from 'react'
+import { useParams } from 'next/navigation'
 import { useTranslations } from 'next-intl'
+import { getStudentDisplayName } from '@/lib/utils'
 import { useLessonSchedule } from '@/hooks/use-lesson-schedule'
 import { useCoaches } from '@/hooks/use-coaches'
 import { useStudents } from '@/hooks/use-students'
@@ -84,6 +86,8 @@ const getLocalDateString = () => {
 }
 
 export default function ScheduleLessonsPage() {
+  const params = useParams()
+  const isEnglish = params.locale === 'en'
   const [selectedDate, setSelectedDate] = useState(getLocalDateString())
   const tLessons = useTranslations('schedule.lessons')
   const tCommon = useTranslations('common')
@@ -946,8 +950,8 @@ export default function ScheduleLessonsPage() {
                             }}
                           />
                           <div className="flex-1">
-                            <div className="text-sm font-medium">{student.name}</div>
-                            {student.name_kana && (
+                            <div className="text-sm font-medium">{getStudentDisplayName(student, isEnglish)}</div>
+                            {!isEnglish && student.name_kana && (
                               <div className="text-xs text-muted-foreground">{student.name_kana}</div>
                             )}
                           </div>

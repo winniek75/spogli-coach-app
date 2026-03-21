@@ -1,8 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import { useRouter } from 'next/navigation'
+import { useRouter, useParams } from 'next/navigation'
 import { useTranslations } from 'next-intl'
+import { getStudentDisplayName } from '@/lib/utils'
 import { useMissions } from '@/hooks/use-missions'
 import { useStudents } from '@/hooks/use-students'
 import { useCoaches } from '@/hooks/use-coaches'
@@ -32,6 +33,8 @@ import { SPORT_SKILLS } from '@/data/skill-items'
 
 export default function NewMissionPage() {
   const router = useRouter()
+  const params = useParams()
+  const isEnglish = params.locale === 'en'
   const { createMissionSheet } = useMissions()
   const { students, loading: studentsLoading } = useStudents()
   const { coaches, loading: coachesLoading } = useCoaches()
@@ -187,7 +190,7 @@ export default function NewMissionPage() {
                     <SelectContent>
                       {activeStudents.map((student) => (
                         <SelectItem key={student.id} value={student.id}>
-                          {student.name} (Lv{student.level})
+                          {getStudentDisplayName(student, isEnglish)} (Lv{student.level})
                         </SelectItem>
                       ))}
                     </SelectContent>

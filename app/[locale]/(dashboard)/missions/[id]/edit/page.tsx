@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import { useMission, useMissions } from '@/hooks/use-missions'
+import { getStudentDisplayName } from '@/lib/utils'
 import { useCoaches } from '@/hooks/use-coaches'
 import { useStudents } from '@/hooks/use-students'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -40,20 +41,21 @@ import { SPORT_SKILLS } from '@/data/skill-items'
 
 // デモ生徒データ
 const demoStudents = [
-  { id: 'student-1', name: '佐藤太郎', level: 3, age: 5, school: 'ageo' },
-  { id: 'student-2', name: '田中花子', level: 4, age: 6, school: 'okegawa' },
-  { id: 'student-3', name: '山田次郎', level: 2, age: 4, school: 'ageo' },
-  { id: 'student-4', name: '鈴木美咲', level: 5, age: 6, school: 'okegawa' },
-  { id: 'student-5', name: '高橋健太', level: 3, age: 5, school: 'ageo' },
-  { id: 'student-6', name: '伊藤さくら', level: 4, age: 5, school: 'okegawa' },
-  { id: 'student-7', name: '渡辺翔太', level: 2, age: 4, school: 'ageo' },
-  { id: 'student-8', name: '中村ゆい', level: 5, age: 6, school: 'okegawa' }
+  { id: 'student-1', name: '佐藤太郎', name_en: 'Taro Sato', level: 3, age: 5, school: 'ageo' },
+  { id: 'student-2', name: '田中花子', name_en: 'Hanako Tanaka', level: 4, age: 6, school: 'okegawa' },
+  { id: 'student-3', name: '山田次郎', name_en: 'Jiro Yamada', level: 2, age: 4, school: 'ageo' },
+  { id: 'student-4', name: '鈴木美咲', name_en: 'Misaki Suzuki', level: 5, age: 6, school: 'okegawa' },
+  { id: 'student-5', name: '高橋健太', name_en: 'Kenta Takahashi', level: 3, age: 5, school: 'ageo' },
+  { id: 'student-6', name: '伊藤さくら', name_en: 'Sakura Ito', level: 4, age: 5, school: 'okegawa' },
+  { id: 'student-7', name: '渡辺翔太', name_en: 'Shota Watanabe', level: 2, age: 4, school: 'ageo' },
+  { id: 'student-8', name: '中村ゆい', name_en: 'Yui Nakamura', level: 5, age: 6, school: 'okegawa' }
 ]
 
 export default function MissionEditPage() {
   const params = useParams()
   const router = useRouter()
   const id = params.id as string
+  const isEnglish = params.locale === 'en'
   const { missionSheet, loading, error } = useMission(id)
   const { updateMissionSheet } = useMissions()
   const { coaches } = useCoaches()
@@ -79,6 +81,7 @@ export default function MissionEditPage() {
 
   const filteredStudents = demoStudents.filter(student =>
     student.name.toLowerCase().includes(searchStudent.toLowerCase()) ||
+    (student.name_en && student.name_en.toLowerCase().includes(searchStudent.toLowerCase())) ||
     student.id.includes(searchStudent.toLowerCase())
   )
 
@@ -542,7 +545,7 @@ export default function MissionEditPage() {
                   <div className="flex items-center gap-3">
                     <Users className="h-6 w-6 text-blue-600" />
                     <div>
-                      <h4 className="font-medium">{student.name}</h4>
+                      <h4 className="font-medium">{getStudentDisplayName(student, isEnglish)}</h4>
                       <p className="text-sm text-muted-foreground">
                         レベル {student.level} • {student.age}歳 • {student.school === 'ageo' ? '上尾校' : '桶川校'}
                       </p>

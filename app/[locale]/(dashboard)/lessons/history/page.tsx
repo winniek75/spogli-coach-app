@@ -1,7 +1,9 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { useParams } from 'next/navigation'
 import { useTranslations } from 'next-intl'
+import { getStudentDisplayName } from '@/lib/utils'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -43,6 +45,8 @@ import { useEvaluations } from '@/hooks/use-evaluations'
 import { useStudents } from '@/hooks/use-students'
 
 export default function LessonsHistoryPage() {
+  const params = useParams()
+  const isEnglish = params.locale === 'en'
   const t = useTranslations('schedule.evaluationHistory')
   const { evaluations, loading: evaluationsLoading, fetchEvaluations } = useEvaluations()
   const { students, loading: studentsLoading } = useStudents()
@@ -126,7 +130,7 @@ export default function LessonsHistoryPage() {
 
       return {
         id: student.id,
-        name: student.name,
+        name: getStudentDisplayName(student, isEnglish),
         level: student.level,
         totalEvaluations: studentEvaluations.length,
         averageRating,
@@ -220,7 +224,7 @@ export default function LessonsHistoryPage() {
                     <SelectItem value="all">{t('allStudents')}</SelectItem>
                     {students.map(student => (
                       <SelectItem key={student.id} value={student.id}>
-                        {student.name}
+                        {getStudentDisplayName(student, isEnglish)}
                       </SelectItem>
                     ))}
                   </SelectContent>
