@@ -3,12 +3,12 @@
 import { useState } from 'react'
 import { useRouter, useParams } from 'next/navigation'
 import { useVideos } from '@/hooks/use-videos'
+import { useGooglePicker } from '@/hooks/use-google-picker'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import {
   Select,
   SelectContent,
@@ -17,10 +17,10 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import { Alert, AlertDescription } from '@/components/ui/alert'
-import { ArrowLeft, Upload, Film, Info, Link as LinkIcon, HardDrive, Image } from 'lucide-react'
+import { ArrowLeft, Upload, Film, HardDrive, Image, X, FileVideo, Loader2 } from 'lucide-react'
 import Link from 'next/link'
 import { CONTENT_CATEGORIES } from '@/types/content'
-import { convertGoogleDriveVideoUrl, convertGoogleDriveImageUrl, isGoogleDriveUrl } from '@/lib/google-drive-utils'
+import { convertGoogleDriveVideoUrl, convertGoogleDriveImageUrl } from '@/lib/google-drive-utils'
 
 export default function NewVideoPage() {
   const router = useRouter()
@@ -31,7 +31,6 @@ export default function NewVideoPage() {
   const [isUploading, setIsUploading] = useState(false)
   const [uploadError, setUploadError] = useState<string | null>(null)
   const [uploadProgress, setUploadProgress] = useState(0)
-  const [uploadType, setUploadType] = useState<'file' | 'googledrive'>('googledrive')
 
   const [formData, setFormData] = useState({
     title: '',
@@ -40,33 +39,43 @@ export default function NewVideoPage() {
     category: '',
     level: '1',
     duration_minutes: '',
-    file: null as File | null,
-    thumbnail: null as File | null,
     tags: '',
     googleDriveUrl: '',
-    thumbnailGoogleDriveUrl: '', // Google DriveサムネイルURL
+    googleDriveFileName: '',
+    thumbnailGoogleDriveUrl: '',
+    thumbnailFileName: '',
   })
 
-  // 削除：ユーティリティ関数を使用
+  // Google Drive Picker for video
+  const videoPicker = useGooglePicker({
+    onPicked: (result) => {
+      const driveUrl = result.url
+      setFormData(prev => ({
+        ...prev,
+        googleDriveUrl: driveUrl,
+        googleDriveFileName: result.name,
+        // タイトルが未入力なら、ファイル名を自動セット（拡張子除去）
+        title: prev.title || result.name.replace(/\.[^/.]+$/, ''),
+      }))
+    },
+  })
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>, type: 'file' | 'thumbnail') => {
-    const file = e.target.files?.[0]
-    if (file) {
-      setFormData(prev => ({ ...prev, [type]: file }))
-    }
-  }
+  // Google Drive Picker for thumbnail
+  const thumbnailPicker = useGooglePicker({
+    onPicked: (result) => {
+      setFormData(prev => ({
+        ...prev,
+        thumbnailGoogleDriveUrl: result.url,
+        thumbnailFileName: result.name,
+      }))
+    },
+  })
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    // バリデーション
-    if (uploadType === 'file' && !formData.file) {
-      setUploadError('動画ファイルを選択してください')
-      return
-    }
-
-    if (uploadType === 'googledrive' && !formData.googleDriveUrl) {
-      setUploadError('Google DriveのURLを入力してください')
+    if (!formData.googleDriveUrl) {
+      setUploadError('Google Driveから動画を選択してください')
       return
     }
 
@@ -90,33 +99,17 @@ export default function NewVideoPage() {
     setUploadProgress(0)
 
     try {
-      // プログレスバーのシミュレーション
       const progressInterval = setInterval(() => {
         setUploadProgress(prev => Math.min(prev + 10, 90))
       }, 500)
 
-      // 動画URLを決定
-      let videoUrl = ''
-      let fileSize = 0
+      const videoUrl = convertGoogleDriveVideoUrl(formData.googleDriveUrl)
 
-      if (uploadType === 'googledrive') {
-        videoUrl = convertGoogleDriveVideoUrl(formData.googleDriveUrl)
-        fileSize = 0 // Google Driveの場合はサイズ不明
-      } else if (formData.file) {
-        // 通常のファイルアップロード（現在は仮URL）
-        videoUrl = URL.createObjectURL(formData.file)
-        fileSize = formData.file.size
-      }
-
-      // サムネイルURLを決定
       let thumbnailUrl = ''
       if (formData.thumbnailGoogleDriveUrl) {
         thumbnailUrl = convertGoogleDriveImageUrl(formData.thumbnailGoogleDriveUrl, 'm')
-      } else if (formData.thumbnail) {
-        thumbnailUrl = URL.createObjectURL(formData.thumbnail)
       }
 
-      // API呼び出し
       await uploadVideo({
         title: formData.title,
         description: formData.description,
@@ -124,23 +117,21 @@ export default function NewVideoPage() {
         category: formData.category,
         level: parseInt(formData.level),
         duration_minutes: parseInt(formData.duration_minutes) || 0,
-        file_size: fileSize,
+        file_size: 0,
         file_url: videoUrl,
         thumbnail_url: thumbnailUrl || undefined,
         tags: formData.tags.split(',').map(tag => tag.trim()).filter(Boolean),
       })
 
-      // アップロード完了
       clearInterval(progressInterval)
       setUploadProgress(100)
 
-      // 成功後、一覧ページへ遷移
       setTimeout(() => {
         router.push(`/${locale}/content/videos`)
       }, 1000)
     } catch (error) {
       console.error('Upload error:', error)
-      setUploadError(error instanceof Error ? error.message : '動画のアップロードに失敗しました')
+      setUploadError(error instanceof Error ? error.message : '動画の登録に失敗しました')
       setIsUploading(false)
     } finally {
       setIsUploading(false)
@@ -159,7 +150,7 @@ export default function NewVideoPage() {
         <div>
           <h1 className="text-3xl font-bold tracking-tight">動画を追加</h1>
           <p className="text-muted-foreground mt-2">
-            レッスン動画をアップロードまたはGoogle Driveから連携
+            Google Driveから動画を選択して追加
           </p>
         </div>
       </div>
@@ -280,127 +271,141 @@ export default function NewVideoPage() {
             </CardContent>
           </Card>
 
-          {/* 動画ソース選択 */}
-          <Card>
-            <CardHeader>
-              <CardTitle>動画ソース</CardTitle>
-              <CardDescription>動画のアップロード方法を選択してください</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Tabs value={uploadType} onValueChange={(v) => setUploadType(v as 'file' | 'googledrive')}>
-                <TabsList className="grid w-full grid-cols-2">
-                  <TabsTrigger value="googledrive">
-                    <HardDrive className="h-4 w-4 mr-2" />
-                    Google Drive
-                  </TabsTrigger>
-                  <TabsTrigger value="file">
-                    <Upload className="h-4 w-4 mr-2" />
-                    ファイルアップロード
-                  </TabsTrigger>
-                </TabsList>
-
-                <TabsContent value="googledrive" className="space-y-4">
-                  <Alert>
-                    <Info className="h-4 w-4" />
-                    <AlertDescription>
-                      Google Driveの動画を使用する場合：
-                      <ol className="list-decimal list-inside mt-2 space-y-1">
-                        <li>Google Driveで動画を右クリック → 「共有」</li>
-                        <li>「リンクを取得」→「制限付き」を「リンクを知っている全員」に変更</li>
-                        <li>リンクをコピーして下記に貼り付け</li>
-                      </ol>
-                    </AlertDescription>
-                  </Alert>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="googleDriveUrl">Google Drive URL *</Label>
-                    <div className="flex gap-2">
-                      <LinkIcon className="h-4 w-4 mt-3 text-muted-foreground" />
-                      <Input
-                        id="googleDriveUrl"
-                        type="url"
-                        value={formData.googleDriveUrl}
-                        onChange={(e) => setFormData(prev => ({ ...prev, googleDriveUrl: e.target.value }))}
-                        placeholder="https://drive.google.com/file/d/.../view"
-                        className="flex-1"
-                      />
+          {/* 動画・サムネイル選択 */}
+          <div className="space-y-6">
+            {/* 動画選択 */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <HardDrive className="h-5 w-5" />
+                  動画ソース
+                </CardTitle>
+                <CardDescription>Google Driveから動画ファイルを選択してください</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                {formData.googleDriveUrl ? (
+                  <div className="border rounded-lg p-4 bg-green-50 border-green-200">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3 min-w-0">
+                        <FileVideo className="h-8 w-8 text-green-600 flex-shrink-0" />
+                        <div className="min-w-0">
+                          <p className="font-medium text-green-800 truncate">
+                            {formData.googleDriveFileName || '選択された動画'}
+                          </p>
+                          <p className="text-xs text-green-600 truncate">
+                            {formData.googleDriveUrl}
+                          </p>
+                        </div>
+                      </div>
+                      <Button
+                        type="button"
+                        variant="ghost"
+                        size="icon"
+                        className="flex-shrink-0 text-green-600 hover:text-red-600 hover:bg-red-50"
+                        onClick={() => setFormData(prev => ({
+                          ...prev,
+                          googleDriveUrl: '',
+                          googleDriveFileName: '',
+                        }))}
+                      >
+                        <X className="h-4 w-4" />
+                      </Button>
                     </div>
-                    <p className="text-sm text-muted-foreground">
-                      共有リンクを貼り付けてください。自動的に埋め込み用に変換されます。
-                    </p>
                   </div>
-                </TabsContent>
+                ) : (
+                  <Button
+                    type="button"
+                    variant="outline"
+                    className="w-full h-32 border-dashed border-2 flex flex-col gap-2"
+                    onClick={() => videoPicker.openPicker('video')}
+                    disabled={videoPicker.isLoading}
+                  >
+                    {videoPicker.isLoading ? (
+                      <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />
+                    ) : (
+                      <>
+                        <HardDrive className="h-8 w-8 text-muted-foreground" />
+                        <span className="text-muted-foreground">Google Driveから動画を選択</span>
+                        <span className="text-xs text-muted-foreground">MP4, MOV, WebM形式に対応</span>
+                      </>
+                    )}
+                  </Button>
+                )}
 
-                <TabsContent value="file" className="space-y-4">
-                  <Alert>
-                    <Info className="h-4 w-4" />
-                    <AlertDescription>
-                      現在、ファイルアップロードは開発中です。Google Driveをご利用ください。
-                    </AlertDescription>
+                {videoPicker.error && (
+                  <Alert variant="destructive">
+                    <AlertDescription>{videoPicker.error}</AlertDescription>
                   </Alert>
+                )}
+              </CardContent>
+            </Card>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="video-file">動画ファイル *</Label>
-                    <Input
-                      id="video-file"
-                      type="file"
-                      accept="video/mp4,video/quicktime,video/webm"
-                      onChange={(e) => handleFileChange(e, 'file')}
-                      disabled
-                    />
-                    <p className="text-sm text-muted-foreground">
-                      MP4, MOV, WebM形式に対応（最大500MB）
-                    </p>
-                  </div>
-                </TabsContent>
-              </Tabs>
-
-              {/* サムネイル設定 */}
-              <div className="mt-4 space-y-4">
-                <Label>サムネイル（オプション）</Label>
-                <Tabs defaultValue="googledrive" className="w-full">
-                  <TabsList className="grid w-full grid-cols-2">
-                    <TabsTrigger value="googledrive">
-                      <Image className="h-4 w-4 mr-2" />
-                      Google Drive
-                    </TabsTrigger>
-                    <TabsTrigger value="file">
-                      <Upload className="h-4 w-4 mr-2" />
-                      ファイル
-                    </TabsTrigger>
-                  </TabsList>
-
-                  <TabsContent value="googledrive" className="space-y-2">
-                    <div className="flex gap-2">
-                      <LinkIcon className="h-4 w-4 mt-3 text-muted-foreground" />
-                      <Input
-                        type="url"
-                        value={formData.thumbnailGoogleDriveUrl}
-                        onChange={(e) => setFormData(prev => ({ ...prev, thumbnailGoogleDriveUrl: e.target.value }))}
-                        placeholder="Google Driveの画像URL"
-                        className="flex-1"
-                      />
+            {/* サムネイル選択 */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Image className="h-5 w-5" />
+                  サムネイル（オプション）
+                </CardTitle>
+                <CardDescription>Google Driveから画像を選択してください</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                {formData.thumbnailGoogleDriveUrl ? (
+                  <div className="border rounded-lg p-4 bg-blue-50 border-blue-200">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3 min-w-0">
+                        <Image className="h-8 w-8 text-blue-600 flex-shrink-0" />
+                        <div className="min-w-0">
+                          <p className="font-medium text-blue-800 truncate">
+                            {formData.thumbnailFileName || '選択された画像'}
+                          </p>
+                          <p className="text-xs text-blue-600 truncate">
+                            {formData.thumbnailGoogleDriveUrl}
+                          </p>
+                        </div>
+                      </div>
+                      <Button
+                        type="button"
+                        variant="ghost"
+                        size="icon"
+                        className="flex-shrink-0 text-blue-600 hover:text-red-600 hover:bg-red-50"
+                        onClick={() => setFormData(prev => ({
+                          ...prev,
+                          thumbnailGoogleDriveUrl: '',
+                          thumbnailFileName: '',
+                        }))}
+                      >
+                        <X className="h-4 w-4" />
+                      </Button>
                     </div>
-                    <p className="text-sm text-muted-foreground">
-                      Google Driveの画像共有リンクを貼り付けてください
-                    </p>
-                  </TabsContent>
+                  </div>
+                ) : (
+                  <Button
+                    type="button"
+                    variant="outline"
+                    className="w-full h-24 border-dashed border-2 flex flex-col gap-2"
+                    onClick={() => thumbnailPicker.openPicker('image')}
+                    disabled={thumbnailPicker.isLoading}
+                  >
+                    {thumbnailPicker.isLoading ? (
+                      <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
+                    ) : (
+                      <>
+                        <Image className="h-6 w-6 text-muted-foreground" />
+                        <span className="text-sm text-muted-foreground">Google Driveから画像を選択</span>
+                      </>
+                    )}
+                  </Button>
+                )}
 
-                  <TabsContent value="file" className="space-y-2">
-                    <Input
-                      type="file"
-                      accept="image/jpeg,image/png,image/webp"
-                      onChange={(e) => handleFileChange(e, 'thumbnail')}
-                      disabled
-                    />
-                    <p className="text-sm text-muted-foreground">
-                      現在はGoogle Driveをご利用ください
-                    </p>
-                  </TabsContent>
-                </Tabs>
-              </div>
-            </CardContent>
-          </Card>
+                {thumbnailPicker.error && (
+                  <Alert variant="destructive">
+                    <AlertDescription>{thumbnailPicker.error}</AlertDescription>
+                  </Alert>
+                )}
+              </CardContent>
+            </Card>
+          </div>
         </div>
 
         {/* エラー表示 */}
@@ -416,7 +421,7 @@ export default function NewVideoPage() {
             <CardContent className="pt-6">
               <div className="space-y-2">
                 <div className="flex justify-between text-sm">
-                  <span>アップロード中...</span>
+                  <span>登録中...</span>
                   <span>{uploadProgress}%</span>
                 </div>
                 <div className="w-full bg-secondary rounded-full h-2">
@@ -441,7 +446,7 @@ export default function NewVideoPage() {
             {isUploading ? (
               <>
                 <Film className="h-4 w-4 mr-2 animate-spin" />
-                アップロード中...
+                登録中...
               </>
             ) : (
               <>
